@@ -1,0 +1,65 @@
+/* audit.css: design audit overrides, 2026-10-14 */
+:root{--accent:#0071E3;--accent-soft:rgba(0,113,227,.08);--accent-2:#0071E3;--copper:#0071E3;--rule:#E5E5EA;--rule-strong:#D2D2D7;
+--r-sm:8px;--r-md:12px;--r-lg:20px;--t-h1:clamp(2.5rem,5vw,3.5rem);--t-h2:clamp(1.75rem,3vw,2.5rem);--t-h3:1.5rem;--muted:#6E6E73}
+/* 1 accent */
+a{color:inherit}.text-button,.link-arrow,.explore-grid>a>span:last-child{color:var(--accent)}
+/* 2 grey text */
+.explore-number,[data-search-results] a small,.block::before,.search-help,.hero-portrait figcaption,.about-photo figcaption,.foot p.foot-note,.project-shortcuts small,.label,.eyebrow,.crumbs,dt,.badge,.tag{color:#6E6E73}
+.t-card ul li::marker{color:#86868B}
+.eyebrow{color:var(--accent)}
+/* 3 org strip */
+.org-strip{display:flex;gap:32px;align-items:center;flex-wrap:wrap;margin-top:32px}
+.org-strip img{height:32px;width:auto;filter:grayscale(1);opacity:.8;transition:filter .2s,opacity .2s}
+.org-strip a:hover img,.org-strip a:focus-visible img{filter:none;opacity:1}
+.intro-facts dd{font-size:.875rem}
+/* 4 thumbnails and icons */
+.project-shortcuts a{grid-template-columns:64px 1fr 1.3fr auto}
+.project-shortcuts a>img{width:64px;height:48px;object-fit:contain;padding:10px;border-radius:var(--r-md);background:#F5F5F7}
+.explore-grid>a>img{width:48px;height:48px;flex:none;border-radius:var(--r-md);background:#F5F5F7;padding:12px}
+.explore-grid .explore-number{display:none}
+.contact-card .contact-photo{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:50% 22%;margin-bottom:16px}
+/* 5 heading scale */
+.hero h1,.page-hero h1,.detail-hero h1{font-size:var(--t-h1)}
+.section-head h2,.d-section h2,.cta h2{font-size:var(--t-h2);line-height:1.1}
+.card-body h2,.explore-grid h3,.feature-copy h3{font-size:var(--t-h3)}
+.lead{font-size:1.0625rem}
+/* 6 spacing */
+.hero{padding:96px 0}.page-hero{padding:80px 0 48px}.section{padding:96px 0}.section-head{margin-bottom:48px}
+.grid.cols-3{gap:48px 32px}.hero-actions{margin-top:32px}.eyebrow{margin:0 0 16px}
+/* 7 radii */
+.btn{border-radius:980px}.tag,.badge,.filter{border-radius:var(--r-sm)}
+.card-media,.feature-image,.detail-cover,.lab-result{border-radius:var(--r-lg);overflow:hidden}
+.hero-portrait img{border-radius:var(--r-lg)}
+/* 8 hover/focus */
+:focus-visible{outline:2px solid #0071E3;outline-offset:2px}
+.btn:hover{background:#F5F5F7;border-color:#D2D2D7}.btn.primary:hover{background:#0077ED;border-color:#0077ED}
+.card-media img,.feature-image img{transition:transform .4s var(--ease-out,ease)}
+.card:hover .card-media img,.feature-row:hover .feature-image img{transform:scale(1.02);opacity:1}
+/* 9 min 12px */
+.tag,.badge{font-size:.8125rem;height:24px;padding:0 8px}
+.intro-facts dt,.search-help,.foot p.foot-note{font-size:.75rem}
+/* 10 mobile */
+@media (max-width:767px){
+.section{padding:64px 0}.page-hero{padding:48px 0 32px}
+.hero-portrait{order:-1;width:96px;margin:0 0 24px}.hero-portrait img{border-radius:50%;aspect-ratio:1}
+.hero h1{font-size:2.5rem;line-height:1.05}
+.project-shortcuts a{grid-template-columns:64px 1fr auto;column-gap:16px}
+.project-shortcuts a>img{grid-row:1/3;grid-column:1}
+.project-shortcuts a>span:first-of-type{grid-column:2;grid-row:1}
+.project-shortcuts small{grid-column:2;grid-row:2}
+.project-shortcuts a>span:last-child{grid-column:3;grid-row:1/3}
+.org-strip{gap:24px}.org-strip img{height:28px}
+}
+
+/*logos*/.t-logo-mono{padding:0;border:0;background:none}.t-logo-mono img{width:100%;height:100%}
+/*logo-center*/.t-logo{display:grid;place-items:center}.t-logo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+/*logo-size*/.t-logo{padding:6.5%}.t-logo.t-logo-mono{padding:0}
+/* Keep every navigation action reachable on narrow phones. */
+@media (max-width:420px){
+  .nav{gap:8px}
+  .nav>.brand{min-width:40px;min-height:40px;justify-content:center}
+  .nav>.brand .brand-mark{display:grid}
+  .nav>.brand>span:last-child{display:none}
+}
+@view-transition{navigation:none}
+.card-media>.badge{left:auto;right:14px;top:14px}

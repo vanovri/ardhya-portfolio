@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Ardhya Novri Ramadhan</title>
+  <defs>
+    <linearGradient id="surface" x1="8" y1="2" x2="54" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D3B50"/>
+      <stop offset="1" stop-color="#111925"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 2C8 2 2 8 2 32s6 30 30 30 30-6 30-30S56 2 32 2Z" fill="url(#surface)"/>
+  <path d="M32 2.5C8.4 2.5 2.5 8.4 2.5 32s5.9 29.5 29.5 29.5 29.5-5.9 29.5-29.5S55.6 2.5 32 2.5Z" fill="none" stroke="#fff" stroke-opacity=".13"/>
+  <path d="M16 47 27.1 19.2C28.2 16.4 29.6 15 32 15s3.8 1.4 4.9 4.2L48 47h-8.2l-2.2-6.2H26.4L24.2 47Zm12.7-13h6.6L32 23.8Z" fill="#fff" fill-rule="evenodd"/>
+</svg>
