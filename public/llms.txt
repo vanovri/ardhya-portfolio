@@ -1,0 +1,13 @@
+# Ardhya Novri Ramadhan — Engineering Portfolio (ardhyanovri.my.id)
+
+> Electrical Engineering graduate (S.T., Diponegoro University, 2026; GPA 3.63/4.00) focusing on embedded systems (STM32, ESP32, C/C++), digital signal processing (EMG acquisition & filtering), industrial instrumentation, and verified software/web engineering.
+
+## Key Pages
+- [Home](https://ardhyanovri.my.id/): Overview of embedded hardware, signal processing, and software work.
+- [About](https://ardhyanovri.my.id/about): Biography, education at Diponegoro University, technical focus, and claim discipline.
+- [Projects](https://ardhyanovri.my.id/projects): Index of 38 documented projects (STM32 EMG thesis, ESP32 IoT prototypes, ENVIID web engineering, open-source developer tools, simulations, and proposals).
+- [Experience](https://ardhyanovri.my.id/experience): 18 documented roles across internships (PT Angkasa Pura Indonesia / InJourney Airports, Redesma), PT ENVIID Karbon Solusi, practicum teaching assistantship, and campus organizations.
+- [Credentials](https://ardhyanovri.my.id/credentials): Verified academic credentials, competition awards, and technical certifications.
+- [Interactive Lab](https://ardhyanovri.my.id/lab): Client-side 20 Hz / 500 Hz / 50 Hz notch EMG filter and UART framing simulator.
+- [Privacy, Security & Scope Notice](https://ardhyanovri.my.id/privacy): Zero-tracking privacy policy, security posture, and strict engineering claim boundaries.
+- [Contact](https://ardhyanovri.my.id/contact): Direct email (`ardhyasan@gmail.com`), LinkedIn, and GitHub (`vanovri`).
