@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Time-domain waveform and FFT 50 Hz notch spectrum plot">
+  <title>Time-domain waveform and FFT 50 Hz notch spectrum plot</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/>
+  <rect x="96" y="100" width="1008" height="240" rx="20" fill="#fbfbfd" stroke="#d2d2d7"/>
+  <polyline points="120.0,235.0 132.0,200.9 144.0,208.5 156.0,208.6 168.0,174.8 180.0,165.8 192.0,194.0 204.0,198.6 216.0,182.4 228.0,204.4 240.0,244.5 252.0,246.4 264.0,241.3 276.0,274.8 288.0,300.4 300.0,282.3 312.0,274.0 324.0,296.5 336.0,290.6 348.0,251.4 360.0,240.8 372.0,250.4 384.0,223.2 396.0,185.4 408.0,190.6 420.0,201.3 432.0,176.2 444.0,164.7 456.0,196.2 468.0,213.3 480.0,200.3 492.0,216.5 504.0,259.7 516.0,268.0 528.0,256.4 540.0,280.0 552.0,306.9 564.0,288.5 576.0,267.9 588.0,282.7 600.0,280.7 612.0,239.5 624.0,219.5 636.0,230.4 648.0,212.6 660.0,174.7 672.0,177.1 684.0,197.6 696.0,183.4 708.0,170.5 720.0,202.4 732.0,230.3 744.0,221.5 756.0,230.3 768.0,272.5 780.0,286.4 792.0,269.2 804.0,280.7 816.0,306.4 828.0,289.3 840.0,258.4 852.0,264.2 864.0,266.4 876.0,227.2 888.0,199.6 900.0,211.0 912.0,204.3 924.0,169.9 936.0,169.3 948.0,197.8 960.0,195.7 972.0,182.5 984.0,211.8 996.0,248.0 1008.0,244.0 1020.0,244.4 1032.0,281.7 1044.0,299.8 1056.0,278.3 1068.0,276.7 1080.0,299.0" fill="none" stroke="#0071e3" stroke-width="4" stroke-linecap="round"/>
+  <rect x="96" y="380" width="1008" height="260" rx="20" fill="#fbfbfd" stroke="#d2d2d7"/>
+  <polyline points="120.0,525.3 132.0,520.2 144.0,515.1 156.0,509.9 168.0,504.5 180.0,499.2 192.0,493.8 204.0,488.5 216.0,483.3 228.0,478.1 240.0,473.2 252.0,468.4 264.0,463.9 276.0,459.7 288.0,455.8 300.0,452.2 312.0,449.1 324.0,446.4 336.0,444.1 348.0,442.3 360.0,441.0 372.0,440.3 384.0,440.0 396.0,440.3 408.0,441.0 420.0,442.3 432.0,444.2 444.0,447.1 456.0,453.5 468.0,470.5 480.0,505.7 492.0,549.8 504.0,571.1 516.0,552.5 528.0,516.6 540.0,493.0 552.0,486.6 564.0,489.0 576.0,493.9 588.0,499.2 600.0,504.5 612.0,509.9 624.0,515.1 636.0,520.2 648.0,525.3 660.0,530.1 672.0,534.8 684.0,539.3 696.0,543.6 708.0,547.7 720.0,551.5 732.0,555.2 744.0,558.6 756.0,561.7 768.0,564.6 780.0,567.4 792.0,569.8 804.0,572.1 816.0,574.2 828.0,576.1 840.0,577.8 852.0,579.3 864.0,580.7 876.0,581.9 888.0,583.0 900.0,583.9 912.0,584.8 924.0,585.5 936.0,586.2 948.0,586.8 960.0,587.3 972.0,587.7 984.0,588.0 996.0,588.4 1008.0,588.6 1020.0,588.9 1032.0,589.1 1044.0,589.2 1056.0,589.4 1068.0,589.5 1080.0,589.6" fill="none" stroke="#0d9488" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- 50 Hz Notch callout marker -->
+  <line x1="504" y1="410" x2="504" y2="600" stroke="#ff3b30" stroke-width="2" stroke-dasharray="6 4"/>
+  <circle cx="504" cy="572" r="8" fill="#ff3b30"/>
+  <rect x="444" y="405" width="120" height="30" rx="15.0" fill="#ffeceb" /><text x="504.0" y="424.6" text-anchor="middle" class="t" font-size="13" font-weight="600" fill="#ff3b30">50 Hz Notch</text>
+
+</svg>
