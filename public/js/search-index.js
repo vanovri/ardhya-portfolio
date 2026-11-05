@@ -1,4 +1,5 @@
 export default [
+  {"title": "PWM Motor Bench", "url": "https://ardhyanovri.my.id/projects/pwm-motor-bench", "category": "Project", "text": "Browser-based DC motor simulator with interactive PWM, an exploded isometric view, a load comparison and adjustable PI gains. Duel Dyno compares fixed duty and PI control under the same load step. Pit Tuning shows the effect of gain changes on RPM error, overshoot and recovery time. Each run exports 401 simulated samples. For a 65% load step, the Redam lonjakan preset reduced peak overshoot from 487 to 263 RPM against the default PI settings. The measured mean absolute RPM error fell from 97 to 72 RPM in the same 10-second simulation."},
   {
     "title": "Packing Arena",
     "url": "/projects/packing-arena.html",
