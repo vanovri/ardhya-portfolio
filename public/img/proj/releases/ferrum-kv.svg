@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-labelledby="title desc">
+  <title id="title">FerrumKV — Zero-Dependency Distributed RESP3, Raft, HNSW/BM25, LSM-Tree &amp; Gorilla Time-Series Engine</title>
+  <desc id="desc">Architecture and verified benchmark telemetry for vanovri/ferrum-kv: 64-shard pure-Rust RESP3 server, 3-node Raft consensus (Jepsen linearizability PASS), HNSW SQ8 vector + Okapi BM25 search, disk LSM-tree, Facebook Gorilla XOR time-series (1.38 B/sample), ChaCha20-Poly1305 RBAC, and 505,716 req/sec pipelined GET throughput.</desc>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #18222c; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #4a5a68; }
+      .badge { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.8px; }
+    </style>
+    <linearGradient id="bgCanvas" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f9fc"/>
+      <stop offset="100%" stop-color="#edf1f7"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafd"/>
+    </linearGradient>
+    <linearGradient id="barTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="barIndigo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="winShadow" x="-8%" y="-10%" width="116%" height="124%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e293b" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgCanvas)"/>
+
+  <!-- Outer Window -->
+  <g filter="url(#winShadow)">
+    <rect x="44" y="36" width="1112" height="678" rx="28" fill="#ffffff" stroke="#d5dde7" stroke-width="1.8"/>
+  </g>
+  <path d="M72 37h1056a27 27 0 0 1 27 27v38H45V64a27 27 0 0 1 27-27Z" fill="#f8fafc"/>
+  <line x1="45" y1="102" x2="1155" y2="102" stroke="#e2e8f0" stroke-width="1.5"/>
+  <circle cx="80" cy="70" r="6.5" fill="#f47870"/>
+  <circle cx="103" cy="70" r="6.5" fill="#efb64e"/>
+  <circle cx="126" cy="70" r="6.5" fill="#53bd78"/>
+  <rect x="310" y="53" width="580" height="34" rx="9" fill="#ffffff" stroke="#dce4ee" stroke-width="1.4"/>
+  <text x="600" y="75" text-anchor="middle" class="t" font-size="15.5" font-weight="650" fill="#334155">FerrumKV 5.0 · Pure-Rust Zero-Crate Distributed RESP3, Raft &amp; Search Engine</text>
+
+  <!-- COLUMN 1: Reactor, Security & Consensus -->
+  <rect x="74" y="128" width="332" height="552" rx="18" fill="url(#cardBg)" stroke="#dce4ee" stroke-width="1.5"/>
+  <rect x="94" y="148" width="136" height="24" rx="6" fill="#ccfbf1"/>
+  <text x="162" y="164" text-anchor="middle" class="badge" fill="#0f766e">CONSENSUS &amp; NET</text>
+  <text x="94" y="198" class="t" font-size="19" font-weight="700">RESP3 + Raft + RBAC</text>
+  <text x="94" y="220" class="m" font-size="12.5">19,226 LOC · 0 crates · #![forbid(unsafe)]</text>
+
+  <rect x="94" y="238" width="292" height="92" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="110" y="262" class="t" font-size="14" font-weight="650">Dual-Protocol Work-Stealing Reactor</text>
+  <text x="110" y="283" class="m" font-size="12">• Zero-copy RESP3 parser + HTTP /metrics</text>
+  <text x="110" y="302" class="m" font-size="12">• 16,384-slot CRC16-CCITT -MOVED / -ASK</text>
+  <text x="110" y="321" class="m" font-size="12">• Multi-shard WATCH / MULTI / EXEC OCC</text>
+
+  <rect x="94" y="344" width="292" height="104" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="110" y="368" class="t" font-size="14" font-weight="650">3-Node TCP Raft &amp; Jepsen Verifier</text>
+  <text x="110" y="389" class="m" font-size="12">• RequestVote §5.4.1 &amp; AppendEntries</text>
+  <text x="110" y="408" class="m" font-size="12">• Partition failover: term=3, commit=200</text>
+  <text x="110" y="427" class="m" font-size="12" fill="#0f766e" font-weight="700">• Wing &amp; Gong Linearizability: PASS</text>
+
+  <rect x="94" y="462" width="292" height="96" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="110" y="486" class="t" font-size="14" font-weight="650">RFC 8439 ChaCha20-Poly1305 &amp; VM</text>
+  <text x="110" y="507" class="m" font-size="12">• Poly1305 (2^130-5) + HMAC-SHA256 ACL</text>
+  <text x="110" y="526" class="m" font-size="12">• FIPS 180-4 SHA-256 bytecode VM (EVALSHA)</text>
+  <text x="110" y="545" class="m" font-size="12">• 61B torn-AOF repair + CRC32 snapshots</text>
+
+  <rect x="94" y="574" width="292" height="84" rx="12" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="110" y="599" class="t" font-size="13.5" font-weight="700" fill="#3730a3">Static Safety &amp; Test Gate</text>
+  <text x="110" y="620" class="m" font-size="12" fill="#3730a3">22/22 unit + TCP integration tests PASS</text>
+  <text x="110" y="640" class="m" font-size="12" fill="#3730a3">0 .unwrap() · 0 .expect() · 0 warnings</text>
+
+  <!-- COLUMN 2: 11 Data Engines & Storage -->
+  <rect x="434" y="128" width="332" height="552" rx="18" fill="url(#cardBg)" stroke="#dce4ee" stroke-width="1.5"/>
+  <rect x="454" y="148" width="144" height="24" rx="6" fill="#e0e7ff"/>
+  <text x="526" y="164" text-anchor="middle" class="badge" fill="#3730a3">11 DATA ENGINES</text>
+  <text x="454" y="198" class="t" font-size="19" font-weight="700">64-Shard Hybrid Storage</text>
+  <text x="454" y="220" class="m" font-size="12.5">In-Memory Shards + Disk SSTable LSM</text>
+
+  <rect x="454" y="238" width="292" height="96" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="470" y="262" class="t" font-size="14" font-weight="650">HNSW Vector &amp; Okapi BM25 Search</text>
+  <text x="470" y="283" class="m" font-size="12">• Multi-layer HNSW (M=16, ef=64, SQ8 i8)</text>
+  <text x="470" y="302" class="m" font-size="12">• Cosine/L2 Recall@5 = 93.3% (&gt;90% gate)</text>
+  <text x="470" y="321" class="m" font-size="12">• BM25 + LEB128 postings + Damerau d≤1</text>
+
+  <rect x="454" y="348" width="292" height="96" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="470" y="372" class="t" font-size="14" font-weight="650">Gorilla XOR TS &amp; Disk LSM-Tree</text>
+  <text x="470" y="393" class="m" font-size="12">• Delta-of-delta + XOR float: 1.38 B/pt</text>
+  <text x="470" y="412" class="m" font-size="12">• TS.RANGE avg/min/max/sum/p99 buckets</text>
+  <text x="470" y="431" class="m" font-size="12">• 4KB SSTables + fence index + Bloom + CRC32</text>
+
+  <rect x="454" y="458" width="292" height="96" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="470" y="482" class="t" font-size="14" font-weight="650">Streams PEL, Probabilistic &amp; Geo</text>
+  <text x="470" y="503" class="m" font-size="12">• XADD / XREADGROUP / XACK PEL tracking</text>
+  <text x="470" y="522" class="m" font-size="12">• 16,384-reg HLL (0.42% err), Bloom, CMS</text>
+  <text x="470" y="541" class="m" font-size="12">• 52-bit Morton Z-curve + WGS84 Haversine</text>
+
+  <rect x="454" y="568" width="292" height="90" rx="12" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="470" y="593" class="t" font-size="13.5" font-weight="700" fill="#166534">Core Structures (Zero External Deps)</text>
+  <text x="470" y="614" class="m" font-size="12" fill="#166534">Robin Hood HashTable (SipHash-2-4/FNV-1a)</text>
+  <text x="470" y="634" class="m" font-size="12" fill="#166534">Circular RingList &amp; Level-32 ZSet SkipList</text>
+
+  <!-- COLUMN 3: Verified 50-Client Pipelined Benchmarks -->
+  <rect x="794" y="128" width="332" height="552" rx="18" fill="url(#cardBg)" stroke="#dce4ee" stroke-width="1.5"/>
+  <rect x="814" y="148" width="154" height="24" rx="6" fill="#fef3c7"/>
+  <text x="891" y="164" text-anchor="middle" class="badge" fill="#92400e">50-CLIENT BENCHMARK</text>
+  <text x="814" y="198" class="t" font-size="19" font-weight="700">Throughput &amp; Latency</text>
+  <text x="814" y="220" class="m" font-size="12.5">100k ops/phase · pipeline=16 · opt-level=3</text>
+
+  <!-- Bar 1: GET -->
+  <text x="814" y="254" class="t" font-size="13.5" font-weight="650">GET (Zero-Copy)</text>
+  <text x="1106" y="254" text-anchor="end" class="m" font-size="12.5" font-weight="700" fill="#0f766e">505,716 req/s</text>
+  <rect x="814" y="262" width="292" height="14" rx="7" fill="#e2e8f0"/>
+  <rect x="814" y="262" width="292" height="14" rx="7" fill="url(#barTeal)"/>
+  <text x="814" y="291" class="m" font-size="11.5">p50 = 39.66 µs · p95 = 124.80 µs · p99 = 542.38 µs</text>
+
+  <!-- Bar 2: MIXED -->
+  <text x="814" y="324" class="t" font-size="13.5" font-weight="650">MIXED (SET/GET/ZADD)</text>
+  <text x="1106" y="324" text-anchor="end" class="m" font-size="12.5" font-weight="700" fill="#0f766e">424,669 req/s</text>
+  <rect x="814" y="332" width="292" height="14" rx="7" fill="#e2e8f0"/>
+  <rect x="814" y="332" width="245" height="14" rx="7" fill="url(#barTeal)"/>
+  <text x="814" y="361" class="m" font-size="11.5">p50 = 22.84 µs · p95 = 170.64 µs · p99 = 728.36 µs</text>
+
+  <!-- Bar 3: SET -->
+  <text x="814" y="394" class="t" font-size="13.5" font-weight="650">SET (Sharded Write)</text>
+  <text x="1106" y="394" text-anchor="end" class="m" font-size="12.5" font-weight="700" fill="#4f46e5">390,313 req/s</text>
+  <rect x="814" y="402" width="292" height="14" rx="7" fill="#e2e8f0"/>
+  <rect x="814" y="402" width="225" height="14" rx="7" fill="url(#barIndigo)"/>
+  <text x="814" y="431" class="m" font-size="11.5">p50 = 53.99 µs · p95 = 260.47 µs · p99 = 587.39 µs</text>
+
+  <!-- Bar 4: ZADD -->
+  <text x="814" y="464" class="t" font-size="13.5" font-weight="650">ZADD (SkipList Rank)</text>
+  <text x="1106" y="464" text-anchor="end" class="m" font-size="12.5" font-weight="700" fill="#4f46e5">347,136 req/s</text>
+  <rect x="814" y="472" width="292" height="14" rx="7" fill="#e2e8f0"/>
+  <rect x="814" y="472" width="200" height="14" rx="7" fill="url(#barIndigo)"/>
+  <text x="814" y="501" class="m" font-size="11.5">p50 = 55.54 µs · p95 = 194.20 µs · p99 = 1012.38 µs</text>
+
+  <!-- Bar 5: EVALSHA -->
+  <text x="814" y="534" class="t" font-size="13.5" font-weight="650">EVALSHA (Bytecode VM)</text>
+  <text x="1106" y="534" text-anchor="end" class="m" font-size="12.5" font-weight="700" fill="#4f46e5">274,322 req/s</text>
+  <rect x="814" y="542" width="292" height="14" rx="7" fill="#e2e8f0"/>
+  <rect x="814" y="542" width="158" height="14" rx="7" fill="url(#barIndigo)"/>
+  <text x="814" y="571" class="m" font-size="11.5">p50 = 52.99 µs · p95 = 275.99 µs · p99 = 1555.78 µs</text>
+
+  <!-- Bar 6: VSEARCH -->
+  <text x="814" y="604" class="t" font-size="13.5" font-weight="650">VSEARCH (HNSW SQ8 k=5)</text>
+  <text x="1106" y="604" text-anchor="end" class="m" font-size="12.5" font-weight="700" fill="#0f766e">173,007 req/s</text>
+  <rect x="814" y="612" width="292" height="14" rx="7" fill="#e2e8f0"/>
+  <rect x="814" y="612" width="100" height="14" rx="7" fill="url(#barTeal)"/>
+  <text x="814" y="641" class="m" font-size="11.5">p50 = 133.51 µs · p95 = 385.93 µs · Recall@5 = 93.3%</text>
+</svg>
