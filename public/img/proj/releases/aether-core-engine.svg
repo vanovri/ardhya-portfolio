@@ -1,141 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-labelledby="title desc">
-  <title id="title">AetherCoreEngine — Zero-Dependency Rust 3D Spectral Path Tracer, Staggered-MAC Navier-Stokes Fluid Solver &amp; 24-Bit Procedural Audio Engine</title>
-  <desc id="desc">Three-subsystem architecture diagram showing the 4-wavelength Hero-Wavelength Monte Carlo Spectral Path Tracer (SAH BVH, Dielectric Cauchy dispersion, GGX VNDF Conductor, Subsurface Volumetric Scattering, NEE MIS, LZ77+Huffman PNG), coupled 3D Staggered-MAC Incompressible Navier-Stokes Fluid &amp; Vorticity Confinement Solver (MacCormack advection, CG &amp; Red-Black SOR Poisson projection, Woodcock Delta Tracking), and 15-second 48 kHz 24-Bit Stereo Procedural Spatial Synthesizer (16-voice 4-Op FM bells, 4-pole ZDF TPT SVF, 8-line Sylvester-Hadamard FDN).</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="AetherCoreEngine 3D ray-traced primitives and Cauchy spectral wavelength dispersion diagram">
+  <title>AetherCoreEngine 3D ray-traced primitives and Cauchy spectral wavelength dispersion diagram</title>
   <defs>
-    <style>
-      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #18222c; }
-      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #4a5a68; }
-      .badge { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.8px; }
-    </style>
-    <linearGradient id="bgCanvas" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f7f9fc"/>
-      <stop offset="100%" stop-color="#edf1f7"/>
+    <linearGradient id="bgGradOuter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
     </linearGradient>
-    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f8fafd"/>
-    </linearGradient>
-    <linearGradient id="specFill" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.22"/>
-      <stop offset="45%" stop-color="#0d9488" stop-opacity="0.24"/>
-      <stop offset="100%" stop-color="#ea580c" stop-opacity="0.22"/>
-    </linearGradient>
-    <linearGradient id="divFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.26"/>
-      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.02"/>
-    </linearGradient>
-    <filter id="winShadow" x="-8%" y="-10%" width="116%" height="124%">
-      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e293b" flood-opacity="0.10"/>
+    <filter id="softShadowOuter" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
     </filter>
   </defs>
+  <rect width="1200" height="750" fill="url(#bgGradOuter)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowOuter)"/>
+  <circle cx="80" cy="68" r="1.3" fill="#dcdce2"/><circle cx="80" cy="106" r="1.3" fill="#dcdce2"/><circle cx="80" cy="144" r="1.3" fill="#dcdce2"/><circle cx="80" cy="182" r="1.3" fill="#dcdce2"/><circle cx="80" cy="220" r="1.3" fill="#dcdce2"/><circle cx="80" cy="258" r="1.3" fill="#dcdce2"/><circle cx="80" cy="296" r="1.3" fill="#dcdce2"/><circle cx="80" cy="334" r="1.3" fill="#dcdce2"/><circle cx="80" cy="372" r="1.3" fill="#dcdce2"/><circle cx="80" cy="410" r="1.3" fill="#dcdce2"/><circle cx="80" cy="448" r="1.3" fill="#dcdce2"/><circle cx="80" cy="486" r="1.3" fill="#dcdce2"/><circle cx="80" cy="524" r="1.3" fill="#dcdce2"/><circle cx="80" cy="562" r="1.3" fill="#dcdce2"/><circle cx="80" cy="600" r="1.3" fill="#dcdce2"/><circle cx="80" cy="638" r="1.3" fill="#dcdce2"/><circle cx="80" cy="676" r="1.3" fill="#dcdce2"/><circle cx="118" cy="68" r="1.3" fill="#dcdce2"/><circle cx="118" cy="106" r="1.3" fill="#dcdce2"/><circle cx="118" cy="144" r="1.3" fill="#dcdce2"/><circle cx="118" cy="182" r="1.3" fill="#dcdce2"/><circle cx="118" cy="220" r="1.3" fill="#dcdce2"/><circle cx="118" cy="258" r="1.3" fill="#dcdce2"/><circle cx="118" cy="296" r="1.3" fill="#dcdce2"/><circle cx="118" cy="334" r="1.3" fill="#dcdce2"/><circle cx="118" cy="372" r="1.3" fill="#dcdce2"/><circle cx="118" cy="410" r="1.3" fill="#dcdce2"/><circle cx="118" cy="448" r="1.3" fill="#dcdce2"/><circle cx="118" cy="486" r="1.3" fill="#dcdce2"/><circle cx="118" cy="524" r="1.3" fill="#dcdce2"/><circle cx="118" cy="562" r="1.3" fill="#dcdce2"/><circle cx="118" cy="600" r="1.3" fill="#dcdce2"/><circle cx="118" cy="638" r="1.3" fill="#dcdce2"/><circle cx="118" cy="676" r="1.3" fill="#dcdce2"/><circle cx="156" cy="68" r="1.3" fill="#dcdce2"/><circle cx="156" cy="106" r="1.3" fill="#dcdce2"/><circle cx="156" cy="144" r="1.3" fill="#dcdce2"/><circle cx="156" cy="182" r="1.3" fill="#dcdce2"/><circle cx="156" cy="220" r="1.3" fill="#dcdce2"/><circle cx="156" cy="258" r="1.3" fill="#dcdce2"/><circle cx="156" cy="296" r="1.3" fill="#dcdce2"/><circle cx="156" cy="334" r="1.3" fill="#dcdce2"/><circle cx="156" cy="372" r="1.3" fill="#dcdce2"/><circle cx="156" cy="410" r="1.3" fill="#dcdce2"/><circle cx="156" cy="448" r="1.3" fill="#dcdce2"/><circle cx="156" cy="486" r="1.3" fill="#dcdce2"/><circle cx="156" cy="524" r="1.3" fill="#dcdce2"/><circle cx="156" cy="562" r="1.3" fill="#dcdce2"/><circle cx="156" cy="600" r="1.3" fill="#dcdce2"/><circle cx="156" cy="638" r="1.3" fill="#dcdce2"/><circle cx="156" cy="676" r="1.3" fill="#dcdce2"/><circle cx="194" cy="68" r="1.3" fill="#dcdce2"/><circle cx="194" cy="106" r="1.3" fill="#dcdce2"/><circle cx="194" cy="144" r="1.3" fill="#dcdce2"/><circle cx="194" cy="182" r="1.3" fill="#dcdce2"/><circle cx="194" cy="220" r="1.3" fill="#dcdce2"/><circle cx="194" cy="258" r="1.3" fill="#dcdce2"/><circle cx="194" cy="296" r="1.3" fill="#dcdce2"/><circle cx="194" cy="334" r="1.3" fill="#dcdce2"/><circle cx="194" cy="372" r="1.3" fill="#dcdce2"/><circle cx="194" cy="410" r="1.3" fill="#dcdce2"/><circle cx="194" cy="448" r="1.3" fill="#dcdce2"/><circle cx="194" cy="486" r="1.3" fill="#dcdce2"/><circle cx="194" cy="524" r="1.3" fill="#dcdce2"/><circle cx="194" cy="562" r="1.3" fill="#dcdce2"/><circle cx="194" cy="600" r="1.3" fill="#dcdce2"/><circle cx="194" cy="638" r="1.3" fill="#dcdce2"/><circle cx="194" cy="676" r="1.3" fill="#dcdce2"/><circle cx="232" cy="68" r="1.3" fill="#dcdce2"/><circle cx="232" cy="106" r="1.3" fill="#dcdce2"/><circle cx="232" cy="144" r="1.3" fill="#dcdce2"/><circle cx="232" cy="182" r="1.3" fill="#dcdce2"/><circle cx="232" cy="220" r="1.3" fill="#dcdce2"/><circle cx="232" cy="258" r="1.3" fill="#dcdce2"/><circle cx="232" cy="296" r="1.3" fill="#dcdce2"/><circle cx="232" cy="334" r="1.3" fill="#dcdce2"/><circle cx="232" cy="372" r="1.3" fill="#dcdce2"/><circle cx="232" cy="410" r="1.3" fill="#dcdce2"/><circle cx="232" cy="448" r="1.3" fill="#dcdce2"/><circle cx="232" cy="486" r="1.3" fill="#dcdce2"/><circle cx="232" cy="524" r="1.3" fill="#dcdce2"/><circle cx="232" cy="562" r="1.3" fill="#dcdce2"/><circle cx="232" cy="600" r="1.3" fill="#dcdce2"/><circle cx="232" cy="638" r="1.3" fill="#dcdce2"/><circle cx="232" cy="676" r="1.3" fill="#dcdce2"/><circle cx="270" cy="68" r="1.3" fill="#dcdce2"/><circle cx="270" cy="106" r="1.3" fill="#dcdce2"/><circle cx="270" cy="144" r="1.3" fill="#dcdce2"/><circle cx="270" cy="182" r="1.3" fill="#dcdce2"/><circle cx="270" cy="220" r="1.3" fill="#dcdce2"/><circle cx="270" cy="258" r="1.3" fill="#dcdce2"/><circle cx="270" cy="296" r="1.3" fill="#dcdce2"/><circle cx="270" cy="334" r="1.3" fill="#dcdce2"/><circle cx="270" cy="372" r="1.3" fill="#dcdce2"/><circle cx="270" cy="410" r="1.3" fill="#dcdce2"/><circle cx="270" cy="448" r="1.3" fill="#dcdce2"/><circle cx="270" cy="486" r="1.3" fill="#dcdce2"/><circle cx="270" cy="524" r="1.3" fill="#dcdce2"/><circle cx="270" cy="562" r="1.3" fill="#dcdce2"/><circle cx="270" cy="600" r="1.3" fill="#dcdce2"/><circle cx="270" cy="638" r="1.3" fill="#dcdce2"/><circle cx="270" cy="676" r="1.3" fill="#dcdce2"/><circle cx="308" cy="68" r="1.3" fill="#dcdce2"/><circle cx="308" cy="106" r="1.3" fill="#dcdce2"/><circle cx="308" cy="144" r="1.3" fill="#dcdce2"/><circle cx="308" cy="182" r="1.3" fill="#dcdce2"/><circle cx="308" cy="220" r="1.3" fill="#dcdce2"/><circle cx="308" cy="258" r="1.3" fill="#dcdce2"/><circle cx="308" cy="296" r="1.3" fill="#dcdce2"/><circle cx="308" cy="334" r="1.3" fill="#dcdce2"/><circle cx="308" cy="372" r="1.3" fill="#dcdce2"/><circle cx="308" cy="410" r="1.3" fill="#dcdce2"/><circle cx="308" cy="448" r="1.3" fill="#dcdce2"/><circle cx="308" cy="486" r="1.3" fill="#dcdce2"/><circle cx="308" cy="524" r="1.3" fill="#dcdce2"/><circle cx="308" cy="562" r="1.3" fill="#dcdce2"/><circle cx="308" cy="600" r="1.3" fill="#dcdce2"/><circle cx="308" cy="638" r="1.3" fill="#dcdce2"/><circle cx="308" cy="676" r="1.3" fill="#dcdce2"/><circle cx="346" cy="68" r="1.3" fill="#dcdce2"/><circle cx="346" cy="106" r="1.3" fill="#dcdce2"/><circle cx="346" cy="144" r="1.3" fill="#dcdce2"/><circle cx="346" cy="182" r="1.3" fill="#dcdce2"/><circle cx="346" cy="220" r="1.3" fill="#dcdce2"/><circle cx="346" cy="258" r="1.3" fill="#dcdce2"/><circle cx="346" cy="296" r="1.3" fill="#dcdce2"/><circle cx="346" cy="334" r="1.3" fill="#dcdce2"/><circle cx="346" cy="372" r="1.3" fill="#dcdce2"/><circle cx="346" cy="410" r="1.3" fill="#dcdce2"/><circle cx="346" cy="448" r="1.3" fill="#dcdce2"/><circle cx="346" cy="486" r="1.3" fill="#dcdce2"/><circle cx="346" cy="524" r="1.3" fill="#dcdce2"/><circle cx="346" cy="562" r="1.3" fill="#dcdce2"/><circle cx="346" cy="600" r="1.3" fill="#dcdce2"/><circle cx="346" cy="638" r="1.3" fill="#dcdce2"/><circle cx="346" cy="676" r="1.3" fill="#dcdce2"/><circle cx="384" cy="68" r="1.3" fill="#dcdce2"/><circle cx="384" cy="106" r="1.3" fill="#dcdce2"/><circle cx="384" cy="144" r="1.3" fill="#dcdce2"/><circle cx="384" cy="182" r="1.3" fill="#dcdce2"/><circle cx="384" cy="220" r="1.3" fill="#dcdce2"/><circle cx="384" cy="258" r="1.3" fill="#dcdce2"/><circle cx="384" cy="296" r="1.3" fill="#dcdce2"/><circle cx="384" cy="334" r="1.3" fill="#dcdce2"/><circle cx="384" cy="372" r="1.3" fill="#dcdce2"/><circle cx="384" cy="410" r="1.3" fill="#dcdce2"/><circle cx="384" cy="448" r="1.3" fill="#dcdce2"/><circle cx="384" cy="486" r="1.3" fill="#dcdce2"/><circle cx="384" cy="524" r="1.3" fill="#dcdce2"/><circle cx="384" cy="562" r="1.3" fill="#dcdce2"/><circle cx="384" cy="600" r="1.3" fill="#dcdce2"/><circle cx="384" cy="638" r="1.3" fill="#dcdce2"/><circle cx="384" cy="676" r="1.3" fill="#dcdce2"/><circle cx="422" cy="68" r="1.3" fill="#dcdce2"/><circle cx="422" cy="106" r="1.3" fill="#dcdce2"/><circle cx="422" cy="144" r="1.3" fill="#dcdce2"/><circle cx="422" cy="182" r="1.3" fill="#dcdce2"/><circle cx="422" cy="220" r="1.3" fill="#dcdce2"/><circle cx="422" cy="258" r="1.3" fill="#dcdce2"/><circle cx="422" cy="296" r="1.3" fill="#dcdce2"/><circle cx="422" cy="334" r="1.3" fill="#dcdce2"/><circle cx="422" cy="372" r="1.3" fill="#dcdce2"/><circle cx="422" cy="410" r="1.3" fill="#dcdce2"/><circle cx="422" cy="448" r="1.3" fill="#dcdce2"/><circle cx="422" cy="486" r="1.3" fill="#dcdce2"/><circle cx="422" cy="524" r="1.3" fill="#dcdce2"/><circle cx="422" cy="562" r="1.3" fill="#dcdce2"/><circle cx="422" cy="600" r="1.3" fill="#dcdce2"/><circle cx="422" cy="638" r="1.3" fill="#dcdce2"/><circle cx="422" cy="676" r="1.3" fill="#dcdce2"/><circle cx="460" cy="68" r="1.3" fill="#dcdce2"/><circle cx="460" cy="106" r="1.3" fill="#dcdce2"/><circle cx="460" cy="144" r="1.3" fill="#dcdce2"/><circle cx="460" cy="182" r="1.3" fill="#dcdce2"/><circle cx="460" cy="220" r="1.3" fill="#dcdce2"/><circle cx="460" cy="258" r="1.3" fill="#dcdce2"/><circle cx="460" cy="296" r="1.3" fill="#dcdce2"/><circle cx="460" cy="334" r="1.3" fill="#dcdce2"/><circle cx="460" cy="372" r="1.3" fill="#dcdce2"/><circle cx="460" cy="410" r="1.3" fill="#dcdce2"/><circle cx="460" cy="448" r="1.3" fill="#dcdce2"/><circle cx="460" cy="486" r="1.3" fill="#dcdce2"/><circle cx="460" cy="524" r="1.3" fill="#dcdce2"/><circle cx="460" cy="562" r="1.3" fill="#dcdce2"/><circle cx="460" cy="600" r="1.3" fill="#dcdce2"/><circle cx="460" cy="638" r="1.3" fill="#dcdce2"/><circle cx="460" cy="676" r="1.3" fill="#dcdce2"/><circle cx="498" cy="68" r="1.3" fill="#dcdce2"/><circle cx="498" cy="106" r="1.3" fill="#dcdce2"/><circle cx="498" cy="144" r="1.3" fill="#dcdce2"/><circle cx="498" cy="182" r="1.3" fill="#dcdce2"/><circle cx="498" cy="220" r="1.3" fill="#dcdce2"/><circle cx="498" cy="258" r="1.3" fill="#dcdce2"/><circle cx="498" cy="296" r="1.3" fill="#dcdce2"/><circle cx="498" cy="334" r="1.3" fill="#dcdce2"/><circle cx="498" cy="372" r="1.3" fill="#dcdce2"/><circle cx="498" cy="410" r="1.3" fill="#dcdce2"/><circle cx="498" cy="448" r="1.3" fill="#dcdce2"/><circle cx="498" cy="486" r="1.3" fill="#dcdce2"/><circle cx="498" cy="524" r="1.3" fill="#dcdce2"/><circle cx="498" cy="562" r="1.3" fill="#dcdce2"/><circle cx="498" cy="600" r="1.3" fill="#dcdce2"/><circle cx="498" cy="638" r="1.3" fill="#dcdce2"/><circle cx="498" cy="676" r="1.3" fill="#dcdce2"/><circle cx="536" cy="68" r="1.3" fill="#dcdce2"/><circle cx="536" cy="106" r="1.3" fill="#dcdce2"/><circle cx="536" cy="144" r="1.3" fill="#dcdce2"/><circle cx="536" cy="182" r="1.3" fill="#dcdce2"/><circle cx="536" cy="220" r="1.3" fill="#dcdce2"/><circle cx="536" cy="258" r="1.3" fill="#dcdce2"/><circle cx="536" cy="296" r="1.3" fill="#dcdce2"/><circle cx="536" cy="334" r="1.3" fill="#dcdce2"/><circle cx="536" cy="372" r="1.3" fill="#dcdce2"/><circle cx="536" cy="410" r="1.3" fill="#dcdce2"/><circle cx="536" cy="448" r="1.3" fill="#dcdce2"/><circle cx="536" cy="486" r="1.3" fill="#dcdce2"/><circle cx="536" cy="524" r="1.3" fill="#dcdce2"/><circle cx="536" cy="562" r="1.3" fill="#dcdce2"/><circle cx="536" cy="600" r="1.3" fill="#dcdce2"/><circle cx="536" cy="638" r="1.3" fill="#dcdce2"/><circle cx="536" cy="676" r="1.3" fill="#dcdce2"/><circle cx="574" cy="68" r="1.3" fill="#dcdce2"/><circle cx="574" cy="106" r="1.3" fill="#dcdce2"/><circle cx="574" cy="144" r="1.3" fill="#dcdce2"/><circle cx="574" cy="182" r="1.3" fill="#dcdce2"/><circle cx="574" cy="220" r="1.3" fill="#dcdce2"/><circle cx="574" cy="258" r="1.3" fill="#dcdce2"/><circle cx="574" cy="296" r="1.3" fill="#dcdce2"/><circle cx="574" cy="334" r="1.3" fill="#dcdce2"/><circle cx="574" cy="372" r="1.3" fill="#dcdce2"/><circle cx="574" cy="410" r="1.3" fill="#dcdce2"/><circle cx="574" cy="448" r="1.3" fill="#dcdce2"/><circle cx="574" cy="486" r="1.3" fill="#dcdce2"/><circle cx="574" cy="524" r="1.3" fill="#dcdce2"/><circle cx="574" cy="562" r="1.3" fill="#dcdce2"/><circle cx="574" cy="600" r="1.3" fill="#dcdce2"/><circle cx="574" cy="638" r="1.3" fill="#dcdce2"/><circle cx="574" cy="676" r="1.3" fill="#dcdce2"/><circle cx="612" cy="68" r="1.3" fill="#dcdce2"/><circle cx="612" cy="106" r="1.3" fill="#dcdce2"/><circle cx="612" cy="144" r="1.3" fill="#dcdce2"/><circle cx="612" cy="182" r="1.3" fill="#dcdce2"/><circle cx="612" cy="220" r="1.3" fill="#dcdce2"/><circle cx="612" cy="258" r="1.3" fill="#dcdce2"/><circle cx="612" cy="296" r="1.3" fill="#dcdce2"/><circle cx="612" cy="334" r="1.3" fill="#dcdce2"/><circle cx="612" cy="372" r="1.3" fill="#dcdce2"/><circle cx="612" cy="410" r="1.3" fill="#dcdce2"/><circle cx="612" cy="448" r="1.3" fill="#dcdce2"/><circle cx="612" cy="486" r="1.3" fill="#dcdce2"/><circle cx="612" cy="524" r="1.3" fill="#dcdce2"/><circle cx="612" cy="562" r="1.3" fill="#dcdce2"/><circle cx="612" cy="600" r="1.3" fill="#dcdce2"/><circle cx="612" cy="638" r="1.3" fill="#dcdce2"/><circle cx="612" cy="676" r="1.3" fill="#dcdce2"/><circle cx="650" cy="68" r="1.3" fill="#dcdce2"/><circle cx="650" cy="106" r="1.3" fill="#dcdce2"/><circle cx="650" cy="144" r="1.3" fill="#dcdce2"/><circle cx="650" cy="182" r="1.3" fill="#dcdce2"/><circle cx="650" cy="220" r="1.3" fill="#dcdce2"/><circle cx="650" cy="258" r="1.3" fill="#dcdce2"/><circle cx="650" cy="296" r="1.3" fill="#dcdce2"/><circle cx="650" cy="334" r="1.3" fill="#dcdce2"/><circle cx="650" cy="372" r="1.3" fill="#dcdce2"/><circle cx="650" cy="410" r="1.3" fill="#dcdce2"/><circle cx="650" cy="448" r="1.3" fill="#dcdce2"/><circle cx="650" cy="486" r="1.3" fill="#dcdce2"/><circle cx="650" cy="524" r="1.3" fill="#dcdce2"/><circle cx="650" cy="562" r="1.3" fill="#dcdce2"/><circle cx="650" cy="600" r="1.3" fill="#dcdce2"/><circle cx="650" cy="638" r="1.3" fill="#dcdce2"/><circle cx="650" cy="676" r="1.3" fill="#dcdce2"/><circle cx="688" cy="68" r="1.3" fill="#dcdce2"/><circle cx="688" cy="106" r="1.3" fill="#dcdce2"/><circle cx="688" cy="144" r="1.3" fill="#dcdce2"/><circle cx="688" cy="182" r="1.3" fill="#dcdce2"/><circle cx="688" cy="220" r="1.3" fill="#dcdce2"/><circle cx="688" cy="258" r="1.3" fill="#dcdce2"/><circle cx="688" cy="296" r="1.3" fill="#dcdce2"/><circle cx="688" cy="334" r="1.3" fill="#dcdce2"/><circle cx="688" cy="372" r="1.3" fill="#dcdce2"/><circle cx="688" cy="410" r="1.3" fill="#dcdce2"/><circle cx="688" cy="448" r="1.3" fill="#dcdce2"/><circle cx="688" cy="486" r="1.3" fill="#dcdce2"/><circle cx="688" cy="524" r="1.3" fill="#dcdce2"/><circle cx="688" cy="562" r="1.3" fill="#dcdce2"/><circle cx="688" cy="600" r="1.3" fill="#dcdce2"/><circle cx="688" cy="638" r="1.3" fill="#dcdce2"/><circle cx="688" cy="676" r="1.3" fill="#dcdce2"/><circle cx="726" cy="68" r="1.3" fill="#dcdce2"/><circle cx="726" cy="106" r="1.3" fill="#dcdce2"/><circle cx="726" cy="144" r="1.3" fill="#dcdce2"/><circle cx="726" cy="182" r="1.3" fill="#dcdce2"/><circle cx="726" cy="220" r="1.3" fill="#dcdce2"/><circle cx="726" cy="258" r="1.3" fill="#dcdce2"/><circle cx="726" cy="296" r="1.3" fill="#dcdce2"/><circle cx="726" cy="334" r="1.3" fill="#dcdce2"/><circle cx="726" cy="372" r="1.3" fill="#dcdce2"/><circle cx="726" cy="410" r="1.3" fill="#dcdce2"/><circle cx="726" cy="448" r="1.3" fill="#dcdce2"/><circle cx="726" cy="486" r="1.3" fill="#dcdce2"/><circle cx="726" cy="524" r="1.3" fill="#dcdce2"/><circle cx="726" cy="562" r="1.3" fill="#dcdce2"/><circle cx="726" cy="600" r="1.3" fill="#dcdce2"/><circle cx="726" cy="638" r="1.3" fill="#dcdce2"/><circle cx="726" cy="676" r="1.3" fill="#dcdce2"/><circle cx="764" cy="68" r="1.3" fill="#dcdce2"/><circle cx="764" cy="106" r="1.3" fill="#dcdce2"/><circle cx="764" cy="144" r="1.3" fill="#dcdce2"/><circle cx="764" cy="182" r="1.3" fill="#dcdce2"/><circle cx="764" cy="220" r="1.3" fill="#dcdce2"/><circle cx="764" cy="258" r="1.3" fill="#dcdce2"/><circle cx="764" cy="296" r="1.3" fill="#dcdce2"/><circle cx="764" cy="334" r="1.3" fill="#dcdce2"/><circle cx="764" cy="372" r="1.3" fill="#dcdce2"/><circle cx="764" cy="410" r="1.3" fill="#dcdce2"/><circle cx="764" cy="448" r="1.3" fill="#dcdce2"/><circle cx="764" cy="486" r="1.3" fill="#dcdce2"/><circle cx="764" cy="524" r="1.3" fill="#dcdce2"/><circle cx="764" cy="562" r="1.3" fill="#dcdce2"/><circle cx="764" cy="600" r="1.3" fill="#dcdce2"/><circle cx="764" cy="638" r="1.3" fill="#dcdce2"/><circle cx="764" cy="676" r="1.3" fill="#dcdce2"/><circle cx="802" cy="68" r="1.3" fill="#dcdce2"/><circle cx="802" cy="106" r="1.3" fill="#dcdce2"/><circle cx="802" cy="144" r="1.3" fill="#dcdce2"/><circle cx="802" cy="182" r="1.3" fill="#dcdce2"/><circle cx="802" cy="220" r="1.3" fill="#dcdce2"/><circle cx="802" cy="258" r="1.3" fill="#dcdce2"/><circle cx="802" cy="296" r="1.3" fill="#dcdce2"/><circle cx="802" cy="334" r="1.3" fill="#dcdce2"/><circle cx="802" cy="372" r="1.3" fill="#dcdce2"/><circle cx="802" cy="410" r="1.3" fill="#dcdce2"/><circle cx="802" cy="448" r="1.3" fill="#dcdce2"/><circle cx="802" cy="486" r="1.3" fill="#dcdce2"/><circle cx="802" cy="524" r="1.3" fill="#dcdce2"/><circle cx="802" cy="562" r="1.3" fill="#dcdce2"/><circle cx="802" cy="600" r="1.3" fill="#dcdce2"/><circle cx="802" cy="638" r="1.3" fill="#dcdce2"/><circle cx="802" cy="676" r="1.3" fill="#dcdce2"/><circle cx="840" cy="68" r="1.3" fill="#dcdce2"/><circle cx="840" cy="106" r="1.3" fill="#dcdce2"/><circle cx="840" cy="144" r="1.3" fill="#dcdce2"/><circle cx="840" cy="182" r="1.3" fill="#dcdce2"/><circle cx="840" cy="220" r="1.3" fill="#dcdce2"/><circle cx="840" cy="258" r="1.3" fill="#dcdce2"/><circle cx="840" cy="296" r="1.3" fill="#dcdce2"/><circle cx="840" cy="334" r="1.3" fill="#dcdce2"/><circle cx="840" cy="372" r="1.3" fill="#dcdce2"/><circle cx="840" cy="410" r="1.3" fill="#dcdce2"/><circle cx="840" cy="448" r="1.3" fill="#dcdce2"/><circle cx="840" cy="486" r="1.3" fill="#dcdce2"/><circle cx="840" cy="524" r="1.3" fill="#dcdce2"/><circle cx="840" cy="562" r="1.3" fill="#dcdce2"/><circle cx="840" cy="600" r="1.3" fill="#dcdce2"/><circle cx="840" cy="638" r="1.3" fill="#dcdce2"/><circle cx="840" cy="676" r="1.3" fill="#dcdce2"/><circle cx="878" cy="68" r="1.3" fill="#dcdce2"/><circle cx="878" cy="106" r="1.3" fill="#dcdce2"/><circle cx="878" cy="144" r="1.3" fill="#dcdce2"/><circle cx="878" cy="182" r="1.3" fill="#dcdce2"/><circle cx="878" cy="220" r="1.3" fill="#dcdce2"/><circle cx="878" cy="258" r="1.3" fill="#dcdce2"/><circle cx="878" cy="296" r="1.3" fill="#dcdce2"/><circle cx="878" cy="334" r="1.3" fill="#dcdce2"/><circle cx="878" cy="372" r="1.3" fill="#dcdce2"/><circle cx="878" cy="410" r="1.3" fill="#dcdce2"/><circle cx="878" cy="448" r="1.3" fill="#dcdce2"/><circle cx="878" cy="486" r="1.3" fill="#dcdce2"/><circle cx="878" cy="524" r="1.3" fill="#dcdce2"/><circle cx="878" cy="562" r="1.3" fill="#dcdce2"/><circle cx="878" cy="600" r="1.3" fill="#dcdce2"/><circle cx="878" cy="638" r="1.3" fill="#dcdce2"/><circle cx="878" cy="676" r="1.3" fill="#dcdce2"/><circle cx="916" cy="68" r="1.3" fill="#dcdce2"/><circle cx="916" cy="106" r="1.3" fill="#dcdce2"/><circle cx="916" cy="144" r="1.3" fill="#dcdce2"/><circle cx="916" cy="182" r="1.3" fill="#dcdce2"/><circle cx="916" cy="220" r="1.3" fill="#dcdce2"/><circle cx="916" cy="258" r="1.3" fill="#dcdce2"/><circle cx="916" cy="296" r="1.3" fill="#dcdce2"/><circle cx="916" cy="334" r="1.3" fill="#dcdce2"/><circle cx="916" cy="372" r="1.3" fill="#dcdce2"/><circle cx="916" cy="410" r="1.3" fill="#dcdce2"/><circle cx="916" cy="448" r="1.3" fill="#dcdce2"/><circle cx="916" cy="486" r="1.3" fill="#dcdce2"/><circle cx="916" cy="524" r="1.3" fill="#dcdce2"/><circle cx="916" cy="562" r="1.3" fill="#dcdce2"/><circle cx="916" cy="600" r="1.3" fill="#dcdce2"/><circle cx="916" cy="638" r="1.3" fill="#dcdce2"/><circle cx="916" cy="676" r="1.3" fill="#dcdce2"/><circle cx="954" cy="68" r="1.3" fill="#dcdce2"/><circle cx="954" cy="106" r="1.3" fill="#dcdce2"/><circle cx="954" cy="144" r="1.3" fill="#dcdce2"/><circle cx="954" cy="182" r="1.3" fill="#dcdce2"/><circle cx="954" cy="220" r="1.3" fill="#dcdce2"/><circle cx="954" cy="258" r="1.3" fill="#dcdce2"/><circle cx="954" cy="296" r="1.3" fill="#dcdce2"/><circle cx="954" cy="334" r="1.3" fill="#dcdce2"/><circle cx="954" cy="372" r="1.3" fill="#dcdce2"/><circle cx="954" cy="410" r="1.3" fill="#dcdce2"/><circle cx="954" cy="448" r="1.3" fill="#dcdce2"/><circle cx="954" cy="486" r="1.3" fill="#dcdce2"/><circle cx="954" cy="524" r="1.3" fill="#dcdce2"/><circle cx="954" cy="562" r="1.3" fill="#dcdce2"/><circle cx="954" cy="600" r="1.3" fill="#dcdce2"/><circle cx="954" cy="638" r="1.3" fill="#dcdce2"/><circle cx="954" cy="676" r="1.3" fill="#dcdce2"/><circle cx="992" cy="68" r="1.3" fill="#dcdce2"/><circle cx="992" cy="106" r="1.3" fill="#dcdce2"/><circle cx="992" cy="144" r="1.3" fill="#dcdce2"/><circle cx="992" cy="182" r="1.3" fill="#dcdce2"/><circle cx="992" cy="220" r="1.3" fill="#dcdce2"/><circle cx="992" cy="258" r="1.3" fill="#dcdce2"/><circle cx="992" cy="296" r="1.3" fill="#dcdce2"/><circle cx="992" cy="334" r="1.3" fill="#dcdce2"/><circle cx="992" cy="372" r="1.3" fill="#dcdce2"/><circle cx="992" cy="410" r="1.3" fill="#dcdce2"/><circle cx="992" cy="448" r="1.3" fill="#dcdce2"/><circle cx="992" cy="486" r="1.3" fill="#dcdce2"/><circle cx="992" cy="524" r="1.3" fill="#dcdce2"/><circle cx="992" cy="562" r="1.3" fill="#dcdce2"/><circle cx="992" cy="600" r="1.3" fill="#dcdce2"/><circle cx="992" cy="638" r="1.3" fill="#dcdce2"/><circle cx="992" cy="676" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="68" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="106" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="144" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="182" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="220" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="258" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="296" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="334" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="372" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="410" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="448" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="486" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="524" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="562" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="600" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="638" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="676" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="68" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="106" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="144" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="182" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="220" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="258" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="296" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="334" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="372" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="410" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="448" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="486" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="524" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="562" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="600" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="638" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="676" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="68" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="106" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="144" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="182" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="220" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="258" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="296" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="334" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="372" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="410" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="448" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="486" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="524" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="562" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="600" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="638" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="676" r="1.3" fill="#dcdce2"/>
+  <g transform="translate(48, 36)">
+    
+    <defs>
+      <radialGradient id="glassSphere" cx="32%" cy="30%" r="68%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="28%" stop-color="#e0f2fe"/>
+        <stop offset="72%" stop-color="#38bdf8"/>
+        <stop offset="100%" stop-color="#0284c7"/>
+      </radialGradient>
+      <radialGradient id="ceramicSphere" cx="35%" cy="32%" r="68%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="45%" stop-color="#f1f5f9"/>
+        <stop offset="82%" stop-color="#cbd5e1"/>
+        <stop offset="100%" stop-color="#64748b"/>
+      </radialGradient>
+      <linearGradient id="goldTop" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#fef08a"/><stop offset="100%" stop-color="#f59e0b"/>
+      </linearGradient>
+      <linearGradient id="goldLeft" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#d97706"/>
+      </linearGradient>
+      <linearGradient id="goldRight" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#d97706"/><stop offset="100%" stop-color="#92400e"/>
+      </linearGradient>
+    </defs>
 
-  <rect width="1200" height="750" fill="url(#bgCanvas)"/>
+    <!-- LEFT CARD: Clean Apple White Studio 3D Ray-Traced Primitives (Glass Sphere, Gold Menger Cube, Ceramic Sphere) -->
+    <rect x="54" y="54" width="492" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <!-- Studio Horizon & Isometric Floor Grid -->
+    <ellipse cx="300" cy="442" rx="210" ry="44" fill="#f1f5f9"/>
+    <ellipse cx="168" cy="432" rx="64" ry="16" fill="#bae6fd" opacity="0.75"/>
+    <ellipse cx="300" cy="448" rx="74" ry="18" fill="#cbd5e1" opacity="0.65"/>
+    <ellipse cx="430" cy="432" rx="62" ry="16" fill="#cbd5e1" opacity="0.65"/>
 
-  <!-- Outer Window -->
-  <g filter="url(#winShadow)">
-    <rect x="44" y="36" width="1112" height="678" rx="28" fill="#ffffff" stroke="#d5dde7" stroke-width="1.8"/>
+    <!-- 1. Left: Dielectric Refractive Glass Sphere with Spectral Caustic Arc -->
+    <circle cx="168" cy="348" r="68" fill="url(#glassSphere)" stroke="#0284c7" stroke-width="2.5"/>
+    <path d="M 122 318 A 52 52 0 0 1 195 294" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 128 382 A 54 54 0 0 0 212 375" fill="none" stroke="#fef08a" stroke-width="3.5" stroke-linecap="round" opacity="0.85"/>
+    <circle cx="146" cy="322" r="9" fill="#ffffff" opacity="0.85"/>
+
+    <!-- 2. Center: Isometric Brushed-Gold Hollow Menger Sponge Cube -->
+    <g transform="translate(300, 315)">
+      <!-- Top Face -->
+      <polygon points="0,-96 86,-48 0,0 -86,-48" fill="url(#goldTop)" stroke="#b45309" stroke-width="2.5" stroke-linejoin="round"/>
+      <!-- Top Aperture Cutout -->
+      <polygon points="0,-64 28,-48 0,-32 -28,-48" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+      <!-- Left Face -->
+      <polygon points="-86,-48 0,0 0,98 -86,50" fill="url(#goldLeft)" stroke="#b45309" stroke-width="2.5" stroke-linejoin="round"/>
+      <!-- Left Aperture Cutout (Glowing Interior Bounce) -->
+      <polygon points="-58,-12 -24,7 -24,46 -58,27" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+      <!-- Right Face -->
+      <polygon points="0,0 86,-48 86,50 0,98" fill="url(#goldRight)" stroke="#92400e" stroke-width="2.5" stroke-linejoin="round"/>
+      <!-- Right Aperture Cutout (Glowing Interior Bounce) -->
+      <polygon points="24,7 58,-12 58,27 24,46" fill="#fde68a" stroke="#92400e" stroke-width="2"/>
+    </g>
+
+    <!-- 3. Right: Smooth Denoised Alabaster/Ceramic Sphere (Zero Noise!) -->
+    <circle cx="430" cy="348" r="64" fill="url(#ceramicSphere)" stroke="#94a3b8" stroke-width="2.5"/>
+    <circle cx="408" cy="324" r="12" fill="#ffffff" opacity="0.7"/>
+
+    <rect x="195" y="546" width="210" height="36" rx="18" fill="#eaf2ff"/>
+    <text x="300" y="569" text-anchor="middle" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#0071e3">380–780 nm Spectral</text>
+
+    <!-- RIGHT CARD: Cauchy Wavelength Dispersion & SAH BVH Ray-Optics Diagram -->
+    <rect x="578" y="54" width="472" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <!-- SAH BVH Bounding Volume Hierarchy Dashed Boxes -->
+    <rect x="612" y="102" width="404" height="412" rx="18" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 6"/>
+    <rect x="708" y="198" width="164" height="220" rx="16" fill="#f8fafc" stroke="#93c5fd" stroke-width="2" stroke-dasharray="6 5"/>
+
+    <!-- Incident Hero Ray from Emitter -->
+    <line x1="646" y1="308" x2="736" y2="308" stroke="#f59e0b" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="646" cy="308" r="14" fill="#f59e0b" stroke="#ffffff" stroke-width="3"/>
+
+    <!-- Dielectric Prism / Sphere Lens -->
+    <circle cx="790" cy="308" r="64" fill="#eaf2ff" stroke="#0071e3" stroke-width="4"/>
+
+    <!-- 5 Dispersed Spectral Wavelength Rays (Cauchy n(λ)) -->
+    <line x1="736" y1="308" x2="848" y2="272" stroke="#ff3b30" stroke-width="3.5"/>
+    <line x1="736" y1="308" x2="852" y2="290" stroke="#f59e0b" stroke-width="3.5"/>
+    <line x1="736" y1="308" x2="854" y2="308" stroke="#10b981" stroke-width="3.5"/>
+    <line x1="736" y1="308" x2="852" y2="326" stroke="#0071e3" stroke-width="3.5"/>
+    <line x1="736" y1="308" x2="848" y2="344" stroke="#5856d6" stroke-width="3.5"/>
+
+    <line x1="848" y1="272" x2="982" y2="168" stroke="#ff3b30" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="852" y1="290" x2="982" y2="238" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="854" y1="308" x2="982" y2="308" stroke="#10b981" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="852" y1="326" x2="982" y2="378" stroke="#0071e3" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="848" y1="344" x2="982" y2="448" stroke="#5856d6" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Sensor Plane & Hit Nodes -->
+    <line x1="982" y1="138" x2="982" y2="478" stroke="#1d1d1f" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="982" cy="168" r="9" fill="#ffffff" stroke="#ff3b30" stroke-width="4"/>
+    <circle cx="982" cy="238" r="9" fill="#ffffff" stroke="#f59e0b" stroke-width="4"/>
+    <circle cx="982" cy="308" r="9" fill="#ffffff" stroke="#10b981" stroke-width="4"/>
+    <circle cx="982" cy="378" r="9" fill="#ffffff" stroke="#0071e3" stroke-width="4"/>
+    <circle cx="982" cy="448" r="9" fill="#ffffff" stroke="#5856d6" stroke-width="4"/>
+
+    <rect x="709" y="546" width="210" height="36" rx="18" fill="#e6f7f5"/>
+    <text x="814" y="569" text-anchor="middle" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#0d9488">SAH BVH · GGX VNDF</text>
+    
   </g>
-  <path d="M72 37h1056a27 27 0 0 1 27 27v38H45V64a27 27 0 0 1 27-27Z" fill="#f8fafc"/>
-  <line x1="45" y1="102" x2="1155" y2="102" stroke="#e2e8f0" stroke-width="1.5"/>
-  <circle cx="80" cy="70" r="6.5" fill="#f47870"/>
-  <circle cx="103" cy="70" r="6.5" fill="#efb64e"/>
-  <circle cx="126" cy="70" r="6.5" fill="#53bd78"/>
-  <rect x="330" y="53" width="540" height="34" rx="9" fill="#ffffff" stroke="#dce4ee" stroke-width="1.4"/>
-  <text x="600" y="75" text-anchor="middle" class="t" font-size="15.5" font-weight="650" fill="#334155">AetherCoreEngine v1.0.0 · Zero-Dependency Pure Rust (`std` Only)</text>
-
-  <!-- STAGE 1: Spectral Path Tracer & SAH BVH -->
-  <rect x="72" y="128" width="332" height="552" rx="20" fill="url(#cardBg)" stroke="#dce4ee" stroke-width="1.6"/>
-  <rect x="94" y="150" width="172" height="28" rx="14" fill="#eef2ff" stroke="#c7d2fe"/>
-  <text x="180" y="169" text-anchor="middle" class="badge" fill="#4338ca">01 · SPECTRAL PATH TRACER</text>
-  <text x="94" y="206" class="t" font-size="21" font-weight="700">Hero-Wavelength &amp; SAH BVH</text>
-  <text x="94" y="228" class="m" font-size="12.5">4-λ Stratified [400,700] nm → CIE 1931 XYZ → ACES</text>
-
-  <!-- Ray-BVH & Spectral BSDF Box -->
-  <rect x="94" y="246" width="288" height="176" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="108" y="268" class="m" font-size="11.5" font-weight="600" fill="#4338ca">16-Bin SAH BVH (1785/2500 Exact, |Δt| = 0.00)</text>
-  <rect x="110" y="280" width="256" height="112" rx="8" fill="url(#specFill)" stroke="#cbd5e1" stroke-dasharray="4 3"/>
-  <!-- BVH Sub-boxes -->
-  <rect x="122" y="290" width="110" height="92" rx="6" fill="none" stroke="#4f46e5" stroke-width="1.6"/>
-  <rect x="242" y="298" width="112" height="76" rx="6" fill="none" stroke="#0d9488" stroke-width="1.6"/>
-  <circle cx="176" cy="336" r="24" fill="#6366f1" fill-opacity="0.22" stroke="#4338ca" stroke-width="2"/>
-  <polygon points="262,362 298,308 334,362" fill="#0d9488" fill-opacity="0.22" stroke="#0f766e" stroke-width="2"/>
-  <!-- Spectral dispersed rays -->
-  <line x1="112" y1="354" x2="154" y2="338" stroke="#1e293b" stroke-width="2.2"/>
-  <line x1="198" y1="330" x2="278" y2="312" stroke="#4f46e5" stroke-width="2"/>
-  <line x1="198" y1="336" x2="282" y2="334" stroke="#0d9488" stroke-width="2"/>
-  <line x1="198" y1="342" x2="276" y2="356" stroke="#ea580c" stroke-width="2"/>
-  <text x="114" y="410" class="m" font-size="10.5">Triangles · Spheres · CSG Torus/Box SDFs</text>
-
-  <!-- BSDF & Work-Stealing Throughput -->
-  <rect x="94" y="438" width="288" height="148" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="108" y="460" class="t" font-size="13.5" font-weight="700">Physically Based BSDFs &amp; NEE MIS</text>
-  <text x="108" y="484" class="m" font-size="11.5">• Dielectric Cauchy n(λ) + Beer-Lambert</text>
-  <text x="108" y="506" class="m" font-size="11.5">• Conductor Complex Fresnel + Heitz VNDF</text>
-  <text x="108" y="528" class="m" font-size="11.5">• Subsurface Isotropic Random Walk (g = 0)</text>
-  <text x="108" y="550" class="m" font-size="11.5" font-weight="700" fill="#4338ca">• 203.05M Rays · 2.089 MRays/s (8 Threads)</text>
-  <text x="108" y="570" class="m" font-size="11">• Tile MRays/s: p50=0.358 · p95=0.679 · p99=0.786</text>
-
-  <!-- Custom PNG Encoder Pill -->
-  <rect x="94" y="602" width="288" height="56" rx="12" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="110" y="625" class="t" font-size="13" font-weight="700">From-Scratch LZ77 + Huffman PNG Codec</text>
-  <text x="110" y="645" class="m" font-size="11.5">IEEE 802.3 CRC-32 · RFC 1950 Adler-32 · Paeth</text>
-
-  <!-- STAGE 2: 3D Navier-Stokes & Volumetric Coupling -->
-  <rect x="434" y="128" width="332" height="552" rx="20" fill="url(#cardBg)" stroke="#dce4ee" stroke-width="1.6"/>
-  <rect x="456" y="150" width="184" height="28" rx="14" fill="#f0f9ff" stroke="#bae6fd"/>
-  <text x="548" y="169" text-anchor="middle" class="badge" fill="#0369a1">02 · 3D NAVIER-STOKES FLUID</text>
-  <text x="456" y="206" class="t" font-size="21" font-weight="700">Staggered-MAC &amp; Volumetric</text>
-  <text x="456" y="228" class="m" font-size="12.5">MacCormack Advection + CG Poisson + Woodcock</text>
-
-  <!-- Poisson Divergence Reduction Plot -->
-  <rect x="456" y="246" width="288" height="176" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="470" y="268" class="m" font-size="11.5" font-weight="600" fill="#0369a1">CG Poisson Projection (99.7% Div Reduction)</text>
-  <path d="M474,284 L498,332 L524,362 L554,378 L588,386 L628,390 L674,392 L724,393 L724,396 L474,396 Z" fill="url(#divFill)"/>
-  <polyline points="474,284 498,332 524,362 554,378 588,386 628,390 674,392 724,393" fill="none" stroke="#0284c7" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="474" cy="284" r="4.5" fill="#0284c7"/>
-  <circle cx="724" cy="393" r="4.5" fill="#0d9488"/>
-  <text x="474" y="412" class="m" font-size="10.5">Pre: ||∇·u||₂ = 14.35</text>
-  <text x="724" y="412" text-anchor="end" class="m" font-size="10.5" font-weight="700" fill="#0f766e">Post: 4.53e-2 (-99.7%)</text>
-
-  <!-- Heterogeneous Participating Medium Box -->
-  <rect x="456" y="438" width="288" height="148" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="472" y="460" class="t" font-size="13.5" font-weight="700">Coupled Heterogeneous Medium (36×52×36)</text>
-  <text x="472" y="484" class="m" font-size="11.5">• Predictor-Corrector MacCormack + Clamp</text>
-  <text x="472" y="506" class="m" font-size="11.5">• Vorticity Confinement f = ε h (N × ω)</text>
-  <text x="472" y="528" class="m" font-size="11.5">• Woodcock Delta Tracking Free-Flight</text>
-  <text x="472" y="550" class="m" font-size="11.5">• Novak Ratio Tracking NEE Transmittance</text>
-  <text x="472" y="570" class="m" font-size="11" fill="#0369a1">• 120 Steps: KE = 1.491 · Peak |ω| = 54.48</text>
-
-  <!-- Red-Black SOR Fallback Pill -->
-  <rect x="456" y="602" width="288" height="56" rx="12" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="472" y="625" class="t" font-size="13" font-weight="700">Dual Poisson Solvers Verified</text>
-  <text x="472" y="645" class="m" font-size="11.5">Conjugate Gradient + Red-Black SOR (ω=1.72)</text>
-
-  <!-- STAGE 3: 24-Bit 48kHz Spatial Audio Engine -->
-  <rect x="796" y="128" width="332" height="552" rx="20" fill="url(#cardBg)" stroke="#dce4ee" stroke-width="1.6"/>
-  <rect x="818" y="150" width="188" height="28" rx="14" fill="#e6f7f5" stroke="#99f6e4"/>
-  <text x="912" y="169" text-anchor="middle" class="badge" fill="#0f766e">03 · 24-BIT 48KHZ AUDIO</text>
-  <text x="818" y="206" class="t" font-size="21" font-weight="700">Fluid-Driven Synthesizer</text>
-  <text x="818" y="228" class="m" font-size="12.5">15.0s Stereo WAV · 720,000 Frames · 4,320,044 B</text>
-
-  <!-- Fluid-to-Audio Telemetry & Stereo Waveform -->
-  <rect x="818" y="246" width="288" height="176" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="832" y="268" class="m" font-size="11.5" font-weight="600" fill="#0f766e">Kinetic Energy → FM Bell &amp; SVF Cutoff</text>
-  <polyline points="834,334 848,302 862,360 876,288 890,372 904,296 918,354 932,310 946,348 960,292 974,366 988,306 1002,350 1016,316 1030,344 1044,300 1058,358 1072,318 1088,334" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-  <polyline points="834,334 848,352 862,312 876,364 890,298 904,358 918,304 932,354 946,314 960,362 974,296 988,352 1002,312 1016,348 1030,318 1044,356 1058,308 1072,346 1088,334" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-dasharray="4 2" stroke-linecap="round"/>
-  <text x="836" y="410" class="m" font-size="10.5" fill="#0f766e">― Left Ch (RMS 0.168) · -- Right Ch (Diff 0.130)</text>
-
-  <!-- DSP Synthesis Stack -->
-  <rect x="818" y="438" width="288" height="148" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="834" y="460" class="t" font-size="13.5" font-weight="700">Procedural Synthesis &amp; Spatial DSP</text>
-  <text x="834" y="484" class="m" font-size="11.5">• 16-Voice 4-Op Through-Zero FM Bells</text>
-  <text x="834" y="506" class="m" font-size="11.5">• 4-Pole 24 dB/oct ZDF TPT SVF Filter</text>
-  <text x="834" y="528" class="m" font-size="11.5">• 8-Line Orthogonal Hadamard FDN Reverb</text>
-  <text x="834" y="550" class="m" font-size="11.5">• Binaural Woodworth ITD + Constant-Power</text>
-  <text x="834" y="570" class="m" font-size="11.5">• TPDF Dithered 24-Bit Signed PCM RIFF/WAVE</text>
-
-  <!-- Verification Suite Pill -->
-  <rect x="818" y="602" width="288" height="56" rx="12" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="834" y="625" class="t" font-size="13" font-weight="700">16/16 Cargo Tests + 6/6 Invariant Suites</text>
-  <text x="834" y="645" class="m" font-size="11.5">0 External Crates · Linux &amp; Windows CI Green</text>
 </svg>
