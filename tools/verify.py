@@ -40,8 +40,8 @@ for source in ROOT.rglob('*.css'):
         check_reference(url, source)
 
 cards = [attrs for tag, attrs in Page((ROOT / 'projects.html').read_text(encoding='utf-8')).nodes if tag == 'a' and 'card' in attrs.get('class', '').split()]
-assert len(cards) == len({card['href'] for card in cards}) == 50
-assert sum('open-source' in card.get('data-tags', '').split() for card in cards) == 41
+assert len(cards) == len({card['href'] for card in cards}) == 51
+assert sum('open-source' in card.get('data-tags', '').split() for card in cards) == 42
 for slug in ('benchmind', 'self-rag', 'hermes-cloud-gateway'):
     assert not (ROOT / 'projects' / (slug + '.html')).exists()
     assert not any(slug in card['href'] for card in cards)
@@ -49,4 +49,4 @@ assert not list(ROOT.rglob('*.pdf'))
 assert not (ROOT / '.vercel').exists()
 index = (ROOT / 'js/search-index.js').read_text(encoding='utf-8').strip().removeprefix('export default ').rstrip(';')
 assert isinstance(json.loads(index), list)
-print(f'PASS: {len(html)} HTML pages, internal HTML/CSS links, 50 unique gallery cards, 41 open-source tags, and publication exclusions.')
+print(f'PASS: {len(html)} HTML pages, internal HTML/CSS links, 51 unique gallery cards, 42 open-source tags, and publication exclusions.')
