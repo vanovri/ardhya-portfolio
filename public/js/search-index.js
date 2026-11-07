@@ -1,9 +1,40 @@
 export default [
-  {"title": "FerrumKV", "url": "https://ardhyanovri.my.id/projects/ferrum-kv", "category": "Project", "text": "Zero-dependency Rust (std only, #![forbid(unsafe_code)], zero .unwrap()/.expect()) in-memory & hybrid LSM-Tree distributed data store: RESP3 zero-copy parser, 64-shard storage engine (SkipList ZSet, Streams & Consumer Groups, HyperLogLog, Bloom Filter, Count-Min Sketch, 52-bit Morton Geohash, Gorilla XOR time-series, HNSW SQ8 vector search, Okapi BM25 full-text index), FIPS 180-4 SHA-256 + deterministic bytecode VM, Raft consensus cluster & CRC16-CCITT 16,384-slot router, RFC 8439 ChaCha20-Poly1305 AEAD & RBAC ACLs, Prometheus /metrics exporter, and Jepsen linearizability nemesis verifier. Verified with 22/22 unit & TCP integration tests, 505,716 req/s GET (p50 = 39.66 us), and 199/222 linearizable Jepsen operations with 0 stale writes."},
-  {"title": "AetherCoreEngine", "url": "https://ardhyanovri.my.id/projects/aether-core-engine", "category": "Project", "text": "Zero-dependency multithreaded 3D hero-wavelength spectral path tracer (16-bin SAH BVH, Möller-Trumbore triangles, analytic spheres, CSG signed-distance primitives, Dielectric Cauchy dispersion + Beer-Lambert absorption, Conductor complex Fresnel + GGX VNDF, Subsurface isotropic volumetric scattering, Next Event Estimation Veach MIS, ACES Filmic, from-scratch LZ77+Huffman PNG encoder), coupled 3D staggered-MAC Navier-Stokes Eulerian fluid & vorticity confinement solver (MacCormack advection, Conjugate Gradient & Red-Black SOR Poisson projection, Woodcock Delta Tracking), and 15-second 24-bit 48 kHz stereo procedural spatial audio synthesizer (16-voice 4-op FM bells, 4-pole ZDF TPT SVF, 8-line Sylvester-Hadamard FDN reverb) in pure standard-library Rust. Verified with 16/16 cargo tests and 6 runtime invariant suites (203.05M rays, 2.089 MRays/sec aggregate, 99.7% CG divergence reduction)."},
-  {"title": "AGY × Codex Video Studio", "url": "/projects/agy-codex-video-studio.html", "category": "Project", "text": "A programmatic video production and DSP audio pipeline combining ASR silence/retake trimming, word-timed SRT/WebVTT caption layout, 5-dimension viral segment scoring, 48 kHz stereo PCM soundtrack synthesis and deterministic 1080×1920 HyperFrames/FFmpeg rendering. Verified with 200 passing pytest tests (100.00% line coverage across 1,889 statements), 2,500 property-based fuzz cases, and a 96.88% AST mutation kill score (62/64 mutants killed)."},
-  {"title": "AetherSynth & Flow", "url": "https://ardhyanovri.my.id/projects/aether-synth-flow", "category": "Project", "text": "Multi-platform Apple ecosystem spatial audio synthesizer (iOS 18, watchOS 11, visionOS 2, macOS 15, AUv3) with HealthKit RR-interval Lomb-Scargle HRV spectral analysis, WatchConnectivity FNV-1a telemetry, and CoreML SIMD closed-loop brainwave entrainment in Swift 6 and Metal. Verified on a 110-beat 0.10 Hz Mayer-wave series (SDNN 81.40 ms, RMSSD 42.89 ms, LF/HF 58.80, RSA coherence 0.9916), 40-epoch Huber SGD loss reduction (0.0890 to 0.0064), and 45-step PID frequency slew from 14.0 Hz to 6.76 Hz."},
-  {"title": "PWM Motor Bench", "url": "https://ardhyanovri.my.id/projects/pwm-motor-bench", "category": "Project", "text": "Browser-based DC motor simulator with interactive PWM, an exploded isometric view, a load comparison and adjustable PI gains. Duel Dyno compares fixed duty and PI control under the same load step. Pit Tuning shows the effect of gain changes on RPM error, overshoot and recovery time. Each run exports 401 simulated samples. For a 65% load step, the Redam lonjakan preset reduced peak overshoot from 487 to 263 RPM against the default PI settings. The measured mean absolute RPM error fell from 97 to 72 RPM in the same 10-second simulation."},
+  {
+    "title": "Cyberpunk Floating Ramen Stall",
+    "url": "https://ardhyanovri.my.id/projects/cyberpunk-floating-ramen-stall",
+    "category": "Project",
+    "text": "100% self-contained Blender 4.0-4.3 procedural 3D diorama generator (579 objects across 10 collections: 380 bmesh meshes with ARRAY/SOLIDIFY/LATTICE/WAVE/ARMATURE/NODES modifiers, 154 CURVE/FONT splines tessellated via Bishop parallel-transport frames, 2 articulated armatures CyberChef_Armature & Patron_Armature, 31 procedural shader node trees with 233 nodes and zero external assets, 72 actions and 95 F-curves over 240 frames), spec-compliant Binary glTF 2.0 serializer (cyberpunk_diorama.glb, 90,766 vertices, 170,840 triangles), pure-Python software Z-buffer perspective rasterizer with Z=0 planar wet-asphalt reflections, multi-pass separable Neon Bloom and AgX filmic tone mapping (3 camera cuts at 1280x720 PNG), and a 240-frame baked CPKS binary WebGL2 + 48 kHz 16-bit stereo WebAudio interactive studio. Verified across 32 automated AST & dual-runtime tracks."
+  },
+  {
+    "title": "FerrumKV",
+    "url": "https://ardhyanovri.my.id/projects/ferrum-kv",
+    "category": "Project",
+    "text": "Zero-dependency Rust (std only, #![forbid(unsafe_code)], zero .unwrap()/.expect()) in-memory & hybrid LSM-Tree distributed data store: RESP3 zero-copy parser, 64-shard storage engine (SkipList ZSet, Streams & Consumer Groups, HyperLogLog, Bloom Filter, Count-Min Sketch, 52-bit Morton Geohash, Gorilla XOR time-series, HNSW SQ8 vector search, Okapi BM25 full-text index), FIPS 180-4 SHA-256 + deterministic bytecode VM, Raft consensus cluster & CRC16-CCITT 16,384-slot router, RFC 8439 ChaCha20-Poly1305 AEAD & RBAC ACLs, Prometheus /metrics exporter, and Jepsen linearizability nemesis verifier. Verified with 22/22 unit & TCP integration tests, 505,716 req/s GET (p50 = 39.66 us), and 199/222 linearizable Jepsen operations with 0 stale writes."
+  },
+  {
+    "title": "AetherCoreEngine",
+    "url": "https://ardhyanovri.my.id/projects/aether-core-engine",
+    "category": "Project",
+    "text": "Zero-dependency multithreaded 3D hero-wavelength spectral path tracer (16-bin SAH BVH, Möller-Trumbore triangles, analytic spheres, CSG signed-distance primitives, Dielectric Cauchy dispersion + Beer-Lambert absorption, Conductor complex Fresnel + GGX VNDF, Subsurface isotropic volumetric scattering, Next Event Estimation Veach MIS, ACES Filmic, from-scratch LZ77+Huffman PNG encoder), coupled 3D staggered-MAC Navier-Stokes Eulerian fluid & vorticity confinement solver (MacCormack advection, Conjugate Gradient & Red-Black SOR Poisson projection, Woodcock Delta Tracking), and 15-second 24-bit 48 kHz stereo procedural spatial audio synthesizer (16-voice 4-op FM bells, 4-pole ZDF TPT SVF, 8-line Sylvester-Hadamard FDN reverb) in pure standard-library Rust. Verified with 16/16 cargo tests and 6 runtime invariant suites (203.05M rays, 2.089 MRays/sec aggregate, 99.7% CG divergence reduction)."
+  },
+  {
+    "title": "AGY × Codex Video Studio",
+    "url": "/projects/agy-codex-video-studio.html",
+    "category": "Project",
+    "text": "A programmatic video production and DSP audio pipeline combining ASR silence/retake trimming, word-timed SRT/WebVTT caption layout, 5-dimension viral segment scoring, 48 kHz stereo PCM soundtrack synthesis and deterministic 1080×1920 HyperFrames/FFmpeg rendering. Verified with 200 passing pytest tests (100.00% line coverage across 1,889 statements), 2,500 property-based fuzz cases, and a 96.88% AST mutation kill score (62/64 mutants killed)."
+  },
+  {
+    "title": "AetherSynth & Flow",
+    "url": "https://ardhyanovri.my.id/projects/aether-synth-flow",
+    "category": "Project",
+    "text": "Multi-platform Apple ecosystem spatial audio synthesizer (iOS 18, watchOS 11, visionOS 2, macOS 15, AUv3) with HealthKit RR-interval Lomb-Scargle HRV spectral analysis, WatchConnectivity FNV-1a telemetry, and CoreML SIMD closed-loop brainwave entrainment in Swift 6 and Metal. Verified on a 110-beat 0.10 Hz Mayer-wave series (SDNN 81.40 ms, RMSSD 42.89 ms, LF/HF 58.80, RSA coherence 0.9916), 40-epoch Huber SGD loss reduction (0.0890 to 0.0064), and 45-step PID frequency slew from 14.0 Hz to 6.76 Hz."
+  },
+  {
+    "title": "PWM Motor Bench",
+    "url": "https://ardhyanovri.my.id/projects/pwm-motor-bench",
+    "category": "Project",
+    "text": "Browser-based DC motor simulator with interactive PWM, an exploded isometric view, a load comparison and adjustable PI gains. Duel Dyno compares fixed duty and PI control under the same load step. Pit Tuning shows the effect of gain changes on RPM error, overshoot and recovery time. Each run exports 401 simulated samples. For a 65% load step, the Redam lonjakan preset reduced peak overshoot from 487 to 263 RPM against the default PI settings. The measured mean absolute RPM error fell from 97 to 72 RPM in the same 10-second simulation."
+  },
   {
     "title": "Packing Arena",
     "url": "/projects/packing-arena.html",

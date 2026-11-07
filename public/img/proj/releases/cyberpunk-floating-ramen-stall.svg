@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-labelledby="title desc">
+  <title id="title">Cyberpunk Floating Ramen Stall — Procedural Blender 4.x, Binary glTF 2.0, Software Z-Buffer &amp; 240-Frame WebGL2 Engine</title>
+  <desc id="desc">Three-subsystem architecture diagram showing the 32-track Blender 4.0-4.3 procedural bmesh/curve/shader/armature generator (579 objects, 31 materials, 233 nodes, 72 actions, 95 F-curves), the pure-Python modifier evaluator, Bishop-frame spline tessellator, and spec-compliant Binary glTF 2.0 serializer + software Z-buffer Neon Bloom rasterizer, and the self-contained 240-frame baked CPKS binary WebGL2 + WebAudio studio.</desc>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #18222c; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #4a5a68; }
+      .badge { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.8px; }
+    </style>
+    <linearGradient id="bgCanvas" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f9fc"/>
+      <stop offset="100%" stop-color="#edf1f7"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafd"/>
+    </linearGradient>
+    <linearGradient id="cyberFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#db2777" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0.22"/>
+    </linearGradient>
+    <filter id="winShadow" x="-8%" y="-10%" width="116%" height="124%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e293b" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgCanvas)"/>
+
+  <g filter="url(#winShadow)">
+    <rect x="44" y="36" width="1112" height="678" rx="28" fill="#ffffff" stroke="#d5dde7" stroke-width="1.8"/>
+  </g>
+  <path d="M72 37h1056a27 27 0 0 1 27 27v38H45V64a27 27 0 0 1 27-27Z" fill="#f8fafc"/>
+  <line x1="45" y1="102" x2="1155" y2="102" stroke="#e2e8f0" stroke-width="1.5"/>
+  <circle cx="80" cy="70" r="6.5" fill="#f47870"/>
+  <circle cx="103" cy="70" r="6.5" fill="#efb64e"/>
+  <circle cx="126" cy="70" r="6.5" fill="#53bd78"/>
+  <rect x="280" y="53" width="640" height="34" rx="9" fill="#ffffff" stroke="#dce4ee" stroke-width="1.4"/>
+  <text x="600" y="75" text-anchor="middle" class="t" font-size="15" font-weight="650" fill="#334155">Cyberpunk Floating Ramen Stall v1.0.0 · 32-Track Blender 4.x, glTF 2.0 &amp; WebGL2 Engine</text>
+
+  <!-- STAGE 1: Blender 4.0-4.3 Procedural Diorama -->
+  <rect x="72" y="128" width="332" height="552" rx="20" fill="url(#cardBg)" stroke="#dce4ee" stroke-width="1.6"/>
+  <rect x="94" y="150" width="186" height="28" rx="14" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="187" y="169" text-anchor="middle" class="badge" fill="#4338ca">01 · BLENDER 4.X ENGINE</text>
+  <text x="94" y="206" class="t" font-size="21" font-weight="700">579 Objects &amp; 31 Shaders</text>
+  <text x="94" y="228" class="m" font-size="12.5">10 Collections · Zero External Assets / Textures</text>
+
+  <rect x="94" y="246" width="288" height="176" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="108" y="268" class="m" font-size="11.5" font-weight="600" fill="#4338ca">Procedural bmesh + ShaderNodeTree + Armatures</text>
+  <rect x="110" y="280" width="256" height="112" rx="8" fill="url(#cyberFill)" stroke="#cbd5e1" stroke-dasharray="4 3"/>
+  <rect x="124" y="294" width="104" height="84" rx="6" fill="#ffffff" fill-opacity="0.82" stroke="#4338ca" stroke-width="1.6"/>
+  <text x="176" y="322" text-anchor="middle" class="m" font-size="11" font-weight="700" fill="#4338ca">380 Meshes</text>
+  <text x="176" y="342" text-anchor="middle" class="m" font-size="10.5">154 Curves/Fonts</text>
+  <text x="176" y="362" text-anchor="middle" class="m" font-size="10.5">2 Armatures (15B)</text>
+  <rect x="240" y="294" width="112" height="84" rx="6" fill="#ffffff" fill-opacity="0.82" stroke="#be185d" stroke-width="1.6"/>
+  <text x="296" y="322" text-anchor="middle" class="m" font-size="11" font-weight="700" fill="#be185d">31 Materials</text>
+  <text x="296" y="342" text-anchor="middle" class="m" font-size="10.5">233 Shader Nodes</text>
+  <text x="296" y="362" text-anchor="middle" class="m" font-size="10.5">240 Node Links</text>
+  <text x="114" y="410" class="m" font-size="10.5">Blender 4.0.2 &amp; 4.3.0 Dual-Runtime Verified</text>
+
+  <rect x="94" y="438" width="288" height="148" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="108" y="460" class="t" font-size="13.5" font-weight="700">Diorama Subsystems (Tracks 1–20)</text>
+  <text x="108" y="484" class="m" font-size="11.5">• Floating Hull, Sine Roof, 6 Paper Lanterns</text>
+  <text x="108" y="506" class="m" font-size="11.5">• 8 Brutalist Megatowers + Maglev Monorail</text>
+  <text x="108" y="528" class="m" font-size="11.5">• 7-Bone Cyber-Chef &amp; 8-Bone Patron Rig</text>
+  <text x="108" y="550" class="m" font-size="11.5">• Geometry Nodes Rain, Ripples &amp; Steam</text>
+  <text x="108" y="570" class="m" font-size="11" fill="#4338ca">• 72 Actions · 95 F-Curves · 12 Compositor Nodes</text>
+
+  <rect x="94" y="602" width="288" height="56" rx="12" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="110" y="625" class="t" font-size="13" font-weight="700">Scene Topology SHA-256</text>
+  <text x="110" y="645" class="m" font-size="11">913d4982dd47aea080c6c8e46da75513c033aadb...</text>
+
+  <!-- STAGE 2: Binary glTF 2.0 & Software Z-Buffer Renderer -->
+  <rect x="434" y="128" width="332" height="552" rx="20" fill="url(#cardBg)" stroke="#dce4ee" stroke-width="1.6"/>
+  <rect x="456" y="150" width="204" height="28" rx="14" fill="#f0f9ff" stroke="#bae6fd"/>
+  <text x="558" y="169" text-anchor="middle" class="badge" fill="#0369a1">02 · GLTF 2.0 &amp; Z-BUFFER</text>
+  <text x="456" y="206" class="t" font-size="21" font-weight="700">Pure-Python Rasterizer</text>
+  <text x="456" y="228" class="m" font-size="12.5">90,766 Verts · 170,840 Tris · 1280×720 RGB PNG</text>
+
+  <rect x="456" y="246" width="288" height="176" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="470" y="268" class="m" font-size="11.5" font-weight="600" fill="#0369a1">3-Camera Director Cut Luminance &amp; Bloom</text>
+  <rect x="474" y="284" width="76" height="96" rx="6" fill="#0284c7" fill-opacity="0.16" stroke="#0284c7" stroke-width="1.6"/>
+  <text x="512" y="314" text-anchor="middle" class="m" font-size="11" font-weight="700" fill="#0369a1">85mm</text>
+  <text x="512" y="334" text-anchor="middle" class="m" font-size="10">σ=60.08</text>
+  <text x="512" y="354" text-anchor="middle" class="m" font-size="9.5">233.3K px</text>
+  <rect x="562" y="284" width="76" height="96" rx="6" fill="#db2777" fill-opacity="0.16" stroke="#db2777" stroke-width="1.6"/>
+  <text x="600" y="314" text-anchor="middle" class="m" font-size="11" font-weight="700" fill="#be185d">50mm</text>
+  <text x="600" y="334" text-anchor="middle" class="m" font-size="10">σ=63.59</text>
+  <text x="600" y="354" text-anchor="middle" class="m" font-size="9.5">128.3K px</text>
+  <rect x="650" y="284" width="76" height="96" rx="6" fill="#d97706" fill-opacity="0.16" stroke="#d97706" stroke-width="1.6"/>
+  <text x="688" y="314" text-anchor="middle" class="m" font-size="11" font-weight="700" fill="#b45309">105mm</text>
+  <text x="688" y="334" text-anchor="middle" class="m" font-size="10">σ=53.81</text>
+  <text x="688" y="354" text-anchor="middle" class="m" font-size="9.5">123.8K px</text>
+  <text x="474" y="408" class="m" font-size="10.5">Separable Gaussian/Box Bloom + AgX Tone Map</text>
+
+  <rect x="456" y="438" width="288" height="148" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="472" y="460" class="t" font-size="13.5" font-weight="700">Geometry Evaluation &amp; Export (Tracks 21–26)</text>
+  <text x="472" y="484" class="m" font-size="11.5">• Evaluates ARRAY, SOLIDIFY, LATTICE, WAVE</text>
+  <text x="472" y="506" class="m" font-size="11.5">• Bishop Parallel-Transport Curve Tubes</text>
+  <text x="472" y="528" class="m" font-size="11.5">• Binary glTF 2.0 (.glb): 4,589,696 Bytes</text>
+  <text x="472" y="550" class="m" font-size="11.5">• Wavefront (.obj + .mtl): 12,052,090 Bytes</text>
+  <text x="472" y="570" class="m" font-size="11" fill="#0369a1">• Z=0 Wet-Asphalt Planar Reflection Pass</text>
+
+  <rect x="456" y="602" width="288" height="56" rx="12" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="472" y="625" class="t" font-size="13" font-weight="700">glTF 2.0 Spec-Compliant Binary</text>
+  <text x="472" y="645" class="m" font-size="11.5">magic=0x46546C67 · v2 · FLOAT Pos/Norm + PBR</text>
+
+  <!-- STAGE 3: 240-Frame Baked WebGL2 & WebAudio Studio -->
+  <rect x="796" y="128" width="332" height="552" rx="20" fill="url(#cardBg)" stroke="#dce4ee" stroke-width="1.6"/>
+  <rect x="818" y="150" width="204" height="28" rx="14" fill="#e6f7f5" stroke="#99f6e4"/>
+  <text x="920" y="169" text-anchor="middle" class="badge" fill="#0f766e">03 · WEBGL2 &amp; WEBAUDIO</text>
+  <text x="818" y="206" class="t" font-size="21" font-weight="700">240-Frame CPKS Studio</text>
+  <text x="818" y="228" class="m" font-size="12.5">238,336 Verts · 345,664 Tris · 70 Anim Tracks</text>
+
+  <rect x="818" y="246" width="288" height="176" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="832" y="268" class="m" font-size="11.5" font-weight="600" fill="#0f766e">48 kHz Stereo WAV &amp; WebAudio Synth</text>
+  <polyline points="834,334 848,298 862,362 876,284 890,374 904,294 918,358 932,306 946,352 960,290 974,368 988,302 1002,354 1016,312 1030,348 1044,298 1058,360 1072,316 1088,334" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="834,334 848,354 862,310 876,366 890,296 904,360 918,302 932,356 946,312 960,364 974,294 988,354 1002,310 1016,350 1030,316 1044,358 1058,306 1072,348 1088,334" fill="none" stroke="#db2777" stroke-width="1.8" stroke-dasharray="4 2" stroke-linecap="round"/>
+  <text x="836" y="408" class="m" font-size="10.5" fill="#0f766e">CS-80 Sawtooth Pad + Pink Rain + Taiko Sub</text>
+
+  <rect x="818" y="438" width="288" height="148" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="834" y="460" class="t" font-size="13.5" font-weight="700">Interactive WebGL2 Features (Tracks 27–32)</text>
+  <text x="834" y="484" class="m" font-size="11.5">• Quantized Int16/Float16 CPKS Binary Stream</text>
+  <text x="834" y="506" class="m" font-size="11.5">• 240-Frame Timeline Scrubber &amp; Auto-Cut</text>
+  <text x="834" y="528" class="m" font-size="11.5">• Multi-Pass FBO Half-Res Bloom &amp; Reflections</text>
+  <text x="834" y="550" class="m" font-size="11.5">• GPU Instanced Rain &amp; Broth Steam Billboards</text>
+  <text x="834" y="570" class="m" font-size="11.5" fill="#0f766e">• Raycast Object Inspector &amp; WebM Recorder</text>
+
+  <rect x="818" y="602" width="288" height="56" rx="12" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="834" y="625" class="t" font-size="13" font-weight="700">32/32 Verification Tracks Passing</text>
+  <text x="834" y="645" class="m" font-size="11.5">Zero Placeholders · Linux &amp; Windows CI Green</text>
+</svg>
