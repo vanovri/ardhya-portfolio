@@ -27,7 +27,7 @@ export default [
     "title": "AetherSynth & Flow",
     "url": "https://ardhyanovri.my.id/projects/aether-synth-flow",
     "category": "Project",
-    "text": "Multi-platform Apple ecosystem spatial audio synthesizer (iOS 18, watchOS 11, visionOS 2, macOS 15, AUv3) with HealthKit RR-interval Lomb-Scargle HRV spectral analysis, WatchConnectivity FNV-1a telemetry, and CoreML SIMD closed-loop brainwave entrainment in Swift 6 and Metal. Verified on a 110-beat 0.10 Hz Mayer-wave series (SDNN 81.40 ms, RMSSD 42.89 ms, LF/HF 58.80, RSA coherence 0.9916), 40-epoch Huber SGD loss reduction (0.0890 to 0.0064), and 45-step PID frequency slew from 14.0 Hz to 6.76 Hz."
+    "text": "Multi-platform Apple ecosystem spatial audio synthesizer (iOS 18, watchOS 11, visionOS 2, macOS 15, AUv3) across 63 Swift 6 and Metal files (~46.7k LOC): 4-Op TZFM, 8-line Hadamard FDN, KEMAR 128-tap HRTF UPOLS convolver + 18-source 3D Shoebox ISM, 2D/3D FDTD PML physical acoustic waveguide (>35 dB absorption), GPU Metal ray-traced 512-tap DRIR + SAH-BVH, 1D Rectified-Flow ODE + 4-stage RVQ + 64x Snake neural vocoder, sample-accurate AUv3 MPE DAW plugin, sub-ms PTP/Marzullo W=16/PI-PLL 2.5D Rayleigh WFS orchestra, 4-Ch 256 Hz BLE EEG BCI (RLS ocular blink filter >30 dB, Bispectrum/BIS, Tort Theta-Gamma PAC), Smoothed Pseudo Wigner-Ville Distribution (SPWVD) + Hilbert-Huang EEMD, 6-site Quantum MPS + 2-site DMRG (S_vN = ln 8), 380-780 nm Sellmeier chromatic caustics, HealthKit RR-interval Lomb-Scargle HRV spectral analysis (0.10 Hz Mayer peak, SDNN 81.40 ms, RMSSD 42.89 ms, RSA coherence 0.9916), and CoreML SIMD MLP / MPSGraph closed-loop brainwave entrainment."
   },
   {
     "title": "PWM Motor Bench",
