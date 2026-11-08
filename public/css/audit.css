@@ -99,7 +99,7 @@ a{color:inherit}.text-button,.link-arrow,.explore-grid>a>span:last-child{color:v
 .card-media>.badge{left:auto;right:14px;top:14px;bottom:auto;background:rgba(255,255,255,.9);color:#5a5a60;border:1px solid rgba(0,0,0,.06);font-size:11px;font-weight:500;padding:3px 9px;border-radius:999px;backdrop-filter:blur(12px) saturate(180%);-webkit-backdrop-filter:blur(12px) saturate(180%)}
 
 /* Iconly x Apple Design Squircle Brand Mark */
-.brand-mark{width:32px;height:32px;border:0;border-radius:9px;background:url("/favicon.svg?v=20261108c") center/100% 100% no-repeat transparent!important;color:transparent!important;font-size:0!important;user-select:none;flex:none;display:inline-block!important;box-shadow:0 2px 6px rgba(0,61,130,.12);transition:transform 220ms var(--ease-out),box-shadow 220ms var(--ease-out)}
+.brand-mark{width:32px;height:32px;border:0;border-radius:9px;background:url("/favicon.svg?v=20261108d") center/100% 100% no-repeat transparent!important;color:transparent!important;font-size:0!important;user-select:none;flex:none;display:inline-block!important;box-shadow:0 2px 6px rgba(15,23,42,.10);transition:transform 220ms var(--ease-out),box-shadow 220ms var(--ease-out)}
 .brand-mark::after{display:none!important}
-@media (hover:hover) and (pointer:fine){.brand:hover .brand-mark{transform:scale(1.06) translateY(-.5px);box-shadow:0 4px 10px rgba(0,113,227,.18)}}
+@media (hover:hover) and (pointer:fine){.brand:hover .brand-mark{transform:scale(1.06) translateY(-.5px);box-shadow:0 4px 10px rgba(0,113,227,.16)}}
 .brand:active .brand-mark{transform:scale(.95);transition-duration:90ms}
