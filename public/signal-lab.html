@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>3D Signal &amp; Embedded DSP Workbench | Ardhya Novri Ramadhan</title>
+  <meta name="description" content="Interactive 3D time-frequency waterfall and real-time STM32F411 Biquad IIR digital filter workbench (20–500 Hz Butterworth + 50 Hz Notch Q=30, 100 ms RMS/MAV, UART CRC-32 telemetry) with adaptive battery-saving frame-rate control." />
+  <link rel="canonical" href="https://ardhyanovri.my.id/signal-lab" />
+  <meta property="og:title" content="3D Signal &amp; Embedded DSP Workbench | Ardhya Novri Ramadhan" />
+  <meta property="og:description" content="Interactive 3D time-frequency waterfall and real-time STM32F411 Biquad IIR digital filter workbench (20–500 Hz Butterworth + 50 Hz Notch Q=30, 100 ms RMS/MAV, UART CRC-32 telemetry)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ardhyanovri.my.id/signal-lab" />
+  <meta property="og:image" content="https://ardhyanovri.my.id/img/ardhya-portrait.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://ardhyanovri.my.id/img/ardhya-portrait.jpg" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="/favicon.ico?v=20261108d" sizes="16x16 32x32 48x48 64x64" type="image/x-icon" />
+  <link rel="icon" href="/favicon-32.png?v=20261108d" sizes="32x32" type="image/png" />
+  <link rel="icon" href="/favicon.svg?v=20261108d" sizes="any" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261108d" sizes="180x180" />
+  <link rel="stylesheet" href="css/tokens.css?v=white1" />
+  <link rel="stylesheet" href="css/base.css?v=white1" />
+  <link rel="stylesheet" href="css/white.css?v=white1" />
+  <link rel="stylesheet" href="css/audit.css?v=a5" />
+  <style>
+    :root {
+      --bg-void: #ffffff;
+      --bg-panel: #f5f5f7;
+      --bg-card: #ffffff;
+      --bg-input: #ffffff;
+      --ink-primary: #1d1d1f;
+      --ink-secondary: #6e6e73;
+      --ink-muted: #86868b;
+      --accent-blue: #0071e3;
+      --accent-green: #1d8348;
+      --accent-red: #d70015;
+      --border-line: rgba(0, 0, 0, 0.08);
+      --border-strong: rgba(0, 113, 227, 0.32);
+    }
+
+    body {
+      background-color: var(--bg-void);
+      color: var(--ink-primary);
+      font-family: var(--font-sans);
+      line-height: 1.47059;
+      letter-spacing: -0.022em;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .workbench-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.78);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border-line);
+      padding: 0.75rem 1.5rem;
+    }
+
+    .nav-container {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .status-pill {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      line-height: 1.33337;
+      letter-spacing: 0em;
+      padding: 0.35rem 0.8rem;
+      border-radius: 980px;
+      background: #f5f5f7;
+      color: var(--ink-primary);
+      border: 1px solid var(--border-line);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .status-dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background: #28cd41;
+    }
+
+    .workbench-shell {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 1.75rem 1.5rem 3.5rem;
+    }
+
+    .hero-banner {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-line);
+      border-radius: 20px;
+      corner-shape: squircle;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+    }
+
+    .hero-copy {
+      max-width: 820px;
+    }
+
+    .hero-copy .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent-blue);
+      margin-bottom: 0.35rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 2.4vw, 2.125rem);
+      font-weight: 600;
+      line-height: 1.12;
+      letter-spacing: -0.022em;
+      margin-bottom: 0.45rem;
+      color: var(--ink-primary);
+    }
+
+    .hero-lead {
+      font-size: 0.9375rem;
+      line-height: 1.47059;
+      letter-spacing: -0.016em;
+      color: var(--ink-secondary);
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.45rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+    }
+
+    .spec-tag {
+      background: var(--bg-card);
+      border: 1px solid var(--border-line);
+      padding: 0.35rem 0.7rem;
+      border-radius: 10px;
+      corner-shape: squircle;
+      color: var(--ink-primary);
+    }
+
+    .workbench-grid {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    @media (max-width: 1100px) {
+      .workbench-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .control-panel {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-line);
+      border-radius: 20px;
+      corner-shape: squircle;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+
+    .panel-section {
+      border-bottom: 1px solid var(--border-line);
+      padding-bottom: 1rem;
+    }
+
+    .panel-section:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--ink-secondary);
+      margin-bottom: 0.65rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .grip-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    .grip-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-line);
+      border-radius: 14px;
+      corner-shape: squircle;
+      padding: 0.65rem 0.75rem;
+      text-align: left;
+      color: var(--ink-primary);
+      cursor: pointer;
+      transition: border-color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .grip-btn:hover {
+      border-color: var(--accent-blue);
+    }
+
+    .grip-btn.active {
+      background: rgba(0, 113, 227, 0.08);
+      border-color: var(--accent-blue);
+    }
+
+    .grip-name {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: -0.006em;
+    }
+
+    .grip-mv {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent-blue);
+      margin-top: 0.15rem;
+    }
+
+    .control-row {
+      margin-bottom: 0.75rem;
+    }
+
+    .control-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .control-row label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8125rem;
+      color: var(--ink-secondary);
+      margin-bottom: 0.3rem;
+    }
+
+    .control-row output {
+      font-family: var(--font-mono);
+      color: var(--ink-primary);
+      font-weight: 600;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--accent-blue);
+      cursor: pointer;
+    }
+
+    select {
+      width: 100%;
+      background: var(--bg-card);
+      color: var(--ink-primary);
+      border: 1px solid var(--border-line);
+      padding: 0.5rem 0.65rem;
+      border-radius: 10px;
+      corner-shape: squircle;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+    }
+
+    .filter-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .filter-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-card);
+      border: 1px solid var(--border-line);
+      padding: 0.55rem 0.75rem;
+      border-radius: 10px;
+      corner-shape: squircle;
+      cursor: pointer;
+      font-size: 0.8125rem;
+    }
+
+    .filter-toggle input {
+      accent-color: var(--accent-blue);
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.55rem;
+    }
+
+    .filter-meta {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      color: var(--ink-secondary);
+    }
+
+    .coeff-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-line);
+      border-radius: 10px;
+      corner-shape: squircle;
+      padding: 0.65rem;
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      color: var(--ink-secondary);
+      line-height: 1.45;
+      overflow-x: auto;
+    }
+
+    .action-row {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .viz-column {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+
+    .kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.75rem;
+    }
+
+    @media (max-width: 900px) {
+      .kpi-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .kpi-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-line);
+      border-radius: 14px;
+      corner-shape: squircle;
+      padding: 0.85rem 1rem;
+    }
+
+    .kpi-title {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      color: var(--ink-secondary);
+    }
+
+    .kpi-number {
+      font-family: var(--font-mono);
+      font-size: 1.375rem;
+      font-weight: 600;
+      color: var(--ink-primary);
+      margin: 0.15rem 0;
+    }
+
+    .kpi-sub {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      color: var(--ink-secondary);
+    }
+
+    .canvas-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-line);
+      border-radius: 20px;
+      corner-shape: squircle;
+      padding: 1.1rem 1.25rem;
+    }
+
+    .canvas-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .canvas-title {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--ink-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .legend-group {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--ink-secondary);
+      flex-wrap: wrap;
+    }
+
+    .legend-dot {
+      display: inline-block;
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      margin-right: 0.35rem;
+    }
+
+    canvas.viz-surface {
+      width: 100%;
+      height: auto;
+      background: #ffffff;
+      border: 1px solid var(--border-line);
+      border-radius: 14px;
+      corner-shape: squircle;
+      display: block;
+      cursor: grab;
+    }
+
+    canvas.viz-surface:active {
+      cursor: grabbing;
+    }
+
+    .uart-console {
+      background: #ffffff;
+      border: 1px solid var(--border-line);
+      border-radius: 14px;
+      corner-shape: squircle;
+      padding: 0.75rem 0.9rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--ink-primary);
+      max-height: 195px;
+      overflow-y: auto;
+      line-height: 1.5;
+    }
+
+    .uart-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      border-bottom: 1px solid var(--border-line);
+      padding: 0.25rem 0;
+    }
+
+    .uart-line .crc-badge {
+      color: var(--accent-blue);
+    }
+
+    .uart-line.corrupted {
+      color: var(--accent-red);
+    }
+
+    .scope-note {
+      margin-top: 1.25rem;
+      padding: 1rem 1.25rem;
+      background: var(--bg-panel);
+      border: 1px solid var(--border-line);
+      border-radius: 14px;
+      corner-shape: squircle;
+      font-size: 0.8125rem;
+      line-height: 1.47059;
+      color: var(--ink-secondary);
+    }
+  </style>
+  <script src="js/signal-lab.js" defer></script>
+</head>
+<body>
+
+  <header class="workbench-header">
+    <div class="nav-container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AN</span>
+        <span>Ardhya Novri · 3D Signal Lab</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="projects/emg-thesis.html">STM32 EMG Thesis</a></li>
+          <li><a href="lab.html">2D Lab</a></li>
+          <li><a href="signal-lab.html" aria-current="page">3D Signal Workbench</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="status-pill">
+        <span class="status-dot" id="fps-dot"></span>
+        <span id="fps-readout">60 FPS · REAL-TIME BIQUAD IIR</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="workbench-shell">
+    <section class="hero-banner">
+      <div class="hero-copy">
+        <p class="eyebrow">3D Time-Frequency Waterfall &amp; STM32F411 Telemetry Workbench</p>
+        <h1 class="hero-title">Surface EMG Biquad Cascade &amp; UART CRC-32 Stream Inspector</h1>
+        <p class="hero-lead">
+          Calibrated to undergraduate thesis measurements (<em>STM32F411CEU6 + DFRobot SEN0240</em>). Switch isometric grip effort presets, inject 50 Hz mains interference and baseline drift, toggle cascaded 2nd-order Butterworth and Q=30 Notch stages, and inspect the 3D spectrum waterfall with automatic tab-visibility power saving.
+        </p>
+      </div>
+      <div class="hero-badges">
+        <span class="spec-tag">MCU: STM32F411CEU6 (ADC1 PA0 + Circular DMA)</span>
+        <span class="spec-tag">Nominal Fs: 4,000 Hz · Cal: 8,000 Samples (2.0 s)</span>
+        <span class="spec-tag" id="draco-ktx-badge">Draco 14b (4.82×) · KTX2 GPU Ready</span>
+      </div>
+    </section>
+
+    <div class="workbench-grid">
+      <aside class="control-panel" aria-label="Signal and filter controls">
+
+        <div class="panel-section">
+          <div class="section-label">
+            <span>01 · Grip Effort Level (Thesis RMS)</span>
+            <span id="active-grip-tag">MEDIUM RPE-5</span>
+          </div>
+          <div class="grip-grid" role="group" aria-label="Grip effort presets">
+            <button type="button" class="grip-btn" data-grip="relax" data-rms="7.64">
+              <span class="grip-name">Relax Baseline</span>
+              <span class="grip-mv">7.64 mV RMS</span>
+            </button>
+            <button type="button" class="grip-btn" data-grip="light" data-rms="16.10">
+              <span class="grip-name">Light Grip</span>
+              <span class="grip-mv">16.10 mV RMS</span>
+            </button>
+            <button type="button" class="grip-btn active" data-grip="medium" data-rms="38.52">
+              <span class="grip-name">Medium (RPE 5)</span>
+              <span class="grip-mv">38.52 mV RMS</span>
+            </button>
+            <button type="button" class="grip-btn" data-grip="strong" data-rms="52.71">
+              <span class="grip-name">Strong Grip</span>
+              <span class="grip-mv">52.71 mV RMS</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="panel-section">
+          <div class="section-label">
+            <span>02 · Interference &amp; Acquisition</span>
+          </div>
+          <div class="control-row">
+            <label for="slider-hum">
+              <span>50 Hz Powerline Hum Injection</span>
+              <output id="out-hum">18.0 mV</output>
+            </label>
+            <input id="slider-hum" type="range" min="0" max="35" step="0.5" value="18.0" />
+          </div>
+          <div class="control-row">
+            <label for="slider-drift">
+              <span>DC / Motion Baseline Drift (1.5 Hz)</span>
+              <output id="out-drift">9.5 mV</output>
+            </label>
+            <input id="slider-drift" type="range" min="0" max="25" step="0.5" value="9.5" />
+          </div>
+          <div class="control-row">
+            <label for="select-fs">
+              <span>Nominal Sampling Rate (Fs)</span>
+            </label>
+            <select id="select-fs">
+              <option value="4000" selected>4,000 Hz (STM32 Nominal ADC+DMA)</option>
+              <option value="2000">2,000 Hz (Nyquist Comparison)</option>
+            </select>
+          </div>
+          <div class="control-row">
+            <label for="select-win">
+              <span>Feature Extraction Window</span>
+            </label>
+            <select id="select-win">
+              <option value="100" selected>100 ms (400 samples @ 4 kHz)</option>
+              <option value="200">200 ms (800 samples @ 4 kHz)</option>
+              <option value="500">500 ms (2,000 samples @ 4 kHz)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="panel-section">
+          <div class="section-label">
+            <span>03 · Cascaded Biquad IIR Stages</span>
+            <span>DF-II Transposed</span>
+          </div>
+          <div class="filter-list">
+            <label class="filter-toggle">
+              <span><input type="checkbox" id="chk-hpf" checked />Butterworth HPF (20 Hz)</span>
+              <span class="filter-meta">2nd-Order · -3.01 dB</span>
+            </label>
+            <label class="filter-toggle">
+              <span><input type="checkbox" id="chk-lpf" checked />Butterworth LPF (500 Hz)</span>
+              <span class="filter-meta">2nd-Order · -3.01 dB</span>
+            </label>
+            <label class="filter-toggle">
+              <span><input type="checkbox" id="chk-notch" checked />50 Hz Notch Filter (Q = 30)</span>
+              <span class="filter-meta">-25.5 dB Hum Null</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="panel-section">
+          <div class="section-label">
+            <span>04 · 3D Camera &amp; Coefficients</span>
+          </div>
+          <div class="control-row">
+            <label for="slider-yaw">
+              <span>3D Waterfall Orbit Azimuth</span>
+              <output id="out-yaw">34°</output>
+            </label>
+            <input id="slider-yaw" type="range" min="15" max="65" step="1" value="34" />
+          </div>
+          <div class="coeff-box" id="coeff-readout" aria-live="polite">
+            Loading Biquad DF-II Transposed coefficients...
+          </div>
+        </div>
+
+        <div class="action-row">
+          <button type="button" class="btn sm primary" id="btn-pause">Pause Loop</button>
+          <button type="button" class="btn sm" id="btn-inject-fault">Inject CRC Fault</button>
+          <button type="button" class="btn sm" id="btn-reset">Reset</button>
+        </div>
+      </aside>
+
+      <div class="viz-column">
+
+        <div class="kpi-strip">
+          <div class="kpi-card">
+            <div class="kpi-title">FILTERED RMS (100 ms)</div>
+            <div class="kpi-number" id="kpi-rms">38.52 mV</div>
+            <div class="kpi-sub" id="kpi-rms-target">Target: 38.52 mV (RPE 5)</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-title">FILTERED MAV (100 ms)</div>
+            <div class="kpi-number" id="kpi-mav">29.31 mV</div>
+            <div class="kpi-sub">Pearson r = 0.9941</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-title">RAW UNFILTERED RMS</div>
+            <div class="kpi-number" id="kpi-raw-rms">44.18 mV</div>
+            <div class="kpi-sub" id="kpi-hum-delta">50 Hz Hum + Drift</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-title">50 Hz ATTENUATION</div>
+            <div class="kpi-number" id="kpi-atten">-25.5 dB</div>
+            <div class="kpi-sub" id="kpi-notch-state">Q = 30 Notch ACTIVE</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-title">UART CRC-32 FRAMES</div>
+            <div class="kpi-number" id="kpi-packets">0 OK</div>
+            <div class="kpi-sub" id="kpi-drops">0 CRC Drops · 400-smp Win</div>
+          </div>
+        </div>
+
+        <div class="canvas-card" id="waterfall-card">
+          <div class="canvas-header">
+            <div class="canvas-title">
+              <span>3D TIME-FREQUENCY SPECTRUM WATERFALL (0–600 Hz × 44 SLICES)</span>
+            </div>
+            <div class="legend-group">
+              <span><i class="legend-dot" style="background: #0071e3;"></i>Passband 20–500 Hz (sEMG)</span>
+              <span><i class="legend-dot" style="background: #d70015;"></i>50 Hz Notch Null / Hum</span>
+              <span><i class="legend-dot" style="background: #1d8348;"></i>Bode Transfer Envelope</span>
+            </div>
+          </div>
+          <canvas id="waterfall-canvas" class="viz-surface" width="1020" height="390" aria-label="3D Time-Frequency Spectrum Waterfall"></canvas>
+        </div>
+
+        <div class="canvas-card" id="scope-card">
+          <div class="canvas-header">
+            <div class="canvas-title">
+              <span>DUAL-CHANNEL TIME-DOMAIN OSCILLOSCOPE &amp; 100 ms RMS/MAV ENVELOPE</span>
+            </div>
+            <div class="legend-group">
+              <span><i class="legend-dot" style="background: #86868b;"></i>CH1 Raw ADC1 PA0</span>
+              <span><i class="legend-dot" style="background: #0071e3;"></i>CH2 Filtered Biquad</span>
+              <span><i class="legend-dot" style="background: #1d8348;"></i>Sliding RMS Envelope</span>
+            </div>
+          </div>
+          <canvas id="scope-canvas" class="viz-surface" width="1020" height="260" aria-label="Real-time raw vs filtered EMG oscilloscope"></canvas>
+        </div>
+
+        <div class="canvas-card">
+          <div class="canvas-header">
+            <div class="canvas-title">
+              <span>STM32F411 UART TELEMETRY STREAM INSPECTOR (CRC-32 IEEE 802.3 VERIFIED)</span>
+            </div>
+            <div class="legend-group">
+              <span>Frame Format: <code>SOF(0xAA55) | SEQ | GRIP | WIN_SMP | RMS_mV | MAV_mV | FLAGS | CRC32</code></span>
+            </div>
+          </div>
+          <div class="uart-console" id="uart-console" role="log" aria-live="off"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="scope-note">
+      <strong>Engineering &amp; Claim Scope Note:</strong> This interactive browser workbench executes 2nd-order Direct Form II Transposed Biquad IIR difference equations and IEEE 802.3 CRC-32 frame checksums using synthetic sEMG waveforms calibrated to Ardhya Novri Ramadhan's undergraduate thesis measurements (<em>STM32F411CEU6 + DFRobot SEN0240</em>, nominal 4,000 Hz ADC+DMA, 8,000 calibration samples, 12,043 logged verification rows, Pearson <em>r</em> = 0.994114; Relax 7.64 mV, Light 16.10 mV, Medium RPE-5 38.52 mV, Strong 52.71 mV RMS). Rendering automatically pauses at 0 FPS when the tab is hidden or scrolled off-screen to preserve device battery.
+    </div>
+  </main>
+
+</body>
+</html>

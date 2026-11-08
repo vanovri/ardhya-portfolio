@@ -185,3 +185,4 @@ if(toc.length){
   map.forEach((link,id)=>{const section=document.getElementById(id);if(section)observer.observe(section);});
 }
 document.querySelectorAll('[data-year]').forEach(node=>node.textContent=new Date().getFullYear());
+if(document.querySelector('[data-webgl-showcase]')){import('./webgl-showcase.js');}

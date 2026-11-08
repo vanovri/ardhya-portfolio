@@ -4,7 +4,7 @@ const rate=document.getElementById('lab-rate'),mains=document.getElementById('la
 const hp=document.getElementById('lab-hp'),lp=document.getElementById('lab-lp'),notch=document.getElementById('lab-notch');
 const windowSize=document.getElementById('lab-window'),play=document.getElementById('lab-play');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-let trace,offset=0,playing=false,frame=0,last=0,inView=true;
+let trace,offset=0,playing=false,frame=0,last=0,inView=true,windowFocused=document.hasFocus?document.hasFocus():true;
 function stop(){playing=false;cancelAnimationFrame(frame);play.textContent='Play preview';play.setAttribute('aria-pressed','false');}
 function draw(){
   const w=canvas.clientWidth,h=canvas.clientHeight,dpr=Math.min(devicePixelRatio,2);
@@ -14,14 +14,14 @@ function draw(){
   for(let i=1;i<8;i++){ctx.beginPath();ctx.moveTo(w*i/8,0);ctx.lineTo(w*i/8,h);ctx.stroke();}
   const visible=trace.rate*.65;
   function line(values,color,width){ctx.beginPath();ctx.strokeStyle=color;ctx.lineWidth=width;const points=Math.min(w,1000);for(let x=0;x<points;x++){const index=(offset+Math.floor(x/points*visible))%values.length;const y=h/2-values[index]*(h*.58);if(x)ctx.lineTo(x/(points-1)*w,y);else ctx.moveTo(0,y);}ctx.stroke();}
-  line(trace.raw,'#a9abb4',1);line(trace.filtered,'#0067c8',1.6);
+  line(trace.raw,'#a9abb4',1);line(trace.filtered,'#0071e3',1.6);
   const metrics=windowFeatures(trace,offset+visible-trace.rate*Number(windowSize.value)/1000,Number(windowSize.value));
   document.getElementById('lab-rms').textContent=metrics.rms.toFixed(3);
   document.getElementById('lab-mav').textContent=metrics.mav.toFixed(3);
   document.getElementById('lab-samples').textContent=String(metrics.count);
 }
 function refresh(){trace=generateSignal({rate:Number(rate.value),mains:Number(mains.value),highpass:hp.checked,lowpass:lp.checked,notch:notch.checked});offset=trace.rate;document.getElementById('lab-mains-label').textContent=Number(mains.value).toFixed(2)+' a.u.';draw();}
-function tick(time){if(!playing)return;const dt=last?Math.min(time-last,60):0;last=time;offset=(offset+Math.round(dt/1000*trace.rate))%(trace.raw.length-trace.rate);draw();frame=requestAnimationFrame(tick);}
+function tick(time){if(!playing||document.hidden||!inView){stop();return;}const minInterval=windowFocused?16:66.7;if(last&&time-last<minInterval){frame=requestAnimationFrame(tick);return;}const dt=last?Math.min(time-last,80):0;last=time;offset=(offset+Math.round(dt/1000*trace.rate))%(trace.raw.length-trace.rate);draw();frame=requestAnimationFrame(tick);}
 play.addEventListener('click',()=>{if(playing){stop();return;}playing=true;last=0;play.textContent='Pause preview';play.setAttribute('aria-pressed','true');frame=requestAnimationFrame(tick);});
 for(const input of [rate,mains,hp,lp,notch])input.addEventListener('input',refresh);
 windowSize.addEventListener('change',draw);
@@ -31,6 +31,9 @@ document.getElementById('lab-export').addEventListener('click',()=>{
   const url=URL.createObjectURL(new Blob([lines.join('\n')],{type:'text/csv;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download='ardhya-synthetic-signal.csv';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
+window.addEventListener('blur',()=>{windowFocused=false;});
+window.addEventListener('focus',()=>{windowFocused=true;});
+canvas.addEventListener('contentvisibilityautostatechange',event=>{if(event.skipped)stop();});
 reduced.addEventListener('change',event=>{if(event.matches)stop();});
 new ResizeObserver(draw).observe(canvas);
 new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;if(!inView)stop();}).observe(canvas);

@@ -76,11 +76,3 @@ if(lb){
 const toc=document.querySelectorAll('.toc a');
 if(toc.length){const map=new Map([...toc].map(a=>[a.getAttribute('href').slice(1),a]));const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){toc.forEach(a=>a.classList.remove('active'));map.get(e.target.id)?.classList.add('active')}}),{rootMargin:'-30% 0px -60% 0px'});map.forEach((a,id)=>{const s=document.getElementById(id);if(s)io.observe(s)});}
 document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
-
-/* card hover tilt + glow (skipped for touch and reduced motion) */
-if(!reduce&&matchMedia('(hover: hover) and (pointer: fine)').matches){
-  document.querySelectorAll('.card').forEach(c=>{
-    c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.style.setProperty('--ry',((x-.5)*10).toFixed(2)+'deg');c.style.setProperty('--rx',((.5-y)*10).toFixed(2)+'deg');c.style.setProperty('--mx',(x*100).toFixed(1)+'%');c.style.setProperty('--my',(y*100).toFixed(1)+'%');c.classList.add('tilting')});
-    c.addEventListener('pointerleave',()=>{c.classList.remove('tilting');c.style.removeProperty('--rx');c.style.removeProperty('--ry')});
-  });
-}

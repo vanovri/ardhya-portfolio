@@ -5,7 +5,10 @@
 ## Key Pages
 - [Home](https://ardhyanovri.my.id/): Overview of embedded hardware, signal processing, and software work.
 - [About](https://ardhyanovri.my.id/about): Biography, education at Diponegoro University, technical focus, and claim discipline.
-- [Projects](https://ardhyanovri.my.id/projects): Index of 38 documented projects (STM32 EMG thesis, ESP32 IoT prototypes, ENVIID web engineering, open-source developer tools, simulations, and proposals).
+- [Projects](https://ardhyanovri.my.id/projects): Index of 54 documented projects (Cyberpunk Floating Ramen Stall 240-frame Blender 4.x/glTF 2.0/BT.709 lossless muxer, AetherSynth & Flow Swift 6/Metal spatial synthesizer, FerrumKV pure-Rust Raft/HNSW/LSM store, STM32 EMG thesis, ESP32 IoT prototypes, ENVIID web engineering, open-source developer tools, simulations, and proposals).
+- [Cyberpunk Floating Ramen Stall](https://ardhyanovri.my.id/projects/cyberpunk-floating-ramen-stall): 100% self-contained Blender 4.0–4.3 procedural 3D diorama generator (579 objects, 31 shader graphs), Binary glTF 2.0 serializer, pure-Python Z-buffer Neon Bloom renderer, 240 frames (10.0s @ 24fps BT.709 lossless) RIFF/AVI 1.0 & ISO-BMFF MP4 muxer, and WebGL2 + WebAudio studio.
+- [AetherSynth & Flow](https://ardhyanovri.my.id/projects/aether-synth-flow): Native Swift 6 and Metal spatial audio synthesizer (iOS 18, watchOS 11, visionOS 2, macOS 15, AUv3) with 128-tap KEMAR HRIR UPOLS convolution, 2D/3D FDTD PML waveguides, and closed-loop Lomb-Scargle HRV entrainment.
+- [FerrumKV](https://ardhyanovri.my.id/projects/ferrum-kv): Distributed RESP3 key-value store, 3-node Raft consensus engine, HNSW SQ8 vector search (173K QPS, 93.3% Recall@5), and disk LSM-tree written in pure safe Rust (std only, #![forbid(unsafe_code)], 505.7K GET/s, 0 external crates).
 - [Experience](https://ardhyanovri.my.id/experience): 18 documented roles across internships (PT Angkasa Pura Indonesia / InJourney Airports, Redesma), PT ENVIID Karbon Solusi, practicum teaching assistantship, and campus organizations.
 - [Credentials](https://ardhyanovri.my.id/credentials): Verified academic credentials, competition awards, and technical certifications.
 - [Interactive Lab](https://ardhyanovri.my.id/lab): Client-side 20 Hz / 500 Hz / 50 Hz notch EMG filter and UART framing simulator.
