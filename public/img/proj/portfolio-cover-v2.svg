@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" fill="none" role="img" aria-label="Personal Portfolio and Interactive Engineering Workbench in Apple White Studio">
+  <title>Personal Portfolio and Interactive Engineering Workbench in Apple White Studio</title>
+  <defs>
+    <linearGradient id="outerBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="iconSqBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F4F8FD"/>
+      <stop offset="100%" stop-color="#E4EEFA"/>
+    </linearGradient>
+    <linearGradient id="iconArch" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="55%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="iconWave" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0058B8"/>
+      <stop offset="50%" stop-color="#0071E3"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </linearGradient>
+    <radialGradient id="iconHalo" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#0071E3" stop-opacity="0.16"/>
+      <stop offset="65%" stop-color="#0D9488" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0071E3" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="stageShadow" x="-5%" y="-5%" width="110%" height="112%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+    <filter id="appIconShadow" filterUnits="userSpaceOnUse" x="-20" y="-20" width="104" height="104">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#003D82" flood-opacity="0.15"/>
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+    <pattern id="dotGrid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <circle cx="19" cy="19" r="1.3" fill="#dcdce2"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#outerBg)"/>
+
+  <g transform="translate(48, 36)">
+    <!-- Outer Apple White Studio Stage -->
+    <rect width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#stageShadow)"/>
+    <rect x="28" y="28" width="1048" height="622" fill="url(#dotGrid)"/>
+
+    <!-- LEFT CARD: Tactile Iconly x Apple Design App Icon Centerpiece -->
+    <rect x="54" y="54" width="460" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <circle cx="284" cy="296" r="180" fill="url(#iconHalo)"/>
+    <circle cx="284" cy="296" r="150" fill="none" stroke="#dbeafe" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+    <!-- 3D Squircle App Icon (Scaled 3.8x at center 284, 296) -->
+    <g transform="translate(162.4, 174.4) scale(3.8)" filter="url(#appIconShadow)">
+      <path d="M 32,1.5 C 49.5,1.5 55.8,1.5 59.15,4.85 C 62.5,8.2 62.5,14.5 62.5,32 C 62.5,49.5 62.5,55.8 59.15,59.15 C 55.8,62.5 49.5,62.5 32,62.5 C 14.5,62.5 8.2,62.5 4.85,59.15 C 1.5,55.8 1.5,49.5 1.5,32 C 1.5,14.5 1.5,8.2 4.85,4.85 C 8.2,1.5 14.5,1.5 32,1.5 Z" fill="url(#iconSqBg)" stroke="#c8d6e8" stroke-width="1.2"/>
+      <path d="M 7,6.5 C 12,3.2 20,2.8 32,2.8 C 44,2.8 52,3.2 57,6.5" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="32" cy="33" r="17" fill="#0071E3" opacity="0.09"/>
+      <path d="M 18.0,46.0 L 28.4,19.6 C 29.8,16.0 34.2,16.0 35.6,19.6 L 46.0,46.0" fill="none" stroke="url(#iconArch)" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 14.2,37.2 C 20.8,28.8 26.8,29.0 32.0,34.8 C 37.2,40.6 43.2,40.8 49.8,32.4" fill="none" stroke="url(#iconWave)" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 15.6,35.8 C 21.2,29.5 26.5,29.6 31.6,34.5" fill="none" stroke="#FFFFFF" stroke-width="1.35" stroke-linecap="round" opacity="0.62"/>
+    </g>
+
+    <rect x="184" y="546" width="200" height="36" rx="18" fill="#eaf2ff"/>
+    <text x="284" y="569" text-anchor="middle" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#0071e3">ardhyanovri.my.id</text>
+
+    <!-- RIGHT TOP CARD: 54-Project Bento Gallery Preview -->
+    <rect x="542" y="54" width="508" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <!-- Mini Bento Grid Tiles -->
+    <rect x="574" y="86" width="140" height="92" rx="14" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5"/>
+    <circle cx="614" cy="132" r="22" fill="#eaf2ff" stroke="#0071e3" stroke-width="3"/>
+    <path d="M 648,120 H 694 M 648,136 H 682 M 648,152 H 670" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+
+    <rect x="726" y="86" width="140" height="92" rx="14" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5"/>
+    <rect x="746" y="108" width="100" height="12" rx="6" fill="#0071e3"/>
+    <rect x="746" y="128" width="78" height="12" rx="6" fill="#0d9488"/>
+    <rect x="746" y="148" width="60" height="12" rx="6" fill="#10b981"/>
+
+    <rect x="878" y="86" width="140" height="92" rx="14" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5"/>
+    <circle cx="922" cy="132" r="20" fill="#eaf8ee" stroke="#28a745" stroke-width="3"/>
+    <polyline points="913,132 920,139 933,125" fill="none" stroke="#28a745" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 952,124 H 996 M 952,140 H 984" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+
+    <rect x="574" y="194" width="444" height="100" rx="14" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5"/>
+    <rect x="598" y="226" width="150" height="36" rx="18" fill="#eaf2ff"/>
+    <text x="673" y="249" text-anchor="middle" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#0071e3">54 Projects</text>
+    <rect x="764" y="226" width="150" height="36" rx="18" fill="#eaf8ee"/>
+    <text x="839" y="249" text-anchor="middle" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#28a745">65 Static Pages</text>
+    <circle cx="966" cy="244" r="20" fill="#f5f3ff" stroke="#5856d6" stroke-width="3"/>
+    <path d="M 958,244 H 974 M 968,238 L 974,244 L 968,250" fill="none" stroke="#5856d6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- RIGHT BOTTOM CARD: Interactive EMG Signal Processing Lab Waveform -->
+    <rect x="542" y="352" width="508" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <line x1="578" y1="476" x2="1014" y2="476" stroke="#e5e5ea" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <path d="M 578,476 C 610,410 638,542 670,476 C 702,410 730,542 762,476 C 794,410 822,542 854,476 C 886,410 914,542 946,476 C 974,420 994,520 1014,476" fill="none" stroke="#0071e3" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 578,476 C 610,442 638,510 670,476 C 702,442 730,510 762,476 C 794,442 822,510 854,476 C 886,442 914,510 946,476 C 974,448 994,502 1014,476" fill="none" stroke="#0d9488" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round"/>
+    <rect x="706" y="556" width="180" height="36" rx="18" fill="#f0fdfa"/>
+    <text x="796" y="579" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0d9488">Interactive EMG Lab</text>
+  </g>
+</svg>
