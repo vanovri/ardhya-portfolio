@@ -1,0 +1,31 @@
+name: Verify portfolio
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 19 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - name: Verify portfolio and record the result
+        shell: bash
+        run: |
+          set -o pipefail
+          python3 tools/verify.py 2>&1 | tee test-report.txt
+      - name: Attach the test report to the run summary
+        if: always()
+        shell: bash
+        run: |
+          if test -f test-report.txt; then
+            printf '### Portfolio verification\n\n' >> "$GITHUB_STEP_SUMMARY"
+            sed 's/^/    /' test-report.txt >> "$GITHUB_STEP_SUMMARY"
+          fi
