@@ -287,7 +287,7 @@
     },
     {
       "name": "fir-parity",
-      "description": "Compiled Fortran and Rust FIR filter parity against an independent discrete NumPy reference engine",
+      "description": "Compiled Fortran and Rust FIR filter parity against an independent discrete Python reference engine",
       "page": "projects/fir-parity.html",
       "sourceCommit": "efc60793023f5d2b20e0af1c976c668b47d9c408",
       "sourceFiles": [

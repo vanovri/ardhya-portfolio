@@ -159,7 +159,7 @@ export default [
     "title": "FIR Parity",
     "url": "/projects/fir-parity.html",
     "category": "Project",
-    "text": "Compiled Fortran and Rust FIR filter parity against an independent discrete NumPy reference engine"
+    "text": "Compiled Fortran and Rust FIR filter parity against an independent discrete Python reference engine"
   },
   {
     "title": "GOVTECH / Gov-AI Proposal",
