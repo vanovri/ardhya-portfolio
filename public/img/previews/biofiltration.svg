@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Coastal IoT water-quality buoy and oyster biofiltration reef">
+  <title>Coastal IoT water-quality buoy and oyster biofiltration reef</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/>
+  <!-- Ocean Water Layer -->
+  <path d="M48 310 Q320 290 600 310 T1152 305 L1152 714 L48 714 Z" fill="#eaf2ff" opacity="0.65"/>
+  <path d="M48 310 Q320 290 600 310 T1152 305" fill="none" stroke="#0071e3" stroke-width="4"/>
+
+  <!-- Floating Solar IoT Water-Quality Buoy -->
+  <rect x="210" y="250" width="130" height="72" rx="20" fill="#ffffff" stroke="#0071e3" stroke-width="3.5" filter="url(#softShadow)"/>
+  <line x1="275" y1="250" x2="275" y2="175" stroke="#1d1d1f" stroke-width="4"/>
+  <circle cx="275" cy="168" r="10" fill="#0071e3"/>
+  <!-- Radio telemetry rings from buoy -->
+  <path d="M245 145 A42 42 0 0 1 305 145" fill="none" stroke="#0071e3" stroke-width="3" stroke-linecap="round"/>
+  <path d="M225 122 A68 68 0 0 1 325 122" fill="none" stroke="#0071e3" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+  <!-- Submerged multi-sensor probes -->
+  <line x1="250" y1="322" x2="250" y2="470" stroke="#0d9488" stroke-width="4" stroke-linecap="round"/>
+  <line x1="300" y1="322" x2="300" y2="440" stroke="#0071e3" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="250" cy="475" r="9" fill="#0d9488"/>
+  <circle cx="300" cy="445" r="9" fill="#0071e3"/>
+
+  <!-- Left Turbid Particles -> Oyster Reef Biofiltration -> Right Clean Laminar Streamlines -->
+  <g fill="#f59e0b" opacity="0.7">
+    <circle cx="130" cy="430" r="8"/><circle cx="175" cy="465" r="6"/><circle cx="145" cy="510" r="9"/>
+    <circle cx="205" cy="535" r="7"/><circle cx="160" cy="565" r="6"/><circle cx="220" cy="495" r="8"/>
+  </g>
+  <ellipse cx="460" cy="560" rx="54" ry="32" fill="#ffffff" stroke="#0d9488" stroke-width="3"/><ellipse cx="478" cy="542" rx="46" ry="26" fill="#e6f7f5" stroke="#0d9488" stroke-width="2.5"/><ellipse cx="575" cy="575" rx="54" ry="32" fill="#ffffff" stroke="#0d9488" stroke-width="3"/><ellipse cx="593" cy="557" rx="46" ry="26" fill="#e6f7f5" stroke="#0d9488" stroke-width="2.5"/><ellipse cx="695" cy="555" rx="54" ry="32" fill="#ffffff" stroke="#0d9488" stroke-width="3"/><ellipse cx="713" cy="537" rx="46" ry="26" fill="#e6f7f5" stroke="#0d9488" stroke-width="2.5"/><ellipse cx="810" cy="572" rx="54" ry="32" fill="#ffffff" stroke="#0d9488" stroke-width="3"/><ellipse cx="828" cy="554" rx="46" ry="26" fill="#e6f7f5" stroke="#0d9488" stroke-width="2.5"/>
+  <!-- Clean filtered water streamlines on right -->
+  <path d="M880 450 Q960 435 1060 450" fill="none" stroke="#0071e3" stroke-width="4" stroke-linecap="round"/>
+  <path d="M895 495 Q975 480 1075 495" fill="none" stroke="#0d9488" stroke-width="4" stroke-linecap="round"/>
+  <path d="M880 540 Q960 525 1060 540" fill="none" stroke="#0071e3" stroke-width="4" stroke-linecap="round"/>
+
+</svg>

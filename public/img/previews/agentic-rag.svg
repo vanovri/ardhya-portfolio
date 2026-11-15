@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="agentic-rag project-specific schematic illustration">
+  <title>agentic-rag project-specific schematic illustration</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/><rect x="100" y="265" width="130" height="170" rx="12" fill="#ffffff" stroke="#6652c7" stroke-width="2"/><path d="M124 307 h82" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M124 334 h60" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M124 361 h82" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M124 388 h60" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="124" y="289" width="130" height="170" rx="12" fill="#ffffff" stroke="#6652c7" stroke-width="2"/><path d="M148 331 h82" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M148 358 h60" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M148 385 h82" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M148 412 h60" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M254 365 C320 365 300 195 366 195 M254 365 C320 365 300 535 366 535" fill="none" stroke="#6652c7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="366" y="115" width="250" height="160" rx="20" fill="#f1effb" stroke="#6652c7" stroke-width="2"/><rect x="366" y="455" width="250" height="160" rx="20" fill="#edf5ff" stroke="#0071e3" stroke-width="2"/><circle cx="396" cy="195" r="7" fill="#6652c7" stroke="none" stroke-width="3"/><circle cx="448" cy="230" r="7" fill="#b8a9eb" stroke="none" stroke-width="3"/><circle cx="494" cy="180" r="7" fill="#6652c7" stroke="none" stroke-width="3"/><circle cx="542" cy="230" r="7" fill="#b8a9eb" stroke="none" stroke-width="3"/><circle cx="580" cy="195" r="7" fill="#6652c7" stroke="none" stroke-width="3"/><text x="402" y="255" font-family="system-ui,sans-serif" font-size="18" font-weight="500" fill="#6652c7">FAISS</text><rect x="395" y="486" width="128" height="12" rx="5" fill="#0071e3" stroke="none" stroke-width="2"/><rect x="395" y="514" width="88" height="12" rx="5" fill="#0071e3" stroke="none" stroke-width="2"/><rect x="395" y="542" width="160" height="12" rx="5" fill="#0071e3" stroke="none" stroke-width="2"/><text x="402" y="595" font-family="system-ui,sans-serif" font-size="18" font-weight="500" fill="#0071e3">BM25</text><path d="M616 195 C720 195 670 365 766 365 M616 535 C720 535 670 365 766 365" fill="none" stroke="#087f86" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="810" y="235" width="235" height="275" rx="12" fill="#ffffff" stroke="#087f86" stroke-width="2"/><path d="M834 277 h187" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M834 304 h165" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M834 331 h187" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M834 358 h165" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><text x="837" y="485" font-family="system-ui,sans-serif" font-size="25" font-weight="500" fill="#087f86">[1]  [2]  [3]</text>
+</svg>

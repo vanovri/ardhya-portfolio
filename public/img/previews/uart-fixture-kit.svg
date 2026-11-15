@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="UART serial logic analyzer timing and fault injection diagram">
+  <title>UART serial logic analyzer timing and fault injection diagram</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/>
+  <rect x="86" y="88" width="1028" height="574" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+  <!-- Logic Analyzer Top Chrome -->
+  <circle cx="118" cy="120" r="6" fill="#ff5f57"/>
+  <circle cx="138" cy="120" r="6" fill="#febc2e"/>
+  <circle cx="158" cy="120" r="6" fill="#28c840"/>
+  <rect x="930" y="102" width="152" height="34" rx="17.0" fill="#eaf2ff" /><text x="1006.0" y="123.9" text-anchor="middle" class="t" font-size="14" font-weight="600" fill="#0071e3">115,200 8N1</text>
+  <line x1="86" y1="150" x2="1114" y2="150" stroke="#d2d2d7" stroke-width="1"/>
+  <line x1="180" y1="160" x2="180" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="242" y1="160" x2="242" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="304" y1="160" x2="304" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="366" y1="160" x2="366" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="428" y1="160" x2="428" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="490" y1="160" x2="490" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="552" y1="160" x2="552" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="614" y1="160" x2="614" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="676" y1="160" x2="676" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="738" y1="160" x2="738" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="800" y1="160" x2="800" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="862" y1="160" x2="862" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="924" y1="160" x2="924" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="986" y1="160" x2="986" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="1048" y1="160" x2="1048" y2="590" stroke="#e8e8ed" stroke-width="1.2" stroke-dasharray="4 4"/>
+
+  <!-- Channel 1: UART TX Square Wave -->
+  <text x="112" y="254" class="m" font-size="16" font-weight="700" fill="#0071e3">TX</text>
+  <rect x="304" y="192" width="496" height="112" rx="10" fill="#eaf2ff" opacity="0.55"/>
+  <polyline points="180,210 242,210 304,210 304,210 304,286 366,286 366,286 366,210 428,210 428,210 428,286 490,286 490,286 490,210 552,210 614,210 614,210 614,286 676,286 738,286 738,286 738,210 800,210 800,210 800,286 862,286 862,286 862,210 924,210 986,210 1048,210" fill="none" stroke="#0071e3" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Channel 2: Injected Noise / Glitch + Checksum Gate -->
+  <text x="112" y="405" class="m" font-size="16" font-weight="700" fill="#f59e0b">ERR</text>
+  <line x1="180" y1="415" x2="540" y2="415" stroke="#94a3b8" stroke-width="3.5"/>
+  <rect x="540" y="346" width="190" height="92" rx="14" fill="#ffeceb" stroke="#fca5a5" stroke-width="1.5"/>
+  <polyline points="540,415 562,360 582,428 604,356 626,425 650,368 672,415 730,415" fill="none" stroke="#ff3b30" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="730" y1="415" x2="1048" y2="415" stroke="#94a3b8" stroke-width="3.5"/>
+
+  <!-- Channel 3: Reassembled Framed Packets -->
+  <text x="112" y="535" class="m" font-size="16" font-weight="700" fill="#28a745">PKT</text>
+  <rect x="200" y="492" width="240" height="68" rx="16" fill="#eaf8ee" stroke="#86efac" stroke-width="2"/>
+  <circle cx="234" cy="526" r="12" fill="#28a745"/>
+  <path d="M229 526l4 4 7-8" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="260" y="519" width="150" height="14" rx="7" fill="#28a745" opacity="0.65"/>
+
+  <rect x="490" y="492" width="240" height="68" rx="16" fill="#ffeceb" stroke="#fca5a5" stroke-width="2"/>
+  <circle cx="524" cy="526" r="12" fill="#ff3b30"/>
+  <path d="M519 521l10 10M529 521l-10 10" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="550" y="519" width="150" height="14" rx="7" fill="#ff3b30" opacity="0.55"/>
+
+  <rect x="780" y="492" width="240" height="68" rx="16" fill="#eaf8ee" stroke="#86efac" stroke-width="2"/>
+  <circle cx="814" cy="526" r="12" fill="#28a745"/>
+  <path d="M809 526l4 4 7-8" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="840" y="519" width="150" height="14" rx="7" fill="#28a745" opacity="0.65"/>
+
+</svg>

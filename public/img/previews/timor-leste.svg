@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Timor-Leste solar irrigation and hilltop community warning schematic">
+  <title>Timor-Leste solar irrigation and hilltop community warning schematic</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/>
+  <!-- Hillside Terrain Contour -->
+  <path d="M48 590 Q320 580 560 450 T1152 340 L1152 714 L48 714 Z" fill="#eaf8ee" opacity="0.75"/>
+  <path d="M48 590 Q320 580 560 450 T1152 340" fill="none" stroke="#28a745" stroke-width="3.5"/>
+
+  <!-- Left: Solar PV Array + Submersible Pump + Uphill Water Pipe -->
+  <g transform="translate(115, 415) rotate(-14)">
+    <rect x="0" y="0" width="170" height="82" rx="8" fill="#0071e3" stroke="#ffffff" stroke-width="2.5"/>
+    <line x1="56" y1="0" x2="56" y2="82" stroke="#93c5fd" stroke-width="1.5"/>
+    <line x1="112" y1="0" x2="112" y2="82" stroke="#93c5fd" stroke-width="1.5"/>
+    <line x1="0" y1="41" x2="170" y2="41" stroke="#93c5fd" stroke-width="1.5"/>
+  </g>
+  <rect x="195" y="480" width="12" height="108" fill="#475569"/>
+  <!-- Elevated Water Storage Tank on Mid-Hill -->
+  <rect x="445" y="340" width="110" height="95" rx="14" fill="#eaf2ff" stroke="#0071e3" stroke-width="3.5" filter="url(#softShadow)"/>
+  <path d="M455 390 Q478 380 500 390 T545 390 L545 430 L455 430 Z" fill="#0071e3" opacity="0.65"/>
+  <!-- Pumped Water Pipeline from Left Borehole to Mid-Hill Tank -->
+  <path d="M250 640 L250 530 L445 395" fill="none" stroke="#0071e3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="250" cy="640" r="18" fill="#0071e3"/>
+
+  <!-- Right Hilltop: Community Early-Warning & Telemetry Tower -->
+  <polygon points="940,355 990,355 972,175 958,175" fill="none" stroke="#1d1d1f" stroke-width="3.5" stroke-linejoin="round"/>
+  <line x1="946" y1="300" x2="984" y2="300" stroke="#1d1d1f" stroke-width="2.5"/>
+  <line x1="952" y1="240" x2="978" y2="240" stroke="#1d1d1f" stroke-width="2.5"/>
+  <circle cx="965" cy="165" r="12" fill="#0071e3"/>
+  <!-- Concentric Radio / Warning Acoustic Wave Rings -->
+  <circle cx="965" cy="165" r="42" fill="none" stroke="#0071e3" stroke-width="3" opacity="0.75"/>
+  <circle cx="965" cy="165" r="78" fill="none" stroke="#0071e3" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.5"/>
+  <circle cx="965" cy="165" r="116" fill="none" stroke="#0071e3" stroke-width="2" stroke-dasharray="6 8" opacity="0.3"/>
+
+</svg>

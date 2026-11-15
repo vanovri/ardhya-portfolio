@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="PLTA Jatigede hydro-electric dam cross-section and NPV payback chart">
+  <title>PLTA Jatigede hydro-electric dam cross-section and NPV payback chart</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/>
+  <!-- Left: Hydroelectric Dam & Reservoir Cross-Section -->
+  <rect x="88" y="110" width="480" height="530" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+  <!-- Elevated Water Reservoir -->
+  <path d="M108 240 L310 240 L270 540 L108 540 Z" fill="#eaf2ff"/>
+  <path d="M108 240 Q158 228 208 240 T310 240" fill="none" stroke="#0071e3" stroke-width="4"/>
+  <!-- Concrete Gravity Dam Wall -->
+  <polygon points="300,190 365,190 435,540 270,540" fill="#cbd5e1" stroke="#475569" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Penstock Pipe through Dam to Turbine -->
+  <path d="M285 360 L465 490" fill="none" stroke="#0071e3" stroke-width="14" stroke-linecap="round"/>
+  <path d="M285 360 L465 490" fill="none" stroke="#93c5fd" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <!-- Hydro Turbine Wheel -->
+  <circle cx="475" cy="495" r="36" fill="#ffffff" stroke="#0071e3" stroke-width="4"/>
+  <circle cx="475" cy="495" r="12" fill="#0071e3"/>
+  <line x1="475" y1="459" x2="475" y2="531" stroke="#0071e3" stroke-width="3"/>
+  <line x1="439" y1="495" x2="511" y2="495" stroke="#0071e3" stroke-width="3"/>
+
+  <!-- Right: Engineering Economics NPV Cashflow & Break-Even Chart -->
+  <rect x="612" y="110" width="500" height="530" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+  <!-- Zero baseline axis -->
+  <line x1="660" y1="410" x2="1068" y2="410" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="660" y1="170" x2="660" y2="580" stroke="#d2d2d7" stroke-width="2"/>
+
+  <!-- Cashflow Bars (Year 0 negative CAPEX -> Years 1..6 positive returns) -->
+  <rect x="684" y="410" width="36" height="135" rx="6" fill="#ff3b30" opacity="0.75"/>
+  <rect x="740" y="365" width="36" height="45" rx="6" fill="#b8d4ff"/>
+  <rect x="796" y="330" width="36" height="80" rx="6" fill="#b8d4ff"/>
+  <rect x="852" y="290" width="36" height="120" rx="6" fill="#0071e3" opacity="0.65"/>
+  <rect x="908" y="245" width="36" height="165" rx="6" fill="#0071e3" opacity="0.85"/>
+  <rect x="964" y="205" width="36" height="205" rx="6" fill="#28a745" opacity="0.85"/>
+  <rect x="1020" y="175" width="36" height="235" rx="6" fill="#28a745"/>
+
+  <!-- Cumulative NPV Curve crossing Break-Even Payback Point -->
+  <path d="M702 535 C758 490, 814 435, 855 410 C910 375, 975 280, 1038 200" fill="none" stroke="#1d1d1f" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Break-even Payback Point Highlight -->
+  <circle cx="855" cy="410" r="11" fill="#0071e3" stroke="#ffffff" stroke-width="3"/>
+  <rect x="805" y="434" width="110" height="30" rx="15.0" fill="#eaf2ff" /><text x="860.0" y="453.6" text-anchor="middle" class="t" font-size="13" font-weight="600" fill="#0071e3">Payback</text>
+  <rect x="950" y="134" width="118" height="30" rx="15.0" fill="#eaf8ee" /><text x="1009.0" y="153.6" text-anchor="middle" class="t" font-size="13" font-weight="600" fill="#28a745">NPV &gt; 0</text>
+
+</svg>

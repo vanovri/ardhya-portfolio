@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="open-dmrv-engine project-specific schematic illustration">
+  <title>open-dmrv-engine project-specific schematic illustration</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/><rect x="100" y="165" width="255" height="300" rx="22" fill="#eef8f1" stroke="#24814b" stroke-width="2"/><circle cx="160" cy="245" r="25" fill="#354c40" stroke="none" stroke-width="3"/><circle cx="230" cy="255" r="36" fill="#354c40" stroke="none" stroke-width="3"/><circle cx="192" cy="319" r="31" fill="#354c40" stroke="none" stroke-width="3"/><circle cx="284" cy="330" r="22" fill="#354c40" stroke="none" stroke-width="3"/><path d="M120 485 h215 M225 465 v20" fill="none" stroke="#24814b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><text x="155" y="530" font-family="system-ui,sans-serif" font-size="20" font-weight="500" fill="#24814b">batch inputs</text><path d="M388 300 h70 M458 300 l75 -85 M458 300 l75 85" fill="none" stroke="#24814b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="508" y="183" width="64" height="64" rx="9" fill="#e8f2ec" stroke="#24814b" stroke-width="2"/><rect x="508" y="353" width="64" height="64" rx="9" fill="#e8f2ec" stroke="#24814b" stroke-width="2"/><rect x="680" y="268" width="64" height="64" rx="9" fill="#e8f2ec" stroke="#24814b" stroke-width="2"/><path d="M572 215 L680 300 M572 385 L680 300 M744 300 h78" fill="none" stroke="#24814b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="850" y="155" width="230" height="330" rx="12" fill="#ffffff" stroke="#24814b" stroke-width="2"/><path d="M874 197 h182" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M874 224 h160" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M874 251 h182" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M874 278 h160" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><text x="875" y="463" font-family="system-ui,sans-serif" font-size="22" font-weight="500" fill="#24814b">Merkle root</text><path d="M415 560 H771" fill="none" stroke="#d2d2d7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><text x="438" y="603" font-family="system-ui,sans-serif" font-size="20" font-weight="500" fill="#1d1d1f">deterministic verification</text>
+</svg>

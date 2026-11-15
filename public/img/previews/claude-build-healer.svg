@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="claude-build-healer project-specific schematic illustration">
+  <title>claude-build-healer project-specific schematic illustration</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/><rect x="110" y="130" width="520" height="490" rx="20" fill="#ffffff" stroke="#1d1d1f" stroke-width="2"/><path d="M110 170 h520" fill="none" stroke="#d2d2d7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><circle cx="132" cy="151" r="4.5" fill="#ff5f57" stroke="none" stroke-width="3"/><circle cx="150" cy="151" r="4.5" fill="#febc2e" stroke="none" stroke-width="3"/><circle cx="168" cy="151" r="4.5" fill="#28c840" stroke="none" stroke-width="3"/><circle cx="152" cy="235" r="7" fill="#d93932" stroke="none" stroke-width="3"/><path d="M180 235 h325" fill="none" stroke="#d93932" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><circle cx="152" cy="310" r="7" fill="#d93932" stroke="none" stroke-width="3"/><path d="M180 310 h265" fill="none" stroke="#d93932" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><circle cx="152" cy="385" r="7" fill="#d93932" stroke="none" stroke-width="3"/><path d="M180 385 h360" fill="none" stroke="#d93932" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><circle cx="152" cy="460" r="7" fill="#f5a524" stroke="none" stroke-width="3"/><path d="M180 460 h185" fill="none" stroke="#b9b9c1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M658 235 H740 Q776 235 776 271 v84" fill="none" stroke="#d93932" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="718" y="355" width="340" height="146" rx="24" fill="#fff7ed" stroke="#bc7027" stroke-width="2"/><text x="750" y="409" font-family="system-ui,sans-serif" font-size="24" font-weight="500" fill="#1d1d1f">fingerprint</text><path d="M752 447 h80 m25 0 h48 m22 0 h90" fill="none" stroke="#bc7027" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M887 501 v77 H659" fill="none" stroke="#087f86" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M679 560 l-20 18 20 18" fill="none" stroke="#087f86" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/>
+</svg>

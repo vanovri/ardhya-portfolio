@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="agent-referee project-specific schematic illustration">
+  <title>agent-referee project-specific schematic illustration</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/><rect x="104" y="245" width="170" height="220" rx="12" fill="#ffffff" stroke="#1d1d1f" stroke-width="2"/><path d="M128 287 h122" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M128 314 h100" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M128 341 h122" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M128 368 h100" fill="none" stroke="#d2d2d7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><text x="119" y="507" font-family="system-ui,sans-serif" font-size="19" font-weight="500" fill="#1d1d1f">candidate</text><rect x="340" y="190" width="118" height="360" rx="28" fill="#f8fafc" stroke="#0071e3" stroke-width="2"/><text x="354" y="250" font-family="system-ui,sans-serif" font-size="18" font-weight="500" fill="#0071e3">SHA-256</text><circle cx="399" cy="362" r="34" fill="white" stroke="#0071e3" stroke-width="3"/><path d="M386 364 l9 9 20 -23" fill="none" stroke="#0071e3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M298 362 h35" fill="none" stroke="#1d1d1f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M380 475 h38" fill="none" stroke="#d2d2d7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="514" y="190" width="118" height="360" rx="28" fill="#f8fafc" stroke="#6652c7" stroke-width="2"/><text x="528" y="250" font-family="system-ui,sans-serif" font-size="18" font-weight="500" fill="#6652c7">AST</text><circle cx="573" cy="362" r="34" fill="white" stroke="#6652c7" stroke-width="3"/><path d="M560 364 l9 9 20 -23" fill="none" stroke="#6652c7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M472 362 h35" fill="none" stroke="#1d1d1f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M554 475 h38" fill="none" stroke="#d2d2d7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="688" y="190" width="118" height="360" rx="28" fill="#f8fafc" stroke="#087f86" stroke-width="2"/><text x="702" y="250" font-family="system-ui,sans-serif" font-size="18" font-weight="500" fill="#087f86">tests</text><circle cx="747" cy="362" r="34" fill="white" stroke="#087f86" stroke-width="3"/><path d="M734 364 l9 9 20 -23" fill="none" stroke="#087f86" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M646 362 h35" fill="none" stroke="#1d1d1f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M728 475 h38" fill="none" stroke="#d2d2d7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="862" y="190" width="118" height="360" rx="28" fill="#f8fafc" stroke="#24814b" stroke-width="2"/><text x="876" y="250" font-family="system-ui,sans-serif" font-size="18" font-weight="500" fill="#24814b">budget</text><circle cx="921" cy="362" r="34" fill="white" stroke="#24814b" stroke-width="3"/><path d="M908 364 l9 9 20 -23" fill="none" stroke="#24814b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M820 362 h35" fill="none" stroke="#1d1d1f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M902 475 h38" fill="none" stroke="#d2d2d7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/>
+</svg>

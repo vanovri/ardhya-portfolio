@@ -3,6 +3,7 @@ from pathlib import Path
 from urllib.parse import unquote, urljoin, urlsplit
 import json
 import re
+import hashlib
 
 ROOT = Path(__file__).resolve().parent.parent / 'public'
 
@@ -57,6 +58,14 @@ projects = evidence['projects']
 assert len(projects) == len({project['name'] for project in projects})
 assert publication['project_repositories'] == len(projects)
 assert publication['open_source_tagged_cards'] == sum('open-source' in card.get('data-tags', '').split() for card in cards)
+previews = json.loads((ROOT / 'preview-assets.json').read_text(encoding='utf-8'))['previews']
+assert len(previews) == len({p['card'] for p in previews}) == 55
+assert publication['tracked_preview_assets'] == len(previews)
+for preview in previews:
+    image = ROOT / preview['preview']
+    assert image.is_file() and hashlib.sha256(image.read_bytes()).hexdigest() == preview['sha256'], image
+card_blocks = re.findall(r'<a\b[^>]*class="card[^\"]*"[^>]*>.*?</a>', (ROOT / 'projects.html').read_text(encoding='utf-8'), re.S)
+assert len(card_blocks) == 55 and all('<img ' in block and 'Source and scope reviewed' not in block for block in card_blocks)
 for project in projects:
     assert re.fullmatch(r'[0-9a-f]{40}', project['sourceCommit']), project['name']
     assert project['sourceFiles'] and project['description'], project['name']

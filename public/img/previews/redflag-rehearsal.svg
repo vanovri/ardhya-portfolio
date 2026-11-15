@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="redflag-rehearsal project-specific schematic illustration">
+  <title>redflag-rehearsal project-specific schematic illustration</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/><rect x="110" y="205" width="350" height="275" rx="24" fill="#fff8ee" stroke="#af6b23" stroke-width="2"/><text x="154" y="303" font-family="system-ui,sans-serif" font-size="42" font-weight="500" fill="#1d1d1f">/pattern/</text><path d="M155 350 h235 M155 391 h165" fill="none" stroke="#d1b18a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M488 340 h120" fill="none" stroke="#1d1d1f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="665" y="160" width="185" height="185" rx="22" fill="#f1f8f3" stroke="#24814b" stroke-width="2"/><path d="M744 250 l9 9 20 -23" fill="none" stroke="#24814b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="875" y="160" width="185" height="185" rx="22" fill="#fff2f0" stroke="#d93932" stroke-width="2"/><path d="M952 235 l30 30 m0 -30 -30 30" fill="none" stroke="#d93932" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="665" y="370" width="185" height="185" rx="22" fill="#fff2f0" stroke="#d93932" stroke-width="2"/><path d="M742 445 l30 30 m0 -30 -30 30" fill="none" stroke="#d93932" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><rect x="875" y="370" width="185" height="185" rx="22" fill="#f1f8f3" stroke="#24814b" stroke-width="2"/><path d="M954 460 l9 9 20 -23" fill="none" stroke="#24814b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M955 600 H505 Q410 600 410 520" fill="none" stroke="#af6b23" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 8"/><text x="632" y="648" font-family="system-ui,sans-serif" font-size="21" font-weight="500" fill="#1d1d1f">rehearse · score · rollback</text>
+</svg>

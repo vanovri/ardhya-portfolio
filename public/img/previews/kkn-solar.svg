@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Solar-powered Smart Owl House installation schematic">
+  <title>Solar-powered Smart Owl House installation schematic</title>
+  <defs>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif; fill: #1d1d1f; }
+      .m { font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace; fill: #6e6e73; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#28a745" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#28a745" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadow)"/>
+  <!-- Soft sky & ground horizon inside stage -->
+  <path d="M80 580 Q380 550 620 575 T1120 565 L1120 660 L80 660 Z" fill="#eaf8ee" opacity="0.8"/>
+  <line x1="80" y1="578" x2="1120" y2="578" stroke="#86efac" stroke-width="3"/>
+
+  <!-- Sun in top-left -->
+  <circle cx="175" cy="155" r="34" fill="#fff6e5" stroke="#f59e0b" stroke-width="4"/>
+  <line x1="223.0" y1="155.0" x2="243.0" y2="155.0" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="216.6" y1="179.0" x2="233.9" y2="189.0" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="199.0" y1="196.6" x2="209.0" y2="213.9" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="175.0" y1="203.0" x2="175.0" y2="223.0" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="151.0" y1="196.6" x2="141.0" y2="213.9" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="133.4" y1="179.0" x2="116.1" y2="189.0" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="127.0" y1="155.0" x2="107.0" y2="155.0" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="133.4" y1="131.0" x2="116.1" y2="121.0" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="151.0" y1="113.4" x2="141.0" y2="96.1" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="175.0" y1="107.0" x2="175.0" y2="87.0" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="199.0" y1="113.4" x2="209.0" y2="96.1" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="216.6" y1="131.0" x2="233.9" y2="121.0" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Tilted Solar PV Panel on Pole -->
+  <g transform="translate(150, 290) rotate(-16)">
+    <rect x="0" y="0" width="270" height="130" rx="10" fill="#0071e3" stroke="#ffffff" stroke-width="3" filter="url(#softShadow)"/>
+    <line x1="67" y1="0" x2="67" y2="130" stroke="#93c5fd" stroke-width="2"/>
+    <line x1="135" y1="0" x2="135" y2="130" stroke="#93c5fd" stroke-width="2"/>
+    <line x1="202" y1="0" x2="202" y2="130" stroke="#93c5fd" stroke-width="2"/>
+    <line x1="0" y1="43" x2="270" y2="43" stroke="#93c5fd" stroke-width="2"/>
+    <line x1="0" y1="86" x2="270" y2="86" stroke="#93c5fd" stroke-width="2"/>
+  </g>
+  <rect x="278" y="388" width="16" height="190" rx="4" fill="#64748b"/>
+  <!-- Battery Enclosure Box on Pole -->
+  <rect x="236" y="440" width="100" height="84" rx="14" fill="#ffffff" stroke="#d2d2d7" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="252" y="458" width="68" height="14" rx="5" fill="#28a745"/>
+  <rect x="252" y="478" width="68" height="14" rx="5" fill="#28a745"/>
+  <rect x="252" y="498" width="50" height="14" rx="5" fill="#28a745" opacity="0.5"/>
+
+  <!-- Power transmission line to Owl House -->
+  <path d="M336 482 L540 482 L540 380 L740 380" fill="none" stroke="#0071e3" stroke-width="4" stroke-dasharray="10 6"/>
+  <circle cx="440" cy="482" r="7" fill="#0071e3"/>
+  <circle cx="540" cy="430" r="7" fill="#0071e3"/>
+  <circle cx="640" cy="380" r="7" fill="#0071e3"/>
+
+  <!-- Right: Architectural Smart Owl House (Rubuha / Tyto alba) -->
+  <!-- Mounting pole -->
+  <rect x="866" y="430" width="24" height="150" fill="#475569"/>
+  <line x1="810" y1="578" x2="946" y2="578" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+  <!-- Owl house body -->
+  <rect x="738" y="230" width="280" height="210" rx="16" fill="#ffffff" stroke="#1d1d1f" stroke-width="3.5" filter="url(#softShadow)"/>
+  <!-- Pitched roof -->
+  <path d="M705 242 L878 126 L1051 242 Z" fill="#eaf2ff" stroke="#0071e3" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Circular entrance & Owl Silhouette -->
+  <circle cx="878" cy="325" r="58" fill="#1e293b" stroke="#0071e3" stroke-width="3.5"/>
+  <!-- Stylized Owl inside circular opening -->
+  <circle cx="858" cy="312" r="14" fill="#ffffff"/>
+  <circle cx="898" cy="312" r="14" fill="#ffffff"/>
+  <circle cx="858" cy="312" r="6" fill="#1d1d1f"/>
+  <circle cx="898" cy="312" r="6" fill="#1d1d1f"/>
+  <polygon points="878,320 870,334 886,334" fill="#f59e0b"/>
+  <!-- Perch bar -->
+  <rect x="828" y="402" width="100" height="10" rx="5" fill="#0071e3"/>
+
+</svg>

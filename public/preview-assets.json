@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "previews": [
+    {
+      "title": "Cyberpunk Floating Ramen Stall",
+      "slug": "cyberpunk-floating-ramen-stall",
+      "card": "projects/cyberpunk-floating-ramen-stall.html",
+      "preview": "img/previews/cyberpunk-floating-ramen-stall.svg",
+      "kind": "source-grounded illustration",
+      "previous_url": null,
+      "sha256": "eeb1f6bc84828fce8f34d29e5b6dfc68c7334c215d6a5e1e487ae7cd9b81d3b3"
+    },
+    {
+      "title": "FerrumKV",
+      "slug": "ferrum-kv",
+      "card": "projects/ferrum-kv.html",
+      "preview": "img/previews/ferrum-kv.svg",
+      "kind": "source-grounded illustration",
+      "previous_url": null,
+      "sha256": "79956800fd2bd6e7588661039e5151d031ef9f5badd19f6a8acf544f3e18a174"
+    },
+    {
+      "title": "AetherCoreEngine",
+      "slug": "aether-core-engine",
+      "card": "projects/aether-core-engine.html",
+      "preview": "img/previews/aether-core-engine.svg",
+      "kind": "source-grounded illustration",
+      "previous_url": null,
+      "sha256": "f88e79a1940c0c2c36e403032bb500f94cc53d461747666545d86a8e861d736a"
+    },
+    {
+      "title": "AGY \u00d7 Codex Video Studio",
+      "slug": "agy-codex-video-studio",
+      "card": "projects/agy-codex-video-studio.html",
+      "preview": "img/previews/agy-codex-video-studio.svg",
+      "kind": "source-grounded illustration",
+      "previous_url": null,
+      "sha256": "b199eb68f2ae8ce5f52140fa4bd96c40c931dc26ccd564f55f0c0996f77b2702"
+    },
+    {
+      "title": "AetherSynth & Flow",
+      "slug": "aether-synth-flow",
+      "card": "projects/aether-synth-flow.html",
+      "preview": "img/previews/aether-synth-flow.svg",
+      "kind": "source-grounded illustration",
+      "previous_url": null,
+      "sha256": "03b3ea87b79c3e4f792d6cb2191b7f72719a412e143732e0bef742bfd556b269"
+    },
+    {
+      "title": "PWM Motor Bench",
+      "slug": "pwm-motor-bench",
+      "card": "projects/pwm-motor-bench.html",
+      "preview": "img/previews/pwm-motor-bench.svg",
+      "kind": "restored public preview",
+      "previous_url": "img/proj/releases/pwm-motor-bench-preview.svg?v=20261108b",
+      "sha256": "955501e28d9c0c6ac4a8e4e1496fcbe9afa03f90a89d51a739ef7f6995f71d49"
+    },
+    {
+      "title": "ENVIID Company Website",
+      "slug": "enviid-website",
+      "card": "https://enviid.web.id",
+      "preview": "img/previews/enviid-website.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/logo/enviid.svg",
+      "sha256": "ffd292efaca9b985f92594527794bba5ce5d27ca5e293449a96a76fa42183fb3"
+    },
+    {
+      "title": "EMG Acquisition & Monitoring System",
+      "slug": "emg-thesis",
+      "card": "projects/emg-thesis.html",
+      "preview": "img/previews/emg-thesis.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/emg-thesis-cover-v2.svg",
+      "sha256": "f3b56f3c4518a72000241bedb8ded91ea66fc816785c37384308d1016bb58c3b"
+    },
+    {
+      "title": "Packing Arena",
+      "slug": "packing-arena",
+      "card": "projects/packing-arena.html",
+      "preview": "img/previews/packing-arena.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/packing-arena.png",
+      "sha256": "60ae50cf3d374ba140169c1341d157e671fd2986565a8a44efea18481237dc4f"
+    },
+    {
+      "title": "Radar Loker & Lab (7-in-1 Suite)",
+      "slug": "radar-loker",
+      "card": "projects/radar-loker.html",
+      "preview": "img/previews/radar-loker.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/radar-loker.png",
+      "sha256": "dfb2f61f48110d804c6fee8e69fdf1f6b6017703200c58c397ef15dd084d1aee"
+    },
+    {
+      "title": "Career Test Arena",
+      "slug": "career-test-arena",
+      "card": "projects/career-test-arena.html",
+      "preview": "img/previews/career-test-arena.svg",
+      "kind": "source-grounded illustration",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/radar-loker.png",
+      "sha256": "ca2a563f774f7c1ce4ba9404aa8c5f8d9ccbef999b3031421e8e9187fb4a32fa"
+    },
+    {
+      "title": "Argus Terminal",
+      "slug": "argus-terminal",
+      "card": "projects/argus-terminal.html",
+      "preview": "img/previews/argus-terminal.svg",
+      "kind": "source-grounded illustration",
+      "previous_url": null,
+      "sha256": "035bd0b77b0c89e25d8f60f40a9c3f697b56c1ba5570cbcb95d692b1aa9e0cbe"
+    },
+    {
+      "title": "Claude Six: Interactive Web Simulations",
+      "slug": "claude-six-projects",
+      "card": "projects/claude-six-projects.html",
+      "preview": "img/previews/claude-six-projects.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/claude-six-projects.png",
+      "sha256": "73a5c5c55bdb3451b39b62de4a21744f22257680b0bc2b6f5bc88c628dc0cd18"
+    },
+    {
+      "title": "Python 7 Mini Projects",
+      "slug": "python-7-mini-projects",
+      "card": "projects/python-7-mini-projects.html",
+      "preview": "img/previews/python-7-mini-projects.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/python-7-mini-projects.png",
+      "sha256": "6d618d3ea01d570b40992ff2ea927ca60ca528b3888d9f035a5cb813af22c7cf"
+    },
+    {
+      "title": "uart-fixture-kit",
+      "slug": "uart-fixture-kit",
+      "card": "projects/uart-fixture-kit.html",
+      "preview": "img/previews/uart-fixture-kit.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/uart-fixture-kit-cover-v2.svg",
+      "sha256": "81c02f4c955bccded969cb2770ce1fecaa16dd8760427e32ba3f1ae628e83cdf"
+    },
+    {
+      "title": "DataRescue",
+      "slug": "datarescue",
+      "card": "projects/datarescue.html",
+      "preview": "img/previews/datarescue.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/datarescue-cover-v2.svg",
+      "sha256": "4e4e1ae6b94a61db02e281c970698f80208ae2bf635e24d17a1dfb8561911ea9"
+    },
+    {
+      "title": "RepairGate",
+      "slug": "repairgate",
+      "card": "projects/repairgate.html",
+      "preview": "img/previews/repairgate.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/repairgate-cover-v2.svg",
+      "sha256": "2e8e1baf13c179f645c2391291e2650e20b29ac8c34cbee49824f7b06e0579f6"
+    },
+    {
+      "title": "ApplyProof",
+      "slug": "applyproof",
+      "card": "projects/applyproof.html",
+      "preview": "img/previews/applyproof.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/applyproof-cover-v2.svg",
+      "sha256": "38419b7365b3af14dcfeb874c20b5cc5be81c892183609e7cb239087175a22ae"
+    },
+    {
+      "title": "Legacy Orbital Port",
+      "slug": "legacy-orbital-port",
+      "card": "projects/legacy-orbital-port.html",
+      "preview": "img/previews/legacy-orbital-port.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/legacy-orbital-port.png",
+      "sha256": "33a0cf7afeec8bd5fdf952cb1dbf5a2b521d21dc0e9eff94e2f8e5638169575f"
+    },
+    {
+      "title": "Agent Runtime Lab",
+      "slug": "agent-runtime-lab",
+      "card": "projects/agent-runtime-lab.html",
+      "preview": "img/previews/agent-runtime-lab.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/agent-runtime-lab.png",
+      "sha256": "9a0f71d1b053967a9867492122305d5fb969b209103678822d9fbe43a5e0e33d"
+    },
+    {
+      "title": "Spatial Electronics Lab",
+      "slug": "spatial-electronics-lab",
+      "card": "projects/spatial-electronics-lab.html",
+      "preview": "img/previews/spatial-electronics-lab.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/spatial-electronics-lab.png",
+      "sha256": "ff1487e12d4bae32f3f17e5a97a883a3c1c80d010cd168ab00cc2eb4bc708315"
+    },
+    {
+      "title": "Desk Circuit Racer",
+      "slug": "desk-circuit-racer",
+      "card": "projects/desk-circuit-racer.html",
+      "preview": "img/previews/desk-circuit-racer.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/desk-circuit-racer.png",
+      "sha256": "60eb7a7e295d42acb884776dc8b5b0b3753148e5dd50c641e1eeeb0d0ef310c5"
+    },
+    {
+      "title": "Parametric Pavilion",
+      "slug": "parametric-pavilion",
+      "card": "projects/parametric-pavilion.html",
+      "preview": "img/previews/parametric-pavilion.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/parametric-pavilion.png",
+      "sha256": "4dfbadab763d84fb8033b76dca83226bd07e400f55748178eb3996d6d01fc481"
+    },
+    {
+      "title": "WebGPU Cable Lab",
+      "slug": "webgpu-cable-lab",
+      "card": "projects/webgpu-cable-lab.html",
+      "preview": "img/previews/webgpu-cable-lab.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/webgpu-cable-lab.png",
+      "sha256": "28be438b3e1067d3d4710e0c63b60a24d98229dec93724aae01c754c21455783"
+    },
+    {
+      "title": "Body Data Viewer",
+      "slug": "body-data-viewer",
+      "card": "projects/body-data-viewer.html",
+      "preview": "img/previews/body-data-viewer.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/body-data-viewer.png",
+      "sha256": "41ea2cf850799ec5c08cc9236ff66bf0fd3ba05c11017c418adde911726a89a7"
+    },
+    {
+      "title": "Cislunar OEM Replay",
+      "slug": "cislunar-oem-replay",
+      "card": "projects/cislunar-oem-replay.html",
+      "preview": "img/previews/cislunar-oem-replay.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/cislunar-oem-replay.png",
+      "sha256": "10cbe377e6c55051d2a55741dcc7feb6480adb96e6272fba2fe5c220dcb024f2"
+    },
+    {
+      "title": "Sensor Enclosure CAD",
+      "slug": "sensor-enclosure-cad",
+      "card": "projects/sensor-enclosure-cad.html",
+      "preview": "img/previews/sensor-enclosure-cad.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/sensor-enclosure-cad.png",
+      "sha256": "8395bbbb45a93548a91dee9d760ad67e856bed34e343a0311bfcce737c6b75e3"
+    },
+    {
+      "title": "Motion Rally",
+      "slug": "motion-rally",
+      "card": "projects/motion-rally.html",
+      "preview": "img/previews/motion-rally.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/motion-rally.png",
+      "sha256": "6eae69fd5cd9034e2e6bdaf1f2fe6972518369d7ba25cf85a2d682b9a54325c3"
+    },
+    {
+      "title": "Run Ledger",
+      "slug": "run-ledger",
+      "card": "projects/run-ledger.html",
+      "preview": "img/previews/run-ledger.png",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/run-ledger.png",
+      "sha256": "7216019dff77ea10b386451c4ce8424aece78c88f7ba88092de5db9ea75bd136"
+    },
+    {
+      "title": "Bounded Refactor",
+      "slug": "bounded-refactor",
+      "card": "projects/bounded-refactor.html",
+      "preview": "img/previews/bounded-refactor.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/bounded-refactor.svg",
+      "sha256": "1d55cd87607b424aeb0bb0f5ea75e0c920e48f464d7c5af479aca078d81f5573"
+    },
+    {
+      "title": "FIR Parity",
+      "slug": "fir-parity",
+      "card": "projects/fir-parity.html",
+      "preview": "img/previews/fir-parity.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/fir-parity.svg",
+      "sha256": "4f93e1e4190502f4798144030a356e1b26d858193d5d11a5220f08c9366d5c60"
+    },
+    {
+      "title": "IoT Temperature Monitoring & DC Motor Control",
+      "slug": "redesma-iot",
+      "card": "projects/redesma-iot.html",
+      "preview": "img/previews/redesma-iot.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/redesma-iot-cover-v2.svg",
+      "sha256": "88fd343ab5fa10857654d240330b7329cb4cd5ce2e0efa293b58629cd5b78931"
+    },
+    {
+      "title": "Solar-Powered Smart Owl House",
+      "slug": "kkn-solar",
+      "card": "projects/kkn-solar.html",
+      "preview": "img/previews/kkn-solar.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/kkn-solar-cover-v2.svg",
+      "sha256": "6a8e55cc1ded811faf6db65a0d31159716ada9fae8125f5d1a49b0ae535c5c49"
+    },
+    {
+      "title": "Nusantara SolarWing",
+      "slug": "solarwing",
+      "card": "projects/solarwing.html",
+      "preview": "img/previews/solarwing.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/solarwing-cover-v2.svg",
+      "sha256": "71c8849930d0e42496955e0e6fc60e71239b2e468aff8fd8b1e47440f2ca5906"
+    },
+    {
+      "title": "Personal Portfolio / Anak Kos Survival",
+      "slug": "portfolio",
+      "card": "projects/portfolio.html",
+      "preview": "img/previews/portfolio.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/portfolio-cover-v2.svg?v=20261108d",
+      "sha256": "5de4def569412e6b350b5b2eaca7ff71b76f3cc237adb12a873abab25822da64"
+    },
+    {
+      "title": "PLTA Jatigede Case Study",
+      "slug": "jatigede",
+      "card": "projects/jatigede.html",
+      "preview": "img/previews/jatigede.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/jatigede-cover-v2.svg",
+      "sha256": "0029c6c66c8c81d9b34e7a91ba798af81b5ba9281cb7bfbbda6ffd490712f424"
+    },
+    {
+      "title": "Timor-Leste Technology Proposal",
+      "slug": "timor-leste",
+      "card": "projects/timor-leste.html",
+      "preview": "img/previews/timor-leste.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/timor-leste-cover-v2.svg",
+      "sha256": "5aadf7f4fa49877741efe81847c1b9e55701c71bdedb7a6b713907cf86b664cf"
+    },
+    {
+      "title": "IoT-powered Biofiltration",
+      "slug": "biofiltration",
+      "card": "projects/biofiltration.html",
+      "preview": "img/previews/biofiltration.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/biofiltration-cover-v2.svg",
+      "sha256": "b1d3a3bc796044430841909f5f87a091a016f4d720b8974302467d6d239f5ee1"
+    },
+    {
+      "title": "GOVTECH / Gov-AI Proposal",
+      "slug": "govtech",
+      "card": "projects/govtech.html",
+      "preview": "img/previews/govtech.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/govtech-cover-v2.svg",
+      "sha256": "453ac49a93b84b76ac970491af729d96e09c1cae8de825a75979fdcc0a54189a"
+    },
+    {
+      "title": "Skilllint",
+      "slug": "skilllint",
+      "card": "projects/skilllint.html",
+      "preview": "img/previews/skilllint.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/skilllint.svg",
+      "sha256": "1fcf1186e1425838d6937cb12dd24247319d4ab1668a389bcd37fd202e902489"
+    },
+    {
+      "title": "Agent Referee",
+      "slug": "agent-referee",
+      "card": "projects/agent-referee.html",
+      "preview": "img/previews/agent-referee.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/agent-referee.svg",
+      "sha256": "93f6951465a51a7dcb505697e62b0f493fbb6c51253b818dfe701a3fd0cfaef8"
+    },
+    {
+      "title": "RedFlag Loop",
+      "slug": "redflag-loop",
+      "card": "projects/redflag-loop.html",
+      "preview": "img/previews/redflag-loop.svg",
+      "kind": "source-grounded illustration",
+      "previous_url": null,
+      "sha256": "e396c2510c06d361d4275dfb07dd28dea88fb2af8ae2c08776b16ae146c8e981"
+    },
+    {
+      "title": "Claude Build Healer",
+      "slug": "claude-build-healer",
+      "card": "projects/claude-build-healer.html",
+      "preview": "img/previews/claude-build-healer.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/claude-build-healer.svg",
+      "sha256": "7760da7a38890d0fcfd1ff831d1449a35ff6342d17e09d01d0b926ae9fb09d6e"
+    },
+    {
+      "title": "MCP Spatial Critic",
+      "slug": "mcp-spatial-critic",
+      "card": "projects/mcp-spatial-critic.html",
+      "preview": "img/previews/mcp-spatial-critic.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/mcp-spatial-critic.svg",
+      "sha256": "080cb0f425f0c846077c19fb1155f108bb7093fd7191abf459932d8839b99d7c"
+    },
+    {
+      "title": "Open dMRV Engine",
+      "slug": "open-dmrv-engine",
+      "card": "projects/open-dmrv-engine.html",
+      "preview": "img/previews/open-dmrv-engine.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/open-dmrv-engine.svg",
+      "sha256": "c0e6d8d1ddd235b0a31b2dd87ad211dc4634e1bee4e3140069605d40b4e58f7e"
+    },
+    {
+      "title": "SignalProof",
+      "slug": "signalproof",
+      "card": "projects/signalproof.html",
+      "preview": "img/previews/signalproof.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/signalproof.svg",
+      "sha256": "c34330dce6b88b11e8228c35a9849aa8da29e9d38cff574f219e351d4ae0141f"
+    },
+    {
+      "title": "n8n Sales Automation Suite",
+      "slug": "n8n-sales-automation-suite",
+      "card": "projects/n8n-sales-automation-suite.html",
+      "preview": "img/previews/n8n-sales-automation-suite.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/n8n-sales-automation-suite.svg",
+      "sha256": "1bb7d7fc1cc6c6f5095f74c6d83f1c348f11ee4cbbe6bc25936bce8a53fab176"
+    },
+    {
+      "title": "TokenMeter",
+      "slug": "tokenmeter",
+      "card": "projects/tokenmeter.html",
+      "preview": "img/previews/tokenmeter.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/tokenmeter.svg",
+      "sha256": "37680b16fae7e52cae01d35ca81d9a4f2778463bd5d3c6262241e961fdb4f1b5"
+    },
+    {
+      "title": "KilnMCP",
+      "slug": "kilnmcp",
+      "card": "projects/kilnmcp.html",
+      "preview": "img/previews/kilnmcp.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/kilnmcp.svg",
+      "sha256": "36b4c611bd1527843b973b2098b5912e090b0e08c84e61e913d38a669cf3ff61"
+    },
+    {
+      "title": "SHEMS Simulation",
+      "slug": "shems-simulation",
+      "card": "projects/shems-simulation.html",
+      "preview": "img/previews/shems-simulation.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/shems-simulation.svg",
+      "sha256": "6463966186628510ad26b02c152aee5a4b461d8f45ab8fdeba9605bb13d80e73"
+    },
+    {
+      "title": "RedFlag Rehearsal",
+      "slug": "redflag-rehearsal",
+      "card": "projects/redflag-rehearsal.html",
+      "preview": "img/previews/redflag-rehearsal.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/redflag-rehearsal.svg",
+      "sha256": "492ae35377d2977be3e09480a120c602d6575763ef274a6413bec244b6ba1c82"
+    },
+    {
+      "title": "End-to-End Agentic RAG",
+      "slug": "agentic-rag",
+      "card": "projects/agentic-rag.html",
+      "preview": "img/previews/agentic-rag.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/agentic-rag.svg",
+      "sha256": "f6ca84ebf39063c8f33c59ecd4f2117c497296708c1d3969bf6cfb30d11fbf6c"
+    },
+    {
+      "title": "App Builder Agent",
+      "slug": "app-builder-agent",
+      "card": "projects/app-builder-agent.html",
+      "preview": "img/previews/app-builder-agent.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/app-builder-agent.svg",
+      "sha256": "ff851b76e7d2e6a3e925f196a914ee402271ab987411f642194875cb3b9cfae3"
+    },
+    {
+      "title": "Self-Correcting Code Assistant",
+      "slug": "self-correcting-coder",
+      "card": "projects/self-correcting-coder.html",
+      "preview": "img/previews/self-correcting-coder.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/self-correcting-coder.svg",
+      "sha256": "c570da323fe85b351e0bc9f795bfa787d0c1fa274caaa60defbaf92c6c432f80"
+    },
+    {
+      "title": "Semantic Cache",
+      "slug": "semantic-cache",
+      "card": "projects/semantic-cache.html",
+      "preview": "img/previews/semantic-cache.svg",
+      "kind": "restored public preview",
+      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/semantic-cache.svg",
+      "sha256": "1ecd5826d6d797b9154de8379e614ac847e8a0d38f818cccc68e041c0210727b"
+    }
+  ]
+}
