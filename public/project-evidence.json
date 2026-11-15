@@ -1,0 +1,562 @@
+{
+  "auditedOn": "2026-11-15",
+  "scope": "Public source inspection. Source references do not establish production, clinical, hardware, or benchmark validation.",
+  "projects": [
+    {
+      "name": "aether-synth-flow",
+      "description": "Swift and Metal spatial-audio prototype with Apple-platform targets, DSP kernels, synthetic physiology, and numerical tests.",
+      "page": "projects/aether-synth-flow.html",
+      "sourceCommit": "34edb9a03a421ff2c68193eb39ffd3830245bb44",
+      "sourceFiles": [
+        "Sources/App/Audio/AudioSynthEngine.swift",
+        "Sources/Shared/EEGBrainComputerInterface.swift",
+        "project.yml",
+        "Tests/AetherSynthTests/Track31EEGJitterAuditTests.swift"
+      ]
+    },
+    {
+      "name": "agy-codex-video-studio",
+      "description": "Python video-pipeline toolkit for transcript trimming, captions, segment scoring, PCM soundtrack synthesis, and FFmpeg command planning.",
+      "page": "projects/agy-codex-video-studio.html",
+      "sourceCommit": "c34bb5730d92495901f499bec37981d4072bedf9",
+      "sourceFiles": [
+        "src/agy_codex_studio/ghost_trimmer.py",
+        "src/agy_codex_studio/caption_engine.py",
+        "src/agy_codex_studio/soundtrack_synth.py",
+        "pyproject.toml"
+      ]
+    },
+    {
+      "name": "ferrum-kv",
+      "description": "Rust RESP key-value server with Raft replication, HNSW vector search, BM25 indexing, AOF recovery, and LSM storage.",
+      "page": "projects/ferrum-kv.html",
+      "sourceCommit": "8c2e08330b8e6b37198d9f0360d81322b0841b95",
+      "sourceFiles": [
+        "Cargo.toml",
+        "src/server.rs",
+        "src/cluster/raft.rs",
+        "src/storage/vector_hnsw.rs",
+        "src/storage/lsm.rs"
+      ]
+    },
+    {
+      "name": "redflag-loop",
+      "description": "Deterministic marketplace-scam rule-repair demo with preauthored patches, validation gates, rollback, and fixture-based evaluation.",
+      "page": "projects/redflag-loop.html",
+      "sourceCommit": "f2c662f514b6270df3f07d4d21da2226f97bd4a8",
+      "sourceFiles": [
+        "src/redflag_loop/autonomous_loop.py",
+        "src/redflag_loop/engine.py",
+        "tests/test_redflag_loop.py"
+      ]
+    },
+    {
+      "name": "python-7-mini-projects",
+      "description": "Seven Python practice apps with deterministic offline tests, Streamlit hub, and mockable external service fallbacks",
+      "page": "projects/python-7-mini-projects.html",
+      "sourceCommit": "5b54957b919f2e99ec21b6eff89218d036a19058",
+      "sourceFiles": [
+        "requirements.txt",
+        "01_expense_tracker/app.py",
+        "01_expense_tracker/db.py",
+        "tests/test_all_projects.py"
+      ]
+    },
+    {
+      "name": "tokenmeter",
+      "description": "FastAPI LLM proxy and Streamlit dashboard with SQLite usage logs, YAML price tables, latency metrics, and mock mode.",
+      "page": "projects/tokenmeter.html",
+      "sourceCommit": "1f657f3923078a89246d53e3849f4ffd820649d0",
+      "sourceFiles": [
+        "tokenmeter/proxy.py",
+        "dashboard.py",
+        "requirements.txt"
+      ]
+    },
+    {
+      "name": "ardhya-portfolio",
+      "description": "Static engineering portfolio (ardhyanovri.my.id) with automated link/asset verification",
+      "page": "projects/portfolio.html",
+      "sourceCommit": "d1d6e2abda75c79cd9eec9bf332418a5e7676a8d",
+      "sourceFiles": [
+        "public/assets/kilnmcp-workbench.js",
+        "public/js/emg-hero.js"
+      ]
+    },
+    {
+      "name": "radar-loker",
+      "description": "Interactive career radar, heavy equipment & tech aptitude simulator, automated application dispatch package, and candidate claim boundary guard",
+      "page": "projects/radar-loker.html",
+      "sourceCommit": "55e3c79291cfab7d49aa6b8e8ba894d1d4208eae",
+      "sourceFiles": [
+        "package.json",
+        "audit_master_2026_11_04.py",
+        "execution-pack-2026-11-04/apply_astra_13651.mjs",
+        "tests/engines-comprehensive.test.mjs"
+      ]
+    },
+    {
+      "name": "webgpu-cable-lab",
+      "description": "WebGPU 16,384-strand PBD fur and hanging cable simulation laboratory with a 128-strand Canvas CPU reference fallback",
+      "page": "projects/webgpu-cable-lab.html",
+      "sourceCommit": "a422f7cc9a6710d6dfe3c14c69d84f2c8381826a",
+      "sourceFiles": [
+        "package.json",
+        "app.mjs",
+        "camera.mjs",
+        "tests/audit-boundaries.test.mjs"
+      ]
+    },
+    {
+      "name": "spatial-electronics-lab",
+      "description": "Native Kotlin/Compose and web 2D/3D electronics teaching layout, with a real bounded Gradle compiler-repair exercise",
+      "page": "projects/spatial-electronics-lab.html",
+      "sourceCommit": "15f2be4c11ee94d0af54119d3b6c6403aae94b71",
+      "sourceFiles": [
+        "app/src/main/java/id/autonomous/spatialmap/Geometry.kt",
+        "app/src/main/java/id/autonomous/spatialmap/MainActivity.kt",
+        "tests/audit-boundaries.test.mjs"
+      ]
+    },
+    {
+      "name": "sensor-enclosure-cad",
+      "description": "Hand-transcribed sketch to parametric OpenSCAD, watertight STL and a geometric referee, with a standalone 3D inspector",
+      "page": "projects/sensor-enclosure-cad.html",
+      "sourceCommit": "25ec48eb7408d78e5587b2fe6a863bfa2feb2b09",
+      "sourceFiles": [
+        "package.json",
+        "enclosure_generator.py",
+        "mesh_checks.py",
+        "tests/test_enclosure_generator.py"
+      ]
+    },
+    {
+      "name": "parametric-pavilion",
+      "description": "Procedural Blender Python architectural studies (five-tier pagoda and single-tier pavilion) rendered as verified GLB assets in Three.js",
+      "page": "projects/parametric-pavilion.html",
+      "sourceCommit": "b1a41e5279e6816e08272ea7301685e10e7c07cb",
+      "sourceFiles": [
+        "package.json",
+        "adversarial_critic_loop.py",
+        "generate_pagoda_bpy.py",
+        "tests/test_geometry.py"
+      ]
+    },
+    {
+      "name": "motion-rally",
+      "description": "Two phones as rackets: WebSocket bridge, server-authoritative fixed-step rally physics, three.js court and optional Gemini TTS commentary",
+      "page": "projects/motion-rally.html",
+      "sourceCommit": "f8a18916a6af601fdc199a0e0cf69ae40ba87ab9",
+      "sourceFiles": [
+        "package.json",
+        "public/controller.js",
+        "public/host.js",
+        "tests/commentary_lifecycle.test.mjs"
+      ]
+    },
+    {
+      "name": "desk-circuit-racer",
+      "description": "WebGL fixed-step arcade desk racer with procedural assets, clearance-checked route, swept collision, and a deterministic guided controller",
+      "page": "projects/desk-circuit-racer.html",
+      "sourceCommit": "297c85a4044d894ebf61d9eeedae48d9efc8cb37",
+      "sourceFiles": [
+        "package.json",
+        "desk_spatial_mapper.py",
+        "tools/build.mjs",
+        "tests/engine.test.mjs"
+      ]
+    },
+    {
+      "name": "cyberpunk-floating-ramen-stall",
+      "description": "Procedural Blender scene and Python graphics toolkit with GLB export, software rendering, video serialization, and a browser viewer.",
+      "page": "projects/cyberpunk-floating-ramen-stall.html",
+      "sourceCommit": "c9ed48e728f1629d2a9184f1414cca5972cb270e",
+      "sourceFiles": [
+        "build_interactive_studio_html.py",
+        "cyberpunk_floating_ramen_stall.py",
+        "tests/test_audit_pipeline.py"
+      ]
+    },
+    {
+      "name": "body-data-viewer",
+      "description": "Synthetic DEXA-style seven-region teaching twin: strict parser plus standalone three.js body-composition viewer",
+      "page": "projects/body-data-viewer.html",
+      "sourceCommit": "84d5273e21c3226a5c56fb5223b34b2d9a373e91",
+      "sourceFiles": [
+        "package.json",
+        "dexa_report_parser.py",
+        "tools/browser_qa.mjs",
+        "tests/test_build_pipeline.py"
+      ]
+    },
+    {
+      "name": "career-test-arena",
+      "description": "Offline browser practice tools for cognitive and engineering questions, calculators, and interview preparation.",
+      "page": "projects/career-test-arena.html",
+      "sourceCommit": "533189549a25090b2bbd5ff798811780fdcf628d",
+      "sourceFiles": [
+        "pyproject.toml",
+        "src/career_test_arena/calculators.py",
+        "src/career_test_arena/question_bank.py",
+        "src/career_test_arena/interview_prep.py"
+      ]
+    },
+    {
+      "name": "uart-fixture-kit",
+      "description": "Zero-dependency Python toolkit for deterministic serial byte generation, framing, and IEEE 802.3 CRC-32 testing",
+      "page": "projects/uart-fixture-kit.html",
+      "sourceCommit": "ff3abde23fdfcf94b2b1b6592062fb757ed82063",
+      "sourceFiles": [
+        "pyproject.toml",
+        "src/uart_fixture_kit/core.py",
+        "src/uart_fixture_kit/faults.py",
+        "src/uart_fixture_kit/twin.py"
+      ]
+    },
+    {
+      "name": "skilllint",
+      "description": "Zero-dependency linter and CI gate for Agent Skills (SKILL.md) and tool calling definitions",
+      "page": "projects/skilllint.html",
+      "sourceCommit": "5340f216a9d74451d0d2ee99b04f37e9a260ce9c",
+      "sourceFiles": [
+        "package.json",
+        "eslint.config.mjs",
+        "src/cli.mjs",
+        "tests/frontmatter.test.mjs"
+      ]
+    },
+    {
+      "name": "signalproof",
+      "description": "Zero-dependency low-voltage signal quality workbench & CLI computing 6 deterministic metrics (E1-E6) with schema-gated LLM explanations",
+      "page": "projects/signalproof.html",
+      "sourceCommit": "0926e62a39c930bc3237fcf4bc4f67189ad1acdc",
+      "sourceFiles": [
+        "package.json",
+        "engine.mjs",
+        "comparison.mjs",
+        "docs/benchmark_audit.json"
+      ]
+    },
+    {
+      "name": "run-ledger",
+      "description": "Append-only agent run ledger: decimal cost accounting, redacted audit logs, and verified run tracing",
+      "page": "projects/run-ledger.html",
+      "sourceCommit": "030ec61fb912e2ec13d5b9a82c4208e7eb34e293",
+      "sourceFiles": [
+        "pyproject.toml",
+        "runledger/money.py",
+        "runledger/redact.py",
+        "runledger/store.py"
+      ]
+    },
+    {
+      "name": "repairgate",
+      "description": "Code-repair verification gate separating visible tests from sealed evaluation suites with anti-tamper hashing",
+      "page": "projects/repairgate.html",
+      "sourceCommit": "e771654bc7cc5d17cc3109322f3cbff05f032540",
+      "sourceFiles": [
+        "pyproject.toml",
+        "repairgate/engine.py",
+        "repairgate/lab.py",
+        "repairgate/api.py"
+      ]
+    },
+    {
+      "name": "legacy-orbital-port",
+      "description": "Verified Fortran to Rust and C++20 RK4 orbital mechanics migration lab with discrete error assertions",
+      "page": "projects/legacy-orbital-port.html",
+      "sourceCommit": "37c6ce211c0623d8677ef675a131cb2548405ffa",
+      "sourceFiles": [
+        "Cargo.toml",
+        "orbital_solver.rs",
+        "tools/__init__.py",
+        "tests/test_native_pipeline.py"
+      ]
+    },
+    {
+      "name": "kilnmcp",
+      "description": "FastMCP server and 3-agent pipeline over synthetic biochar pyrolyzer telemetry and MRV reporting",
+      "page": "projects/kilnmcp.html",
+      "sourceCommit": "081c3f7d27372074004c986c768243d74de52d1b",
+      "sourceFiles": [
+        "requirements.txt",
+        "kilnmcp/__init__.py",
+        "kilnmcp/_contracts.py",
+        "tests/conftest.py"
+      ]
+    },
+    {
+      "name": "fir-parity",
+      "description": "Compiled Fortran and Rust FIR filter parity against an independent discrete NumPy reference engine",
+      "page": "projects/fir-parity.html",
+      "sourceCommit": "efc60793023f5d2b20e0af1c976c668b47d9c408",
+      "sourceFiles": [
+        "Cargo.toml",
+        "rust/fir.rs",
+        "tools/fir_parity.py",
+        "tests/test_boundaries.py"
+      ]
+    },
+    {
+      "name": "datarescue",
+      "description": "Local CSV/JSON validation workbench and CLI with row quarantine, schema inference, and data integrity proofs",
+      "page": "projects/datarescue.html",
+      "sourceCommit": "c4cff6595ca1dacf43a112938acf76bb22e63e60",
+      "sourceFiles": [
+        "pyproject.toml",
+        "datarescue/core.py",
+        "datarescue/export.py",
+        "tests/test_api_cli.py"
+      ]
+    },
+    {
+      "name": "cislunar-oem-replay",
+      "description": "Strict CCSDS OEM trajectory subset replay with cubic Hermite reconstruction and state vector verification",
+      "page": "projects/cislunar-oem-replay.html",
+      "sourceCommit": "64b20c14def8fabaaae2fc3b53a87a049cb8a98e",
+      "sourceFiles": [
+        "package.json",
+        "cislunar_ephemeris.py",
+        "tools/__init__.py",
+        "tests/test_cislunar_ephemeris.py"
+      ]
+    },
+    {
+      "name": "bounded-refactor",
+      "description": "Local refactoring harness with frozen tests, source snapshots, public-signature checks, and reviewable diffs.",
+      "page": "projects/bounded-refactor.html",
+      "sourceCommit": "69a7be51e50cc6f71c001504a4716400eaea4673",
+      "sourceFiles": [
+        "pyproject.toml",
+        "bounded_refactor/__init__.py",
+        "bounded_refactor/cli.py",
+        "tests/test_audit_regressions.py"
+      ]
+    },
+    {
+      "name": "applyproof",
+      "description": "Evidence-first job application workspace: traceable CV facts, claim boundary verification, and portfolio alignment",
+      "page": "projects/applyproof.html",
+      "sourceCommit": "0f83d99ecf521c7567926c319207d78e0ddbcbfd",
+      "sourceFiles": [
+        "pyproject.toml",
+        "applyproof/engine.py",
+        "applyproof/models.py",
+        "applyproof/api.py"
+      ]
+    },
+    {
+      "name": "agent-runtime-lab",
+      "description": "Correctness-gated Python runtime optimization with mutable-state isolation and bytecode profiling",
+      "page": "projects/agent-runtime-lab.html",
+      "sourceCommit": "e0a9d0e262a7f73e8af4d743f09ddf95d9681bd2",
+      "sourceFiles": [
+        "pyproject.toml",
+        "adk_runtime_legacy.py",
+        "adk_runtime_optimized.py",
+        "tests/fixtures/supplied_optimized.py"
+      ]
+    },
+    {
+      "name": "argus-terminal",
+      "description": "Local Node.js trading-terminal simulation with synthetic market data, order-book matching, SQLite, WebSockets, and quantitative exercises.",
+      "page": "projects/argus-terminal.html",
+      "sourceCommit": "da57cec6273542b94f8b873097cd810c9e2498a3",
+      "sourceFiles": [
+        "package.json",
+        "src/server/index.js",
+        "tests/wave3_derivatives_fix.test.js"
+      ]
+    },
+    {
+      "name": "aether-core-engine",
+      "description": "Zero-dependency multithreaded 3D hero-wavelength spectral path tracer, 3D Navier-Stokes fluid solver, and 24-bit 48kHz spatial audio in pure Rust",
+      "page": "projects/aether-core-engine.html",
+      "sourceCommit": "f9ebba8714d008eea874388591024e4d1fc6dcdb",
+      "sourceFiles": [
+        "Cargo.toml",
+        "src/renderer.rs",
+        "src/fluid.rs",
+        "src/audio.rs",
+        "tests/engine_integration.rs"
+      ]
+    },
+    {
+      "name": "agentic-rag",
+      "description": "Local agentic RAG pipeline with FAISS + BM25 hybrid retrieval, claim-by-claim citation verification, and offline pytest suite.",
+      "page": "projects/agentic-rag.html",
+      "sourceCommit": "bd6350427d97e618ee7201cd51675c3a38cc6220",
+      "sourceFiles": [
+        "requirements.txt",
+        "agentic_rag/__init__.py",
+        "agentic_rag/agent.py",
+        "tests/conftest.py"
+      ]
+    },
+    {
+      "name": "self-correcting-coder",
+      "description": "Self-correcting Python code generation agent that writes code and tests, executes pytest in an isolated sandbox, and iteratively patches failures.",
+      "page": "projects/self-correcting-coder.html",
+      "sourceCommit": "335d0d94b451168d6045652c0bc32f7becaa92ff",
+      "sourceFiles": [
+        "requirements.txt",
+        "app.py",
+        "coder/__init__.py",
+        "tests/conftest.py"
+      ]
+    },
+    {
+      "name": "app-builder-agent",
+      "description": "Multi-agent application builder pipeline (Planner, Backend, Frontend, Tester, Debugger) generating FastAPI + SQLite + HTML/JS apps with automated verification.",
+      "page": "projects/app-builder-agent.html",
+      "sourceCommit": "c6e28c9090b242f5b9c9ab15fe2f7506ec1db11a",
+      "sourceFiles": [
+        "requirements.txt",
+        "app.py",
+        "builder/__init__.py",
+        "tests/conftest.py"
+      ]
+    },
+    {
+      "name": "n8n-sales-automation-suite",
+      "description": "21-workflow n8n sales & CRM automation suite with deterministic JS business rules, offline workflow studio, and 75-check simulation test suite.",
+      "page": "projects/n8n-sales-automation-suite.html",
+      "sourceCommit": "b3e09c839238ee328b860c7dac3b90c800791dc9",
+      "sourceFiles": [
+        "build.mjs",
+        "logic.mjs",
+        "native-tests.mjs"
+      ]
+    },
+    {
+      "name": "pwm-motor-bench",
+      "description": "Interactive DC motor and PWM simulator with isometric SVG, PI tuning, and telemetry export",
+      "page": "projects/pwm-motor-bench.html",
+      "sourceCommit": "6cfea140a8331c86cdc98db58f93a4352eab2953",
+      "sourceFiles": [
+        "build.mjs",
+        "duel-art.mjs"
+      ]
+    },
+    {
+      "name": "semantic-cache",
+      "description": "Namespace-isolated semantic answer cache on ChromaDB with labeled-pair threshold calibration, TTL expiration, and explicit source invalidation.",
+      "page": "projects/semantic-cache.html",
+      "sourceCommit": "c61d018e3adbfc959f6a27079c14489a3439f3fe",
+      "sourceFiles": [
+        "requirements.txt",
+        "cache.py",
+        "demo.py"
+      ]
+    },
+    {
+      "name": "emg-signal-tools",
+      "description": "Source-only MATLAB filter inspection and a validated STM32 EMG binary-capture logger.",
+      "page": "projects/emg-thesis.html",
+      "sourceCommit": "9d822cf849cc02724944f006a719769255177e1d",
+      "sourceFiles": [
+        "filter_response_live.m",
+        "raw_capture_logger.py"
+      ]
+    },
+    {
+      "name": "shems-simulation",
+      "description": "Educational MATLAB and Simulink home-energy simulation using synthetic PV and load profiles.",
+      "page": "projects/shems-simulation.html",
+      "sourceCommit": "d655df26079b3ab3deed569312768cc6bc99a501",
+      "sourceFiles": [
+        "build_shems_simulink.m",
+        "hems_controller_fcn.m"
+      ]
+    },
+    {
+      "name": "claude-six-projects",
+      "description": "Six AI-assisted educational browser demos: wildfire, chess, preset-glyph SVG font studio, magnetic fields, coronary visualization and animated haikus.",
+      "page": "projects/claude-six-projects.html",
+      "sourceCommit": "b44d01572b584af2639e4ccfb25e552b12ce01ac",
+      "sourceFiles": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "redflag-rehearsal",
+      "description": "Regex-rule rehearsal with AST validation, bounded execution, normalization and rollback tests.",
+      "page": "projects/redflag-rehearsal.html",
+      "sourceCommit": "204fb1e0c613bd8697a982ab8ea9a5cd2688109c",
+      "sourceFiles": [
+        "ast_validator.py",
+        "example_rules/rule_vec01_redirect.py",
+        "tests/conftest.py"
+      ]
+    },
+    {
+      "name": "nusantara-solarwing",
+      "description": "Reproducible NASA POWER solar-energy concept screen for a Natuna maritime UAV proposal.",
+      "page": "projects/solarwing.html",
+      "sourceCommit": "139cf7bbb86e19949ce80a94f30c88dd179f00d7",
+      "sourceFiles": [
+        "analyze.py",
+        "app.js"
+      ]
+    },
+    {
+      "name": "packing-arena",
+      "description": "Reproducible AI-assisted bin-packing tournament with peer reviews, a sealed synthetic benchmark, and an interactive dashboard.",
+      "page": "projects/packing-arena.html",
+      "sourceCommit": "e417e3f1fd3b883d9e039b659fb07dd4e3bb6038",
+      "sourceFiles": [
+        "build_site.py",
+        "cobalt.py",
+        "tests/test_tournament.py"
+      ]
+    },
+    {
+      "name": "open-dmrv-engine",
+      "description": "Deterministic biochar telemetry checks, auditable Merkle roots and bundle verdicts using explicit configured limits. A software demonstration.",
+      "page": "projects/open-dmrv-engine.html",
+      "sourceCommit": "c42afa503808d562c8c9d2fdce0f9ac25fe10bce",
+      "sourceFiles": [
+        "pyproject.toml",
+        "open_dmrv/__init__.py",
+        "open_dmrv/cli.py",
+        "tests/test_cli.py"
+      ]
+    },
+    {
+      "name": "mcp-spatial-critic",
+      "description": "Dependency-free Python MCP/CLI STL checks for topology, grounding, connected shells, normals and feature-size heuristics.",
+      "page": "projects/mcp-spatial-critic.html",
+      "sourceCommit": "9f7ce6ae52920ebaf800e30af9f0c4cca996efb5",
+      "sourceFiles": [
+        "pyproject.toml",
+        "mcp_spatial_critic/__init__.py",
+        "mcp_spatial_critic/core.py",
+        "tests/test_core.py"
+      ]
+    },
+    {
+      "name": "claude-build-healer",
+      "description": "Bounded fix loops for failing builds: 5,000-line compiler dumps become a token-budgeted diagnostic JSON with fingerprints, per-attempt tracking and escalation instead of patching forever.",
+      "page": "projects/claude-build-healer.html",
+      "sourceCommit": "0c64c94c3531b574531b3efd7eced2d54c9919b5",
+      "sourceFiles": [
+        "pyproject.toml",
+        "build_healer/__init__.py",
+        "build_healer/cli.py",
+        "tests/test_cli.py"
+      ]
+    },
+    {
+      "name": "agent-referee",
+      "description": "A protected-test gate for trusted local repositories: SHA-256 locks, AST assertion checks, suite reruns and runtime budgets.",
+      "page": "projects/agent-referee.html",
+      "sourceCommit": "d55d65bd357313f6baececcb303824041d4ecf7d",
+      "sourceFiles": [
+        "pyproject.toml",
+        "agent_referee/__init__.py",
+        "agent_referee/cli.py",
+        "tests/test_cli.py"
+      ]
+    }
+  ]
+}

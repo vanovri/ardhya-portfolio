@@ -49,4 +49,18 @@ assert not list(ROOT.rglob('*.pdf'))
 assert not (ROOT / '.vercel').exists()
 index = (ROOT / 'js/search-index.js').read_text(encoding='utf-8').strip().removeprefix('export default ').rstrip(';')
 assert isinstance(json.loads(index), list)
-print(f'PASS: {len(html)} HTML pages, internal HTML/CSS links, 55 unique gallery cards, 46 open-source tags, and publication exclusions.')
+publication = json.loads((ROOT.parent / 'PUBLICATION.json').read_text(encoding='utf-8'))
+assert publication['gallery_cards'] == len(cards)
+assert publication['public_files'] == sum(path.is_file() for path in ROOT.rglob('*'))
+evidence = json.loads((ROOT / 'project-evidence.json').read_text(encoding='utf-8'))
+projects = evidence['projects']
+assert len(projects) == len({project['name'] for project in projects})
+for project in projects:
+    assert re.fullmatch(r'[0-9a-f]{40}', project['sourceCommit']), project['name']
+    assert project['sourceFiles'] and project['description'], project['name']
+    assert project['name'] not in ('benchmind', 'self-rag', 'hermes-cloud-gateway')
+    if project['page']:
+        assert (ROOT / project['page']).is_file(), project['page']
+    for source in project['sourceFiles']:
+        assert not source.startswith(('/', '\\')) and '..' not in source.split('/'), source
+print(f'PASS: {len(html)} HTML pages, internal HTML/CSS links, 55 unique gallery cards, 46 open-source tags, publication counts, {len(projects)} source records, and publication exclusions.')

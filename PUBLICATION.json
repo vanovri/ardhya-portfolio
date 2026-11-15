@@ -1,8 +1,8 @@
 {
-  "source": "Audited public portfolio export, synced 8 November 2026",
-  "public_files": 117,
-  "gallery_cards": 54,
+  "source": "Public portfolio source audited and synchronized 15 November 2026",
+  "public_files": 123,
+  "gallery_cards": 55,
   "project_repositories": 46,
-  "omitted_asset_count": 143,
+  "omitted_asset_count": 110,
   "omissions": "CV PDF, credential images, photos and evidence images remain on the existing portfolio host; no private repository, chat or source documents are included."
 }
