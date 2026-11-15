@@ -55,6 +55,8 @@ assert publication['public_files'] == sum(path.is_file() for path in ROOT.rglob(
 evidence = json.loads((ROOT / 'project-evidence.json').read_text(encoding='utf-8'))
 projects = evidence['projects']
 assert len(projects) == len({project['name'] for project in projects})
+assert publication['project_repositories'] == len(projects)
+assert publication['open_source_tagged_cards'] == sum('open-source' in card.get('data-tags', '').split() for card in cards)
 for project in projects:
     assert re.fullmatch(r'[0-9a-f]{40}', project['sourceCommit']), project['name']
     assert project['sourceFiles'] and project['description'], project['name']

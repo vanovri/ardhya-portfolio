@@ -1,6 +1,6 @@
 # Ardhya Novri Ramadhan portfolio
 
-Static source for [ardhyanovri.my.id](https://ardhyanovri.my.id), synchronized with public repository sources on 15 November 2026. The gallery contains 55 entries, including 46 projects with public source repositories. Historical assignments and proposals are labelled separately from software demonstrations.
+Static source for [ardhyanovri.my.id](https://ardhyanovri.my.id), synchronized with public repository sources on 15 November 2026. The gallery contains 55 entries and tags 46 as open source. The evidence index links 48 public repositories, including this site's source and a model-based concept package. Historical assignments and proposals are labelled separately from software demonstrations.
 
 The project pages describe contributions, evidence and limits. Development used AI coding assistance. Passing a project's included tests does not establish production suitability, scientific accuracy or physical hardware validation.
 
