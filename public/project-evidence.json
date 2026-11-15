@@ -6,13 +6,25 @@
       "name": "aether-synth-flow",
       "description": "Swift and Metal spatial-audio prototype with Apple-platform targets, DSP kernels, synthetic physiology, and numerical tests.",
       "page": "projects/aether-synth-flow.html",
-      "sourceCommit": "34edb9a03a421ff2c68193eb39ffd3830245bb44",
+      "sourceCommit": "33e8a23f97479848a0c35dd6c195fd310dd025af",
       "sourceFiles": [
         "Sources/App/Audio/AudioSynthEngine.swift",
         "Sources/Shared/EEGBrainComputerInterface.swift",
         "project.yml",
         "Tests/AetherSynthTests/Track31EEGJitterAuditTests.swift"
-      ]
+      ],
+      "verifiedCI": {
+        "url": "https://github.com/vanovri/aether-synth-flow/actions/runs/43730846782",
+        "conclusion": "success",
+        "macOSTestsExecuted": true,
+        "iOSTestsExecuted": false,
+        "appleTargetBuilds": [
+          "macOS",
+          "iOS",
+          "visionOS",
+          "watchOS"
+        ]
+      }
     },
     {
       "name": "agy-codex-video-studio",
