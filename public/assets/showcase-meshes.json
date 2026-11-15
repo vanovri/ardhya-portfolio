@@ -1,0 +1,75 @@
+{
+  "schema": "procedural-manifold/1",
+  "quantizationBits": {
+    "POSITION": 14,
+    "NORMAL": 10
+  },
+  "models": {
+    "aether": {
+      "name": "Aether-inspired torus-knot illustration",
+      "p": 3,
+      "q": 5,
+      "tubularSegments": 128,
+      "radialSegments": 20,
+      "bboxMin": [
+        -1.45,
+        -1.45,
+        -0.65
+      ],
+      "bboxMax": [
+        1.45,
+        1.45,
+        0.65
+      ],
+      "accent": [
+        0.0,
+        0.443,
+        0.89
+      ]
+    },
+    "ferrum": {
+      "name": "Storage-themed torus-knot illustration",
+      "p": 2,
+      "q": 3,
+      "tubularSegments": 112,
+      "radialSegments": 18,
+      "bboxMin": [
+        -1.4,
+        -1.4,
+        -0.6
+      ],
+      "bboxMax": [
+        1.4,
+        1.4,
+        0.6
+      ],
+      "accent": [
+        0.114,
+        0.114,
+        0.122
+      ]
+    },
+    "diorama": {
+      "name": "Procedural spline illustration",
+      "p": 4,
+      "q": 7,
+      "tubularSegments": 136,
+      "radialSegments": 20,
+      "bboxMin": [
+        -1.48,
+        -1.48,
+        -0.68
+      ],
+      "bboxMax": [
+        1.48,
+        1.48,
+        0.68
+      ],
+      "accent": [
+        0.039,
+        0.518,
+        1.0
+      ]
+    }
+  }
+}

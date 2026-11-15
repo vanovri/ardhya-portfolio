@@ -625,17 +625,6 @@
     });
   }
 
-  // Lazy-load Draco/KTX2 asset manifest metadata
-  const dracoBadge = document.getElementById('draco-ktx-badge');
-  fetch('/assets/showcase-meshes.draco.json', { credentials: 'same-origin' })
-    .then((r) => (r.ok ? r.json() : null))
-    .then((manifest) => {
-      if (manifest && dracoBadge) {
-        dracoBadge.textContent = `Draco ${manifest.draco.quantizationBits.POSITION}b (${manifest.draco.compressionRatio}×) · KTX2 ${manifest.ktx2.supercompression}`;
-      }
-    })
-    .catch(() => {});
-
   // Pre-warm buffer
   for (let warm = 0; warm < 48; warm++) {
     stepSimulation();

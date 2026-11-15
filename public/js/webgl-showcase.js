@@ -1,12 +1,12 @@
 // Interactive 3D WebGL2 Showcase Engine — Apple HIG Studio Lighting,
-// Lazy-Loaded Draco/KTX2 Asset Pipeline & Battery-Aware Frame Rate Governor.
+// Procedural geometry and visibility-aware frame scheduling.
 
-const DRACO_MANIFEST_URL = '/assets/showcase-meshes.draco.json';
+const MANIFOLD_SPEC_URL = '/assets/showcase-meshes.json';
 let manifestPromise = null;
 
-function fetchDracoManifest() {
+function fetchManifoldSpec() {
   if (!manifestPromise) {
-    manifestPromise = fetch(DRACO_MANIFEST_URL, { credentials: 'same-origin' })
+    manifestPromise = fetch(MANIFOLD_SPEC_URL, { credentials: 'same-origin' })
       .then((res) => (res.ok ? res.json() : null))
       .catch(() => null);
   }
@@ -45,10 +45,10 @@ function detectKtx2GpuFormat(gl) {
 }
 
 /**
- * Generates a Draco-quantized (14-bit POSITION, 10-bit octahedral NORMAL)
+ * Generates a uniformly quantized (14-bit POSITION, 10-bit octahedral NORMAL)
  * parametric torus-knot manifold and dequantizes it into interleaved Float32 GPU buffers.
  */
-function decodeDracoManifold(spec, quantBits = { POSITION: 14, NORMAL: 10 }) {
+function generateQuantizedManifold(spec, quantBits = { POSITION: 14, NORMAL: 10 }) {
   const p = spec?.p ?? 3;
   const q = spec?.q ?? 5;
   const tubular = spec?.tubularSegments ?? 120;
@@ -100,7 +100,7 @@ function decodeDracoManifold(spec, quantBits = { POSITION: 14, NORMAL: 10 }) {
       const py = c0[1] + tubeRadius * vy;
       const pz = c0[2] + tubeRadius * vz;
 
-      // Draco 14-bit uniform quantization + dequantization
+      // Uniform position quantization and dequantization.
       const qx = Math.round(((px - bboxMin[0]) / (bboxMax[0] - bboxMin[0])) * posLevels);
       const qy = Math.round(((py - bboxMin[1]) / (bboxMax[1] - bboxMin[1])) * posLevels);
       const qz = Math.round(((pz - bboxMin[2]) / (bboxMax[2] - bboxMin[2])) * posLevels);
@@ -109,7 +109,7 @@ function decodeDracoManifold(spec, quantBits = { POSITION: 14, NORMAL: 10 }) {
       positions[vIdx * 3 + 1] = bboxMin[1] + (qy / posLevels) * (bboxMax[1] - bboxMin[1]);
       positions[vIdx * 3 + 2] = bboxMin[2] + (qz / posLevels) * (bboxMax[2] - bboxMin[2]);
 
-      // Draco 10-bit octahedral normal quantization + dequantization
+      // Octahedral normal quantization and dequantization.
       const invL1 = 1 / (Math.abs(vx) + Math.abs(vy) + Math.abs(vz) || 1);
       let ox = vx * invL1, oy = vy * invL1;
       if (vz < 0) {
@@ -260,17 +260,17 @@ function mountShowcase(container) {
   function updateStatusBadge() {
     if (!fpsPill) return;
     if (document.hidden) {
-      fpsPill.textContent = '0 FPS · Tab Hidden (Battery Saved)';
+      fpsPill.textContent = 'Paused · Tab hidden';
     } else if (!inViewport || contentSkipped) {
-      fpsPill.textContent = '0 FPS · Offscreen (Auto-Suspended)';
+      fpsPill.textContent = 'Paused · Offscreen';
     } else if (userPaused) {
-      fpsPill.textContent = '0 FPS · Static Frame';
+      fpsPill.textContent = 'Paused · Static frame';
     } else if (isPointerDragging || performance.now() - lastInteractionAt < 1800) {
-      fpsPill.textContent = '60 FPS · Interactive Orbit';
+      fpsPill.textContent = 'Target 60 fps · Interactive orbit';
     } else if (!windowFocused) {
-      fpsPill.textContent = '12 FPS · Eco Mode (Unfocused)';
+      fpsPill.textContent = 'Target 12 fps · Unfocused';
     } else {
-      fpsPill.textContent = '24 FPS · Ambient Low-Power';
+      fpsPill.textContent = 'Target 24 fps · Ambient rotation';
     }
   }
 
@@ -278,21 +278,19 @@ function mountShowcase(container) {
     if (initialized) return;
     initialized = true;
 
-    const manifest = await fetchDracoManifest();
+    const manifest = await fetchManifoldSpec();
     const spec = manifest?.models?.[modelId] || {
-      name: 'Draco 14-bit Parametric Manifold',
+      name: 'Procedural parametric manifold',
       p: 3,
       q: 5,
       tubularSegments: 120,
       radialSegments: 18,
       bboxMin: [-1.45, -1.45, -0.65],
       bboxMax: [1.45, 1.45, 0.65],
-      compressedBytes: 6840,
-      rawBytes: 32960,
       accent: [0.0, 0.443, 0.89]
     };
     accent = spec.accent || accent;
-    meshData = decodeDracoManifold(spec, manifest?.draco?.quantizationBits);
+    meshData = generateQuantizedManifold(spec, manifest?.quantizationBits);
 
     gl = canvas.getContext('webgl2', {
       alpha: true,
@@ -338,13 +336,11 @@ function mountShowcase(container) {
       ctx2d = canvas.getContext('2d');
     }
 
-    const ktxFormat = detectKtx2GpuFormat(gl);
-    const ratio = manifest?.draco?.compressionRatio ?? 4.82;
     if (codecPill) {
-      codecPill.textContent = `Draco 14b (${ratio}×) · ${ktxFormat}`;
+      codecPill.textContent = gl && program ? 'Procedural geometry · WebGL2' : 'Procedural geometry · Canvas 2D';
     }
     if (modelPill) {
-      modelPill.textContent = `${meshData.vertexCount.toLocaleString()} verts · ${(spec.compressedBytes / 1024).toFixed(1)} KB`;
+      modelPill.textContent = `${meshData.vertexCount.toLocaleString()} generated vertices`;
     }
 
     drawSingleFrame();

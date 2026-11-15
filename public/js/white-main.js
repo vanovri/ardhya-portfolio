@@ -102,7 +102,7 @@ if(grid){
     const query=input.value.trim().toLowerCase();let shown=0;
     for(const card of cards){
       const tags=(card.dataset.tags||'').split(' ');
-      const show=(!active.size||[...active].some(tag=>tags.includes(tag)))&&(!query||(card.dataset.text||card.textContent).toLowerCase().includes(query));
+      const show=(!active.size||[...active].some(tag=>tags.includes(tag)))&&(!query||((card.dataset.text||'')+' '+card.textContent).toLowerCase().includes(query));
       card.hidden=!show;if(show)shown++;
     }
     chips.forEach(chip=>chip.setAttribute('aria-pressed',String(chip.dataset.filter==='all'?!active.size:active.has(chip.dataset.filter))));
