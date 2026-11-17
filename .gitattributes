@@ -1,0 +1,2 @@
+# Preview manifests hash exact asset bytes on every platform.
+/public/img/previews/* -text
