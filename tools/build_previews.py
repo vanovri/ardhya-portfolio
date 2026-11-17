@@ -94,9 +94,14 @@ TITLES={'aether-core-engine':('AetherCoreEngine','Rendering, fluid simulation an
  'cyberpunk-floating-ramen-stall':('Cyberpunk Floating Ramen Stall','Procedural Blender and graphics pipeline')}
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
+    curated = {'aether-core-engine', 'ferrum-kv', 'agy-codex-video-studio', 'aether-synth-flow', 'cyberpunk-floating-ramen-stall'}
     for slug,(title,subtitle) in TITLES.items():
+        # Preserve the original AGY compositions restored for the gallery.
+        if slug in curated:
+            assert (OUT/(slug+'.svg')).is_file()
+            continue
         body=f'<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1200 750" role="img" aria-label="{html.escape(title)} architecture illustration"><rect width="1200" height="750" fill="#f2f5f7"/><g font-family="Arial, Helvetica, sans-serif">'+text(65,84,title,38,weight=600)+text(65,124,subtitle,21,'#556775')+line(65,150,1135,150,'#cbd6de')+drawing(slug)+text(65,716,'Source-grounded illustration. No measured performance implied.',16,'#637582')+'</g></svg>'
         assert '<path' in body and len(body)>1500
         (OUT/(slug+'.svg')).write_text(body,encoding='utf-8')
-    print(f'Generated {len(TITLES)} project-specific vector previews')
+    print(f'Generated {len(TITLES)-len(curated)} vector previews; preserved {len(curated)} curated AGY illustrations')
 if __name__=='__main__':main()

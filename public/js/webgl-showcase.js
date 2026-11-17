@@ -250,6 +250,12 @@ function mountShowcase(container) {
   let rafId = 0;
   let lastFrameAt = 0;
 
+  function syncToggle() {
+    toggleBtn?.setAttribute('aria-pressed', String(!userPaused));
+    if (toggleBtn) toggleBtn.textContent = userPaused ? 'Resume 3D' : 'Pause 3D';
+  }
+  syncToggle();
+
   function targetIntervalMs() {
     if (document.hidden || !inViewport || contentSkipped || userPaused) return Infinity;
     if (isPointerDragging || performance.now() - lastInteractionAt < 1800) return 16.6; // 60 FPS interactive
@@ -477,10 +483,20 @@ function mountShowcase(container) {
   canvas.addEventListener('pointerup', endDrag);
   canvas.addEventListener('pointercancel', endDrag);
 
+  canvas.addEventListener('keydown', (event) => {
+    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key)) return;
+    event.preventDefault();
+    yaw += event.key === 'ArrowLeft' ? -.15 : event.key === 'ArrowRight' ? .15 : 0;
+    pitch = Math.max(-1.05, Math.min(1.05, pitch + (event.key === 'ArrowUp' ? -.15 : event.key === 'ArrowDown' ? .15 : 0)));
+    lastInteractionAt = performance.now();
+    velYaw = velPitch = 0;
+    drawSingleFrame();
+    scheduleLoop();
+  });
+
   toggleBtn?.addEventListener('click', () => {
     userPaused = !userPaused;
-    toggleBtn.setAttribute('aria-pressed', String(!userPaused));
-    toggleBtn.textContent = userPaused ? 'Resume 3D' : 'Pause 3D';
+    syncToggle();
     if (!userPaused) {
       lastInteractionAt = performance.now();
       scheduleLoop();
@@ -537,6 +553,7 @@ function mountShowcase(container) {
   });
   reducedMotion.addEventListener('change', (e) => {
     userPaused = e.matches;
+    syncToggle();
     if (userPaused) {
       stopLoop();
       drawSingleFrame();

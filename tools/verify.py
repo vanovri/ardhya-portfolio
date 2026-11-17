@@ -4,6 +4,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 import json
 import re
 import hashlib
+from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parent.parent / 'public'
 
@@ -40,12 +41,16 @@ for source in ROOT.rglob('*.css'):
     for _, url in re.findall(r'url\(([\'"]?)([^)\'"\s]+)\1\)', source.read_text(encoding='utf-8')):
         check_reference(url, source)
 
-cards = [attrs for tag, attrs in Page((ROOT / 'projects.html').read_text(encoding='utf-8')).nodes if tag == 'a' and 'card' in attrs.get('class', '').split()]
-assert len(cards) == len({card['href'] for card in cards}) == 55
+gallery_text = (ROOT / 'projects.html').read_text(encoding='utf-8')
+cards = [attrs for tag, attrs in Page(gallery_text).nodes if tag in ('a', 'article') and 'card' in attrs.get('class', '').split()]
+assert len(cards) == len({card.get('href') or card.get('id') for card in cards}) == 56
+assert gallery_text.count('data-webgl-showcase') == 1
+assert 'data-webgl-showcase' not in gallery_text.split('</section>', 1)[0]
+assert any(card.get('id') == 'interactive-3d' for card in cards)
 assert sum('open-source' in card.get('data-tags', '').split() for card in cards) == 46
 for slug in ('benchmind', 'self-rag', 'hermes-cloud-gateway'):
     assert not (ROOT / 'projects' / (slug + '.html')).exists()
-    assert not any(slug in card['href'] for card in cards)
+    assert not any(slug in card.get('href', '') for card in cards)
 assert not list(ROOT.rglob('*.pdf'))
 assert not (ROOT / '.vercel').exists()
 index = (ROOT / 'js/search-index.js').read_text(encoding='utf-8').strip().removeprefix('export default ').rstrip(';')
@@ -59,13 +64,16 @@ assert len(projects) == len({project['name'] for project in projects})
 assert publication['project_repositories'] == len(projects)
 assert publication['open_source_tagged_cards'] == sum('open-source' in card.get('data-tags', '').split() for card in cards)
 previews = json.loads((ROOT / 'preview-assets.json').read_text(encoding='utf-8'))['previews']
-assert len(previews) == len({p['card'] for p in previews}) == 55
+assert len(previews) == len({p['card'] for p in previews}) == 56
 assert publication['tracked_preview_assets'] == len(previews)
 for preview in previews:
     image = ROOT / preview['preview']
     assert image.is_file() and hashlib.sha256(image.read_bytes()).hexdigest() == preview['sha256'], image
 card_blocks = re.findall(r'<a\b[^>]*class="card[^\"]*"[^>]*>.*?</a>', (ROOT / 'projects.html').read_text(encoding='utf-8'), re.S)
 assert len(card_blocks) == 55 and all('<img ' in block and 'Source and scope reviewed' not in block for block in card_blocks)
+for slug in ('cyberpunk-floating-ramen-stall', 'ferrum-kv', 'aether-core-engine', 'agy-codex-video-studio', 'aether-synth-flow'):
+    ElementTree.parse(ROOT / f'img/previews/{slug}.svg')
+assert 'src="/img/previews/enviid-website.jpg"' in gallery_text
 for project in projects:
     assert re.fullmatch(r'[0-9a-f]{40}', project['sourceCommit']), project['name']
     assert project['sourceFiles'] and project['description'], project['name']
@@ -74,4 +82,4 @@ for project in projects:
         assert (ROOT / project['page']).is_file(), project['page']
     for source in project['sourceFiles']:
         assert not source.startswith(('/', '\\')) and '..' not in source.split('/'), source
-print(f'PASS: {len(html)} HTML pages, internal HTML/CSS links, 55 unique gallery cards, 46 open-source tags, publication counts, {len(projects)} source records, and publication exclusions.')
+print(f'PASS: {len(html)} HTML pages, internal HTML/CSS links, 56 unique gallery cards including inline 3D, 46 open-source tags, restored AGY SVGs, publication counts, {len(projects)} source records, and publication exclusions.')

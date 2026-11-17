@@ -6,45 +6,45 @@
       "slug": "cyberpunk-floating-ramen-stall",
       "card": "projects/cyberpunk-floating-ramen-stall.html",
       "preview": "img/previews/cyberpunk-floating-ramen-stall.svg",
-      "kind": "source-grounded illustration",
+      "kind": "restored AGY illustration with descriptive labels",
       "previous_url": null,
-      "sha256": "eeb1f6bc84828fce8f34d29e5b6dfc68c7334c215d6a5e1e487ae7cd9b81d3b3"
+      "sha256": "4332141f5b68610be9caf906808512003ea90ef0d06ba20bb90b5d7a4ad53996"
     },
     {
       "title": "FerrumKV",
       "slug": "ferrum-kv",
       "card": "projects/ferrum-kv.html",
       "preview": "img/previews/ferrum-kv.svg",
-      "kind": "source-grounded illustration",
+      "kind": "restored AGY illustration with descriptive labels",
       "previous_url": null,
-      "sha256": "79956800fd2bd6e7588661039e5151d031ef9f5badd19f6a8acf544f3e18a174"
+      "sha256": "5b861c8de19717a9618689533b111323145462b84a16998920a7b94a2bc3d1dc"
     },
     {
       "title": "AetherCoreEngine",
       "slug": "aether-core-engine",
       "card": "projects/aether-core-engine.html",
       "preview": "img/previews/aether-core-engine.svg",
-      "kind": "source-grounded illustration",
+      "kind": "restored AGY illustration with descriptive labels",
       "previous_url": null,
-      "sha256": "f88e79a1940c0c2c36e403032bb500f94cc53d461747666545d86a8e861d736a"
+      "sha256": "bce843a00724cbd18ccbe786e390ea4f0739333a2ec4ddbaee4340cee741491f"
     },
     {
-      "title": "AGY \u00d7 Codex Video Studio",
+      "title": "AGY × Codex Video Studio",
       "slug": "agy-codex-video-studio",
       "card": "projects/agy-codex-video-studio.html",
       "preview": "img/previews/agy-codex-video-studio.svg",
-      "kind": "source-grounded illustration",
+      "kind": "restored AGY illustration with descriptive labels",
       "previous_url": null,
-      "sha256": "b199eb68f2ae8ce5f52140fa4bd96c40c931dc26ccd564f55f0c0996f77b2702"
+      "sha256": "c9d826fd9f1ee1f6f1c2f0df4afb4a5abddb67b077ebeaecbc0c1ef8f7b66be5"
     },
     {
       "title": "AetherSynth & Flow",
       "slug": "aether-synth-flow",
       "card": "projects/aether-synth-flow.html",
       "preview": "img/previews/aether-synth-flow.svg",
-      "kind": "source-grounded illustration",
+      "kind": "restored AGY illustration with descriptive labels",
       "previous_url": null,
-      "sha256": "03b3ea87b79c3e4f792d6cb2191b7f72719a412e143732e0bef742bfd556b269"
+      "sha256": "1577972132812c9c51e8400b835a8358d490933d0f7f7bdbf6afb7b0f289bac3"
     },
     {
       "title": "PWM Motor Bench",
@@ -59,10 +59,10 @@
       "title": "ENVIID Company Website",
       "slug": "enviid-website",
       "card": "https://enviid.web.id",
-      "preview": "img/previews/enviid-website.svg",
-      "kind": "restored public preview",
+      "preview": "img/previews/enviid-website.jpg",
+      "kind": "homepage screenshot captured 2026-11-17",
       "previous_url": "https://ardhyanovri.my.id/img/logo/enviid.svg",
-      "sha256": "ffd292efaca9b985f92594527794bba5ce5d27ca5e293449a96a76fa42183fb3"
+      "sha256": "945b48f51ab1e5f05e6ddd19ceafd0e81ae2f234c4012b3c588c06e743833bac"
     },
     {
       "title": "EMG Acquisition & Monitoring System",
@@ -72,6 +72,15 @@
       "kind": "restored public preview",
       "previous_url": "https://ardhyanovri.my.id/img/proj/emg-thesis-cover-v2.svg",
       "sha256": "f3b56f3c4518a72000241bedb8ded91ea66fc816785c37384308d1016bb58c3b"
+    },
+    {
+      "title": "Interactive 3D",
+      "slug": "interactive-3d",
+      "card": "#interactive-3d",
+      "preview": "img/previews/aether-core-engine.svg",
+      "kind": "interactive procedural canvas with illustrated fallback",
+      "previous_url": null,
+      "sha256": "bce843a00724cbd18ccbe786e390ea4f0739333a2ec4ddbaee4340cee741491f"
     },
     {
       "title": "Packing Arena",
