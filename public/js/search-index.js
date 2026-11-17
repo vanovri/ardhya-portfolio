@@ -231,7 +231,13 @@ export default [
     "title": "Nusantara SolarWing",
     "url": "/projects/solarwing.html",
     "category": "Project",
-    "text": "Reproducible NASA POWER solar-energy concept screen for a Natuna maritime UAV proposal."
+    "text": "Reproducible NASA POWER solar-energy concept screen for a Natuna maritime UAV proposal. Team NusaSentinel earned Honorable Mention, Finalist Rank 8 at the Aerospace Innovation Challenge 2026 (ISAST 2026) in Yogyakarta, Indonesia (6–8 October 2026)."
+  },
+  {
+    "title": "Aerospace Innovation Challenge 2026 certificate",
+    "url": "/credentials.html#nusasentinel-isast-2026",
+    "category": "Credential",
+    "text": "Team NusaSentinel earned Honorable Mention, Finalist Rank 8 at the Aerospace Innovation Challenge 2026 (ISAST 2026) in Yogyakarta, Indonesia (6–8 October 2026). Nusantara SolarWing."
   },
   {
     "title": "Spatial Electronics Lab",
