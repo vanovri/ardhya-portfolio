@@ -62,4 +62,16 @@
 <url><loc>https://ardhyanovri.my.id/projects/aether-core-engine</loc></url>
 <url><loc>https://ardhyanovri.my.id/projects/ferrum-kv</loc></url>
   <url><loc>https://ardhyanovri.my.id/projects/cyberpunk-floating-ramen-stall</loc><lastmod>2026-11-08</lastmod></url>
-<url><loc>https://ardhyanovri.my.id/projects/career-test-arena</loc><lastmod>2026-11-15</lastmod></url></urlset>
+<url><loc>https://ardhyanovri.my.id/projects/career-test-arena</loc><lastmod>2026-11-15</lastmod></url>  <url>
+    <loc>https://ardhyanovri.my.id/assets/kilnmcp-workbench</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ardhyanovri.my.id/assets/maganghub-workbench</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ardhyanovri.my.id/assets/career-test-arena</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+</urlset>

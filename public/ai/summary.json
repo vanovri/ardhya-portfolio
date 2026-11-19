@@ -1,0 +1,70 @@
+{
+  "name": "Ardhya Novri Ramadhan, S.T.",
+  "url": "https://ardhyanovri.my.id/",
+  "headline": "Electrical Engineering Graduate (UNDIP, GPA 3.43/4.00) & Electrical Staff Intern at PT Denki Engineering (MagangHub 2026) \u2014 Embedded Systems, DSP, Industrial Instrumentation & Verified Software Engineering",
+  "location": "Bekasi, West Java, Indonesia",
+  "current_role": {
+    "title": "Electrical Staff Intern",
+    "organization": "PT Denki Engineering",
+    "program": "MagangHub Kemnaker Batch 3, Angkatan 2 (2026)",
+    "start_date": "2026-11-16"
+  },
+  "education": {
+    "degree": "Bachelor of Engineering (S.T.) in Electrical Engineering (Electronics Concentration)",
+    "institution": "Universitas Diponegoro (Diponegoro University)",
+    "gpa": "3.43/4.00",
+    "credits": 148,
+    "graduation_date": "2026-09-29"
+  },
+  "flagship_projects": [
+    {
+      "name": "STM32 EMG Acquisition & Butterworth DSP Thesis",
+      "url": "https://ardhyanovri.my.id/emg"
+    },
+    {
+      "name": "SignalProof",
+      "url": "https://ardhyanovri.my.id/projects/signalproof"
+    },
+    {
+      "name": "FerrumKV",
+      "url": "https://ardhyanovri.my.id/projects/ferrum-kv"
+    },
+    {
+      "name": "AetherSynth & Flow",
+      "url": "https://ardhyanovri.my.id/projects/aether-synth-flow"
+    },
+    {
+      "name": "AetherCoreEngine",
+      "url": "https://ardhyanovri.my.id/projects/aether-core-engine"
+    },
+    {
+      "name": "Cyberpunk Floating Ramen Stall",
+      "url": "https://ardhyanovri.my.id/projects/cyberpunk-floating-ramen-stall"
+    },
+    {
+      "name": "AGY x Codex Video Studio",
+      "url": "https://ardhyanovri.my.id/projects/agy-codex-video-studio"
+    },
+    {
+      "name": "KilnMCP",
+      "url": "https://ardhyanovri.my.id/projects/kilnmcp"
+    },
+    {
+      "name": "uart-fixture-kit",
+      "url": "https://ardhyanovri.my.id/projects/uart-fixture-kit"
+    }
+  ],
+  "webmcp": {
+    "signal_lab": "https://ardhyanovri.my.id/signal-lab",
+    "kilnmcp_workbench": "https://ardhyanovri.my.id/assets/kilnmcp-workbench",
+    "maganghub_workbench": "https://ardhyanovri.my.id/assets/maganghub-workbench",
+    "career_test_arena": "https://ardhyanovri.my.id/assets/career-test-arena",
+    "llms_txt": "https://ardhyanovri.my.id/llms.txt",
+    "llms_full_txt": "https://ardhyanovri.my.id/llms-full.txt"
+  },
+  "profiles": [
+    "https://github.com/vanovri",
+    "https://www.linkedin.com/in/dhya/",
+    "https://enviid.web.id/"
+  ]
+}

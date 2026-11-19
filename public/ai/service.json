@@ -1,0 +1,19 @@
+{
+  "provider": "Ardhya Novri Ramadhan, S.T.",
+  "url": "https://ardhyanovri.my.id/",
+  "capabilities": [
+    {
+      "id": "embedded-dsp",
+      "name": "Embedded Systems & Digital Signal Processing (STM32, ESP32, C/C++, IIR/FIR, UART/Modbus)"
+    },
+    {
+      "id": "electrical-instrumentation",
+      "name": "Industrial Electrical & Instrumentation Engineering (UPS/Converter, Protection Relays, Telemetry)"
+    },
+    {
+      "id": "verified-software",
+      "name": "Verified Software, Systems & AI Tooling (Python, Rust, TypeScript/Node.js, Swift/Metal, Automated Testing)"
+    }
+  ],
+  "contact": "mailto:ardhyasan@gmail.com"
+}

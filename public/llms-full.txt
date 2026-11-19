@@ -1,0 +1,290 @@
+# Ardhya Novri Ramadhan, S.T. — Full Technical & Engineering Reference (llms-full.txt)
+
+> Canonical domain: https://ardhyanovri.my.id/ (Mirror: https://ardhya-novri.vercel.app/)
+> Full Name & Title: Ardhya Novri Ramadhan, S.T. (Sarjana Teknik / B.Eng. in Electrical Engineering)
+> Alma Mater: Diponegoro University (Universitas Diponegoro / UNDIP), Faculty of Engineering, Department of Electrical Engineering (Electronics Concentration), Semarang, Indonesia
+
+## Recent Milestones & Verified Updates (November 2026)
+
+### Current Internship — PT Denki Engineering (MagangHub Kemnaker Batch 3, Angkatan 2)
+- **Role**: Electrical Staff Intern, PT Denki Engineering (started 16 November 2026).
+- **Program**: MagangHub Kemnaker / SIAPkerja Batch 3, Angkatan 2 (2026).
+- **Supporting Open-Source Toolkit**: [MagangHub Readiness Kit](https://github.com/vanovri/maganghub-readiness-kit) (`v0.1.0`, `10/10 pytest`) & live workbench at https://ardhyanovri.my.id/assets/maganghub-workbench (IEEE 485 & Peukert UPS battery sizing, RS-485 Modbus RTU CRC-16 & UART DMA ring-buffer timing, preventive maintenance checklists, and SIAPkerja logbook automation).
+
+### Competition Recognition — Nusantara SolarWing (Team NusaSentinel)
+- Verified recognition certificate displayed on https://ardhyanovri.my.id/credentials for Team NusaSentinel's Nusantara SolarWing reserve-aware solar UAV maritime patrol concept package (model-based engineering concept, not a flown aircraft; repository: https://github.com/vanovri/nusantara-solarwing).
+
+### Newly Released Flagship Systems, Audio & Graphics Projects (v1.0.0 / v0.2.0)
+- **FerrumKV (`v1.0.0`)** — https://ardhyanovri.my.id/projects/ferrum-kv | https://github.com/vanovri/ferrum-kv: Distributed RESP3 key-value store, 3-node TCP Raft consensus, HNSW SQ8 vector search (173,007 VSEARCH/s, 93.3% Recall@5), Okapi BM25, Gorilla XOR time-series, ChaCha20-Poly1305 AEAD, and disk LSM-tree written in pure safe Rust (`std`-only, 0 external crates, `#![forbid(unsafe_code)]`), reaching 564,993 MIXED ops/s and 505,716 GET/s.
+- **AetherSynth & Flow (`v1.0.0`)** — https://ardhyanovri.my.id/projects/aether-synth-flow | https://github.com/vanovri/aether-synth-flow: Native Swift 6 & Metal spatial audio synthesizer across iOS 18, watchOS 11, visionOS 2, macOS 15, WidgetKit, and AUv3 (90 Hz Reverse-Z stereoscopic CompositorServices <12 ms latency, 51.22 dB cubic PML waveguide, 34 `@Test` suites, 0 external dependencies).
+- **AetherCoreEngine (`v1.0.0`)** — https://ardhyanovri.my.id/projects/aether-core-engine | https://github.com/vanovri/aether-core-engine: Zero-dependency Rust 2021 multiphysics engine with 4-wavelength Monte Carlo spectral path tracer (SAH BVH), 3D staggered-MAC Navier-Stokes fluid solver, and 16-voice FM + FDN reverb 24-bit WAV synthesizer (14/14 tests).
+- **Cyberpunk Floating Ramen Stall (`v1.0.0`)** — https://ardhyanovri.my.id/projects/cyberpunk-floating-ramen-stall | https://github.com/vanovri/cyberpunk-floating-ramen-stall: 32-track procedural Blender 4.0–4.3 diorama generator (579 objects, 0 external textures), Binary glTF 2.0 serializer, pure-Python Z-buffer Neon Bloom renderer, 240-frame BT.709 lossless muxer, and WebGL2 + WebAudio studio.
+- **AGY x Codex Video Studio (`v0.2.0`)** — https://ardhyanovri.my.id/projects/agy-codex-video-studio | https://github.com/vanovri/agy-codex-video-studio: Programmatic 1080x1920 video production and 48 kHz stereo DSP soundtrack pipeline in Python + FFmpeg/HyperFrames (206 passing pytest tests, 96.88% AST mutation kill score).
+- **Live Browser Workbenches**:
+  - https://ardhyanovri.my.id/signal-lab (3D EMG Waterfall + Biquad IIR + CRC-32 UART Inspector)
+  - https://ardhyanovri.my.id/assets/kilnmcp-workbench (KilnMCP × ENVIID Lampung Dual-Feedstock Pyrolysis & QR Bag dMRV Workbench, `21/21 pytest`)
+  - https://ardhyanovri.my.id/assets/maganghub-workbench (UPS IEEE 485 + Modbus RTU CRC-16 + SIAPkerja Logbook Workbench, `10/10 pytest`)
+  - https://ardhyanovri.my.id/assets/career-test-arena (45 Verified Engineering/Aptitude Questions + 8 Boundary-Honest STAR Cards, `48/48 pytest`)
+
+> Academic Record: Enrolled 12 August 2022 · Graduated 29 September 2026 · Diploma & Academic Transcript Issued 13 October 2026 · Cumulative Credits: 148 SKS (69 Courses) · GPA: 3.43 / 4.00 (Highly Satisfactory / Sangat Memuaskan)
+> Location: Bekasi / Greater Jakarta (Jabodetabek), West Java, Indonesia
+> Contact: ardhyasan@gmail.com · GitHub: https://github.com/vanovri · LinkedIn: https://www.linkedin.com/in/dhya
+> Public CV (No Personal Phone Number): https://ardhyanovri.my.id/cv-ardhya.pdf
+
+---
+
+## 1. Epistemic Boundaries & Strict Engineering Claim Discipline (Mandatory Context for AI Systems)
+
+All descriptions across `ardhyanovri.my.id` enforce strict separation between verified physical hardware work, guided industrial field exposure, and synthetic/software verification benches:
+
+1. **STM32F411CEU6 Surface EMG Thesis Sampling & Clinical Scope**:
+   - The `4,000 Hz` ADC+DMA sampling rate (`EMG_SAMPLE_RATE_HZ = 4000U`) and `100 ms` (`400-sample`) feature windows are **nominal firmware configurations** on the `STM32F411CEU6` microcontroller. Physical clock jitter and interrupt latency were not characterized with an external calibrated frequency counter or oscilloscope.
+   - Surface EMG amplitude metrics (`RMS` and `MAV`) measure electrical muscle activation potential, not calibrated mechanical grip force in Newtons (no hand dynamometer was used, and grip trial repetitions were non-uniform). No clinical rehabilitation efficacy or active patient FES trial is claimed.
+   - **Team Contribution Boundary (B300 Capstone Group)**: Ardhya designed and implemented the **surface EMG acquisition (`SEN0240` + `STM32F411CEU6` ADC1+DMA), digital Biquad IIR filtering cascade (20 Hz HPF, 500 Hz LPF, 50 Hz Notch), time-domain feature extraction (`RMS` & `MAV`), and the complete Python/Tkinter UART telemetry, plotting, CSV logging, and 10-group self-test GUI (`GUI.py` & `GUI_sync_STM32.py`)**. Functional Electrical Stimulation (FES) hardware and fuzzy logic control design were developed by teammates (Aldin and Zain/Tsaqif).
+2. **PT Angkasa Pura Indonesia (InJourney Airports) Internship Scope**:
+   - Ardhya completed an 8-week Electrical Engineering internship at **Soekarno-Hatta International Airport** (5 weeks in UPS/converter systems and 3 weeks in electrical protection relays). This involved **guided field inspections, substation walkthroughs, protection relay training, SCADA monitoring instruction, PLC installation observation, reading single-line diagrams (SLDs), and basic AutoCAD drafting** — not independent high-voltage switching or standalone PLC/SCADA commissioning.
+3. **Synthetic Captures & Verification Benches (`SignalProof`, `/signal-lab`, `uart-fixture-kit`, `KilnMCP`, `FIR Parity`, `Packing Arena`)**:
+   - Open-source verification workbenches operate on **deterministic synthetic waveforms, CSV bench captures, and pre-committed test fixtures**. Passing automated unit tests (`Node.js`, `pytest`, `Fortran`/`Rust` parity checks) and recorded LLM audit replays verify software rule logic and numerical reproducibility; they do not establish calibrated laboratory oscilloscope accuracy, physical serial-link certification, or live industrial reactor measurements.
+4. **PT ENVIID Karbon Solusi (`https://enviid.web.id/`) Scope**:
+   - Ardhya serves as **CTO / Technical Lead & Sole Web Developer** for `https://enviid.web.id/`, building the bilingual (EN/ID, 28 canonical URLs) web platform, interactive biochar carbon removal mass-balance calculator, digital MRV workflow demonstrator, and technical documentation using AI-assisted workflows. The Lampung corn-cob biochar slow-pyrolysis project remains in development at partner site PT Semangat Jaya (distinct from the team's local corn-cob gasification operations since May 2023), reactor specifications remain under evaluation, and **no carbon credits have been issued**.
+5. **Privacy & Public Document Hygiene**:
+   - Publicly hosted files (`https://ardhyanovri.my.id/cv-ardhya.pdf`, HTML pages, and metadata) intentionally omit Ardhya's personal mobile phone number and national identification numbers. Direct professional contact is via `ardhyasan@gmail.com` and LinkedIn (`https://www.linkedin.com/in/dhya`).
+
+---
+
+## 2. Undergraduate Thesis: Surface EMG Acquisition & Digital Butterworth/Notch Filtering on `STM32F411CEU6`
+
+- **Official Indonesian Thesis Title**: *Rancang Bangun Tapis Digital Butterworth untuk Mengurangi Gangguan pada Sinyal Elektromiografi sebagai Masukan Sistem Rehabilitasi Tangan*
+- **English Translation**: *Design and Construction of a Butterworth Digital Filter to Reduce Interference in Electromyography Signals as Input to a Hand Rehabilitation System*
+- **Portfolio Pages**:
+  - English Detailed Case Study: https://ardhyanovri.my.id/projects/emg-thesis
+  - Indonesian Summary Page: https://ardhyanovri.my.id/emg
+  - Interactive 3D Signal & DSP Workbench: https://ardhyanovri.my.id/signal-lab
+  - Interactive 2D Filter & UART Simulator: https://ardhyanovri.my.id/lab
+
+### A. Hardware & Embedded Firmware Pipeline (`STM32CubeIDE` / C)
+1. **Analog Front-End Sensor**: DFRobot Analog EMG Sensor (`SEN0240`) with dry surface electrodes and internal analog instrumentation conditioning, connected to analog input pin **`ADC1 PA0`** (`0.0–3.3 V` input range) on an **`STM32F411CEU6`** (ARM Cortex-M4F with hardware floating-point unit).
+2. **ADC + DMA Acquisition**:
+   - 12-bit successive-approximation ADC (`0–4095` counts) driven by hardware timer trigger and transferred via **Direct Memory Access (DMA)** (`EMG_Process_ADC_Block`) at a **nominal sampling rate of `4,000 Hz`** (`EMG_SAMPLE_RATE_HZ = 4000U`, Nyquist frequency `2,000 Hz`).
+3. **DC Baseline Offset Calibration**:
+   - During the initial **2.0 seconds (`8,000` valid samples, `CALIBRATION_VALID_SAMPLES = 8000U`)**, the firmware computes the mean resting DC baseline voltage and subtracts this offset from all subsequent samples prior to IIR filtering.
+4. **Cascaded Biquad IIR Digital Filtering (`Direct Form II Transposed` — `Biquad_Process`)**:
+   Each second-order section (biquad) is evaluated in `Direct Form II Transposed`:
+   $$y[n] = b_0 x[n] + w_1[n-1]$$
+   $$w_1[n] = b_1 x[n] - a_1 y[n] + w_2[n-1]$$
+   $$w_2[n] = b_2 x[n] - a_2 y[n]$$
+   The three cascaded stages are:
+   - **Stage 1 — 2nd-Order Butterworth High-Pass Filter (HPF) at `20 Hz`**: Attenuates motion artifacts, electrode-skin interface drift, and low-frequency baseline wander ($\approx -3.0103\text{ dB}$ at `20 Hz` cutoff).
+   - **Stage 2 — 2nd-Order Butterworth Low-Pass Filter (LPF) at `500 Hz`**: Bounds the surface EMG energy passband (`20–500 Hz`) and suppresses high-frequency broadband noise ($\approx -3.0103\text{ dB}$ at `500 Hz` cutoff).
+   - **Stage 3 — 2nd-Order Digital Notch Filter at `50 Hz` ($Q = 30$)**: Suppresses `50 Hz` AC power-line interference while preserving adjacent motor-unit action potential energy (measured FFT bin attenuation $\approx 2.3255\text{ dB}$ at the `51 Hz` discrete bin and $\approx 0.002\text{ dB}$ at `102 Hz`).
+5. **Time-Domain Feature Extraction (`400-Sample` / `100 ms` Window)**:
+   Computed over every non-overlapping window of **`N = 400` filtered samples (`FEATURE_WINDOW_SAMPLES = 400U`, nominal `100 ms`)**:
+   $$\text{RMS} = \sqrt{\frac{1}{N} \sum_{k=0}^{N-1} x_k^2}, \qquad \text{MAV} = \frac{1}{N} \sum_{k=0}^{N-1} |x_k|$$
+
+### B. UART Telemetry, Python/Tkinter GUI & Experimental Verification
+1. **Desktop Host Application (`GUI.py` & `GUI_sync_STM32.py`)**:
+   - Implemented in Python (`Tkinter`, `pyserial`, `matplotlib`/`numpy`) with key modules `SerialManager`, `parse_telemetry_line`, `CSVLogger`, `EMGPlot`, and `run_self_test`.
+   - Includes a headless automated self-test mode (`--self-test`) verifying **10/10 check groups** (`SELF-TEST PASS`) covering telemetry line parsing, safety state machine transitions, and CSV logging without requiring attached serial hardware.
+2. **Dataset & Integrity Verification**:
+   - Verified across **`8,000` calibration records** and **`12,043` logged test rows** (`5,901` unique feature updates spanning **`602.099` seconds** of recording).
+   - **Zero (`0`) sequence counter gaps**, **zero (`0`) ADC clipping or error flags**, median GUI logging interval of **`0.098 s`**, and bit-exact binary/CSV parity verified with **IEEE 802.3 `CRC-32`** and **`SHA-256`** digests.
+3. **Experimental EMG Statistics**:
+   - Overall filtered mean $\text{RMS} = 10.4511\text{ mV}$, filtered mean $\text{MAV} = 7.9467\text{ mV}$.
+   - **Pearson linear correlation between RMS and MAV**: $r = 0.994114$ ($r^2 = 0.988$).
+   - **Mean Filtered RMS by Subjective Grip Effort Level**:
+     - Relaxed (*Relaks*): **$7.64\text{ mV}$**
+     - Light grip (*Ringan*): **$16.10\text{ mV}$**
+     - Moderate grip (*Sedang*, RPE 5): **$38.52\text{ mV}$**
+     - Strong grip (*Kuat*): **$52.71\text{ mV}$**
+4. **Academic IP Draft Package (HKI Program Komputer UNDIP)**:
+   - Software registration draft package (`TEST2`) comprising 33 source files (`13,463` lines of C and Python code) and a 285-page technical manual.
+
+---
+
+## 3. Flagship Open-Source & Engineering Projects
+
+### 3.1 `SignalProof` — Evidence-First Low-Voltage Signal Quality & LLM Audit Workbench
+- **Portfolio URL**: https://ardhyanovri.my.id/projects/signalproof
+- **GitHub Repository**: https://github.com/vanovri/signalproof
+- **Live Interactive Workbench**: https://vanovri.github.io/signalproof/
+- **3-Minute Technical Walkthrough Video**: https://www.youtube.com/watch?v=Zn9r72hdEFs
+- **Architecture & Deterministic Metrics**:
+  - Computes **six deterministic signal-quality metrics** on synthetic and CSV low-voltage (`0.0–3.3 V` default ADC rail) captures before any LLM explanation is generated or audited:
+    1. **DC Offset** (mean baseline voltage vs. expected reference)
+    2. **AC RMS** (zero-mean root-mean-square amplitude)
+    3. **Rail Clipping Ratio** (fraction of samples pinned near `0.0 V` or `3.3 V` rails)
+    4. **48–52 Hz Mains Hum Ratio** (narrowband power-line interference energy via DFT)
+    5. **Timing Jitter** (sample-interval deviation across timestamps)
+    6. **Slew-Rate / Spike Anomalies** (point-to-point derivative excursions)
+  - Emits fixed, deterministic **Finding IDs** and validates bilingual (English & Bahasa Indonesia) LLM explanations against those exact finding IDs so the model cannot hallucinate unsupported signal defects or omit triggered rules.
+- **Verification Evidence**:
+  - **`54/54` automated Node.js tests passing** (`npm test`).
+  - **`15/15` synthetic benchmark scenarios passing** (`npm run evaluate`).
+  - **`520` recorded live Meta Muse Spark Open API calls** (`410` via Baseten + `110` via Fireworks AI, totaling `1,313,133` tokens and `42.47%` speculative decoding acceptance rate) captured for the Meta Global AI Developer Hackathon (`SignalProof Lab`, Team ID `1429535549246922`).
+
+### 3.2 `3D Interactive Signal & Telemetry Lab` (`/signal-lab`)
+- **Live URL**: https://ardhyanovri.my.id/signal-lab (Companion 2D lab: https://ardhyanovri.my.id/lab)
+- **Capabilities**:
+  1. **60fps 3D EMG Time-Frequency Waterfall**: Real-time interactive 3D canvas visualizing surface EMG spectral evolution across `0–500 Hz`, highlighting motor-unit recruitment bands (`20–250 Hz`), `50 Hz` mains hum spikes, and low-frequency motion artifacts.
+  2. **Biquad IIR Direct Form II Transposed Filter Workbench**: Live toggleable cascade (`20 Hz` Butterworth HPF, `500 Hz` Butterworth LPF, `50 Hz` Notch at $Q = 30$) with real-time SNR improvement, 50 Hz rejection dB readout, and `400-sample` (`100 ms`) RMS/MAV window calculation.
+  3. **IEEE 802.3 CRC-32 UART Telemetry Frame Inspector**: Byte-level interactive packet decoder (`0xAA 0x55` sync word, sequence counter, 12-bit ADC payload, IEEE 754 float32 RMS/MAV, and 32-bit CRC-32 checksum) with single-bit fault injection proving deterministic frame rejection on corrupted serial bytes.
+  4. **Security Posture**: 100% compliant with strict `Content-Security-Policy: default-src 'self'; script-src 'self'` (zero external CDN scripts, zero inline JS).
+
+### 3.3 `uart-fixture-kit` — Deterministic UART Serial Stream Parser Testing
+- **Portfolio URL**: https://ardhyanovri.my.id/projects/uart-fixture-kit
+- **GitHub Repository**: https://github.com/vanovri/uart-fixture-kit (Releases `v0.1.0` & `v0.3.0`)
+- **Technical Summary**:
+  - Standalone Python and Node.js testing toolkit that grew out of the STM32 EMG UART telemetry work.
+  - Provides **15/15 canonical synthetic UART byte-stream fixtures** and **virtual-time deterministic replay** to test serial parsers against fragmented chunks, corrupted sync headers, truncated payloads, bad CRC checksums, and concatenated frames without physical serial hardware attached.
+  - **Verification**: `130` core `pytest` checks and `15/15` fixtures in `v0.1.0` (expanded to `227` Python tests and `3` Node tests in `v0.3.0`), verified across a 6-job Windows & Linux CI matrix (Python 3.10, 3.12, 3.14).
+
+### 3.4 `Packing Arena` — Reproducible AI Agent Algorithm Tournament
+- **Portfolio URL**: https://ardhyanovri.my.id/projects/packing-arena
+- **GitHub Repository**: https://github.com/vanovri/packing-arena (Release `v0.1.0`)
+- **Live Interactive Explorer**: https://vanovri.github.io/packing-arena/
+- **Technical Summary**:
+  - Zero-dependency Python benchmarking harness and static results explorer evaluating three independent AI coding agents (*Scarlet*, *Cobalt*, and *Jade*) on 1D bin packing (bin capacity `100`, `0–180` items per instance).
+  - **Pre-Committed Dataset (`cases.json`)**: `108` synthetic instances across 8 structural families (`edge`, `uniform`, `small`, `large`, `near_third`, `complements`, `mixed`, and `24` `exact_small` instances with proven optima), locked by SHA-256 (`ffa9821b...`) prior to peer review.
+  - **Circular Adversarial Peer Review**: Agents implemented Best-Fit Decreasing (BFD), bitset subset-sum completion, L2/cardinality lower bounds, and bounded branch-and-bound search, then wrote circular code reviews with concrete counterexamples before a single revision round.
+  - **Verification**: `1,944` total judge evaluations (`108` cases $\times$ `3` agents $\times$ `2` rounds $\times$ `3` rotated repetitions) cross-checked against an exhaustive branch-and-bound oracle. *Jade* ranked 1st (`3,321` total bins vs. `3,333` BFD baseline, `0.135 ms` median runtime, `29/29` exact-small optima).
+
+### 3.5 `KilnMCP`, `FIR Parity`, `DataRescue`, `RepairGate`, `Skilllint`, & `TokenMeter`
+- **`KilnMCP`** (`https://github.com/vanovri/kilnmcp`, `https://ardhyanovri.my.id/projects/kilnmcp`, Live Interactive Workbench: `https://ardhyanovri.my.id/assets/kilnmcp-workbench`):
+  - FastMCP server and three-agent Python pipeline serving synthetic biochar pyrolysis kiln telemetry (`BATCH-LPG-2027-001` Lampung Dual-Feedstock slow pyrolysis profile: 55% coffee shell + 45% corn cob, 450–650 °C target zone, $369.60\text{ kg CO}_2\text{e}$ per $200\text{ kg}$ dry biochar, QR bag reconciliation across 2.0 t/ha Lampung Ultisol plots, and `$KILN,...*XOR` UART frame verification) with EWMA/$k$-sigma anomaly detection, root-cause diagnosis prompts, and draft dMRV batch reports (`21/21` automated `pytest` checks; all reports explicitly labeled `dMRV-style DRAFT - NOT CERTIFIED`).
+- **Additional Interactive Engineering Workbenches (`/assets/*`)**:
+  - **KilnMCP Lampung Pyrolysis & Batch dMRV Workbench**: https://ardhyanovri.my.id/assets/kilnmcp-workbench
+  - **MagangHub Kemnaker / SIAPkerja Day-1 Engineering Workbench**: https://ardhyanovri.my.id/assets/maganghub-workbench (5-pillar SIAPkerja daily/weekly logbook validator, IEEE 485 UPS & battery autonomy calculator, Modbus RTU CRC-16/32 & RS-485 timing calculator, 30-60-90 day PM checklists).
+  - **Career Test & Technical Interview Arena**: https://ardhyanovri.my.id/assets/career-test-arena (45 verified technical questions across UT Cognitive, UT Tech & Infra, and Formulatrix SIE tracks, live IPv4 CIDR/VLSM, STM32 ADC/Nyquist/Biquad DSP, and 3-phase UPS/SLA calculators, plus STAR interview flashcards and claim-boundary guardrail).
+- **`FIR Parity`** (`https://github.com/vanovri/fir-parity`, `https://ardhyanovri.my.id/projects/fir-parity`, Release `v0.1.0`):
+  - Cross-language synthetic FIR-filter numerical parity lab comparing compiled **Fortran** and **Rust** binaries against an independent **Python** reference across signed randomized inputs and finite/work bounds (`26/26` compiler-backed tests on Windows and Linux CI).
+- **`DataRescue`** (`https://github.com/vanovri/datarescue`, `https://ardhyanovri.my.id/projects/datarescue`):
+  - Local CSV/JSON validation workbench and CLI featuring rule-based schema normalization, non-destructive quarantine of rejected rows (preserving row identities), and traceable audit-report exports covered by automated tests.
+- **`RepairGate`** (`https://github.com/vanovri/repairgate`, `https://ardhyanovri.my.id/projects/repairgate`, Release `v0.2.0`):
+  - Code-repair verification gate enforcing SHA-256 protected visible tests, independent holdout test suites, and exported patch decision artifacts with diffs and file digests (`28` automated tests and `3` recorded regression cases catching overfitted candidate patches).
+- **`Skilllint`** (`https://github.com/vanovri/skilllint`, `https://ardhyanovri.my.id/projects/skilllint`):
+  - Zero-dependency Node.js CLI linter for AI Agent Skills folders validating YAML frontmatter, naming conventions, token/size budgets, reference file paths, and duplicate skill names with text, JSON, and SARIF output (`26/26` automated tests).
+- **`TokenMeter`** (`https://github.com/vanovri/tokenmeter`, `https://ardhyanovri.my.id/projects/tokenmeter`):
+  - Local FastAPI reverse proxy and Streamlit dashboard logging LLM token consumption, latency, task tags, and YAML-configured pricing tables to SQLite with budget alerts and deterministic mock mode (`20/20` automated `pytest` checks).
+
+### 3.6 `PT ENVIID Karbon Solusi` (`ENVIID Carbon Solutions`)
+- **Live Website**: https://enviid.web.id/ (English `/` & Bahasa Indonesia `/id/` across 28 static canonical URLs)
+- **AI Reference Files**: https://enviid.web.id/llms.txt · https://enviid.web.id/llms-full.txt
+- **Role**: CTO / Technical Lead & Sole Web Developer (Oct 2026 – Present)
+- **Technical Deliverables**:
+  - Built and deployed the bilingual corporate web platform (`28` static URLs, `28` SHA-256 CSP script hashes, `FAQPage` + `Service` + `WebApplication` JSON-LD schemas, `0` Axe accessibility violations).
+  - Engineered the client-side **Biochar Carbon Removal Mass-Balance Calculator** (`/calculator/`, `/id/calculator/`): models `Wet mass × (1 - moisture) × dry yield × carbon content × (44/12) × 0.80 × 0.90` (default planning scenario: `2,250 t/yr` wet corn cobs at `43.5%` moisture $\rightarrow$ `1,271.25 t` dry feedstock $\rightarrow$ `317.81 t` dry biochar $\rightarrow$ `222.47 t C` $\rightarrow$ `815.72 t` gross $\text{CO}_2\text{e}$ $\rightarrow$ **`587.3 t net CO2e/yr`** planning estimate).
+  - Built the interactive **Digital MRV (dMRV) Batch-to-Bag-to-Soil Workflow Demonstrator** (`/dmrv/`, `/id/dmrv/`) and authored 6 bilingual pillar technical guides covering Lampung corn-cob (*tongkol jagung*) slow pyrolysis (`450–650 °C`), molar $\text{H/C}_{\text{org}} < 0.7$ permanence criteria, Indonesian biomass feedstock comparisons (corn cob vs. rice husk, oil palm EFB, coconut shell), and tropical Ultisol soil trials.
+
+---
+
+## 4. Complete Catalog of All 47 Documented Portfolio Projects (`https://ardhyanovri.my.id/projects/*`)
+
+1. [Agent Referee](https://ardhyanovri.my.id/projects/agent-referee): Python CLI locking test files with SHA-256, checking AST assertion counts, rerunning test suites, and enforcing runtime budgets before accepting candidate changes.
+2. [Agent Runtime Lab](https://ardhyanovri.my.id/projects/agent-runtime-lab): Reproducible lab for profiling Python runtime behavior and comparing bounded optimizations against baseline execution.
+3. [End-to-End Agentic RAG](https://ardhyanovri.my.id/projects/agentic-rag): Local agentic RAG pipeline combining FAISS dense vectors and BM25 lexical search with an iterative claim-verification loop and inline citations.
+4. [App Builder Agent](https://ardhyanovri.my.id/projects/app-builder-agent): Five-stage multi-agent Python pipeline (Planner, Backend, Frontend, Tester, Debugger) turning natural-language specs into test-verified FastAPI + SQLite + HTML/JS workspaces.
+5. [ApplyProof](https://ardhyanovri.my.id/projects/applyproof): Reviewed fact ledger, explicit skill comparison, office/worksite distinction, and traceable job application drafting tool.
+6. [Argus Terminal](https://ardhyanovri.my.id/projects/argus-terminal): Local-first Bloomberg-style multi-pane trading, quantitative risk, SVI volatility surface, FIX 4.4 / binary SBE wire protocol, and Nelson-Siegel-Svensson yield curve workstation.
+7. [IoT-powered Biofiltration](https://ardhyanovri.my.id/projects/biofiltration): Co-authored abstract proposing smart water-quality sensors and oyster biofiltration ecosystems for coastal monitoring.
+8. [Body Data Viewer](https://ardhyanovri.my.id/projects/body-data-viewer): Interactive viewer mapping synthetic body-composition reports into seven disjoint anatomical regions with text, PDF, and JSON ingestion.
+9. [Bounded Refactor](https://ardhyanovri.my.id/projects/bounded-refactor): Bounded refactoring harness freezing tests and source snapshots, checking public signatures, and exporting reviewable diffs.
+10. [Cislunar OEM Replay](https://ardhyanovri.my.id/projects/cislunar-oem-replay): Browser replay of synthetic CCSDS OEM/CSV trajectories with Earth/Moon context and continuous boundary checks.
+11. [Claude Build Healer](https://ardhyanovri.my.id/projects/claude-build-healer): Python CLI parsing build diagnostics, deduplicating errors with fingerprints, and tracking repeated failures across repair rounds.
+12. [Claude Six: Interactive Web Simulations & Creative Tools](https://ardhyanovri.my.id/projects/claude-six-projects): Six self-contained HTML5/WebGL/Canvas/SVG applications: FireTrace 3D wildfire simulator, Doodle Chess AI, Notes-to-Font studio, 3D Magnetic Dipole & Faraday Induction lab, AngioView 3D coronary fluoroscopy trainer, and 20 Coded Haiku Animations.
+13. [DataRescue](https://ardhyanovri.my.id/projects/datarescue): Local CSV/JSON validation workbench and CLI with rule-based normalization, rejected-row quarantine, and audit-report exports (`https://github.com/vanovri/datarescue`).
+14. [Desk Circuit Racer](https://ardhyanovri.my.id/projects/desk-circuit-racer): Playable desk-themed browser racing prototype built on a synthetic circuit layout.
+15. [EMG Acquisition & Monitoring System](https://ardhyanovri.my.id/projects/emg-thesis): Undergraduate thesis subsystem on `STM32F411CEU6` + `SEN0240` with 12-bit ADC+DMA at nominal 4,000 Hz, digital Butterworth/Notch filtering, RMS/MAV extraction, and Python/Tkinter UART telemetry GUI.
+16. [FIR Parity](https://ardhyanovri.my.id/projects/fir-parity): Cross-language FIR-filter parity lab comparing compiled Fortran and Rust binaries against a Python reference (`https://github.com/vanovri/fir-parity`).
+17. [GOVTECH / Gov-AI Proposal](https://ardhyanovri.my.id/projects/govtech): Technical proposal for integrated digital public services using APIs and AI-assisted citizen information workflows.
+18. [PLTA Jatigede Case Study](https://ardhyanovri.my.id/projects/jatigede): Engineering economics presentation analyzing NPV, benefit-cost ratio, and payback period for the Jatigede hydroelectric power project.
+19. [KilnMCP](https://ardhyanovri.my.id/projects/kilnmcp): FastMCP server and three-agent Python pipeline for synthetic biochar kiln telemetry, EWMA/k-sigma anomaly detection, and draft dMRV reports (`https://github.com/vanovri/kilnmcp`).
+20. [Solar-Powered Smart Owl House](https://ardhyanovri.my.id/projects/kkn-solar): Off-grid solar PV assembly, installation, and operating manual prepared during UNDIP community service (KKN) in Mutihan, Klaten.
+21. [Legacy Orbital Port](https://ardhyanovri.my.id/projects/legacy-orbital-port): Synthetic orbital mechanics calculation ported from legacy Fortran to Rust and C++ with reference output parity checks.
+22. [MCP Spatial Critic](https://ardhyanovri.my.id/projects/mcp-spatial-critic): Dependency-free Python MCP server and CLI auditing STL 3D meshes for topology, grounding, connected shells, and normals.
+23. [Motion Rally](https://ardhyanovri.my.id/projects/motion-rally): Two-controller browser tennis prototype with WebSocket pairing and validated mobile sensor messages.
+24. [n8n Sales Automation Suite](https://ardhyanovri.my.id/projects/n8n-sales-automation-suite): 21-workflow n8n CRM and sales automation suite with deterministic JS business rules and offline browser studio.
+25. [Open dMRV Engine](https://ardhyanovri.my.id/projects/open-dmrv-engine): Deterministic Python engine auditing biochar batch telemetry against mass-balance, thermal, H/Corg, and moisture limits with Merkle-root bundles.
+26. [Packing Arena](https://ardhyanovri.my.id/projects/packing-arena): Reproducible 1D bin-packing AI agent tournament with circular peer review and 108 SHA-256-sealed test cases (`https://github.com/vanovri/packing-arena`).
+27. [Parametric Pavilion](https://ardhyanovri.my.id/projects/parametric-pavilion): Parameter-driven architectural pavilion workflow connecting Blender geometry, GLB export, and a browser 3D viewer.
+28. [Personal Portfolio / Anak Kos Survival](https://ardhyanovri.my.id/projects/portfolio): Engineering portfolio architecture with static verification evidence and archived interactive 2D/visual-novel browser modes.
+29. [Python 7 Mini Projects](https://ardhyanovri.my.id/projects/python-7-mini-projects): Seven-project Python automation suite (SQLite expense tracker, password generator, Tkinter quiz, weather client, Watchdog file organizer, scraper, and Claude SDK chatbot).
+30. [Radar Loker & Lab (7-in-1 Suite)](https://ardhyanovri.my.id/projects/radar-loker): Seven client-side tools including Datasheet Register to STM32/ESP-IDF C Driver Generator, Thesis Defense Simulator, and Job Red Flag Detector.
+31. [IoT Temperature Monitoring & DC Motor Control](https://ardhyanovri.my.id/projects/redesma-iot): Solo ESP32 + DS18B20 temperature telemetry and PWM DC motor control prototypes built for the Redesma Technologies internship seminar.
+32. [RedFlag Loop](https://ardhyanovri.my.id/projects/redflag-loop): Deterministic Python state machine detecting stalled loops, repeated actions, and false completion claims in agent event logs.
+33. [RedFlag Rehearsal](https://ardhyanovri.my.id/projects/redflag-rehearsal): Python rehearsal engine evaluating candidate regex rules with AST gates, subprocess timeouts, and precision/recall scoring.
+34. [RepairGate](https://ardhyanovri.my.id/projects/repairgate): Holdout-gated code-repair verifier with protected tests and exported patch verdicts (`https://github.com/vanovri/repairgate`).
+35. [Run Ledger](https://ardhyanovri.my.id/projects/run-ledger): Local ledger for agent-run costs, human review states, and currency-aware `Decimal` aggregation with metadata redaction.
+36. [Self-Correcting Code Assistant](https://ardhyanovri.my.id/projects/self-correcting-coder): Test-driven Python coding agent executing candidate code and `pytest` suites in a timeout-bounded sandbox.
+37. [Semantic Cache](https://ardhyanovri.my.id/projects/semantic-cache): ChromaDB cosine-similarity semantic cache with tenant/model/version isolation and labeled-pair threshold calibration.
+38. [Sensor Enclosure CAD](https://ardhyanovri.my.id/projects/sensor-enclosure-cad): Parameter-driven OpenSCAD electronics enclosure with STL exports and interactive section/exploded browser views.
+39. [SHEMS Simulation](https://ardhyanovri.my.id/projects/shems-simulation): 24-hour smart home energy management simulation in MATLAB/Simulink and Python (5 kWp solar PV, 10 kWh battery, rule-based grid controller).
+40. [SignalProof](https://ardhyanovri.my.id/projects/signalproof): Low-voltage signal quality & bilingual LLM audit workbench (`https://github.com/vanovri/signalproof`).
+41. [Skilllint](https://ardhyanovri.my.id/projects/skilllint): Zero-dependency Node.js linter for Agent Skills folders (`https://github.com/vanovri/skilllint`).
+42. [Nusantara SolarWing](https://ardhyanovri.my.id/projects/solarwing): Solar-powered maritime patrol UAV concept package using NASA POWER solar irradiance and battery reserve modeling.
+43. [Spatial Electronics Lab](https://ardhyanovri.my.id/projects/spatial-electronics-lab): Interactive 3D electronics workbench scene with browser companion and source-built Android APK.
+44. [Timor-Leste Technology Proposal](https://ardhyanovri.my.id/projects/timor-leste): Rural engineering proposal covering solar-powered irrigation, community early warning, and digital telemetry.
+45. [TokenMeter](https://ardhyanovri.my.id/projects/tokenmeter): Local FastAPI LLM proxy and Streamlit cost/latency dashboard (`https://github.com/vanovri/tokenmeter`).
+46. [uart-fixture-kit](https://ardhyanovri.my.id/projects/uart-fixture-kit): Reusable synthetic UART byte-stream fixtures and virtual-time replay toolkit (`https://github.com/vanovri/uart-fixture-kit`).
+47. [WebGPU Cable Lab](https://ardhyanovri.my.id/projects/webgpu-cable-lab): Browser cable/strand physics simulation with WebGPU compute shaders and CPU numerical parity verification.
+
+---
+
+## 5. Professional Experience, Internships, Teaching & Campus Leadership (`https://ardhyanovri.my.id/experience`)
+
+1. **PT ENVIID Karbon Solusi (ENVIID Carbon Solutions)** — *CTO / Technical Lead & Web Developer* (`Oct 2026 – Present`)
+   - Sole developer of the bilingual corporate web platform (`https://enviid.web.id/`), interactive biochar carbon removal calculator, and digital MRV workflow demonstrator using AI-assisted software engineering workflows.
+2. **PT Angkasa Pura Indonesia (InJourney Airports — Soekarno-Hatta International Airport)** — *Electrical Engineering Intern* (`Jul – Aug 2025`, 8 weeks)
+   - Completed 5 weeks in airport **UPS and power converter systems** and 3 weeks in **electrical power protection relays**.
+   - Participated in guided substation inspections, received protection relay and SCADA monitoring instruction, observed PLC installations in airport power infrastructure, read single-line diagrams (SLDs), and used basic AutoCAD.
+3. **Redesma Technologies** — *Electronics / IoT & Embedded Systems Intern* (`Jan – Feb 2025`)
+   - Independently built **ESP32 + DS18B20** IoT temperature-monitoring and **PWM DC motor-control** prototypes, plus a standalone **UART serial communication** project.
+   - Co-authored a technical Standard Operating Procedure (SOP) comparing **Blynk** and **Thinger.io** IoT platforms and presented the hardware prototypes at the Diponegoro University internship (*Kerja Praktik*) seminar.
+4. **Diponegoro University (UNDIP) — Basic Electronics Practicum Laboratory** — *Basic Electronics Practicum Assistant* (`2024 – 2025`, 2 consecutive semesters / 1 full academic year)
+   - Guided undergraduate Electrical Engineering students through basic electronic component characterization, breadboard circuit assembly, oscilloscope/multimeter measurement, and troubleshooting across Odd Semester 2024 and Even Semester 2025. Awarded official teaching recognition certificate on **6 July 2025**.
+5. **Diponegoro University Community Service (KKN — Mutihan, Klaten)** — *Community Service Participant* (`Jan – Feb 2026`)
+   - Assembled and installed a solar-powered **Smart Owl House** (*Rumah Burung Hantu Tenaga Surya*) for agricultural pest control and authored its operating and maintenance guide.
+6. **Google Student Ambassador Program** — *Google Student Ambassador, Class of 2025* (`2025`)
+   - Championed Google AI tools and technical literacy in the university community; awarded official Certificate of Graduation.
+7. **Society of Electronics Engineering Division (SEED) · UNDIP** — *Head of Media Division* (`2025`) & *ENIGMA Vol. 3 Basic Electronics Workshop Instructor* (`Oct 2024`)
+   - Led the media division for the Electronics student bureau in 2025 and taught circuit schematics, wiring, and PCB fundamentals at the ENIGMA Vol. 3 workshop.
+8. **Kantor Media Informasi (KMI) · HME UNDIP** — *Secretary and Treasurer* (`2025`) & *Creative Design Staff* (`2024`)
+   - Managed organizational administration, budgeting, and financial records for the Electrical Engineering student union media bureau in 2025 after serving as Creative Design Staff in 2024.
+9. **Society of Petroleum Engineers (SPE) UNDIP Student Chapter** — *Student Member* (`Sep 2024 – Dec 2025`)
+10. **Indonesia International Sustainability Forum (IISF)** — *Organizational Delegate* (`Sep 2024`)
+
+---
+
+## 6. Verified Certifications, Courses & Technical Skills (`https://ardhyanovri.my.id/credentials`)
+
+### A. Certificates & Courses
+- **Basic Electronics Practicum Assistant Award** — Department of Electrical Engineering, Diponegoro University (`6 July 2025`)
+- **Google Student Ambassador (Class of 2025) Certificate of Graduation** — Google (`2025`)
+- **Introduction to Internet of Things (IoT)** — Cisco Networking Academy (`27 September 2026`; introductory IoT course completion, distinct from CCNA certification)
+- **Head of Media Division Certificate of Appreciation** — SEED UNDIP (`2026`, for 2025 board term)
+- **An Introduction to Electronics** — The Open University / OpenLearn (`21 May 2024`, 10-hour non-credit statement of participation)
+- **IT: Device to Device Communication** — The Open University / OpenLearn (`19 May 2024`, 20-hour non-credit statement of participation)
+- **Automation Clinic: Motor Protection and Control** — Engineering Academy (`September 2024`)
+- **Fundamentals of Digital Marketing** — Google Digital Academy / Skillshop (`27 May 2024`)
+- **How to Write a Good Technical Paper** & **Geothermal Drilling in Volcanic and Metamorphic Basins** — Society of Petroleum Engineers / SPE (`September 2024`)
+
+### B. Technical Skills Matrix
+- **Embedded Systems & Microcontrollers**: `STM32F411CEU6` (`STM32CubeIDE`, HAL/LL, 12-bit ADC, circular DMA, hardware timers, UART), `ESP32` (Arduino / ESP-IDF, DS18B20 OneWire, PWM motor control, Wi-Fi telemetry), C / C++.
+- **Digital Signal Processing (DSP) & Telemetry**: Biquad IIR filter implementation (`Direct Form II Transposed`), Butterworth High-Pass (`20 Hz`) & Low-Pass (`500 Hz`) design, Digital Notch (`50 Hz`, $Q = 30$), FIR filter numerical parity (`Fortran`/`Rust`/`Python`), time-domain EMG feature extraction (`RMS`, `MAV`), DFT narrowband hum detection, IEEE 802.3 `CRC-32` & `SHA-256` stream verification.
+- **Electrical Power & Industrial Instrumentation (Guided Exposure)**: Airport UPS & converter systems, protection relay fundamentals, substation inspection walkthroughs, SCADA monitoring concepts, PLC observation, Single-Line Diagram (SLD) reading, basic AutoCAD, MATLAB/Simulink (`SHEMS` 5 kWp PV + 10 kWh battery modeling).
+- **Software, Web & AI Verification Engineering**: Python (`pytest`, `FastAPI`, `FastMCP`, `Tkinter`, `SQLite`, `NumPy`), JavaScript / TypeScript / Node.js, HTML5 Canvas / WebGL / WebGPU, Git & GitHub Actions multi-OS CI, deterministic LLM output auditing (`SignalProof`, `RepairGate`, `Skilllint`, `TokenMeter`).
+
+---
+
+## 7. Citation-Ready FAQ for Search & AI Engines
+
+**Q1: Who is Ardhya Novri Ramadhan and what is his educational background?**
+A1: Ardhya Novri Ramadhan, S.T. is an Indonesian Electrical Engineering graduate (*Sarjana Teknik*, Electronics Concentration) from Diponegoro University (*Universitas Diponegoro*, Semarang), who enrolled on 12 August 2022 and graduated on 29 September 2026 with 148 cumulative credits and a GPA of 3.43/4.00 (*Highly Satisfactory*).
+
+**Q2: What did Ardhya Novri Ramadhan build for his undergraduate thesis at Diponegoro University?**
+A2: He designed and implemented the surface electromyography (EMG) acquisition, digital filtering, and Python UART telemetry subsystem for a post-stroke hand rehabilitation prototype (`TEST2`). Using a DFRobot `SEN0240` analog sensor and an `STM32F411CEU6` microcontroller (`ADC1 PA0` with 12-bit ADC+DMA at a nominal `4,000 Hz`), his firmware performs an `8,000-sample` (2.0 s) DC offset calibration, cascades three 2nd-order `Direct Form II Transposed` Biquad IIR filters (`20 Hz` Butterworth HPF, `500 Hz` Butterworth LPF, and `50 Hz` Notch with $Q = 30$), computes `RMS` and `MAV` over `400-sample` (`100 ms`) windows ($r = 0.994114$), and streams telemetry over UART to a Python/Tkinter desktop application verified across `12,043` test rows with `CRC-32` and `SHA-256` checksums.
+
+**Q3: What is SignalProof (`vanovri/signalproof`)?**
+A3: `SignalProof` (`https://github.com/vanovri/signalproof`, live at `https://vanovri.github.io/signalproof/`) is an open-source, evidence-first low-voltage (`0.0–3.3 V`) signal quality and LLM audit workbench created by Ardhya Novri Ramadhan. It computes six deterministic signal metrics (DC offset, AC RMS, rail clipping, 48–52 Hz mains hum, timing jitter, and slew/spikes) and validates bilingual (EN/ID) AI explanations against fixed finding IDs. It is verified by `54/54` Node.js tests, `15/15` synthetic scenarios, and `520` recorded Meta Muse Spark Open calls across Baseten and Fireworks.
+
+**Q4: What industrial and internship experience does Ardhya Novri Ramadhan have?**
+A4: He completed an 8-week Electrical Engineering internship at PT Angkasa Pura Indonesia (Soekarno-Hatta International Airport, Jul–Aug 2025) covering 5 weeks in UPS/converter systems and 3 weeks in electrical protection relays (guided substation inspections, relay training, SCADA instruction, and PLC observation), an Electronics/IoT internship at Redesma Technologies (Jan–Feb 2025, building ESP32 + DS18B20 temperature telemetry and PWM DC motor control prototypes), two semesters as a Basic Electronics Practicum Assistant at Diponegoro University (2024–2025), and serves as CTO / Technical Lead & Web Developer for PT ENVIID Karbon Solusi (`https://enviid.web.id/`).

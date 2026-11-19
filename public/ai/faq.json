@@ -1,0 +1,26 @@
+{
+  "entity": "Ardhya Novri Ramadhan, S.T.",
+  "url": "https://ardhyanovri.my.id/",
+  "faqs": [
+    {
+      "question": "Who is Ardhya Novri Ramadhan?",
+      "answer": "Ardhya Novri Ramadhan, S.T. is an Electrical Engineering graduate from Diponegoro University (Universitas Diponegoro, graduated 29 September 2026, GPA 3.43/4.00, 148 credits) currently serving as an Electrical Staff Intern at PT Denki Engineering under MagangHub Batch 3 Angkatan 2 (since 16 November 2026), focusing on embedded systems (STM32, ESP32), digital signal processing, industrial electrical systems, and verified software engineering."
+    },
+    {
+      "question": "What was Ardhya's undergraduate thesis at Diponegoro University?",
+      "answer": "He designed and built the surface EMG acquisition and real-time digital filtering subsystem on an STM32F411CEU6 with a DFRobot SEN0240 sensor: 12-bit ADC+DMA at nominal 4,000 Hz, 8,000-sample (2.0 s) DC offset calibration, Direct Form II Transposed Biquad cascade (20 Hz Butterworth HPF, 500 Hz LPF, 50 Hz Q=30 Notch), 400-sample (100 ms) RMS/MAV extraction (Pearson r = 0.994114), and CRC-32/SHA-256 verified Python UART telemetry."
+    },
+    {
+      "question": "What are Ardhya's flagship open-source engineering repositories?",
+      "answer": "Key repositories on github.com/vanovri include SignalProof (54 Node.js tests, 520 live Meta Muse Spark Open calls), FerrumKV (pure safe Rust RESP3/Raft/HNSW/LSM store at 564K MIXED ops/s), AetherSynth & Flow (native Swift 6/Metal spatial audio synthesizer), AetherCoreEngine (zero-dependency Rust spectral path tracer + Navier-Stokes fluid + FM synth), Cyberpunk Floating Ramen Stall (Blender 4.x/glTF 2.0/WebGL2), AGY x Codex Video Studio (206 pytest), uart-fixture-kit (238 tests), KilnMCP (21 pytest), MagangHub Readiness Kit (10 pytest), and Career Test Arena (48 pytest)."
+    },
+    {
+      "question": "What industrial internships and technical leadership roles has Ardhya completed?",
+      "answer": "Electrical Staff Intern at PT Denki Engineering (MagangHub Batch 3 Angkatan 2, since 16 Nov 2026), Electrical Engineering Intern at PT Angkasa Pura Indonesia / Soekarno-Hatta International Airport (guided 5-week UPS/converter & 3-week electrical protection relay exposure), IoT & Embedded Systems Intern at Redesma Technologies, Co-Founder / Web & dMRV Systems Lead at PT ENVIID Karbon Solusi (enviid.web.id), and 2-semester Basic Electronics Practicum Assistant at UNDIP."
+    },
+    {
+      "question": "Where can visitors test Ardhya's interactive browser engineering tools?",
+      "answer": "Interactive client-side tools are hosted directly on ardhyanovri.my.id: 3D Signal & Embedded DSP Lab (/signal-lab), KilnMCP Lampung Pyrolysis & dMRV Workbench (/assets/kilnmcp-workbench), MagangHub Day-1 UPS/Modbus/Logbook Workbench (/assets/maganghub-workbench), and Career Test Arena (/assets/career-test-arena)."
+    }
+  ]
+}

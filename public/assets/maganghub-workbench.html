@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>MagangHub Kemnaker / SIAPkerja — Day-1 Engineering Workbench</title>
+  <style>
+    :root {
+      --bg-light: #f6f8fa;
+      --bg-dark: #0d1117;
+      --surface-light: #ffffff;
+      --surface-dark: #161b22;
+      --surface-alt-light: #eef2f6;
+      --surface-alt-dark: #1f2630;
+      --text-light: #111827;
+      --text-dark: #e6edf3;
+      --muted-light: #4b5563;
+      --muted-dark: #8b949e;
+      --border-light: #d0d7de;
+      --border-dark: #30363d;
+      --brand-light: #0f52ba;
+      --brand-dark: #58a6ff;
+      --brand-text-light: #ffffff;
+      --brand-text-dark: #091326;
+      --ok-light: #15803d;
+      --ok-dark: #3fb950;
+      --warn-light: #b45309;
+      --warn-dark: #d29922;
+      --err-light: #b91c1c;
+      --err-dark: #f85149;
+
+      --bg: var(--bg-light);
+      --surface: var(--surface-light);
+      --surface-alt: var(--surface-alt-light);
+      --text: var(--text-light);
+      --muted: var(--muted-light);
+      --border: var(--border-light);
+      --brand-color: var(--brand-light);
+      --brand-text: var(--brand-text-light);
+      --ok-color: var(--ok-light);
+      --warn-color: var(--warn-light);
+      --err-color: var(--err-light);
+
+      color-scheme: light dark;
+      accent-color: var(--brand-color);
+      font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: var(--bg-dark);
+        --surface: var(--surface-dark);
+        --surface-alt: var(--surface-alt-dark);
+        --text: var(--text-dark);
+        --muted: var(--muted-dark);
+        --border: var(--border-dark);
+        --brand-color: var(--brand-dark);
+        --brand-text: var(--brand-text-dark);
+        --ok-color: var(--ok-dark);
+        --warn-color: var(--warn-dark);
+        --err-color: var(--err-dark);
+      }
+    }
+
+    :root:has(> head > meta[name="color-scheme"][content="dark"]) {
+      color-scheme: dark;
+      --bg: var(--bg-dark);
+      --surface: var(--surface-dark);
+      --surface-alt: var(--surface-alt-dark);
+      --text: var(--text-dark);
+      --muted: var(--muted-dark);
+      --border: var(--border-dark);
+      --brand-color: var(--brand-dark);
+      --brand-text: var(--brand-text-dark);
+      --ok-color: var(--ok-dark);
+      --warn-color: var(--warn-dark);
+      --err-color: var(--err-dark);
+    }
+
+    :root:has(> head > meta[name="color-scheme"][content="light"]) {
+      color-scheme: light;
+      --bg: var(--bg-light);
+      --surface: var(--surface-light);
+      --surface-alt: var(--surface-alt-light);
+      --text: var(--text-light);
+      --muted: var(--muted-light);
+      --border: var(--border-light);
+      --brand-color: var(--brand-light);
+      --brand-text: var(--brand-text-light);
+      --ok-color: var(--ok-light);
+      --warn-color: var(--warn-light);
+      --err-color: var(--err-light);
+    }
+
+    @supports (color: light-dark(white, black)) {
+      :root {
+        --bg: light-dark(var(--bg-light), var(--bg-dark));
+        --surface: light-dark(var(--surface-light), var(--surface-dark));
+        --surface-alt: light-dark(var(--surface-alt-light), var(--surface-alt-dark));
+        --text: light-dark(var(--text-light), var(--text-dark));
+        --muted: light-dark(var(--muted-light), var(--muted-dark));
+        --border: light-dark(var(--border-light), var(--border-dark));
+        --brand-color: light-dark(var(--brand-light), var(--brand-dark));
+        --brand-text: light-dark(var(--brand-text-light), var(--brand-text-dark));
+        --ok-color: light-dark(var(--ok-light), var(--ok-dark));
+        --warn-color: light-dark(var(--warn-light), var(--warn-dark));
+        --err-color: light-dark(var(--err-light), var(--err-dark));
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      accent-color: var(--brand-color);
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1.25rem 1.5rem 3rem;
+    }
+
+    header.topbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.25rem;
+    }
+
+    .brand-title h1 {
+      margin: 0;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-title p {
+      margin: 0.25rem 0 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.22rem 0.6rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      background: var(--surface-alt);
+      font-family: "JetBrains Mono", "Consolas", monospace;
+    }
+
+    .badge.ok {
+      color: var(--ok-color);
+      border-color: var(--ok-color);
+    }
+
+    .badge.err {
+      color: var(--err-color);
+      border-color: var(--err-color);
+    }
+
+    button, select, input, textarea {
+      font: inherit;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.45rem 0.7rem;
+    }
+
+    button {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    button.primary {
+      background-color: var(--brand-color);
+      color: var(--brand-text);
+      border-color: var(--brand-color);
+    }
+
+    button.secondary:hover {
+      background-color: var(--surface-alt);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+    }
+
+    .tab-btn[aria-selected="true"] {
+      background-color: var(--brand-color);
+      color: var(--brand-text);
+      border-color: var(--brand-color);
+    }
+
+    .panel {
+      display: none;
+    }
+
+    .panel.active {
+      display: block;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.15rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .card h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.05rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    label.field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    label.field input, label.field select, label.field textarea {
+      width: 100%;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .kpi-box {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.7rem 0.85rem;
+    }
+
+    .kpi-box .lbl {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+
+    .kpi-box .val {
+      font-size: 1.2rem;
+      font-weight: 700;
+      font-family: "JetBrains Mono", "Consolas", monospace;
+      margin-top: 0.15rem;
+    }
+
+    /* Responsive table pattern per modern-web-guidance */
+    .table-wrapper {
+      overflow: auto;
+      max-inline-size: 100%;
+      max-block-size: min(520px, 75vh);
+      container-type: inline-size;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.83rem;
+      --label-1: "Hari / Tgl";
+      --label-2: "Jalur Kompetensi";
+      --label-3: "Uraian Kegiatan";
+      --label-4: "Kompetensi Teknis";
+      --label-5: "Output / Bukti Kerja";
+      --label-6: "Kendala & Solusi";
+      --label-7: "Status & Skor";
+    }
+
+    caption {
+      text-align: left;
+      padding: 0.55rem 0.75rem;
+      font-weight: 600;
+      font-size: 0.82rem;
+      color: var(--muted);
+      background: var(--surface-alt);
+      border-bottom: 1px solid var(--border);
+    }
+
+    thead {
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 2;
+      background: var(--surface-alt);
+    }
+
+    th, td {
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tbody th {
+      position: sticky;
+      inset-inline-start: 0;
+      background: var(--surface);
+      font-family: "JetBrains Mono", "Consolas", monospace;
+      white-space: nowrap;
+      z-index: 1;
+    }
+
+    @container (width < 680px) {
+      table, thead, tbody, tr, th, td {
+        display: block;
+      }
+      thead {
+        display: none;
+      }
+      tr {
+        margin-block-end: 1rem;
+        border-bottom: 2px solid var(--border);
+      }
+      tbody th {
+        position: sticky;
+        inset-block-start: 0;
+        background: var(--surface-alt);
+      }
+      td:nth-child(2)::before { content: var(--label-2) ": "; font-weight: 700; }
+      td:nth-child(3)::before { content: var(--label-3) ": "; font-weight: 700; }
+      td:nth-child(4)::before { content: var(--label-4) ": "; font-weight: 700; }
+      td:nth-child(5)::before { content: var(--label-5) ": "; font-weight: 700; }
+      td:nth-child(6)::before { content: var(--label-6) ": "; font-weight: 700; }
+      td:nth-child(7)::before { content: var(--label-7) ": "; font-weight: 700; }
+    }
+
+    /* Brand-consistent form fallback per modern-web-guidance */
+    @supports not (accent-color: var(--brand-color)) {
+      input[type="checkbox"].visually-hidden {
+        position: absolute !important;
+        clip-path: inset(50%) !important;
+        overflow: hidden !important;
+        width: 1px !important;
+        height: 1px !important;
+        margin: -1px !important;
+        padding: 0 !important;
+        border: 0 !important;
+        white-space: nowrap !important;
+      }
+    }
+
+    .mono {
+      font-family: "JetBrains Mono", "Consolas", monospace;
+    }
+
+    ul.compact-list {
+      margin: 0.4rem 0 0;
+      padding-left: 1.15rem;
+      font-size: 0.84rem;
+    }
+
+    ul.compact-list li {
+      margin-bottom: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand-title">
+        <h1>MagangHub Kemnaker / SIAPkerja — Day-1 Engineering Workbench</h1>
+        <p>Ardhya Novri Ramadhan, S.T. (S1 Teknik Elektro UNDIP · IPK 3.43/4.00) · Jalur: Teknik, Perangkat Keras &amp; Teknik, Perangkat Lunak</p>
+      </div>
+      <div class="header-actions">
+        <span class="badge ok">OFFLINE-FIRST WORKBENCH</span>
+        <button type="button" id="themeToggleBtn" class="secondary" aria-label="Ganti tema tampilan">Tema: Sistem / Gelap-Terang</button>
+      </div>
+    </header>
+
+    <nav class="tabs" role="tablist" aria-label="Modul Engineering MagangHub">
+      <button type="button" class="tab-btn" role="tab" aria-selected="true" data-target="panel-logbook">1. Logbook Harian &amp; Mingguan (SIAPkerja)</button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-target="panel-calculators">2. Kalkulator UPS Battery &amp; Modbus/UART</button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-target="panel-onboarding">3. Rencana 30-60-90 Hari &amp; Checklist PM</button>
+    </nav>
+
+    <!-- PANEL 1: LOGBOOK BUILDER -->
+    <section id="panel-logbook" class="panel active" role="tabpanel">
+      <div class="kpi-strip" id="logbookKpis"></div>
+
+      <div class="card">
+        <h2>
+          <span>Tambah / Validasi Entri Logbook Harian MagangHub</span>
+          <span class="badge ok" id="liveScoreBadge">Skor Validasi: 100/100</span>
+        </h2>
+        <form id="logbookForm">
+          <div class="form-row">
+            <label class="field">
+              <span>Hari Ke-</span>
+              <input type="number" id="lbHari" value="6" min="1" max="180" required>
+            </label>
+            <label class="field">
+              <span>Tanggal (YYYY-MM-DD)</span>
+              <input type="date" id="lbTanggal" value="2026-11-16" required>
+            </label>
+            <label class="field">
+              <span>Jalur Kompetensi SIAPkerja</span>
+              <select id="lbJalur">
+                <option value="Teknik, Perangkat Keras">Teknik, Perangkat Keras</option>
+                <option value="Teknik, Perangkat Lunak">Teknik, Perangkat Lunak</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Durasi Kerja (Jam)</span>
+              <input type="number" id="lbDurasi" value="8.0" step="0.5" min="0.5" max="12.0" required>
+            </label>
+            <label class="field">
+              <span>Status Verifikasi Mentor</span>
+              <select id="lbStatus">
+                <option value="Disetujui">Disetujui</option>
+                <option value="Menunggu Verifikasi">Menunggu Verifikasi</option>
+                <option value="Perlu Revisi">Perlu Revisi</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="field">
+              <span>Uraian Kegiatan (Metode, Alat Ukur, Standar, &amp; Parameter Teknis)</span>
+              <textarea id="lbUraian" rows="2" required>Melakukan pengujian beban sistem UPS 30 kVA dan verifikasi telemetri Modbus RTU RS-485 pada gateway STM32.</textarea>
+            </label>
+            <label class="field">
+              <span>Kompetensi Teknis yang Diterapkan (pisahkan dengan koma)</span>
+              <textarea id="lbKompetensi" rows="2" required>Inspeksi Sistem UPS &amp; Baterai, Akuisisi Data Modbus RTU, Evaluasi Keandalan Daya</textarea>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="field">
+              <span>Output / Bukti Kerja Terukur</span>
+              <input type="text" id="lbOutput" value="Berita acara uji beban UPS &amp; log akuisisi 1.000 paket Modbus (0% error)." required>
+            </label>
+            <label class="field">
+              <span>Kendala &amp; Solusi Lapangan</span>
+              <input type="text" id="lbKendala" value="Kendala: Fluktuasi pembacaan arus sesaat. Solusi: Mengaktifkan moving-average filter 5-sampel." required>
+            </label>
+          </div>
+          <div class="header-actions">
+            <button type="submit" class="primary">+ Tambahkan ke Logbook</button>
+            <button type="button" id="exportMdBtn" class="secondary">Unduh Laporan Mingguan (.md)</button>
+            <button type="button" id="exportCsvBtn" class="secondary">Unduh Tabel SIAPkerja (.csv)</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Daftar Logbook Aktivitas Harian &amp; Mingguan</h2>
+        <div tabindex="0" role="region" aria-labelledby="logbook-table-caption" class="table-wrapper">
+          <table>
+            <caption id="logbook-table-caption">Rekapitulasi Harian MagangHub Kemnaker (Terstruktur 5 Pilar SIAPkerja)</caption>
+            <thead>
+              <tr>
+                <th>Hari / Tgl</th>
+                <th>Jalur Kompetensi</th>
+                <th>Uraian Kegiatan</th>
+                <th>Kompetensi Teknis</th>
+                <th>Output / Bukti Kerja</th>
+                <th>Kendala &amp; Solusi</th>
+                <th>Verifikasi &amp; Skor</th>
+              </tr>
+            </thead>
+            <tbody id="logbookTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 2: FIELD CALCULATORS -->
+    <section id="panel-calculators" class="panel" role="tabpanel">
+      <div class="grid-2">
+        <!-- UPS & BATTERY CALCULATOR -->
+        <div class="card">
+          <h2>
+            <span>A. Kalkulator Otonomi UPS &amp; Bank Baterai (IEEE 485)</span>
+            <span class="badge ok" id="upsStatusBadge">ADEQUATE</span>
+          </h2>
+          <div class="form-row">
+            <label class="field">
+              <span>Beban UPS (kVA)</span>
+              <input type="number" id="upsKva" value="30" step="0.5" min="1">
+            </label>
+            <label class="field">
+              <span>Power Factor (PF)</span>
+              <input type="number" id="upsPf" value="0.85" step="0.01" min="0.5" max="1.0">
+            </label>
+            <label class="field">
+              <span>Efisiensi Inverter</span>
+              <input type="number" id="upsEff" value="0.92" step="0.01" min="0.6" max="1.0">
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="field">
+              <span>Tegangan Bus DC (V)</span>
+              <input type="number" id="upsVdc" value="384" step="12" min="24">
+            </label>
+            <label class="field">
+              <span>Kapasitas per String (Ah)</span>
+              <input type="number" id="upsAh" value="100" step="5" min="7">
+            </label>
+            <label class="field">
+              <span>Jumlah String Paralel</span>
+              <input type="number" id="upsStrings" value="2" step="1" min="1" max="8">
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="field">
+              <span>Target Backup (Menit)</span>
+              <input type="number" id="upsTargetMin" value="60" step="5" min="5">
+            </label>
+            <label class="field">
+              <span>Batas DoD (0.5 - 0.9)</span>
+              <input type="number" id="upsDod" value="0.80" step="0.05" min="0.5" max="0.95">
+            </label>
+            <label class="field">
+              <span>Peukert Exponent</span>
+              <input type="number" id="upsPeukert" value="1.10" step="0.01" min="1.0" max="1.25">
+            </label>
+          </div>
+          <div class="kpi-strip" id="upsResultsStrip"></div>
+        </div>
+
+        <!-- MODBUS RTU CRC-16 & UART TIMING CALCULATOR -->
+        <div class="card">
+          <h2>
+            <span>B. Kalkulator Modbus RTU CRC-16/32 &amp; UART Frame Timing</span>
+            <span class="badge ok" id="modbusCrcBadge">CRC-16 VALID</span>
+          </h2>
+          <div class="form-row">
+            <label class="field">
+              <span>Payload Hex Modbus RTU (tanpa CRC)</span>
+              <input type="text" id="mbHexInput" class="mono" value="01 03 00 00 00 02">
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="field">
+              <span>Baud Rate (bps)</span>
+              <select id="mbBaud">
+                <option value="9600">9600 bps</option>
+                <option value="19200" selected>19200 bps</option>
+                <option value="38400">38400 bps</option>
+                <option value="57600">57600 bps</option>
+                <option value="115200">115200 bps</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Ukuran Request (Byte)</span>
+              <input type="number" id="mbReqBytes" value="8" min="4" max="256">
+            </label>
+            <label class="field">
+              <span>Ukuran Response (Byte)</span>
+              <input type="number" id="mbRespBytes" value="9" min="4" max="256">
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="field">
+              <span>Slave Turnaround (ms)</span>
+              <input type="number" id="mbTurnaround" value="5.0" step="0.5" min="0.5">
+            </label>
+            <label class="field">
+              <span>Jumlah Node Slave RS-485</span>
+              <input type="number" id="mbSlaves" value="4" min="1" max="32">
+            </label>
+          </div>
+          <div class="kpi-strip" id="modbusResultsStrip"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 3: ONBOARDING 30-60-90 & PM CHECKLIST -->
+    <section id="panel-onboarding" class="panel" role="tabpanel">
+      <div class="grid-3" id="onboardingGrid"></div>
+
+      <div class="card">
+        <h2>
+          <span>Checklist Inspeksi &amp; Preventive Maintenance (Substation/UPS, IoT Node, Software QA)</span>
+          <span class="badge ok" id="pmReadinessBadge">Readiness: 100% (10/10 PASS)</span>
+        </h2>
+        <div tabindex="0" role="region" aria-labelledby="pm-table-caption" class="table-wrapper">
+          <table>
+            <caption id="pm-table-caption">Daftar Periksa Kesiapan Operasional Hari Pertama (Klik kotak centang untuk memperbarui status)</caption>
+            <thead>
+              <tr>
+                <th>Kode ID</th>
+                <th>Domain &amp; Kategori</th>
+                <th>Item Pemeriksaan</th>
+                <th>Standar Referensi</th>
+                <th>Kriteria Keberterimaan</th>
+                <th>Tingkat</th>
+                <th>Status Lulus</th>
+              </tr>
+            </thead>
+            <tbody id="pmTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/assets/maganghub-workbench.js"></script>
+</body>
+</html>

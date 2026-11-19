@@ -1,0 +1,11 @@
+# AI Discovery Manifest for Ardhya Novri Ramadhan (ardhyanovri.my.id)
+User-Agent: *
+Allow: /
+
+LLMs-Txt: https://ardhyanovri.my.id/llms.txt
+LLMs-Full-Txt: https://ardhyanovri.my.id/llms-full.txt
+AI-Summary: https://ardhyanovri.my.id/ai/summary.json
+AI-FAQ: https://ardhyanovri.my.id/ai/faq.json
+AI-Service: https://ardhyanovri.my.id/ai/service.json
+Sitemap: https://ardhyanovri.my.id/sitemap.xml
+Contact: mailto:ardhyasan@gmail.com

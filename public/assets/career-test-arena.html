@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Test & Technical Interview Arena — Ardhya Novri Ramadhan, S.T.</title>
+  <style>
+    :root {
+      --bg-base: #0b0f17;
+      --bg-surface: #111827;
+      --bg-elevated: #1e293b;
+      --bg-input: #0f172a;
+      --border: #334155;
+      --border-subtle: #1f2937;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --accent-ut: #f59e0b;
+      --accent-ut-bg: rgba(245, 158, 11, 0.12);
+      --accent-fx: #38bdf8;
+      --accent-fx-bg: rgba(56, 189, 248, 0.12);
+      --accent-emerald: #10b981;
+      --accent-emerald-bg: rgba(16, 185, 129, 0.12);
+      --accent-danger: #f43f5e;
+      --accent-danger-bg: rgba(244, 63, 94, 0.12);
+      --accent-purple: #a855f7;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 20px 24px 64px;
+    }
+
+    /* Top Header & Pipeline Status */
+    .hero-header {
+      background: linear-gradient(135deg, #111827 0%, #0f172a 60%, #1e1b4b 100%);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 26px;
+      margin-bottom: 20px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 11px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      border: 1px solid transparent;
+    }
+
+    .badge-amber {
+      background: var(--accent-ut-bg);
+      color: var(--accent-ut);
+      border-color: rgba(245, 158, 11, 0.35);
+    }
+
+    .badge-cyan {
+      background: var(--accent-fx-bg);
+      color: var(--accent-fx);
+      border-color: rgba(56, 189, 248, 0.35);
+    }
+
+    .badge-emerald {
+      background: var(--accent-emerald-bg);
+      color: var(--accent-emerald);
+      border-color: rgba(16, 185, 129, 0.35);
+    }
+
+    .badge-danger {
+      background: var(--accent-danger-bg);
+      color: var(--accent-danger);
+      border-color: rgba(244, 63, 94, 0.35);
+    }
+
+    .pipeline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 10px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .pipeline-card {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 0.82rem;
+    }
+
+    .pipeline-card strong {
+      display: block;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+
+    .pipeline-meta {
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+    }
+
+    /* Navigation Tabs */
+    .mode-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 22px;
+      background: var(--bg-surface);
+      padding: 8px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .mode-tab {
+      flex: 1 1 200px;
+      background: transparent;
+      color: var(--text-secondary);
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 11px 16px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-align: center;
+    }
+
+    .mode-tab:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .mode-tab.active {
+      background: var(--bg-elevated);
+      color: var(--accent-fx);
+      border-color: rgba(56, 189, 248, 0.45);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .mode-panel {
+      display: none;
+    }
+
+    .mode-panel.active {
+      display: block;
+    }
+
+    /* Shared Cards & Controls */
+    .card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+
+    .card-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--bg-elevated);
+      color: var(--text-primary);
+      transition: all 0.15s ease;
+    }
+
+    .btn:hover {
+      border-color: var(--accent-fx);
+      background: #26354d;
+    }
+
+    .btn-primary {
+      background: #0284c7;
+      border-color: #38bdf8;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background: #0369a1;
+    }
+
+    .btn-amber {
+      background: #d97706;
+      border-color: #fbbf24;
+      color: #ffffff;
+    }
+
+    .btn-emerald {
+      background: #059669;
+      border-color: #34d399;
+      color: #ffffff;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      background: var(--bg-input);
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 9px 12px;
+      font-size: 0.88rem;
+      font-family: var(--font-mono);
+      width: 100%;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--accent-fx);
+    }
+
+    label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* Mode 1: Exam Layout */
+    .exam-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .timer-box {
+      font-family: var(--font-mono);
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      color: var(--accent-emerald);
+    }
+
+    .timer-box.warning {
+      color: var(--accent-ut);
+      border-color: var(--accent-ut);
+    }
+
+    .exam-layout {
+      display: grid;
+      grid-template-columns: 1fr 310px;
+      gap: 18px;
+    }
+
+    @media (max-width: 960px) {
+      .exam-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .q-text {
+      font-size: 1.02rem;
+      color: var(--text-primary);
+      white-space: pre-line;
+      margin-bottom: 18px;
+      line-height: 1.65;
+    }
+
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .option-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      text-align: left;
+      padding: 13px 16px;
+      border-radius: 10px;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      cursor: pointer;
+      font-size: 0.92rem;
+      transition: all 0.14s ease;
+    }
+
+    .option-btn:hover {
+      border-color: var(--accent-fx);
+      background: rgba(56, 189, 248, 0.06);
+    }
+
+    .option-btn.selected {
+      border-color: var(--accent-fx);
+      background: rgba(56, 189, 248, 0.15);
+    }
+
+    .option-btn.correct {
+      border-color: var(--accent-emerald);
+      background: rgba(16, 185, 129, 0.18);
+    }
+
+    .option-btn.wrong {
+      border-color: var(--accent-danger);
+      background: rgba(244, 63, 94, 0.18);
+    }
+
+    .opt-key {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      min-width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: var(--bg-elevated);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.82rem;
+    }
+
+    .explanation-box {
+      margin-top: 16px;
+      padding: 15px 18px;
+      border-radius: 10px;
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      font-size: 0.88rem;
+      white-space: pre-line;
+    }
+
+    .formula-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent-ut);
+      background: rgba(245, 158, 11, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    .q-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 7px;
+    }
+
+    .q-nav-pill {
+      padding: 8px 4px;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 600;
+      border-radius: 6px;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .q-nav-pill.current {
+      border-color: var(--accent-fx);
+      color: var(--accent-fx);
+      box-shadow: 0 0 0 1px var(--accent-fx);
+    }
+
+    .q-nav-pill.answered {
+      background: rgba(56, 189, 248, 0.18);
+      color: var(--text-primary);
+    }
+
+    .q-nav-pill.graded-ok {
+      background: rgba(16, 185, 129, 0.25);
+      border-color: var(--accent-emerald);
+      color: #a7f3d0;
+    }
+
+    .q-nav-pill.graded-bad {
+      background: rgba(244, 63, 94, 0.25);
+      border-color: var(--accent-danger);
+      color: #fecdd3;
+    }
+
+    /* Calculators Grid */
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 18px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .kv-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 0.84rem;
+    }
+
+    .kv-table th,
+    .kv-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid var(--border-subtle);
+      text-align: left;
+    }
+
+    .kv-table th {
+      color: var(--text-muted);
+      font-weight: 500;
+      width: 46%;
+    }
+
+    .kv-table td {
+      font-family: var(--font-mono);
+      color: var(--accent-fx);
+      font-weight: 600;
+    }
+
+    /* STAR Flashcards */
+    .star-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+      gap: 18px;
+    }
+
+    @media (max-width: 640px) {
+      .star-grid, .calc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .star-section {
+      margin-bottom: 10px;
+      font-size: 0.88rem;
+    }
+
+    .star-label {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.73rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-right: 6px;
+      background: var(--bg-elevated);
+      color: var(--accent-fx);
+    }
+
+    .boundary-alert {
+      margin-top: 12px;
+      padding: 11px 14px;
+      border-radius: 8px;
+      background: rgba(244, 63, 94, 0.1);
+      border: 1px solid rgba(244, 63, 94, 0.4);
+      color: #fda4af;
+      font-size: 0.82rem;
+      white-space: pre-line;
+    }
+
+    .allowed-list {
+      margin: 8px 0 0 18px;
+      font-size: 0.83rem;
+      color: var(--text-secondary);
+    }
+
+    .cheat-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .cheat-list li {
+      padding: 8px 12px;
+      background: var(--bg-input);
+      border-left: 3px solid var(--accent-fx);
+      border-radius: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header class="hero-header">
+      <div class="hero-top">
+        <div>
+          <h1 class="hero-title">CAREER TEST &amp; TECHNICAL INTERVIEW ARENA</h1>
+          <p class="hero-subtitle" id="candidate-header-line">
+            Ardhya Novri Ramadhan, S.T. — S1 Teknik Elektro UNDIP (GPA 3.43/4.00, Official BSrE Diploma)
+          </p>
+        </div>
+        <div class="badge-row">
+          <span class="badge badge-amber">UT 14929: ONLINE TEST (DALAM PROSES)</span>
+          <span class="badge badge-cyan">FORMULATRIX SIE: ONLINE TEST INVITED</span>
+          <span class="badge badge-emerald" id="total-q-badge">45 Verified Questions</span>
+        </div>
+      </div>
+      <div class="pipeline-grid" id="pipeline-cards"></div>
+    </header>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="mode-nav" role="tablist">
+      <button class="mode-tab active" data-mode="mode-exam" >
+        1. Timed Mock Exam Simulator
+      </button>
+      <button class="mode-tab" data-mode="mode-calculators" >
+        2. Live Engineering Calculators
+      </button>
+      <button class="mode-tab" data-mode="mode-interview" >
+        3. STAR Flashcards &amp; Claim Guardrail
+      </button>
+      <button class="mode-tab" data-mode="mode-cheatsheet" >
+        4. Searchable Quick-Reference Cheat Sheet
+      </button>
+    </nav>
+
+    <!-- ================================================================== -->
+    <!-- MODE 1: TIMED MOCK EXAM SIMULATOR                                  -->
+    <!-- ================================================================== -->
+    <section id="mode-exam" class="mode-panel active">
+      <div class="card">
+        <div class="exam-toolbar">
+          <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+            <div>
+              <label for="exam-track-select">Select Exam Track</label>
+              <select id="exam-track-select"  style="min-width:290px;">
+                <option value="all">Full Mix — All Tracks (45 Questions / 60 min)</option>
+                <option value="ut_cognitive">Astra / UT Cognitive &amp; Fleet Math (15 Qs / 20 min)</option>
+                <option value="ut_tech_infra">UT Technology &amp; Infrastructure 14929 (15 Qs / 25 min)</option>
+                <option value="formulatrix_sie">Formulatrix System Integration Engineer (15 Qs / 25 min)</option>
+              </select>
+            </div>
+            <div style="padding-top:18px; display:flex; gap:8px;">
+              <button class="btn btn-primary"  id="timer-toggle-btn">Start Timer</button>
+              <button class="btn" id="reset-exam-btn">Reset Attempt</button>
+              <button class="btn btn-emerald" id="submit-exam-btn">Submit &amp; Grade Exam</button>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <div>
+              <label>Countdown Timer</label>
+              <div class="timer-box" id="exam-timer-display">60:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="exam-summary-banner" class="card" style="display:none;"></div>
+
+      <div class="exam-layout">
+        <!-- Active Question Card -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="badge badge-cyan" id="q-id-badge">UTC-01</span>
+              <span class="badge badge-amber" id="q-category-badge">Category</span>
+              <span class="badge badge-emerald" id="q-diff-badge">MEDIUM</span>
+            </div>
+            <div style="font-family:var(--font-mono); font-size:0.85rem; color:var(--text-muted);" id="q-progress-label">
+              Question 1 of 45
+            </div>
+          </div>
+
+          <div class="q-text" id="q-prompt-text"></div>
+          <div class="options-list" id="q-options-container"></div>
+
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px;">
+            <div style="display:flex; gap:8px;">
+              <button class="btn" id="prev-q-btn">&#8592; Previous</button>
+              <button class="btn btn-primary" id="next-q-btn">Next &#8594;</button>
+            </div>
+            <button class="btn btn-amber" id="reveal-ans-btn">
+              Reveal Formula &amp; Step-by-Step Solution
+            </button>
+          </div>
+
+          <div id="q-explanation-panel" class="explanation-box" style="display:none;"></div>
+        </div>
+
+        <!-- Question Navigator Sidebar -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Question Navigator</span>
+            <span class="badge badge-cyan" id="answered-counter-badge">0 / 45 Answered</span>
+          </div>
+          <div class="q-grid" id="q-navigator-grid"></div>
+          <div style="margin-top:16px; font-size:0.78rem; color:var(--text-muted); line-height:1.5;">
+            Tip: Use <strong>Reveal Formula &amp; Step-by-Step Solution</strong> for instant study feedback, or answer all questions and click <strong>Submit &amp; Grade Exam</strong> for full readiness scoring.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- MODE 2: INTERACTIVE LIVE CALCULATORS                               -->
+    <!-- ================================================================== -->
+    <section id="mode-calculators" class="mode-panel">
+      <div class="calc-grid">
+        <!-- CALCULATOR 1: IPV4 SUBNETTING -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">A. IPv4 CIDR &amp; VLSM Subnet Calculator</span>
+            <span class="badge badge-cyan">UT Tech &amp; Infra</span>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="calc-cidr-input">IPv4 Address / CIDR Prefix</label>
+              <input type="text" id="calc-cidr-input" value="10.24.16.77/26"  />
+            </div>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px;">
+            <button class="btn" style="padding:4px 9px; font-size:0.75rem;" data-cidr-preset="10.24.16.77/26">10.24.16.77/26</button>
+            <button class="btn" style="padding:4px 9px; font-size:0.75rem;" data-cidr-preset="172.16.40.0/22">172.16.40.0/22</button>
+            <button class="btn" style="padding:4px 9px; font-size:0.75rem;" data-cidr-preset="192.168.10.129/25">192.168.10.129/25</button>
+            <button class="btn" style="padding:4px 9px; font-size:0.75rem;" data-cidr-preset="10.100.40.130/30">10.100.40.130/30</button>
+          </div>
+          <table class="kv-table" id="subnet-result-table"></table>
+        </div>
+
+        <!-- CALCULATOR 2: ADC, NYQUIST & BIQUAD DSP -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">B. STM32 ADC, Nyquist &amp; Biquad DSP Calculator</span>
+            <span class="badge badge-amber">Formulatrix SIE / Thesis</span>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="adc-vref">Vref (V)</label>
+              <input type="number" id="adc-vref" value="3.3" step="0.1" class="adc-dsp-input" />
+            </div>
+            <div>
+              <label for="adc-bits">ADC Bits</label>
+              <input type="number" id="adc-bits" value="12" step="1" min="4" max="24" class="adc-dsp-input" />
+            </div>
+            <div>
+              <label for="adc-code">Raw Code</label>
+              <input type="number" id="adc-code" value="2048" step="1" class="adc-dsp-input" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="dsp-fs">Sample Rate fs (Hz)</label>
+              <input type="number" id="dsp-fs" value="4000" step="100" class="adc-dsp-input" />
+            </div>
+            <div>
+              <label for="dsp-sig">Signal / Noise (Hz)</label>
+              <input type="number" id="dsp-sig" value="2650" step="10" class="adc-dsp-input" />
+            </div>
+            <div>
+              <label for="dsp-ftype">Biquad Type</label>
+              <select id="dsp-ftype" class="adc-dsp-input">
+                <option value="notch">Notch (50 Hz Q=30)</option>
+                <option value="hpf">Butterworth HPF</option>
+                <option value="lpf">Butterworth LPF</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="dsp-fc">Cutoff / Center f0 (Hz)</label>
+              <input type="number" id="dsp-fc" value="50" step="5" class="adc-dsp-input" />
+            </div>
+            <div>
+              <label for="dsp-q">Quality Factor Q</label>
+              <input type="number" id="dsp-q" value="30" step="0.1" class="adc-dsp-input" />
+            </div>
+            <div>
+              <label for="dsp-samples">Window Samples (mV)</label>
+              <input type="text" id="dsp-samples" value="6, -8, 8, -6" class="adc-dsp-input" />
+            </div>
+          </div>
+          <table class="kv-table" id="adc-dsp-result-table"></table>
+        </div>
+
+        <!-- CALCULATOR 3: 3-PHASE UPS, SLA & PID -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">C. 3-Phase UPS, SLA Availability &amp; PID Step Helper</span>
+            <span class="badge badge-emerald">Power / Infra / Control</span>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="pwr-kva">Load (kVA)</label>
+              <input type="number" id="pwr-kva" value="15" step="0.5" class="pwr-sla-input" />
+            </div>
+            <div>
+              <label for="pwr-pf">Power Factor</label>
+              <input type="number" id="pwr-pf" value="0.80" step="0.05" class="pwr-sla-input" />
+            </div>
+            <div>
+              <label for="pwr-eff">UPS Eff (0-1)</label>
+              <input type="number" id="pwr-eff" value="0.90" step="0.02" class="pwr-sla-input" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="pwr-vbus">DC Bus (V)</label>
+              <input type="number" id="pwr-vbus" value="48" step="12" class="pwr-sla-input" />
+            </div>
+            <div>
+              <label for="pwr-ah">Battery (Ah)</label>
+              <input type="number" id="pwr-ah" value="250" step="10" class="pwr-sla-input" />
+            </div>
+            <div>
+              <label for="pwr-dod">Battery DoD</label>
+              <input type="number" id="pwr-dod" value="0.80" step="0.05" class="pwr-sla-input" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="sla-pct">Target SLA (%)</label>
+              <input type="number" id="sla-pct" value="99.95" step="0.01" class="pwr-sla-input" />
+            </div>
+            <div>
+              <label for="pid-target">PID Step Target</label>
+              <input type="number" id="pid-target" value="100" step="5" class="pwr-sla-input" />
+            </div>
+            <div>
+              <label for="pid-peak">PID Peak Actual</label>
+              <input type="number" id="pid-peak" value="112" step="1" class="pwr-sla-input" />
+            </div>
+          </div>
+          <table class="kv-table" id="power-sla-result-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- MODE 3: STAR INTERVIEW FLASHCARDS & CLAIM-BOUNDARY GUARDRAIL        -->
+    <!-- ================================================================== -->
+    <section id="mode-interview" class="mode-panel">
+      <!-- Live Claim-Boundary Scanner -->
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <span class="card-title">Live Interview Claim-Boundary Verifier (Evidence-First Guardrail)</span>
+            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:2px;">
+              Type or paste a draft interview response below to verify it respects Ardhya's strict claim boundaries (B300 team split, Angkasa Pura guided exposure, Cisco IoT vs CCNA, nominal 4,000 Hz).
+            </p>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <button class="btn btn-emerald" id="sample-claim-safe-btn">Load Valid Pitch</button>
+            <button class="btn" style="border-color:var(--accent-danger); color:#fda4af;" id="sample-claim-trap-btn">Test Overclaim Trap</button>
+          </div>
+        </div>
+        <textarea id="claim-Input-area" rows="3"  placeholder="Paste or type your interview pitch here..."></textarea>
+        <div id="claim-check-output" style="margin-top:12px;"></div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+        <button class="btn btn-primary" data-star-filter="all">All 8 STAR Cards</button>
+        <button class="btn" data-star-filter="ut_tech_infra">UT Tech &amp; Infra (14929)</button>
+        <button class="btn" data-star-filter="formulatrix_sie">Formulatrix SIE</button>
+        <button class="btn" data-star-filter="ut_cognitive">UT Operational / Leadership</button>
+      </div>
+
+      <div class="star-grid" id="star-cards-container"></div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- MODE 4: SEARCHABLE QUICK-REFERENCE CHEAT SHEET                     -->
+    <!-- ================================================================== -->
+    <section id="mode-cheatsheet" class="mode-panel">
+      <div class="card">
+        <div class="form-row" style="align-items:end;">
+          <div style="grid-column: span 2;">
+            <label for="cheat-search-input">Instant Filter (Search formulas, CIDR, Biquad, SLA, PA/MA, SQL, PID, or question IDs)</label>
+            <input type="text" id="cheat-search-input" placeholder="e.g. Biquad, /26, 99.95%, PA, stepper, CRC-32, Modbus..."  />
+          </div>
+          <div>
+            <label for="cheat-track-filter">Filter by Track</label>
+            <select id="cheat-track-filter" >
+              <option value="all">All Tracks (Formulas + 45 Solved Q&amp;As)</option>
+              <option value="ut_cognitive">Astra / UT Cognitive &amp; Fleet Math</option>
+              <option value="ut_tech_infra">UT Technology &amp; Infrastructure</option>
+              <option value="formulatrix_sie">Formulatrix System Integration</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="cheat-sections-container"></div>
+      <div id="cheat-questions-container"></div>
+    </section>
+  </div>
+
+  <script src="/assets/career-test-arena.js"></script>
+</body>
+</html>

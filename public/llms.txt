@@ -1,17 +1,57 @@
 # Ardhya Novri Ramadhan — Engineering Portfolio (ardhyanovri.my.id)
 
-> Electrical Engineering graduate (S.T., Diponegoro University, 2026; GPA 3.63/4.00) focusing on embedded systems (STM32, ESP32, C/C++), digital signal processing (EMG acquisition & filtering), industrial instrumentation, and verified software/web engineering.
+> Ardhya Novri Ramadhan, S.T. — Electrical Engineering graduate from Diponegoro University (Universitas Diponegoro, graduated 29 September 2026, GPA 3.43/4.00, 148 credits) and Electrical Staff Intern at PT Denki Engineering (MagangHub Batch 3, Angkatan 2, since 16 November 2026). Focused on embedded systems (STM32, ESP32, C/C++), digital signal processing (EMG acquisition & IIR/FIR filtering), industrial instrumentation, systems programming (Rust, Python, Swift/Metal, Node.js), and verified web engineering.
 
-## Key Pages
-- [Home](https://ardhyanovri.my.id/): Overview of embedded hardware, signal processing, and software work.
-- [About](https://ardhyanovri.my.id/about): Biography, education at Diponegoro University, technical focus, and claim discipline.
-- [Projects](https://ardhyanovri.my.id/projects): Index of 55 documented projects (Cyberpunk Floating Ramen Stall 32-track 240-frame Blender 4.x/glTF 2.0/BT.709 colr nclx lossless muxer, AetherSynth & Flow Swift 6/Metal spatial synthesizer, FerrumKV pure-Rust 564K ops/s Raft/HNSW/LSM store, Career Test Arena exam simulator, STM32 EMG thesis, ESP32 IoT prototypes, ENVIID web engineering, open-source developer tools, simulations, and proposals).
-- [Cyberpunk Floating Ramen Stall](https://ardhyanovri.my.id/projects/cyberpunk-floating-ramen-stall): 32 tracks, 0 external textures, 240 frames (10.0s @ 24fps) BT.709 (colr nclx) lossless mux, 4 shared ShaderNodeGroups (-32.6% shader nodes), GN_Cyber_Rain_Field, 100% self-contained Blender 4.0–4.3 procedural 3D diorama generator (579 objects), Binary glTF 2.0 serializer, pure-Python Z-buffer Neon Bloom renderer, WebGL2 + 48 kHz WebAudio studio, and 100% SHA-256 manifest match across all 6 Phase 7 artifacts.
-- [AetherSynth & Flow](https://ardhyanovri.my.id/projects/aether-synth-flow): Native Swift 6 and Metal spatial audio synthesizer (iOS 18, watchOS 11, visionOS 2, macOS 15, AUv3) with 90 Hz Reverse-Z .greaterEqual, < 12 ms latency (7.67 ms slew / 9.1 ms E2E), chi_max = 16 (0 heap allocs, 2.99e-10 DMRG), 51.22 dB PML waveguide, 30.56 dB SPWVD (49.90 dB midpoint, 0 RT heap allocs), 14.65% drop & 95 ms Pareto jitter (0 false spikes), -91.6% global loads & < 6.5 ms GPU governor, and 12/12 SHA-256 stages.
-- [FerrumKV](https://ardhyanovri.my.id/projects/ferrum-kv): Distributed RESP3 key-value store, 3-node Raft consensus engine, HNSW SQ8 vector search (173,007 VSEARCH/s, 93.3% Recall@5), and disk LSM-tree written in pure safe Rust (std only, #![forbid(unsafe_code)], 564,993 MIXED ops/s, 505,716 GET/s, 307,853 INCR/s, -95.46% SET p99.9 tail reduction to 7.16 ms, 64 CachePadded shards, 16-stripe tx_exec_fence, RwLock<LsmState>, and RespParser::parse_flat_command + get_into zero-copy parser).
-- [Career Test Arena](https://github.com/vanovri/career-test-arena): Offline-ready cognitive and technical exam simulator and engineering calculator with 45 verified questions (UT Cognitive, UT Tech & Infra 14929, Formulatrix SIE), 8 STAR cards, automated claim-boundary scanner, and 7/7 pytest suite.
-- [Experience](https://ardhyanovri.my.id/experience): 18 documented roles across internships (PT Angkasa Pura Indonesia / InJourney Airports, Redesma), PT ENVIID Karbon Solusi, practicum teaching assistantship, and campus organizations.
-- [Credentials](https://ardhyanovri.my.id/credentials): Verified academic credentials, competition awards, and technical certifications.
-- [Interactive Lab](https://ardhyanovri.my.id/lab): Client-side 20 Hz / 500 Hz / 50 Hz notch EMG filter and UART framing simulator.
-- [Privacy, Security & Scope Notice](https://ardhyanovri.my.id/privacy): Zero-tracking privacy policy, security posture, and strict engineering claim boundaries.
-- [Contact](https://ardhyanovri.my.id/contact): Direct email (`ardhyasan@gmail.com`), LinkedIn, and GitHub (`vanovri`).
+## Full Technical Reference & Verification
+- [Complete LLM Technical Reference (llms-full.txt)](https://ardhyanovri.my.id/llms-full.txt): Exhaustive technical dossier covering education, thesis metrics, internships (PT Denki Engineering, PT Angkasa Pura Indonesia, Redesma Technologies), PT ENVIID Karbon Solusi, competition recognition (Nusantara SolarWing), and open-source repositories.
+- [Public CV (PDF, no personal phone number)](https://ardhyanovri.my.id/cv-ardhya.pdf): One-page public engineering curriculum vitae.
+
+## Core Pages
+- [Home](https://ardhyanovri.my.id/): Overview of electrical engineering, embedded systems, DSP, and verified software work.
+- [About](https://ardhyanovri.my.id/about): Biography, Diponegoro University graduation (GPA 3.43/4.00), current PT Denki Engineering MagangHub internship, and strict epistemic claim boundaries.
+- [Projects (56 Entries)](https://ardhyanovri.my.id/projects): Complete catalog of 56 documented projects (46 open-source tagged, 48 linked public repositories) spanning embedded firmware, systems engineering, 3D graphics, DSP, and developer tooling.
+- [Experience](https://ardhyanovri.my.id/experience): Verified timeline including Electrical Staff Intern at PT Denki Engineering (since 16 Nov 2026), PT Angkasa Pura Indonesia (Soekarno-Hatta International Airport), Redesma Technologies, PT ENVIID Karbon Solusi, UNDIP Basic Electronics Practicum Assistant, KKN UNDIP Mutihan Klaten, and student organizations.
+- [Credentials](https://ardhyanovri.my.id/credentials): Verified degree, Nusantara SolarWing competition recognition (Team NusaSentinel), UNDIP Practicum Assistant Award (6 Jul 2025), Google Student Ambassador Class of 2025, Cisco IoT, and OpenLearn certificates.
+- [Interactive Signal & Embedded DSP Lab](https://ardhyanovri.my.id/signal-lab): Client-side 60fps 3D EMG Time-Frequency Waterfall, Direct Form II Transposed Biquad IIR Workbench (20 Hz HPF, 500 Hz LPF, 50 Hz Q=30 Notch), and IEEE 802.3 CRC-32 UART Telemetry Inspector.
+- [Legacy EMG Lab](https://ardhyanovri.my.id/lab): Client-side 20 Hz / 500 Hz / 50 Hz notch EMG filter and UART framing simulator.
+- [EMG Thesis Evidence Page](https://ardhyanovri.my.id/emg): Indonesian-language technical summary of the STM32F411CEU6 + SEN0240 EMG acquisition & Python GUI subsystem.
+- [Privacy, Security & Scope Notice](https://ardhyanovri.my.id/privacy): Zero-tracking privacy policy, strict CSP posture, and engineering claim boundaries.
+- [Contact](https://ardhyanovri.my.id/contact): Direct email (`ardhyasan@gmail.com`), LinkedIn (`https://www.linkedin.com/in/dhya/`), and GitHub (`https://github.com/vanovri`).
+
+## Flagship Hardware, DSP, Systems & Graphics Projects
+- [SignalProof](https://ardhyanovri.my.id/projects/signalproof): Evidence-first low-voltage signal quality workbench (6 deterministic metrics E1–E6, 54/54 Node.js tests, 15/15 synthetic scenarios, 520 live recorded Meta Muse Spark Open calls / 1,313,133 tokens on Baseten & Fireworks; GitHub: https://github.com/vanovri/signalproof; Video: https://www.youtube.com/watch?v=Zn9r72hdEFs).
+- [FerrumKV](https://ardhyanovri.my.id/projects/ferrum-kv): Pure safe Rust (`std`-only, `#![forbid(unsafe_code)]`, 0 external crates) distributed RESP3 key-value store, 3-node TCP Raft consensus, HNSW SQ8 vector search (173,007 VSEARCH/s, 93.3% Recall@5), BM25, Gorilla XOR time-series, and disk LSM-tree reaching 564,993 MIXED ops/s and 505,716 GET/s (GitHub: https://github.com/vanovri/ferrum-kv).
+- [AetherSynth & Flow](https://ardhyanovri.my.id/projects/aether-synth-flow): Native Swift 6 & Metal spatial audio synthesizer across 6 Apple targets (iOS 18, watchOS 11, visionOS 2, macOS 15, WidgetKit, AUv3; 90 Hz Reverse-Z stereo <12 ms latency, 51.22 dB PML waveguide, 34 `@Test` suites; GitHub: https://github.com/vanovri/aether-synth-flow).
+- [AetherCoreEngine](https://ardhyanovri.my.id/projects/aether-core-engine): Zero-dependency Rust 2021 multiphysics engine combining a 4-wavelength Monte Carlo spectral path tracer (SAH BVH), 3D staggered-MAC Navier-Stokes fluid solver, and 16-voice FM + FDN reverb 24-bit WAV synthesizer (14/14 tests; GitHub: https://github.com/vanovri/aether-core-engine).
+- [Cyberpunk Floating Ramen Stall](https://ardhyanovri.my.id/projects/cyberpunk-floating-ramen-stall): 32-track procedural Blender 4.x 3D diorama generator (579 objects, 0 external textures), Binary glTF 2.0 serializer, pure-Python Z-buffer Neon Bloom renderer, 240-frame BT.709 lossless muxer, and WebGL2 + WebAudio studio (GitHub: https://github.com/vanovri/cyberpunk-floating-ramen-stall).
+- [AGY x Codex Video Studio](https://ardhyanovri.my.id/projects/agy-codex-video-studio): Programmatic 1080x1920 video & 48 kHz stereo DSP soundtrack studio in Python + FFmpeg/HyperFrames (206 passing pytest tests, 96.88% mutation kill score; GitHub: https://github.com/vanovri/agy-codex-video-studio).
+- [KilnMCP](https://ardhyanovri.my.id/projects/kilnmcp): MCP edge telemetry, EWMA anomaly detector, and Lampung dual-feedstock pyrolysis dMRV workbench (`BATCH-LPG-2027-001`, 21/21 pytest; GitHub: https://github.com/vanovri/kilnmcp; Live Workbench: https://ardhyanovri.my.id/assets/kilnmcp-workbench).
+- [uart-fixture-kit](https://ardhyanovri.my.id/projects/uart-fixture-kit): Reusable synthetic UART byte-stream fixtures and virtual-time replay harness (238 passing tests: 235 pytest + 3 Node.js; GitHub: https://github.com/vanovri/uart-fixture-kit).
+- [FIR Parity](https://ardhyanovri.my.id/projects/fir-parity): Fixed-point Q15/Q31 vs floating-point FIR filter numerical parity harness (26/26 pytest; GitHub: https://github.com/vanovri/fir-parity).
+- [Nusantara SolarWing](https://ardhyanovri.my.id/projects/solarwing): Model-based reserve-aware solar UAV maritime patrol concept package (Team NusaSentinel, ISAST 2026 competition recognition; GitHub: https://github.com/vanovri/nusantara-solarwing).
+- [PT ENVIID Karbon Solusi](https://ardhyanovri.my.id/projects/enviid-website): Bilingual corporate web platform, biochar mass-balance calculator, and KilnMCP dMRV demonstration at https://enviid.web.id/.
+
+## Live Interactive Engineering Workbenches
+- [3D Signal & Embedded DSP Lab](https://ardhyanovri.my.id/signal-lab): Real-time Biquad IIR filter analysis, 3D EMG waterfall, and CRC-32 UART inspector.
+- [KilnMCP × ENVIID Pyrolysis & Batch dMRV Workbench](https://ardhyanovri.my.id/assets/kilnmcp-workbench): Dual-canvas telemetry replay, `$KILN,...*XOR` frame inspector, and QR bag-level mass reconciliation (`dMRV-style DRAFT - NOT CERTIFIED`).
+- [MagangHub Day-1 Engineering Workbench](https://ardhyanovri.my.id/assets/maganghub-workbench): IEEE 485 & Peukert UPS battery sizing calculator, RS-485 Modbus RTU CRC-16 & UART DMA calculator, PM checklists, and SIAPkerja logbook builder (GitHub: https://github.com/vanovri/maganghub-readiness-kit, 10/10 pytest).
+- [Career Test Arena](https://ardhyanovri.my.id/assets/career-test-arena): Offline-ready engineering & aptitude exam simulator with 45 verified questions, 8 boundary-honest STAR cards, and automated claim-boundary scanner (GitHub: https://github.com/vanovri/career-test-arena, 48/48 pytest).
+
+## Key Facts & Epistemic Boundaries
+- **Verified Academics**: Universitas Diponegoro (UNDIP), S1 Teknik Elektro (Elektronika), admitted 12 Aug 2022, graduated 29 Sep 2026, 148 SKS, GPA 3.43/4.00.
+- **Thesis Boundary**: Ardhya authored the STM32F411CEU6 + SEN0240 EMG acquisition, nominal 4,000 Hz ADC+DMA, 8,000-sample offset calibration, Biquad IIR filter cascade, RMS/MAV windowing (Pearson r = 0.994114), and Python UART telemetry verification (12,043 rows, CRC-32/SHA-256). Teammates owned FES stimulation, IMU, and FSM control; no clinical validation is claimed.
+- **Internship Boundaries**: PT Denki Engineering (Electrical Staff Intern, MagangHub Batch 3 Angkatan 2, since 16 Nov 2026); PT Angkasa Pura Indonesia / Soekarno-Hatta Airport (guided 5-week UPS/converter & 3-week protection relay training/inspection exposure, not autonomous HV switching or standalone PLC/SCADA commissioning).
+- **dMRV & Carbon Accounting Boundary**: ENVIID / KilnMCP biochar carbon models are pre-certification engineering drafts (`credit_status: NOT_ISSUED`, 0 certified carbon credits issued to date).
+
+## Optional
+- [DataRescue CLI](https://ardhyanovri.my.id/projects/datarescue): Deterministic CSV/JSON/JSONL validation & recovery tool (33/33 pytest; https://github.com/vanovri/datarescue).
+- [RepairGate](https://ardhyanovri.my.id/projects/repairgate): Protected-test code-repair verifier with holdout checks (28/28 pytest; https://github.com/vanovri/repairgate).
+- [Skilllint](https://ardhyanovri.my.id/projects/skilllint): Zero-dependency Node.js linter for Agent Skills folders (26/26 npm test; https://github.com/vanovri/skilllint).
+- [TokenMeter](https://ardhyanovri.my.id/projects/tokenmeter): Local FastAPI LLM token/latency proxy & Streamlit dashboard (20/20 pytest; https://github.com/vanovri/tokenmeter).
+- [Packing Arena](https://ardhyanovri.my.id/projects/packing-arena): Multi-agent 1D bin-packing tournament across 108 SHA-256 sealed test cases (https://github.com/vanovri/packing-arena).
+
+## Contact
+- Email: ardhyasan@gmail.com
+- GitHub: https://github.com/vanovri
+- LinkedIn: https://www.linkedin.com/in/dhya/
+- Website: https://ardhyanovri.my.id/
