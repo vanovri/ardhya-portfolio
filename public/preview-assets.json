@@ -2,6 +2,24 @@
   "schemaVersion": 1,
   "previews": [
     {
+      "title": "HYPERION OMEGA",
+      "slug": "hyperion-omega",
+      "card": "projects/hyperion-omega.html",
+      "preview": "img/previews/hyperion-omega.svg",
+      "kind": "source-grounded architectural preview illustration",
+      "previous_url": null,
+      "sha256": "10927142592e6514ac29105a46b8bf658ee0486cda649c87b3ce892038fc20c8"
+    },
+    {
+      "title": "prompt-shield-eval",
+      "slug": "prompt-shield-eval",
+      "card": "projects/prompt-shield-eval.html",
+      "preview": "img/previews/prompt-shield-eval.svg",
+      "kind": "source-grounded architectural preview illustration",
+      "previous_url": null,
+      "sha256": "d9fde912d55a70e54327eeea6e3e5cbd08ddc31dfd28b1589df1d50a34960e38"
+    },
+    {
       "title": "Cyberpunk Floating Ramen Stall",
       "slug": "cyberpunk-floating-ramen-stall",
       "card": "projects/cyberpunk-floating-ramen-stall.html",

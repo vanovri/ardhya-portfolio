@@ -1,6 +1,6 @@
 # Ardhya Novri Ramadhan portfolio
 
-Static source for [ardhyanovri.my.id](https://ardhyanovri.my.id), synchronized with public repository sources on 15 November 2026. The gallery contains 56 entries, including an inline interactive 3D experiment, and tags 46 as open source. The evidence index links 48 public repositories, including this site's source and a model-based concept package. Historical assignments and proposals are labelled separately from software demonstrations.
+Static source for [ardhyanovri.my.id](https://ardhyanovri.my.id), synchronized with public and flagship repository sources on 20 November 2026. The gallery contains 58 entries, including an inline interactive 3D experiment, and tags 47 as open source. The evidence index tracks 50 audited repositories, including this site's source, a model-based concept package, and the local HYPERION OMEGA monorepo. Historical assignments and proposals are labelled separately from software demonstrations.
 
 The project pages describe contributions, evidence and limits. Development used AI coding assistance. Passing a project's included tests does not establish production suitability, scientific accuracy or physical hardware validation.
 

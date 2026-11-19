@@ -14,7 +14,9 @@
 ### Competition Recognition — Nusantara SolarWing (Team NusaSentinel)
 - Verified recognition certificate displayed on https://ardhyanovri.my.id/credentials for Team NusaSentinel's Nusantara SolarWing reserve-aware solar UAV maritime patrol concept package (model-based engineering concept, not a flown aircraft; repository: https://github.com/vanovri/nusantara-solarwing).
 
-### Newly Released Flagship Systems, Audio & Graphics Projects (v1.0.0 / v0.2.0)
+### Newly Released Flagship Systems, Security, Audio & Graphics Projects (v1.0.0 / v0.2.0 / 2026)
+- **HYPERION OMEGA (`20/20` Certified Local Monorepo)** — https://ardhyanovri.my.id/projects/hyperion-omega: 20-channel (`CH01`–`CH20`) institutional financial exchange & formally verified distributed systems monorepo (Rust `#![forbid(unsafe_code)]`/`#![deny(clippy::float_arithmetic)]`, Go `-race`, Python 3.12 Z3/ONNX/PPO, TS/Next.js/WebGL2/Tauri v2, Solidity 0.8.26/Foundry, Wasmtime 50, eBPF/XDP, Arrow/DataFusion, Protobuf v3/gRPC/Redpanda/TimescaleDB): `1,261/1,280` (`98.52%`) mutation kill (`14` channels `100%`), `20/20` `500,000`-cycle soak `0 B/cycle` leak, `buf lint = 0`, live Chaos Crucible `26,025` audited events `0` drift (`10^-8`), `k6` `1,441.4 req/s` (`p99 = 9.93 ms`, `7,249/7,249` checks), Z3 `11/11 UNSAT`, Raft BFS `1.25M` transitions (`0` violations), LOB `0.30 µs` p50 / match `4.80 µs/ord`, eBPF XDP `5.866 Mpps`, Wasmtime `delta_hedger` `p99 = 525 ns`.
+- **prompt-shield-eval (`MIT`)** — https://ardhyanovri.my.id/projects/prompt-shield-eval | https://github.com/vanovri/prompt-shield-eval: 5-layer defense-in-depth LLM prompt injection engine & canary red-team eval harness in strict TypeScript 5.7 (ESM, zero runtime deps, OWASP LLM01/LLM06/LLM07): `100%` TPR, `0%` FPR, `100%` Exact Decision Match across 26 cases (`20` attacks covering `16/16` IDs `PI-01`–`PI-14C` + `6` hard negatives), warm `p50 = 0.054 ms` / `p99 = 0.620 ms` (first cold JIT `11.940 ms`; CI `< 5 ms`), `17/17` Vitest (`480+` deterministic `mulberry32` fuzz cases + `10` pathological 20–50 KB anti-ReDoS payloads `< 50 ms` via linear `O(N)` scanner).
 - **FerrumKV (`v1.0.0`)** — https://ardhyanovri.my.id/projects/ferrum-kv | https://github.com/vanovri/ferrum-kv: Distributed RESP3 key-value store, 3-node TCP Raft consensus, HNSW SQ8 vector search (173,007 VSEARCH/s, 93.3% Recall@5), Okapi BM25, Gorilla XOR time-series, ChaCha20-Poly1305 AEAD, and disk LSM-tree written in pure safe Rust (`std`-only, 0 external crates, `#![forbid(unsafe_code)]`), reaching 564,993 MIXED ops/s and 505,716 GET/s.
 - **AetherSynth & Flow (`v1.0.0`)** — https://ardhyanovri.my.id/projects/aether-synth-flow | https://github.com/vanovri/aether-synth-flow: Native Swift 6 & Metal spatial audio synthesizer across iOS 18, watchOS 11, visionOS 2, macOS 15, WidgetKit, and AUv3 (90 Hz Reverse-Z stereoscopic CompositorServices <12 ms latency, 51.22 dB cubic PML waveguide, 34 `@Test` suites, 0 external dependencies).
 - **AetherCoreEngine (`v1.0.0`)** — https://ardhyanovri.my.id/projects/aether-core-engine | https://github.com/vanovri/aether-core-engine: Zero-dependency Rust 2021 multiphysics engine with 4-wavelength Monte Carlo spectral path tracer (SAH BVH), 3D staggered-MAC Navier-Stokes fluid solver, and 16-voice FM + FDN reverb 24-bit WAV synthesizer (14/14 tests).
@@ -175,9 +177,35 @@ All descriptions across `ardhyanovri.my.id` enforce strict separation between ve
   - Engineered the client-side **Biochar Carbon Removal Mass-Balance Calculator** (`/calculator/`, `/id/calculator/`): models `Wet mass × (1 - moisture) × dry yield × carbon content × (44/12) × 0.80 × 0.90` (default planning scenario: `2,250 t/yr` wet corn cobs at `43.5%` moisture $\rightarrow$ `1,271.25 t` dry feedstock $\rightarrow$ `317.81 t` dry biochar $\rightarrow$ `222.47 t C` $\rightarrow$ `815.72 t` gross $\text{CO}_2\text{e}$ $\rightarrow$ **`587.3 t net CO2e/yr`** planning estimate).
   - Built the interactive **Digital MRV (dMRV) Batch-to-Bag-to-Soil Workflow Demonstrator** (`/dmrv/`, `/id/dmrv/`) and authored 6 bilingual pillar technical guides covering Lampung corn-cob (*tongkol jagung*) slow pyrolysis (`450–650 °C`), molar $\text{H/C}_{\text{org}} < 0.7$ permanence criteria, Indonesian biomass feedstock comparisons (corn cob vs. rice husk, oil palm EFB, coconut shell), and tropical Ultisol soil trials.
 
+### 3.7 `prompt-shield-eval` — 5-Layer LLM Prompt Injection Defense & Eval Harness
+- **Portfolio URL**: https://ardhyanovri.my.id/projects/prompt-shield-eval
+- **GitHub Repository**: https://github.com/vanovri/prompt-shield-eval (MIT License, release `v1.0.0`, commit `3cbde47`)
+- **Stack**: TypeScript 5.7 (strict, ESM, zero runtime dependencies), Node.js 22/24, Vitest, GitHub Actions CI, OWASP LLM Top 10 (`LLM01` / `LLM06` / `LLM07`).
+- **5-Layer Defense-in-Depth Architecture**:
+  1. **Canonical Normalizer & Depth-2 Recursive Decoder** (`src/normalizer.ts`): NFKC normalization, Unicode Tag stripping, homoglyph/multi-leet folding, depth-2 recursive decoding, and linear `O(N)` HTML/Markdown comment scanner replacing backtracking regexes.
+  2. **Multi-Turn Sliding Window** (`src/hardened-detector.ts`): Detects cross-turn split-payload injections assembled over consecutive conversation turns.
+  3. **16-ID Bilingual EN/ID Rule Scorer** (`src/hardened-detector.ts`): Covers `16/16` rule IDs `PI-01`–`PI-14C` in English and Bahasa Indonesia.
+  4. **128-Bit Cryptographic Nonce Trust Boundary** (`src/trust-boundary.ts`): Per-request cryptographic nonce delimiters separating trusted instructions from untrusted input payloads.
+  5. **Output Canary / 4-Gram & Taint-Aware HITL Tool Gate** (`src/output-tool-gate.ts`): Detects system prompt leakage via canary and 4-gram overlap while enforcing human-in-the-loop approval for tainted tool invocations.
+- **Verified Metrics (`Node v24.20.0`)**:
+  - **Evaluation Suite (`26` cases: `20` attacks covering `16/16` IDs `PI-01`–`PI-14C` + `6` hard negatives)**: **`100%` TPR**, **`0%` FPR**, **`100%` Exact Decision Match**, and **`0` failures** on `PI-02` & `PI-14B`.
+  - **Hot-Path Latency (warm)**: **`p50 = 0.054 ms`**, **`p99 = 0.620 ms`** (first cold JIT call `11.940 ms`; CI gate `< 5 ms`).
+  - **Fuzz & Anti-ReDoS (`17/17` Vitest passed)**: `480+` deterministic fuzz tests (`mulberry32`) + `10` pathological 20–50 KB payloads completing in `< 50 ms` via linear `O(N)` comment scanning.
+
+### 3.8 `HYPERION OMEGA` — 20-Channel Institutional Exchange & Formally Verified Distributed Systems Monorepo
+- **Portfolio URL**: https://ardhyanovri.my.id/projects/hyperion-omega
+- **Repository Status**: Local flagship monorepo (commit `acf410d0cb16`, `20/20` channels certified green; maintained locally without an unverified public GitHub URL).
+- **Stack**: Rust (`#![forbid(unsafe_code)]`, `#![deny(clippy::float_arithmetic)]`), Go (`-race`), Python 3.12 (Z3 SMT, ONNX INT8, PPO/GP), TypeScript / Next.js / WebGL2 / Tauri v2, Solidity 0.8.26 (Foundry), Wasmtime 50, eBPF/XDP, Apache Arrow / DataFusion, Protobuf v3 / gRPC / Redpanda / TimescaleDB.
+- **Architecture (`CH01`–`CH20`)**:
+  - Strict `10^8` integer fixed-point accounting across all 20 subsystems: 4-language contract SDKs, LMAX-style matching engine with BLAKE3 Merkle WAL (`HYPWAL01`/`HYPSNP01`), Go zero-copy binary WS gateway, O(1) microstructure stream aggregator, Sentinel-ML temporal multigraph + INT8 ONNX fraud detector, Aegis autonomous SRE MCP co-pilot, 1,024-bot Chaos-Sim, Chronos time-travel fork engine, 144 FPS WebGL terminal, 5-node Raft VOPR, BN254 Groth16 ZK Proof-of-Solvency, 16-point SPAN margin + Merton Monte Carlo (`500M` evaluations), zero-syscall Wasmtime 50 sandbox, eBPF/XDP packet shield, Apache Arrow/DataFusion OLAP lakehouse, Cancun L2 EVM settlement + reorg-resilient Go relayer, symbolic GP + PPO/GAE alpha factory, and Sovereign Studio.
+- **Verified Metrics (`20/20` Channels GREEN)**:
+  - **Overclock Protocol**: **`1,261 / 1,280` (`98.52%`)** mutation kill across all 20 channels (`14` channels `100%`), **`20/20`** passed `500,000`-cycle consecutive soak tests with **`0 B/cycle`** steady-state memory leak, `buf lint = 0`.
+  - **Live 3-Phase Chaos Crucible (`CH10`)**: `26,025` audited events with **`0` drift (`10^-8`)**, `k6` **`1,441.4 req/s`** (`p99 = 9.93 ms`, `7,249/7,249` checks), `10/10` replay attacks rejected `401`, Sentinel-ML **`F1 = 1.000`** (`1.634 ms`), Aegis auto-freeze (`127.86 ms`).
+  - **Formal & Subsystem Highlights**: Z3 SMT **`11/11 UNSAT`**, Raft explicit BFS **`1.25M` transitions** with `0` safety violations, LOB **`0.30 µs` p50** / match **`4.80 µs/ord`**, eBPF XDP **`5.866 Mpps`**, Wasmtime `delta_hedger` **`p99 = 525 ns`**.
+
 ---
 
-## 4. Complete Catalog of All 47 Documented Portfolio Projects (`https://ardhyanovri.my.id/projects/*`)
+## 4. Complete Catalog of Documented Portfolio Projects (`58` Gallery Entries · `https://ardhyanovri.my.id/projects/*`)
 
 1. [Agent Referee](https://ardhyanovri.my.id/projects/agent-referee): Python CLI locking test files with SHA-256, checking AST assertion counts, rerunning test suites, and enforcing runtime budgets before accepting candidate changes.
 2. [Agent Runtime Lab](https://ardhyanovri.my.id/projects/agent-runtime-lab): Reproducible lab for profiling Python runtime behavior and comparing bounded optimizations against baseline execution.
@@ -226,6 +254,8 @@ All descriptions across `ardhyanovri.my.id` enforce strict separation between ve
 45. [TokenMeter](https://ardhyanovri.my.id/projects/tokenmeter): Local FastAPI LLM proxy and Streamlit cost/latency dashboard (`https://github.com/vanovri/tokenmeter`).
 46. [uart-fixture-kit](https://ardhyanovri.my.id/projects/uart-fixture-kit): Reusable synthetic UART byte-stream fixtures and virtual-time replay toolkit (`https://github.com/vanovri/uart-fixture-kit`).
 47. [WebGPU Cable Lab](https://ardhyanovri.my.id/projects/webgpu-cable-lab): Browser cable/strand physics simulation with WebGPU compute shaders and CPU numerical parity verification.
+48. [prompt-shield-eval](https://ardhyanovri.my.id/projects/prompt-shield-eval): 5-layer LLM prompt injection defense engine and canary red-team eval harness in strict TypeScript 5.7 (`100%` TPR, `0%` FPR, `0.054 ms` p50; `https://github.com/vanovri/prompt-shield-eval`).
+49. [HYPERION OMEGA](https://ardhyanovri.my.id/projects/hyperion-omega): 20-channel institutional exchange and formally verified distributed systems monorepo (`20/20` Overclock channels green, `98.52%` mutation kill, `0 B/cycle` 500k soak, live `k6` `1,441.4 req/s`, local monorepo).
 
 ---
 

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="HYPERION OMEGA 20-channel institutional exchange architecture, 98.52% mutation kill score, 500k 0-byte soak, and sub-microsecond LMAX/Wasm/eBPF telemetry">
+  <title>hyperion omega project illustration</title>
+  <defs>
+    <linearGradient id="bgGradHyp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <filter id="softShadowHyp" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGradHyp)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowHyp)"/>
+  <g transform="translate(48, 36)">
+    <!-- LEFT CARD: 20-Channel Core Exchange & Omega Ring -->
+    <rect x="54" y="54" width="480" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="90" y="102" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">HYPERION OMEGA · 20-CHANNEL MESH</text>
+
+    <!-- Orbital Rings -->
+    <circle cx="294" cy="318" r="168" fill="#f4f8ff" opacity="0.65" stroke="#93c5fd" stroke-width="2" stroke-dasharray="8 6"/>
+    <circle cx="294" cy="318" r="112" fill="none" stroke="#dbeafe" stroke-width="2"/>
+
+    <!-- Center Core: 10^8 Fixed-Point LMAX Engine -->
+    <rect x="220" y="264" width="148" height="108" rx="20" fill="#ffffff" stroke="#0071e3" stroke-width="2.5"/>
+    <text x="294" y="302" text-anchor="middle" font-family="SF Mono, monospace" font-size="15" font-weight="700" fill="#0071e3">LMAX LOB</text>
+    <text x="294" y="326" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#1d1d1f">0.30 µs p50</text>
+    <text x="294" y="348" text-anchor="middle" font-family="SF Mono, monospace" font-size="11" fill="#6e6e73">10^8 FP · BLAKE3</text>
+
+    <!-- 6 Pillar Nodes around Ring -->
+    <rect x="218" y="128" width="152" height="44" rx="22" fill="#ffffff" stroke="#0071e3" stroke-width="2"/>
+    <text x="294" y="155" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#0071e3">Raft VOPR · Z3</text>
+
+    <rect x="378" y="206" width="136" height="44" rx="22" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
+    <text x="446" y="233" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#0d9488">ZK Groth16</text>
+
+    <rect x="378" y="388" width="136" height="44" rx="22" fill="#ffffff" stroke="#5856d6" stroke-width="2"/>
+    <text x="446" y="415" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#5856d6">Wasmtime 50</text>
+
+    <rect x="218" y="464" width="152" height="44" rx="22" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+    <text x="294" y="491" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#15803d">eBPF 5.87 Mpps</text>
+
+    <rect x="74" y="388" width="136" height="44" rx="22" fill="#ffffff" stroke="#0071e3" stroke-width="2"/>
+    <text x="142" y="415" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#0071e3">Arrow OLAP</text>
+
+    <rect x="74" y="206" width="136" height="44" rx="22" fill="#ffffff" stroke="#5856d6" stroke-width="2"/>
+    <text x="142" y="233" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#5856d6">L2 EVM · MCP</text>
+
+    <rect x="114" y="546" width="360" height="36" rx="18" fill="#eaf8ee"/>
+    <text x="294" y="569" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#15803d">20/20 Channels Certified · 0 Unsafe · 0 Float</text>
+
+    <!-- RIGHT TOP CARD: Overclock Protocol Verification -->
+    <rect x="562" y="54" width="488" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="602" y="96" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">OVERCLOCK PROTOCOL &amp; FORMAL PROOFS</text>
+
+    <rect x="602" y="118" width="194" height="84" rx="16" fill="#eaf2ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="699" y="156" text-anchor="middle" font-family="SF Mono, monospace" font-size="26" font-weight="700" fill="#0071e3">98.52%</text>
+    <text x="699" y="182" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#1d4ed8">1,261/1,280 Mutants</text>
+
+    <rect x="816" y="118" width="194" height="84" rx="16" fill="#eaf8ee" stroke="#bbf7d0" stroke-width="1.5"/>
+    <text x="913" y="156" text-anchor="middle" font-family="SF Mono, monospace" font-size="26" font-weight="700" fill="#15803d">0 B/cycle</text>
+    <text x="913" y="182" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#166534">20/20 × 500k Soak</text>
+
+    <rect x="602" y="220" width="408" height="34" rx="12" fill="#ffffff" stroke="#d2d2d7"/>
+    <text x="806" y="242" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#1d1d1f">Z3 SMT 11/11 UNSAT · BFS 1.25M Trans 0 Viol</text>
+
+    <rect x="602" y="268" width="194" height="34" rx="17" fill="#f3f0ff"/>
+    <text x="699" y="290" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#5856d6">14 Ch @ 100% Kill</text>
+    <rect x="816" y="268" width="194" height="34" rx="17" fill="#ecfeff"/>
+    <text x="913" y="290" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0e7490">buf lint = 0</text>
+
+    <!-- RIGHT BOTTOM CARD: Live 3-Phase Chaos Crucible -->
+    <rect x="562" y="352" width="488" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="602" y="394" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">LIVE 3-PHASE CHAOS CRUCIBLE (CH10)</text>
+
+    <rect x="602" y="416" width="380" height="24" rx="12" fill="#0071e3"/>
+    <text x="616" y="433" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">k6: 1,441.4 req/s · p99 9.93 ms · 7,249/7,249</text>
+
+    <rect x="602" y="454" width="340" height="24" rx="12" fill="#0d9488"/>
+    <text x="616" y="471" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">26,025 Audited Events · 0 Drift (1e-8)</text>
+
+    <rect x="602" y="492" width="300" height="24" rx="12" fill="#10b981"/>
+    <text x="616" y="509" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">Sentinel-ML F1 1.000 (1.634 ms)</text>
+
+    <rect x="602" y="530" width="265" height="24" rx="12" fill="#5856d6"/>
+    <text x="616" y="547" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">Wasmtime p99 525 ns · Match 4.8 µs</text>
+
+    <text x="602" y="592" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#6e6e73">Rust · Go · Python · TS/Next · Solidity · Wasm · eBPF</text>
+  </g>
+</svg>

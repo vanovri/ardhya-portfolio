@@ -1,7 +1,36 @@
 {
-  "auditedOn": "2026-11-15",
-  "scope": "Public source inspection. Source references do not establish production, clinical, hardware, or benchmark validation.",
+  "auditedOn": "2026-11-20",
+  "scope": "Public and local flagship source inspection. Source references do not establish production, clinical, hardware, or benchmark validation.",
   "projects": [
+    {
+      "name": "hyperion-omega",
+      "description": "20-channel institutional exchange and formally verified distributed systems monorepo (local repository, 20/20 Overclock channels green, 1,261/1,280 mutation kill, 500k 0 B/cycle soak).",
+      "page": "projects/hyperion-omega.html",
+      "sourceCommit": "acf410d0cb162fa64365f534b5f9f0cd10930cb8",
+      "sourceFiles": [
+        "proto/buf.yaml",
+        "contracts/gen/rust/src/fixed_point.rs",
+        "specs/handoffs/ch01-foundation.md",
+        "specs/handoffs/ch10-final-integration.md",
+        "specs/handoffs/ch11-formal-omega.md",
+        "specs/handoffs/ch20-sovereign-singularity.md"
+      ]
+    },
+    {
+      "name": "prompt-shield-eval",
+      "description": "5-layer LLM prompt injection defense engine and canary-based red-team eval harness in strict TypeScript 5.7 (zero runtime deps; 100% TPR, 0% FPR, 0.054 ms p50, 17/17 Vitest).",
+      "page": "projects/prompt-shield-eval.html",
+      "sourceCommit": "3cbde473fdd5fd12cf9e2d265845d372b7958990",
+      "sourceFiles": [
+        "package.json",
+        "src/normalizer.ts",
+        "src/hardened-detector.ts",
+        "src/trust-boundary.ts",
+        "src/output-tool-gate.ts",
+        "src/eval-harness.ts",
+        "test/fuzz-redos.test.ts"
+      ]
+    },
     {
       "name": "aether-synth-flow",
       "description": "Swift and Metal spatial-audio prototype with Apple-platform targets, DSP kernels, synthetic physiology, and numerical tests.",

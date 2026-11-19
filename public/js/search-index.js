@@ -6,6 +6,18 @@ export default [
     "text": "I started my Electrical Staff internship at PT Denki Engineering on 16 November 2026 through Kemnaker’s MagangHub program (Batch 3, Angkatan 2, 2026)."
   },
   {
+    "title": "HYPERION OMEGA — 20-Channel Institutional Exchange & Formally Verified Distributed Systems Monorepo",
+    "url": "/projects/hyperion-omega.html",
+    "category": "Project",
+    "text": "20-channel institutional exchange monorepo (CH01-CH20): 10^8 fixed-point LMAX LOB, Raft VOPR, BN254 Groth16 ZK Solvency, SPAN margin, Wasmtime 50, eBPF XDP, Arrow DataFusion OLAP, L2 EVM, and MCP incident co-pilot (20/20 green, 98.52% mutation kill, 500k 0 B/cycle soak)."
+  },
+  {
+    "title": "prompt-shield-eval — 5-Layer LLM Prompt Injection Defense & Eval Harness",
+    "url": "/projects/prompt-shield-eval.html",
+    "category": "Project",
+    "text": "5-layer defense-in-depth LLM prompt injection engine and canary red-team eval harness in strict TypeScript 5.7 (zero runtime deps): 100% TPR, 0% FPR, 0.054 ms p50, 0.620 ms p99, linear O(N) anti-ReDoS scanner, 17/17 Vitest."
+  },
+  {
     "title": "Cyberpunk Floating Ramen Stall",
     "url": "https://ardhyanovri.my.id/projects/cyberpunk-floating-ramen-stall",
     "category": "Project",
