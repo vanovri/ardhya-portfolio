@@ -9,13 +9,13 @@ export default [
     "title": "HYPERION OMEGA — 20-Channel Institutional Exchange & Formally Verified Distributed Systems Monorepo",
     "url": "/projects/hyperion-omega.html",
     "category": "Project",
-    "text": "20-channel institutional exchange monorepo (CH01-CH20): 10^8 fixed-point LMAX LOB, Raft VOPR, BN254 Groth16 ZK Solvency, SPAN margin, Wasmtime 50, eBPF XDP, Arrow DataFusion OLAP, L2 EVM, and MCP incident co-pilot (20/20 green, 98.52% mutation kill, 500k 0 B/cycle soak)."
+    "text": "20-channel institutional exchange monorepo (CH01-CH20, commit 0bfbbc78a33a): 10^8 fixed-point LMAX LOB, Raft VOPR, BN254 Groth16 ZK Solvency, SPAN margin, Wasmtime 50, eBPF XDP, Arrow DataFusion OLAP, L2 EVM, and MCP incident co-pilot (20/20 green, 21/21 Wave 6 PASS, 98.52% mutation kill, 500k 0 B/cycle soak)."
   },
   {
-    "title": "prompt-shield-eval — 5-Layer LLM Prompt Injection Defense & Eval Harness",
+    "title": "prompt-shield-eval v1.1.0 — Hybrid LLM Prompt Injection Defense, ONNX INT8 Cascade & MCP Guardrail",
     "url": "/projects/prompt-shield-eval.html",
     "category": "Project",
-    "text": "5-layer defense-in-depth LLM prompt injection engine and canary red-team eval harness in strict TypeScript 5.7 (zero runtime deps): 100% TPR, 0% FPR, 0.054 ms p50, 0.620 ms p99, linear O(N) anti-ReDoS scanner, 17/17 Vitest."
+    "text": "Hybrid LLM prompt injection engine (v1.1.0, strict TypeScript 5.7): 0-dep Core (100% TPR, 0% FPR, 0.046 ms p50, 0.690 ms p99), optional 104.2 KB ONNX INT8 Layer 3.5 Cascade (60/60 exact match, 0.762 ms p99), and MCP Middleware Guardrail (20/20 hijack blocked, 0.752 ms p99, 30/30 Vitest, 3-job CI PASS)."
   },
   {
     "title": "Cyberpunk Floating Ramen Stall",

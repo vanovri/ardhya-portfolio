@@ -17,7 +17,7 @@
       "preview": "img/previews/prompt-shield-eval.svg",
       "kind": "source-grounded architectural preview illustration",
       "previous_url": null,
-      "sha256": "d9fde912d55a70e54327eeea6e3e5cbd08ddc31dfd28b1589df1d50a34960e38"
+      "sha256": "59ffb622c52fc5c0868499a17ffeea84c2cd28ac105d761ea2271a92d74bf3cf"
     },
     {
       "title": "Cyberpunk Floating Ramen Stall",
@@ -47,7 +47,7 @@
       "sha256": "bce843a00724cbd18ccbe786e390ea4f0739333a2ec4ddbaee4340cee741491f"
     },
     {
-      "title": "AGY × Codex Video Studio",
+      "title": "AGY \u00d7 Codex Video Studio",
       "slug": "agy-codex-video-studio",
       "card": "projects/agy-codex-video-studio.html",
       "preview": "img/previews/agy-codex-video-studio.svg",

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="prompt-shield-eval 5-layer LLM prompt injection defense pipeline, 100% TPR / 0% FPR evaluation scorecard, and sub-millisecond anti-ReDoS latency bars">
-  <title>prompt-shield-eval project illustration</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="prompt-shield-eval v1.1.0 3-export hybrid LLM prompt injection defense pipeline with 0-dep Core, 104.2 KB ONNX INT8 Layer 3.5 Cascade, and MCP Middleware Guardrail">
+  <title>prompt-shield-eval v1.1.0 project illustration</title>
   <defs>
     <linearGradient id="bgGradShield" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#fbfbfd"/>
@@ -12,89 +12,88 @@
   <rect width="1200" height="750" fill="url(#bgGradShield)"/>
   <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowShield)"/>
   <g transform="translate(48, 36)">
-    <!-- LEFT CARD: 5-Layer Defense-in-Depth Stack -->
+    <!-- LEFT CARD: Modular 3-Export Defense-in-Depth Stack -->
     <rect x="54" y="54" width="480" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <text x="90" y="102" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">5-LAYER PROMPT INJECTION DEFENSE</text>
+    <text x="90" y="98" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">HYBRID DEFENSE STACK · v1.1.0</text>
 
     <!-- Vertical Pipeline Spine -->
-    <line x1="126" y1="150" x2="126" y2="514" stroke="#0071e3" stroke-width="3" stroke-dasharray="6 5"/>
+    <line x1="126" y1="146" x2="126" y2="514" stroke="#0071e3" stroke-width="3" stroke-dasharray="6 5"/>
 
-    <!-- Layer 1 -->
-    <rect x="90" y="124" width="408" height="66" rx="14" fill="#ffffff" stroke="#0071e3" stroke-width="2"/>
-    <circle cx="126" cy="157" r="14" fill="#0071e3"/>
-    <text x="126" y="162" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">L1</text>
-    <text x="156" y="152" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">NFKC / Homoglyph / Leet Normalizer</text>
-    <text x="156" y="174" font-family="SF Mono, monospace" font-size="12" fill="#6e6e73">Depth-2 decode · O(N) linear comment scanner</text>
-
-    <!-- Layer 2 -->
-    <rect x="90" y="206" width="408" height="66" rx="14" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
-    <circle cx="126" cy="239" r="14" fill="#0d9488"/>
-    <text x="126" y="244" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">L2</text>
-    <text x="156" y="234" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">Multi-Turn Sliding Window</text>
-    <text x="156" y="256" font-family="SF Mono, monospace" font-size="12" fill="#6e6e73">Cross-turn split-payload assembly detection</text>
+    <!-- Layer 1-2 -->
+    <rect x="90" y="118" width="408" height="68" rx="14" fill="#ffffff" stroke="#0071e3" stroke-width="2"/>
+    <circle cx="126" cy="152" r="14" fill="#0071e3"/>
+    <text x="126" y="157" text-anchor="middle" font-family="SF Mono, monospace" font-size="11" font-weight="700" fill="#ffffff">L1-2</text>
+    <text x="156" y="146" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">Normalizer, O(N) Scanner &amp; Taint Store</text>
+    <text x="156" y="168" font-family="SF Mono, monospace" font-size="11.5" fill="#6e6e73">Depth-2 decode · 5-turn window · LRU+TTL 50k</text>
 
     <!-- Layer 3 -->
-    <rect x="90" y="288" width="408" height="66" rx="14" fill="#ffffff" stroke="#5856d6" stroke-width="2"/>
-    <circle cx="126" cy="321" r="14" fill="#5856d6"/>
-    <text x="126" y="326" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">L3</text>
-    <text x="156" y="316" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">16-ID Bilingual Rule Scorer (EN/ID)</text>
-    <text x="156" y="338" font-family="SF Mono, monospace" font-size="12" fill="#6e6e73">PI-01..PI-14C · OWASP LLM01 / LLM06 / LLM07</text>
+    <rect x="90" y="200" width="408" height="68" rx="14" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
+    <circle cx="126" cy="234" r="14" fill="#0d9488"/>
+    <text x="126" y="239" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">L3</text>
+    <text x="156" y="228" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">16-ID Bilingual Rule Scorer (EN/ID)</text>
+    <text x="156" y="250" font-family="SF Mono, monospace" font-size="11.5" fill="#6e6e73">PI-01..PI-14C · OWASP LLM01/06/07 · 0 deps</text>
+
+    <!-- Layer 3.5 ONNX INT8 -->
+    <rect x="90" y="282" width="408" height="68" rx="14" fill="#f7f5ff" stroke="#5856d6" stroke-width="2"/>
+    <circle cx="126" cy="316" r="14" fill="#5856d6"/>
+    <text x="126" y="321" text-anchor="middle" font-family="SF Mono, monospace" font-size="10.5" font-weight="700" fill="#ffffff">L3.5</text>
+    <text x="156" y="310" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">ONNX INT8 Cascade (./semantic)</text>
+    <text x="156" y="332" font-family="SF Mono, monospace" font-size="11.5" fill="#5856d6">104.2 KB opset-19 · SHA-256 · PI-06/PI-09</text>
 
     <!-- Layer 4 -->
-    <rect x="90" y="370" width="408" height="66" rx="14" fill="#ffffff" stroke="#0071e3" stroke-width="2"/>
-    <circle cx="126" cy="403" r="14" fill="#0071e3"/>
-    <text x="126" y="408" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">L4</text>
-    <text x="156" y="398" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">128-Bit Nonce Trust Boundary</text>
-    <text x="156" y="420" font-family="SF Mono, monospace" font-size="12" fill="#6e6e73">Cryptographic delimiter isolation · 0 deps</text>
+    <rect x="90" y="364" width="408" height="68" rx="14" fill="#ffffff" stroke="#0071e3" stroke-width="2"/>
+    <circle cx="126" cy="398" r="14" fill="#0071e3"/>
+    <text x="126" y="403" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">L4</text>
+    <text x="156" y="392" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">128-Bit Nonce Trust Boundary</text>
+    <text x="156" y="414" font-family="SF Mono, monospace" font-size="11.5" fill="#6e6e73">Cryptographic delimiters · Header-spoof guard</text>
 
-    <!-- Layer 5 -->
-    <rect x="90" y="452" width="408" height="66" rx="14" fill="#ffffff" stroke="#28a745" stroke-width="2"/>
-    <circle cx="126" cy="485" r="14" fill="#28a745"/>
-    <text x="126" y="490" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">L5</text>
-    <text x="156" y="480" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">Canary / 4-Gram &amp; Taint HITL Gate</text>
-    <text x="156" y="502" font-family="SF Mono, monospace" font-size="12" fill="#6e6e73">Leak detection + taint-aware tool approval</text>
+    <!-- Layer 5 + MCP -->
+    <rect x="90" y="446" width="408" height="68" rx="14" fill="#f2fbf5" stroke="#28a745" stroke-width="2"/>
+    <circle cx="126" cy="480" r="14" fill="#28a745"/>
+    <text x="126" y="485" text-anchor="middle" font-family="SF Mono, monospace" font-size="11" font-weight="700" fill="#ffffff">MCP</text>
+    <text x="156" y="474" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">Output Guard &amp; MCP Middleware (./mcp)</text>
+    <text x="156" y="496" font-family="SF Mono, monospace" font-size="11.5" fill="#166534">InMemory + stdio · -32001 taint · -32602 schema</text>
 
-    <rect x="134" y="546" width="320" height="36" rx="18" fill="#eaf2ff"/>
-    <text x="294" y="569" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0071e3">TypeScript 5.7 Strict · Zero Runtime Deps</text>
+    <rect x="108" y="544" width="372" height="38" rx="19" fill="#eaf2ff"/>
+    <text x="294" y="568" text-anchor="middle" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#0071e3">3 Subpath Exports · Core 0 Runtime Deps Verified</text>
 
-    <!-- RIGHT TOP CARD: Red-Team Evaluation Scorecard -->
+    <!-- RIGHT TOP CARD: 60-Case Hybrid & Core Scorecard -->
     <rect x="562" y="54" width="488" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <text x="602" y="96" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">RED-TEAM EVAL HARNESS (26 CASES)</text>
+    <text x="602" y="96" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">HYBRID EVAL &amp; 3-JOB CI (60 CASES)</text>
 
     <rect x="602" y="118" width="194" height="84" rx="16" fill="#eaf8ee" stroke="#bbf7d0" stroke-width="1.5"/>
     <text x="699" y="156" text-anchor="middle" font-family="SF Mono, monospace" font-size="28" font-weight="700" fill="#15803d">100% TPR</text>
-    <text x="699" y="182" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#166534">20/20 Attacks Caught</text>
+    <text x="699" y="182" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#166534">44/44 Attacks Caught</text>
 
     <rect x="816" y="118" width="194" height="84" rx="16" fill="#eaf2ff" stroke="#bfdbfe" stroke-width="1.5"/>
     <text x="913" y="156" text-anchor="middle" font-family="SF Mono, monospace" font-size="28" font-weight="700" fill="#0071e3">0% FPR</text>
-    <text x="913" y="182" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#1d4ed8">6/6 Hard Negatives</text>
+    <text x="913" y="182" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#1d4ed8">16/16 Hard Negatives</text>
 
     <rect x="602" y="220" width="408" height="34" rx="12" fill="#ffffff" stroke="#d2d2d7"/>
-    <text x="806" y="242" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#1d1d1f">100% Exact Decision Match · 16/16 IDs · 0 Fails</text>
+    <text x="806" y="242" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#1d1d1f">60/60 Exact Decision Match · 20/20 MCP Hijack Blocked</text>
 
     <rect x="602" y="268" width="194" height="34" rx="17" fill="#f3f0ff"/>
-    <text x="699" y="290" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#5856d6">17/17 Vitest PASS</text>
+    <text x="699" y="290" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#5856d6">30/30 Vitest PASS</text>
     <rect x="816" y="268" width="194" height="34" rx="17" fill="#ecfeff"/>
-    <text x="913" y="290" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0e7490">480+ Fuzz Seeds</text>
+    <text x="913" y="290" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0e7490">3/3 CI Jobs GREEN</text>
 
-    <!-- RIGHT BOTTOM CARD: Hot-Path Latency & Anti-ReDoS -->
+    <!-- RIGHT BOTTOM CARD: Sub-ms Latency Across All 3 Tiers -->
     <rect x="562" y="352" width="488" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <text x="602" y="394" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">HOT-PATH LATENCY &amp; ANTI-ReDoS (NODE 24)</text>
+    <text x="602" y="394" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">WARM LATENCY BUDGETS (NODE 24)</text>
 
-    <text x="602" y="432" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#1d1d1f">p50 Warm</text>
-    <rect x="720" y="416" width="54" height="22" rx="11" fill="#10b981"/>
-    <text x="786" y="432" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#15803d">0.054 ms</text>
+    <text x="602" y="432" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#1d1d1f">Core p50/p99</text>
+    <rect x="724" y="416" width="96" height="22" rx="11" fill="#10b981"/>
+    <text x="832" y="432" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#15803d">0.046 / 0.690 ms</text>
 
-    <text x="602" y="476" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#1d1d1f">p99 Warm</text>
-    <rect x="720" y="460" width="128" height="22" rx="11" fill="#0071e3"/>
-    <text x="860" y="476" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0071e3">0.620 ms</text>
+    <text x="602" y="476" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#1d1d1f">ONNX p50/p99</text>
+    <rect x="724" y="460" width="112" height="22" rx="11" fill="#5856d6"/>
+    <text x="848" y="476" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#5856d6">0.299 / 0.762 ms</text>
 
-    <text x="602" y="520" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#1d1d1f">CI Gate</text>
-    <rect x="720" y="504" width="230" height="22" rx="11" fill="#e5e5ea"/>
-    <rect x="720" y="504" width="28" height="22" rx="11" fill="#0d9488"/>
-    <text x="960" y="520" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#6e6e73">&lt;5ms</text>
+    <text x="602" y="520" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#1d1d1f">MCP p50/p99</text>
+    <rect x="724" y="504" width="108" height="22" rx="11" fill="#0071e3"/>
+    <text x="844" y="520" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#0071e3">0.217 / 0.752 ms</text>
 
     <rect x="602" y="552" width="408" height="44" rx="14" fill="#ffffff" stroke="#d2d2d7"/>
-    <text x="806" y="579" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#1d1d1f">10 × 20–50 KB Pathological Payloads &lt; 50 ms</text>
+    <text x="806" y="579" text-anchor="middle" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#1d1d1f">Clean-Room Tarball 0-Deps · 50k Soak 0 Leak</text>
   </g>
 </svg>

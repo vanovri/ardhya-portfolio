@@ -4,9 +4,9 @@
   "projects": [
     {
       "name": "hyperion-omega",
-      "description": "20-channel institutional exchange and formally verified distributed systems monorepo (local repository, 20/20 Overclock channels green, 1,261/1,280 mutation kill, 500k 0 B/cycle soak).",
+      "description": "20-channel institutional exchange and formally verified distributed systems monorepo (local repository, 20/20 Overclock channels green, 1,261/1,280 mutation kill, 500k 0 B/cycle soak, 21/21 Wave 6 Rust 1.99 post-merge verification PASS).",
       "page": "projects/hyperion-omega.html",
-      "sourceCommit": "acf410d0cb162fa64365f534b5f9f0cd10930cb8",
+      "sourceCommit": "0bfbbc78a33a90a98b37c0ba7f7076869a1d575a",
       "sourceFiles": [
         "proto/buf.yaml",
         "contracts/gen/rust/src/fixed_point.rs",
@@ -18,18 +18,32 @@
     },
     {
       "name": "prompt-shield-eval",
-      "description": "5-layer LLM prompt injection defense engine and canary-based red-team eval harness in strict TypeScript 5.7 (zero runtime deps; 100% TPR, 0% FPR, 0.054 ms p50, 17/17 Vitest).",
+      "description": "Hybrid LLM prompt injection defense engine (v1.1.0, MIT, strict TypeScript 5.7): 0-dep sub-ms Core (100% TPR, 0% FPR, 0.046 ms p50), 104.2 KB ONNX INT8 Layer 3.5 Cascade (60/60 exact match, 0.762 ms p99), and MCP Middleware Guardrail (0.752 ms p99; 30/30 Vitest, 3-job CI PASS).",
       "page": "projects/prompt-shield-eval.html",
-      "sourceCommit": "3cbde473fdd5fd12cf9e2d265845d372b7958990",
+      "sourceCommit": "9c1aa847bb27f790bc5c8b18533ace53b86752fa",
       "sourceFiles": [
         "package.json",
+        "scripts/verify-core-zero-deps.mjs",
         "src/normalizer.ts",
         "src/hardened-detector.ts",
         "src/trust-boundary.ts",
         "src/output-tool-gate.ts",
-        "src/eval-harness.ts",
-        "test/fuzz-redos.test.ts"
-      ]
+        "src/session-taint.ts",
+        "src/semantic/cascade.ts",
+        "src/semantic/onnx-provider.ts",
+        "src/mcp/middleware.ts",
+        "src/mcp/aegis-preset.ts",
+        "models/manifest.v1.json"
+      ],
+      "verifiedCI": {
+        "url": "https://github.com/vanovri/prompt-shield-eval/actions/runs/44668345769",
+        "conclusion": "success",
+        "jobs": [
+          "Core (0-Deps, Fuzz & Sub-ms Eval)",
+          "Semantic Cascade (ONNX INT8 & Taint Store)",
+          "MCP Middleware (Aegis-Agent Guardrail)"
+        ]
+      }
     },
     {
       "name": "aether-synth-flow",
