@@ -1,99 +1,173 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="prompt-shield-eval v1.1.0 3-export hybrid LLM prompt injection defense pipeline with 0-dep Core, 104.2 KB ONNX INT8 Layer 3.5 Cascade, and MCP Middleware Guardrail">
-  <title>prompt-shield-eval v1.1.0 project illustration</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="prompt-shield-eval hybrid LLM prompt injection defense shield, ONNX INT8 semantic cascade decision boundary, and MCP middleware taint gate">
+  <title>prompt shield eval project illustration</title>
   <defs>
-    <linearGradient id="bgGradShield" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="bgGradOuter" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#fbfbfd"/>
       <stop offset="100%" stop-color="#f2f2f7"/>
     </linearGradient>
-    <filter id="softShadowShield" x="-8%" y="-8%" width="116%" height="120%">
+    <filter id="softShadowOuter" x="-8%" y="-8%" width="116%" height="120%">
       <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
     </filter>
+    <linearGradient id="shieldOuter" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="48%" stop-color="#0071e3"/>
+      <stop offset="100%" stop-color="#5856d6"/>
+    </linearGradient>
+    <linearGradient id="shieldInner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="750" fill="url(#bgGradShield)"/>
-  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowShield)"/>
+  <rect width="1200" height="750" fill="url(#bgGradOuter)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowOuter)"/>
+  <circle cx="80" cy="68" r="1.3" fill="#dcdce2"/><circle cx="80" cy="106" r="1.3" fill="#dcdce2"/><circle cx="80" cy="144" r="1.3" fill="#dcdce2"/><circle cx="80" cy="182" r="1.3" fill="#dcdce2"/><circle cx="80" cy="220" r="1.3" fill="#dcdce2"/><circle cx="80" cy="258" r="1.3" fill="#dcdce2"/><circle cx="80" cy="296" r="1.3" fill="#dcdce2"/><circle cx="80" cy="334" r="1.3" fill="#dcdce2"/><circle cx="80" cy="372" r="1.3" fill="#dcdce2"/><circle cx="80" cy="410" r="1.3" fill="#dcdce2"/><circle cx="80" cy="448" r="1.3" fill="#dcdce2"/><circle cx="80" cy="486" r="1.3" fill="#dcdce2"/><circle cx="80" cy="524" r="1.3" fill="#dcdce2"/><circle cx="80" cy="562" r="1.3" fill="#dcdce2"/><circle cx="80" cy="600" r="1.3" fill="#dcdce2"/><circle cx="80" cy="638" r="1.3" fill="#dcdce2"/><circle cx="80" cy="676" r="1.3" fill="#dcdce2"/><circle cx="118" cy="68" r="1.3" fill="#dcdce2"/><circle cx="118" cy="106" r="1.3" fill="#dcdce2"/><circle cx="118" cy="144" r="1.3" fill="#dcdce2"/><circle cx="118" cy="182" r="1.3" fill="#dcdce2"/><circle cx="118" cy="220" r="1.3" fill="#dcdce2"/><circle cx="118" cy="258" r="1.3" fill="#dcdce2"/><circle cx="118" cy="296" r="1.3" fill="#dcdce2"/><circle cx="118" cy="334" r="1.3" fill="#dcdce2"/><circle cx="118" cy="372" r="1.3" fill="#dcdce2"/><circle cx="118" cy="410" r="1.3" fill="#dcdce2"/><circle cx="118" cy="448" r="1.3" fill="#dcdce2"/><circle cx="118" cy="486" r="1.3" fill="#dcdce2"/><circle cx="118" cy="524" r="1.3" fill="#dcdce2"/><circle cx="118" cy="562" r="1.3" fill="#dcdce2"/><circle cx="118" cy="600" r="1.3" fill="#dcdce2"/><circle cx="118" cy="638" r="1.3" fill="#dcdce2"/><circle cx="118" cy="676" r="1.3" fill="#dcdce2"/><circle cx="156" cy="68" r="1.3" fill="#dcdce2"/><circle cx="156" cy="106" r="1.3" fill="#dcdce2"/><circle cx="156" cy="144" r="1.3" fill="#dcdce2"/><circle cx="156" cy="182" r="1.3" fill="#dcdce2"/><circle cx="156" cy="220" r="1.3" fill="#dcdce2"/><circle cx="156" cy="258" r="1.3" fill="#dcdce2"/><circle cx="156" cy="296" r="1.3" fill="#dcdce2"/><circle cx="156" cy="334" r="1.3" fill="#dcdce2"/><circle cx="156" cy="372" r="1.3" fill="#dcdce2"/><circle cx="156" cy="410" r="1.3" fill="#dcdce2"/><circle cx="156" cy="448" r="1.3" fill="#dcdce2"/><circle cx="156" cy="486" r="1.3" fill="#dcdce2"/><circle cx="156" cy="524" r="1.3" fill="#dcdce2"/><circle cx="156" cy="562" r="1.3" fill="#dcdce2"/><circle cx="156" cy="600" r="1.3" fill="#dcdce2"/><circle cx="156" cy="638" r="1.3" fill="#dcdce2"/><circle cx="156" cy="676" r="1.3" fill="#dcdce2"/><circle cx="194" cy="68" r="1.3" fill="#dcdce2"/><circle cx="194" cy="106" r="1.3" fill="#dcdce2"/><circle cx="194" cy="144" r="1.3" fill="#dcdce2"/><circle cx="194" cy="182" r="1.3" fill="#dcdce2"/><circle cx="194" cy="220" r="1.3" fill="#dcdce2"/><circle cx="194" cy="258" r="1.3" fill="#dcdce2"/><circle cx="194" cy="296" r="1.3" fill="#dcdce2"/><circle cx="194" cy="334" r="1.3" fill="#dcdce2"/><circle cx="194" cy="372" r="1.3" fill="#dcdce2"/><circle cx="194" cy="410" r="1.3" fill="#dcdce2"/><circle cx="194" cy="448" r="1.3" fill="#dcdce2"/><circle cx="194" cy="486" r="1.3" fill="#dcdce2"/><circle cx="194" cy="524" r="1.3" fill="#dcdce2"/><circle cx="194" cy="562" r="1.3" fill="#dcdce2"/><circle cx="194" cy="600" r="1.3" fill="#dcdce2"/><circle cx="194" cy="638" r="1.3" fill="#dcdce2"/><circle cx="194" cy="676" r="1.3" fill="#dcdce2"/><circle cx="232" cy="68" r="1.3" fill="#dcdce2"/><circle cx="232" cy="106" r="1.3" fill="#dcdce2"/><circle cx="232" cy="144" r="1.3" fill="#dcdce2"/><circle cx="232" cy="182" r="1.3" fill="#dcdce2"/><circle cx="232" cy="220" r="1.3" fill="#dcdce2"/><circle cx="232" cy="258" r="1.3" fill="#dcdce2"/><circle cx="232" cy="296" r="1.3" fill="#dcdce2"/><circle cx="232" cy="334" r="1.3" fill="#dcdce2"/><circle cx="232" cy="372" r="1.3" fill="#dcdce2"/><circle cx="232" cy="410" r="1.3" fill="#dcdce2"/><circle cx="232" cy="448" r="1.3" fill="#dcdce2"/><circle cx="232" cy="486" r="1.3" fill="#dcdce2"/><circle cx="232" cy="524" r="1.3" fill="#dcdce2"/><circle cx="232" cy="562" r="1.3" fill="#dcdce2"/><circle cx="232" cy="600" r="1.3" fill="#dcdce2"/><circle cx="232" cy="638" r="1.3" fill="#dcdce2"/><circle cx="232" cy="676" r="1.3" fill="#dcdce2"/><circle cx="270" cy="68" r="1.3" fill="#dcdce2"/><circle cx="270" cy="106" r="1.3" fill="#dcdce2"/><circle cx="270" cy="144" r="1.3" fill="#dcdce2"/><circle cx="270" cy="182" r="1.3" fill="#dcdce2"/><circle cx="270" cy="220" r="1.3" fill="#dcdce2"/><circle cx="270" cy="258" r="1.3" fill="#dcdce2"/><circle cx="270" cy="296" r="1.3" fill="#dcdce2"/><circle cx="270" cy="334" r="1.3" fill="#dcdce2"/><circle cx="270" cy="372" r="1.3" fill="#dcdce2"/><circle cx="270" cy="410" r="1.3" fill="#dcdce2"/><circle cx="270" cy="448" r="1.3" fill="#dcdce2"/><circle cx="270" cy="486" r="1.3" fill="#dcdce2"/><circle cx="270" cy="524" r="1.3" fill="#dcdce2"/><circle cx="270" cy="562" r="1.3" fill="#dcdce2"/><circle cx="270" cy="600" r="1.3" fill="#dcdce2"/><circle cx="270" cy="638" r="1.3" fill="#dcdce2"/><circle cx="270" cy="676" r="1.3" fill="#dcdce2"/><circle cx="308" cy="68" r="1.3" fill="#dcdce2"/><circle cx="308" cy="106" r="1.3" fill="#dcdce2"/><circle cx="308" cy="144" r="1.3" fill="#dcdce2"/><circle cx="308" cy="182" r="1.3" fill="#dcdce2"/><circle cx="308" cy="220" r="1.3" fill="#dcdce2"/><circle cx="308" cy="258" r="1.3" fill="#dcdce2"/><circle cx="308" cy="296" r="1.3" fill="#dcdce2"/><circle cx="308" cy="334" r="1.3" fill="#dcdce2"/><circle cx="308" cy="372" r="1.3" fill="#dcdce2"/><circle cx="308" cy="410" r="1.3" fill="#dcdce2"/><circle cx="308" cy="448" r="1.3" fill="#dcdce2"/><circle cx="308" cy="486" r="1.3" fill="#dcdce2"/><circle cx="308" cy="524" r="1.3" fill="#dcdce2"/><circle cx="308" cy="562" r="1.3" fill="#dcdce2"/><circle cx="308" cy="600" r="1.3" fill="#dcdce2"/><circle cx="308" cy="638" r="1.3" fill="#dcdce2"/><circle cx="308" cy="676" r="1.3" fill="#dcdce2"/><circle cx="346" cy="68" r="1.3" fill="#dcdce2"/><circle cx="346" cy="106" r="1.3" fill="#dcdce2"/><circle cx="346" cy="144" r="1.3" fill="#dcdce2"/><circle cx="346" cy="182" r="1.3" fill="#dcdce2"/><circle cx="346" cy="220" r="1.3" fill="#dcdce2"/><circle cx="346" cy="258" r="1.3" fill="#dcdce2"/><circle cx="346" cy="296" r="1.3" fill="#dcdce2"/><circle cx="346" cy="334" r="1.3" fill="#dcdce2"/><circle cx="346" cy="372" r="1.3" fill="#dcdce2"/><circle cx="346" cy="410" r="1.3" fill="#dcdce2"/><circle cx="346" cy="448" r="1.3" fill="#dcdce2"/><circle cx="346" cy="486" r="1.3" fill="#dcdce2"/><circle cx="346" cy="524" r="1.3" fill="#dcdce2"/><circle cx="346" cy="562" r="1.3" fill="#dcdce2"/><circle cx="346" cy="600" r="1.3" fill="#dcdce2"/><circle cx="346" cy="638" r="1.3" fill="#dcdce2"/><circle cx="346" cy="676" r="1.3" fill="#dcdce2"/><circle cx="384" cy="68" r="1.3" fill="#dcdce2"/><circle cx="384" cy="106" r="1.3" fill="#dcdce2"/><circle cx="384" cy="144" r="1.3" fill="#dcdce2"/><circle cx="384" cy="182" r="1.3" fill="#dcdce2"/><circle cx="384" cy="220" r="1.3" fill="#dcdce2"/><circle cx="384" cy="258" r="1.3" fill="#dcdce2"/><circle cx="384" cy="296" r="1.3" fill="#dcdce2"/><circle cx="384" cy="334" r="1.3" fill="#dcdce2"/><circle cx="384" cy="372" r="1.3" fill="#dcdce2"/><circle cx="384" cy="410" r="1.3" fill="#dcdce2"/><circle cx="384" cy="448" r="1.3" fill="#dcdce2"/><circle cx="384" cy="486" r="1.3" fill="#dcdce2"/><circle cx="384" cy="524" r="1.3" fill="#dcdce2"/><circle cx="384" cy="562" r="1.3" fill="#dcdce2"/><circle cx="384" cy="600" r="1.3" fill="#dcdce2"/><circle cx="384" cy="638" r="1.3" fill="#dcdce2"/><circle cx="384" cy="676" r="1.3" fill="#dcdce2"/><circle cx="422" cy="68" r="1.3" fill="#dcdce2"/><circle cx="422" cy="106" r="1.3" fill="#dcdce2"/><circle cx="422" cy="144" r="1.3" fill="#dcdce2"/><circle cx="422" cy="182" r="1.3" fill="#dcdce2"/><circle cx="422" cy="220" r="1.3" fill="#dcdce2"/><circle cx="422" cy="258" r="1.3" fill="#dcdce2"/><circle cx="422" cy="296" r="1.3" fill="#dcdce2"/><circle cx="422" cy="334" r="1.3" fill="#dcdce2"/><circle cx="422" cy="372" r="1.3" fill="#dcdce2"/><circle cx="422" cy="410" r="1.3" fill="#dcdce2"/><circle cx="422" cy="448" r="1.3" fill="#dcdce2"/><circle cx="422" cy="486" r="1.3" fill="#dcdce2"/><circle cx="422" cy="524" r="1.3" fill="#dcdce2"/><circle cx="422" cy="562" r="1.3" fill="#dcdce2"/><circle cx="422" cy="600" r="1.3" fill="#dcdce2"/><circle cx="422" cy="638" r="1.3" fill="#dcdce2"/><circle cx="422" cy="676" r="1.3" fill="#dcdce2"/><circle cx="460" cy="68" r="1.3" fill="#dcdce2"/><circle cx="460" cy="106" r="1.3" fill="#dcdce2"/><circle cx="460" cy="144" r="1.3" fill="#dcdce2"/><circle cx="460" cy="182" r="1.3" fill="#dcdce2"/><circle cx="460" cy="220" r="1.3" fill="#dcdce2"/><circle cx="460" cy="258" r="1.3" fill="#dcdce2"/><circle cx="460" cy="296" r="1.3" fill="#dcdce2"/><circle cx="460" cy="334" r="1.3" fill="#dcdce2"/><circle cx="460" cy="372" r="1.3" fill="#dcdce2"/><circle cx="460" cy="410" r="1.3" fill="#dcdce2"/><circle cx="460" cy="448" r="1.3" fill="#dcdce2"/><circle cx="460" cy="486" r="1.3" fill="#dcdce2"/><circle cx="460" cy="524" r="1.3" fill="#dcdce2"/><circle cx="460" cy="562" r="1.3" fill="#dcdce2"/><circle cx="460" cy="600" r="1.3" fill="#dcdce2"/><circle cx="460" cy="638" r="1.3" fill="#dcdce2"/><circle cx="460" cy="676" r="1.3" fill="#dcdce2"/><circle cx="498" cy="68" r="1.3" fill="#dcdce2"/><circle cx="498" cy="106" r="1.3" fill="#dcdce2"/><circle cx="498" cy="144" r="1.3" fill="#dcdce2"/><circle cx="498" cy="182" r="1.3" fill="#dcdce2"/><circle cx="498" cy="220" r="1.3" fill="#dcdce2"/><circle cx="498" cy="258" r="1.3" fill="#dcdce2"/><circle cx="498" cy="296" r="1.3" fill="#dcdce2"/><circle cx="498" cy="334" r="1.3" fill="#dcdce2"/><circle cx="498" cy="372" r="1.3" fill="#dcdce2"/><circle cx="498" cy="410" r="1.3" fill="#dcdce2"/><circle cx="498" cy="448" r="1.3" fill="#dcdce2"/><circle cx="498" cy="486" r="1.3" fill="#dcdce2"/><circle cx="498" cy="524" r="1.3" fill="#dcdce2"/><circle cx="498" cy="562" r="1.3" fill="#dcdce2"/><circle cx="498" cy="600" r="1.3" fill="#dcdce2"/><circle cx="498" cy="638" r="1.3" fill="#dcdce2"/><circle cx="498" cy="676" r="1.3" fill="#dcdce2"/><circle cx="536" cy="68" r="1.3" fill="#dcdce2"/><circle cx="536" cy="106" r="1.3" fill="#dcdce2"/><circle cx="536" cy="144" r="1.3" fill="#dcdce2"/><circle cx="536" cy="182" r="1.3" fill="#dcdce2"/><circle cx="536" cy="220" r="1.3" fill="#dcdce2"/><circle cx="536" cy="258" r="1.3" fill="#dcdce2"/><circle cx="536" cy="296" r="1.3" fill="#dcdce2"/><circle cx="536" cy="334" r="1.3" fill="#dcdce2"/><circle cx="536" cy="372" r="1.3" fill="#dcdce2"/><circle cx="536" cy="410" r="1.3" fill="#dcdce2"/><circle cx="536" cy="448" r="1.3" fill="#dcdce2"/><circle cx="536" cy="486" r="1.3" fill="#dcdce2"/><circle cx="536" cy="524" r="1.3" fill="#dcdce2"/><circle cx="536" cy="562" r="1.3" fill="#dcdce2"/><circle cx="536" cy="600" r="1.3" fill="#dcdce2"/><circle cx="536" cy="638" r="1.3" fill="#dcdce2"/><circle cx="536" cy="676" r="1.3" fill="#dcdce2"/><circle cx="574" cy="68" r="1.3" fill="#dcdce2"/><circle cx="574" cy="106" r="1.3" fill="#dcdce2"/><circle cx="574" cy="144" r="1.3" fill="#dcdce2"/><circle cx="574" cy="182" r="1.3" fill="#dcdce2"/><circle cx="574" cy="220" r="1.3" fill="#dcdce2"/><circle cx="574" cy="258" r="1.3" fill="#dcdce2"/><circle cx="574" cy="296" r="1.3" fill="#dcdce2"/><circle cx="574" cy="334" r="1.3" fill="#dcdce2"/><circle cx="574" cy="372" r="1.3" fill="#dcdce2"/><circle cx="574" cy="410" r="1.3" fill="#dcdce2"/><circle cx="574" cy="448" r="1.3" fill="#dcdce2"/><circle cx="574" cy="486" r="1.3" fill="#dcdce2"/><circle cx="574" cy="524" r="1.3" fill="#dcdce2"/><circle cx="574" cy="562" r="1.3" fill="#dcdce2"/><circle cx="574" cy="600" r="1.3" fill="#dcdce2"/><circle cx="574" cy="638" r="1.3" fill="#dcdce2"/><circle cx="574" cy="676" r="1.3" fill="#dcdce2"/><circle cx="612" cy="68" r="1.3" fill="#dcdce2"/><circle cx="612" cy="106" r="1.3" fill="#dcdce2"/><circle cx="612" cy="144" r="1.3" fill="#dcdce2"/><circle cx="612" cy="182" r="1.3" fill="#dcdce2"/><circle cx="612" cy="220" r="1.3" fill="#dcdce2"/><circle cx="612" cy="258" r="1.3" fill="#dcdce2"/><circle cx="612" cy="296" r="1.3" fill="#dcdce2"/><circle cx="612" cy="334" r="1.3" fill="#dcdce2"/><circle cx="612" cy="372" r="1.3" fill="#dcdce2"/><circle cx="612" cy="410" r="1.3" fill="#dcdce2"/><circle cx="612" cy="448" r="1.3" fill="#dcdce2"/><circle cx="612" cy="486" r="1.3" fill="#dcdce2"/><circle cx="612" cy="524" r="1.3" fill="#dcdce2"/><circle cx="612" cy="562" r="1.3" fill="#dcdce2"/><circle cx="612" cy="600" r="1.3" fill="#dcdce2"/><circle cx="612" cy="638" r="1.3" fill="#dcdce2"/><circle cx="612" cy="676" r="1.3" fill="#dcdce2"/><circle cx="650" cy="68" r="1.3" fill="#dcdce2"/><circle cx="650" cy="106" r="1.3" fill="#dcdce2"/><circle cx="650" cy="144" r="1.3" fill="#dcdce2"/><circle cx="650" cy="182" r="1.3" fill="#dcdce2"/><circle cx="650" cy="220" r="1.3" fill="#dcdce2"/><circle cx="650" cy="258" r="1.3" fill="#dcdce2"/><circle cx="650" cy="296" r="1.3" fill="#dcdce2"/><circle cx="650" cy="334" r="1.3" fill="#dcdce2"/><circle cx="650" cy="372" r="1.3" fill="#dcdce2"/><circle cx="650" cy="410" r="1.3" fill="#dcdce2"/><circle cx="650" cy="448" r="1.3" fill="#dcdce2"/><circle cx="650" cy="486" r="1.3" fill="#dcdce2"/><circle cx="650" cy="524" r="1.3" fill="#dcdce2"/><circle cx="650" cy="562" r="1.3" fill="#dcdce2"/><circle cx="650" cy="600" r="1.3" fill="#dcdce2"/><circle cx="650" cy="638" r="1.3" fill="#dcdce2"/><circle cx="650" cy="676" r="1.3" fill="#dcdce2"/><circle cx="688" cy="68" r="1.3" fill="#dcdce2"/><circle cx="688" cy="106" r="1.3" fill="#dcdce2"/><circle cx="688" cy="144" r="1.3" fill="#dcdce2"/><circle cx="688" cy="182" r="1.3" fill="#dcdce2"/><circle cx="688" cy="220" r="1.3" fill="#dcdce2"/><circle cx="688" cy="258" r="1.3" fill="#dcdce2"/><circle cx="688" cy="296" r="1.3" fill="#dcdce2"/><circle cx="688" cy="334" r="1.3" fill="#dcdce2"/><circle cx="688" cy="372" r="1.3" fill="#dcdce2"/><circle cx="688" cy="410" r="1.3" fill="#dcdce2"/><circle cx="688" cy="448" r="1.3" fill="#dcdce2"/><circle cx="688" cy="486" r="1.3" fill="#dcdce2"/><circle cx="688" cy="524" r="1.3" fill="#dcdce2"/><circle cx="688" cy="562" r="1.3" fill="#dcdce2"/><circle cx="688" cy="600" r="1.3" fill="#dcdce2"/><circle cx="688" cy="638" r="1.3" fill="#dcdce2"/><circle cx="688" cy="676" r="1.3" fill="#dcdce2"/><circle cx="726" cy="68" r="1.3" fill="#dcdce2"/><circle cx="726" cy="106" r="1.3" fill="#dcdce2"/><circle cx="726" cy="144" r="1.3" fill="#dcdce2"/><circle cx="726" cy="182" r="1.3" fill="#dcdce2"/><circle cx="726" cy="220" r="1.3" fill="#dcdce2"/><circle cx="726" cy="258" r="1.3" fill="#dcdce2"/><circle cx="726" cy="296" r="1.3" fill="#dcdce2"/><circle cx="726" cy="334" r="1.3" fill="#dcdce2"/><circle cx="726" cy="372" r="1.3" fill="#dcdce2"/><circle cx="726" cy="410" r="1.3" fill="#dcdce2"/><circle cx="726" cy="448" r="1.3" fill="#dcdce2"/><circle cx="726" cy="486" r="1.3" fill="#dcdce2"/><circle cx="726" cy="524" r="1.3" fill="#dcdce2"/><circle cx="726" cy="562" r="1.3" fill="#dcdce2"/><circle cx="726" cy="600" r="1.3" fill="#dcdce2"/><circle cx="726" cy="638" r="1.3" fill="#dcdce2"/><circle cx="726" cy="676" r="1.3" fill="#dcdce2"/><circle cx="764" cy="68" r="1.3" fill="#dcdce2"/><circle cx="764" cy="106" r="1.3" fill="#dcdce2"/><circle cx="764" cy="144" r="1.3" fill="#dcdce2"/><circle cx="764" cy="182" r="1.3" fill="#dcdce2"/><circle cx="764" cy="220" r="1.3" fill="#dcdce2"/><circle cx="764" cy="258" r="1.3" fill="#dcdce2"/><circle cx="764" cy="296" r="1.3" fill="#dcdce2"/><circle cx="764" cy="334" r="1.3" fill="#dcdce2"/><circle cx="764" cy="372" r="1.3" fill="#dcdce2"/><circle cx="764" cy="410" r="1.3" fill="#dcdce2"/><circle cx="764" cy="448" r="1.3" fill="#dcdce2"/><circle cx="764" cy="486" r="1.3" fill="#dcdce2"/><circle cx="764" cy="524" r="1.3" fill="#dcdce2"/><circle cx="764" cy="562" r="1.3" fill="#dcdce2"/><circle cx="764" cy="600" r="1.3" fill="#dcdce2"/><circle cx="764" cy="638" r="1.3" fill="#dcdce2"/><circle cx="764" cy="676" r="1.3" fill="#dcdce2"/><circle cx="802" cy="68" r="1.3" fill="#dcdce2"/><circle cx="802" cy="106" r="1.3" fill="#dcdce2"/><circle cx="802" cy="144" r="1.3" fill="#dcdce2"/><circle cx="802" cy="182" r="1.3" fill="#dcdce2"/><circle cx="802" cy="220" r="1.3" fill="#dcdce2"/><circle cx="802" cy="258" r="1.3" fill="#dcdce2"/><circle cx="802" cy="296" r="1.3" fill="#dcdce2"/><circle cx="802" cy="334" r="1.3" fill="#dcdce2"/><circle cx="802" cy="372" r="1.3" fill="#dcdce2"/><circle cx="802" cy="410" r="1.3" fill="#dcdce2"/><circle cx="802" cy="448" r="1.3" fill="#dcdce2"/><circle cx="802" cy="486" r="1.3" fill="#dcdce2"/><circle cx="802" cy="524" r="1.3" fill="#dcdce2"/><circle cx="802" cy="562" r="1.3" fill="#dcdce2"/><circle cx="802" cy="600" r="1.3" fill="#dcdce2"/><circle cx="802" cy="638" r="1.3" fill="#dcdce2"/><circle cx="802" cy="676" r="1.3" fill="#dcdce2"/><circle cx="840" cy="68" r="1.3" fill="#dcdce2"/><circle cx="840" cy="106" r="1.3" fill="#dcdce2"/><circle cx="840" cy="144" r="1.3" fill="#dcdce2"/><circle cx="840" cy="182" r="1.3" fill="#dcdce2"/><circle cx="840" cy="220" r="1.3" fill="#dcdce2"/><circle cx="840" cy="258" r="1.3" fill="#dcdce2"/><circle cx="840" cy="296" r="1.3" fill="#dcdce2"/><circle cx="840" cy="334" r="1.3" fill="#dcdce2"/><circle cx="840" cy="372" r="1.3" fill="#dcdce2"/><circle cx="840" cy="410" r="1.3" fill="#dcdce2"/><circle cx="840" cy="448" r="1.3" fill="#dcdce2"/><circle cx="840" cy="486" r="1.3" fill="#dcdce2"/><circle cx="840" cy="524" r="1.3" fill="#dcdce2"/><circle cx="840" cy="562" r="1.3" fill="#dcdce2"/><circle cx="840" cy="600" r="1.3" fill="#dcdce2"/><circle cx="840" cy="638" r="1.3" fill="#dcdce2"/><circle cx="840" cy="676" r="1.3" fill="#dcdce2"/><circle cx="878" cy="68" r="1.3" fill="#dcdce2"/><circle cx="878" cy="106" r="1.3" fill="#dcdce2"/><circle cx="878" cy="144" r="1.3" fill="#dcdce2"/><circle cx="878" cy="182" r="1.3" fill="#dcdce2"/><circle cx="878" cy="220" r="1.3" fill="#dcdce2"/><circle cx="878" cy="258" r="1.3" fill="#dcdce2"/><circle cx="878" cy="296" r="1.3" fill="#dcdce2"/><circle cx="878" cy="334" r="1.3" fill="#dcdce2"/><circle cx="878" cy="372" r="1.3" fill="#dcdce2"/><circle cx="878" cy="410" r="1.3" fill="#dcdce2"/><circle cx="878" cy="448" r="1.3" fill="#dcdce2"/><circle cx="878" cy="486" r="1.3" fill="#dcdce2"/><circle cx="878" cy="524" r="1.3" fill="#dcdce2"/><circle cx="878" cy="562" r="1.3" fill="#dcdce2"/><circle cx="878" cy="600" r="1.3" fill="#dcdce2"/><circle cx="878" cy="638" r="1.3" fill="#dcdce2"/><circle cx="878" cy="676" r="1.3" fill="#dcdce2"/><circle cx="916" cy="68" r="1.3" fill="#dcdce2"/><circle cx="916" cy="106" r="1.3" fill="#dcdce2"/><circle cx="916" cy="144" r="1.3" fill="#dcdce2"/><circle cx="916" cy="182" r="1.3" fill="#dcdce2"/><circle cx="916" cy="220" r="1.3" fill="#dcdce2"/><circle cx="916" cy="258" r="1.3" fill="#dcdce2"/><circle cx="916" cy="296" r="1.3" fill="#dcdce2"/><circle cx="916" cy="334" r="1.3" fill="#dcdce2"/><circle cx="916" cy="372" r="1.3" fill="#dcdce2"/><circle cx="916" cy="410" r="1.3" fill="#dcdce2"/><circle cx="916" cy="448" r="1.3" fill="#dcdce2"/><circle cx="916" cy="486" r="1.3" fill="#dcdce2"/><circle cx="916" cy="524" r="1.3" fill="#dcdce2"/><circle cx="916" cy="562" r="1.3" fill="#dcdce2"/><circle cx="916" cy="600" r="1.3" fill="#dcdce2"/><circle cx="916" cy="638" r="1.3" fill="#dcdce2"/><circle cx="916" cy="676" r="1.3" fill="#dcdce2"/><circle cx="954" cy="68" r="1.3" fill="#dcdce2"/><circle cx="954" cy="106" r="1.3" fill="#dcdce2"/><circle cx="954" cy="144" r="1.3" fill="#dcdce2"/><circle cx="954" cy="182" r="1.3" fill="#dcdce2"/><circle cx="954" cy="220" r="1.3" fill="#dcdce2"/><circle cx="954" cy="258" r="1.3" fill="#dcdce2"/><circle cx="954" cy="296" r="1.3" fill="#dcdce2"/><circle cx="954" cy="334" r="1.3" fill="#dcdce2"/><circle cx="954" cy="372" r="1.3" fill="#dcdce2"/><circle cx="954" cy="410" r="1.3" fill="#dcdce2"/><circle cx="954" cy="448" r="1.3" fill="#dcdce2"/><circle cx="954" cy="486" r="1.3" fill="#dcdce2"/><circle cx="954" cy="524" r="1.3" fill="#dcdce2"/><circle cx="954" cy="562" r="1.3" fill="#dcdce2"/><circle cx="954" cy="600" r="1.3" fill="#dcdce2"/><circle cx="954" cy="638" r="1.3" fill="#dcdce2"/><circle cx="954" cy="676" r="1.3" fill="#dcdce2"/><circle cx="992" cy="68" r="1.3" fill="#dcdce2"/><circle cx="992" cy="106" r="1.3" fill="#dcdce2"/><circle cx="992" cy="144" r="1.3" fill="#dcdce2"/><circle cx="992" cy="182" r="1.3" fill="#dcdce2"/><circle cx="992" cy="220" r="1.3" fill="#dcdce2"/><circle cx="992" cy="258" r="1.3" fill="#dcdce2"/><circle cx="992" cy="296" r="1.3" fill="#dcdce2"/><circle cx="992" cy="334" r="1.3" fill="#dcdce2"/><circle cx="992" cy="372" r="1.3" fill="#dcdce2"/><circle cx="992" cy="410" r="1.3" fill="#dcdce2"/><circle cx="992" cy="448" r="1.3" fill="#dcdce2"/><circle cx="992" cy="486" r="1.3" fill="#dcdce2"/><circle cx="992" cy="524" r="1.3" fill="#dcdce2"/><circle cx="992" cy="562" r="1.3" fill="#dcdce2"/><circle cx="992" cy="600" r="1.3" fill="#dcdce2"/><circle cx="992" cy="638" r="1.3" fill="#dcdce2"/><circle cx="992" cy="676" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="68" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="106" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="144" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="182" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="220" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="258" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="296" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="334" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="372" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="410" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="448" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="486" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="524" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="562" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="600" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="638" r="1.3" fill="#dcdce2"/><circle cx="1030" cy="676" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="68" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="106" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="144" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="182" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="220" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="258" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="296" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="334" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="372" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="410" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="448" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="486" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="524" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="562" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="600" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="638" r="1.3" fill="#dcdce2"/><circle cx="1068" cy="676" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="68" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="106" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="144" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="182" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="220" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="258" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="296" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="334" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="372" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="410" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="448" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="486" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="524" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="562" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="600" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="638" r="1.3" fill="#dcdce2"/><circle cx="1106" cy="676" r="1.3" fill="#dcdce2"/>
   <g transform="translate(48, 36)">
-    <!-- LEFT CARD: Modular 3-Export Defense-in-Depth Stack -->
+
+    <!-- LEFT CARD: Layered Defense-in-Depth Shield Deflecting Adversarial Injection Streams -->
     <rect x="54" y="54" width="480" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <text x="90" y="98" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">HYBRID DEFENSE STACK · v1.1.0</text>
 
-    <!-- Vertical Pipeline Spine -->
-    <line x1="126" y1="146" x2="126" y2="514" stroke="#0071e3" stroke-width="3" stroke-dasharray="6 5"/>
+    <!-- Concentric Trust-Boundary Aura Rings -->
+    <circle cx="294" cy="292" r="172" fill="#f4f8ff" opacity="0.65" stroke="#93c5fd" stroke-width="2" stroke-dasharray="8 6"/>
+    <circle cx="294" cy="292" r="126" fill="#ffffff" opacity="0.72" stroke="#dbeafe" stroke-width="2"/>
 
-    <!-- Layer 1-2 -->
-    <rect x="90" y="118" width="408" height="68" rx="14" fill="#ffffff" stroke="#0071e3" stroke-width="2"/>
-    <circle cx="126" cy="152" r="14" fill="#0071e3"/>
-    <text x="126" y="157" text-anchor="middle" font-family="SF Mono, monospace" font-size="11" font-weight="700" fill="#ffffff">L1-2</text>
-    <text x="156" y="146" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">Normalizer, O(N) Scanner &amp; Taint Store</text>
-    <text x="156" y="168" font-family="SF Mono, monospace" font-size="11.5" fill="#6e6e73">Depth-2 decode · 5-turn window · LRU+TTL 50k</text>
+    <!-- Left Adversarial Threat Pulses Physically Reflecting Off Outer Shield Rim (x=186) -->
+    <!-- Upper Attack Stream -> Impacts Outer Shield Rim (186, 240) -> Deflected Cleanly to Quarantined X -->
+    <path d="M 88 228 Q 140 228 186 240" fill="none" stroke="#ff3b30" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 186 240 Q 162 192 134 156" fill="none" stroke="#ff3b30" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 6"/>
+    <circle cx="88" cy="228" r="8" fill="#ff3b30" stroke="#ffffff" stroke-width="2.5"/>
+    <circle cx="134" cy="156" r="13.5" fill="#ffeceb" stroke="#ff3b30" stroke-width="3.2"/>
+    <path d="M 129 151 L 139 161 M 139 151 L 129 161" stroke="#ff3b30" stroke-width="3.2" stroke-linecap="round"/>
 
-    <!-- Layer 3 -->
-    <rect x="90" y="200" width="408" height="68" rx="14" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
-    <circle cx="126" cy="234" r="14" fill="#0d9488"/>
-    <text x="126" y="239" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">L3</text>
-    <text x="156" y="228" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">16-ID Bilingual Rule Scorer (EN/ID)</text>
-    <text x="156" y="250" font-family="SF Mono, monospace" font-size="11.5" fill="#6e6e73">PI-01..PI-14C · OWASP LLM01/06/07 · 0 deps</text>
+    <!-- Center Attack Ray -> Halted Right on Outer Shield Rim (186, 292) -->
+    <line x1="88" y1="292" x2="180" y2="292" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="9 7"/>
+    <circle cx="88" cy="292" r="8" fill="#f59e0b" stroke="#ffffff" stroke-width="2.5"/>
 
-    <!-- Layer 3.5 ONNX INT8 -->
-    <rect x="90" y="282" width="408" height="68" rx="14" fill="#f7f5ff" stroke="#5856d6" stroke-width="2"/>
-    <circle cx="126" cy="316" r="14" fill="#5856d6"/>
-    <text x="126" y="321" text-anchor="middle" font-family="SF Mono, monospace" font-size="10.5" font-weight="700" fill="#ffffff">L3.5</text>
-    <text x="156" y="310" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">ONNX INT8 Cascade (./semantic)</text>
-    <text x="156" y="332" font-family="SF Mono, monospace" font-size="11.5" fill="#5856d6">104.2 KB opset-19 · SHA-256 · PI-06/PI-09</text>
+    <!-- Lower Attack Stream -> Impacts Outer Shield Rim (186, 344) -> Deflected Cleanly to Quarantined X -->
+    <path d="M 88 356 Q 140 356 186 344" fill="none" stroke="#ff3b30" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 186 344 Q 162 392 134 428" fill="none" stroke="#ff3b30" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 6"/>
+    <circle cx="88" cy="356" r="8" fill="#ff3b30" stroke="#ffffff" stroke-width="2.5"/>
+    <circle cx="134" cy="428" r="13.5" fill="#ffeceb" stroke="#ff3b30" stroke-width="3.2"/>
+    <path d="M 129 423 L 139 433 M 139 423 L 129 433" stroke="#ff3b30" stroke-width="3.2" stroke-linecap="round"/>
 
-    <!-- Layer 4 -->
-    <rect x="90" y="364" width="408" height="68" rx="14" fill="#ffffff" stroke="#0071e3" stroke-width="2"/>
-    <circle cx="126" cy="398" r="14" fill="#0071e3"/>
-    <text x="126" y="403" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#ffffff">L4</text>
-    <text x="156" y="392" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">128-Bit Nonce Trust Boundary</text>
-    <text x="156" y="414" font-family="SF Mono, monospace" font-size="11.5" fill="#6e6e73">Cryptographic delimiters · Header-spoof guard</text>
+    <!-- Right Clean Verified Prompt Egress Streams -->
+    <path d="M 398 264 C 430 264, 448 250, 490 250" fill="none" stroke="#0071e3" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 398 320 C 430 320, 448 334, 490 334" fill="none" stroke="#10b981" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="490" cy="250" r="11.5" fill="#eaf2ff" stroke="#0071e3" stroke-width="3.5"/>
+    <circle cx="490" cy="250" r="4.5" fill="#0071e3"/>
+    <circle cx="490" cy="334" r="11.5" fill="#eaf8ee" stroke="#28a745" stroke-width="3.5"/>
+    <circle cx="490" cy="334" r="4.5" fill="#28a745"/>
 
-    <!-- Layer 5 + MCP -->
-    <rect x="90" y="446" width="408" height="68" rx="14" fill="#f2fbf5" stroke="#28a745" stroke-width="2"/>
-    <circle cx="126" cy="480" r="14" fill="#28a745"/>
-    <text x="126" y="485" text-anchor="middle" font-family="SF Mono, monospace" font-size="11" font-weight="700" fill="#ffffff">MCP</text>
-    <text x="156" y="474" font-family="SF Pro Text, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#1d1d1f">Output Guard &amp; MCP Middleware (./mcp)</text>
-    <text x="156" y="496" font-family="SF Mono, monospace" font-size="11.5" fill="#166534">InMemory + stdio · -32001 taint · -32602 schema</text>
+    <!-- Soft Ground Shadow Beneath Shield -->
+    <ellipse cx="294" cy="428" rx="76" ry="15" fill="#cbd5e1" opacity="0.52"/>
 
-    <rect x="108" y="544" width="372" height="38" rx="19" fill="#eaf2ff"/>
-    <text x="294" y="568" text-anchor="middle" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#0071e3">3 Subpath Exports · Core 0 Runtime Deps Verified</text>
+    <!-- Centerpiece: Sculpted Apple-Studio Multi-Layer Security Shield -->
+    <!-- Outer Frosted Backing Halo -->
+    <path d="M 294 166 L 402 204 V 294 C 402 362, 355 402, 294 422 C 233 402, 186 362, 186 294 V 204 Z" fill="#eaf2ff" stroke="#93c5fd" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Impact Barrier Nodes Directly on Outer Shield Rim -->
+    <circle cx="186" cy="240" r="6" fill="#ffffff" stroke="#ff3b30" stroke-width="3.2"/>
+    <circle cx="186" cy="292" r="6.5" fill="#ffffff" stroke="#f59e0b" stroke-width="3.2"/>
+    <circle cx="186" cy="344" r="6" fill="#ffffff" stroke="#ff3b30" stroke-width="3.2"/>
 
-    <!-- RIGHT TOP CARD: 60-Case Hybrid & Core Scorecard -->
+    <!-- Main Brushed Sapphire-Indigo Shield Crest -->
+    <path d="M 294 182 L 386 214 V 292 C 386 350, 346 385, 294 402 C 242 385, 202 350, 202 292 V 214 Z" fill="url(#shieldOuter)" stroke="#0055b3" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Specular Top Glass Bevel Highlight -->
+    <path d="M 294 194 L 372 222 V 286 C 372 308, 364 328, 352 344 L 216 266 V 222 Z" fill="url(#shieldInner)"/>
+    <!-- Inner Precision Crest Outline -->
+    <path d="M 294 202 L 368 228 V 290 C 368 338, 336 367, 294 382 C 252 367, 220 338, 220 290 V 228 Z" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.55" stroke-linejoin="round"/>
+
+    <!-- Crisp Verified Emerald Core Seal inside Shield -->
+    <circle cx="294" cy="292" r="42" fill="#ffffff" stroke="#a7f3d0" stroke-width="4"/>
+    <path d="M 275 293 L 288 306 L 315 278" fill="none" stroke="#10b981" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Left Card Bottom Pill -->
+    <rect x="189" y="546" width="210" height="36" rx="18" fill="#eaf2ff"/>
+    <text x="294" y="569" text-anchor="middle" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#0071e3">Core 0-deps · L1–L5</text>
+
+    <!-- RIGHT TOP CARD: Layer 3.5 ONNX INT8 Mini-Encoder &amp; Embedding Decision Boundary -->
     <rect x="562" y="54" width="488" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <text x="602" y="96" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">HYBRID EVAL &amp; 3-JOB CI (60 CASES)</text>
 
-    <rect x="602" y="118" width="194" height="84" rx="16" fill="#eaf8ee" stroke="#bbf7d0" stroke-width="1.5"/>
-    <text x="699" y="156" text-anchor="middle" font-family="SF Mono, monospace" font-size="28" font-weight="700" fill="#15803d">100% TPR</text>
-    <text x="699" y="182" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#166534">44/44 Attacks Caught</text>
+    <!-- Neural Mini-Encoder Graph (Left Half of Card, Centered on y=164) -->
+    <path d="M 596 118 C 626 118, 632 100, 662 100" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 118 C 626 118, 632 142, 662 142" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 118 C 626 118, 632 186, 662 186" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 118 C 626 118, 632 228, 662 228" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 164 C 626 164, 632 100, 662 100" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 164 C 626 164, 632 142, 662 142" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 164 C 626 164, 632 186, 662 186" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 164 C 626 164, 632 228, 662 228" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 210 C 626 210, 632 100, 662 100" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 210 C 626 210, 632 142, 662 142" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 210 C 626 210, 632 186, 662 186" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 596 210 C 626 210, 632 228, 662 228" fill="none" stroke="#cbd5e1" stroke-width="2" opacity="0.85"/><path d="M 662 100 C 690 100, 700 134, 728 134" fill="none" stroke="#fca5a5" stroke-width="2.4" opacity="0.9"/><path d="M 662 100 C 690 100, 700 194, 728 194" fill="none" stroke="#86efac" stroke-width="2.4" opacity="0.9"/><path d="M 662 142 C 690 142, 700 134, 728 134" fill="none" stroke="#fca5a5" stroke-width="2.4" opacity="0.9"/><path d="M 662 142 C 690 142, 700 194, 728 194" fill="none" stroke="#86efac" stroke-width="2.4" opacity="0.9"/><path d="M 662 186 C 690 186, 700 134, 728 134" fill="none" stroke="#fca5a5" stroke-width="2.4" opacity="0.9"/><path d="M 662 186 C 690 186, 700 194, 728 194" fill="none" stroke="#86efac" stroke-width="2.4" opacity="0.9"/><path d="M 662 228 C 690 228, 700 134, 728 134" fill="none" stroke="#fca5a5" stroke-width="2.4" opacity="0.9"/><path d="M 662 228 C 690 228, 700 194, 728 194" fill="none" stroke="#86efac" stroke-width="2.4" opacity="0.9"/>
+    <!-- Input Layer (3 Apple Blue Nodes) -->
+    <circle cx="596" cy="118" r="10.5" fill="#eaf2ff" stroke="#0071e3" stroke-width="3.2"/>
+    <circle cx="596" cy="164" r="10.5" fill="#eaf2ff" stroke="#0071e3" stroke-width="3.2"/>
+    <circle cx="596" cy="210" r="10.5" fill="#eaf2ff" stroke="#0071e3" stroke-width="3.2"/>
+    <!-- Hidden INT8 Layer (4 Apple Indigo Nodes) -->
+    <circle cx="662" cy="100" r="10.5" fill="#efeffc" stroke="#5856d6" stroke-width="3.2"/>
+    <circle cx="662" cy="142" r="10.5" fill="#efeffc" stroke="#5856d6" stroke-width="3.2"/>
+    <circle cx="662" cy="186" r="10.5" fill="#efeffc" stroke="#5856d6" stroke-width="3.2"/>
+    <circle cx="662" cy="228" r="10.5" fill="#efeffc" stroke="#5856d6" stroke-width="3.2"/>
+    <!-- Output Logit Nodes (Attack Coral / Benign Emerald) -->
+    <circle cx="728" cy="134" r="12" fill="#ffeceb" stroke="#ff3b30" stroke-width="3.5"/>
+    <circle cx="728" cy="134" r="5" fill="#ff3b30"/>
+    <circle cx="728" cy="194" r="12" fill="#eaf8ee" stroke="#28a745" stroke-width="3.5"/>
+    <circle cx="728" cy="194" r="5" fill="#28a745"/>
 
-    <rect x="816" y="118" width="194" height="84" rx="16" fill="#eaf2ff" stroke="#bfdbfe" stroke-width="1.5"/>
-    <text x="913" y="156" text-anchor="middle" font-family="SF Mono, monospace" font-size="28" font-weight="700" fill="#0071e3">0% FPR</text>
-    <text x="913" y="182" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#1d4ed8">16/16 Hard Negatives</text>
+    <!-- Generous Airy Bridge Arrow to Decision Boundary Scatter -->
+    <line x1="754" y1="164" x2="782" y2="164" stroke="#5856d6" stroke-width="3.8" stroke-linecap="round"/>
+    <polygon points="779,157 792,164 779,171" fill="#5856d6"/>
 
-    <rect x="602" y="220" width="408" height="34" rx="12" fill="#ffffff" stroke="#d2d2d7"/>
-    <text x="806" y="242" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#1d1d1f">60/60 Exact Decision Match · 20/20 MCP Hijack Blocked</text>
+    <!-- 2D Embedding Cluster Plot (Right Half of Card, Centered on y=164) -->
+    <rect x="802" y="84" width="216" height="160" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
+    <!-- Attack Cluster Halo + Dots (Upper-Left) -->
+    <circle cx="858" cy="128" r="34" fill="#ffeceb" opacity="0.88"/>
+    <circle cx="842" cy="116" r="6.5" fill="#ff3b30"/>
+    <circle cx="866" cy="110" r="6.5" fill="#ff3b30"/>
+    <circle cx="852" cy="134" r="6.5" fill="#f59e0b"/>
+    <circle cx="876" cy="128" r="6.5" fill="#ff3b30"/>
+    <circle cx="836" cy="140" r="6.5" fill="#ff3b30"/>
+    <!-- Benign Cluster Halo + Dots (Lower-Right) -->
+    <circle cx="964" cy="200" r="34" fill="#eaf8ee" opacity="0.88"/>
+    <circle cx="952" cy="190" r="6.5" fill="#10b981"/>
+    <circle cx="976" cy="184" r="6.5" fill="#0d9488"/>
+    <circle cx="962" cy="210" r="6.5" fill="#10b981"/>
+    <circle cx="986" cy="204" r="6.5" fill="#10b981"/>
+    <circle cx="944" cy="214" r="6.5" fill="#0071e3"/>
+    <!-- Sweeping Decision Margin &amp; Boundary Arc -->
+    <path d="M 820 224 C 876 190, 932 146, 1000 100" fill="none" stroke="#c4b5fd" stroke-width="14" stroke-linecap="round" opacity="0.45"/>
+    <path d="M 820 224 C 876 190, 932 146, 1000 100" fill="none" stroke="#5856d6" stroke-width="4" stroke-linecap="round"/>
 
-    <rect x="602" y="268" width="194" height="34" rx="17" fill="#f3f0ff"/>
-    <text x="699" y="290" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#5856d6">30/30 Vitest PASS</text>
-    <rect x="816" y="268" width="194" height="34" rx="17" fill="#ecfeff"/>
-    <text x="913" y="290" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0e7490">3/3 CI Jobs GREEN</text>
+    <!-- Right Top Bottom Pill -->
+    <rect x="696" y="266" width="220" height="36" rx="18" fill="#efeffc"/>
+    <text x="806" y="289" text-anchor="middle" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#5856d6">ONNX INT8 · 100% TPR</text>
 
-    <!-- RIGHT BOTTOM CARD: Sub-ms Latency Across All 3 Tiers -->
+    <!-- RIGHT BOTTOM CARD: MCP Middleware Taint Interceptor &amp; HITL Tool Gate -->
     <rect x="562" y="352" width="488" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <text x="602" y="394" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#6e6e73">WARM LATENCY BUDGETS (NODE 24)</text>
 
-    <text x="602" y="432" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#1d1d1f">Core p50/p99</text>
-    <rect x="724" y="416" width="96" height="22" rx="11" fill="#10b981"/>
-    <text x="832" y="432" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#15803d">0.046 / 0.690 ms</text>
+    <!-- Flow Connectors -->
+    <line x1="666" y1="448" x2="718" y2="448" stroke="#f59e0b" stroke-width="4" stroke-dasharray="8 6" stroke-linecap="round"/>
+    <line x1="794" y1="448" x2="836" y2="448" stroke="#0071e3" stroke-width="4" stroke-linecap="round"/>
+    <line x1="904" y1="448" x2="946" y2="448" stroke="#0d9488" stroke-width="4" stroke-linecap="round"/>
 
-    <text x="602" y="476" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#1d1d1f">ONNX p50/p99</text>
-    <rect x="724" y="460" width="112" height="22" rx="11" fill="#5856d6"/>
-    <text x="848" y="476" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#5856d6">0.299 / 0.762 ms</text>
+    <!-- Deflected Taint Quarantine Branch (Exact Column Alignment: Shield x=756 -> Left to Node 1 Axis x=632) -->
+    <path d="M 756 488 V 522 H 648" fill="none" stroke="#ff3b30" stroke-width="3.5" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="632" cy="522" r="15" fill="#ffeceb" stroke="#ff3b30" stroke-width="3.2"/>
+    <path d="M 627 517 L 637 527 M 637 517 L 627 527" stroke="#ff3b30" stroke-width="3.2" stroke-linecap="round"/>
 
-    <text x="602" y="520" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#1d1d1f">MCP p50/p99</text>
-    <rect x="724" y="504" width="108" height="22" rx="11" fill="#0071e3"/>
-    <text x="844" y="520" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#0071e3">0.217 / 0.752 ms</text>
+    <!-- Node 1: Untrusted External Input (center x=632) -->
+    <rect x="598" y="414" width="68" height="68" rx="18" fill="#fff6e5" stroke="#f59e0b" stroke-width="3.5"/>
+    <circle cx="632" cy="448" r="14" fill="#f59e0b"/>
+    <circle cx="632" cy="448" r="6" fill="#ffffff"/>
 
-    <rect x="602" y="552" width="408" height="44" rx="14" fill="#ffffff" stroke="#d2d2d7"/>
-    <text x="806" y="579" text-anchor="middle" font-family="SF Mono, monospace" font-size="12.5" font-weight="700" fill="#1d1d1f">Clean-Room Tarball 0-Deps · 50k Soak 0 Leak</text>
+    <!-- Node 2: MCP Taint Guardrail Gate (Hero Blue Shield Box, center x=756) -->
+    <rect x="718" y="408" width="76" height="80" rx="20" fill="#eaf2ff" stroke="#0071e3" stroke-width="3.8"/>
+    <path d="M 756 426 L 777 434 V 451 C 777 464, 768 472, 756 477 C 744 472, 735 464, 735 451 V 434 Z" fill="#0071e3"/>
+    <path d="M 748 451 L 754 457 L 765 444" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Node 3: Strict Schema &amp; HITL Token Gate (center x=870) -->
+    <rect x="836" y="414" width="68" height="68" rx="18" fill="#efeffc" stroke="#5856d6" stroke-width="3.5"/>
+    <circle cx="859" cy="448" r="9.5" fill="none" stroke="#5856d6" stroke-width="4"/>
+    <line x1="868.5" y1="448" x2="889" y2="448" stroke="#5856d6" stroke-width="4" stroke-linecap="round"/>
+    <line x1="881" y1="448" x2="881" y2="457" stroke="#5856d6" stroke-width="4" stroke-linecap="round"/>
+    <line x1="889" y1="448" x2="889" y2="455" stroke="#5856d6" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Node 4: Verified Tool Execution (center x=982) -->
+    <rect x="946" y="412" width="72" height="72" rx="18" fill="#eaf8ee" stroke="#28a745" stroke-width="3.8"/>
+    <path d="M 968 448 L 978 458 L 998 437" fill="none" stroke="#28a745" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Right Bottom Pill -->
+    <rect x="698" y="564" width="216" height="36" rx="18" fill="#e6f7f5"/>
+    <text x="806" y="587" text-anchor="middle" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#0d9488">MCP Guardrail · stdio</text>
+
   </g>
 </svg>
