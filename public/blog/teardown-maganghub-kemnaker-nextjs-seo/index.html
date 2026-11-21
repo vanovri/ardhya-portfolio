@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light dark" />
+<script src="./theme-init.js"></script>
+<title>Teardown MagangHub Kemnaker: Full SSR, tapi Nol Google for Jobs</title>
+<meta name="description" content="Audit teknis MagangHub Kemnaker per 21 Nov 2026: Next.js SSR, Blocker #0 canonical 8/8 rute, 0 URL sitemap, Plausible self-hosted, plus 6 patch Next.js." />
+<link rel="canonical" href="https://ardhyanovri.my.id/blog/teardown-maganghub-kemnaker-nextjs-seo" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="id_ID" />
+<meta property="og:site_name" content="Ardhya Novri Ramadhan" />
+<meta property="og:url" content="https://ardhyanovri.my.id/blog/teardown-maganghub-kemnaker-nextjs-seo" />
+<meta property="og:title" content="Teardown MagangHub Kemnaker: Full SSR, tapi Nol Google for Jobs" />
+<meta property="og:description" content="Audit teknis MagangHub Kemnaker per 21 Nov 2026: Next.js SSR, Blocker #0 canonical 8/8 rute, 0 URL sitemap, Plausible self-hosted, plus 6 patch Next.js." />
+<meta property="og:image" content="https://ardhyanovri.my.id/og/teardown-maganghub-kemnaker.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Ringkasan audit teknis MagangHub Kemnaker: Next.js SSR, Blocker #0 canonical 8/8 rute, 0 URL sitemap, Plausible self-hosted, vs Dealls 51.957 URL" />
+<meta property="article:published_time" content="2026-11-21T10:00:00+07:00" />
+<meta property="article:author" content="Ardhya Novri Ramadhan" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Teardown MagangHub Kemnaker: Full SSR, tapi Nol Google for Jobs" />
+<meta name="twitter:description" content="Audit teknis MagangHub Kemnaker per 21 Nov 2026: Next.js SSR, Blocker #0 canonical 8/8 rute, 0 URL sitemap, Plausible self-hosted, plus 6 patch Next.js." />
+<meta name="twitter:image" content="https://ardhyanovri.my.id/og/teardown-maganghub-kemnaker.png" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"TechArticle","@id":"https://ardhyanovri.my.id/blog/teardown-maganghub-kemnaker-nextjs-seo#article","headline":"Teardown MagangHub Kemnaker: Full SSR, tapi Nol Google for Jobs","description":"Audit teknis MagangHub Kemnaker per 21 Nov 2026: Next.js SSR, Blocker #0 canonical 8/8 rute, 0 URL sitemap, Plausible self-hosted, plus 6 patch Next.js.","inLanguage":"id-ID","datePublished":"2026-11-21T10:00:00+07:00","dateModified":"2026-11-21T17:45:00+07:00","mainEntityOfPage":"https://ardhyanovri.my.id/blog/teardown-maganghub-kemnaker-nextjs-seo","image":"https://ardhyanovri.my.id/og/teardown-maganghub-kemnaker.png","author":{"@type":"Person","name":"Ardhya Novri Ramadhan","url":"https://ardhyanovri.my.id/"},"publisher":{"@type":"Person","name":"Ardhya Novri Ramadhan","url":"https://ardhyanovri.my.id/"},"keywords":["MagangHub Kemnaker","Next.js Technical SEO","Google for Jobs JobPosting JSON-LD","llms.txt GEO","Plausible Analytics"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ardhyanovri.my.id/"},{"@type":"ListItem","position":2,"name":"Teardown MagangHub Kemnaker","item":"https://ardhyanovri.my.id/blog/teardown-maganghub-kemnaker-nextjs-seo"}]}]}</script>
+<style>
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("/fonts/space-grotesk-latin.woff2") format("woff2");
+    font-weight: 400 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter-latin.woff2") format("woff2");
+    font-weight: 400 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/jetbrains-mono-latin.woff2") format("woff2");
+    font-weight: 400 700;
+    font-display: swap;
+  }
+
+  :root {
+    color-scheme: light dark;
+    --bg: #F8F9FB;
+    --surface: #FFFFFF;
+    --surface-2: #EEF2F7;
+    --ink: #111317;
+    --ink-2: #3A4250;
+    --ink-3: #535E70;
+    --rule: #D6DEEA;
+    --rule-strong: #BCC8D9;
+    --accent: #0B5FC4;
+    --accent-hover: #084D9E;
+    --accent-ink: #FFFFFF;
+    --accent-soft: #EBF3FE;
+    --accent-border: #BBD5FA;
+    --ok: #0B6B46;
+    --ok-soft: #EBF8F1;
+    --ok-border: #B4E5CD;
+    --alert: #B91C1C;
+    --alert-soft: #FDEEEC;
+    --alert-border: #F5C3BF;
+    --code-bg: #121721;
+    --code-ink: #E6EDF7;
+    --code-muted: #98A9C2;
+    --shadow-sm: 0 2px 8px rgba(17, 19, 23, 0.04);
+    --shadow-md: 0 12px 32px -10px rgba(17, 19, 23, 0.09);
+    --r-card: 14px;
+    --r-ctrl: 8px;
+    --r-chip: 6px;
+    --f-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+    --f-body: "Inter", "Segoe UI", system-ui, sans-serif;
+    --f-mono: "JetBrains Mono", "Cascadia Mono", ui-monospace, monospace;
+  }
+
+  :root:has(> head > meta[name="color-scheme"][content="dark"]) {
+    color-scheme: dark;
+  }
+  :root:has(> head > meta[name="color-scheme"][content="light"]) {
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --bg: #0E1117;
+    --surface: #151A23;
+    --surface-2: #1D2432;
+    --ink: #F2F5FA;
+    --ink-2: #C0CADB;
+    --ink-3: #95A3BA;
+    --rule: #252E3F;
+    --rule-strong: #394761;
+    --accent: #63A8FF;
+    --accent-hover: #8AC0FF;
+    --accent-ink: #08111E;
+    --accent-soft: rgba(99, 168, 255, 0.14);
+    --accent-border: rgba(99, 168, 255, 0.36);
+    --ok: #34D399;
+    --ok-soft: rgba(52, 211, 153, 0.12);
+    --ok-border: rgba(52, 211, 153, 0.34);
+    --alert: #FCA5A5;
+    --alert-soft: rgba(248, 113, 113, 0.14);
+    --alert-border: rgba(248, 113, 113, 0.38);
+    --code-bg: #0A0D13;
+    --code-ink: #E8EFF9;
+    --code-muted: #9AABC4;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 14px 36px -12px rgba(0, 0, 0, 0.45);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; overflow-x: clip; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 8px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 10px 16px;
+    border-radius: var(--r-ctrl);
+    font-weight: 700;
+    text-decoration: none;
+    z-index: 100;
+  }
+  .skip-link:focus { left: 12px; }
+
+  .hero-grid > *, .wb-grid > *, .serp-layout > *,
+  .audit-grid > *, .roadmap-cols > *, .summary-grid > * { min-width: 0; }
+
+  .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    height: 64px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .nav-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .brand {
+    font-family: var(--f-display);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .brand span { color: var(--accent); }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-2);
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 6px 2px;
+  }
+  .nav-links a:hover { color: var(--accent); }
+
+  .nav-actions { display: flex; align-items: center; gap: 10px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-block-size: 38px;
+    min-inline-size: 38px;
+    font-family: var(--f-body);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 16px;
+    border-radius: var(--r-ctrl);
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .btn:focus-visible, button:focus-visible, summary:focus-visible,
+  a:focus-visible, [role="region"]:focus-visible, [role="tabpanel"]:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); }
+  .btn-primary:hover { background: var(--accent-hover); }
+  .btn-secondary { background: var(--surface); color: var(--ink); border-color: var(--rule-strong); }
+  .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-sm { font-size: 13px; padding: 7px 13px; min-block-size: 34px; }
+
+  .hero { padding: 44px 0 56px; border-bottom: 1px solid var(--rule); }
+  .hero-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 40px; align-items: center; }
+
+  .eyebrow {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+
+  h1, h2, h3 { font-family: var(--f-display); letter-spacing: -0.028em; color: var(--ink); }
+  .hero h1 { font-size: clamp(2.05rem, 3.4vw, 3.0rem); font-weight: 700; line-height: 1.1; margin-bottom: 18px; }
+  .hero-sub { font-size: 16.5px; line-height: 1.56; color: var(--ink-2); max-width: 54ch; margin-bottom: 24px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+
+  .hero-figure {
+    border-radius: var(--r-card);
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+  }
+  .hero-figure img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+  .hero-caption { font-family: var(--f-mono); font-size: 12px; color: var(--ink-3); margin-top: 10px; }
+
+  .summary-strip { padding: 32px 0; border-bottom: 1px solid var(--rule); }
+  .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .stat-item { border-left: 3px solid var(--rule-strong); padding-left: 14px; }
+  .stat-item--accent { border-left-color: var(--accent); }
+  .stat-item--alert { border-left-color: var(--alert); }
+  .stat-item--ok { border-left-color: var(--ok); }
+  .stat-num { font-family: var(--f-display); font-size: 26px; font-weight: 700; line-height: 1.15; color: var(--ink); }
+  .stat-lbl { font-size: 13.5px; color: var(--ink-2); margin-top: 4px; }
+
+  section.block { padding: 64px 0; border-bottom: 1px solid var(--rule); }
+  .sec-head { max-width: 68ch; margin-bottom: 32px; }
+  .sec-head h2 { font-size: clamp(1.6rem, 2.4vw, 2.15rem); font-weight: 700; line-height: 1.16; margin-bottom: 10px; }
+  .sec-head p { font-size: 16px; color: var(--ink-2); line-height: 1.6; }
+
+  .wayback-shell {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+  }
+  .wb-controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+  .wb-btn {
+    font-family: var(--f-mono);
+    font-size: 13px;
+    font-weight: 600;
+    min-block-size: 36px;
+    padding: 8px 14px;
+    border-radius: var(--r-ctrl);
+    border: 1px solid var(--rule-strong);
+    background: var(--bg);
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+  .wb-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .wb-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 20px; align-items: stretch; }
+  .wb-status-panel {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .status-badge {
+    display: inline-block;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: var(--r-chip);
+    margin-bottom: 12px;
+    width: fit-content;
+  }
+  .status-badge--ok { background: var(--ok-soft); color: var(--ok); border: 1px solid var(--ok-border); }
+  .status-badge--alert { background: var(--alert-soft); color: var(--alert); border: 1px solid var(--alert-border); }
+  .wb-title { font-family: var(--f-display); font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+  .wb-desc { font-size: 14.5px; color: var(--ink-2); margin-bottom: 16px; }
+  .wb-kv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border-top: 1px solid var(--rule);
+    padding-top: 12px;
+    font-family: var(--f-mono);
+    font-size: 12.5px;
+  }
+  .wb-kv span { color: var(--ink-3); display: block; font-size: 11px; }
+  .wb-code {
+    background: var(--code-bg);
+    color: var(--code-ink);
+    border-radius: var(--r-card);
+    padding: 18px 20px;
+    font-family: var(--f-mono);
+    font-size: 12.5px;
+    line-height: 1.62;
+    overflow-x: auto;
+    border: 1px solid var(--rule);
+  }
+  .wb-code-bar {
+    display: flex;
+    justify-content: space-between;
+    color: var(--code-muted);
+    font-size: 11.5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .sim-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 20px; }
+  .seg-group { display: inline-flex; background: var(--surface-2); padding: 4px; border-radius: var(--r-ctrl); border: 1px solid var(--rule); flex-wrap: wrap; gap: 4px; }
+  .seg-btn {
+    font-family: var(--f-body);
+    font-size: 13.5px;
+    font-weight: 600;
+    min-block-size: 36px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+  .seg-btn[aria-pressed="true"] { background: var(--surface); color: var(--ink); border-color: var(--rule-strong); }
+  .sim-label { font-family: var(--f-mono); font-size: 12px; color: var(--ink-3); }
+
+  .serp-layout { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 20px; align-items: start; }
+  .serp-box, .sim-explain {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    padding: 22px;
+  }
+  .serp-query {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg);
+    border: 1px solid var(--rule-strong);
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    gap: 8px;
+  }
+  .serp-query span:last-child { font-family: var(--f-mono); font-size: 11.5px; color: var(--ink-3); }
+  .jobs-shelf { border: 1px solid var(--rule); border-radius: var(--r-card); overflow: hidden; margin-bottom: 16px; }
+  .jobs-shelf-head {
+    background: var(--surface-2);
+    padding: 10px 14px;
+    font-family: var(--f-display);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  .job-row { padding: 12px 14px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+  .job-row--highlight { background: var(--accent-soft); border-left: 3px solid var(--accent); }
+  .job-title { font-weight: 700; font-size: 14.5px; color: var(--ink); }
+  .job-meta { font-size: 13px; color: var(--ink-2); margin-top: 2px; }
+  .job-tag {
+    font-family: var(--f-mono);
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: var(--r-chip);
+    background: var(--surface-2);
+    color: var(--ink-2);
+    white-space: nowrap;
+  }
+  .job-row--highlight .job-tag { background: var(--accent); color: var(--accent-ink); }
+  .serp-organic { padding-top: 12px; border-top: 1px dashed var(--rule-strong); }
+  .serp-url { font-family: var(--f-mono); font-size: 12px; color: var(--ink-3); }
+  .serp-link { font-size: 15.5px; font-weight: 600; color: var(--accent); margin: 3px 0; }
+  .serp-snip { font-size: 13.5px; color: var(--ink-2); }
+  .sim-explain h3 { font-size: 17.5px; margin-bottom: 8px; }
+  .sim-explain p { font-size: 14.5px; color: var(--ink-2); margin-bottom: 14px; }
+
+  .check-list { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; }
+  .check-list li { display: flex; gap: 10px; align-items: baseline; color: var(--ink-2); }
+  .flag { font-family: var(--f-mono); font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 4px; flex-shrink: 0; }
+  .flag--ok { background: var(--ok-soft); color: var(--ok); border: 1px solid var(--ok-border); }
+  .flag--no { background: var(--alert-soft); color: var(--alert); border: 1px solid var(--alert-border); }
+
+  .audit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .audit-card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .audit-card--tint { background: var(--accent-soft); border-color: var(--accent-border); }
+  .audit-card--alert { border-color: var(--alert-border); }
+  .audit-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .audit-ev { font-family: var(--f-mono); font-size: 12px; font-weight: 700; color: var(--ink-3); }
+  .audit-card h3 { font-size: 18.5px; line-height: 1.25; }
+  .audit-body { font-size: 14.5px; color: var(--ink-2); line-height: 1.55; }
+  .audit-impact { font-size: 13.5px; color: var(--ink); padding-top: 10px; border-top: 1px solid var(--rule); }
+  details.ev-drawer { margin-top: 4px; font-size: 13px; }
+  details.ev-drawer summary { font-family: var(--f-mono); font-size: 12px; color: var(--accent); cursor: pointer; }
+  details.ev-drawer pre {
+    margin-top: 8px;
+    background: var(--code-bg);
+    color: var(--code-ink);
+    padding: 12px 14px;
+    border-radius: var(--r-ctrl);
+    font-family: var(--f-mono);
+    font-size: 12px;
+    overflow-x: auto;
+    line-height: 1.5;
+  }
+
+  /* MODERN WEB GUIDANCE: RESPONSIVE TABLE WITH CONTAINER QUERY */
+  .table-wrapper {
+    overflow: auto;
+    max-inline-size: 100%;
+    container-type: inline-size;
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    background: var(--surface);
+    margin-bottom: 22px;
+  }
+
+  table.bench {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: left;
+    --label-2: "MagangHub Kemnaker";
+    --label-3: "Dealls (Next.js)";
+    --label-4: "Glints (Regional)";
+    --label-5: "Kampus Merdeka";
+  }
+  table.bench caption {
+    text-align: left;
+    padding: 12px 16px;
+    font-size: 12.5px;
+    color: var(--ink-3);
+    border-bottom: 1px solid var(--rule);
+    background: var(--surface);
+  }
+  table.bench thead th {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 2;
+    padding: 14px 16px;
+    font-family: var(--f-display);
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--rule-strong);
+    background: var(--surface-2);
+    color: var(--ink);
+  }
+  table.bench thead th.focus-col { background: var(--accent); color: var(--accent-ink); }
+  table.bench tbody th {
+    position: sticky;
+    inset-inline-start: 0;
+    z-index: 1;
+    padding: 14px 16px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--ink);
+    background: var(--surface);
+    border-bottom: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    vertical-align: top;
+    min-width: 150px;
+  }
+  table.bench td {
+    padding: 14px 16px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--ink-2);
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.bench tr:last-child td, table.bench tr:last-child th { border-bottom: none; }
+  table.bench td.focus-col { background: var(--accent-soft); color: var(--ink); font-weight: 500; }
+
+  @container (width < 680px) {
+    table.bench, table.bench thead, table.bench tbody,
+    table.bench tr, table.bench th, table.bench td { display: block; }
+    table.bench thead { display: none; }
+    table.bench tbody tr {
+      margin: 12px;
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    table.bench tbody th {
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 2;
+      background: var(--surface-2);
+      border-right: 0;
+      min-width: 0;
+    }
+    table.bench td { min-width: 0; }
+    table.bench td::before {
+      display: block;
+      font-family: var(--f-mono);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      margin-bottom: 4px;
+    }
+    table.bench td:nth-child(2)::before { content: var(--label-2) ": "; color: var(--accent); }
+    table.bench td:nth-child(3)::before { content: var(--label-3) ": "; }
+    table.bench td:nth-child(4)::before { content: var(--label-4) ": "; }
+    table.bench td:nth-child(5)::before { content: var(--label-5) ": "; }
+  }
+
+  .insight-band {
+    background: var(--surface);
+    border-left: 4px solid var(--accent);
+    border-top: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    border-radius: 0 var(--r-card) var(--r-card) 0;
+    padding: 20px 24px;
+  }
+  .insight-band h3 { font-size: 17px; margin-bottom: 6px; }
+  .insight-band p { font-size: 14.5px; color: var(--ink-2); max-width: 84ch; }
+
+  .roadmap-cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 36px; }
+  .road-item { border-top: 1.5px solid var(--rule-strong); padding-top: 18px; }
+  .road-meta { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; gap: 8px; }
+  .road-idx { font-family: var(--f-mono); font-size: 13px; font-weight: 700; color: var(--accent); }
+  .road-tag { font-family: var(--f-mono); font-size: 11.5px; color: var(--ink-3); }
+  .road-item h3 { font-size: 18.5px; line-height: 1.28; margin-bottom: 8px; }
+  .road-item p { font-size: 14.5px; color: var(--ink-2); line-height: 1.56; }
+
+  /* MODERN WEB GUIDANCE: TABS (single-row scrolling, ::after forced-colors underline, zero chrome on panel) */
+  .code-panel {
+    background: var(--code-bg);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+  .code-tabs-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.03);
+  }
+  .tab-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: inline proximity;
+    scrollbar-width: none;
+    gap: 4px;
+    min-width: 0;
+  }
+  .tab-list::-webkit-scrollbar { display: none; }
+
+  .tab-btn {
+    position: relative;
+    flex: none;
+    scroll-snap-align: start;
+    font-family: var(--f-mono);
+    font-size: 12.5px;
+    font-weight: 600;
+    min-block-size: 44px;
+    padding: 10px 14px;
+    border: 0;
+    background: transparent;
+    color: var(--code-muted);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .tab-btn:hover { color: #FFFFFF; }
+  .tab-btn[aria-selected="true"] { color: #FFFFFF; }
+  .tab-btn[aria-selected="true"]::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    border-block-end: 3px solid #63A8FF;
+  }
+
+  .copy-controls { display: flex; align-items: center; gap: 10px; flex-shrink: 0; padding: 6px 0; }
+  .copy-btn {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 600;
+    min-block-size: 34px;
+    padding: 6px 14px;
+    border-radius: var(--r-chip);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.08);
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .copy-btn:hover { background: rgba(255, 255, 255, 0.16); }
+
+  .copy-status {
+    display: block;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    color: var(--ok);
+    margin-top: 10px;
+    min-height: 20px;
+  }
+
+  /* Zero padding/border/margin/bg directly on [role="tabpanel"] so hidden="until-found" leaves 0 strip */
+  .panel-stack { display: grid; }
+  .panel-stack > [role="tabpanel"] { grid-area: 1 / 1; min-width: 0; }
+  .code-panel-inner { padding: 0; }
+  .code-filepath {
+    font-family: var(--f-mono);
+    font-size: 11.5px;
+    color: var(--code-muted);
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .code-viewport {
+    padding: 18px 20px;
+    margin: 0;
+    overflow-x: auto;
+    font-family: var(--f-mono);
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--code-ink);
+    max-height: 460px;
+  }
+
+  .site-footer { padding: 40px 0 52px; }
+  .footer-grid { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
+  .footer-meta { font-size: 14px; color: var(--ink-2); }
+  .footer-meta strong { color: var(--ink); }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; }
+  .footer-links a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .footer-links a:hover { text-decoration: underline; }
+
+  @media (max-width: 960px) {
+    .hero-grid, .wb-grid, .serp-layout, .audit-grid, .roadmap-cols { grid-template-columns: 1fr; }
+    .summary-grid { grid-template-columns: repeat(2, 1fr); }
+    .nav-links { display: none; }
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 0 16px; }
+    .summary-grid { grid-template-columns: 1fr; }
+    .hero { padding: 28px 0 42px; }
+    .hero h1 { font-size: 1.85rem; }
+    .nav-actions .btn-primary { display: none; }
+    .serp-query { flex-direction: column; align-items: flex-start; border-radius: var(--r-ctrl); }
+    .code-tabs-bar { flex-direction: column; align-items: stretch; padding: 6px 12px; }
+    .copy-controls { justify-content: flex-end; }
+    section.block { padding: 48px 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+
+  @media (forced-colors: active) {
+    .tab-btn[aria-selected="true"]::after {
+      border-block-end: 3px solid Highlight;
+    }
+    .btn, .wb-btn, .seg-btn, .copy-btn, .audit-card, .wayback-shell, .serp-box, .sim-explain, .table-wrapper, .code-panel {
+      border: 1px solid CanvasText;
+    }
+    .wb-btn[aria-pressed="true"], .seg-btn[aria-pressed="true"] {
+      border: 2px solid Highlight;
+    }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Loncat ke konten utama</a>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="brand" href="/">Ardhya Novri <span>/ Teardown</span></a>
+    <nav aria-label="Navigasi studi kasus">
+      <ul class="nav-links">
+        <li><a href="#wayback">Timeline SSR</a></li>
+        <li><a href="#serp">Simulasi Google Jobs</a></li>
+        <li><a href="#audit">Audit E1–E13 &amp; V1–V5</a></li>
+        <li><a href="#benchmark">Benchmark 4-Arah</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#patches">Kode Patch</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button type="button" class="btn btn-secondary btn-sm" id="themeToggle" aria-pressed="false">Mode Gelap</button>
+      <a class="btn btn-primary btn-sm" href="#patches">Lihat Patch</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Teardown GovTech / maganghub.kemnaker.go.id / 21 Nov 2026</div>
+        <h1>Sudah Full SSR di Next.js, tapi Nol Google for Jobs.</h1>
+        <p class="hero-sub">
+          Audit empiris 8 rute publik, 12 arsip Wayback, storefront mobile Indonesia, dan benchmark langsung melawan Dealls, Glints, serta Kampus Merdeka lengkap dengan monorepo patch Next.js App Router.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#serp">Uji Simulasi Google Jobs</a>
+          <a class="btn btn-secondary" href="#patches">Lihat 6 Patch + CI Gate</a>
+        </div>
+      </div>
+
+      <div>
+        <figure class="hero-figure">
+          <img src="./assets/hero-editorial.jpg" alt="Diagram arsitektur 90 persen fondasi Next.js SSR selesai dan 10 persen lapisan discovery akhir belum terpasang" width="1408" height="768" fetchpriority="high" />
+        </figure>
+        <p class="hero-caption">Next.js SSR dan Plausible self-hosted sudah aktif; Blocker #0 canonical 8/8 rute, sitemap 404, JSON-LD, dan llms.txt masih kosong.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary-strip">
+    <div class="container summary-grid">
+      <div class="stat-item stat-item--alert">
+        <div class="stat-num">8 / 8 Rute</div>
+        <div class="stat-lbl">Blocker #0: canonical terkunci ke beranda &amp; title identik [V3]</div>
+      </div>
+      <div class="stat-item stat-item--alert">
+        <div class="stat-num">0 vs 51.957</div>
+        <div class="stat-lbl">URL sitemap MagangHub (404) vs Dealls di Next.js yang sama [E8, DL-E14]</div>
+      </div>
+      <div class="stat-item stat-item--ok">
+        <div class="stat-num">Plausible Live</div>
+        <div class="stat-lbl">Self-hosted aktif (plausible.kemnaker.go.id); 0 ad pixel/GTM/GA4 [v1.18.23]</div>
+      </div>
+      <div class="stat-item stat-item--accent">
+        <div class="stat-num">2.93&#9733; / 2.06&#9733;</div>
+        <div class="stat-lbl">SIAPkerja Play ID (1M+) &amp; App Store ID ("Kenaker RI") beku 2025-01-15 [V1, V2]</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="block" id="wayback">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Berpindah dari SPA kosong ke Next.js full SSR antara Mei dan November 2026</h2>
+        <p>
+          Snapshot Wayback Machine mencatat cangkang SPA kosong pada 2025-10-10, 2025-11-03, dan 2026-05-16 sebelum Next.js full SSR terekam utuh di snapshot 16 Nov 2026. Klik tiap arsip untuk memeriksa respons HTML-nya.
+        </p>
+      </div>
+
+      <div class="wayback-shell">
+        <div class="wb-controls" role="group" aria-label="Pilih snapshot Wayback Machine">
+          <button type="button" class="wb-btn" data-snap="0" aria-pressed="false">10 Okt 2025</button>
+          <button type="button" class="wb-btn" data-snap="1" aria-pressed="false">03 Nov 2025</button>
+          <button type="button" class="wb-btn" data-snap="2" aria-pressed="false">16 Mei 2026</button>
+          <button type="button" class="wb-btn" data-snap="3" aria-pressed="true">16 Nov 2026 (SSR Utuh)</button>
+        </div>
+
+        <div class="wb-grid">
+          <div class="wb-status-panel">
+            <div>
+              <span class="status-badge status-badge--ok" id="wbBadge">NEXT.JS FULL SSR TEREKAM UTUH</span>
+              <h3 class="wb-title" id="wbTitle">Snapshot 16 November 2026 (Aktif Saat Ini)</h3>
+              <p class="wb-desc" id="wbDesc"></p>
+            </div>
+            <div class="wb-kv">
+              <div><span>WORD COUNT</span><strong id="wbWords">1.245 kata SSR</strong></div>
+              <div><span>HEADINGS</span><strong id="wbHeadings">1 H1, 4 H2</strong></div>
+              <div><span>CTA TERDETEKSI</span><strong id="wbCtas">2 CTA aktif</strong></div>
+              <div><span>CRAWLABILITY HTML</span><strong id="wbCrawl">Terbaca penuh</strong></div>
+            </div>
+          </div>
+
+          <div class="wb-code" tabindex="0" role="region" aria-label="Cuplikan respons HTML Wayback">
+            <div class="wb-code-bar">
+              <span id="wbUrl">web.archive.org / 2026-11-16</span>
+              <span>evidence.json [E13] + [V3]</span>
+            </div>
+            <pre id="wbSnippet" style="white-space: pre-wrap; margin: 0;"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="serp">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Dampak 10% terakhir: simulasi Google for Jobs</h2>
+        <p>
+          Full SSR saja belum cukup selama 8/8 rute mengunci canonical ke beranda, sitemap.xml 404, dan schema JobPosting kosong. Bandingkan kondisi live 21 Nov 2026 melawan hasil sesudah menerapkan Patch #0 sampai Patch #5.
+        </p>
+      </div>
+
+      <div class="sim-toolbar">
+        <div class="seg-group" role="group" aria-label="Pilih skenario SERP">
+          <button type="button" class="seg-btn" id="btnSerpBefore" aria-pressed="true">Kondisi Live (21 Nov 2026)</button>
+          <button type="button" class="seg-btn" id="btnSerpAfter" aria-pressed="false">Setelah Patch #0–#5 + CI Gate</button>
+        </div>
+        <span class="sim-label">Simulasi kueri: "magang teknik elektro jakarta bersubsidi"</span>
+      </div>
+
+      <div class="serp-layout">
+        <div class="serp-box">
+          <div class="serp-query">
+            <span>magang teknik elektro jakarta bersubsidi</span>
+            <span>Google Search (Simulasi)</span>
+          </div>
+
+          <div class="jobs-shelf" id="jobsShelf">
+            <div class="jobs-shelf-head">
+              <span>Lowongan di Google (Google for Jobs)</span>
+              <span id="shelfBadge" class="flag flag--no">MagangHub tidak tampil</span>
+            </div>
+            <div id="jobRowsContainer"></div>
+          </div>
+
+          <div class="serp-organic">
+            <div class="serp-url">https://maganghub.kemnaker.go.id</div>
+            <div class="serp-link">Program Pemagangan Lulusan Perguruan Tinggi : Maganghub - Kemnaker RI</div>
+            <div class="serp-snip" id="organicSnip"></div>
+          </div>
+        </div>
+
+        <aside class="sim-explain">
+          <h3 id="simHeading">Mengapa lowongan bersubsidi belum muncul di Google for Jobs?</h3>
+          <p id="simCopy"></p>
+          <ul class="check-list" id="simChecks"></ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="audit">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Anatomi enam temuan empiris (E1–E13 &amp; V1–V5)</h2>
+        <p>
+          Seluruh fakta berasal dari verifikasi live 21 Nov 2026 terhadap 8 rute publik, HTML produksi v1.18.23, storefront Google Play ID &amp; Apple App Store ID, serta jadwal live Batch 3B 2026.
+        </p>
+      </div>
+
+      <div class="audit-grid">
+        <article class="audit-card audit-card--alert">
+          <div class="audit-top">
+            <span class="audit-ev">BLOCKER #0 / LIVE CRAWL [V3]</span>
+            <span class="flag flag--no">8 / 8 CANONICAL KE ROOT</span>
+          </div>
+          <h3>Seluruh 8 rute publik memancarkan canonical &amp; title identik</h3>
+          <p class="audit-body">
+            Rute /, /magang-nasional/lowongan, /magang-nasional/penyelenggara, /magang-nasional/persyaratan, /magang-nasional/tentang, /magang-nasional/faq, /pendaftaran, dan /pendaftaran/magang-nasional mewarisi canonical root https://maganghub.kemnaker.go.id.
+          </p>
+          <div class="audit-impact">
+            <strong>Tindakan wajib:</strong> Cabut alternates.canonical dari root app/layout.tsx sebelum merilis sitemap.xml.
+          </div>
+        </article>
+
+        <article class="audit-card audit-card--alert">
+          <div class="audit-top">
+            <span class="audit-ev">SEO, RUTE &amp; GEO [E8, E9, V4]</span>
+            <span class="flag flag--no">0 SITEMAP / 0 JSON-LD / LLMS 404</span>
+          </div>
+          <h3>robots.txt 1.248 B komentar Cloudflare &amp; 10/10 bot AI tanpa peta</h3>
+          <p class="audit-body">
+            /robots.txt berisi 100% komentar Cloudflare Managed Content Signals (0 User-agent, 0 Sitemap, 10/10 bot AI terbuka). /sitemap.xml, /sitemap_index.xml, /sitemap-index.xml, dan /llms.txt semuanya HTTP 404, sementara JSON-LD 0 blok. Rute asumsi /lowongan, /perusahaan, /jadwal, /sertifikasi, /api/lowongan/active = HTTP 404; legacy /be/v1/api/list/vacancies-active = 410 Gone tanpa X-Robots-Tag: noindex.
+          </p>
+          <div class="audit-impact">
+            <strong>Dampak:</strong> Lowongan gagal masuk Google for Jobs dan jadwal Batch 3B 2026 (17–26 Nov, 23 Nov–1 Des, 2–10 Des, 11 Des, 14 Des 2026) belum machine-readable.
+          </div>
+        </article>
+
+        <article class="audit-card audit-card--tint">
+          <div class="audit-top">
+            <span class="audit-ev">ANALITIK PRODUKSI [v1.18.23, E3, E4]</span>
+            <span class="flag flag--ok">PLAUSIBLE SELF-HOSTED LIVE</span>
+          </div>
+          <h3>Plausible self-hosted sudah aktif; 0 ad pixel, GTM, GA4, Clarity/Hotjar, CRM</h3>
+          <p class="audit-body">
+            HTML produksi memuat https://plausible.kemnaker.go.id/js/script.js secara mandiri. Yang bernilai 0 adalah ad pixel, GTM, GA4, Clarity/Hotjar, dan CRM.
+          </p>
+          <div class="audit-impact">
+            <strong>Peluang cepat:</strong> Tambahkan custom event non-PII di Plausible untuk mengukur klik "Cari Lowongan" hingga transisi HR ke organizer.maganghub.kemnaker.go.id.
+          </div>
+        </article>
+
+        <article class="audit-card">
+          <div class="audit-top">
+            <span class="audit-ev">KANAL SOSIAL &amp; B2B [E1, E2, V5]</span>
+            <span class="flag flag--no">TIKTOK &amp; LINKEDIN BELUM TERTAUT</span>
+          </div>
+          <h3>Akun tiktok.com/@kemnaker sudah eksis tapi tidak ditautkan dari MagangHub</h3>
+          <p class="audit-body">
+            Homepage sudah memakai H2 Gen-Z "Emang Worth It Magang di Sini?", sertifikasi via SSO BNSP, dan portal HR organizer.maganghub.kemnaker.go.id, tetapi socialProof kosong ([]) serta footer hanya menautkan IG, X, FB, YT, dan WhatsApp tanpa TikTok maupun LinkedIn.
+          </p>
+          <div class="audit-impact">
+            <strong>Dampak:</strong> Dua kanal utama bagi lulusan baru dan praktisi HR korporasi belum terhubung langsung dari portal.
+          </div>
+        </article>
+
+        <article class="audit-card audit-card--alert">
+          <div class="audit-top">
+            <span class="audit-ev">MOBILE STOREFRONT ID [V1, V2, E10]</span>
+            <span class="flag flag--no">BEKU 2025-01-15 &bull; TYPO "KENAKER RI"</span>
+          </div>
+          <h3>SIAPkerja: Play Store 1M+ (2.93&#9733;) &amp; App Store ID 2.06&#9733; tanpa MagangHub</h3>
+          <p class="audit-body">
+            Google Play ID (id.go.kemnaker.siapkerja) memiliki 1M+ unduhan, rating 2.93&#9733; (6.479 rating), beku sejak 2025-01-15. Apple App Store ID (id1638880309, v6.0.5) berada di 2.06&#9733; (496 rating), beku 2025-01-15, memuat typo seller "Kenaker RI", bahasa EN, dan 0 penyebutan MagangHub.
+          </p>
+          <div class="audit-impact">
+            <strong>Dampak:</strong> Basis lebih dari satu juta pengguna mobile tidak diarahkan ke ekosistem MagangHub.
+          </div>
+        </article>
+
+        <article class="audit-card audit-card--tint">
+          <div class="audit-top">
+            <span class="audit-ev">JADWAL &amp; FONDASI [E1, E13]</span>
+            <span class="flag flag--ok">BATCH 3B 2026 LIVE</span>
+          </div>
+          <h3>Fondasi Next.js SSR + subsidi negara siap untuk lonjakan organik</h3>
+          <p class="audit-body">
+            Rute produksi aktual sudah hidup di /magang-nasional/* (lowongan, penyelenggara, persyaratan, tentang, faq) dengan jadwal Batch 3B 2026: 17–26 Nov, 23 Nov–1 Des, 2–10 Des, 11 Des, dan 14 Des 2026.
+          </p>
+          <div class="audit-impact">
+            <strong>Dampak:</strong> Menutup Blocker #0 dan lapisan SEO/GEO cukup 6 file App Router + 8-Gate CI Validator tanpa rewrite platform.
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="benchmark">
+    <div class="container">
+      <div class="sec-head">
+        <div class="eyebrow">Benchmark Empiris 4-Arah Live (2026-11-21)</div>
+        <h2>MagangHub vs Dealls, Glints, dan Kampus Merdeka</h2>
+        <p>
+          Data langsung dari 4 eksekusi serentak pada 21 Nov 2026 memperlihatkan benchmark apple-to-apple Next.js melawan Dealls dan peluang leapfrog GEO melawan Glints.
+        </p>
+      </div>
+
+      <div class="table-wrapper" tabindex="0" role="region" aria-labelledby="bench-caption">
+        <table class="bench">
+          <caption id="bench-caption">Matriks perbandingan empiris 4-arah (2026-11-21): MagangHub Kemnaker vs Dealls, Glints, dan Kampus Merdeka.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Dimensi</th>
+              <th scope="col" class="focus-col">MagangHub Kemnaker</th>
+              <th scope="col">Dealls (Next.js)</th>
+              <th scope="col">Glints (Regional)</th>
+              <th scope="col">Kampus Merdeka</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Sitemap &amp; SEO</th>
+              <td class="focus-col">0 URL (404), 0 JSON-LD, 8/8 canonical ke "/", robots komentar Cloudflare</td>
+              <td>51.957 URL di 6 sitemap (/mentoring 31.836, /karir 11.390, /loker 6.034, /pengembangan-karir 2.669)</td>
+              <td>robots.txt daftar sitemap_index.xml &amp; explore-page-id-sitemap.xml (123 arsip Wayback)</td>
+              <td>0 URL sitemap; 63 arsip (2020-03–2025-09) H1 kosong; per 2026-11-21 fetch failed</td>
+            </tr>
+            <tr>
+              <th scope="row">GEO (llms.txt)</th>
+              <td class="focus-col">/llms.txt HTTP 404 (10/10 bot AI terbuka tanpa peta Batch 3B 2026)</td>
+              <td>llms.txt v2 + 3 AI feed terstruktur (/ai/jobs.ndjson, /ai/companies.ndjson, /ai/faq.json)</td>
+              <td>llmsTxt: null (peluang leapfrog GEO bagi MagangHub)</td>
+              <td>Tidak ada (domain lama fetch failed)</td>
+            </tr>
+            <tr>
+              <th scope="row">Funnel B2B (HR)</th>
+              <td class="focus-col">Subsidi negara; portal organizer.maganghub.kemnaker.go.id; tanpa tautan LinkedIn</td>
+              <td>Halaman khusus /pasang-loker-gratis/pricing + LinkedIn tertaut resmi</td>
+              <td>CTA hero "For Employers" + outbound B2B</td>
+              <td>Kemitraan korporasi &amp; BUMN kementerian</td>
+            </tr>
+            <tr>
+              <th scope="row">Analitik &amp; Tracking</th>
+              <td class="focus-col">Plausible self-hosted aktif (plausible.kemnaker.go.id); 0 ad pixel, GTM, GA4, Clarity/Hotjar, CRM</td>
+              <td>GTM-M26GB8K8 + Hotjar + 3 ad pixel (Meta, Google Ads, DV360)</td>
+              <td>WAF 403; stack analytics, CRM, &amp; retargeting</td>
+              <td>Pelaporan dashboard internal kementerian</td>
+            </tr>
+            <tr>
+              <th scope="row">Mobile &amp; Sosial</th>
+              <td class="focus-col">Play ID 1M+ (2.93&#9733;, 6.479), App Store ID 2.06&#9733; (496, "Kenaker RI"), beku 2025-01-15; TikTok @kemnaker eksis tapi tak tertaut</td>
+              <td>Android 100K+ (com.deallsjobs) + iOS + LinkedIn aktif</td>
+              <td>Aplikasi iOS/Android aktif + CTA "Get Glints App"</td>
+              <td>Distribusi top-down rektorat &amp; konversi SKS</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="insight-band">
+        <h3>Pelajaran kunci: Next.js vs Next.js dan peluang leapfrog GEO</h3>
+        <p>
+          Dealls membuktikan bahwa pada stack Next.js yang persis sama, 51.957 URL dan llms.txt v2 dapat dijalankan secara terstruktur. Sementara itu, Glints belum memiliki llms.txt (llmsTxt: null) dan domain lama Kampus Merdeka mengembalikan fetch failed per 21 Nov 2026. Menjalankan 6 patch Next.js berikut menempatkan MagangHub langsung di Google for Jobs dan di depan Glints pada AI Search.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="roadmap">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Enam langkah perbaikan organik (dimulai dari Blocker #0)</h2>
+        <p>
+          Diurutkan sesuai ketergantungan teknis di atas fondasi Next.js full SSR dan Plausible self-hosted yang sudah aktif.
+        </p>
+      </div>
+
+      <div class="roadmap-cols">
+        <div class="road-item">
+          <div class="road-meta"><span class="road-idx">LANGKAH 1</span><span class="road-tag">Blocker #0 / Root Layout</span></div>
+          <h3>Cabut alternates.canonical dari root app/layout.tsx</h3>
+          <p>Pertahankan metadataBase, lalu berikan title dan self-canonical unik pada seluruh 8/8 rute publik /magang-nasional/* dan /pendaftaran/* sebelum merilis sitemap.</p>
+        </div>
+
+        <div class="road-item">
+          <div class="road-meta"><span class="road-idx">LANGKAH 2</span><span class="road-tag">Google for Jobs / Next.js</span></div>
+          <h3>Deploy app/sitemap.ts, app/robots.ts, &amp; JobPosting/FAQPage JSON-LD</h3>
+          <p>Filter fail-closed hanya lowongan ACTIVE, dukung sharding di atas 50.000 URL, ganti boilerplate komentar Cloudflare di robots.txt, dan sematkan JSON-LD XSS-safe.</p>
+        </div>
+
+        <div class="road-item">
+          <div class="road-meta"><span class="road-idx">LANGKAH 3</span><span class="road-tag">Expired Lifecycle &amp; CI Gate</span></div>
+          <h3>Terapkan transisi 200 (noindex) -&gt; 410 Gone + 8-Gate CI</h3>
+          <p>Cabut JobPosting saat grace period, kirim HTTP 410 Gone + X-Robots-Tag: noindex pada arsip dan legacy /be/v1/api/list/vacancies-active, lalu kunci dengan CI validator 8 gerbang.</p>
+        </div>
+
+        <div class="road-item">
+          <div class="road-meta"><span class="road-idx">LANGKAH 4</span><span class="road-tag">GEO Leapfrog vs Glints</span></div>
+          <h3>Rilis dynamic app/llms.txt/route.ts + AI Feeds (.ndjson/.json)</h3>
+          <p>Publikasikan jadwal live Batch 3B 2026 (17–26 Nov, 23 Nov–1 Des, 2–10 Des, 11 Des, 14 Des 2026), /ai/jobs.ndjson, dan /ai/faq.json untuk langsung menyalip Glints.</p>
+        </div>
+
+        <div class="road-item">
+          <div class="road-meta"><span class="road-idx">LANGKAH 5</span><span class="road-tag">Kanal B2C &amp; B2B</span></div>
+          <h3>Tautkan tiktok.com/@kemnaker, LinkedIn HR, &amp; angka bukti sosial</h3>
+          <p>Tambahkan kuota batch, mitra aktif, dan uang saku di bawah "Emang Worth It Magang di Sini?", tautkan akun TikTok eksisting, dan sambungkan LinkedIn menuju organizer.maganghub.kemnaker.go.id.</p>
+        </div>
+
+        <div class="road-item">
+          <div class="road-meta"><span class="road-idx">LANGKAH 6</span><span class="road-tag">Plausible &amp; Mobile 1M+</span></div>
+          <h3>Tambah custom event Plausible &amp; perbarui app SIAPkerja</h3>
+          <p>Gunakan Plausible self-hosted untuk melacak event funnel non-PII, lalu segarkan listing SIAPkerja (Play Store 1M+ 2.93&#9733;, App Store ID 2.06&#9733;, koreksi typo "Kenaker RI" dan bahasa EN).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="patches">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Paket kode monorepo final (Patch #0 s.d. #5 + 8-Gate CI)</h2>
+        <p>
+          Seluruh tab di bawah merujuk pada monorepo referensi TypeScript strict (maganghub-nextjs-seo-blueprint). Gunakan tombol panah kiri/kanan, Home, atau End untuk berpindah tab secara cepat.
+        </p>
+      </div>
+
+      <div class="code-panel">
+        <div class="code-tabs-bar">
+          <div class="tab-list" role="tablist" focusgroup="tablist nomemory" aria-label="Pilih file patch Next.js dan CI Gate">
+            <button type="button" class="tab-btn" role="tab" id="tab-patch0" aria-selected="true" focusgroupstart>Patch #0: layout.metadata.ts</button>
+            <button type="button" class="tab-btn" role="tab" id="tab-patch1" aria-selected="false">Patch #1: app/sitemap.ts</button>
+            <button type="button" class="tab-btn" role="tab" id="tab-patch2" aria-selected="false">Patch #2: app/robots.ts</button>
+            <button type="button" class="tab-btn" role="tab" id="tab-patch3" aria-selected="false">Patch #3: JobPostingJsonLd.tsx</button>
+            <button type="button" class="tab-btn" role="tab" id="tab-patch4" aria-selected="false">Patch #4: middleware.ts (410)</button>
+            <button type="button" class="tab-btn" role="tab" id="tab-patch5" aria-selected="false">Patch #5: llms.txt &amp; AI Feeds</button>
+            <button type="button" class="tab-btn" role="tab" id="tab-cigate" aria-selected="false">CI Gate: validate-seo.mjs</button>
+          </div>
+          <div class="copy-controls">
+            <button type="button" class="copy-btn" id="copyCodeBtn">Salin Kode</button>
+          </div>
+        </div>
+        <div class="panel-stack">
+          
+          <div role="tabpanel" id="panel-patch0" aria-labelledby="tab-patch0" tabindex="0">
+            <div class="code-panel-inner">
+              <div class="code-filepath">packages/nextjs-blueprint/app/layout.metadata.ts</div>
+              <pre class="code-viewport" tabindex="0" role="region" aria-label="Kode Patch #0: layout.metadata.ts"><code>// Patch #0: Cabut alternates.canonical dari root layout.tsx (tutup bug canonical 8/8 rute)
+import type { Metadata } from "next";
+
+export const SITE_ORIGIN = "https://maganghub.kemnaker.go.id";
+
+export const rootMetadata: Metadata = {
+  metadataBase: new URL(SITE_ORIGIN),
+  title: {
+    default: "MagangHub Kemnaker RI: Program Pemagangan Nasional",
+    template: "%s | MagangHub Kemnaker RI",
+  },
+  description:
+    "Portal resmi Program Pemagangan Lulusan Perguruan Tinggi Kemnaker RI dengan subsidi pemerintah dan sertifikasi profesi.",
+  // WAJIB: JANGAN pasang alternates.canonical di root layout!
+};
+
+export function buildPageMetadata(input: {
+  pathname: string;
+  title: string;
+  description: string;
+}): Metadata {
+  const canonical = new URL(input.pathname, SITE_ORIGIN).toString();
+  return {
+    title: input.title,
+    description: input.description,
+    alternates: { canonical },
+  };
+}</code></pre>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-patch1" aria-labelledby="tab-patch1" hidden="until-found">
+            <div class="code-panel-inner">
+              <div class="code-filepath">packages/nextjs-blueprint/app/sitemap.ts</div>
+              <pre class="code-viewport" tabindex="0" role="region" aria-label="Kode Patch #1: app/sitemap.ts"><code>// Patch #1: Dynamic Sitemap rute aktual /magang-nasional/* + filter fail-closed ACTIVE + sharding &gt; 50K
+import type { MetadataRoute } from "next";
+import { evaluateJobLifecycle, type JobRecord } from "../lib/job-lifecycle";
+
+const BASE_URL = "https://maganghub.kemnaker.go.id";
+const INTERNAL_API_URL = process.env.INTERNAL_API_URL; // Hindari self-HTTP fetch saat build
+const SHARD_LIMIT = 50_000;
+
+export const STATIC_ROUTES = [
+  "/",
+  "/magang-nasional/lowongan",
+  "/magang-nasional/penyelenggara",
+  "/magang-nasional/persyaratan",
+  "/magang-nasional/tentang",
+  "/magang-nasional/faq",
+  "/pendaftaran",
+  "/pendaftaran/magang-nasional",
+] as const;
+
+export async function generateSitemaps(): Promise&lt;Array&lt;{ id: number }&gt;&gt; {
+  const count = await fetchActiveJobCount();
+  const shards = Math.max(1, Math.ceil((count + STATIC_ROUTES.length) / SHARD_LIMIT));
+  return Array.from({ length: shards }, (_, id) =&gt; ({ id }));
+}
+
+export default async function sitemap({ id = 0 } = {}): Promise&lt;MetadataRoute.Sitemap&gt; {
+  const now = new Date();
+  const staticUrls: MetadataRoute.Sitemap = id === 0
+    ? STATIC_ROUTES.map((p) =&gt; ({
+        url: new URL(p, BASE_URL).toString(),
+        lastModified: now,
+        changeFrequency: p === "/magang-nasional/lowongan" ? "hourly" : "daily",
+        priority: p === "/" ? 1.0 : 0.85,
+      }))
+    : [];
+
+  if (!INTERNAL_API_URL) return staticUrls;
+  const jobs = await fetchActiveJobs(id, SHARD_LIMIT);
+  const jobUrls: MetadataRoute.Sitemap = jobs
+    .filter((job) =&gt; evaluateJobLifecycle(job, now) === "ACTIVE")
+    .map((job) =&gt; ({
+      url: `${BASE_URL}/magang-nasional/lowongan/${encodeURIComponent(job.slug)}`,
+      lastModified: new Date(job.updatedAt),
+      changeFrequency: "daily",
+      priority: 0.8,
+    }));
+
+  return [...staticUrls, ...jobUrls].slice(0, SHARD_LIMIT);
+}</code></pre>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-patch2" aria-labelledby="tab-patch2" hidden="until-found">
+            <div class="code-panel-inner">
+              <div class="code-filepath">packages/nextjs-blueprint/app/robots.ts</div>
+              <pre class="code-viewport" tabindex="0" role="region" aria-label="Kode Patch #2: app/robots.ts"><code>// Patch #2: Menimpa boilerplate komentar Cloudflare (1.248 B, 0 User-agent, 0 Sitemap)
+import type { MetadataRoute } from "next";
+
+const BASE_URL = "https://maganghub.kemnaker.go.id";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: "*",
+        allow: [
+          "/",
+          "/magang-nasional/",
+          "/pendaftaran",
+          "/llms.txt",
+          "/ai/",
+        ],
+        disallow: ["/dashboard/", "/api/"],
+      },
+    ],
+    sitemap: `${BASE_URL}/sitemap.xml`,
+    host: BASE_URL,
+  };
+}</code></pre>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-patch3" aria-labelledby="tab-patch3" hidden="until-found">
+            <div class="code-panel-inner">
+              <div class="code-filepath">packages/nextjs-blueprint/components/seo/JobPostingJsonLd.tsx</div>
+              <pre class="code-viewport" tabindex="0" role="region" aria-label="Kode Patch #3: JobPostingJsonLd.tsx"><code>// Patch #3: JobPosting JSON-LD (ONSITE/HYBRID/REMOTE, multi-lokasi, fail-closed, XSS-safe)
+import { evaluateJobLifecycle, type JobRecord } from "../../lib/job-lifecycle";
+import { buildJobPostingSchema, serializeJsonLdSafe } from "../../lib/job-schema";
+
+export function JobPostingJsonLd({
+  job,
+  now = new Date(),
+}: {
+  job: JobRecord;
+  now?: Date;
+}) {
+  // Defense-in-depth: kembalikan null jika lifecycle !== ACTIVE
+  if (evaluateJobLifecycle(job, now) !== "ACTIVE") {
+    return null;
+  }
+
+  const schema = buildJobPostingSchema(job, now);
+  if (!schema) return null;
+
+  return (
+    &lt;script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        // Escapes &lt;, &gt;, &amp;, \u2028, \u2029 mencegah script-breakout XSS
+        __html: serializeJsonLdSafe(schema),
+      }}
+    /&gt;
+  );
+}</code></pre>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-patch4" aria-labelledby="tab-patch4" hidden="until-found">
+            <div class="code-panel-inner">
+              <div class="code-filepath">packages/nextjs-blueprint/middleware.ts</div>
+              <pre class="code-viewport" tabindex="0" role="region" aria-label="Kode Patch #4: middleware.ts (410)"><code>// Patch #4: Hybrid Expired Lifecycle (200 noindex -&gt; 410 Gone + X-Robots-Tag)
+// Catatan Next.js 16+: migrasikan ekspor middleware -&gt; proxy.ts bila upgrade ke Next 16+.
+import { NextResponse, type NextRequest } from "next/server";
+import { extractJobDetailSlug, evaluateJobLifecycle } from "./lib/job-lifecycle";
+import { renderGoneHtml } from "./lib/gone-page";
+
+export async function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  // Tambahkan X-Robots-Tag: noindex pada legacy endpoint 410
+  if (pathname === "/be/v1/api/list/vacancies-active") {
+    return new NextResponse(JSON.stringify({ status: 410, error: "Gone" }), {
+      status: 410,
+      headers: {
+        "Content-Type": "application/json",
+        "X-Robots-Tag": "noindex, follow",
+        "Cache-Control": "public, max-age=3600, s-maxage=86400",
+      },
+    });
+  }
+
+  // Anti-tabrakan: abaikan /kota/*, /bidang/*, /perusahaan/*
+  const slug = extractJobDetailSlug(pathname);
+  if (!slug) return NextResponse.next();
+
+  const state = await lookupArchiveStateWithTimeout(slug, 400);
+  if (state === "ARCHIVED_GONE") {
+    return new NextResponse(renderGoneHtml(slug), {
+      status: 410,
+      headers: {
+        "Content-Type": "text/html; charset=utf-8",
+        "X-Robots-Tag": "noindex, follow",
+        "Cache-Control": "public, max-age=3600, s-maxage=86400",
+      },
+    });
+  }
+
+  return NextResponse.next();
+}</code></pre>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-patch5" aria-labelledby="tab-patch5" hidden="until-found">
+            <div class="code-panel-inner">
+              <div class="code-filepath">packages/nextjs-blueprint/app/llms.txt/route.ts</div>
+              <pre class="code-viewport" tabindex="0" role="region" aria-label="Kode Patch #5: llms.txt &amp; AI Feeds"><code>// Patch #5: Dynamic llms.txt (Jadwal Live Batch 3B 2026) + AI Feeds ala Dealls (leapfrog Glints)
+export async function GET(): Promise&lt;Response&gt; {
+  const content = [
+    "# MagangHub Kemnaker RI",
+    "site: https://maganghub.kemnaker.go.id",
+    "organizer: https://organizer.maganghub.kemnaker.go.id",
+    "sitemap: https://maganghub.kemnaker.go.id/sitemap.xml",
+    "",
+    "## Jadwal Live Batch 3B 2026",
+    "- Pendaftaran Penyelenggara: 17-26 Nov 2026",
+    "- Pendaftaran Peserta: 23 Nov-1 Des 2026",
+    "- Seleksi Peserta: 2-10 Des 2026",
+    "- Pengumuman Hasil: 11 Des 2026",
+    "- Mulai Pelaksanaan: 14 Des 2026",
+    "",
+    "## Rute Publik Aktual",
+    "- https://maganghub.kemnaker.go.id/magang-nasional/lowongan",
+    "- https://maganghub.kemnaker.go.id/magang-nasional/penyelenggara",
+    "- https://maganghub.kemnaker.go.id/magang-nasional/persyaratan",
+    "- https://maganghub.kemnaker.go.id/magang-nasional/tentang",
+    "- https://maganghub.kemnaker.go.id/magang-nasional/faq",
+    "- https://maganghub.kemnaker.go.id/pendaftaran/magang-nasional",
+    "",
+    "## Structured AI Data Feeds",
+    "- https://maganghub.kemnaker.go.id/ai/jobs.ndjson",
+    "- https://maganghub.kemnaker.go.id/ai/faq.json",
+  ].join("\n");
+
+  return new Response(content, {
+    status: 200,
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "public, max-age=1800, s-maxage=3600",
+    },
+  });
+}</code></pre>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-cigate" aria-labelledby="tab-cigate" hidden="until-found">
+            <div class="code-panel-inner">
+              <div class="code-filepath">packages/seo-ci-gate/scripts/validate-seo.mjs</div>
+              <pre class="code-viewport" tabindex="0" role="region" aria-label="Kode CI Gate: validate-seo.mjs"><code># 8-Gate Zero-Dependency SEO CI Validator (Node 24 LTS)
+# Gates: G1-HOME-SSR | G2-INDEXING/PREVIEW-NOINDEX-TRAP | G3-ROBOTS |
+#        G4-SITEMAP/SITEMAPINDEX | G5-CANONICAL-ROOT-GUARD |
+#        G6-JOBPOSTING-ACTIVE | G7-EXPIRED-JOB-LIFECYCLE | G8-LLMS-TXT-AND-AI-FEEDS
+
+node packages/seo-ci-gate/scripts/validate-seo.mjs \
+  --base-url "https://preview.maganghub.kemnaker.go.id" \
+  --expired-path "/magang-nasional/lowongan/arsip-batch-1" \
+  --expired-mode "strip-schema" \
+  --json-out "reports/seo-gate.json"
+
+# Security hardening terverifikasi:
+# - Pinning x-vercel-protection-bypass ketat ke initialOrigin (0 bocor saat 302 lintas origin)
+# - SSRF guard: blokir 169.254.169.254, RFC1918, ::1, ::ffff:..., decimal/octal/hex IP
+# - Deteksi jebakan Vercel Preview X-Robots-Tag: noindex vs &lt;meta name="robots"&gt; HTML
+# - GitHub Actions: sparse-checkout hanya dari default_branch (anti Fork-PR Pwn Request)</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span id="copyStatus" class="copy-status" role="status" aria-live="polite"></span>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-meta">
+      <strong>Ardhya Novri Ramadhan</strong> / Audit publik independen per 21 Nov 2026 (E1–E13, V1–V5, benchmark 4-arah live).
+    </div>
+    <div class="footer-links">
+      <a href="/">Kembali ke Portofolio</a>
+      <a href="https://ardhyanovri.my.id" target="_blank" rel="noopener">ardhyanovri.my.id</a>
+      <a href="https://github.com/vanovri" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/dhya" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./teardown.js" defer></script>
+</body>
+</html>
