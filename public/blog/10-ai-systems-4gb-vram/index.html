@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light dark" />
+<script src="/blog/10-ai-systems-4gb-vram/theme-init.js"></script>
+<title>10 AI Systems on 4 GB VRAM: 151/151 Pytest on GTX 1650 Ti</title>
+<meta name="description" content="10 production AI/ML systems trained and tested on a 4 GB GTX 1650 Ti (151/151 pytest): Neural Pong 101.2 FPS, Pure NumPy INT4/GPTQ, Qwen3 LoRA, and RAG." />
+<link rel="canonical" href="https://ardhyanovri.my.id/blog/10-ai-systems-4gb-vram" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Ardhya Novri Ramadhan" />
+<meta property="og:url" content="https://ardhyanovri.my.id/blog/10-ai-systems-4gb-vram" />
+<meta property="og:title" content="10 AI Systems on 4 GB VRAM: 151/151 Pytest on GTX 1650 Ti" />
+<meta property="og:description" content="10 production AI/ML systems trained and tested on a 4 GB GTX 1650 Ti (151/151 pytest): Neural Pong 101.2 FPS, Pure NumPy INT4/GPTQ, Qwen3 LoRA, and RAG." />
+<meta property="og:image" content="https://ardhyanovri.my.id/og/10-ai-systems-4gb-vram.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="10 AI and ML systems trained and benchmarked locally on a 4 GB GTX 1650 Ti with 151/151 pytest PASS" />
+<meta property="article:published_time" content="2026-11-21T21:00:00+07:00" />
+<meta property="article:author" content="Ardhya Novri Ramadhan" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="10 AI Systems on 4 GB VRAM: 151/151 Pytest on GTX 1650 Ti" />
+<meta name="twitter:description" content="10 production AI/ML systems trained and tested on a 4 GB GTX 1650 Ti (151/151 pytest): Neural Pong 101.2 FPS, Pure NumPy INT4/GPTQ, Qwen3 LoRA, and RAG." />
+<meta name="twitter:image" content="https://ardhyanovri.my.id/og/10-ai-systems-4gb-vram.png" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"TechArticle","@id":"https://ardhyanovri.my.id/blog/10-ai-systems-4gb-vram#article","headline":"10 AI Systems on 4 GB VRAM: 151/151 Pytest on GTX 1650 Ti","description":"10 production AI/ML systems trained and tested on a 4 GB GTX 1650 Ti (151/151 pytest): Neural Pong 101.2 FPS, Pure NumPy INT4/GPTQ, Qwen3 LoRA, and RAG.","inLanguage":"en","datePublished":"2026-11-21T21:00:00+07:00","dateModified":"2026-11-21T21:35:00+07:00","mainEntityOfPage":"https://ardhyanovri.my.id/blog/10-ai-systems-4gb-vram","image":"https://ardhyanovri.my.id/og/10-ai-systems-4gb-vram.png","author":{"@type":"Person","name":"Ardhya Novri Ramadhan","url":"https://ardhyanovri.my.id/"},"publisher":{"@type":"Person","name":"Ardhya Novri Ramadhan","url":"https://ardhyanovri.my.id/"},"keywords":["AI Systems","4 GB VRAM","Neural Pong World Model","Pure NumPy INT4 Quantization","GPTQ","Qwen3 LoRA","Two-Tower RecSys","Hybrid RAG","Multi-Agent Systems"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ardhyanovri.my.id/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://ardhyanovri.my.id/projects"},{"@type":"ListItem","position":3,"name":"10 AI Systems on 4 GB VRAM","item":"https://ardhyanovri.my.id/blog/10-ai-systems-4gb-vram"}]}]}</script>
+<style>
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("/fonts/space-grotesk-latin.woff2") format("woff2");
+    font-weight: 400 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter-latin.woff2") format("woff2");
+    font-weight: 400 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/jetbrains-mono-latin.woff2") format("woff2");
+    font-weight: 400 700;
+    font-display: swap;
+  }
+
+  @property --fade-start {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0px;
+  }
+  @property --fade-end {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0px;
+  }
+
+  :root {
+    color-scheme: light dark;
+    --bg: #F8F9FB;
+    --surface: #FFFFFF;
+    --surface-2: #EEF2F7;
+    --ink: #111317;
+    --ink-2: #3A4250;
+    --ink-3: #535E70;
+    --rule: #D6DEEA;
+    --rule-strong: #9AA9BF;
+    --accent: #0B5FC4;
+    --accent-hover: #084D9E;
+    --accent-ink: #FFFFFF;
+    --accent-soft: #EBF3FE;
+    --accent-border: #BBD5FA;
+    --ok: #0B6B46;
+    --ok-soft: #EBF8F1;
+    --ok-border: #B4E5CD;
+    --code-bg: #121721;
+    --code-ink: #E6EDF7;
+    --code-muted: #98A9C2;
+    --shadow-sm: 0 2px 8px rgba(17, 19, 23, 0.04);
+    --shadow-md: 0 12px 32px -10px rgba(17, 19, 23, 0.09);
+    --r-card: 14px;
+    --r-ctrl: 8px;
+    --r-chip: 6px;
+    --f-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+    --f-body: "Inter", "Segoe UI", system-ui, sans-serif;
+    --f-mono: "JetBrains Mono", "Cascadia Mono", ui-monospace, monospace;
+  }
+
+  :root:has(> head > meta[name="color-scheme"][content="dark"]) {
+    color-scheme: dark;
+  }
+  :root:has(> head > meta[name="color-scheme"][content="light"]) {
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --bg: #0E1117;
+    --surface: #151A23;
+    --surface-2: #1D2432;
+    --ink: #F2F5FA;
+    --ink-2: #C4CEDF;
+    --ink-3: #99A8C0;
+    --rule: #252E3F;
+    --rule-strong: #4A5B7A;
+    --accent: #63A8FF;
+    --accent-hover: #8AC0FF;
+    --accent-ink: #08111E;
+    --accent-soft: rgba(99, 168, 255, 0.14);
+    --accent-border: rgba(99, 168, 255, 0.36);
+    --ok: #34D399;
+    --ok-soft: rgba(52, 211, 153, 0.12);
+    --ok-border: rgba(52, 211, 153, 0.34);
+    --code-bg: #0A0D13;
+    --code-ink: #E8EFF9;
+    --code-muted: #9AABC4;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 14px 36px -12px rgba(0, 0, 0, 0.45);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; overflow-x: clip; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 8px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 10px 16px;
+    border-radius: var(--r-ctrl);
+    font-weight: 700;
+    text-decoration: none;
+    z-index: 100;
+  }
+  .skip-link:focus { left: 12px; }
+
+  .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+  .hero-grid > *, .kpi-grid > *, .gallery-grid > *, .panel-grid > *, .bugs-grid > * { min-width: 0; }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    height: 64px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .brand {
+    font-family: var(--f-display);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .brand span { color: var(--accent); }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-2);
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 6px 2px;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-actions { display: flex; align-items: center; gap: 10px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-block-size: 38px;
+    min-inline-size: 38px;
+    padding: 8px 14px;
+    border-radius: var(--r-ctrl);
+    border: 1px solid var(--rule-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: 13.5px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .btn--primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+  .btn--primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--accent-ink); }
+  .btn:focus-visible, a:focus-visible, button:focus-visible, [tabindex="0"]:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .hero { padding: 52px 0 40px; border-bottom: 1px solid var(--rule); }
+  .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 36px; align-items: center; }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+    padding: 5px 11px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  h1, h2, h3 { font-family: var(--f-display); letter-spacing: -0.025em; color: var(--ink); }
+  h1 { font-size: clamp(32px, 4.4vw, 48px); line-height: 1.08; margin-bottom: 16px; }
+  .lead { font-size: 17px; color: var(--ink-2); max-width: 62ch; margin-bottom: 24px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
+  .hw-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    color: var(--ink-3);
+  }
+  .hw-chip {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-chip);
+    padding: 4px 10px;
+  }
+  .hero-media {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    padding: 14px;
+    box-shadow: var(--shadow-md);
+  }
+  .hero-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--rule);
+    background: #11141B;
+  }
+  .hero-caption {
+    margin-top: 10px;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    color: var(--ink-3);
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .kpi-band { padding: 28px 0; border-bottom: 1px solid var(--rule); background: var(--surface); }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .kpi-card {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    padding: 18px 20px;
+  }
+  .kpi-label { font-family: var(--f-mono); font-size: 11.5px; font-weight: 700; color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.04em; }
+  .kpi-val { font-family: var(--f-display); font-size: 28px; font-weight: 700; color: var(--ink); margin: 4px 0; }
+  .kpi-val--ok { color: var(--ok); }
+  .kpi-val--accent { color: var(--accent); }
+  .kpi-sub { font-size: 13px; color: var(--ink-2); }
+
+  .block { padding: 52px 0; border-bottom: 1px solid var(--rule); }
+  .sec-head { margin-bottom: 24px; max-width: 74ch; }
+  .sec-head h2 { font-size: clamp(24px, 3vw, 32px); margin-bottom: 8px; }
+  .sec-head p { color: var(--ink-2); font-size: 15.5px; }
+
+  /* MODERN WEB GUIDANCE: SINGLE-ROW SCROLLABLE TABS WITH EDGE FADE & FORCED-COLORS SAFE UNDERLINE */
+  .tabs-shell {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  .tablist-scroll {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-snap-type: inline proximity;
+    scroll-padding-inline: 3rem;
+    border-bottom: 1px solid var(--rule);
+    background: var(--surface-2);
+    --fade-size: 2.75rem;
+    --fade-dir: right;
+    --fade-start-pos: 0;
+    --fade-end-pos: 100%;
+    mask:
+      linear-gradient(black, black) no-clip subtract,
+      linear-gradient(to var(--fade-dir), black, transparent) var(--fade-start-pos) 0 / var(--fade-start) 100% no-repeat no-clip,
+      linear-gradient(to var(--fade-dir), transparent, black) var(--fade-end-pos) 0 / var(--fade-end) 100% no-repeat no-clip;
+    animation: reveal-fade-start linear both, hide-fade-end linear both;
+    animation-timeline: scroll(self inline);
+    animation-range: 0 var(--fade-size), calc(100% - var(--fade-size)) 100%;
+    transition: --fade-start 0.2s, --fade-end 0.2s;
+  }
+  .tablist-scroll::-webkit-scrollbar { display: none; }
+  .tablist-scroll.more-start { --fade-start: var(--fade-size); }
+  .tablist-scroll.more-end { --fade-end: var(--fade-size); }
+  @keyframes reveal-fade-start { to { --fade-start: var(--fade-size); } }
+  @keyframes hide-fade-end { from { --fade-end: var(--fade-size); } }
+
+  .tablist-scroll [role="tab"] {
+    flex: none;
+    position: relative;
+    scroll-snap-align: start;
+    border: 0;
+    background: transparent;
+    color: var(--ink-2);
+    font-family: var(--f-mono);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 14px 16px;
+    min-block-size: 46px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .tablist-scroll [role="tab"]:hover { color: var(--ink); }
+  .tablist-scroll [role="tab"][aria-selected="true"] {
+    color: var(--accent);
+  }
+  .tablist-scroll [role="tab"][aria-selected="true"]::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    border-block-end: 3px solid var(--accent);
+  }
+
+  /* Shared grid cell: zero gap & zero styling directly on [role="tabpanel"] for hidden="until-found" */
+  .panel-stack { display: grid; grid-template-columns: 1fr; }
+  .panel-stack > [role="tabpanel"] { grid-area: 1 / 1; }
+  .panel-card { padding: 26px; background: var(--surface); }
+  .panel-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 24px; align-items: start; }
+  .panel-badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--f-mono);
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: var(--r-chip);
+    border: 1px solid var(--rule);
+    background: var(--surface-2);
+    color: var(--ink-2);
+  }
+  .chip--ok { background: var(--ok-soft); border-color: var(--ok-border); color: var(--ok); }
+  .chip--accent { background: var(--accent-soft); border-color: var(--accent-border); color: var(--accent); }
+  .panel-card h3 { font-size: 23px; margin-bottom: 10px; }
+  .panel-desc { color: var(--ink-2); font-size: 15px; margin-bottom: 16px; }
+  .metric-list { list-style: none; display: grid; gap: 8px; margin-bottom: 18px; }
+  .metric-list li {
+    font-size: 14px;
+    color: var(--ink);
+    padding: 9px 12px;
+    border-radius: var(--r-ctrl);
+    background: var(--bg);
+    border: 1px solid var(--rule);
+  }
+  .panel-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+
+  .code-box {
+    background: var(--code-bg);
+    color: var(--code-ink);
+    border-radius: var(--r-ctrl);
+    border: 1px solid var(--rule);
+    padding: 14px 16px;
+    margin-bottom: 14px;
+  }
+  .code-box-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    color: var(--code-muted);
+  }
+  .code-box pre {
+    overflow-x: auto;
+    font-family: var(--f-mono);
+    font-size: 12.5px;
+    line-height: 1.55;
+    padding-bottom: 4px;
+  }
+
+  /* MODERN WEB GUIDANCE: COPY BUTTON + LIVE REGION TIP OUTSIDE BUTTON */
+  .copy { display: inline-flex; align-items: center; gap: 8px; position: relative; }
+  .copy-button {
+    min-inline-size: 32px;
+    min-block-size: 32px;
+    padding: 5px 11px;
+    border-radius: var(--r-chip);
+    border: 1px solid #3B4963;
+    background: #1B2332;
+    color: #E6EDF7;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .copy-button:hover { border-color: #63A8FF; color: #FFFFFF; }
+  .copy-button[data-copied] { border-color: #34D399; color: #34D399; }
+  .copy-button[data-failed] { border-color: #F87171; color: #FCA5A5; }
+  .tip {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: #34D399;
+    opacity: 0;
+    transition: opacity 0.18s ease;
+    min-inline-size: 1px;
+  }
+  .copy-button[data-copied] + .tip { opacity: 1; color: #34D399; }
+  .copy-button[data-failed] + .tip { opacity: 1; color: #FCA5A5; }
+
+  .panel-visual {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-ctrl);
+    padding: 12px;
+  }
+  .panel-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid var(--rule);
+  }
+  .panel-visual figcaption {
+    margin-top: 8px;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    color: var(--ink-3);
+  }
+
+  /* MODERN WEB GUIDANCE: RESPONSIVE TABLE WITH CONTAINER QUERY & KEYBOARD SCROLL */
+  .table-wrapper {
+    overflow: auto;
+    max-inline-size: 100%;
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    background: var(--surface);
+    container-type: inline-size;
+  }
+  .bench-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+    --label-1: "Project";
+    --label-2: "Core Stack";
+    --label-3: "Verified Metric Proof";
+    --label-4: "Pytest";
+  }
+  .bench-table caption {
+    text-align: left;
+    padding: 14px 18px;
+    font-family: var(--f-mono);
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--ink-3);
+    border-bottom: 1px solid var(--rule);
+    background: var(--surface-2);
+  }
+  .bench-table thead {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 2;
+  }
+  .bench-table thead th {
+    text-align: left;
+    padding: 12px 16px;
+    background: var(--surface-2);
+    color: var(--ink);
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--rule-strong);
+    white-space: nowrap;
+  }
+  .bench-table tbody th {
+    position: sticky;
+    inset-inline-start: 0;
+    z-index: 1;
+    background: var(--surface);
+    text-align: left;
+    padding: 13px 16px;
+    font-weight: 700;
+    color: var(--ink);
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+  .bench-table tbody td {
+    padding: 13px 16px;
+    color: var(--ink-2);
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  .bench-table tbody tr:last-child th,
+  .bench-table tbody tr:last-child td { border-bottom: 0; }
+  .pass-pill {
+    display: inline-block;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--ok-soft);
+    border: 1px solid var(--ok-border);
+    color: var(--ok);
+    white-space: nowrap;
+  }
+
+  @container (width < 640px) {
+    .bench-table, .bench-table thead, .bench-table tbody, .bench-table tr, .bench-table th, .bench-table td {
+      display: block;
+    }
+    .bench-table thead { display: none; }
+    .bench-table tbody tr {
+      margin: 12px;
+      border: 1px solid var(--rule-strong);
+      border-radius: var(--r-ctrl);
+      overflow: hidden;
+    }
+    .bench-table tbody th {
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 2;
+      background: var(--surface-2);
+      white-space: normal;
+    }
+    .bench-table tbody td {
+      padding: 10px 14px;
+    }
+    .bench-table tbody td:nth-child(2)::before {
+      content: var(--label-2) ": ";
+      font-family: var(--f-mono);
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .bench-table tbody td:nth-child(3)::before {
+      content: var(--label-3) ": ";
+      font-family: var(--f-mono);
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .bench-table tbody td:nth-child(4)::before {
+      content: var(--label-4) ": ";
+      font-family: var(--f-mono);
+      font-weight: 700;
+      color: var(--ink);
+    }
+  }
+
+  .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .gal-card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .gal-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--rule);
+    background: #11141B;
+  }
+  .gal-body { padding: 16px 18px; }
+  .gal-body h3 { font-size: 17px; margin-bottom: 6px; }
+  .gal-body p { font-size: 14px; color: var(--ink-2); }
+
+  .bugs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .bug-card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-card);
+    padding: 20px;
+  }
+  .bug-card h3 { font-size: 17px; margin: 8px 0; }
+  .bug-card p { font-size: 14px; color: var(--ink-2); }
+
+  .site-footer { padding: 36px 0; background: var(--surface); }
+  .footer-grid { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .footer-meta { font-size: 14px; color: var(--ink-2); }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
+  .footer-links a { font-size: 14px; font-weight: 600; color: var(--accent); text-decoration: none; }
+  .footer-links a:hover { text-decoration: underline; }
+
+  @media (max-width: 960px) {
+    .hero-grid, .panel-grid, .gallery-grid { grid-template-columns: 1fr; }
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .bugs-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+  }
+  @media (max-width: 540px) {
+    .kpi-grid { grid-template-columns: 1fr; }
+    .container { padding: 0 16px; }
+    .panel-card { padding: 18px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .tablist-scroll, .tip { transition: none; }
+  }
+
+  @media (forced-colors: active) {
+    .btn, .kpi-card, .tabs-shell, .gal-card, .bug-card, .metric-list li, .table-wrapper, .copy-button {
+      border: 1px solid CanvasText;
+    }
+    .tablist-scroll [role="tab"][aria-selected="true"]::after {
+      border-block-end: 3px solid Highlight;
+    }
+    .btn--primary {
+      background: Highlight;
+      color: HighlightText;
+      border-color: Highlight;
+    }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="brand" href="/">Ardhya Novri<span>.</span></a>
+    <nav aria-label="Case study sections">
+      <ul class="nav-links">
+        <li><a href="#explorer">10 Systems</a></li>
+        <li><a href="#ledger">Benchmarks</a></li>
+        <li><a href="#gallery">Visual Proof</a></li>
+        <li><a href="#bugs">3 Slide Bugs</a></li>
+        <li><a href="/projects">All Projects</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button type="button" class="btn" id="themeToggle" aria-pressed="false" aria-label="Switch to dark theme">
+        <span class="theme-label">Dark mode</span>
+      </button>
+      <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram" target="_blank" rel="noopener">GitHub v1.0.0</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Engineering Showcase · 21 Nov 2026</span>
+        <h1>10 Production AI/ML Systems on a 4 GB GTX 1650 Ti.</h1>
+        <p class="lead">
+          World models without a game engine, pure NumPy INT4/GPTQ quantization, LoRA fine-tuning on Qwen3-0.6B, Log-Q debiased Two-Tower RecSys, hybrid FAISS/BM25 RAG, and coding agents: all trained, benchmarked, and verified locally with 151/151 pytest PASS.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram" target="_blank" rel="noopener">Browse GitHub Monorepo</a>
+          <a class="btn" href="https://github.com/vanovri/ai-systems-4gb-vram/releases/tag/v1.0.0" target="_blank" rel="noopener">Release v1.0.0</a>
+          <a class="btn" href="#explorer">Explore 10 Architectures</a>
+        </div>
+        <div class="hw-strip" aria-label="Hardware testbed">
+          <span class="hw-chip">Intel i5-10300H</span>
+          <span class="hw-chip">15.8 GB RAM</span>
+          <span class="hw-chip">NVIDIA GTX 1650 Ti (4 GB VRAM)</span>
+          <span class="hw-chip">PyTorch 2.6.0+cu124</span>
+        </div>
+      </div>
+
+      <figure class="hero-media">
+        <img src="/blog/10-ai-systems-4gb-vram/assets/rollout_comparison.gif" alt="Side-by-side rollout comparison between ground-truth Pong environment and the 1.58M-parameter Neural Pong World Model running at 101.2 FPS with zero game engine imports" width="768" height="384" />
+        <figcaption class="hero-caption">
+          <span>#05 Neural Pong World Model</span>
+          <span>101.2 FPS · 26.6 MiB VRAM · 0 pong_env imports</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="kpi-band" aria-label="Headline benchmark numbers">
+    <div class="container kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Automated Verification</div>
+        <div class="kpi-val kpi-val--ok">151 / 151</div>
+        <div class="kpi-sub">Pytest PASS across all 10 projects (100%)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Neural Pong World Model</div>
+        <div class="kpi-val kpi-val--accent">101.2 FPS</div>
+        <div class="kpi-sub">26.6 MiB VRAM, 100.0% (300/300) counterfactual paddle order</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Qwen3-0.6B LoRA Banking77</div>
+        <div class="kpi-val">84.59%</div>
+        <div class="kpi-sub">Full 3,076 test Exact-Match vs 0.00% Base Zero-Shot (1,305 MiB)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Pure NumPy INT4 + GPTQ-Lite</div>
+        <div class="kpi-val kpi-val--ok">-67.70% L2</div>
+        <div class="kpi-sub">Layer-10 output error cut; LoRA INT4 holds 76.10% in 236 MiB</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="explorer">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Interactive Architecture Explorer (10 Projects)</h2>
+        <p>
+          Select any system below to inspect its exact verified metrics, engineering stack, visual proof, and direct GitHub directory. Use Left/Right arrow keys, Home, or End to navigate tabs.
+        </p>
+      </div>
+
+      <div class="tabs-shell">
+        <div id="projectTablist" class="tablist-scroll" role="tablist" focusgroup="tablist nomemory" aria-label="Select one of the 10 AI and Python systems">
+          <button type="button" role="tab" id="tab-05" aria-selected="true" focusgroupstart tabindex="0">05 Neural Pong</button>
+          <button type="button" role="tab" id="tab-04" aria-selected="false" tabindex="-1">04 INT4 Quantizer</button>
+          <button type="button" role="tab" id="tab-02" aria-selected="false" tabindex="-1">02 Qwen3 LoRA</button>
+          <button type="button" role="tab" id="tab-01" aria-selected="false" tabindex="-1">01 Two-Tower</button>
+          <button type="button" role="tab" id="tab-06" aria-selected="false" tabindex="-1">06 Hybrid RAG</button>
+          <button type="button" role="tab" id="tab-03" aria-selected="false" tabindex="-1">03 Agent Harness</button>
+          <button type="button" role="tab" id="tab-07" aria-selected="false" tabindex="-1">07 Research Agent</button>
+          <button type="button" role="tab" id="tab-08" aria-selected="false" tabindex="-1">08 Discord Bot</button>
+          <button type="button" role="tab" id="tab-09" aria-selected="false" tabindex="-1">09 Minimax 21</button>
+          <button type="button" role="tab" id="tab-10" aria-selected="false" tabindex="-1">10 Multi-Agent</button>
+        </div>
+
+        <div class="panel-stack">
+          <!-- #05 -->
+          <div role="tabpanel" id="panel-05" aria-labelledby="tab-05" tabindex="0">
+            <div class="panel-card">
+              <div class="panel-grid">
+                <div>
+                  <div class="panel-badge-row">
+                    <span class="chip chip--ok">17/17 Pytest PASS</span>
+                    <span class="chip chip--accent">Flagship World Model</span>
+                    <span class="chip">PyTorch CUDA FP16 + FastAPI</span>
+                  </div>
+                  <h3>#05 Neural Pong World Model (Zero Game Engine at Runtime)</h3>
+                  <p class="panel-desc">
+                    A 1.58M-parameter Action-Conditioned U-Net trained on 140k random frames plus 30k unrolled episodes with 8-step DAgger rollout fine-tuning. During Neural Play, the FastAPI server never imports pong_env: the neural network hallucinates ball physics and paddle motion directly in pixel space.
+                  </p>
+                  <ul class="metric-list">
+                    <li><strong>Inference speed &amp; VRAM:</strong> 101.2 FPS (9.89 ms/frame) at 26.6 MiB peak VRAM on GTX 1650 Ti.</li>
+                    <li><strong>1-step fidelity:</strong> 0.9401 Dynamic IoU, 0.9884 Full-Frame IoU, 0.286 px mean ball error (98.11% within 1 px).</li>
+                    <li><strong>Action controllability:</strong> 100.0% (300/300) strict counterfactual paddle ordering (UP &lt; NONE &lt; DOWN); 60-step Right Paddle error 0.20 px.</li>
+                  </ul>
+                  <div class="code-box">
+                    <div class="code-box-head">
+                      <span>Launch interactive Neural Pong server</span>
+                      <span class="copy">
+                        <button type="button" class="copy-button" command="--copy" commandfor="cmd-05" aria-label="Copy Neural Pong command">Copy</button>
+                        <span class="tip" role="status"></span>
+                      </span>
+                    </div>
+                    <pre><code id="cmd-05">cd 05_neural_pong_world_model &amp;&amp; uvicorn src.play_web:app --port 8005</code></pre>
+                  </div>
+                  <div class="panel-actions">
+                    <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram/tree/main/05_neural_pong_world_model" target="_blank" rel="noopener">View Source on GitHub</a>
+                  </div>
+                </div>
+                <figure class="panel-visual">
+                  <img src="/blog/10-ai-systems-4gb-vram/assets/rollout_grid.png" alt="Multi-step rollout grid comparing ground truth Pong frames with Neural Pong World Model predictions" width="900" height="540" loading="lazy" />
+                  <figcaption>reports/rollout_grid.png: 60-step autoregressive rollout fidelity.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- #04 -->
+          <div role="tabpanel" id="panel-04" aria-labelledby="tab-04" hidden="until-found">
+            <div class="panel-card">
+              <div class="panel-grid">
+                <div>
+                  <div class="panel-badge-row">
+                    <span class="chip chip--ok">16/16 Pytest PASS</span>
+                    <span class="chip chip--accent">Pure NumPy + Qwen3-0.6B</span>
+                    <span class="chip">Real 4-bit Nibble Packing</span>
+                  </div>
+                  <h3>#04 Pure NumPy LLM Quantizer + GPTQ-Lite</h3>
+                  <p class="panel-desc">
+                    Group-wise (g=64) asymmetric and symmetric INT8/INT4 quantization written from scratch in pure NumPy with real 2x INT4 per uint8 bit-packing, plus Hessian-compensated GPTQ-lite error redistribution and cross-project quantization of the Banking77 LoRA model.
+                  </p>
+                  <ul class="metric-list">
+                    <li><strong>WikiText-2 Perplexity (196 layers, 440.4M params):</strong> FP16 34.36 -&gt; INT8 34.47 (+0.30%, 1.88x linear compression) -&gt; INT4 Sym 43.59 (3.77x compression).</li>
+                    <li><strong>GPTQ-lite ablation (Layer 10 q_proj):</strong> Cuts output relative L2 error by -67.70% (0.0766 -&gt; 0.0247) in 1.25 s calibration.</li>
+                    <li><strong>Cross-project LoRA Merged INT4 (236 MiB linear):</strong> Retains 76.10% Exact-Match and 84.16% Top-3 across 77 Banking intents.</li>
+                  </ul>
+                  <div class="code-box">
+                    <div class="code-box-head">
+                      <span>Run Pure NumPy quantizer test suite</span>
+                      <span class="copy">
+                        <button type="button" class="copy-button" command="--copy" commandfor="cmd-04" aria-label="Copy Quantizer test command">Copy</button>
+                        <span class="tip" role="status"></span>
+                      </span>
+                    </div>
+                    <pre><code id="cmd-04">cd 04_quantize_your_own_llm &amp;&amp; pytest tests</code></pre>
+                  </div>
+                  <div class="panel-actions">
+                    <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram/tree/main/04_quantize_your_own_llm" target="_blank" rel="noopener">View Source on GitHub</a>
+                  </div>
+                </div>
+                <figure class="panel-visual">
+                  <img src="/blog/10-ai-systems-4gb-vram/assets/layer10_int4_snap.png" alt="Layer 10 attention weight snap plot showing 64 FP16 weights quantized to 16 INT4 levels in pure NumPy" width="900" height="540" loading="lazy" />
+                  <figcaption>reports/layer10_int4_snap.png: 64 weights packed from 128 B to 36 B (3.56x).</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- #02 -->
+          <div role="tabpanel" id="panel-02" aria-labelledby="tab-02" hidden="until-found">
+            <div class="panel-card">
+              <div class="panel-grid">
+                <div>
+                  <div class="panel-badge-row">
+                    <span class="chip chip--ok">15/15 Pytest PASS</span>
+                    <span class="chip chip--accent">Qwen3-0.6B + PEFT LoRA</span>
+                    <span class="chip">1,305 MiB Peak VRAM</span>
+                  </div>
+                  <h3>#02 Tiny Model LoRA Fine-Tuning (Banking77)</h3>
+                  <p class="panel-desc">
+                    Supervised LoRA fine-tuning (rank r=8, updating only 0.192% of parameters) turning a 0.6B base model that scores 0.00% zero-shot on 77 banking intents into a high-accuracy domain classifier inside 1.3 GB VRAM.
+                  </p>
+                  <ul class="metric-list">
+                    <li><strong>Full Banking77 Test Split (3,076 samples):</strong> 84.59% Exact-Match &amp; Macro-F1, 89.34% Top-3 accuracy.</li>
+                    <li><strong>Head-to-head Stratified Split (770 samples):</strong> 85.97% LoRA vs 0.00% Base Zero-Shot and 4.16% 5-Shot.</li>
+                    <li><strong>Resource footprint:</strong> 0.192% trainable weights, 1,305 MiB peak VRAM on GTX 1650 Ti.</li>
+                  </ul>
+                  <div class="code-box">
+                    <div class="code-box-head">
+                      <span>Run Banking77 LoRA intent inference</span>
+                      <span class="copy">
+                        <button type="button" class="copy-button" command="--copy" commandfor="cmd-02" aria-label="Copy LoRA inference command">Copy</button>
+                        <span class="tip" role="status"></span>
+                      </span>
+                    </div>
+                    <pre><code id="cmd-02">cd 02_tiny_model_lora_banking77 &amp;&amp; python src/infer.py --text "My card was swallowed by the ATM"</code></pre>
+                  </div>
+                  <div class="panel-actions">
+                    <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram/tree/main/02_tiny_model_lora_banking77" target="_blank" rel="noopener">View Source on GitHub</a>
+                  </div>
+                </div>
+                <figure class="panel-visual">
+                  <img src="/blog/10-ai-systems-4gb-vram/assets/loss_curve.png" alt="Training and validation loss curve for Qwen3-0.6B PEFT LoRA on Banking77" width="900" height="540" loading="lazy" />
+                  <figcaption>reports/loss_curve.png: Stable convergence on 4 GB VRAM.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- #01 -->
+          <div role="tabpanel" id="panel-01" aria-labelledby="tab-01" hidden="until-found">
+            <div class="panel-card">
+              <div class="panel-grid">
+                <div>
+                  <div class="panel-badge-row">
+                    <span class="chip chip--ok">17/17 Pytest PASS</span>
+                    <span class="chip chip--accent">Two-Tower RecSys</span>
+                    <span class="chip">Log-Q Popularity Debiasing</span>
+                  </div>
+                  <h3>#01 Instagram-Style Two-Tower RecSys</h3>
+                  <p class="panel-desc">
+                    Dual-encoder candidate retrieval trained with PyTorch CUDA FP16 across 2,000 users, 5,000 items, and 230,000 Zipfian interactions. Adding Log-Q sampling correction directly breaks viral head dominance while multiplying retrieval quality.
+                  </p>
+                  <ul class="metric-list">
+                    <li><strong>Retrieval gain:</strong> 4.23x Recall@10 (0.0841) and 5.44x NDCG@10 (0.0865) over baseline.</li>
+                    <li><strong>Fairness / debiasing:</strong> -51.5% reduction in Top-5% viral head exposure bias via Log-Q correction.</li>
+                    <li><strong>Serving latency:</strong> p50 = 0.105 ms per query on CPU with pre-normalized item embeddings.</li>
+                  </ul>
+                  <div class="code-box">
+                    <div class="code-box-head">
+                      <span>Run Two-Tower RecSys test suite</span>
+                      <span class="copy">
+                        <button type="button" class="copy-button" command="--copy" commandfor="cmd-01" aria-label="Copy Two-Tower command">Copy</button>
+                        <span class="tip" role="status"></span>
+                      </span>
+                    </div>
+                    <pre><code id="cmd-01">cd 01_instagram_two_tower &amp;&amp; pytest tests</code></pre>
+                  </div>
+                  <div class="panel-actions">
+                    <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram/tree/main/01_instagram_two_tower" target="_blank" rel="noopener">View Source on GitHub</a>
+                  </div>
+                </div>
+                <figure class="panel-visual">
+                  <img src="/blog/10-ai-systems-4gb-vram/assets/comparison_plot.png" alt="Two-Tower RecSys comparison chart showing Recall@10, NDCG@10, and Top-5% viral bias drop with Log-Q debiasing" width="900" height="540" loading="lazy" />
+                  <figcaption>reports/comparison_plot.png: Baseline vs Log-Q Debiased Two-Tower.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- #06 -->
+          <div role="tabpanel" id="panel-06" aria-labelledby="tab-06" hidden="until-found">
+            <div class="panel-card">
+              <div class="panel-badge-row">
+                <span class="chip chip--ok">15/15 Pytest PASS</span>
+                <span class="chip chip--accent">FAISS IndexFlatIP + BM25 + RRF</span>
+                <span class="chip">FastAPI</span>
+              </div>
+              <h3>#06 Personal RAG Assistant (Grounded Citations + OOS Refusal)</h3>
+              <p class="panel-desc">
+                Multi-format local document ingestion (.pdf, .md, .txt) combining dense cosine retrieval via FAISS IndexFlatIP with sparse BM25 fused through Reciprocal Rank Fusion (RRF), strict inline [source#chunk] citations, and out-of-scope refusal.
+              </p>
+              <ul class="metric-list">
+                <li><strong>Retrieval accuracy:</strong> Recall@1 = 1.00, Recall@3 = 1.00, MRR = 1.00 across 10 answerable queries.</li>
+                <li><strong>Anti-hallucination:</strong> Grounded citation accuracy = 1.00; out-of-scope refusal accuracy = 1.00.</li>
+                <li><strong>Deployment ready:</strong> Ships with CLI and FastAPI REST service (rag.cli serve).</li>
+              </ul>
+              <div class="code-box">
+                <div class="code-box-head">
+                  <span>Start Personal RAG FastAPI server</span>
+                  <span class="copy">
+                    <button type="button" class="copy-button" command="--copy" commandfor="cmd-06" aria-label="Copy RAG serve command">Copy</button>
+                    <span class="tip" role="status"></span>
+                  </span>
+                </div>
+                <pre><code id="cmd-06">cd 06_personal_rag_assistant &amp;&amp; python -m rag.cli serve --port 8006</code></pre>
+              </div>
+              <div class="panel-actions">
+                <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram/tree/main/06_personal_rag_assistant" target="_blank" rel="noopener">View Source on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- #03 -->
+          <div role="tabpanel" id="panel-03" aria-labelledby="tab-03" hidden="until-found">
+            <div class="panel-card">
+              <div class="panel-badge-row">
+                <span class="chip chip--ok">17/17 Pytest PASS</span>
+                <span class="chip chip--accent">Pure Python Agent Loop</span>
+                <span class="chip">Path-Jail Sandbox</span>
+              </div>
+              <h3>#03 Minimal Coding Agent Harness</h3>
+              <p class="panel-desc">
+                Clean state-transition agent loop with 4 sandboxed tools (list/read/edit/run_tests), strict path-jail confinement preventing directory escape, diff inspection, and structured JSONL execution traces.
+              </p>
+              <ul class="metric-list">
+                <li><strong>Real benchmark fixes:</strong> 3/3 failing repositories automatically diagnosed and fixed (checkout_cart, rate_limiter, csv_parser).</li>
+                <li><strong>Traceability:</strong> Every tool step, token tally, and unified diff logged to JSONL traces.</li>
+              </ul>
+              <div class="panel-actions">
+                <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram/tree/main/03_agent_harness" target="_blank" rel="noopener">View Source on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- #07 -->
+          <div role="tabpanel" id="panel-07" aria-labelledby="tab-07" hidden="until-found">
+            <div class="panel-card">
+              <div class="panel-badge-row">
+                <span class="chip chip--ok">14/14 Pytest PASS</span>
+                <span class="chip">BS4 + SQLite TTL Cache</span>
+              </div>
+              <h3>#07 AI Research Agent</h3>
+              <p class="panel-desc">
+                Pluggable search architecture (Tavily, Wikipedia, DuckDuckGo, and deterministic offline fixtures) feeding an HTML cleaner, deduplicator, claim extractor, cited Markdown synthesizer, and SQLite TTL cache.
+              </p>
+              <ul class="metric-list">
+                <li><strong>Offline determinism:</strong> 14/14 unit and pipeline tests run zero-network via fixture search providers.</li>
+                <li><strong>Cache discipline:</strong> SQLite TTL cache prevents redundant fetches while maintaining source attribution.</li>
+              </ul>
+              <div class="panel-actions">
+                <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram/tree/main/07_ai_research_agent" target="_blank" rel="noopener">View Source on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- #08 -->
+          <div role="tabpanel" id="panel-08" aria-labelledby="tab-08" hidden="until-found">
+            <div class="panel-card">
+              <div class="panel-badge-row">
+                <span class="chip chip--ok">14/14 Pytest PASS</span>
+                <span class="chip">discord.py + httpx + SQLite WAL</span>
+                <span class="chip">Dockerfile</span>
+              </div>
+              <h3>#08 Modular Discord Bot</h3>
+              <p class="panel-desc">
+                Production-structured async Discord bot split into general, automation, and moderation Cogs with Open-Meteo weather and GitHub embeds, persistent SQLite WAL reminder scheduling, per-user cooldown guards, and mock-gateway async tests.
+              </p>
+              <ul class="metric-list">
+                <li><strong>Async test coverage:</strong> 14/14 pytest-asyncio tests verify embeds, reminders, cooldowns, and moderation audits without live tokens.</li>
+                <li><strong>Containerized:</strong> Ships with Dockerfile and .env.example template (0 secrets in repo).</li>
+              </ul>
+              <div class="panel-actions">
+                <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram/tree/main/08_discord_bot" target="_blank" rel="noopener">View Source on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- #09 -->
+          <div role="tabpanel" id="panel-09" aria-labelledby="tab-09" hidden="until-found">
+            <div class="panel-card">
+              <div class="panel-badge-row">
+                <span class="chip chip--ok">14/14 Pytest PASS</span>
+                <span class="chip">Pure Python + Exhaustive Minimax</span>
+              </div>
+              <h3>#09 Twenty-One Game Optimal AI</h3>
+              <p class="panel-desc">
+                Corrects the classic broken dual-counter slide implementation into the true shared-sequence 0 -&gt; 21 state machine, paired with a modulo-4 optimal policy formally verified against exhaustive minimax across all 21 game states.
+              </p>
+              <ul class="metric-list">
+                <li><strong>Formal state proof:</strong> 21/21 misere and normal states checked with 0 mismatches against exact minimax.</li>
+                <li><strong>Monte Carlo verification:</strong> 100.0% (1,000/1,000) win rate going second vs random, greedy, and mixed opponents.</li>
+              </ul>
+              <div class="panel-actions">
+                <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram/tree/main/09_twenty_one_game" target="_blank" rel="noopener">View Source on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- #10 -->
+          <div role="tabpanel" id="panel-10" aria-labelledby="tab-10" hidden="until-found">
+            <div class="panel-card">
+              <div class="panel-badge-row">
+                <span class="chip chip--ok">12/12 Pytest PASS</span>
+                <span class="chip">Pure Python Crew Engine</span>
+              </div>
+              <h3>#10 Pure-Python Multi-Agent System</h3>
+              <p class="panel-desc">
+                Lightweight CrewAI-style Agent/Task/Crew/kickoff orchestration supporting both sequential and hierarchical execution modes, typed handoff schemas, and a CriticVerifier quality-gate revision loop.
+              </p>
+              <ul class="metric-list">
+                <li><strong>Closed-loop revision:</strong> Researcher -&gt; Analyst -&gt; ReportWriter -&gt; CriticVerifier raises output score from 0.70 to 1.00 above the 0.85 gate.</li>
+                <li><strong>Traceable execution:</strong> Complete step timings, schemas, and scores saved to reports/execution_trace.json.</li>
+              </ul>
+              <div class="panel-actions">
+                <a class="btn btn--primary" href="https://github.com/vanovri/ai-systems-4gb-vram/tree/main/10_multi_agent_system" target="_blank" rel="noopener">View Source on GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="ledger">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Complete Verified Benchmark Ledger</h2>
+        <p>
+          Every number below is extracted verbatim from local JSON benchmark reports in the repository. Scroll horizontally with keyboard focus or touch on compact screens.
+        </p>
+      </div>
+
+      <div tabindex="0" role="region" aria-labelledby="benchmark-table-caption" class="table-wrapper">
+        <table class="bench-table">
+          <caption id="benchmark-table-caption">Master Verification Ledger: 10 AI/ML &amp; Python Systems on GTX 1650 Ti 4 GB VRAM (Total: 151/151 Pytest PASS)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Project</th>
+              <th scope="col">Core Stack</th>
+              <th scope="col">Verified Metric Proof</th>
+              <th scope="col">Pytest</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">01 Two-Tower RecSys</th>
+              <td>PyTorch CUDA FP16</td>
+              <td>2k x 5k (230k interactions): 4.23x Recall@10 (0.0841), 5.44x NDCG@10 (0.0865), -51.5% Top-5% viral bias via Log-Q; 0.105 ms CPU p50</td>
+              <td><span class="pass-pill">17/17 PASS</span></td>
+            </tr>
+            <tr>
+              <th scope="row">02 Qwen3-0.6B LoRA</th>
+              <td>Transformers + PEFT</td>
+              <td>Banking77 (77 intents, r=8, 0.192% params, 1,305 MiB VRAM): 84.59% full 3,076 test Exact-Match &amp; Macro-F1, 89.34% Top-3 (85.97% stratified vs 0.00% Base)</td>
+              <td><span class="pass-pill">15/15 PASS</span></td>
+            </tr>
+            <tr>
+              <th scope="row">03 Coding Agent Harness</th>
+              <td>Pure Python + Sandbox</td>
+              <td>4 sandboxed tools + path-jail + JSONL trace: 3/3 real repo bugs solved (checkout_cart, rate_limiter, csv_parser)</td>
+              <td><span class="pass-pill">17/17 PASS</span></td>
+            </tr>
+            <tr>
+              <th scope="row">04 Pure NumPy Quantizer</th>
+              <td>NumPy + Qwen3-0.6B</td>
+              <td>g=64 + real 4-bit nibble packing: WikiText-2 PPL FP16 34.36 -&gt; INT8 34.47 (+0.30%, 1.88x) -&gt; INT4 Sym 43.59 (3.77x); GPTQ-lite -67.70% Layer-10 L2 err; LoRA INT4 (236 MiB linear) 76.10% Exact-Match / 84.16% Top-3</td>
+              <td><span class="pass-pill">16/16 PASS</span></td>
+            </tr>
+            <tr>
+              <th scope="row">05 Neural Pong World Model</th>
+              <td>PyTorch FP16 + FastAPI</td>
+              <td>1.58M U-Net (140k+30k frames + 8-step DAgger, 0 pong_env imports): 101.2 FPS (26.6 MiB VRAM), 0.9401 Dynamic IoU, 0.286 px ball err, 100.0% (300/300) counterfactual paddle order, 60-step right paddle err 0.20 px</td>
+              <td><span class="pass-pill">17/17 PASS</span></td>
+            </tr>
+            <tr>
+              <th scope="row">06 Personal RAG Assistant</th>
+              <td>FAISS + BM25 + RRF</td>
+              <td>IndexFlatIP + BM25 + RRF + inline [source#chunk] citations + OOS refusal: Recall@3 = 1.00, MRR = 1.00, Refusal = 1.00</td>
+              <td><span class="pass-pill">15/15 PASS</span></td>
+            </tr>
+            <tr>
+              <th scope="row">07 AI Research Agent</th>
+              <td>Python + BS4 + SQLite</td>
+              <td>Pluggable search + HTML clean dedup + cited Markdown brief + SQLite TTL cache</td>
+              <td><span class="pass-pill">14/14 PASS</span></td>
+            </tr>
+            <tr>
+              <th scope="row">08 Modular Discord Bot</th>
+              <td>discord.py + httpx</td>
+              <td>Modular Cogs (general, automation, moderation), Open-Meteo &amp; GitHub embeds, SQLite WAL reminders, Dockerfile</td>
+              <td><span class="pass-pill">14/14 PASS</span></td>
+            </tr>
+            <tr>
+              <th scope="row">09 Twenty-One Optimal AI</th>
+              <td>Pure Python Minimax</td>
+              <td>21/21 exhaustive minimax states verified; 100.0% (1,000/1,000) win rate going second vs random/greedy/mixed</td>
+              <td><span class="pass-pill">14/14 PASS</span></td>
+            </tr>
+            <tr>
+              <th scope="row">10 Multi-Agent System</th>
+              <td>Pure Python Crew</td>
+              <td>Sequential + hierarchical orchestration with Researcher -&gt; Analyst -&gt; Writer -&gt; Critic revision loop (0.70 -&gt; 1.00)</td>
+              <td><span class="pass-pill">12/12 PASS</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="gallery">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Visual Benchmark Proof Gallery</h2>
+        <p>
+          Direct outputs generated by the local training and evaluation pipelines on the GTX 1650 Ti 4 GB testbed.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gal-card">
+          <img src="/blog/10-ai-systems-4gb-vram/assets/rollout_comparison.gif" alt="Animated Neural Pong rollout comparison showing ground truth vs world model predictions" width="768" height="384" loading="lazy" />
+          <figcaption class="gal-body">
+            <h3>Neural Pong Autoregressive Rollout</h3>
+            <p>101.2 FPS neural frame generation with 26.6 MiB VRAM and 100.0% (300/300) counterfactual action ordering.</p>
+          </figcaption>
+        </figure>
+        <figure class="gal-card">
+          <img src="/blog/10-ai-systems-4gb-vram/assets/layer10_int4_snap.png" alt="Layer 10 INT4 weight quantization snap plot for Qwen3-0.6B" width="900" height="540" loading="lazy" />
+          <figcaption class="gal-body">
+            <h3>Pure NumPy INT4 Weight Snapping</h3>
+            <p>64 FP16 attention weights packed into 36 bytes (2x INT4 per uint8 nibble) with zero external quantization libraries.</p>
+          </figcaption>
+        </figure>
+        <figure class="gal-card">
+          <img src="/blog/10-ai-systems-4gb-vram/assets/quant_summary.png" alt="WikiText-2 perplexity and compression summary across FP16, INT8, INT4, and GPTQ-lite" width="900" height="540" loading="lazy" />
+          <figcaption class="gal-body">
+            <h3>WikiText-2 Compression vs Perplexity</h3>
+            <p>INT8 stays within +0.30% PPL at 1.88x compression; GPTQ-lite trims Layer-10 L2 error by -67.70%.</p>
+          </figcaption>
+        </figure>
+        <figure class="gal-card">
+          <img src="/blog/10-ai-systems-4gb-vram/assets/loss_curve.png" alt="Qwen3-0.6B Banking77 PEFT LoRA training and evaluation loss curve" width="900" height="540" loading="lazy" />
+          <figcaption class="gal-body">
+            <h3>Qwen3-0.6B LoRA Convergence (1,305 MiB)</h3>
+            <p>Training 0.192% parameters lifts Banking77 accuracy from 0.00% zero-shot to 84.59% on the full 3,076-sample test split.</p>
+          </figcaption>
+        </figure>
+        <figure class="gal-card">
+          <img src="/blog/10-ai-systems-4gb-vram/assets/comparison_plot.png" alt="Two-Tower RecSys benchmark chart comparing baseline vs Log-Q popularity debiasing" width="900" height="540" loading="lazy" />
+          <figcaption class="gal-body">
+            <h3>Two-Tower RecSys Log-Q Debiasing</h3>
+            <p>4.23x Recall@10, 5.44x NDCG@10, and -51.5% Top-5% viral head bias reduction at 0.105 ms CPU p50.</p>
+          </figcaption>
+        </figure>
+        <figure class="gal-card">
+          <img src="/blog/10-ai-systems-4gb-vram/assets/rollout_grid.png" alt="Static frame grid comparing ground truth Pong states against Neural Pong predictions over 60 steps" width="900" height="540" loading="lazy" />
+          <figcaption class="gal-body">
+            <h3>60-Step Neural Pong Rollout Grid</h3>
+            <p>0.9401 1-step Dynamic IoU, 0.286 px ball error, and 0.20 px right-paddle drift after 60 autoregressive steps.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="bugs">
+    <div class="container">
+      <div class="sec-head">
+        <h2>3 Critical Reference Bugs Caught &amp; Fixed</h2>
+        <p>
+          Moving from slide pseudocode to verified local execution uncovered three subtle failure modes that were fixed and locked with regression tests.
+        </p>
+      </div>
+
+      <div class="bugs-grid">
+        <article class="bug-card">
+          <span class="chip chip--accent">Fix #1 · Quantization</span>
+          <h3>Zero-Division &amp; Real 4-Bit Packing</h3>
+          <p>Guarded scale computation with np.maximum((w_max - w_min) / (2**b - 1), 1e-8) for constant tensors and implemented real nibble bit-packing (pack_int4/unpack_int4) instead of float-only simulation.</p>
+        </article>
+        <article class="bug-card">
+          <span class="chip chip--accent">Fix #2 · World Model</span>
+          <h3>Gradient-Breaking Threshold + TU117 FP16</h3>
+          <p>Removed hard sigmoid thresholding before BCE loss, switched to raw-logit BCEWithLogitsLoss + Soft Dice + GameNGen noise + 8-step DAgger, and added a TU117 cuDNN FP16 NaN bypass for GTX 1650 Ti.</p>
+        </article>
+        <article class="bug-card">
+          <span class="chip chip--accent">Fix #3 · Game Theory</span>
+          <h3>True Shared-Sequence 0 -&gt; 21 Rules</h3>
+          <p>Replaced broken independent counters with the genuine shared-sequence state machine and proved modulo-4 AI optimality exhaustively across all 21/21 game states.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-meta">
+      <strong>Ardhya Novri Ramadhan</strong> / Verified local benchmarks on GTX 1650 Ti 4 GB VRAM (21 Nov 2026).
+    </div>
+    <div class="footer-links">
+      <a href="/">Portfolio Home</a>
+      <a href="/projects">All Projects</a>
+      <a href="/blog/teardown-maganghub-kemnaker-nextjs-seo">MagangHub SEO Teardown</a>
+      <a href="https://github.com/vanovri/ai-systems-4gb-vram" target="_blank" rel="noopener">GitHub Monorepo</a>
+      <a href="https://www.linkedin.com/in/dhya" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/blog/10-ai-systems-4gb-vram/ai-systems.js" defer></script>
+</body>
+</html>

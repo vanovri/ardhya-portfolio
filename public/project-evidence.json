@@ -3,6 +3,36 @@
   "scope": "Public and local flagship source inspection. Source references do not establish production, clinical, hardware, or benchmark validation.",
   "projects": [
     {
+      "name": "ai-systems-4gb-vram",
+      "description": "10 production AI/ML and Python systems verified locally on a 4 GB GTX 1650 Ti (151/151 pytest PASS): Neural Pong World Model (101.2 FPS, 0 game engine imports), Pure NumPy INT4 + GPTQ-lite (-67.70% L2 err), Qwen3-0.6B LoRA (84.59% Banking77), Two-Tower RecSys (4.23x Recall@10), and Hybrid RAG (1.00 MRR).",
+      "page": "blog/10-ai-systems-4gb-vram/index.html",
+      "sourceCommit": "4f356c1ecdcb0a639c0e04d578a7b6493eff4d98",
+      "sourceFiles": [
+        "README.md",
+        "verify_all.ps1",
+        "05_neural_pong_world_model/reports/eval_rollout.json",
+        "04_quantize_your_own_llm/reports/quant_benchmark.json",
+        "02_tiny_model_lora_banking77/reports/eval_results.json",
+        "01_instagram_two_tower/reports/benchmark.json",
+        "06_personal_rag_assistant/reports/rag_eval.json"
+      ]
+    },
+    {
+      "name": "maganghub-nextjs-seo-blueprint",
+      "description": "Canonical Next.js App Router SEO, Google for Jobs JSON-LD, Expired Job 410 Guard, GEO llms.txt + AI feeds, and Zero-Dep 8-Gate CI Validator for maganghub.kemnaker.go.id (83/83 PASS, 1,518 fuzz, 15/15 STRIDE mitigated, p99 15.99ms).",
+      "page": "blog/teardown-maganghub-kemnaker-nextjs-seo/index.html",
+      "sourceCommit": "927b7186bc3d47cbae8460fac2fee7832ea361e3",
+      "sourceFiles": [
+        "README.md",
+        "packages/nextjs-blueprint/app/layout.metadata.ts",
+        "packages/nextjs-blueprint/app/sitemap.ts",
+        "packages/nextjs-blueprint/lib/job-schema.ts",
+        "packages/nextjs-blueprint/middleware.ts",
+        "packages/seo-ci-gate/scripts/validate-seo.mjs",
+        "reports/stride-matrix.json"
+      ]
+    },
+    {
       "name": "hyperion-omega",
       "description": "20-channel institutional exchange and formally verified distributed systems monorepo (local repository, 20/20 Overclock channels green, 1,261/1,280 mutation kill, 500k 0 B/cycle soak, 21/21 Wave 6 Rust 1.99 post-merge verification PASS).",
       "page": "projects/hyperion-omega.html",

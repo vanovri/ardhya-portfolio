@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="MagangHub Kemnaker Next.js SEO and GEO Blueprint architectural preview showing 83/83 tests PASS, 15/15 STRIDE mitigated, p99 15.99ms, and 8-gate CI validator">
+  <title>MagangHub Kemnaker Next.js SEO and GEO Blueprint illustration</title>
+  <defs>
+    <linearGradient id="bgOuterMH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <filter id="shadowMH" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+    <linearGradient id="mhAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b5fc4"/>
+      <stop offset="100%" stop-color="#111317"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgOuterMH)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#shadowMH)"/>
+  <g transform="translate(48, 36)">
+    <!-- Left Card: Empirical Teardown & Patch #0-#5 -->
+    <rect x="44" y="44" width="510" height="590" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <rect x="76" y="76" width="446" height="156" rx="18" fill="url(#mhAccent)"/>
+    <text x="104" y="114" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#93c5fd">EMPIRICAL AUDIT · MAGANGHUB KEMNAKER RI</text>
+    <text x="104" y="154" font-family="Inter, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#ffffff">Next.js SSR -&gt; Google for Jobs</text>
+    <text x="104" y="186" font-family="SF Mono, monospace" font-size="14" fill="#e2e8f0">Blocker #0 Canonical 8/8 · 0 Sitemap vs Dealls 51,957</text>
+    <text x="104" y="210" font-family="SF Mono, monospace" font-size="13" fill="#86efac">Plausible Self-Hosted Live · Batch 3B 2026 GEO</text>
+
+    <!-- 6 Patch Rows -->
+    <rect x="76" y="252" width="446" height="52" rx="12" fill="#fdeefc" stroke="#f5c3bf"/>
+    <text x="96" y="284" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#b91c1c">Patch #0  layout.metadata.ts (Unlock 8/8 Canonical)</text>
+    <rect x="76" y="314" width="446" height="52" rx="12" fill="#ffffff" stroke="#d2d2d7"/>
+    <text x="96" y="346" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#111317">Patch #1  app/sitemap.ts (50k Shards + ACTIVE Only)</text>
+    <rect x="76" y="376" width="446" height="52" rx="12" fill="#ffffff" stroke="#d2d2d7"/>
+    <text x="96" y="408" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#111317">Patch #2  app/robots.ts + JobPosting JSON-LD</text>
+    <rect x="76" y="438" width="446" height="52" rx="12" fill="#ffffff" stroke="#d2d2d7"/>
+    <text x="96" y="470" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#111317">Patch #4  middleware.ts (HTTP 410 + Bounded LRU)</text>
+    <rect x="76" y="500" width="446" height="52" rx="12" fill="#ebf3fe" stroke="#bbd5fa"/>
+    <text x="96" y="532" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#0b5fc4">Patch #5  llms.txt + /ai/jobs.ndjson + /ai/faq.json</text>
+    <rect x="76" y="562" width="446" height="46" rx="12" fill="#ebf8f1" stroke="#b4e5cd"/>
+    <text x="96" y="590" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#0b6b46">Zero-Dep 8-Gate SEO CI Validator (Node 24 LTS)</text>
+
+    <!-- Right Top Card: Verification & STRIDE Proof -->
+    <rect x="576" y="44" width="484" height="284" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="606" y="84" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0b6b46">ADVERSARIAL VERIFICATION &amp; STRIDE GATE</text>
+    <rect x="606" y="106" width="204" height="92" rx="16" fill="#ffffff" stroke="#d2d2d7"/>
+    <text x="624" y="138" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#535e70">UNIT + E2E + FUZZ</text>
+    <text x="624" y="176" font-family="Inter, Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#0b6b46">83/83 PASS</text>
+    <rect x="826" y="106" width="204" height="92" rx="16" fill="#ffffff" stroke="#d2d2d7"/>
+    <text x="844" y="138" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#535e70">STRIDE THREAT MODEL</text>
+    <text x="844" y="176" font-family="Inter, Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#0b5fc4">15/15 MITIGATED</text>
+    <rect x="606" y="214" width="424" height="86" rx="16" fill="#11141b"/>
+    <text x="626" y="248" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#34d399">1,518 Fuzz Iterations · 50 KB ReDoS &lt;= 6.00 ms</text>
+    <text x="626" y="278" font-family="SF Mono, monospace" font-size="14" fill="#93c5fd">0 Runtime Deps · 0 SSRF Bypass · 0 Em-Dash</text>
+
+    <!-- Right Bottom Card: Stress & k6 SLA -->
+    <rect x="576" y="348" width="484" height="286" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="606" y="388" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0b5fc4">STRESS HARNESS &amp; K6 V2.4.0 SLA</text>
+    <rect x="606" y="410" width="424" height="62" rx="14" fill="#ffffff" stroke="#d2d2d7"/>
+    <text x="624" y="437" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#535e70">SITEMAP SHARD LATENCY (P99)</text>
+    <text x="624" y="460" font-family="Inter, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#111317">15.99 ms (10k URLs) · 41.92 ms (50k URLs)</text>
+    <rect x="606" y="484" width="424" height="62" rx="14" fill="#ffffff" stroke="#d2d2d7"/>
+    <text x="624" y="511" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#535e70">HTTP 410 GONE EDGE MIDDLEWARE</text>
+    <text x="624" y="534" font-family="Inter, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#111317">27.21 ms p99 @ 14,273 RPS · k6 4.53 ms MW</text>
+    <rect x="606" y="558" width="424" height="54" rx="14" fill="#ebf8f1" stroke="#b4e5cd"/>
+    <text x="624" y="590" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#0b6b46">k6 3,794/3,794 Checks · 0% Error Rate · v1.0.0</text>
+  </g>
+</svg>

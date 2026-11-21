@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="10 AI Systems on 4 GB VRAM architectural preview showing Neural Pong 101.2 FPS, Pure NumPy INT4 Quantizer, Qwen3-0.6B LoRA 84.59%, and 151/151 pytest PASS">
+  <title>10 AI Systems on 4 GB VRAM project illustration</title>
+  <defs>
+    <linearGradient id="bgOuterAI" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <filter id="shadowAI" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+    <linearGradient id="gpuChip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b5fc4"/>
+      <stop offset="55%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0b6b46"/>
+    </linearGradient>
+    <linearGradient id="barBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0071e3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgOuterAI)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#shadowAI)"/>
+  <g transform="translate(48, 36)">
+    <!-- Left Card: 4 GB VRAM Neural Pong & World Model Engine -->
+    <rect x="44" y="44" width="510" height="590" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <rect x="76" y="76" width="446" height="270" rx="18" fill="#11141b" stroke="#2b3345" stroke-width="2"/>
+    <!-- Neural Pong Court Inside Screen -->
+    <line x1="299" y1="92" x2="299" y2="330" stroke="#334155" stroke-width="3" stroke-dasharray="10 10"/>
+    <rect x="108" y="168" width="14" height="72" rx="4" fill="#63a8ff"/>
+    <rect x="476" y="132" width="14" height="72" rx="4" fill="#34d399"/>
+    <path d="M 185 230 Q 255 190 352 162" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="6 5" opacity="0.7"/>
+    <circle cx="356" cy="160" r="10" fill="#f8fafc"/>
+    <rect x="96" y="94" width="150" height="28" rx="14" fill="#1e293b"/>
+    <text x="171" y="113" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#34d399">101.2 FPS · 26.6 MiB</text>
+    <rect x="348" y="94" width="154" height="28" rx="14" fill="#1e293b"/>
+    <text x="425" y="113" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#63a8ff">0 ENGINE IMPORTS</text>
+    <!-- GPU Chip Spec Strip -->
+    <rect x="76" y="370" width="446" height="122" rx="18" fill="url(#gpuChip)"/>
+    <text x="104" y="410" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#bfdbfe">GTX 1650 Ti · 4 GB VRAM BASELINE</text>
+    <text x="104" y="448" font-family="Inter, Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#ffffff">10 AI Systems · 151/151 Pytest</text>
+    <text x="104" y="476" font-family="SF Mono, monospace" font-size="14" fill="#e0f2fe">World Model · INT4/GPTQ · LoRA · Two-Tower · RAG · Agents</text>
+    <!-- Bottom Metrics Row -->
+    <rect x="76" y="516" width="214" height="86" rx="16" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="96" y="550" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#535e70">COUNTERFACTUAL ORDER</text>
+    <text x="96" y="584" font-family="Inter, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#0b6b46">100.0% (300/300)</text>
+    <rect x="308" y="516" width="214" height="86" rx="16" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="328" y="550" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#535e70">1-STEP DYNAMIC IOU</text>
+    <text x="328" y="584" font-family="Inter, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#0b5fc4">0.9401 · 0.286 px</text>
+
+    <!-- Right Top Card: Pure NumPy INT4 + GPTQ-Lite Quantization -->
+    <rect x="576" y="44" width="484" height="284" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="606" y="84" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0b5fc4">PURE NUMPY INT4 + GPTQ-LITE (QWEN3-0.6B)</text>
+    <!-- Bar Comparison -->
+    <text x="606" y="128" font-family="Inter, Segoe UI, sans-serif" font-size="15" font-weight="600" fill="#111317">FP16 Linear (840 MiB)</text>
+    <rect x="606" y="138" width="420" height="22" rx="11" fill="#e2e8f0"/>
+    <rect x="606" y="138" width="420" height="22" rx="11" fill="#94a3b8"/>
+    <text x="606" y="190" font-family="Inter, Segoe UI, sans-serif" font-size="15" font-weight="600" fill="#111317">INT8 Group-64 (1.88x, PPL +0.30%)</text>
+    <rect x="606" y="200" width="420" height="22" rx="11" fill="#e2e8f0"/>
+    <rect x="606" y="200" width="224" height="22" rx="11" fill="url(#barBlue)"/>
+    <text x="606" y="252" font-family="Inter, Segoe UI, sans-serif" font-size="15" font-weight="600" fill="#111317">INT4 Nibble-Packed (3.77x · GPTQ -67.70% L2)</text>
+    <rect x="606" y="262" width="420" height="22" rx="11" fill="#e2e8f0"/>
+    <rect x="606" y="262" width="112" height="22" rx="11" fill="#0b6b46"/>
+    <rect x="734" y="258" width="290" height="30" rx="15" fill="#ebf8f1" stroke="#b4e5cd"/>
+    <text x="879" y="278" text-anchor="middle" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0b6b46">LoRA INT4 236 MiB · 76.10% Acc</text>
+
+    <!-- Right Bottom Card: LoRA Banking77 + Two-Tower + Hybrid RAG -->
+    <rect x="576" y="348" width="484" height="286" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="606" y="388" font-family="SF Mono, monospace" font-size="13" font-weight="700" fill="#0b6b46">LORA + TWO-TOWER RECSYS + HYBRID RAG</text>
+    <rect x="606" y="408" width="424" height="62" rx="14" fill="#ffffff" stroke="#d2d2d7"/>
+    <text x="624" y="435" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#535e70">#02 QWEN3-0.6B LORA (0.192% PARAMS · 1,305 MiB)</text>
+    <text x="624" y="458" font-family="Inter, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#111317">0.00% Base -&gt; 84.59% Full Test (89.34% Top-3)</text>
+    <rect x="606" y="482" width="424" height="62" rx="14" fill="#ffffff" stroke="#d2d2d7"/>
+    <text x="624" y="509" font-family="SF Mono, monospace" font-size="12" font-weight="700" fill="#535e70">#01 TWO-TOWER RECSYS (LOG-Q DEBIASING)</text>
+    <text x="624" y="532" font-family="Inter, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#111317">4.23x Recall@10 · -51.5% Viral Bias · 0.105 ms</text>
+    <rect x="606" y="556" width="424" height="58" rx="14" fill="#ebf3fe" stroke="#bbd5fa"/>
+    <text x="624" y="591" font-family="SF Mono, monospace" font-size="14" font-weight="700" fill="#0b5fc4">#06 RAG 1.00 MRR · #03 Agent 3/3 · #09 100% Minimax</text>
+  </g>
+</svg>

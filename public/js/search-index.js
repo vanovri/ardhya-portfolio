@@ -1,5 +1,17 @@
 export default [
   {
+    "title": "10 AI Systems on 4 GB VRAM",
+    "url": "blog/10-ai-systems-4gb-vram/",
+    "category": "Case Study",
+    "text": "10 production AI/ML & Python systems verified on GTX 1650 Ti 4 GB VRAM (151/151 pytest PASS): Neural Pong World Model 101.2 FPS, Pure NumPy INT4 + GPTQ-lite -67.70% L2 error, Qwen3-0.6B LoRA 84.59% Banking77, Two-Tower RecSys 4.23x Recall@10, Hybrid RAG 1.00 MRR, Coding Agent Harness 3/3 bugs, Multi-Agent."
+  },
+  {
+    "title": "MagangHub Kemnaker Next.js SEO & GEO Teardown",
+    "url": "blog/teardown-maganghub-kemnaker-nextjs-seo/",
+    "category": "Case Study",
+    "text": "Empirical teardown and canonical Next.js App Router SEO, Google for Jobs JSON-LD, Expired Job 410 Guard, GEO llms.txt and 8-Gate CI blueprint for maganghub.kemnaker.go.id: 83/83 tests PASS, 1,518 fuzz, 15/15 STRIDE mitigated, p99 15.99ms, k6 4.53ms."
+  },
+  {
     "title": "PT Denki Engineering | Electrical Staff Intern",
     "url": "/experience.html#denki-maganghub",
     "category": "Experience",

@@ -2,6 +2,24 @@
   "schemaVersion": 1,
   "previews": [
     {
+      "title": "10 AI Systems on 4 GB VRAM",
+      "slug": "ai-systems-4gb-vram",
+      "card": "blog/10-ai-systems-4gb-vram/",
+      "preview": "img/previews/ai-systems-4gb-vram.svg",
+      "kind": "source-grounded architectural preview illustration",
+      "previous_url": null,
+      "sha256": "617f27a89f0aedd93eff592bb5dfe7a7e52756d8a3227373d77d663d6010f707"
+    },
+    {
+      "title": "MagangHub Next.js SEO & GEO Blueprint",
+      "slug": "maganghub-nextjs-seo-blueprint",
+      "card": "blog/teardown-maganghub-kemnaker-nextjs-seo/",
+      "preview": "img/previews/maganghub-nextjs-seo-blueprint.svg",
+      "kind": "source-grounded architectural preview illustration",
+      "previous_url": null,
+      "sha256": "ed71f7df0f9d432db5c3827ccc4e1e706a2b2ca17bf9d04be3e896aa1358a037"
+    },
+    {
       "title": "HYPERION OMEGA",
       "slug": "hyperion-omega",
       "card": "projects/hyperion-omega.html",
