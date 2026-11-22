@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ardhyanovri.my.id/</loc><lastmod>2026-11-21</lastmod></url>
-  <url><loc>https://ardhyanovri.my.id/about</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://ardhyanovri.my.id/projects</loc><lastmod>2026-11-21</lastmod></url>
+  <url><loc>https://ardhyanovri.my.id/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://ardhyanovri.my.id/projects</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/experience</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/credentials</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://ardhyanovri.my.id/lab</loc><lastmod>2026-11-02</lastmod></url>
-  <url><loc>https://ardhyanovri.my.id/contact</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/privacy</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/emg</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/projects/agent-referee</loc><lastmod>2026-11-02</lastmod></url>
@@ -90,11 +87,11 @@
     <loc>https://ardhyanovri.my.id/blog/10-ai-systems-4gb-vram</loc>
     <lastmod>2026-11-21</lastmod>
   </url>
-  <url><loc>https://ardhyanovri.my.id/labs</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/labs/dst-kv</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/labs/kronos</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/labs/novaserve</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/labs/aegis</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/labs/vectradb</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://ardhyanovri.my.id/labs/spectre</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ardhyanovri.my.id/projects/engineering-labs</loc><lastmod>2026-11-23</lastmod></url>
 </urlset>

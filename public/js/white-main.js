@@ -18,7 +18,7 @@ function closeMenu(){
 menuButton?.addEventListener('click',()=>{
   sheet.classList.add('open'); sheet.removeAttribute('inert');
   menuButton.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden';
-  closeButton.focus();
+  closeButton.focus({preventScroll:true});
 });
 closeButton?.addEventListener('click',closeMenu);
 sheet?.querySelector('nav')?.addEventListener('click',event=>{if(event.target.closest('a'))closeMenu();});

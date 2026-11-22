@@ -170,7 +170,7 @@
       ]
     },
     {
-      "source": "/labs(\\.html)?",
+      "source": "/projects/engineering-labs(\\.html)?",
       "headers": [
         {
           "key": "Content-Security-Policy",
@@ -328,6 +328,26 @@
         }
       ],
       "destination": "https://ardhyanovri.my.id/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/#about",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/lab",
+      "destination": "/projects/engineering-labs#signal",
+      "permanent": true
+    },
+    {
+      "source": "/labs",
+      "destination": "/projects/engineering-labs#systems",
       "permanent": true
     }
   ]

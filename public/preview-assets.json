@@ -2,6 +2,15 @@
   "schemaVersion": 1,
   "previews": [
     {
+      "title": "Engineering Labs",
+      "slug": "engineering-labs",
+      "card": "projects/engineering-labs.html",
+      "preview": "img/previews/engineering-labs.svg",
+      "kind": "Apple-studio 3-panel architectural preview illustration",
+      "previous_url": null,
+      "sha256": "57ac6047b1dde2c5b5a9776f1a6ab2d850506f2f1a6565a67ac71c2d340c8373"
+    },
+    {
       "title": "10 AI Systems on 4 GB VRAM",
       "slug": "ai-systems-4gb-vram",
       "card": "blog/10-ai-systems-4gb-vram/",
@@ -65,7 +74,7 @@
       "sha256": "bce843a00724cbd18ccbe786e390ea4f0739333a2ec4ddbaee4340cee741491f"
     },
     {
-      "title": "AGY \u00d7 Codex Video Studio",
+      "title": "AGY × Codex Video Studio",
       "slug": "agy-codex-video-studio",
       "card": "projects/agy-codex-video-studio.html",
       "preview": "img/previews/agy-codex-video-studio.svg",

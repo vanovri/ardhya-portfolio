@@ -1,4 +1,25 @@
 /* Apple-HIG Editorial Surface + Precision Dark Obsidian Telemetry Consoles */
+.labs-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .88fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+}
+.labs-intro h1 { margin-block-start: 1rem; text-wrap: balance; }
+.labs-intro img { display: block; width: 100%; height: auto; border-radius: var(--r-lg, 20px); corner-shape: squircle; border: 1px solid var(--rule-hairline, rgba(0, 0, 0, .08)); box-shadow: var(--shadow, 0 2px 8px rgba(0, 0, 0, .04), 0 12px 28px -8px rgba(0, 0, 0, .08)); }
+#systems, #signal { scroll-margin-top: 5.5rem; }
+.lab-controls h3 { grid-column: 1 / -1; font-size: 1.1rem; margin-bottom: 1.5rem; }
+.labs-workbench-section .silicon-bar { margin-block: 0 1.5rem; }
+.labs-bento .lab-card[hidden] { display: none; }
+@media (max-width: 767px) {
+  .labs-intro { grid-template-columns: minmax(0, 1fr); }
+  .lab-layout { grid-template-columns: minmax(0, 1fr); }
+  .lab-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lab-controls select { min-width: 0; max-width: 100%; }
+}
+@media (max-width: 420px) {
+  .lab-controls { grid-template-columns: minmax(0, 1fr); }
+}
 .labs-hero-eyebrow-row {
   display: flex;
   flex-wrap: wrap;
@@ -98,20 +119,28 @@
 }
 
 .labs-filter {
-  min-height: 36px;
-  padding: 0 0.85rem;
-  border-radius: 8px;
+  min-height: 38px;
+  padding: 0 0.95rem;
+  border-radius: var(--r-pill, 980px);
   border: 1px solid transparent;
   background: transparent;
-  color: #68686e;
+  color: var(--ink-2, #6E6E73);
   font: 500 0.83rem var(--f-body);
   cursor: pointer;
   transition: background-color 140ms var(--ease-out), color 140ms var(--ease-out), transform 100ms var(--ease-out);
 }
 
-.labs-filter:hover {
-  background: #f4f4f6;
-  color: #1d1d1f;
+@media (hover: hover) and (pointer: fine) {
+  .labs-filter:hover {
+    background: #f4f4f6;
+    color: var(--ink, #1d1d1f);
+  }
+}
+
+@media (pointer: coarse) {
+  .labs-filter {
+    min-height: 44px;
+  }
 }
 
 .labs-filter:active {
@@ -119,7 +148,7 @@
 }
 
 .labs-filter[aria-pressed="true"] {
-  background: #1d1d1f;
+  background: var(--ink, #1d1d1f);
   color: #ffffff;
 }
 
@@ -147,8 +176,10 @@
   transition: border-color 160ms var(--ease-out);
 }
 
-.lab-card:hover {
-  border-color: #c7c7cc;
+@media (hover: hover) and (pointer: fine) {
+  .lab-card:hover {
+    border-color: #c7c7cc;
+  }
 }
 
 @media (min-width: 980px) {
@@ -187,7 +218,8 @@
 .lab-title {
   font-size: 1.55rem;
   letter-spacing: -0.03em;
-  color: #1d1d1f;
+  color: var(--ink, #1d1d1f);
+  text-wrap: balance;
 }
 
 .lab-pills {
@@ -231,6 +263,7 @@
   line-height: 1.6;
   color: #5c5c62;
   max-width: 64ch;
+  text-wrap: pretty;
 }
 
 /* Concentric radius: 20px outer card - 8px visual inset = 12px inner console */

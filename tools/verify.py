@@ -43,7 +43,19 @@ for source in ROOT.rglob('*.css'):
 
 gallery_text = (ROOT / 'projects.html').read_text(encoding='utf-8')
 cards = [attrs for tag, attrs in Page(gallery_text).nodes if tag in ('a', 'article') and 'card' in attrs.get('class', '').split()]
-assert len(cards) == len({card.get('href') or card.get('id') for card in cards}) == 60
+assert len(cards) == len({card.get('href') or card.get('id') for card in cards}) == 61
+lab_page = 'projects/engineering-labs.html'
+assert sum(card.get('href') == lab_page for card in cards) == 1
+lab_nodes = Page((ROOT / lab_page).read_text(encoding='utf-8')).nodes
+assert {'systems', 'signal', 'lab-canvas', 'labs-bento'} <= {attrs.get('id') for _, attrs in lab_nodes}
+assert len({attrs['href'] for _, attrs in lab_nodes if 'data-studio-launch' in attrs}) == 6
+home_nodes = Page((ROOT / 'index.html').read_text(encoding='utf-8')).nodes
+assert {'about', 'contact'} <= {attrs.get('id') for _, attrs in home_nodes}
+for source in html:
+    menus = re.findall(r'<nav aria-label="(?:Primary|Mobile)">(.*?)</nav>', source.read_text(encoding='utf-8'), re.S)
+    for menu in menus:
+        links = [Path(attrs['href']).name for tag, attrs in Page(menu).nodes if tag == 'a']
+        assert links == ['index.html', 'projects.html', 'experience.html', 'credentials.html'], source
 assert gallery_text.count('data-webgl-showcase') == 1
 assert 'data-webgl-showcase' not in gallery_text.split('</section>', 1)[0]
 assert any(card.get('id') == 'interactive-3d' for card in cards)
@@ -64,14 +76,14 @@ assert len(projects) == len({project['name'] for project in projects})
 assert publication['project_repositories'] == len(projects)
 assert publication['open_source_tagged_cards'] == sum('open-source' in card.get('data-tags', '').split() for card in cards)
 previews = json.loads((ROOT / 'preview-assets.json').read_text(encoding='utf-8'))['previews']
-assert len(previews) == len({p['card'] for p in previews}) == 60
+assert len(previews) == len({p['card'] for p in previews}) == len(cards)
 assert publication['tracked_preview_assets'] == len(previews)
 for preview in previews:
     image = ROOT / preview['preview']
     assert image.is_file() and hashlib.sha256(image.read_bytes()).hexdigest() == preview['sha256'], image
 card_blocks = re.findall(r'<a\b[^>]*class="card[^\"]*"[^>]*>.*?</a>', (ROOT / 'projects.html').read_text(encoding='utf-8'), re.S)
-assert len(card_blocks) == 59 and all('<img ' in block and 'Source and scope reviewed' not in block for block in card_blocks)
-for slug in ('cyberpunk-floating-ramen-stall', 'ferrum-kv', 'aether-core-engine', 'agy-codex-video-studio', 'aether-synth-flow', 'prompt-shield-eval', 'hyperion-omega', 'ai-systems-4gb-vram', 'maganghub-nextjs-seo-blueprint'):
+assert len(card_blocks) == len(cards) - 1 and all('<img ' in block and 'Source and scope reviewed' not in block for block in card_blocks)
+for slug in ('engineering-labs', 'cyberpunk-floating-ramen-stall', 'ferrum-kv', 'aether-core-engine', 'agy-codex-video-studio', 'aether-synth-flow', 'prompt-shield-eval', 'hyperion-omega', 'ai-systems-4gb-vram', 'maganghub-nextjs-seo-blueprint'):
     ElementTree.parse(ROOT / f'img/previews/{slug}.svg')
 assert 'src="/img/previews/enviid-website.jpg"' in gallery_text
 for project in projects:
@@ -82,4 +94,4 @@ for project in projects:
         assert (ROOT / project['page']).is_file(), project['page']
     for source in project['sourceFiles']:
         assert not source.startswith(('/', '\\')) and '..' not in source.split('/'), source
-print(f'PASS: {len(html)} HTML pages, internal HTML/CSS links, 60 unique gallery cards including inline 3D, 50 open-source tags, restored AGY SVGs, publication counts, {len(projects)} source records, and publication exclusions.')
+print(f'PASS: {len(html)} HTML pages, four primary links, Home anchors, six studio links, {len(cards)} gallery cards, verified preview hashes and {len(projects)} source records.')

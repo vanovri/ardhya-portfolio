@@ -34,6 +34,9 @@ h1,h2,h3,h4{font-family:var(--f-body);font-weight:600;letter-spacing:-.035em;lin
 .sheet{background:#fff;max-height:100dvh;overflow-y:auto;transform:translateY(-5px);transition-duration:220ms}
 .sheet nav a{font:500 1.6rem var(--f-body);letter-spacing:-.025em;padding:1rem 0}
 .sheet nav a[aria-current=page]{color:var(--accent)}
+.sheet[inert]{display:none}
+.sheet.open{visibility:visible}
+@starting-style{.sheet.open{opacity:0}}
 .sheet .btn{margin-top:1.8rem;flex-shrink:0}
 .hero{padding:5.5rem 0 6rem}
 .hero-grid{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:5rem;align-items:center}

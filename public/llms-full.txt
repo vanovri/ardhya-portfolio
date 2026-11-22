@@ -62,7 +62,7 @@ All descriptions across `ardhyanovri.my.id` enforce strict separation between ve
   - English Detailed Case Study: https://ardhyanovri.my.id/projects/emg-thesis
   - Indonesian Summary Page: https://ardhyanovri.my.id/emg
   - Interactive 3D Signal & DSP Workbench: https://ardhyanovri.my.id/signal-lab
-  - Interactive 2D Filter & UART Simulator: https://ardhyanovri.my.id/lab
+  - Interactive 2D Filter & UART Simulator: https://ardhyanovri.my.id/projects/engineering-labs#signal
 
 ### A. Hardware & Embedded Firmware Pipeline (`STM32CubeIDE` / C)
 1. **Analog Front-End Sensor**: DFRobot Analog EMG Sensor (`SEN0240`) with dry surface electrodes and internal analog instrumentation conditioning, connected to analog input pin **`ADC1 PA0`** (`0.0–3.3 V` input range) on an **`STM32F411CEU6`** (ARM Cortex-M4F with hardware floating-point unit).
@@ -125,7 +125,7 @@ All descriptions across `ardhyanovri.my.id` enforce strict separation between ve
   - **`520` recorded live Meta Muse Spark Open API calls** (`410` via Baseten + `110` via Fireworks AI, totaling `1,313,133` tokens and `42.47%` speculative decoding acceptance rate) captured for the Meta Global AI Developer Hackathon (`SignalProof Lab`, Team ID `1429535549246922`).
 
 ### 3.2 `3D Interactive Signal & Telemetry Lab` (`/signal-lab`)
-- **Live URL**: https://ardhyanovri.my.id/signal-lab (Companion 2D lab: https://ardhyanovri.my.id/lab)
+- **Live URL**: https://ardhyanovri.my.id/signal-lab (Companion 2D lab: https://ardhyanovri.my.id/projects/engineering-labs#signal)
 - **Capabilities**:
   1. **60fps 3D EMG Time-Frequency Waterfall**: Real-time interactive 3D canvas visualizing surface EMG spectral evolution across `0–500 Hz`, highlighting motor-unit recruitment bands (`20–250 Hz`), `50 Hz` mains hum spikes, and low-frequency motion artifacts.
   2. **Biquad IIR Direct Form II Transposed Filter Workbench**: Live toggleable cascade (`20 Hz` Butterworth HPF, `500 Hz` Butterworth LPF, `50 Hz` Notch at $Q = 30$) with real-time SNR improvement, 50 Hz rejection dB readout, and `400-sample` (`100 ms`) RMS/MAV window calculation.

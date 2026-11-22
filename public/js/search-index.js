@@ -1,13 +1,19 @@
 export default [
   {
+    "title": "Engineering Labs",
+    "url": "/projects/engineering-labs.html",
+    "category": "Project",
+    "text": "Engineering Labs Systems Lab interactive lab WASM Rust WebAssembly UART EMG VectraDB KronosLOB AegisBox NovaServe SpectreMesh DST-KV. Run six Rust and WebAssembly studios, filter a synthetic EMG signal, and follow a fragmented UART message byte by byte."
+  },
+  {
     "title": "10 AI Systems on 4 GB VRAM",
-    "url": "blog/10-ai-systems-4gb-vram/",
+    "url": "/blog/10-ai-systems-4gb-vram/",
     "category": "Case Study",
     "text": "10 production AI/ML & Python systems verified on GTX 1650 Ti 4 GB VRAM (151/151 pytest PASS): Neural Pong World Model 101.2 FPS, Pure NumPy INT4 + GPTQ-lite -67.70% L2 error, Qwen3-0.6B LoRA 84.59% Banking77, Two-Tower RecSys 4.23x Recall@10, Hybrid RAG 1.00 MRR, Coding Agent Harness 3/3 bugs, Multi-Agent."
   },
   {
     "title": "MagangHub Kemnaker Next.js SEO & GEO Teardown",
-    "url": "blog/teardown-maganghub-kemnaker-nextjs-seo/",
+    "url": "/blog/teardown-maganghub-kemnaker-nextjs-seo/",
     "category": "Case Study",
     "text": "Empirical teardown and canonical Next.js App Router SEO, Google for Jobs JSON-LD, Expired Job 410 Guard, GEO llms.txt and 8-Gate CI blueprint for maganghub.kemnaker.go.id: 83/83 tests PASS, 1,518 fuzz, 15/15 STRIDE mitigated, p99 15.99ms, k6 4.53ms."
   },
@@ -72,15 +78,15 @@ export default [
     "text": "Reproducible AI-assisted bin-packing tournament with peer reviews, a sealed synthetic benchmark, and an interactive dashboard."
   },
   {
-    "title": "About Ardhya.",
-    "url": "/about.html",
-    "category": "Page",
+    "title": "Profile on Home",
+    "url": "/index.html#about",
+    "category": "Home section",
     "text": "About / Profile About Ardhya. Ardhya Novri Ramadhan · Bekasi, Indonesia I'm Ardhya Novri Ramadhan , based in Bekasi. I hold a Bachelor of Engineering in Electrical Engineering from Diponegoro University (graduated 29 September 2026, GPA 3.43/4.00). I started with electronics, wiring circuits, assisting in the basic electronics lab and teaching PCB work at a student workshop, and software grew around that hardware. I served as a Basic Electronics Practicum Assistant for two consecutive semesters in the 2024/2025 academic year, the odd semester in 2024 and the even semester in 2025. I guided students through laboratory activities and electronic component use. My thesis made that link concrete. On a team building a rehabilitation-hand system, I owned the EMG subsystem : STM32F411 firmware in C that samples a SEN0240 sensor at a nominal 4 kHz through timer-triggered DMA, filters the signal (20 Hz HPF, 500 Hz LPF, 50 Hz notch) and computes RMS/MAV features, plus the full Python/Tkinter interface that plots, monitors and logs it. Teammates handled the stimulator and fuzzy control. I keep configured values and measured results as separate claims. Before that, I spent eight weeks at Soekarno-Hatta International Airport with PT Angkasa Pura Indonesia, learning UPS/converter systems and electrical protection, reading single-line diagrams (SLDs) and using basic AutoCAD. At Redesma Technologies I built, on my own, IoT temperature-monitoring (ESP32, DS18B20) and DC motor-control prototypes and a UART communication project, and presented them at my KP (internship) seminar. During community service in Mutihan, Klaten, I helped install a solar-powered Smart Owl House. Since October 2026 I've been CTO / Technical Lead at PT ENVIID Karbon Solusi (ENVIID Carbon Solutions) , where I am the sole developer of the company website, built with AI assistance, enviid.web.id . I also maintain open-source tools, including uart-fixture-kit, DataRescue, RepairGate and ApplyProof. I use coding agents openly, I say where they helped, and I verify their output with tests. Recent releases extend that work into cross-language numerical checks, WebGPU simulation, parametric CAD and browser interfaces. Each project links to its source, verification and stated limitations. Browse the project collection. Headline Bachelor of Engineering in Electrical Engineering, Diponegoro University | CTO / Technical Lead at ENVIID | Embedded Systems, Python & AI-Assisted Software Education Diponegoro University: B.Eng. Electrical Engineering, Aug 2022 – Sep 2026 · SMA Negeri 5 Bekasi, Natural Sciences, 2019 – 2022 Current role CTO / Technical Lead, PT ENVIID Karbon Solusi, Oct 2026 – Present Location Bekasi, Indonesia Links LinkedIn · GitHub · CV (PDF) Technical skills Microcontrollers STM32F411 / ARM Cortex-M4 (EMG acquisition) STM32 HAL / STM32CubeIDE: ADC, DMA, timers, USART ESP32 IoT prototypes and a UART communication project (Redesma) Embedded C Signals & peripherals 12-bit ADC with half/full-buffer DMA processing 20 Hz HPF, 500 Hz LPF, 50 Hz notch RMS/MAV over 400-sample windows UART telemetry at 115200 baud Software Python / Tkinter GUI, serial parsing, CSV logging CLIs and validation tools with automated tests React interfaces, FastAPI services, Git AI-assisted development, disclosed per project Electrical & field UPS / converter systems (internship exposure) Protection relays, SCADA instruction, PLC observation DS18B20 sensing and DC motor control Basic electronics lab assistance See the work behind this. Project pages explain what I built, how, and what I'm not claiming. Projects Experience I started my Electrical Staff internship at PT Denki Engineering on 16 November 2026 through Kemnaker’s MagangHub program (Batch 3, Angkatan 2, 2026)."
   },
   {
-    "title": "Get in touch.",
-    "url": "/contact.html",
-    "category": "Page",
+    "title": "Contact on Home",
+    "url": "/index.html#contact",
+    "category": "Home section",
     "text": "Contact Get in touch. For engineering work, software projects or a professional introduction, reach me by email or LinkedIn. Email ardhyasan@gmail.com Copy email Open mail app Connect on LinkedIn Based in Bekasi, Indonesia (UTC+7). Email is the most reliable way to reach me. LinkedIn linkedin.com/in/dhya GitHub github.com/vanovri CV (PDF) Download the latest CV ENVIID enviid.web.id, the company site I built"
   },
   {
@@ -102,9 +108,9 @@ export default [
     "text": "Bachelor of Engineering in Electrical Engineering, Diponegoro University · Bekasi, Indonesia Ardhya Novri Ramadhan. From sensor to screen: firmware, signals and the software around them. I work with electronics, signals and software. I am the sole developer of the ENVIID company website, built with AI assistance. Here are my projects, experience and the work behind them. Explore projects → About me ↗ Education B.Eng. Electrical Engineering, UNDIP Current role CTO / Technical Lead, ENVIID Ardhya Novri Ramadhan Selected work Engineering, with the details. All projects → Open-source software · 2026 RepairGate A code-repair verifier that checks candidate patches against protected tests and independent holdout cases. Read project notes ↗ Embedded systems · Thesis, 2026 EMG acquisition & monitoring STM32 acquisition and signal processing, connected to a Python interface for telemetry, plots and CSV logging. See my contribution ↗ Packing Arena 3-agent bin-packing tournament ↗ Radar Loker & Lab 7-in-1 career & STM32 tools ↗ Argus Terminal L3 orderbook & quant workbench ↗ Claude 6 Web Suite 3D & physics simulations ↗ Python 7 Mini Projects Streamlit & CLI suite ↗ uart-fixture-kit Serial parser test fixtures ↗ DataRescue CSV and JSON validation ↗ More about my work A closer look. 01 Experience Work, campus roles and community contributions, including smaller committees. ↗ 02 Credentials Course records, program certificates and recognition. Open the documents for a closer look. ↗ 03 Interactive lab Adjust a synthetic signal and see how filtering and feature extraction change it. ↗ 04 Get in touch For projects, engineering work and professional introductions. ↗ I started my Electrical Staff internship at PT Denki Engineering on 16 November 2026 through Kemnaker’s MagangHub program (Batch 3, Angkatan 2, 2026)."
   },
   {
-    "title": "Explore the signal.",
-    "url": "/lab.html",
-    "category": "Page",
+    "title": "Signal and serial lab",
+    "url": "/projects/engineering-labs.html#signal",
+    "category": "Lab",
     "text": "Interactive lab Explore the signal. Change the input and filters. The graph and features update together. This demo uses synthetic data in arbitrary units. Signal settings Sampling rate 2,000 samples / second 4,000 samples / second 50 Hz interference 0.18 a.u. Filter stages 20 Hz high-pass 500 Hz low-pass 50 Hz notch Feature window 100 ms 200 ms 500 ms Reset settings Input Filtered Play preview RMS 0.000 a.u. MAV 0.000 a.u. Window 400 samples A seeded synthetic trace, with muscle-like activity, baseline drift, noise and 50 Hz interference. These values are not a hardware measurement. Download synthetic CSV ↓ Thesis contribution ↗ Serial framing A message can arrive in pieces. Advance through a fragmented byte stream. Complete newline-delimited records are parsed; unfinished bytes stay in the buffer. A simple framing example. The uart-fixture-kit repository provides the full test fixtures and replay tools. Explore uart-fixture-kit ↗ Receive next chunk Reset 0 of 6 chunks Incoming chunk Waiting for a chunk Unfinished buffer Empty Complete records No complete records yet"
   },
   {

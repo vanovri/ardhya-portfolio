@@ -8,15 +8,16 @@
 
 ## Core Pages
 - [Home](https://ardhyanovri.my.id/): Overview of electrical engineering, embedded systems, DSP, and verified software work.
-- [About](https://ardhyanovri.my.id/about): Biography, Diponegoro University graduation (GPA 3.43/4.00), current PT Denki Engineering MagangHub internship, and strict epistemic claim boundaries.
+- [About](https://ardhyanovri.my.id/#about): Biography, Diponegoro University graduation (GPA 3.43/4.00), current PT Denki Engineering MagangHub internship, and strict epistemic claim boundaries.
 - [Projects (60 Entries)](https://ardhyanovri.my.id/projects): Complete catalog of 60 documented projects (50 open-source tagged, 52 audited repositories) spanning embedded firmware, systems engineering, LLM security, 3D graphics, DSP, and developer tooling.
 - [Experience](https://ardhyanovri.my.id/experience): Verified timeline including Electrical Staff Intern at PT Denki Engineering (since 16 Nov 2026), PT Angkasa Pura Indonesia (Soekarno-Hatta International Airport), Redesma Technologies, PT ENVIID Karbon Solusi, UNDIP Basic Electronics Practicum Assistant, KKN UNDIP Mutihan Klaten, and student organizations.
 - [Credentials](https://ardhyanovri.my.id/credentials): Verified degree, Nusantara SolarWing competition recognition (Team NusaSentinel), UNDIP Practicum Assistant Award (6 Jul 2025), Google Student Ambassador Class of 2025, Cisco IoT, and OpenLearn certificates.
 - [Interactive Signal & Embedded DSP Lab](https://ardhyanovri.my.id/signal-lab): Client-side 60fps 3D EMG Time-Frequency Waterfall, Direct Form II Transposed Biquad IIR Workbench (20 Hz HPF, 500 Hz LPF, 50 Hz Q=30 Notch), and IEEE 802.3 CRC-32 UART Telemetry Inspector.
-- [Legacy EMG Lab](https://ardhyanovri.my.id/lab): Client-side 20 Hz / 500 Hz / 50 Hz notch EMG filter and UART framing simulator.
+- [Engineering Labs](https://ardhyanovri.my.id/projects/engineering-labs): Six browser-based Rust studios and a signal and serial workbench.
+- [Signal and serial lab](https://ardhyanovri.my.id/projects/engineering-labs#signal): Client-side 20 Hz / 500 Hz / 50 Hz notch EMG filter and UART framing simulator.
 - [EMG Thesis Evidence Page](https://ardhyanovri.my.id/emg): Indonesian-language technical summary of the STM32F411CEU6 + SEN0240 EMG acquisition & Python GUI subsystem.
 - [Privacy, Security & Scope Notice](https://ardhyanovri.my.id/privacy): Zero-tracking privacy policy, strict CSP posture, and engineering claim boundaries.
-- [Contact](https://ardhyanovri.my.id/contact): Direct email (`ardhyasan@gmail.com`), LinkedIn (`https://www.linkedin.com/in/dhya/`), and GitHub (`https://github.com/vanovri`).
+- [Contact](https://ardhyanovri.my.id/#contact): Direct email (`ardhyasan@gmail.com`), LinkedIn (`https://www.linkedin.com/in/dhya/`), and GitHub (`https://github.com/vanovri`).
 
 ## Flagship Hardware, DSP, Systems & Graphics Projects
 - [10 AI Systems on 4 GB VRAM](https://ardhyanovri.my.id/blog/10-ai-systems-4gb-vram): 10 end-to-end AI/ML and Python systems built, trained, and verified locally on an NVIDIA GTX 1650 Ti 4 GB VRAM (`151/151` pytest PASS): Neural Pong World Model (`101.2 FPS`, `26.6 MiB` VRAM, `0` game engine imports, `100.0%` counterfactual ordering), Pure NumPy INT4 + GPTQ-lite (`-67.70%` Layer-10 L2 err, LoRA INT4 `76.10%` in `236 MiB`), `Qwen3-0.6B` LoRA Banking77 (`84.59%` full test vs `0.00%` Base), Two-Tower RecSys (`4.23x` Recall@10, `-51.5%` viral bias), Hybrid RAG (`1.00` MRR/Refusal), Coding Agent Harness (`3/3` bugs), and Multi-Agent (GitHub: https://github.com/vanovri/ai-systems-4gb-vram, `v1.0.0`).

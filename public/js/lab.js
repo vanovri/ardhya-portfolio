@@ -4,7 +4,7 @@ const rate=document.getElementById('lab-rate'),mains=document.getElementById('la
 const hp=document.getElementById('lab-hp'),lp=document.getElementById('lab-lp'),notch=document.getElementById('lab-notch');
 const windowSize=document.getElementById('lab-window'),play=document.getElementById('lab-play');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-let trace,offset=0,playing=false,frame=0,last=0,inView=true,windowFocused=document.hasFocus?document.hasFocus():true;
+let trace,offset=0,playing=false,frame=0,last=0,windowFocused=document.hasFocus?document.hasFocus():true;
 function stop(){playing=false;cancelAnimationFrame(frame);play.textContent='Play preview';play.setAttribute('aria-pressed','false');}
 function draw(){
   const w=canvas.clientWidth,h=canvas.clientHeight,dpr=Math.min(devicePixelRatio,2);
@@ -21,7 +21,7 @@ function draw(){
   document.getElementById('lab-samples').textContent=String(metrics.count);
 }
 function refresh(){trace=generateSignal({rate:Number(rate.value),mains:Number(mains.value),highpass:hp.checked,lowpass:lp.checked,notch:notch.checked});offset=trace.rate;document.getElementById('lab-mains-label').textContent=Number(mains.value).toFixed(2)+' a.u.';draw();}
-function tick(time){if(!playing||document.hidden||!inView){stop();return;}const minInterval=windowFocused?16:66.7;if(last&&time-last<minInterval){frame=requestAnimationFrame(tick);return;}const dt=last?Math.min(time-last,80):0;last=time;offset=(offset+Math.round(dt/1000*trace.rate))%(trace.raw.length-trace.rate);draw();frame=requestAnimationFrame(tick);}
+function tick(time){if(!playing||document.hidden){stop();return;}const minInterval=windowFocused?16:66.7;if(last&&time-last<minInterval){frame=requestAnimationFrame(tick);return;}const dt=last?Math.min(time-last,80):0;last=time;offset=(offset+Math.round(dt/1000*trace.rate))%(trace.raw.length-trace.rate);draw();frame=requestAnimationFrame(tick);}
 play.addEventListener('click',()=>{if(playing){stop();return;}playing=true;last=0;play.textContent='Pause preview';play.setAttribute('aria-pressed','true');frame=requestAnimationFrame(tick);});
 for(const input of [rate,mains,hp,lp,notch])input.addEventListener('input',refresh);
 windowSize.addEventListener('change',draw);
@@ -36,7 +36,7 @@ window.addEventListener('focus',()=>{windowFocused=true;});
 canvas.addEventListener('contentvisibilityautostatechange',event=>{if(event.skipped)stop();});
 reduced.addEventListener('change',event=>{if(event.matches)stop();});
 new ResizeObserver(draw).observe(canvas);
-new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;if(!inView)stop();}).observe(canvas);
+new IntersectionObserver(([entry])=>{if(!entry.isIntersecting)stop();}).observe(play.closest('.lab-result'));
 refresh();
 
 const chunks=['RMS=0.22,','MAV=0.18\nR','MS=0.31,MAV=','0.25\nRMS=0.','19,MAV=0.15','\n'];
