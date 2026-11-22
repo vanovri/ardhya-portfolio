@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "slug": "dst-kv",
+  "status": "VERIFIED_LIVE",
+  "commitSha": "f169eec",
+  "workingTreeClean": false,
+  "verifiedAt": "2026-11-22T06:16:51.360Z",
+  "wasmAssetPath": "/labs/dst-kv/assets/dst_sim-3a0b7b88.wasm",
+  "wasmSizeKb": 546.72,
+  "wasmSizeBytes": 559842,
+  "cratesCount": 6,
+  "headlineMetrics": [
+    {
+      "id": "marathon_seeds",
+      "label": "Wing-Gong Marathon",
+      "value": "10,000 seeds / 533,348 ops"
+    },
+    {
+      "id": "sigkill_failover",
+      "label": "5-Node SIGKILL Failover",
+      "value": "822 ms (P99 22.71 ms)"
+    },
+    {
+      "id": "nemesis_mttr",
+      "label": "7-Class Nemesis MTTR",
+      "value": "200 ms avg / 300 ms max"
+    }
+  ],
+  "extendedProof": {
+    "determinismSeeds": "100/100 SHA-256",
+    "walSeeds": 5000,
+    "walPowerCuts": 98286,
+    "walTornTails": 14261,
+    "raftInvariantChecks": 5827201,
+    "readIndexStaleReads": 0,
+    "nemesisAvgMs": 200,
+    "nemesisMaxMs": 300,
+    "marathonSeeds": 10000,
+    "marathonOps": 533348,
+    "marathonViolations": 0,
+    "marathonDurationSec": 47.68,
+    "marathonVirtualHours": 20.61,
+    "clusterFailoverMs": 822,
+    "clusterP50Ms": 7.15,
+    "clusterP95Ms": 16.71,
+    "clusterP99Ms": 22.71,
+    "clusterOpsPerSec": 53,
+    "clusterLostWrites": 0,
+    "wasmNodeBenchMs": 293.4,
+    "wasmLinearizable": true,
+    "regressionTestsCount": 4,
+    "realBugsCaught": 2
+  },
+  "provenance": {
+    "logSha256": "87244a632b640bbca8098ad03e4b298d3551c90cff830e1d79253154c84c4162",
+    "sourceFiles": [
+      ".telemetry-logs/verify-run.log",
+      ".telemetry-logs/marathon-run.log",
+      "docs/VERIFICATION_REPORT.md"
+    ],
+    "wasmSourcePath": "visualizer/public/dst_sim.wasm",
+    "missingOrWarnings": []
+  },
+  "provenanceStatus": "VERIFIED_LIVE",
+  "runtimeMode": "REAL_ENGINE_WASM",
+  "glueAssetPath": null
+}

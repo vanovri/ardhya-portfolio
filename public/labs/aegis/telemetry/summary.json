@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0.0",
+  "slug": "aegis",
+  "status": "VERIFIED_LIVE",
+  "commitSha": "cc0d0de",
+  "workingTreeClean": false,
+  "verifiedAt": "2026-11-22T10:40:05.582Z",
+  "wasmAssetPath": "/labs/aegis/assets/aegis_wasm_bg-ed3c394a.wasm",
+  "wasmSizeKb": 326.52,
+  "wasmSizeBytes": 334360,
+  "wasmGzipKb": 114.71,
+  "cratesCount": 10,
+  "headlineMetrics": [
+    {
+      "id": "uffd_cow_restore",
+      "label": "userfaultfd CoW Restore",
+      "value": "0.009 ms p50 (867.09x)"
+    },
+    {
+      "id": "herd_pss_savings",
+      "label": "50-Sandbox Herd PSS",
+      "value": "97.77% (71.20 MiB)"
+    },
+    {
+      "id": "redteam_containment",
+      "label": "Red-Team & Syscall Fuzz",
+      "value": "44/44 + 100,000 fuzz"
+    }
+  ],
+  "extendedProof": {
+    "kernelRelease": "6.18.33.2-microsoft-standard-WSL2",
+    "privilegedFastPath": false,
+    "coldSpawnP50Ms": 7.717,
+    "coldSpawnP95Ms": 23.603,
+    "coldSpawnP99Ms": 33.665,
+    "coldSpawnExitP50Ms": 10.336,
+    "uffdRestoreP50Ms": 0.009,
+    "uffdRestoreP95Ms": 0.273,
+    "uffdRestoreP99Ms": 0.353,
+    "uffdAvgFaultCopyUs": 56.59,
+    "uffdWpEnabled": true,
+    "uffdSpeedupVsColdP50": 867.09,
+    "herdClones": 50,
+    "herdLogicalMib": 3200,
+    "herdAggregateRssMib": 3311.55,
+    "herdAggregatePssMib": 71.2,
+    "herdSharedCleanMib": 3305.3,
+    "herdPrivateDirtyMib": 6.25,
+    "cowPssSavingsPct": 97.77,
+    "computedPssSavingsPct": 97.78,
+    "exploitsBlocked": 44,
+    "exploitsTotal": 44,
+    "fuzzerBlocked": 100000,
+    "fuzzerTotal": 100000,
+    "fuzzerSigsysTraps": 89570,
+    "fuzzerDifferentialChecks": 10000,
+    "fuzzerDurationMs": 250,
+    "fuzzerEscapes": 0,
+    "leakedFds": 0,
+    "leakedMounts": 0,
+    "zombies": 0,
+    "wasmGzipBytes": 117465,
+    "wasmSiKb": 334.36,
+    "wasmGzipSiKb": 117.47
+  },
+  "provenance": {
+    "reportSha256": "e62ec26cf86730e1db876e8bf3c3cc90a79a6fbbac913fa1f38d07214819da43",
+    "redteamSha256": "d0207eeffd2c75d420b773f7b5d0f6603986c6b7c8f2fcfeeeff593177c92c09",
+    "sourceFiles": [
+      "docs/benchmarks/sandbox_perf.md",
+      "docs/security/redteam_report.md"
+    ],
+    "wasmSourcePath": "studio/src/wasm/aegis_wasm_bg.wasm",
+    "wasmSha256": "ed3c394a0e5e740675899b117f670f597ef9e0a4569f57d1ddc7658b835d44a8",
+    "missingOrWarnings": []
+  },
+  "provenanceStatus": "VERIFIED_LIVE",
+  "runtimeMode": "REAL_ENGINE_WASM",
+  "glueAssetPath": "/labs/aegis/assets/aegis_wasm-b6613f5d.js"
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "slug": "kronos",
+  "status": "VERIFIED_LIVE",
+  "commitSha": "077bd4e",
+  "workingTreeClean": false,
+  "verifiedAt": "2026-11-22T07:13:58.586Z",
+  "wasmAssetPath": "/labs/kronos/assets/kronos_wasm_bg-8356b199.wasm",
+  "wasmSizeKb": 381.98,
+  "wasmSizeBytes": 391147,
+  "wasmGzipKb": 138.91,
+  "cratesCount": 12,
+  "headlineMetrics": [
+    {
+      "id": "single_core_throughput",
+      "label": "10M Hawkes L3 Rate",
+      "value": "4,135,087 orders/s"
+    },
+    {
+      "id": "match_latency",
+      "label": "Window Latency (p50 / p99)",
+      "value": "206 ns / 616 ns"
+    },
+    {
+      "id": "disruptor_pipeline",
+      "label": "Full Disruptor Pipeline",
+      "value": "1,701,837 cmds/s (0 allocs)"
+    }
+  ],
+  "extendedProof": {
+    "hawkesOrdersPerSec": 4135087,
+    "hawkesMeanNs": 241.8,
+    "hawkesP50Ns": 206,
+    "hawkesP99Ns": 616,
+    "hawkesP999Ns": 4512,
+    "cancelP50Ns": 87,
+    "addRestingP50Ns": 200,
+    "replaceP50Ns": 268,
+    "fixSbeNs": 19.7,
+    "ouchNs": 44.4,
+    "itchNs": 57.6,
+    "disruptorCmdsPerSec": 1701837,
+    "replayEventsPerSec": 901589,
+    "replayStrategyFills": 782,
+    "allocViolations": 0,
+    "oracleOrders": null,
+    "oracleMismatches": null,
+    "wasmGzipBytes": 142241,
+    "regressionTestsCount": 9
+  },
+  "provenance": {
+    "reportSha256": "5f0c183351757a73b565af129b8d6964d76c60e51c312e136c032f9c09954881",
+    "sourceFiles": [
+      "docs/benchmarks/latency_report.md"
+    ],
+    "wasmSourcePath": "studio/src/wasm-pkg/kronos_wasm_bg.wasm",
+    "wasmSha256": "8356b199c7dc85e133535e581d1da72a8b1f693217d92d4620619ad314b5f940",
+    "missingOrWarnings": []
+  },
+  "provenanceStatus": "VERIFIED_LIVE",
+  "runtimeMode": "REAL_ENGINE_WASM",
+  "glueAssetPath": "/labs/kronos/assets/kronos_wasm-509d396e.js"
+}

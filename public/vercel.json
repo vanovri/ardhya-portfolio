@@ -1,6 +1,131 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/labs/opengraph-image",
+      "destination": "/og/labs-index.png"
+    },
+    {
+      "source": "/api/og/labs",
+      "has": [
+        {
+          "type": "query",
+          "key": "engine",
+          "value": "vectradb"
+        }
+      ],
+      "destination": "/og/labs-vectradb.png"
+    },
+    {
+      "source": "/api/og/labs",
+      "has": [
+        {
+          "type": "query",
+          "key": "engine",
+          "value": "kronos"
+        }
+      ],
+      "destination": "/og/labs-kronos.png"
+    },
+    {
+      "source": "/api/og/labs",
+      "has": [
+        {
+          "type": "query",
+          "key": "engine",
+          "value": "aegis"
+        }
+      ],
+      "destination": "/og/labs-aegis.png"
+    },
+    {
+      "source": "/api/og/labs",
+      "has": [
+        {
+          "type": "query",
+          "key": "engine",
+          "value": "novaserve"
+        }
+      ],
+      "destination": "/og/labs-novaserve.png"
+    },
+    {
+      "source": "/api/og/labs",
+      "has": [
+        {
+          "type": "query",
+          "key": "engine",
+          "value": "spectre"
+        }
+      ],
+      "destination": "/og/labs-spectre.png"
+    },
+    {
+      "source": "/api/og/labs",
+      "has": [
+        {
+          "type": "query",
+          "key": "engine",
+          "value": "dst-kv"
+        }
+      ],
+      "destination": "/og/labs-dst-kv.png"
+    },
+    {
+      "source": "/api/og/labs",
+      "destination": "/og/labs-index.png"
+    },
+    {
+      "source": "/labs/vectradb",
+      "destination": "/labs/vectradb/index.html"
+    },
+    {
+      "source": "/labs/vectradb/",
+      "destination": "/labs/vectradb/index.html"
+    },
+    {
+      "source": "/labs/kronos",
+      "destination": "/labs/kronos/index.html"
+    },
+    {
+      "source": "/labs/kronos/",
+      "destination": "/labs/kronos/index.html"
+    },
+    {
+      "source": "/labs/aegis",
+      "destination": "/labs/aegis/index.html"
+    },
+    {
+      "source": "/labs/aegis/",
+      "destination": "/labs/aegis/index.html"
+    },
+    {
+      "source": "/labs/novaserve",
+      "destination": "/labs/novaserve/index.html"
+    },
+    {
+      "source": "/labs/novaserve/",
+      "destination": "/labs/novaserve/index.html"
+    },
+    {
+      "source": "/labs/spectre",
+      "destination": "/labs/spectre/index.html"
+    },
+    {
+      "source": "/labs/spectre/",
+      "destination": "/labs/spectre/index.html"
+    },
+    {
+      "source": "/labs/dst-kv",
+      "destination": "/labs/dst-kv/index.html"
+    },
+    {
+      "source": "/labs/dst-kv/",
+      "destination": "/labs/dst-kv/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(img|fonts)/(.*)",
@@ -41,6 +166,143 @@
         {
           "key": "Cross-Origin-Opener-Policy",
           "value": "same-origin"
+        }
+      ]
+    },
+    {
+      "source": "/labs(\\.html)?",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://ardhyanovri.my.id; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+        }
+      ]
+    },
+    {
+      "source": "/labs/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://ardhyanovri.my.id; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-origin"
+        }
+      ]
+    },
+    {
+      "source": "/labs/(.*)\\.wasm",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/wasm"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/labs/:slug/assets/(.*\\.js)",
+      "headers": [
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/labs/telemetry-manifest.json",
+      "headers": [
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=60, stale-while-revalidate=3600"
+        }
+      ]
+    },
+    {
+      "source": "/labs/:slug/telemetry/summary.json",
+      "headers": [
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=60, stale-while-revalidate=3600"
+        }
+      ]
+    },
+    {
+      "source": "/og/(.*)\\.png",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "cross-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/labs/opengraph-image",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "cross-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/api/og/labs",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "cross-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
         }
       ]
     }

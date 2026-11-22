@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#090b10" />
+        <title>NovaServe — PagedAttention & Speculative LLM Engine (WASM Studio)</title>
+    <meta name="description" content="Radix Prefix TTFT: 11.17x (95.8% hit) | Chunked Prefill ITL p99: 4.27x drop (56.45 ms) | Speculative K=4 TPOT: 1.61x (Q8 3.75x) · 10 Rust crates · 1244.87 KB WASM · commit 197061a" />
+    <link rel="canonical" href="https://ardhyanovri.my.id/labs/novaserve" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ardhyanovri.my.id/labs/novaserve" />
+    <meta property="og:title" content="NovaServe — PagedAttention & Speculative LLM Engine (WASM Studio)" />
+    <meta property="og:description" content="Radix Prefix TTFT: 11.17x (95.8% hit) | Chunked Prefill ITL p99: 4.27x drop (56.45 ms) | Speculative K=4 TPOT: 1.61x (Q8 3.75x) · 10 Rust crates · 1244.87 KB WASM · commit 197061a" />
+    <meta property="og:image" content="https://ardhyanovri.my.id/og/labs-novaserve.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NovaServe — PagedAttention & Speculative LLM Engine (WASM Studio)" />
+    <meta name="twitter:description" content="Radix Prefix TTFT: 11.17x (95.8% hit) | Chunked Prefill ITL p99: 4.27x drop (56.45 ms) | Speculative K=4 TPOT: 1.61x (Q8 3.75x) · 10 Rust crates · 1244.87 KB WASM · commit 197061a" />
+    <meta name="twitter:image" content="https://ardhyanovri.my.id/og/labs-novaserve.png" />
+    <script type="module" crossorigin src="/labs/novaserve/assets/index-N7gODk1_.js"></script>
+    <link rel="stylesheet" crossorigin href="/labs/novaserve/assets/index-BUWKZnai.css">
+  </head>
+  <body>
+    <systems-lab-dock
+      id="studio-dock"
+      active="vectradb"
+      github-user="vanovri"
+      hub-href="/labs"
+    ></systems-lab-dock>
+
+    <main class="workbench" id="main">
+      <div
+        id="zone-runtime-banner"
+        class="runtime-banner"
+        role="status"
+        data-provenance="STANDBY_PROBE"
+        data-runtime-mode="STANDBY_PROBE_WASM"
+      >
+        STANDBY PROBE MICRO-KERNEL
+      </div>
+
+      <header class="wb-head">
+        <div>
+          <p class="wb-eyebrow" id="wb-category">SYSTEMS LAB · DEDICATED WORKER</p>
+          <h1 class="wb-title" id="wb-title">VectraDB WASM Studio</h1>
+          <p class="wb-summary" id="wb-summary"></p>
+        </div>
+        <div class="wb-badges">
+          <span class="wb-chip" id="wb-stream-chip">Streaming Init: Pending</span>
+          <span class="wb-chip" id="wb-sab-chip">SharedArrayBuffer: Checking</span>
+          <span class="wb-chip" id="wb-gate-chip">Verification Gate</span>
+        </div>
+      </header>
+
+      <section class="wb-grid" aria-label="Interactive WASM Kernel Controls and Telemetry">
+        <aside class="wb-panel wb-controls">
+          <h2 class="panel-heading">Kernel Parameters</h2>
+          <label class="field" for="param-scale">
+            <span class="field-head">
+              <span id="label-scale">Scale</span>
+              <output id="out-scale" for="param-scale">65536</output>
+            </span>
+            <input id="param-scale" type="range" min="16" max="131072" step="16" value="65536" />
+          </label>
+
+          <label class="field" for="param-secondary">
+            <span class="field-head">
+              <span id="label-secondary">Secondary</span>
+              <output id="out-secondary" for="param-secondary">2500</output>
+            </span>
+            <input id="param-secondary" type="range" min="1" max="10000" step="1" value="2500" />
+          </label>
+
+          <label class="field" for="param-seed">
+            <span class="field-head">
+              <span>Deterministic PRNG Seed (u64)</span>
+            </span>
+            <input id="param-seed" type="number" min="1" max="999999999" value="20261122" />
+          </label>
+
+          <div class="btn-stack">
+            <button id="btn-exec" class="cmd-btn primary" type="button">
+              Execute SIMD128 Kernel
+            </button>
+            <div class="btn-row">
+              <button id="btn-burst" class="cmd-btn" type="button">
+                Run 25x Burst Bench
+              </button>
+              <button id="btn-reset" class="cmd-btn" type="button">
+                Reset WASM Arena
+              </button>
+            </div>
+          </div>
+
+          <dl class="env-kv" aria-label="Edge Isolation Diagnostics">
+            <div>
+              <dt>Zone Base Path</dt>
+              <dd id="diag-base">/labs/vectradb/</dd>
+            </div>
+            <div>
+              <dt>Cross-Origin Isolated</dt>
+              <dd id="diag-coi">false</dd>
+            </div>
+            <div>
+              <dt>Timer Resolution</dt>
+              <dd id="diag-timer">100 µs</dd>
+            </div>
+            <div>
+              <dt>Worker Lifecycle</dt>
+              <dd id="diag-worker">Booting</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <div class="wb-stage">
+          <div class="metrics-strip">
+            <article class="metric-card hero">
+              <span class="metric-label">Worker Execution Latency</span>
+              <strong class="metric-value" id="metric-latency">—</strong>
+              <small class="metric-note" id="metric-throughput">Awaiting first run</small>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Deterministic Output</span>
+              <strong class="metric-value mono-sm" id="metric-output">—</strong>
+              <small class="metric-note" id="metric-instantiate">WASM cold init: —</small>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Linear Memory / Arena</span>
+              <strong class="metric-value" id="metric-memory">—</strong>
+              <small class="metric-note" id="metric-arena">0 B active arena</small>
+            </article>
+          </div>
+
+          <div class="canvas-panel">
+            <div class="canvas-head">
+              <span class="panel-heading">60 FPS Main-Thread Frame Pacing &amp; Worker Latency Trace</span>
+              <span class="fps-readout" id="fps-readout">60 FPS · UI Unblocked</span>
+            </div>
+            <canvas
+              id="trace-canvas"
+              width="960"
+              height="260"
+              role="img"
+              aria-label="Real-time 60 FPS frame pacing bar and Dedicated Worker WASM execution latency sparkline"
+            ></canvas>
+          </div>
+
+          <div class="log-panel">
+            <div class="canvas-head">
+              <span class="panel-heading">Execution Audit Log</span>
+              <span class="fps-readout" id="log-count">0 runs</span>
+            </div>
+            <ol class="audit-log" id="audit-log" aria-live="polite"></ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>

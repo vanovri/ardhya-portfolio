@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-11-22T11:49:00.785Z",
+  "liveCount": 6,
+  "probeCount": 0,
+  "zones": {
+    "vectradb": {
+      "slot": "01",
+      "slug": "vectradb",
+      "name": "VectraDB",
+      "provenance": "VERIFIED_LIVE",
+      "runtimeMode": "REAL_ENGINE_WASM",
+      "commitSha": "5a1720d",
+      "verifiedAt": "2026-11-22T10:41:53.559Z",
+      "wasmAssetPath": "/labs/vectradb/assets/vectra_wasm_bg-bba49ce1.wasm",
+      "glueAssetPath": "/labs/vectradb/assets/vectra_wasm-3f1abf8d.js",
+      "wasmSizeBytes": 2083985,
+      "wasmSizeKb": 2035.14,
+      "wasmSha8": "bba49ce1",
+      "headlineMetrics": [
+        {
+          "id": "tpch_sf01_geomean",
+          "label": "22/22 TPC-H (SF=0.1)",
+          "value": "261.53 ms geomean (6.96x)"
+        },
+        {
+          "id": "sqlsmith_slt_oracle",
+          "label": "SQLsmith + SLT Oracle",
+          "value": "25,000 seeds / 5,794 SLT"
+        },
+        {
+          "id": "spill_pgwire_gate",
+          "label": "Spill Cap & PGWire v3",
+          "value": "32 MB RAM / 32 clients (0.82s)"
+        }
+      ]
+    },
+    "kronos": {
+      "slot": "02",
+      "slug": "kronos",
+      "name": "KronosLOB",
+      "provenance": "VERIFIED_LIVE",
+      "runtimeMode": "REAL_ENGINE_WASM",
+      "commitSha": "077bd4e",
+      "verifiedAt": "2026-11-22T07:13:58.586Z",
+      "wasmAssetPath": "/labs/kronos/assets/kronos_wasm_bg-8356b199.wasm",
+      "glueAssetPath": "/labs/kronos/assets/kronos_wasm-509d396e.js",
+      "wasmSizeBytes": 391147,
+      "wasmSizeKb": 381.98,
+      "wasmSha8": "8356b199",
+      "headlineMetrics": [
+        {
+          "id": "single_core_throughput",
+          "label": "10M Hawkes L3 Rate",
+          "value": "4,135,087 orders/s"
+        },
+        {
+          "id": "match_latency",
+          "label": "Window Latency (p50 / p99)",
+          "value": "206 ns / 616 ns"
+        },
+        {
+          "id": "disruptor_pipeline",
+          "label": "Full Disruptor Pipeline",
+          "value": "1,701,837 cmds/s (0 allocs)"
+        }
+      ]
+    },
+    "aegis": {
+      "slot": "03",
+      "slug": "aegis",
+      "name": "AegisBox",
+      "provenance": "VERIFIED_LIVE",
+      "runtimeMode": "REAL_ENGINE_WASM",
+      "commitSha": "cc0d0de",
+      "verifiedAt": "2026-11-22T10:40:05.582Z",
+      "wasmAssetPath": "/labs/aegis/assets/aegis_wasm_bg-ed3c394a.wasm",
+      "glueAssetPath": "/labs/aegis/assets/aegis_wasm-b6613f5d.js",
+      "wasmSizeBytes": 334360,
+      "wasmSizeKb": 326.52,
+      "wasmSha8": "ed3c394a",
+      "headlineMetrics": [
+        {
+          "id": "uffd_cow_restore",
+          "label": "userfaultfd CoW Restore",
+          "value": "0.009 ms p50 (867.09x)"
+        },
+        {
+          "id": "herd_pss_savings",
+          "label": "50-Sandbox Herd PSS",
+          "value": "97.77% (71.20 MiB)"
+        },
+        {
+          "id": "redteam_containment",
+          "label": "Red-Team & Syscall Fuzz",
+          "value": "44/44 + 100,000 fuzz"
+        }
+      ]
+    },
+    "novaserve": {
+      "slot": "04",
+      "slug": "novaserve",
+      "name": "NovaServe",
+      "provenance": "VERIFIED_LIVE",
+      "runtimeMode": "REAL_ENGINE_WASM",
+      "commitSha": "197061a",
+      "verifiedAt": "2026-11-22T09:49:43.532Z",
+      "wasmAssetPath": "/labs/novaserve/assets/novaserve_wasm-d91cd54f.wasm",
+      "glueAssetPath": null,
+      "wasmSizeBytes": 1274747,
+      "wasmSizeKb": 1244.87,
+      "wasmSha8": "d91cd54f",
+      "headlineMetrics": [
+        {
+          "id": "radix_ttft_speedup",
+          "label": "Radix Prefix TTFT",
+          "value": "11.17x (95.8% hit)"
+        },
+        {
+          "id": "chunked_itl_p99",
+          "label": "Chunked Prefill ITL p99",
+          "value": "4.27x drop (56.45 ms)"
+        },
+        {
+          "id": "speculative_tpot",
+          "label": "Speculative K=4 TPOT",
+          "value": "1.61x (Q8 3.75x)"
+        }
+      ]
+    },
+    "spectre": {
+      "slot": "05",
+      "slug": "spectre",
+      "name": "SpectreMesh",
+      "provenance": "VERIFIED_LIVE",
+      "runtimeMode": "REAL_ENGINE_WASM",
+      "commitSha": "d12f05b",
+      "verifiedAt": "2026-11-22T11:38:25.601Z",
+      "wasmAssetPath": "/labs/spectre/assets/spectre_wasm_bg-1f3cbc83.wasm",
+      "glueAssetPath": "/labs/spectre/assets/spectre_wasm-ab6f5f7c.js",
+      "wasmSizeBytes": 262171,
+      "wasmSizeKb": 256.03,
+      "wasmSha8": "1f3cbc83",
+      "headlineMetrics": [
+        {
+          "id": "xdp_packet_filter",
+          "label": "XDP Kernel / BpfVm",
+          "value": "10.10 Mpps (99.00 ns/pkt)"
+        },
+        {
+          "id": "l7_tls_uprobe",
+          "label": "L7 Decode & TLS 1.3",
+          "value": "1094.9k req/s (+48.99 us)"
+        },
+        {
+          "id": "mesh_oracle_verifier",
+          "label": "Live Mesh Oracle & Verifier",
+          "value": "50,000/50,000 (0 drops)"
+        }
+      ]
+    },
+    "dst-kv": {
+      "slot": "06",
+      "slug": "dst-kv",
+      "name": "DST-KV",
+      "provenance": "VERIFIED_LIVE",
+      "runtimeMode": "REAL_ENGINE_WASM",
+      "commitSha": "f169eec",
+      "verifiedAt": "2026-11-22T06:16:51.360Z",
+      "wasmAssetPath": "/labs/dst-kv/assets/dst_sim-3a0b7b88.wasm",
+      "glueAssetPath": null,
+      "wasmSizeBytes": 559842,
+      "wasmSizeKb": 546.72,
+      "wasmSha8": "3a0b7b88",
+      "headlineMetrics": [
+        {
+          "id": "marathon_seeds",
+          "label": "Wing-Gong Marathon",
+          "value": "10,000 seeds / 533,348 ops"
+        },
+        {
+          "id": "sigkill_failover",
+          "label": "5-Node SIGKILL Failover",
+          "value": "822 ms (P99 22.71 ms)"
+        },
+        {
+          "id": "nemesis_mttr",
+          "label": "7-Class Nemesis MTTR",
+          "value": "200 ms avg / 300 ms max"
+        }
+      ]
+    }
+  }
+}

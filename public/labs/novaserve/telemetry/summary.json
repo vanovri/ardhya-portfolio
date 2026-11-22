@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0.0",
+  "slug": "novaserve",
+  "status": "VERIFIED_LIVE",
+  "commitSha": "197061a",
+  "workingTreeClean": false,
+  "verifiedAt": "2026-11-22T09:49:43.532Z",
+  "wasmAssetPath": "/labs/novaserve/assets/novaserve_wasm-d91cd54f.wasm",
+  "wasmSizeKb": 1244.87,
+  "wasmSizeBytes": 1274747,
+  "wasmGzipKb": 337.43,
+  "cratesCount": 10,
+  "headlineMetrics": [
+    {
+      "id": "radix_ttft_speedup",
+      "label": "Radix Prefix TTFT",
+      "value": "11.17x (95.8% hit)"
+    },
+    {
+      "id": "chunked_itl_p99",
+      "label": "Chunked Prefill ITL p99",
+      "value": "4.27x drop (56.45 ms)"
+    },
+    {
+      "id": "speculative_tpot",
+      "label": "Speculative K=4 TPOT",
+      "value": "1.61x (Q8 3.75x)"
+    }
+  ],
+  "extendedProof": {
+    "simdBackend": "Avx2Fma",
+    "fp32GemmGflops": 70.46,
+    "fp32Batch16TokPerSec": 1148.3,
+    "q8CompressionRatio": 3.75,
+    "q8SingleTokPerSec": 421.6,
+    "q4CompressionRatio": 7.07,
+    "seqBatch32TokPerSec": 403.3,
+    "contBatch32TokPerSec": 886.1,
+    "unchunkedItlP99Ms": 240.8,
+    "chunkedItlP99Ms": 56.45,
+    "chunkedItlDropRatio": 4.27,
+    "radixOffTtftP50Ms": 221,
+    "radixOnTtftP50Ms": 19.79,
+    "radixHitRatePct": 95.8,
+    "radixTtftSpeedup": 11.17,
+    "radixWallSpeedup": 3.79,
+    "speculativeK": 4,
+    "speculativeAlphaPct": 65.6,
+    "speculativeMeanTokPerPass": 3.59,
+    "speculativeTokPerSec": 859,
+    "speculativeTpotMs": 1.164,
+    "speculativeTpotSpeedup": 1.61,
+    "speculativeTvdMin": 0.0051,
+    "speculativeTvdMax": 0.0082,
+    "pagedMaxAbsDiff": 0.000001371,
+    "chaosScenarios": 5000,
+    "chaosMaxLogprobDiff": 0.000002146,
+    "jsonDfaValid": 5000,
+    "kvExtFragPct": 0,
+    "miriPassed": 6,
+    "miriUbCount": 0,
+    "wasmE2ePassed": 4,
+    "wasmGzipBytes": 345526
+  },
+  "provenance": {
+    "reportSha256": "9228cf2ca718e84108bd591a2fb7e8a06ebc8c79aeac1ae95c6142c357440556",
+    "sourceFiles": [
+      "docs/benchmarks/serving_sla.md",
+      "PROGRESS.md"
+    ],
+    "wasmSourcePath": "studio/public/novaserve_wasm.wasm",
+    "wasmSha256": "d91cd54fec4038d3d9e483ec3d8ccd9d25c0e5dae91fbf50fdb402f875f1f9a4",
+    "missingOrWarnings": []
+  },
+  "provenanceStatus": "VERIFIED_LIVE",
+  "runtimeMode": "REAL_ENGINE_WASM",
+  "glueAssetPath": null
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0.0",
+  "slug": "vectradb",
+  "status": "VERIFIED_LIVE",
+  "commitSha": "5a1720d",
+  "workingTreeClean": false,
+  "verifiedAt": "2026-11-22T10:41:53.559Z",
+  "wasmAssetPath": "/labs/vectradb/assets/vectra_wasm_bg-bba49ce1.wasm",
+  "wasmSizeKb": 2035.14,
+  "wasmSizeBytes": 2083985,
+  "wasmGzipKb": 667.72,
+  "cratesCount": 10,
+  "headlineMetrics": [
+    {
+      "id": "tpch_sf01_geomean",
+      "label": "22/22 TPC-H (SF=0.1)",
+      "value": "261.53 ms geomean (6.96x)"
+    },
+    {
+      "id": "sqlsmith_slt_oracle",
+      "label": "SQLsmith + SLT Oracle",
+      "value": "25,000 seeds / 5,794 SLT"
+    },
+    {
+      "id": "spill_pgwire_gate",
+      "label": "Spill Cap & PGWire v3",
+      "value": "32 MB RAM / 32 clients (0.82s)"
+    }
+  ],
+  "extendedProof": {
+    "osArch": "windows/x86_64",
+    "workerThreads": 8,
+    "exactScaleFactor": 0.01,
+    "exactMatchPassed": 22,
+    "exactMatchTotal": 22,
+    "benchScaleFactor": 0.1,
+    "sf01TotalRows": 865303,
+    "sf01LineitemRows": 599273,
+    "ingestAnalyzeMs": 5971,
+    "totalMedianMs": 10857.5,
+    "geomeanMs": 261.53,
+    "uncompressedMib": 113.14,
+    "compressedMib": 16.25,
+    "compressionRatio": 6.96,
+    "computedCompressionRatio": 6.96,
+    "denyUnsafeCratesCount": 8,
+    "miriSeeds": 40,
+    "miriUbCount": 0,
+    "exprFuzzSeeds": 50000,
+    "optimizerJoinGraphs": 14,
+    "optimizerStressMs": 14.44,
+    "spillBudgetMb": 32,
+    "sltFilesCount": 26,
+    "sltAssertionsCount": 5794,
+    "sqlsmithPassed": 25000,
+    "sqlsmithTotal": 25000,
+    "sqlsmithMismatches": 0,
+    "pgConcurrentClients": 32,
+    "pgConcurrentSec": 0.82,
+    "studioVitestPassed": 3,
+    "studioVitestTotal": 3,
+    "wasmGzipBytes": 683741,
+    "wasmSiKb": 2083.99,
+    "wasmGzipSiKb": 683.74
+  },
+  "provenance": {
+    "reportSha256": "37ee61f2af39da21e69e5fef23d766ef3e451ba65c759263ca944a9285216e53",
+    "progressSha256": "8b777b18ab99244984ee4cd34df72d7fcc9577fb4cb32d8c079e75200352b3db",
+    "sourceFiles": [
+      "docs/benchmarks/tpch_results.md",
+      "PROGRESS.md"
+    ],
+    "wasmSourcePath": "studio/src/wasm/vectra_wasm_bg.wasm",
+    "wasmSha256": "bba49ce174f35ea5c0989e4b2baa9b4d09fb8db78c65abfb725ec24fd1c0ec5a",
+    "missingOrWarnings": []
+  },
+  "provenanceStatus": "VERIFIED_LIVE",
+  "runtimeMode": "REAL_ENGINE_WASM",
+  "glueAssetPath": "/labs/vectradb/assets/vectra_wasm-3f1abf8d.js"
+}

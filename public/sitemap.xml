@@ -90,4 +90,11 @@
     <loc>https://ardhyanovri.my.id/blog/10-ai-systems-4gb-vram</loc>
     <lastmod>2026-11-21</lastmod>
   </url>
+  <url><loc>https://ardhyanovri.my.id/labs</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ardhyanovri.my.id/labs/dst-kv</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ardhyanovri.my.id/labs/kronos</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ardhyanovri.my.id/labs/novaserve</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ardhyanovri.my.id/labs/aegis</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ardhyanovri.my.id/labs/vectradb</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://ardhyanovri.my.id/labs/spectre</loc><lastmod>2026-11-22</lastmod></url>
 </urlset>
