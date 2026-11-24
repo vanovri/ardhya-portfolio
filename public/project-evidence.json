@@ -57,6 +57,22 @@
       ]
     },
     {
+      "name": "dwg-live-takeoff",
+      "description": "Local open-source CAD quantity takeoff studio: ezdxf geometry parser, live SSE dark CAD viewer, human-in-the-loop Excel BOQ/EAP exporter, and 11-tool stdio MCP server (3/3 pytest PASS).",
+      "page": "projects/dwg-live-takeoff.html",
+      "sourceCommit": "9ffc587ab45d46ecab27fad738b58a57fc74cc2c",
+      "sourceFiles": [
+        "README.md",
+        "pyproject.toml",
+        "src/dwg_live_takeoff/parser.py",
+        "src/dwg_live_takeoff/state.py",
+        "src/dwg_live_takeoff/boq_export.py",
+        "src/dwg_live_takeoff/viewer_server.py",
+        "src/dwg_live_takeoff/mcp_server.py",
+        "tests/test_takeoff.py"
+      ]
+    },
+    {
       "name": "ai-systems-4gb-vram",
       "description": "10 production AI/ML and Python systems verified locally on a 4 GB GTX 1650 Ti (151/151 pytest PASS): Neural Pong World Model (101.2 FPS, 0 game engine imports), Pure NumPy INT4 + GPTQ-lite (-67.70% L2 err), Qwen3-0.6B LoRA (84.59% Banking77), Two-Tower RecSys (4.23x Recall@10), and Hybrid RAG (1.00 MRR).",
       "page": "blog/10-ai-systems-4gb-vram/index.html",

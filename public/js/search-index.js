@@ -24,6 +24,12 @@ export default [
     "text": "Sanitized multi-platform agent skill and Python CLI for daily MagangHub Kemnaker / SIAPkerja logbook drafting, claim-boundary checking, and structured export."
   },
   {
+    "title": "Live DWG/DXF Quantity Takeoff",
+    "url": "/projects/dwg-live-takeoff.html",
+    "category": "Project",
+    "text": "dwg-live-takeoff ezdxf CAD quantity takeoff studio live SSE viewer human-in-the-loop Excel BOQ/EAP exporter and 11-tool stdio MCP server (3/3 pytest PASS)."
+  },
+  {
     "title": "10 AI Systems on 4 GB VRAM",
     "url": "/blog/10-ai-systems-4gb-vram/",
     "category": "Case Study",

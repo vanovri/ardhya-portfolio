@@ -38,6 +38,15 @@
       "sha256": "f38e0fbf7c312502e7601df379c6ad98b5d98b80622a07a76af89a1dfe1f0bf0"
     },
     {
+      "title": "Live DWG/DXF Quantity Takeoff",
+      "slug": "dwg-live-takeoff",
+      "card": "projects/dwg-live-takeoff.html",
+      "preview": "img/previews/dwg-live-takeoff.svg",
+      "kind": "Apple-studio architectural preview illustration",
+      "previous_url": null,
+      "sha256": "5cbda9fb7f7da05dafb5782bf576a3dd411cea777779e825237cbfa4486b84c1"
+    },
+    {
       "title": "10 AI Systems on 4 GB VRAM",
       "slug": "ai-systems-4gb-vram",
       "card": "blog/10-ai-systems-4gb-vram/",

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Live DWG/DXF Quantity Takeoff Studio architectural preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f7fa"/>
+      <stop offset="100%" stop-color="#e8eef5"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b111b"/>
+      <stop offset="100%" stop-color="#162032"/>
+    </linearGradient>
+    <filter id="sh" x="-6%" y="-6%" width="112%" height="116%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#sh)"/>
+  <g transform="translate(48, 36)">
+    <rect x="48" y="48" width="536" height="582" rx="24" fill="url(#navy)"/>
+    <text x="82" y="96" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#22d3ee">LIVE CAD TAKEOFF VIEWER · 127.0.0.1:8766</text>
+    <text x="82" y="144" font-family="Inter, system-ui, sans-serif" font-size="29" font-weight="700" fill="#f8fafc">dwg-live-takeoff v0.1.0</text>
+    <text x="82" y="176" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#94a3b8">ezdxf Geometry · SSE Stream · HITL Excel BOQ/EAP</text>
+
+    <rect x="82" y="206" width="468" height="296" rx="16" fill="#0f172a" stroke="#1f2d42"/>
+    <rect x="112" y="242" width="234" height="146" fill="none" stroke="#eab308" stroke-width="2.5"/>
+    <rect x="346" y="242" width="174" height="146" fill="none" stroke="#eab308" stroke-width="2.5"/>
+    <rect x="112" y="388" width="234" height="86" fill="none" stroke="#eab308" stroke-width="2.5"/>
+    <rect x="346" y="388" width="174" height="86" fill="none" stroke="#eab308" stroke-width="2.5"/>
+    <path d="M168 310 L292 310 L420 310 L420 430 L215 430" fill="none" stroke="#22d3ee" stroke-width="3" stroke-dasharray="6 4"/>
+    <circle cx="168" cy="310" r="9" fill="#f59e0b"/><circle cx="292" cy="310" r="9" fill="#f59e0b"/>
+    <circle cx="420" cy="310" r="10" fill="#d946ef"/><circle cx="215" cy="430" r="8" fill="#ef4444"/>
+    <text x="229" y="324" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#94a3b8">MAIN_OFFICE · 27.0 m²</text>
+    <text x="433" y="324" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#94a3b8">ELEC · 13.5 m²</text>
+    <text x="229" y="454" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#94a3b8">MEETING · 15.75 m²</text>
+    <text x="433" y="454" text-anchor="middle" font-family="SF Mono, monospace" font-size="12" fill="#94a3b8">CORRIDOR · 7.65 m²</text>
+
+    <rect x="82" y="522" width="226" height="68" rx="14" fill="#1e293b" stroke="#334155"/>
+    <text x="102" y="550" font-family="SF Mono, monospace" font-size="12" fill="#94a3b8">LINEAR CONDUIT</text>
+    <text x="102" y="574" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#22d3ee">26.70 m (3 segs)</text>
+
+    <rect x="324" y="522" width="226" height="68" rx="14" fill="#1e293b" stroke="#334155"/>
+    <text x="344" y="550" font-family="SF Mono, monospace" font-size="12" fill="#94a3b8">PYTEST &amp; MCP</text>
+    <text x="344" y="574" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#22c55e">3/3 PASS · 11 Tools</text>
+
+    <rect x="612" y="48" width="444" height="582" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="646" y="96" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#0071e3">HUMAN-IN-THE-LOOP BOQ PIPELINE</text>
+
+    <rect x="646" y="122" width="376" height="106" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="670" y="156" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#0f172a">1. DWG / DXF Ingestion</text>
+    <text x="670" y="184" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">ezdxf R2018 parser + AutoCAD / CADCraft</text>
+    <text x="670" y="206" font-family="SF Mono, monospace" font-size="12" fill="#0071e3">$INSUNITS metric scale + Shoelace area</text>
+
+    <rect x="646" y="246" width="376" height="114" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="670" y="280" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#0f172a">2. Live SSE Viewer &amp; HITL Override</text>
+    <text x="670" y="308" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">Layer toggles, Follow Agent &amp; step log</text>
+    <text x="670" y="332" font-family="SF Mono, monospace" font-size="12" fill="#0b6b46">/api/override · approve/reject · rate</text>
+
+    <rect x="646" y="378" width="376" height="120" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="670" y="412" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#0f172a">3. Dynamic Excel BOQ / EAP Export</text>
+    <text x="670" y="440" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">Sheets: BOQ_EAP · Room_Schedule · Audit</text>
+    <text x="670" y="464" font-family="SF Mono, monospace" font-size="12" fill="#0f172a">Live formulas: =I6-H6 · =I6*K6 · =SUM()</text>
+
+    <rect x="646" y="522" width="376" height="68" rx="14" fill="#eaf2ff"/>
+    <text x="834" y="552" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#0071e3">Python 3.11+ · ezdxf · openpyxl · MCP</text>
+    <text x="834" y="574" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="12" fill="#334155">MIT Open Source · Synthesized Fixture Verified</text>
+  </g>
+</svg>

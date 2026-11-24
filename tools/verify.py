@@ -43,7 +43,7 @@ for source in ROOT.rglob('*.css'):
 
 gallery_text = (ROOT / 'projects.html').read_text(encoding='utf-8')
 cards = [attrs for tag, attrs in Page(gallery_text).nodes if tag in ('a', 'article') and 'card' in attrs.get('class', '').split()]
-assert len(cards) == len({card.get('href') or card.get('id') for card in cards}) == 64
+assert len(cards) == len({card.get('href') or card.get('id') for card in cards}) == 65
 lab_page = 'projects/engineering-labs.html'
 assert sum(card.get('href') == lab_page for card in cards) == 1
 lab_nodes = Page((ROOT / lab_page).read_text(encoding='utf-8')).nodes
@@ -59,7 +59,7 @@ for source in html:
 assert gallery_text.count('data-webgl-showcase') == 1
 assert 'data-webgl-showcase' not in gallery_text.split('</section>', 1)[0]
 assert any(card.get('id') == 'interactive-3d' for card in cards)
-assert sum('open-source' in card.get('data-tags', '').split() for card in cards) == 53
+assert sum('open-source' in card.get('data-tags', '').split() for card in cards) == 54
 for slug in ('benchmind', 'self-rag', 'hermes-cloud-gateway'):
     assert not (ROOT / 'projects' / (slug + '.html')).exists()
     assert not any(slug in card.get('href', '') for card in cards)
@@ -83,7 +83,7 @@ for preview in previews:
     assert image.is_file() and hashlib.sha256(image.read_bytes()).hexdigest() == preview['sha256'], image
 card_blocks = re.findall(r'<a\b[^>]*class="card[^\"]*"[^>]*>.*?</a>', (ROOT / 'projects.html').read_text(encoding='utf-8'), re.S)
 assert len(card_blocks) == len(cards) - 1 and all('<img ' in block and 'Source and scope reviewed' not in block for block in card_blocks)
-for slug in ('engineering-labs', 'dl-portfolio-suite', 'token-burn-verifier', 'maganghub-logbook-ops', 'cyberpunk-floating-ramen-stall', 'ferrum-kv', 'aether-core-engine', 'agy-codex-video-studio', 'aether-synth-flow', 'prompt-shield-eval', 'hyperion-omega', 'ai-systems-4gb-vram', 'maganghub-nextjs-seo-blueprint'):
+for slug in ('engineering-labs', 'dl-portfolio-suite', 'token-burn-verifier', 'maganghub-logbook-ops', 'dwg-live-takeoff', 'cyberpunk-floating-ramen-stall', 'ferrum-kv', 'aether-core-engine', 'agy-codex-video-studio', 'aether-synth-flow', 'prompt-shield-eval', 'hyperion-omega', 'ai-systems-4gb-vram', 'maganghub-nextjs-seo-blueprint'):
     ElementTree.parse(ROOT / f'img/previews/{slug}.svg')
 assert 'src="/img/previews/enviid-website.jpg"' in gallery_text
 for project in projects:

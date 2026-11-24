@@ -1,10 +1,10 @@
 {
-  "source": "Portfolio synchronized with dl-portfolio-suite v1.0.0, token-burn-verifier, and maganghub-logbook-ops, 25 November 2026",
-  "public_files": 282,
-  "gallery_cards": 64,
-  "project_repositories": 55,
-  "open_source_tagged_cards": 53,
+  "source": "Portfolio synchronized with dl-portfolio-suite v1.0.0, token-burn-verifier, maganghub-logbook-ops, and dwg-live-takeoff v0.1.0, 25 November 2026",
+  "public_files": 284,
+  "gallery_cards": 65,
+  "project_repositories": 56,
+  "open_source_tagged_cards": 54,
   "omitted_asset_count": 110,
   "omissions": "CV PDF, credential images, photos and evidence images remain on the existing portfolio host; no private repository, chat or source documents are included.",
-  "tracked_preview_assets": 64
+  "tracked_preview_assets": 65
 }
