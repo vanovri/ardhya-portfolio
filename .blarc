@@ -1,0 +1,18 @@
+{
+  "$schema": "https://bla.tools/schemas/bla.config.v1.json",
+  "input": "./dist",
+  "intensity": "maximum",
+  "emitManifest": false,
+  "llmDirectives": false,
+  "honeySourceMaps": true,
+  "minDefenseScore": 90,
+  "weaveDecoys": false,
+  "selfSeal": false,
+  "sidecarEntangle": false,
+  "exclude": [
+    "**/*.html",
+    "js/search-index.js",
+    "blog/*/theme-init.js"
+  ],
+  "seed": "bla-28bfdd8eefd9d4f9e7addecbacb214d4"
+}
