@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="MagangHub Logbook Ops Apple-studio illustration showing zero-dependency Indonesian daily logbook compiler, Delivery Gate checks, and Monev Kemnaker compliance ledger">
+  <title>MagangHub Logbook Ops project illustration</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <filter id="sh" x="-6%" y="-6%" width="112%" height="116%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#sh)"/>
+  <g transform="translate(48, 36)">
+    <rect x="48" y="48" width="1008" height="170" rx="22" fill="#0f172a"/>
+    <text x="84" y="96" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#38bdf8">MAGANGHUB KEMNAKER MONEV OPERATIONS</text>
+    <text x="84" y="142" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="700" fill="#f8fafc">MagangHub Logbook Ops</text>
+    <text x="84" y="178" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#cbd5e1">Zero-Dependency Indonesian Daily Logbook Compiler, Delivery Gate &amp; Compliance Ledger</text>
+
+    <rect x="48" y="246" width="318" height="384" rx="22" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="76" y="294" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#0071e3">01 / DAILY COMPILER</text>
+    <text x="76" y="334" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Structured Entry</text>
+    <text x="76" y="370" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Technical field activity intake</text>
+    <text x="76" y="400" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- SIAPkerja Monev schema format</text>
+    <text x="76" y="430" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Bilingual term normalization</text>
+    <text x="76" y="460" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Zero runtime dependencies</text>
+    <rect x="76" y="556" width="262" height="42" rx="14" fill="#eaf2ff"/>
+    <text x="207" y="582" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#0071e3">Pure Python Stdlib CLI</text>
+
+    <rect x="393" y="246" width="318" height="384" rx="22" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="421" y="294" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#0d9488">02 / DELIVERY GATE</text>
+    <text x="421" y="334" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Compliance Guard</text>
+    <text x="421" y="370" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Anti-hallucination scope check</text>
+    <text x="421" y="400" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Word-count &amp; tone validation</text>
+    <text x="421" y="430" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Client confidentiality redaction</text>
+    <text x="421" y="460" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Deterministic pytest assertions</text>
+    <rect x="421" y="556" width="262" height="42" rx="14" fill="#ecfdf5"/>
+    <text x="552" y="582" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#0b6b46">Claim-Boundary Locked</text>
+
+    <rect x="738" y="246" width="318" height="384" rx="22" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="766" y="294" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#d97706">03 / SKILL PACKAGE</text>
+    <text x="766" y="334" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0f172a">1-Command Install</text>
+    <text x="766" y="370" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Cross-platform .ps1 &amp; .sh</text>
+    <text x="766" y="400" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Self-contained agent skill</text>
+    <text x="766" y="430" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Auditable CSV/Markdown ledger</text>
+    <text x="766" y="460" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#475569">- Open-source MIT toolkit</text>
+    <rect x="766" y="556" width="262" height="42" rx="14" fill="#fffbeb"/>
+    <text x="897" y="582" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#b45309">install.ps1 · install.sh</text>
+  </g>
+</svg>

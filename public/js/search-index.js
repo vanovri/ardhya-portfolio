@@ -6,6 +6,24 @@ export default [
     "text": "Engineering Labs Systems Lab interactive lab WASM Rust WebAssembly UART EMG VectraDB KronosLOB AegisBox NovaServe SpectreMesh DST-KV. Run six Rust and WebAssembly studios, filter a synthetic EMG signal, and follow a fragmented UART message byte by byte."
   },
   {
+    "title": "13 Deep Learning Domains on 4 GB VRAM",
+    "url": "/blog/13-dl-domains-4gb-vram/",
+    "category": "Case Study",
+    "text": "13 cross-domain PyTorch Deep Learning pipelines trained and verified on GTX 1650 Ti 4 GB VRAM (149/149 pytest PASS, v1.0.0, CI green): Landslide4Sense 14-Band SAR 0.9771 ROC-AUC, WESAD Bi-LSTM 89.33%, IndoBERT SmSA 90.00%, IceCube 3D Neutrino 5.65 deg MAE, Hybrid 4-Qubit Quantum-DL BBBP 0.9350 AUC, Multimodal Gated Fusion, Corrosion U-Net 197 FPS, RetinaMNIST Grad-CAM, and Nusantara Humanities."
+  },
+  {
+    "title": "Token Burn Verifier",
+    "url": "/projects/token-burn-verifier.html",
+    "category": "Project",
+    "text": "Multi-chain live RPC verifier and Solidity 0.8.28 reference contracts auditing real vs theater token burns across Ethereum EIP-1559, Polygon, BNB, Avalanche, and Solana (24/24 tests PASS)."
+  },
+  {
+    "title": "MagangHub Logbook Ops",
+    "url": "/projects/maganghub-logbook-ops.html",
+    "category": "Project",
+    "text": "Sanitized multi-platform agent skill and Python CLI for daily MagangHub Kemnaker / SIAPkerja logbook drafting, claim-boundary checking, and structured export."
+  },
+  {
     "title": "10 AI Systems on 4 GB VRAM",
     "url": "/blog/10-ai-systems-4gb-vram/",
     "category": "Case Study",

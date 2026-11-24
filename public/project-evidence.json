@@ -1,7 +1,61 @@
 {
-  "auditedOn": "2026-11-20",
+  "auditedOn": "2026-11-25",
   "scope": "Public and local flagship source inspection. Source references do not establish production, clinical, hardware, or benchmark validation.",
   "projects": [
+    {
+      "name": "dl-portfolio-suite",
+      "description": "13 cross-domain PyTorch Deep Learning pipelines verified locally on a 4 GB GTX 1650 Ti (149/149 pytest PASS, CI green): Landslide4Sense 14-Band SAR (0.9771 AUC), WESAD Bi-LSTM (89.33%), IndoBERT (90.00%), IceCube 3D Cherenkov sim + Kaggle Parquet loader (5.65 deg MAE), 4-Qubit Quantum-DL (0.9350 AUC), Multimodal Gated Fusion, and Nusantara Humanities.",
+      "page": "blog/13-dl-domains-4gb-vram/index.html",
+      "sourceCommit": "82d89be1fed63c4b96d980b8d929e57978b50fc8",
+      "sourceFiles": [
+        "README.md",
+        "verify_all.ps1",
+        "MASTER_BENCHMARK_LEDGER.json",
+        "common/cuda_utils.py",
+        "reports/flagship_visual_collage.png",
+        ".github/workflows/ci.yml"
+      ],
+      "verifiedCI": {
+        "url": "https://github.com/vanovri/dl-portfolio-suite/actions/runs/45504050794",
+        "conclusion": "success",
+        "jobs": [
+          "Strict Hygiene & Ledger Audit",
+          "CPU Unit Tests (149/149)"
+        ]
+      }
+    },
+    {
+      "name": "token-burn-verifier",
+      "description": "Multi-chain live RPC token burn verifier and Solidity 0.8.28 reference contracts auditing real vs theater token burns across Ethereum EIP-1559, Polygon, BNB, Avalanche, and Solana (24/24 tests PASS).",
+      "page": "projects/token-burn-verifier.html",
+      "sourceCommit": "0f0f35810cd34f4b450acfe6278ef7f8bef706d4",
+      "sourceFiles": [
+        "README.md",
+        "package.json",
+        "contracts/RealFeeBurnToken.sol",
+        "contracts/BurnToMintDataCredits.sol",
+        "contracts/ScheduledAutoBurnVault.sol",
+        "contracts/TheaterBurnAntiPattern.sol",
+        "scripts/verify-all-5-chains.mjs",
+        "src/auditor/credibility-auditor.mjs",
+        "reports/LIVE_ONCHAIN_AUDIT_REPORT.md"
+      ]
+    },
+    {
+      "name": "maganghub-logbook-ops",
+      "description": "Sanitized multi-platform agent skill and Python CLI for MagangHub Kemnaker / SIAPkerja daily logbook drafting, claim-boundary validation, and structured export.",
+      "page": "projects/maganghub-logbook-ops.html",
+      "sourceCommit": "eb2877570787f854bf92216c2cdbb044a452f27d",
+      "sourceFiles": [
+        "README.md",
+        "NOTICE.md",
+        "install.ps1",
+        "install.sh",
+        "skills",
+        "scripts",
+        "tests"
+      ]
+    },
     {
       "name": "ai-systems-4gb-vram",
       "description": "10 production AI/ML and Python systems verified locally on a 4 GB GTX 1650 Ti (151/151 pytest PASS): Neural Pong World Model (101.2 FPS, 0 game engine imports), Pure NumPy INT4 + GPTQ-lite (-67.70% L2 err), Qwen3-0.6B LoRA (84.59% Banking77), Two-Tower RecSys (4.23x Recall@10), and Hybrid RAG (1.00 MRR).",

@@ -11,6 +11,33 @@
       "sha256": "57ac6047b1dde2c5b5a9776f1a6ab2d850506f2f1a6565a67ac71c2d340c8373"
     },
     {
+      "title": "13 Deep Learning Domains on 4 GB VRAM",
+      "slug": "dl-portfolio-suite",
+      "card": "blog/13-dl-domains-4gb-vram/",
+      "preview": "img/previews/dl-portfolio-suite.svg",
+      "kind": "Apple-studio architectural preview illustration",
+      "previous_url": null,
+      "sha256": "9771f5e350ed82612e1509aafbf39c85e3170af5c8359587a6461313300c6040"
+    },
+    {
+      "title": "Token Burn Verifier",
+      "slug": "token-burn-verifier",
+      "card": "projects/token-burn-verifier.html",
+      "preview": "img/previews/token-burn-verifier.svg",
+      "kind": "Apple-studio architectural preview illustration",
+      "previous_url": null,
+      "sha256": "e07ac289e7ed773dd628a02bb53fc7a5a93bfcc56a3d330005bb9963fabd1635"
+    },
+    {
+      "title": "MagangHub Logbook Ops",
+      "slug": "maganghub-logbook-ops",
+      "card": "projects/maganghub-logbook-ops.html",
+      "preview": "img/previews/maganghub-logbook-ops.svg",
+      "kind": "Apple-studio architectural preview illustration",
+      "previous_url": null,
+      "sha256": "f38e0fbf7c312502e7601df379c6ad98b5d98b80622a07a76af89a1dfe1f0bf0"
+    },
+    {
       "title": "10 AI Systems on 4 GB VRAM",
       "slug": "ai-systems-4gb-vram",
       "card": "blog/10-ai-systems-4gb-vram/",

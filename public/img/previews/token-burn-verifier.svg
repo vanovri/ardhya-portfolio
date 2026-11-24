@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Token Burn Verifier Apple-studio illustration showing 5 real on-chain protocol burns vs burn theater anti-patterns and 24/24 verified tests">
+  <title>Token Burn Verifier project illustration</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="sh" x="-6%" y="-6%" width="112%" height="116%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#sh)"/>
+  <g transform="translate(48, 36)">
+    <rect x="48" y="48" width="494" height="582" rx="24" fill="url(#navy)"/>
+    <text x="82" y="98" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#38bdf8">ON-CHAIN SUPPLY VERIFICATION</text>
+    <text x="82" y="146" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#f8fafc">Token Burn Verifier</text>
+    <text x="82" y="180" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#94a3b8">Exact BigInt Protocol Math &amp; Solidity Proofs</text>
+
+    <g font-family="SF Mono, ui-monospace, monospace" font-size="13">
+      <rect x="82" y="214" width="426" height="54" rx="12" fill="#1e293b" stroke="#334155"/><text x="102" y="246" fill="#38bdf8" font-weight="700">ETH EIP-1559</text><text x="488" y="246" text-anchor="end" fill="#e2e8f0">gasUsed * baseFee</text>
+      <rect x="82" y="282" width="426" height="54" rx="12" fill="#1e293b" stroke="#334155"/><text x="102" y="314" fill="#ef4444" font-weight="700">AVAX C-Chain</text><text x="488" y="314" text-anchor="end" fill="#e2e8f0">100% Tx Fee Burn</text>
+      <rect x="82" y="350" width="426" height="54" rx="12" fill="#1e293b" stroke="#334155"/><text x="102" y="382" fill="#34d399" font-weight="700">XRP Ledger</text><text x="488" y="382" text-anchor="end" fill="#e2e8f0">100B - total_coins</text>
+      <rect x="82" y="418" width="426" height="54" rx="12" fill="#1e293b" stroke="#334155"/><text x="102" y="450" fill="#f59e0b" font-weight="700">BNB Auto + BEP-95</text><text x="488" y="450" text-anchor="end" fill="#e2e8f0">100M Supply Floor</text>
+      <rect x="82" y="486" width="426" height="54" rx="12" fill="#1e293b" stroke="#334155"/><text x="102" y="518" fill="#a78bfa" font-weight="700">Helium BME</text><text x="488" y="518" text-anchor="end" fill="#e2e8f0">$0.00001 / DC Mint</text>
+    </g>
+    <text x="82" y="592" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#34d399">24/24 Node Tests PASS · 4 Solidity Contracts</text>
+
+    <rect x="570" y="48" width="486" height="582" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <text x="604" y="96" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#0071e3">5-TRAIT ANTI-THEATER RUBRIC</text>
+    <rect x="604" y="122" width="418" height="196" rx="18" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.5"/>
+    <text x="628" y="158" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#0b6b46">CREDIBLE INFRASTRUCTURE (5/5)</text>
+    <text x="628" y="192" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#334155">1. Rule-Based &amp; Deterministic</text>
+    <text x="628" y="218" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#334155">2. Publicly Auditable On-Chain Proof</text>
+    <text x="628" y="244" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#334155">3. Usage-Linked &amp; True Net Supply Delta</text>
+    <text x="628" y="270" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#334155">4. Explicit Economic Tradeoff · 5. Zero Hype</text>
+    <text x="628" y="300" font-family="SF Mono, ui-monospace, monospace" font-size="12" font-weight="700" fill="#0b6b46">PASS: ETH · AVAX · XRPL · BNB · HNT</text>
+
+    <rect x="604" y="342" width="418" height="190" rx="18" fill="#ffffff" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="628" y="378" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#b91c1c">THEATER ALERT (ANTI-PATTERNS)</text>
+    <text x="628" y="412" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#334155">- Countdown Treasury Relabeling</text>
+    <text x="628" y="440" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#334155">- Dev Mint-and-Burn Net Inflation Wash</text>
+    <text x="628" y="468" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#334155">- Discretionary PR Hype Burn Events</text>
+    <text x="628" y="508" font-family="SF Mono, ui-monospace, monospace" font-size="12" font-weight="700" fill="#b91c1c">BLOCKED BY 2-QUESTION SUPPLY CHECK</text>
+
+    <rect x="604" y="556" width="418" height="44" rx="14" fill="#eaf2ff"/>
+    <text x="813" y="583" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#0071e3">Ethers.js v6 · solc · SHA-256 Live Proofs</text>
+  </g>
+</svg>

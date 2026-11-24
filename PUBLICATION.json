@@ -1,10 +1,10 @@
 {
-  "source": "Portfolio with Engineering Labs unified in Projects (Apple-studio preview) and About + Contact unified on Home, 23 November 2026",
-  "public_files": 265,
-  "gallery_cards": 61,
-  "project_repositories": 52,
-  "open_source_tagged_cards": 50,
+  "source": "Portfolio synchronized with dl-portfolio-suite v1.0.0, token-burn-verifier, and maganghub-logbook-ops, 25 November 2026",
+  "public_files": 282,
+  "gallery_cards": 64,
+  "project_repositories": 55,
+  "open_source_tagged_cards": 53,
   "omitted_asset_count": 110,
   "omissions": "CV PDF, credential images, photos and evidence images remain on the existing portfolio host; no private repository, chat or source documents are included.",
-  "tracked_preview_assets": 61
+  "tracked_preview_assets": 64
 }
