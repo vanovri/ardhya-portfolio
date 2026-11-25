@@ -1,88 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Embedded Signal and Parity Toolkit Apple-studio 3-panel architecture">
-  <title>Embedded Signal &amp; Parity Toolkit collection preview</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Embedded Signal and Parity Toolkit dual-channel oscilloscope trace and UART CRC-32 logic analyzer">
+  <title>Embedded Signal &amp; Parity Toolkit</title>
   <defs>
-    <linearGradient id="bgGradOuter" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fbfbfd"/>
-      <stop offset="100%" stop-color="#f2f2f7"/>
-    </linearGradient>
-    <filter id="softShadowOuter" x="-8%" y="-8%" width="116%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
-    </filter>
-    <filter id="chipShadow" x="-16%" y="-16%" width="132%" height="138%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.09"/>
-    </filter>
-    <pattern id="studioDots" x="61" y="49" width="38" height="38" patternUnits="userSpaceOnUse">
-      <circle cx="19" cy="19" r="1.35" fill="#dcdce2"/>
-    </pattern>
-    <clipPath id="outerCardClip">
-      <rect x="64" y="52" width="1072" height="646" rx="22"/>
-    </clipPath>
-    <linearGradient id="dieDark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e3a5f"/>
-      <stop offset="50%" stop-color="#172554"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </linearGradient>
-    <linearGradient id="subLight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#e2e8f0"/>
-    </linearGradient>
-    <linearGradient id="tealFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.26"/>
-      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
-      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.02"/>
-    </linearGradient>
+<pattern id="scopeGrid" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M 54 0 L 0 0 0 54" fill="none" stroke="#152b34" stroke-width="1"/></pattern>
   </defs>
-  <rect width="1200" height="750" fill="url(#bgGradOuter)"/>
-  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowOuter)"/>
-  <rect x="64" y="52" width="1072" height="646" rx="22" fill="url(#studioDots)" clip-path="url(#outerCardClip)"/>
-  <g transform="translate(48, 36)">
-    <!-- LEFT HERO PANEL -->
-    <rect x="54" y="54" width="492" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <circle cx="300" cy="286" r="174" fill="#f4f8ff" opacity="0.62" stroke="#93c5fd" stroke-width="2" stroke-dasharray="8 6"/>
-    <circle cx="300" cy="286" r="118" fill="#ffffff" opacity="0.78" stroke="#dbeafe" stroke-width="2"/>
-    <ellipse cx="300" cy="400" rx="86" ry="12" fill="#cbd5e1" opacity="0.45"/>
-    <line x1="300.0" y1="194.0" x2="300.0" y2="112.0" stroke="#0071e3" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="379.7" y1="332.0" x2="450.7" y2="373.0" stroke="#0d9488" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="220.3" y1="332.0" x2="149.3" y2="373.0" stroke="#5856d6" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <circle cx="300.0" cy="112.0" r="13" fill="#ffffff" stroke="#0071e3" stroke-width="3.2"/><circle cx="300.0" cy="112.0" r="5.2" fill="#0071e3"/>
-    <circle cx="450.7" cy="373.0" r="13" fill="#ffffff" stroke="#0d9488" stroke-width="3.2"/><circle cx="450.7" cy="373.0" r="5.2" fill="#0d9488"/>
-    <circle cx="149.3" cy="373.0" r="13" fill="#ffffff" stroke="#5856d6" stroke-width="3.2"/><circle cx="149.3" cy="373.0" r="5.2" fill="#5856d6"/>
-    <rect x="220" y="206" width="160" height="160" rx="32" fill="url(#subLight)" stroke="#93c5fd" stroke-width="2.4" filter="url(#chipShadow)"/>
-    <rect x="230" y="216" width="140" height="140" rx="24" fill="#eaf2ff" stroke="#ffffff" stroke-width="2"/>
-    <rect x="242" y="228" width="116" height="116" rx="18" fill="url(#dieDark)" stroke="#0f172a" stroke-width="2"/>
-    <polyline points="256,288 272,288 282,258 296,318 310,266 322,298 344,288" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="358" cy="346" r="19" fill="#ffffff" stroke="#a7f3d0" stroke-width="2.5"/>
-    <circle cx="358" cy="346" r="13" fill="#10b981"/>
-    <path d="M 352 346 L 356.2 350.2 L 364.2 341.2" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-    
-    <rect x="166" y="548" width="268" height="36" rx="18" fill="#eaf2ff"/>
-    <text x="300" y="571" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0071e3">3 DSP &amp; Serial Tools</text>
+  <rect width="1200" height="750" fill="#081014"/>
+  <!-- Oscilloscope Bezel -->
+  <rect x="44" y="38" width="1112" height="368" rx="16" fill="#0c171d" stroke="#1f3b47" stroke-width="2.5"/>
+  <rect x="58" y="52" width="1084" height="340" rx="10" fill="url(#scopeGrid)"/>
+  <line x1="58" y1="238" x2="1142" y2="238" stroke="#244754" stroke-width="1.8"/>
+  <line x1="600" y1="52" x2="600" y2="392" stroke="#244754" stroke-width="1.8"/>
+  <text x="76" y="84" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#fbbf24">CH1 RAW INPUT (50Hz + NOISE)</text>
+  <text x="410" y="84" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#22d3ee">CH2 FILTERED FIR / E1–E6</text>
+  <text x="1124" y="84" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#34d399">TRIG: AUTO · 4.00 kS/s</text>
+  <polyline points="72.0,238.0 82.5,218.9 93.0,244.7 103.5,241.3 114.0,211.6 124.5,228.4 135.0,241.9 145.5,212.3 156.0,215.4 166.5,242.5 177.0,223.8 187.5,213.3 198.0,246.0 208.5,245.1 219.0,224.9 229.5,252.5 240.0,269.4 250.5,245.5 261.0,257.6 271.5,285.3 282.0,263.8 292.5,254.6 303.0,281.8 313.5,268.0 324.0,239.0 334.5,255.7 345.0,253.5 355.5,214.1 366.0,215.4 376.5,226.8 387.0,192.0 397.5,179.7 408.0,203.5 418.5,187.5 429.0,168.4 439.5,199.2 450.0,209.2 460.5,190.9 471.0,219.0 481.5,251.4 492.0,238.7 502.5,252.8 513.0,294.3 523.5,288.5 534.0,280.8 544.5,314.6 555.0,314.6 565.5,285.3 576.0,298.3 586.5,303.5 597.0,262.2 607.5,251.3 618.0,261.6 628.5,224.6 639.0,196.5 649.5,211.9 660.0,194.7 670.5,161.6 681.0,179.5 691.5,189.7 702.0,163.6 712.5,178.4 723.0,211.8 733.5,199.8 744.0,204.1 754.5,246.9 765.0,249.9 775.5,239.3 786.0,274.4 796.5,288.9 807.0,265.1 817.5,279.7 828.0,300.6 838.5,271.6 849.0,262.1 859.5,284.0 870.0,261.7 880.5,233.5 891.0,251.8 901.5,245.9 912.0,210.5 922.5,220.8 933.0,234.5 943.5,204.3 954.0,203.4 964.5,231.7 975.0,215.7 985.5,202.5 996.0,234.6 1006.5,236.6 1017.0,213.9 1027.5,237.6 1038.0,255.6 1048.5,229.9 1059.0,236.7 1069.5,264.4 1080.0,244.1 1090.5,232.0 1101.0,260.7 1111.5,253.3 1122.0,227.1" fill="none" stroke="#fbbf24" stroke-width="2.2" opacity="0.62"/>
+  <polyline points="72.0,238.0 82.5,236.0 93.0,233.8 103.5,231.6 114.0,229.3 124.5,227.3 135.0,225.7 145.5,224.7 156.0,224.5 166.5,225.2 177.0,226.8 187.5,229.5 198.0,233.1 208.5,237.6 219.0,242.7 229.5,248.1 240.0,253.6 250.5,258.8 261.0,263.1 271.5,266.4 282.0,268.2 292.5,268.2 303.0,266.2 313.5,262.3 324.0,256.4 334.5,248.7 345.0,239.7 355.5,229.8 366.0,219.6 376.5,209.8 387.0,200.9 397.5,193.8 408.0,188.9 418.5,186.7 429.0,187.6 439.5,191.6 450.0,198.6 460.5,208.4 471.0,220.5 481.5,234.2 492.0,248.6 502.5,262.8 513.0,276.1 523.5,287.4 534.0,296.0 544.5,301.4 555.0,303.0 565.5,300.9 576.0,294.9 586.5,285.6 597.0,273.4 607.5,259.1 618.0,243.7 628.5,228.0 639.0,213.0 649.5,199.8 660.0,189.0 670.5,181.2 681.0,177.0 691.5,176.5 702.0,179.5 712.5,185.9 723.0,195.1 733.5,206.4 744.0,219.0 754.5,232.1 765.0,245.0 775.5,256.7 786.0,266.7 796.5,274.3 807.0,279.4 817.5,281.8 828.0,281.4 838.5,278.6 849.0,273.5 859.5,266.9 870.0,259.1 880.5,250.7 891.0,242.3 901.5,234.5 912.0,227.6 922.5,222.0 933.0,217.9 943.5,215.4 954.0,214.5 964.5,215.1 975.0,217.0 985.5,219.9 996.0,223.5 1006.5,227.6 1017.0,231.7 1027.5,235.7 1038.0,239.3 1048.5,242.3 1059.0,244.7 1069.5,246.3 1080.0,247.2 1090.5,247.4 1101.0,247.0 1111.5,246.1 1122.0,244.9" fill="none" stroke="#22d3ee" stroke-width="4.2" stroke-linecap="round"/>
 
-    <!-- RIGHT TOP PANEL -->
-    <rect x="574" y="54" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="88" width="412" height="148" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <line x1="630" y1="162" x2="990" y2="162" stroke="#e2e8f0" stroke-width="1.8" stroke-dasharray="5 4"/>
-    <polyline points="630.0,162.0 633.6,160.4 637.2,158.6 640.8,156.8 644.4,155.1 648.0,153.6 651.6,152.6 655.2,152.1 658.8,152.2 662.4,153.1 666.0,154.7 669.6,157.0 673.2,160.1 676.8,163.6 680.4,167.4 684.0,171.3 687.6,175.0 691.2,178.2 694.8,180.6 698.4,182.0 702.0,182.1 705.6,180.9 709.2,178.2 712.8,174.2 716.4,169.0 720.0,162.9 723.6,156.2 727.2,149.4 730.8,143.0 734.4,137.4 738.0,133.1 741.6,130.4 745.2,129.6 748.8,131.0 752.4,134.5 756.0,139.9 759.6,147.1 763.2,155.6 766.8,164.8 770.4,174.2 774.0,183.2 777.6,191.0 781.2,197.2 784.8,201.2 788.4,202.8 792.0,201.9 795.6,198.3 799.2,192.4 802.8,184.5 806.4,175.1 810.0,164.8 813.6,154.3 817.2,144.4 820.8,135.7 824.4,128.7 828.0,123.9 831.6,121.5 835.2,121.8 838.8,124.6 842.4,129.7 846.0,136.7 849.6,145.1 853.2,154.2 856.8,163.5 860.4,172.4 864.0,180.2 867.6,186.5 871.2,191.0 874.8,193.4 878.4,193.8 882.0,192.1 885.6,188.6 889.2,183.7 892.8,177.8 896.4,171.2 900.0,164.6 903.6,158.3 907.2,152.7 910.8,148.1 914.4,144.8 918.0,142.9 921.6,142.3 925.2,143.0 928.8,144.8 932.4,147.6 936.0,151.0 939.6,154.7 943.2,158.5 946.8,162.1 950.4,165.3 954.0,168.0 957.6,169.9 961.2,171.1 964.8,171.6 968.4,171.4 972.0,170.6 975.6,169.4 979.2,167.9 982.8,166.2 986.4,164.5 990.0,162.8" fill="none" stroke="#0071e3" stroke-width="4" stroke-linecap="round"/>
-    
-    <rect x="682" y="264" width="260" height="36" rx="18" fill="#e6f7f5"/>
-    <text x="812" y="287" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0d9488">SignalProof · E1–E6 DSP</text>
+  <!-- Bottom Logic Analyzer & Parity Split -->
+  <rect x="44" y="428" width="760" height="278" rx="16" fill="#0c171d" stroke="#1f3b47" stroke-width="2"/>
+  <text x="72" y="460" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#34d399">UART-FIXTURE-KIT · IEEE 802.3 CRC-32 BYTE REPLAY</text>
+  <polyline points="72,530 132,530 132,472 192,472 192,530 232,530 232,472 312,472 312,530 372,530 372,472 412,472 412,530 492,530 492,472 572,472 572,530 652,530 652,472 712,472 712,530 780,530" fill="none" stroke="#34d399" stroke-width="3.5" stroke-linejoin="round"/>
+  <rect x="72" y="564" width="142" height="54" rx="8" fill="#132933" stroke="#22d3ee"/>
+  <text x="143" y="597" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#22d3ee">SOF 0xAA</text>
+  <rect x="228" y="564" width="338" height="54" rx="8" fill="#132933" stroke="#fbbf24"/>
+  <text x="397" y="597" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#fbbf24">FRAGMENTED FRAME BYTES</text>
+  <rect x="580" y="564" width="196" height="54" rx="8" fill="#0d2b22" stroke="#34d399"/>
+  <text x="678" y="597" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#34d399">CRC-32 VALID</text>
+  <text x="72" y="666" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#7da0ad">238 TESTS PASS  ·  SIGNALPROOF E1–E6 METRICS  ·  0 RUNTIME DEPS</text>
 
-    <!-- RIGHT BOTTOM PANEL -->
-    <rect x="574" y="352" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="388" width="412" height="142" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <rect x="630" y="424" width="66" height="68" rx="12" fill="#eaf2ff" stroke="#0071e3" stroke-width="2.2"/>
-    <rect x="708" y="424" width="144" height="68" rx="12" fill="#e6f7f5" stroke="#0d9488" stroke-width="2.2"/>
-    <rect x="864" y="424" width="130" height="68" rx="12" fill="#eaf8ee" stroke="#10b981" stroke-width="2.2"/>
-    <text x="663" y="464" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0071e3">SOF</text>
-    <text x="780" y="464" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0d9488">PAYLOAD · FIR</text>
-    <text x="929" y="464" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#059669">CRC-32</text>
-    
-    <rect x="682" y="564" width="260" height="36" rx="18" fill="#eaf8ee"/>
-    <text x="812" y="587" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#059669">UART CRC-32 · FIR Parity</text>
-  </g>
+  <rect x="826" y="428" width="330" height="278" rx="16" fill="#0c171d" stroke="#1f3b47" stroke-width="2"/>
+  <text x="854" y="464" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#22d3ee">FIR PARITY CHECK</text>
+  <text x="854" y="514" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">Fortran ↔ Rust</text>
+  <text x="854" y="544" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" fill="#94a3b8">vs Python Reference</text>
+  <rect x="854" y="572" width="274" height="54" rx="10" fill="#0d2b22" stroke="#34d399"/>
+  <text x="991" y="606" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="20" font-weight="700" fill="#34d399">Δ MAX &lt; 1e-12</text>
+  <text x="854" y="666" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#fbbf24">Q15 / Q31 · 26/26 PYTEST</text>
 </svg>

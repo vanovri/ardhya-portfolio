@@ -1,105 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="3D Graphics, Spatial Audio and Interactive Web Lab Apple-studio 3-panel architecture">
-  <title>3D Graphics, Spatial Audio &amp; Web Lab collection preview</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="3D Graphics Spatial Audio and Web Lab Runway-style cinematic spectral sphere, WebGPU ribbons, and video timeline">
+  <title>3D Graphics, Spatial Audio &amp; Web Lab</title>
   <defs>
-    <linearGradient id="bgGradOuter" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fbfbfd"/>
-      <stop offset="100%" stop-color="#f2f2f7"/>
-    </linearGradient>
-    <filter id="softShadowOuter" x="-8%" y="-8%" width="116%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
-    </filter>
-    <filter id="chipShadow" x="-16%" y="-16%" width="132%" height="138%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.09"/>
-    </filter>
-    <pattern id="studioDots" x="61" y="49" width="38" height="38" patternUnits="userSpaceOnUse">
-      <circle cx="19" cy="19" r="1.35" fill="#dcdce2"/>
-    </pattern>
-    <clipPath id="outerCardClip">
-      <rect x="64" y="52" width="1072" height="646" rx="22"/>
-    </clipPath>
-    <linearGradient id="dieDark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e3a5f"/>
-      <stop offset="50%" stop-color="#172554"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </linearGradient>
-    <linearGradient id="subLight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#e2e8f0"/>
-    </linearGradient>
-    <linearGradient id="tealFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.26"/>
-      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
-      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.02"/>
-    </linearGradient>
+    <radialGradient id="rwGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.35"/><stop offset="60%" stop-color="#f472b6" stop-opacity="0.10"/><stop offset="100%" stop-color="#09090b" stop-opacity="0"/></radialGradient>
+    <radialGradient id="rwSphere" cx="35%" cy="30%" r="70%"><stop offset="0%" stop-color="#f472b6"/><stop offset="45%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#0f172a"/></radialGradient>
   </defs>
-  <rect width="1200" height="750" fill="url(#bgGradOuter)"/>
-  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowOuter)"/>
-  <rect x="64" y="52" width="1072" height="646" rx="22" fill="url(#studioDots)" clip-path="url(#outerCardClip)"/>
-  <g transform="translate(48, 36)">
-    <!-- LEFT HERO PANEL -->
-    <rect x="54" y="54" width="492" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <circle cx="300" cy="286" r="178" fill="#f4f8ff" opacity="0.62" stroke="#93c5fd" stroke-width="2" stroke-dasharray="8 6"/>
-    <circle cx="300" cy="286" r="120" fill="#ffffff" opacity="0.78" stroke="#dbeafe" stroke-width="2"/>
-    <ellipse cx="300" cy="400" rx="86" ry="12" fill="#cbd5e1" opacity="0.45"/>
-    <line x1="300.0" y1="192.0" x2="300.0" y2="108.0" stroke="#0071e3" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="347.0" y1="204.6" x2="389.0" y2="131.8" stroke="#0284c7" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="381.4" y1="239.0" x2="454.2" y2="197.0" stroke="#38bdf8" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="394.0" y1="286.0" x2="478.0" y2="286.0" stroke="#0d9488" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="381.4" y1="333.0" x2="454.2" y2="375.0" stroke="#10b981" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="347.0" y1="367.4" x2="389.0" y2="440.2" stroke="#34d399" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="300.0" y1="380.0" x2="300.0" y2="464.0" stroke="#5856d6" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="253.0" y1="367.4" x2="211.0" y2="440.2" stroke="#6366f1" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="218.6" y1="333.0" x2="145.8" y2="375.0" stroke="#818cf8" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="206.0" y1="286.0" x2="122.0" y2="286.0" stroke="#0071e3" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="218.6" y1="239.0" x2="145.8" y2="197.0" stroke="#0d9488" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="253.0" y1="204.6" x2="211.0" y2="131.8" stroke="#5856d6" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <circle cx="300.0" cy="108.0" r="13" fill="#ffffff" stroke="#0071e3" stroke-width="3.2"/><circle cx="300.0" cy="108.0" r="5.2" fill="#0071e3"/>
-    <circle cx="389.0" cy="131.8" r="13" fill="#ffffff" stroke="#0284c7" stroke-width="3.2"/><circle cx="389.0" cy="131.8" r="5.2" fill="#0284c7"/>
-    <circle cx="454.2" cy="197.0" r="13" fill="#ffffff" stroke="#38bdf8" stroke-width="3.2"/><circle cx="454.2" cy="197.0" r="5.2" fill="#38bdf8"/>
-    <circle cx="478.0" cy="286.0" r="13" fill="#ffffff" stroke="#0d9488" stroke-width="3.2"/><circle cx="478.0" cy="286.0" r="5.2" fill="#0d9488"/>
-    <circle cx="454.2" cy="375.0" r="13" fill="#ffffff" stroke="#10b981" stroke-width="3.2"/><circle cx="454.2" cy="375.0" r="5.2" fill="#10b981"/>
-    <circle cx="389.0" cy="440.2" r="13" fill="#ffffff" stroke="#34d399" stroke-width="3.2"/><circle cx="389.0" cy="440.2" r="5.2" fill="#34d399"/>
-    <circle cx="300.0" cy="464.0" r="13" fill="#ffffff" stroke="#5856d6" stroke-width="3.2"/><circle cx="300.0" cy="464.0" r="5.2" fill="#5856d6"/>
-    <circle cx="211.0" cy="440.2" r="13" fill="#ffffff" stroke="#6366f1" stroke-width="3.2"/><circle cx="211.0" cy="440.2" r="5.2" fill="#6366f1"/>
-    <circle cx="145.8" cy="375.0" r="13" fill="#ffffff" stroke="#818cf8" stroke-width="3.2"/><circle cx="145.8" cy="375.0" r="5.2" fill="#818cf8"/>
-    <circle cx="122.0" cy="286.0" r="13" fill="#ffffff" stroke="#0071e3" stroke-width="3.2"/><circle cx="122.0" cy="286.0" r="5.2" fill="#0071e3"/>
-    <circle cx="145.8" cy="197.0" r="13" fill="#ffffff" stroke="#0d9488" stroke-width="3.2"/><circle cx="145.8" cy="197.0" r="5.2" fill="#0d9488"/>
-    <circle cx="211.0" cy="131.8" r="13" fill="#ffffff" stroke="#5856d6" stroke-width="3.2"/><circle cx="211.0" cy="131.8" r="5.2" fill="#5856d6"/>
-    <circle cx="300" cy="286" r="76" fill="url(#dieDark)" stroke="#93c5fd" stroke-width="3" filter="url(#chipShadow)"/>
-    <ellipse cx="300" cy="286" rx="58" ry="22" transform="rotate(-28 300 286)" fill="none" stroke="#38bdf8" stroke-width="3"/>
-    <ellipse cx="300" cy="286" rx="58" ry="22" transform="rotate(28 300 286)" fill="none" stroke="#34d399" stroke-width="3"/>
-    <circle cx="300" cy="286" r="18" fill="#ffffff" opacity="0.92"/>
-    <circle cx="300" cy="286" r="8" fill="#0071e3"/>
-    
-    <rect x="166" y="548" width="268" height="36" rx="18" fill="#eaf2ff"/>
-    <text x="300" y="571" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0071e3">12 Graphics, Audio &amp; Web</text>
+  <rect width="1200" height="750" fill="#09090b"/>
+  <!-- Cinematic Viewport -->
+  <rect x="44" y="38" width="1112" height="444" rx="22" fill="#111116" stroke="#27272f" stroke-width="2"/>
+  <circle cx="600" cy="256" r="190" fill="url(#rwGlow)"/>
+  <path d="M 48 290 C 280 110 460 430 720 220 S 1020 150 1152 280" fill="none" stroke="#f472b6" stroke-width="4.5" opacity="0.95"/><path d="M 48 306 C 280 126 460 446 720 236 S 1020 166 1152 296" fill="none" stroke="#a78bfa" stroke-width="4.0" opacity="0.85"/><path d="M 48 322 C 280 142 460 462 720 252 S 1020 182 1152 312" fill="none" stroke="#2dd4bf" stroke-width="3.5" opacity="0.8"/><path d="M 48 338 C 280 158 460 478 720 268 S 1020 198 1152 328" fill="none" stroke="#fb923c" stroke-width="3.0" opacity="0.72"/><path d="M 48 354 C 280 174 460 494 720 284 S 1020 214 1152 344" fill="none" stroke="#38bdf8" stroke-width="2.5" opacity="0.65"/>
+  <!-- Spectral Raytraced Sphere Centerpiece -->
+  <circle cx="600" cy="256" r="112" fill="url(#rwSphere)" stroke="#f4f4f5" stroke-opacity="0.25" stroke-width="2"/>
+  <ellipse cx="564" cy="212" rx="34" ry="18" transform="rotate(-28 564 212)" fill="#ffffff" opacity="0.28"/>
+  <text x="76" y="84" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#e4e4e7" letter-spacing="1.6">CREATIVE LAB · 12 GRAPHICS, AUDIO, WEBGPU &amp; GAME BUILDS</text>
+  <rect x="942" y="60" width="182" height="34" rx="17" fill="#1e1b2e" stroke="#a78bfa"/>
+  <text x="1033" y="82" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#c4b5fd">LIVE WEBGL2 INSIDE</text>
+  <text x="76" y="454" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#a1a1aa">RUST SPECTRAL PATH TRACER · SWIFT/METAL SPATIAL AUDIO · 16,384 WEBGPU STRANDS · BLENDER → GLB</text>
 
-    <!-- RIGHT TOP PANEL -->
-    <rect x="574" y="54" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="88" width="412" height="148" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <path d="M 636 108 Q 716 226 812 152 T 988 198" fill="none" stroke="#0071e3" stroke-width="3.6" stroke-linecap="round"/>
-    <path d="M 636 122 Q 716 238 812 164 T 988 210" fill="none" stroke="#0d9488" stroke-width="2.8" stroke-linecap="round" opacity="0.8"/>
-    <path d="M 636 136 Q 716 248 812 176 T 988 220" fill="none" stroke="#5856d6" stroke-width="2.2" stroke-linecap="round" opacity="0.65"/>
-    
-    <rect x="682" y="264" width="260" height="36" rx="18" fill="#e6f7f5"/>
-    <text x="812" y="287" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0d9488">Rust Raytrace · WebGPU · GLB</text>
-
-    <!-- RIGHT BOTTOM PANEL -->
-    <rect x="574" y="352" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="388" width="412" height="142" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <rect x="632" y="410" width="110" height="32" rx="9" fill="#eaf2ff" stroke="#0071e3" stroke-width="1.8"/>
-    <rect x="756" y="410" width="128" height="32" rx="9" fill="#e6f7f5" stroke="#0d9488" stroke-width="1.8"/>
-    <rect x="898" y="410" width="94" height="32" rx="9" fill="#efeffc" stroke="#5856d6" stroke-width="1.8"/>
-    <rect x="632" y="458" width="180" height="24" rx="8" fill="#eaf8ee"/>
-    <rect x="826" y="458" width="166" height="24" rx="8" fill="#dbeafe"/>
-    <rect x="632" y="494" width="360" height="14" rx="7" fill="#f1f5f9"/>
-    
-    <rect x="682" y="564" width="260" height="36" rx="18" fill="#efeffc"/>
-    <text x="812" y="587" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#5856d6">Swift Metal · Video · Games</text>
-  </g>
+  <!-- Bottom NLE Video & Audio Track Timeline -->
+  <rect x="44" y="506" width="1112" height="202" rx="18" fill="#121217" stroke="#27272f" stroke-width="1.8"/>
+  <text x="74" y="542" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#a1a1aa">TIMELINE · MEDIA &amp; INTERACTIVE TRACKS</text>
+  <!-- Track 1: Rendering & Audio -->
+  <rect x="74" y="562" width="330" height="42" rx="9" fill="#2d1630" stroke="#f472b6"/>
+  <text x="94" y="588" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#fbcfe8">AetherCore · AetherSynth</text>
+  <rect x="418" y="562" width="320" height="42" rx="9" fill="#1d1836" stroke="#a78bfa"/>
+  <text x="438" y="588" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#ddd6fe">Ramen Stall · Pavilion GLB</text>
+  <rect x="752" y="562" width="374" height="42" rx="9" fill="#122c2a" stroke="#2dd4bf"/>
+  <text x="772" y="588" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#99f6e4">WebGPU Cable · Body Viewer</text>
+  <!-- Track 2: Video & Games -->
+  <rect x="74" y="622" width="374" height="42" rx="9" fill="#2e1e12" stroke="#fb923c"/>
+  <text x="94" y="648" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#fed7aa">AGY × Codex Video Studio (48kHz)</text>
+  <rect x="462" y="622" width="340" height="42" rx="9" fill="#142336" stroke="#38bdf8"/>
+  <text x="482" y="648" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#bae6fd">Claude Six · Desk Racer · Rally</text>
+  <rect x="816" y="622" width="310" height="42" rx="9" fill="#1f1f27" stroke="#71717a"/>
+  <text x="836" y="648" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#e4e4e7">Interactive 3D · Anak Kos</text>
+  <!-- Playhead -->
+  <line x1="600" y1="536" x2="600" y2="684" stroke="#f472b6" stroke-width="2.5"/>
+  <polygon points="592,534 608,534 600,546" fill="#f472b6"/>
 </svg>

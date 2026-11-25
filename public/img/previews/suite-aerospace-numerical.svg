@@ -1,88 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Aerospace and Scientific Computing Apple-studio 3-panel architecture">
-  <title>Aerospace &amp; Scientific Computing collection preview</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Aerospace and Scientific Computing SpaceX-style cislunar trajectory and Nusantara SolarWing mission telemetry">
+  <title>Aerospace &amp; Scientific Computing</title>
   <defs>
-    <linearGradient id="bgGradOuter" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fbfbfd"/>
-      <stop offset="100%" stop-color="#f2f2f7"/>
-    </linearGradient>
-    <filter id="softShadowOuter" x="-8%" y="-8%" width="116%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
-    </filter>
-    <filter id="chipShadow" x="-16%" y="-16%" width="132%" height="138%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.09"/>
-    </filter>
-    <pattern id="studioDots" x="61" y="49" width="38" height="38" patternUnits="userSpaceOnUse">
-      <circle cx="19" cy="19" r="1.35" fill="#dcdce2"/>
-    </pattern>
-    <clipPath id="outerCardClip">
-      <rect x="64" y="52" width="1072" height="646" rx="22"/>
-    </clipPath>
-    <linearGradient id="dieDark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e3a5f"/>
-      <stop offset="50%" stop-color="#172554"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </linearGradient>
-    <linearGradient id="subLight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#e2e8f0"/>
-    </linearGradient>
-    <linearGradient id="tealFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.26"/>
-      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
-      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.02"/>
-    </linearGradient>
+
   </defs>
-  <rect width="1200" height="750" fill="url(#bgGradOuter)"/>
-  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowOuter)"/>
-  <rect x="64" y="52" width="1072" height="646" rx="22" fill="url(#studioDots)" clip-path="url(#outerCardClip)"/>
-  <g transform="translate(48, 36)">
-    <!-- LEFT HERO PANEL -->
-    <rect x="54" y="54" width="492" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <circle cx="300" cy="286" r="174" fill="#f4f8ff" opacity="0.62" stroke="#93c5fd" stroke-width="2" stroke-dasharray="8 6"/>
-    <circle cx="300" cy="286" r="118" fill="#ffffff" opacity="0.78" stroke="#dbeafe" stroke-width="2"/>
-    <ellipse cx="300" cy="400" rx="86" ry="12" fill="#cbd5e1" opacity="0.45"/>
-    <line x1="300.0" y1="194.0" x2="300.0" y2="112.0" stroke="#0071e3" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="379.7" y1="332.0" x2="450.7" y2="373.0" stroke="#5856d6" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="220.3" y1="332.0" x2="149.3" y2="373.0" stroke="#0d9488" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <circle cx="300.0" cy="112.0" r="13" fill="#ffffff" stroke="#0071e3" stroke-width="3.2"/><circle cx="300.0" cy="112.0" r="5.2" fill="#0071e3"/>
-    <circle cx="450.7" cy="373.0" r="13" fill="#ffffff" stroke="#5856d6" stroke-width="3.2"/><circle cx="450.7" cy="373.0" r="5.2" fill="#5856d6"/>
-    <circle cx="149.3" cy="373.0" r="13" fill="#ffffff" stroke="#0d9488" stroke-width="3.2"/><circle cx="149.3" cy="373.0" r="5.2" fill="#0d9488"/>
-    <ellipse cx="300" cy="286" rx="146" ry="56" transform="rotate(-24 300 286)" fill="none" stroke="#0071e3" stroke-width="3.2" stroke-dasharray="8 6"/>
-    <circle cx="242" cy="312" r="28" fill="#0071e3" stroke="#ffffff" stroke-width="3"/>
-    <circle cx="386" cy="242" r="14" fill="#0f172a" stroke="#93c5fd" stroke-width="3"/>
-    <circle cx="316" cy="252" r="9" fill="#10b981" stroke="#ffffff" stroke-width="2.5"/>
-    
-    <rect x="166" y="548" width="268" height="36" rx="18" fill="#eaf2ff"/>
-    <text x="300" y="571" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0071e3">3 Aerospace &amp; Numerical</text>
+  <rect width="1200" height="750" fill="#05070a"/>
+  <circle cx="67" cy="51" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="240" cy="148" r="1.8" fill="#ffffff" opacity="0.43"/><circle cx="413" cy="245" r="1.0" fill="#ffffff" opacity="0.61"/><circle cx="586" cy="342" r="1.8" fill="#ffffff" opacity="0.79"/><circle cx="759" cy="439" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="932" cy="536" r="1.8" fill="#ffffff" opacity="0.43"/><circle cx="1105" cy="113" r="1.0" fill="#ffffff" opacity="0.61"/><circle cx="118" cy="210" r="1.8" fill="#ffffff" opacity="0.79"/><circle cx="291" cy="307" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="464" cy="404" r="1.8" fill="#ffffff" opacity="0.43"/><circle cx="637" cy="501" r="1.0" fill="#ffffff" opacity="0.61"/><circle cx="810" cy="78" r="1.8" fill="#ffffff" opacity="0.79"/><circle cx="983" cy="175" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="1156" cy="272" r="1.8" fill="#ffffff" opacity="0.43"/><circle cx="169" cy="369" r="1.0" fill="#ffffff" opacity="0.61"/><circle cx="342" cy="466" r="1.8" fill="#ffffff" opacity="0.79"/><circle cx="515" cy="43" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="688" cy="140" r="1.8" fill="#ffffff" opacity="0.43"/><circle cx="861" cy="237" r="1.0" fill="#ffffff" opacity="0.61"/><circle cx="1034" cy="334" r="1.8" fill="#ffffff" opacity="0.79"/><circle cx="47" cy="431" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="220" cy="528" r="1.8" fill="#ffffff" opacity="0.43"/><circle cx="393" cy="105" r="1.0" fill="#ffffff" opacity="0.61"/><circle cx="566" cy="202" r="1.8" fill="#ffffff" opacity="0.79"/><circle cx="739" cy="299" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="912" cy="396" r="1.8" fill="#ffffff" opacity="0.43"/><circle cx="1085" cy="493" r="1.0" fill="#ffffff" opacity="0.61"/><circle cx="98" cy="70" r="1.8" fill="#ffffff" opacity="0.79"/><circle cx="271" cy="167" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="444" cy="264" r="1.8" fill="#ffffff" opacity="0.43"/><circle cx="617" cy="361" r="1.0" fill="#ffffff" opacity="0.61"/><circle cx="790" cy="458" r="1.8" fill="#ffffff" opacity="0.79"/><circle cx="963" cy="35" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="1136" cy="132" r="1.8" fill="#ffffff" opacity="0.43"/><circle cx="149" cy="229" r="1.0" fill="#ffffff" opacity="0.61"/><circle cx="322" cy="326" r="1.8" fill="#ffffff" opacity="0.79"/><circle cx="495" cy="423" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="668" cy="520" r="1.8" fill="#ffffff" opacity="0.43"/><circle cx="841" cy="97" r="1.0" fill="#ffffff" opacity="0.61"/><circle cx="1014" cy="194" r="1.8" fill="#ffffff" opacity="0.79"/><circle cx="27" cy="291" r="1.0" fill="#ffffff" opacity="0.25"/><circle cx="200" cy="388" r="1.8" fill="#ffffff" opacity="0.43"/>
+  <!-- Coordinate Crosshair Grid -->
+  <line x1="60" y1="360" x2="1140" y2="360" stroke="#141c28" stroke-width="1.5" stroke-dasharray="8 8"/>
+  <line x1="340" y1="70" x2="340" y2="570" stroke="#141c28" stroke-width="1.5" stroke-dasharray="8 8"/>
 
-    <!-- RIGHT TOP PANEL -->
-    <rect x="574" y="54" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="88" width="412" height="148" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <polygon points="638,210 684,186 736,136 812,108 888,136 940,186 986,210" fill="url(#blueFade)"/>
-    <polyline points="638,210 684,186 736,136 812,108 888,136 940,186 986,210" fill="none" stroke="#0071e3" stroke-width="4" stroke-linecap="round"/>
-    <line x1="638" y1="172" x2="986" y2="172" stroke="#10b981" stroke-width="2.4" stroke-dasharray="6 4"/>
-    
-    <rect x="682" y="264" width="260" height="36" rx="18" fill="#e6f7f5"/>
-    <text x="812" y="287" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0d9488">SolarWing · ISAST Rank 8</text>
+  <!-- Top Mission Control Bar -->
+  <text x="60" y="64" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#94a3b8" letter-spacing="2">MISSION CONTROL · AEROSPACE &amp; SCIENTIFIC NUMERICAL LABS</text>
+  <rect x="866" y="38" width="274" height="38" rx="4" fill="none" stroke="#f59e0b" stroke-width="1.8"/>
+  <text x="1003" y="62" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#f59e0b">ISAST 2026 · FINALIST RANK 8</text>
 
-    <!-- RIGHT BOTTOM PANEL -->
-    <rect x="574" y="352" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="388" width="412" height="142" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <rect x="634" y="424" width="94" height="68" rx="12" fill="#efeffc" stroke="#5856d6" stroke-width="2.2"/>
-    <line x1="728" y1="458" x2="764" y2="458" stroke="#0071e3" stroke-width="3"/>
-    <rect x="764" y="424" width="96" height="68" rx="12" fill="#eaf2ff" stroke="#0071e3" stroke-width="2.2"/>
-    <line x1="860" y1="458" x2="896" y2="458" stroke="#10b981" stroke-width="3"/>
-    <rect x="896" y="424" width="94" height="68" rx="12" fill="#eaf8ee" stroke="#10b981" stroke-width="2.2"/>
-    <text x="681" y="464" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#5856d6">FORTRAN</text>
-    <text x="812" y="464" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#0071e3">RUST/C++</text>
-    <text x="943" y="464" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="13" font-weight="700" fill="#059669">RK4 OK</text>
-    
-    <rect x="682" y="564" width="260" height="36" rx="18" fill="#efeffc"/>
-    <text x="812" y="587" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#5856d6">Fortran -&gt; Rust · CCSDS OEM</text>
-  </g>
+  <!-- Cislunar Free-Return Trajectory Arc -->
+  <circle cx="290" cy="360" r="146" fill="none" stroke="#1d2b3e" stroke-width="1.5"/>
+  <circle cx="290" cy="360" r="88" fill="#0d2238" stroke="#38bdf8" stroke-width="2.5"/>
+  <text x="290" y="366" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#e0f2fe">EARTH</text>
+
+  <path d="M 358 302 C 530 116 836 146 958 272 C 1024 340 996 424 926 420 C 824 414 558 468 358 418" fill="none" stroke="#38bdf8" stroke-width="3.6"/>
+  <path d="M 358 302 C 560 156 818 190 932 292" fill="none" stroke="#f59e0b" stroke-width="2.4" stroke-dasharray="8 6"/>
+
+  <circle cx="944" cy="336" r="40" fill="#1e242d" stroke="#cbd5e1" stroke-width="2.2"/>
+  <text x="944" y="341" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#ffffff">MOON</text>
+
+  <!-- State Vector Waypoints -->
+  <circle cx="578" cy="186" r="8" fill="#ffffff" stroke="#38bdf8" stroke-width="3"/>
+  <line x1="578" y1="176" x2="578" y2="148" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <rect x="468" y="118" width="246" height="28" rx="5" fill="#0b1320" stroke="#1e3a5f"/>
+  <text x="591" y="137" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#7dd3fc">CCSDS OEM · CUBIC HERMITE</text>
+  <circle cx="728" cy="434" r="8" fill="#f59e0b" stroke="#05070a" stroke-width="2"/>
+  <line x1="728" y1="444" x2="728" y2="472" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <rect x="590" y="472" width="292" height="28" rx="5" fill="#1a1407" stroke="#78350f"/>
+  <text x="736" y="491" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#fbbf24">NUSANTARA SOLARWING · NASA POWER</text>
+
+  <!-- Bottom 3 Stark Telemetry Cells -->
+  <line x1="60" y1="576" x2="1140" y2="576" stroke="#263142" stroke-width="1.5"/>
+  <text x="60" y="616" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12" fill="#64748b">01 / CONCEPT UAV</text>
+  <text x="60" y="654" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Nusantara SolarWing</text>
+  <text x="60" y="684" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#f59e0b">Natuna maritime reserve model</text>
+
+  <text x="438" y="616" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12" fill="#64748b">02 / NUMERICAL MIGRATION</text>
+  <text x="438" y="654" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Legacy Orbital Port</text>
+  <text x="438" y="684" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#38bdf8">Fortran → Rust &amp; C++20 RK4</text>
+
+  <text x="816" y="616" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12" fill="#64748b">03 / EPHEMERIS REPLAY</text>
+  <text x="816" y="654" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Cislunar OEM Replay</text>
+  <text x="816" y="684" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#cbd5e1">State vector verification</text>
 </svg>

@@ -1,94 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Hardware, Parametric CAD and Energy Apple-studio 3-panel architecture">
-  <title>Hardware, Parametric CAD &amp; Energy collection preview</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Hardware Parametric CAD and Energy drafting sheet with axonometric OpenSCAD enclosure, PCB PWM and solar schematic">
+  <title>Hardware, Parametric CAD &amp; Energy</title>
   <defs>
-    <linearGradient id="bgGradOuter" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fbfbfd"/>
-      <stop offset="100%" stop-color="#f2f2f7"/>
-    </linearGradient>
-    <filter id="softShadowOuter" x="-8%" y="-8%" width="116%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
-    </filter>
-    <filter id="chipShadow" x="-16%" y="-16%" width="132%" height="138%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.09"/>
-    </filter>
-    <pattern id="studioDots" x="61" y="49" width="38" height="38" patternUnits="userSpaceOnUse">
-      <circle cx="19" cy="19" r="1.35" fill="#dcdce2"/>
-    </pattern>
-    <clipPath id="outerCardClip">
-      <rect x="64" y="52" width="1072" height="646" rx="22"/>
-    </clipPath>
-    <linearGradient id="dieDark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e3a5f"/>
-      <stop offset="50%" stop-color="#172554"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </linearGradient>
-    <linearGradient id="subLight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#e2e8f0"/>
-    </linearGradient>
-    <linearGradient id="tealFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.26"/>
-      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
-      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.02"/>
-    </linearGradient>
+
   </defs>
-  <rect width="1200" height="750" fill="url(#bgGradOuter)"/>
-  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowOuter)"/>
-  <rect x="64" y="52" width="1072" height="646" rx="22" fill="url(#studioDots)" clip-path="url(#outerCardClip)"/>
-  <g transform="translate(48, 36)">
-    <!-- LEFT HERO PANEL -->
-    <rect x="54" y="54" width="492" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <circle cx="300" cy="286" r="174" fill="#f4f8ff" opacity="0.62" stroke="#93c5fd" stroke-width="2" stroke-dasharray="8 6"/>
-    <circle cx="300" cy="286" r="118" fill="#ffffff" opacity="0.78" stroke="#dbeafe" stroke-width="2"/>
-    <ellipse cx="300" cy="400" rx="86" ry="12" fill="#cbd5e1" opacity="0.45"/>
-    <line x1="300.0" y1="194.0" x2="300.0" y2="112.0" stroke="#0071e3" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="387.5" y1="257.6" x2="465.5" y2="232.2" stroke="#0d9488" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="354.1" y1="360.4" x2="402.3" y2="426.8" stroke="#10b981" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="245.9" y1="360.4" x2="197.7" y2="426.8" stroke="#d97706" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="212.5" y1="257.6" x2="134.5" y2="232.2" stroke="#5856d6" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <circle cx="300.0" cy="112.0" r="13" fill="#ffffff" stroke="#0071e3" stroke-width="3.2"/><circle cx="300.0" cy="112.0" r="5.2" fill="#0071e3"/>
-    <circle cx="465.5" cy="232.2" r="13" fill="#ffffff" stroke="#0d9488" stroke-width="3.2"/><circle cx="465.5" cy="232.2" r="5.2" fill="#0d9488"/>
-    <circle cx="402.3" cy="426.8" r="13" fill="#ffffff" stroke="#10b981" stroke-width="3.2"/><circle cx="402.3" cy="426.8" r="5.2" fill="#10b981"/>
-    <circle cx="197.7" cy="426.8" r="13" fill="#ffffff" stroke="#d97706" stroke-width="3.2"/><circle cx="197.7" cy="426.8" r="5.2" fill="#d97706"/>
-    <circle cx="134.5" cy="232.2" r="13" fill="#ffffff" stroke="#5856d6" stroke-width="3.2"/><circle cx="134.5" cy="232.2" r="5.2" fill="#5856d6"/>
-    <rect x="220" y="206" width="160" height="160" rx="32" fill="url(#subLight)" stroke="#93c5fd" stroke-width="2.4" filter="url(#chipShadow)"/>
-    <rect x="230" y="216" width="140" height="140" rx="24" fill="#eaf2ff" stroke="#ffffff" stroke-width="2"/>
-    <rect x="242" y="228" width="116" height="116" rx="18" fill="url(#dieDark)" stroke="#0f172a" stroke-width="2"/>
-    <polygon points="306,252 276,292 298,292 292,324 324,282 302,282" fill="#38bdf8" stroke="#bae6fd" stroke-width="2" stroke-linejoin="round"/>
-    <circle cx="358" cy="346" r="19" fill="#ffffff" stroke="#a7f3d0" stroke-width="2.5"/>
-    <circle cx="358" cy="346" r="13" fill="#10b981"/>
-    <path d="M 352 346 L 356.2 350.2 L 364.2 341.2" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-    
-    <rect x="166" y="548" width="268" height="36" rx="18" fill="#eaf2ff"/>
-    <text x="300" y="571" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0071e3">7 Hardware, CAD &amp; Field</text>
+  <rect width="1200" height="750" fill="#f6f4ef"/>
+  <rect x="34" y="30" width="1132" height="690" fill="none" stroke="#1c2430" stroke-width="2"/>
+  <line x1="34" y1="98" x2="1166" y2="98" stroke="#1c2430" stroke-width="1.5"/>
+  <text x="62" y="72" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#1c2430" letter-spacing="1.2">DWG-SHEET 07 · HARDWARE, PARAMETRIC CAD &amp; FIELD ENERGY (7 BUILDS)</text>
+  <text x="1138" y="72" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#c2622d">REV 2026.11</text>
 
-    <!-- RIGHT TOP PANEL -->
-    <rect x="574" y="54" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="88" width="412" height="148" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <polyline points="632,196 632,126 680,126 680,196 720,196 720,126 768,126 768,196 808,196" fill="none" stroke="#0071e3" stroke-width="3.6" stroke-linejoin="round"/>
-    <path d="M 832 204 C 858 110 892 126 922 132 C 950 136 972 134 994 134" fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
-    <line x1="832" y1="134" x2="994" y2="134" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="4 4"/>
-    
-    <rect x="682" y="264" width="260" height="36" rx="18" fill="#eaf8ee"/>
-    <text x="812" y="287" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#059669">PWM Motor · OpenSCAD STL</text>
-
-    <!-- RIGHT BOTTOM PANEL -->
-    <rect x="574" y="352" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="388" width="196" height="142" rx="18" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-    <rect x="634" y="416" width="140" height="86" rx="10" fill="#eaf2ff" stroke="#0071e3" stroke-width="2.2"/>
-    <line x1="680" y1="416" x2="680" y2="502" stroke="#93c5fd" stroke-width="2"/>
-    <line x1="728" y1="416" x2="728" y2="502" stroke="#93c5fd" stroke-width="2"/>
-    <line x1="634" y1="459" x2="774" y2="459" stroke="#93c5fd" stroke-width="2"/>
-    <rect x="822" y="388" width="196" height="142" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <circle cx="920" cy="459" r="42" fill="#e6f7f5" stroke="#0d9488" stroke-width="3"/>
-    <circle cx="920" cy="459" r="14" fill="#0d9488"/>
-    
-    <rect x="682" y="564" width="260" height="36" rx="18" fill="#e6f7f5"/>
-    <text x="812" y="587" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0d9488">Solar PV · ESP32 · SHEMS</text>
+  <!-- Left Half: Exploded Axonometric OpenSCAD Enclosure + STL Critic -->
+  <line x1="610" y1="98" x2="610" y2="720" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="62" y="138" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#2563eb">A · PARAMETRIC OPENSCAD ENCLOSURE &amp; STL CRITIC</text>
+  <!-- Top Lid Exploded -->
+  <g transform="translate(320, 232)">
+    <polygon points="0,-54 146,-6 0,42 -146,-6" fill="#e8eef7" stroke="#1c2430" stroke-width="2.4" stroke-linejoin="round"/>
+    <polygon points="-146,-6 0,42 0,62 -146,14" fill="#cbd8ea" stroke="#1c2430" stroke-width="2.2" stroke-linejoin="round"/>
+    <polygon points="0,42 146,-6 146,14 0,62" fill="#9fb6d4" stroke="#1c2430" stroke-width="2.2" stroke-linejoin="round"/>
+    <ellipse cx="0" cy="-6" rx="34" ry="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
   </g>
+  <!-- Exploded Guide Lines -->
+  <line x1="174" y1="262" x2="174" y2="378" stroke="#c2622d" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <line x1="466" y1="262" x2="466" y2="378" stroke="#c2622d" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <line x1="320" y1="308" x2="320" y2="424" stroke="#c2622d" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <!-- PCB Board Floating Middle -->
+  <g transform="translate(320, 360)">
+    <polygon points="0,-42 118,-4 0,34 -118,-4" fill="#166534" stroke="#0f3d20" stroke-width="2.2"/>
+    <rect x="-26" y="-14" width="52" height="22" rx="3" fill="#1c2430" stroke="#e2e8f0" stroke-width="1.2"/>
+    <circle cx="-68" cy="-4" r="6" fill="#f59e0b"/><circle cx="68" cy="-4" r="6" fill="#f59e0b"/>
+  </g>
+  <!-- Lower Base Shell -->
+  <g transform="translate(320, 488)">
+    <polygon points="0,-54 146,-6 0,42 -146,-6" fill="#f1ece1" stroke="#1c2430" stroke-width="2.4" stroke-linejoin="round"/>
+    <polygon points="-146,-6 0,42 0,104 -146,56" fill="#dfd7c8" stroke="#1c2430" stroke-width="2.4" stroke-linejoin="round"/>
+    <polygon points="0,42 146,-6 146,56 0,104" fill="#b8ae9c" stroke="#1c2430" stroke-width="2.4" stroke-linejoin="round"/>
+  </g>
+  <rect x="62" y="636" width="518" height="54" rx="8" fill="#ffffff" stroke="#1c2430" stroke-width="1.5"/>
+  <text x="321" y="668" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#166534">WATERTIGHT STL · GROUNDED · MANIFOLD SHELLS ✓</text>
+
+  <!-- Right Top: PWM & PI Motor Control -->
+  <text x="642" y="138" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#c2622d">B · REDESMA ESP32 / DC MOTOR &amp; PWM BENCH</text>
+  <rect x="642" y="160" width="496" height="224" rx="12" fill="#ffffff" stroke="#d5cfc2" stroke-width="1.8"/>
+  <polyline points="670,322 670,224 736,224 736,322 786,322 786,224 852,224 852,322 900,322" fill="none" stroke="#c2622d" stroke-width="3.6" stroke-linejoin="round"/>
+  <path d="M 920 336 C 948 214 988 228 1028 238 C 1062 244 1088 242 1114 242" fill="none" stroke="#166534" stroke-width="4" stroke-linecap="round"/>
+  <line x1="920" y1="242" x2="1114" y2="242" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="670" y="362" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#475569">PWM DUTY · PI STEP RESPONSE · DS18B20 TELEMETRY</text>
+
+  <!-- Right Bottom: KKN Solar + SHEMS + Spatial Electronics -->
+  <text x="642" y="424" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#166534">C · KKN SOLAR OWL HOUSE · SHEMS · SPATIAL LAB</text>
+  <rect x="642" y="446" width="496" height="244" rx="12" fill="#ffffff" stroke="#d5cfc2" stroke-width="1.8"/>
+  <!-- Solar Panel + Battery + Load Diagram -->
+  <rect x="672" y="484" width="128" height="106" rx="8" fill="#1e3a5f" stroke="#1c2430" stroke-width="2"/>
+  <line x1="714" y1="484" x2="714" y2="590" stroke="#7dd3fc" stroke-width="1.5"/>
+  <line x1="758" y1="484" x2="758" y2="590" stroke="#7dd3fc" stroke-width="1.5"/>
+  <line x1="672" y1="537" x2="800" y2="537" stroke="#7dd3fc" stroke-width="1.5"/>
+  <line x1="800" y1="537" x2="852" y2="537" stroke="#c2622d" stroke-width="3"/>
+  <rect x="852" y="494" width="112" height="86" rx="8" fill="#ecfdf5" stroke="#166534" stroke-width="2"/>
+  <text x="908" y="532" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#166534">MPPT</text>
+  <text x="908" y="556" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12" fill="#475569">SHEMS PV</text>
+  <line x1="964" y1="537" x2="1010" y2="537" stroke="#166534" stroke-width="3"/>
+  <rect x="1010" y="494" width="102" height="86" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="1061" y="542" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#92400e">FIELD</text>
+  <text x="672" y="646" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#1c2430">KKN MUTIHAN KLATEN · KOTLIN COMPOSE · SIMULINK</text>
 </svg>

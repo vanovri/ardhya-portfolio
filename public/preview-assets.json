@@ -6,16 +6,16 @@
       "slug": "engineering-labs",
       "card": "projects/engineering-labs.html",
       "preview": "img/previews/engineering-labs.svg",
-      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "kind": "Linear-inspired dark systems cockpit illustration",
       "previous_url": null,
-      "sha256": "57ac6047b1dde2c5b5a9776f1a6ab2d850506f2f1a6565a67ac71c2d340c8373"
+      "sha256": "d74be0378df129b5f201811ee233967037ca0fa98da52f5321f0bb09f6842c44"
     },
     {
       "title": "EMG Acquisition & Monitoring System",
       "slug": "emg-thesis",
       "card": "projects/emg-thesis.html",
       "preview": "img/previews/emg-thesis.svg",
-      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "kind": "Original hardware bench photograph + sEMG waveform",
       "previous_url": null,
       "sha256": "f3b56f3c4518a72000241bedb8ded91ea66fc816785c37384308d1016bb58c3b"
     },
@@ -24,162 +24,162 @@
       "slug": "hyperion-omega",
       "card": "projects/hyperion-omega.html",
       "preview": "img/previews/hyperion-omega.svg",
-      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "kind": "Binance-inspired institutional exchange depth terminal",
       "previous_url": null,
-      "sha256": "d1a3470923263292517761b76aecb1aacbeaea3f8f39456a9ac85380dc67f9d1"
+      "sha256": "9cdb7089bfe273a697bd9e9739ba983757ff2b37fd0d9ff96137834c28613d42"
     },
     {
       "title": "13 Deep Learning Domains on 4 GB VRAM",
       "slug": "dl-portfolio-suite",
       "card": "blog/13-dl-domains-4gb-vram/",
       "preview": "img/previews/dl-portfolio-suite.svg",
-      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "kind": "NVIDIA CUDA scientific telemetry and 4 GB VRAM atlas",
       "previous_url": null,
-      "sha256": "fdd93a2037e557dd51e35deaddc46454d408815c427874aa94d02b71fec29706"
+      "sha256": "df2ce247d15065bf8e7ddd3517001a669e02296fb03ea56f42235a10011d5677"
     },
     {
       "title": "10 AI Systems on 4 GB VRAM",
       "slug": "ai-systems-4gb-vram",
       "card": "blog/10-ai-systems-4gb-vram/",
       "preview": "img/previews/ai-systems-4gb-vram.svg",
-      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "kind": "Mistral-inspired warm compute split & neural world model",
       "previous_url": null,
-      "sha256": "f542ace7ea93b302d9da61caf1ab571253143e0935e86b5c29d6842b8ddee7de"
+      "sha256": "aab96b306b438c9e3d8ad51eafbb627383aa2f89819286b9edca8f5ddc43659e"
     },
     {
       "title": "prompt-shield-eval",
       "slug": "prompt-shield-eval",
       "card": "projects/prompt-shield-eval.html",
       "preview": "img/previews/prompt-shield-eval.svg",
-      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "kind": "Sentry-inspired 3-layer security inspection tunnel",
       "previous_url": null,
-      "sha256": "1b3947fdc927d3b4987ded33e4d10313d22829fc24e8aa1cf9cbfd68c4223666"
+      "sha256": "7e5a5d6e89b15a0607b1539209e7de8a70e7bb1568663139fc2ca66bbc0174ba"
     },
     {
       "title": "Live DWG/DXF Quantity Takeoff",
       "slug": "dwg-live-takeoff",
       "card": "projects/dwg-live-takeoff.html",
       "preview": "img/previews/dwg-live-takeoff.svg",
-      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "kind": "Architectural dark CAD blueprint viewport & live BOQ",
       "previous_url": null,
-      "sha256": "51886ab37aa76d38a7ca595e3dfa74d11dfba5c596abaa937f68af90cf0e3888"
+      "sha256": "978aa651c21865d9bf843c6faf99718f9bd5cf7d7d6daa34279c13b28b59ade3"
     },
     {
       "title": "Token Burn Verifier",
       "slug": "token-burn-verifier",
       "card": "projects/token-burn-verifier.html",
       "preview": "img/previews/token-burn-verifier.svg",
-      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "kind": "Coinbase-inspired multi-chain forensic burn ledger",
       "previous_url": null,
-      "sha256": "6cd18690b0786e5267341600f2181c767baa8f93306c9722b31cf76d91a331d6"
+      "sha256": "9cef23364881392051f8d7bcc3b4d35780043dcd55ea22192ecacfed203473b7"
     },
     {
       "title": "MagangHub Next.js SEO & GEO Blueprint",
       "slug": "maganghub-nextjs-seo-blueprint",
       "card": "blog/teardown-maganghub-kemnaker-nextjs-seo/",
       "preview": "img/previews/maganghub-nextjs-seo-blueprint.svg",
-      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "kind": "Vercel-inspired monochrome Swiss routing teardown",
       "previous_url": null,
-      "sha256": "b909adcea51a531fcf2dcf8063abc529d71fc9de06c388ac1f02d13a3802a6f7"
+      "sha256": "edd1ef1308639a2985ad4b73a3d867aeb45d297e697cd200d3470831938d8d7a"
     },
     {
       "title": "Code-Repair & Verification Gates",
       "slug": "suite-code-repair",
       "card": "projects/suite-code-repair.html",
       "preview": "img/previews/suite-code-repair.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "PostHog-inspired warm diff & protected holdout schematic",
       "previous_url": null,
-      "sha256": "c23b54f388fd8b726bbafc13fa99bdb34ad781c0b88ac6b0b9616b6782ca77c5"
+      "sha256": "83fd89595d2ff3526d79cac4645b655a09c54129f37a2121a141ff36d2ceed34"
     },
     {
       "title": "AI Agent Ops, Cost & Tooling",
       "slug": "suite-agent-ops",
       "card": "projects/suite-agent-ops.html",
       "preview": "img/previews/suite-agent-ops.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "Raycast-inspired dark command palette & telemetry bars",
       "previous_url": null,
-      "sha256": "57537cb122f98803ab2baff41a7fe7355e89ccc11c047117603d9463f8db6314"
+      "sha256": "0238cb3f0cba2e96d11420342bdd0f17c36aa4fff59a575b4fff08d2ca555856"
     },
     {
       "title": "Agentic RAG & Coding Agents Lab",
       "slug": "suite-agentic-rag",
       "card": "projects/suite-agentic-rag.html",
       "preview": "img/previews/suite-agentic-rag.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "Claude-inspired warm editorial hybrid RAG & agent loop",
       "previous_url": null,
-      "sha256": "60217c311306791be7fa6d43956fca0cccc0149251093e35002a1867f5e6b107"
+      "sha256": "ebf865a33da28b2d20791dd7198a66bba1f074864657a10feda913a144c078d5"
     },
     {
       "title": "ENVIID & Biochar dMRV Stack",
       "slug": "suite-enviid-dmrv",
       "card": "projects/suite-enviid-dmrv.html",
       "preview": "img/previews/suite-enviid-dmrv.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "MongoDB-inspired forest slate pyrolysis & Merkle chain",
       "previous_url": null,
-      "sha256": "a2d351b2b1f313df52ea079ce0130648ebfad735dd91351b7cfd47e0949b186b"
+      "sha256": "cb79a8e858333fd5f2e7a2da0568d62a99144d391c6258d5191792db6f3b4bc1"
     },
     {
       "title": "Embedded Signal & Parity Toolkit",
       "slug": "suite-embedded-dsp",
       "card": "projects/suite-embedded-dsp.html",
       "preview": "img/previews/suite-embedded-dsp.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "Dual-channel bench oscilloscope & UART CRC-32 analyzer",
       "previous_url": null,
-      "sha256": "338a8bf83181e8aa07f732c363d14fb7ae9d0617cbe91221a0e8c5125c0b709f"
+      "sha256": "be7fb1b006720af9fd6a7a12ef72bc58d3f74a1dae4ddd45dfdcee6afdf9fca4"
     },
     {
       "title": "Hardware, Parametric CAD & Energy",
       "slug": "suite-electrical-field",
       "card": "projects/suite-electrical-field.html",
       "preview": "img/previews/suite-electrical-field.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "Drafting-paper axonometric OpenSCAD, PCB & solar sheet",
       "previous_url": null,
-      "sha256": "9f44f0f2a6a0fbfebf92c80c347afec045ed92fe2a1f3a1863ac1cfbed78fef1"
+      "sha256": "00edce02dca0c5906914c3bf066fd23678483f44af7d1dec55b8d888b6a79382"
     },
     {
       "title": "Aerospace & Scientific Computing",
       "slug": "suite-aerospace-numerical",
       "card": "projects/suite-aerospace-numerical.html",
       "preview": "img/previews/suite-aerospace-numerical.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "SpaceX-inspired mission control cislunar trajectory",
       "previous_url": null,
-      "sha256": "28e8d83f8baa4f470f368a2c19bc2d290108eec767c2ee7048927db7f5638b97"
+      "sha256": "db00f6b21927010b2f316101a19d12408d3cb5fee3d1d43f01a9984eba9dbd76"
     },
     {
       "title": "Career & Evidence Operations Suite",
       "slug": "suite-career-ops",
       "card": "projects/suite-career-ops.html",
       "preview": "img/previews/suite-career-ops.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "Notion-inspired structured claim-boundary workspace",
       "previous_url": null,
-      "sha256": "d911475c1cf02aa17a39beda54d05c40235a93685408be769f623f9be929ab64"
+      "sha256": "a62edbc0bd4d36d8c2cfe9b92acc42af95aa2c0c801085c14771b2257e13d06b"
     },
     {
       "title": "Data & Workflow Automation Suite",
       "slug": "suite-data-automation",
       "card": "projects/suite-data-automation.html",
       "preview": "img/previews/suite-data-automation.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "Supabase-inspired node automation & row quarantine canvas",
       "previous_url": null,
-      "sha256": "a43473b8e869a58d9d066fb1affc5b5224ab09a3dc8edfc5140c38d6b2510538"
+      "sha256": "d2f0d73bc8ff38dcf8cb83d7f107b073da66caffc63ac7423f2bff4d51a90124"
     },
     {
       "title": "3D Graphics, Spatial Audio & Web Lab",
       "slug": "suite-3d-media-web",
       "card": "projects/suite-3d-media-web.html",
       "preview": "img/previews/suite-3d-media-web.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "Runway-inspired cinematic spectral studio & NLE timeline",
       "previous_url": null,
-      "sha256": "7affc4311f570fb53b5b7ed892ce6778e8bdaae4e5252b97041ce56ba88b851d"
+      "sha256": "ab1171e1530652326680f5489a0c1f22aaf8443b622a46b7a02e3a61d064d2ca"
     },
     {
       "title": "Written Technical Proposals Archive",
       "slug": "suite-proposals",
       "card": "projects/suite-proposals.html",
       "preview": "img/previews/suite-proposals.svg",
-      "kind": "Apple-studio 3-panel collection preview illustration",
+      "kind": "Editorial print monograph dossier & NPV summary",
       "previous_url": null,
-      "sha256": "f56521d1821540f6c0325b5e866f99361aa48b81f8917a16c8681d883cb746ed"
+      "sha256": "68ee8e12017b98850ab8ca0a47cf75d3e8cf5027eadafdf5b6bc45baf526dc03"
     }
   ]
 }

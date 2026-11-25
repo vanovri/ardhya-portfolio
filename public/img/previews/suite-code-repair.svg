@@ -1,106 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Code-Repair and Verification Gates Apple-studio 3-panel architecture">
-  <title>Code-Repair &amp; Verification Gates collection preview</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Code-Repair and Verification Gates unified patch diff feeding into protected SHA-256 holdout suite">
+  <title>Code-Repair &amp; Verification Gates</title>
   <defs>
-    <linearGradient id="bgGradOuter" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fbfbfd"/>
-      <stop offset="100%" stop-color="#f2f2f7"/>
-    </linearGradient>
-    <filter id="softShadowOuter" x="-8%" y="-8%" width="116%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
-    </filter>
-    <filter id="chipShadow" x="-16%" y="-16%" width="132%" height="138%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.09"/>
-    </filter>
-    <pattern id="studioDots" x="61" y="49" width="38" height="38" patternUnits="userSpaceOnUse">
-      <circle cx="19" cy="19" r="1.35" fill="#dcdce2"/>
-    </pattern>
-    <clipPath id="outerCardClip">
-      <rect x="64" y="52" width="1072" height="646" rx="22"/>
-    </clipPath>
-    <linearGradient id="dieDark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e3a5f"/>
-      <stop offset="50%" stop-color="#172554"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </linearGradient>
-    <linearGradient id="subLight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#e2e8f0"/>
-    </linearGradient>
-    <linearGradient id="tealFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.26"/>
-      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
-      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.02"/>
-    </linearGradient>
+
   </defs>
-  <rect width="1200" height="750" fill="url(#bgGradOuter)"/>
-  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowOuter)"/>
-  <rect x="64" y="52" width="1072" height="646" rx="22" fill="url(#studioDots)" clip-path="url(#outerCardClip)"/>
-  <g transform="translate(48, 36)">
-    <!-- LEFT HERO PANEL -->
-    <rect x="54" y="54" width="492" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <circle cx="300" cy="286" r="174" fill="#f4f8ff" opacity="0.62" stroke="#93c5fd" stroke-width="2" stroke-dasharray="8 6"/>
-    <circle cx="300" cy="286" r="118" fill="#ffffff" opacity="0.78" stroke="#dbeafe" stroke-width="2"/>
-    <ellipse cx="300" cy="400" rx="86" ry="12" fill="#cbd5e1" opacity="0.45"/>
-    <line x1="300.0" y1="194.0" x2="300.0" y2="112.0" stroke="#0071e3" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="379.7" y1="240.0" x2="450.7" y2="199.0" stroke="#0284c7" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="379.7" y1="332.0" x2="450.7" y2="373.0" stroke="#0d9488" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="300.0" y1="378.0" x2="300.0" y2="460.0" stroke="#10b981" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="220.3" y1="332.0" x2="149.3" y2="373.0" stroke="#5856d6" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="220.3" y1="240.0" x2="149.3" y2="199.0" stroke="#6366f1" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <circle cx="300.0" cy="112.0" r="13" fill="#ffffff" stroke="#0071e3" stroke-width="3.2"/><circle cx="300.0" cy="112.0" r="5.2" fill="#0071e3"/>
-    <circle cx="450.7" cy="199.0" r="13" fill="#ffffff" stroke="#0284c7" stroke-width="3.2"/><circle cx="450.7" cy="199.0" r="5.2" fill="#0284c7"/>
-    <circle cx="450.7" cy="373.0" r="13" fill="#ffffff" stroke="#0d9488" stroke-width="3.2"/><circle cx="450.7" cy="373.0" r="5.2" fill="#0d9488"/>
-    <circle cx="300.0" cy="460.0" r="13" fill="#ffffff" stroke="#10b981" stroke-width="3.2"/><circle cx="300.0" cy="460.0" r="5.2" fill="#10b981"/>
-    <circle cx="149.3" cy="373.0" r="13" fill="#ffffff" stroke="#5856d6" stroke-width="3.2"/><circle cx="149.3" cy="373.0" r="5.2" fill="#5856d6"/>
-    <circle cx="149.3" cy="199.0" r="13" fill="#ffffff" stroke="#6366f1" stroke-width="3.2"/><circle cx="149.3" cy="199.0" r="5.2" fill="#6366f1"/>
-    <rect x="220" y="206" width="160" height="160" rx="32" fill="url(#subLight)" stroke="#93c5fd" stroke-width="2.4" filter="url(#chipShadow)"/>
-    <rect x="230" y="216" width="140" height="140" rx="24" fill="#eaf2ff" stroke="#ffffff" stroke-width="2"/>
-    <rect x="242" y="228" width="116" height="116" rx="18" fill="url(#dieDark)" stroke="#0f172a" stroke-width="2"/>
-    <path d="M 300 250 L 332 264 V 292 C 332 312 317 325 300 331 C 283 325 268 312 268 292 V 264 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M 288 289 L 297 298 L 314 278" fill="none" stroke="#34d399" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="358" cy="346" r="19" fill="#ffffff" stroke="#a7f3d0" stroke-width="2.5"/>
-    <circle cx="358" cy="346" r="13" fill="#10b981"/>
-    <path d="M 352 346 L 356.2 350.2 L 364.2 341.2" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-    
-    <rect x="166" y="548" width="268" height="36" rx="18" fill="#eaf2ff"/>
-    <text x="300" y="571" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0071e3">6 Verification Gates</text>
+  <rect width="1200" height="750" fill="#f7f5f0"/>
+  <rect x="48" y="42" width="1104" height="66" rx="12" fill="#23251d"/>
+  <text x="78" y="81" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#f7a501">COLLECTION · 6 DETERMINISTIC CODE &amp; RULE VERIFICATION GATES</text>
 
-    <!-- RIGHT TOP PANEL -->
-    <rect x="574" y="54" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="90" width="112" height="136" rx="16" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-    <rect x="622" y="114" width="80" height="12" rx="6" fill="#eaf2ff"/>
-    <rect x="622" y="138" width="64" height="10" rx="5" fill="#bfdbfe"/>
-    <rect x="622" y="160" width="76" height="10" rx="5" fill="#d1fae5"/>
-    <rect x="622" y="182" width="52" height="10" rx="5" fill="#fee2e2"/>
-    <line x1="726" y1="158" x2="758" y2="158" stroke="#0071e3" stroke-width="3.5" stroke-linecap="round"/>
-    <polygon points="755,151 768,158 755,165" fill="#0071e3"/>
-    <rect x="774" y="90" width="108" height="136" rx="16" fill="#eaf2ff" stroke="#0071e3" stroke-width="2.2"/>
-    <circle cx="828" cy="144" r="24" fill="#ffffff" stroke="#0071e3" stroke-width="3"/>
-    <path d="M 818 144 L 825 151 L 839 136" fill="none" stroke="#10b981" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="794" y="184" width="68" height="10" rx="5" fill="#93c5fd"/>
-    <line x1="890" y1="158" x2="922" y2="158" stroke="#10b981" stroke-width="3.5" stroke-linecap="round"/>
-    <polygon points="919,151 932,158 919,165" fill="#10b981"/>
-    <rect x="938" y="90" width="80" height="136" rx="16" fill="#eaf8ee" stroke="#10b981" stroke-width="2.2"/>
-    <circle cx="978" cy="144" r="20" fill="#10b981"/>
-    <path d="M 970 144 L 976 150 L 987 137" fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="954" y="184" width="48" height="10" rx="5" fill="#a7f3d0"/>
-    
-    <rect x="682" y="264" width="260" height="36" rx="18" fill="#e6f7f5"/>
-    <text x="812" y="287" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0d9488">Protected Tests · Holdout</text>
+  <!-- Left: Unified Diff + Protected Test Lock -->
+  <rect x="48" y="132" width="566" height="572" rx="16" fill="#ffffff" stroke="#d6d1c4" stroke-width="2"/>
+  <rect x="48" y="132" width="566" height="48" rx="16" fill="#eeeadf"/>
+  <text x="74" y="162" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#4d4f46">candidate_patch.diff  ·  SHA-256 LOCKED</text>
+  <rect x="74" y="206" width="514" height="44" rx="6" fill="#fef2f2"/>
+  <text x="92" y="234" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="15" fill="#b91c1c">- return hardcode_visible_case(x)</text>
+  <rect x="74" y="262" width="514" height="44" rx="6" fill="#f0fdf4"/>
+  <text x="92" y="290" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="15" fill="#15803d">+ return verify_bounded_invariant(x)</text>
+  <rect x="74" y="318" width="514" height="44" rx="6" fill="#f8fafc"/>
+  <text x="92" y="346" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" fill="#64748b">  assert_ast_preserved(protected_tests)</text>
 
-    <!-- RIGHT BOTTOM PANEL -->
-    <rect x="574" y="352" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="388" width="412" height="142" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <rect x="628" y="410" width="220" height="16" rx="8" fill="#eaf2ff"/><rect x="866" y="410" width="130" height="16" rx="8" fill="#10b981"/>
-    <rect x="628" y="440" width="260" height="16" rx="8" fill="#e6f7f5"/><rect x="906" y="440" width="90" height="16" rx="8" fill="#0d9488"/>
-    <rect x="628" y="470" width="190" height="16" rx="8" fill="#efeffc"/><rect x="836" y="470" width="160" height="16" rx="8" fill="#5856d6"/>
-    <rect x="628" y="500" width="290" height="14" rx="7" fill="#f1f5f9"/><circle cx="984" cy="507" r="7" fill="#10b981"/>
-    
-    <rect x="682" y="564" width="260" height="36" rx="18" fill="#efeffc"/>
-    <text x="812" y="587" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#5856d6">SHA-256 Lock · Rollback</text>
-  </g>
+  <!-- Sealed Gate Pipeline inside left card -->
+  <line x1="74" y1="398" x2="588" y2="398" stroke="#e5e0d4" stroke-width="2"/>
+  <text x="74" y="434" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#6c6e63">ENFORCEMENT PIPELINE</text>
+  <rect x="74" y="454" width="152" height="92" rx="10" fill="#fef9ec" stroke="#f7a501" stroke-width="2"/>
+  <text x="150" y="492" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#b45309">1. HASH</text>
+  <text x="150" y="518" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="14" fill="#4d4f46">Frozen Tests</text>
+  <line x1="226" y1="500" x2="254" y2="500" stroke="#23251d" stroke-width="2.5"/>
+  <rect x="254" y="454" width="152" height="92" rx="10" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+  <text x="330" y="492" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#15803d">2. HOLDOUT</text>
+  <text x="330" y="518" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="14" fill="#4d4f46">Sealed Suite</text>
+  <line x1="406" y1="500" x2="434" y2="500" stroke="#23251d" stroke-width="2.5"/>
+  <rect x="434" y="454" width="154" height="92" rx="10" fill="#23251d"/>
+  <text x="511" y="492" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#f7a501">3. VERDICT</text>
+  <text x="511" y="518" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="14" fill="#f7f5f0">Accept / Rollback</text>
+
+  <rect x="74" y="576" width="514" height="98" rx="12" fill="#f7f5f0" stroke="#d6d1c4"/>
+  <text x="98" y="614" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#23251d">DECISION REPORT · ANTI-OVERFIT GUARANTEED</text>
+  <text x="98" y="646" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#6c6e63">DIGESTS · AST ASSERTIONS · BOUNDED FIX BUDGET · ROLLBACK</text>
+
+  <!-- Right: Verdict Banner + 6 Tool Modules -->
+  <rect x="648" y="132" width="504" height="284" rx="16" fill="#23251d"/>
+  <text x="680" y="178" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#f7a501">ANTI-TAMPER VERIFICATION SUITE</text>
+  <text x="680" y="238" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="42" font-weight="800" fill="#ffffff" letter-spacing="-1">Trust Fixes Only</text>
+  <text x="680" y="286" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="42" font-weight="800" fill="#f7a501" letter-spacing="-1">After Holdout Pass</text>
+  <text x="680" y="346" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" fill="#c9c0ad">Protected tests · Compiler dump budgets</text>
+  <text x="680" y="374" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" fill="#c9c0ad">Regex rule rehearsal · Safe rollback diffs</text>
+  <rect x="648" y="444" width="236" height="58" rx="10" fill="#ffffff" stroke="#d6d1c4" stroke-width="1.5"/><circle cx="672" cy="473" r="6" fill="#15803d"/><text x="690" y="478" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="700" fill="#23251d">RepairGate</text><rect x="900" y="444" width="236" height="58" rx="10" fill="#ffffff" stroke="#d6d1c4" stroke-width="1.5"/><circle cx="924" cy="473" r="6" fill="#15803d"/><text x="942" y="478" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="700" fill="#23251d">Agent Referee</text><rect x="648" y="518" width="236" height="58" rx="10" fill="#ffffff" stroke="#d6d1c4" stroke-width="1.5"/><circle cx="672" cy="547" r="6" fill="#15803d"/><text x="690" y="552" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="700" fill="#23251d">Bounded Refactor</text><rect x="900" y="518" width="236" height="58" rx="10" fill="#ffffff" stroke="#d6d1c4" stroke-width="1.5"/><circle cx="924" cy="547" r="6" fill="#15803d"/><text x="942" y="552" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="700" fill="#23251d">Build Healer</text><rect x="648" y="592" width="236" height="58" rx="10" fill="#ffffff" stroke="#d6d1c4" stroke-width="1.5"/><circle cx="672" cy="621" r="6" fill="#15803d"/><text x="690" y="626" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="700" fill="#23251d">RedFlag Loop</text><rect x="900" y="592" width="236" height="58" rx="10" fill="#ffffff" stroke="#d6d1c4" stroke-width="1.5"/><circle cx="924" cy="621" r="6" fill="#15803d"/><text x="942" y="626" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="700" fill="#23251d">RedFlag Rehearsal</text>
 </svg>

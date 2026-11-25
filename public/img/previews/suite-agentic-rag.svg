@@ -1,97 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Agentic RAG and Coding Agents Lab Apple-studio 3-panel architecture">
-  <title>Agentic RAG &amp; Coding Agents Lab collection preview</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Agentic RAG and Coding Agents Lab warm Claude-inspired hybrid retrieval and claim verification diagram">
+  <title>Agentic RAG &amp; Coding Agents Lab</title>
   <defs>
-    <linearGradient id="bgGradOuter" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fbfbfd"/>
-      <stop offset="100%" stop-color="#f2f2f7"/>
-    </linearGradient>
-    <filter id="softShadowOuter" x="-8%" y="-8%" width="116%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
-    </filter>
-    <filter id="chipShadow" x="-16%" y="-16%" width="132%" height="138%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.09"/>
-    </filter>
-    <pattern id="studioDots" x="61" y="49" width="38" height="38" patternUnits="userSpaceOnUse">
-      <circle cx="19" cy="19" r="1.35" fill="#dcdce2"/>
-    </pattern>
-    <clipPath id="outerCardClip">
-      <rect x="64" y="52" width="1072" height="646" rx="22"/>
-    </clipPath>
-    <linearGradient id="dieDark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e3a5f"/>
-      <stop offset="50%" stop-color="#172554"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </linearGradient>
-    <linearGradient id="subLight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#e2e8f0"/>
-    </linearGradient>
-    <linearGradient id="tealFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.26"/>
-      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
-      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.02"/>
-    </linearGradient>
+
   </defs>
-  <rect width="1200" height="750" fill="url(#bgGradOuter)"/>
-  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowOuter)"/>
-  <rect x="64" y="52" width="1072" height="646" rx="22" fill="url(#studioDots)" clip-path="url(#outerCardClip)"/>
-  <g transform="translate(48, 36)">
-    <!-- LEFT HERO PANEL -->
-    <rect x="54" y="54" width="492" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    <circle cx="300" cy="286" r="174" fill="#f4f8ff" opacity="0.62" stroke="#93c5fd" stroke-width="2" stroke-dasharray="8 6"/>
-    <circle cx="300" cy="286" r="118" fill="#ffffff" opacity="0.78" stroke="#dbeafe" stroke-width="2"/>
-    <ellipse cx="300" cy="400" rx="86" ry="12" fill="#cbd5e1" opacity="0.45"/>
-    <line x1="300.0" y1="194.0" x2="300.0" y2="112.0" stroke="#0071e3" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="392.0" y1="286.0" x2="474.0" y2="286.0" stroke="#0d9488" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="300.0" y1="378.0" x2="300.0" y2="460.0" stroke="#10b981" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <line x1="208.0" y1="286.0" x2="126.0" y2="286.0" stroke="#5856d6" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
-    <circle cx="300.0" cy="112.0" r="13" fill="#ffffff" stroke="#0071e3" stroke-width="3.2"/><circle cx="300.0" cy="112.0" r="5.2" fill="#0071e3"/>
-    <circle cx="474.0" cy="286.0" r="13" fill="#ffffff" stroke="#0d9488" stroke-width="3.2"/><circle cx="474.0" cy="286.0" r="5.2" fill="#0d9488"/>
-    <circle cx="300.0" cy="460.0" r="13" fill="#ffffff" stroke="#10b981" stroke-width="3.2"/><circle cx="300.0" cy="460.0" r="5.2" fill="#10b981"/>
-    <circle cx="126.0" cy="286.0" r="13" fill="#ffffff" stroke="#5856d6" stroke-width="3.2"/><circle cx="126.0" cy="286.0" r="5.2" fill="#5856d6"/>
-    <rect x="220" y="206" width="160" height="160" rx="32" fill="url(#subLight)" stroke="#93c5fd" stroke-width="2.4" filter="url(#chipShadow)"/>
-    <rect x="230" y="216" width="140" height="140" rx="24" fill="#eaf2ff" stroke="#ffffff" stroke-width="2"/>
-    <rect x="242" y="228" width="116" height="116" rx="18" fill="url(#dieDark)" stroke="#0f172a" stroke-width="2"/>
-    <circle cx="284" cy="272" r="12" fill="#38bdf8"/><circle cx="318" cy="272" r="12" fill="#34d399"/><circle cx="300" cy="306" r="14" fill="#818cf8"/><line x1="284" y1="272" x2="318" y2="272" stroke="#ffffff" stroke-width="2.5"/><line x1="284" y1="272" x2="300" y2="306" stroke="#ffffff" stroke-width="2.5"/><line x1="318" y1="272" x2="300" y2="306" stroke="#ffffff" stroke-width="2.5"/>
-    <circle cx="358" cy="346" r="19" fill="#ffffff" stroke="#a7f3d0" stroke-width="2.5"/>
-    <circle cx="358" cy="346" r="13" fill="#10b981"/>
-    <path d="M 352 346 L 356.2 350.2 L 364.2 341.2" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-    
-    <rect x="166" y="548" width="268" height="36" rx="18" fill="#eaf2ff"/>
-    <text x="300" y="571" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0071e3">4 Agent &amp; RAG Labs</text>
+  <rect width="1200" height="750" fill="#f4efe8"/>
+  <text x="60" y="66" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#a9583e" letter-spacing="1.2">COLLECTION · 4 RETRIEVAL, CACHE &amp; CODING AGENT PIPELINES</text>
+  <text x="60" y="116" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="37" font-weight="700" fill="#141413">Hybrid Retrieval &amp; Self-Correcting Agents</text>
 
-    <!-- RIGHT TOP PANEL -->
-    <rect x="574" y="54" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="88" width="196" height="148" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <polygon points="704,112 768,146 704,180 640,146" fill="#eaf2ff" stroke="#0071e3" stroke-width="2.4"/>
-    <polygon points="704,132 768,166 704,200 640,166" fill="#e6f7f5" stroke="#0d9488" stroke-width="2.4"/>
-    <circle cx="704" cy="146" r="7" fill="#0071e3"/><circle cx="704" cy="166" r="7" fill="#0d9488"/>
-    <rect x="822" y="88" width="196" height="148" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <path d="M 852 198 A 68 68 0 0 1 988 198" fill="none" stroke="#e2e8f0" stroke-width="14" stroke-linecap="round"/>
-    <path d="M 852 198 A 68 68 0 0 1 968 144" fill="none" stroke="#10b981" stroke-width="14" stroke-linecap="round"/>
-    <circle cx="920" cy="198" r="10" fill="#0071e3"/>
-    
-    <rect x="682" y="264" width="260" height="36" rx="18" fill="#e6f7f5"/>
-    <text x="812" y="287" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0d9488">FAISS + BM25 · Chroma Cache</text>
+  <!-- Stage 1: Hybrid Retrieval -->
+  <rect x="60" y="160" width="320" height="252" rx="18" fill="#ffffff" stroke="#dfd6c9" stroke-width="2"/>
+  <text x="88" y="200" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#cc785c">01 · HYBRID RETRIEVAL</text>
+  <rect x="88" y="222" width="264" height="58" rx="10" fill="#fcf7f2" stroke="#cc785c"/>
+  <text x="108" y="256" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="700" fill="#141413">FAISS Dense Vectors</text>
+  <rect x="88" y="294" width="264" height="58" rx="10" fill="#f2f7f5" stroke="#2f6f5e"/>
+  <text x="108" y="328" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="700" fill="#141413">BM25 Lexical Recall</text>
+  <text x="88" y="388" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#6c6a64">Reciprocal Rank Fusion + Citations</text>
 
-    <!-- RIGHT BOTTOM PANEL -->
-    <rect x="574" y="352" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
-    
-    <rect x="606" y="388" width="412" height="142" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
-    <rect x="628" y="432" width="76" height="54" rx="12" fill="#eaf2ff" stroke="#0071e3" stroke-width="2"/>
-    <rect x="726" y="432" width="76" height="54" rx="12" fill="#e6f7f5" stroke="#0d9488" stroke-width="2"/>
-    <rect x="824" y="432" width="76" height="54" rx="12" fill="#efeffc" stroke="#5856d6" stroke-width="2"/>
-    <rect x="922" y="432" width="76" height="54" rx="12" fill="#eaf8ee" stroke="#10b981" stroke-width="2"/>
-    <line x1="704" y1="459" x2="726" y2="459" stroke="#64748b" stroke-width="2.8"/>
-    <line x1="802" y1="459" x2="824" y2="459" stroke="#64748b" stroke-width="2.8"/>
-    <line x1="900" y1="459" x2="922" y2="459" stroke="#64748b" stroke-width="2.8"/>
-    <path d="M 960 486 V 512 H 666 V 486" fill="none" stroke="#0071e3" stroke-width="2.4" stroke-dasharray="5 4"/>
-    
-    <rect x="682" y="564" width="260" height="36" rx="18" fill="#efeffc"/>
-    <text x="812" y="587" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#5856d6">Plan · Build · Test · Patch</text>
-  </g>
+  <!-- Stage 2: Semantic Cache -->
+  <line x1="380" y1="286" x2="432" y2="286" stroke="#141413" stroke-width="2.5"/>
+  <polygon points="426,278 440,286 426,294" fill="#141413"/>
+  <rect x="440" y="160" width="320" height="252" rx="18" fill="#ffffff" stroke="#dfd6c9" stroke-width="2"/>
+  <text x="468" y="200" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#2f6f5e">02 · SEMANTIC CACHE</text>
+  <text x="468" y="244" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="700" fill="#141413">ChromaDB Namespaces</text>
+  <rect x="468" y="270" width="264" height="18" rx="9" fill="#e6dfd8"/>
+  <rect x="468" y="270" width="224" height="18" rx="9" fill="#2f6f5e"/>
+  <text x="468" y="318" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#2f6f5e">THRESHOLD CALIBRATED · TTL</text>
+  <text x="468" y="352" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#6c6a64">Explicit source invalidation</text>
+  <text x="468" y="382" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#6c6a64">Zero cross-tenant leakage</text>
+
+  <!-- Stage 3: Claim-Verified Output -->
+  <line x1="760" y1="286" x2="812" y2="286" stroke="#141413" stroke-width="2.5"/>
+  <polygon points="806,278 820,286 806,294" fill="#141413"/>
+  <rect x="820" y="160" width="320" height="252" rx="18" fill="#141413"/>
+  <text x="848" y="200" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#cc785c">03 · CLAIM AUDIT</text>
+  <text x="848" y="246" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="22" fill="#faf6f0">Every sentence tied to</text>
+  <text x="848" y="278" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="22" fill="#faf6f0">verified evidence [1][2].</text>
+  <rect x="848" y="314" width="122" height="32" rx="16" fill="#2f6f5e"/>
+  <text x="909" y="335" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#ffffff">GROUNDED ✓</text>
+  <text x="848" y="384" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" fill="#a8a29e">Offline pytest reproducible</text>
+
+  <!-- Bottom Wide Strip: Multi-Agent App Builder + Self-Correcting Coder -->
+  <rect x="60" y="446" width="1080" height="248" rx="20" fill="#ffffff" stroke="#dfd6c9" stroke-width="2"/>
+  <text x="92" y="490" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#a9583e">04 · MULTI-AGENT APP BUILDER &amp; SELF-CORRECTING CODE LOOP</text>
+  <rect x="92" y="518" width="176" height="86" rx="12" fill="#fcf7f2" stroke="#cc785c" stroke-width="2"/>
+  <text x="180" y="568" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="19" font-weight="700" fill="#141413">Planner</text>
+  <line x1="268" y1="561" x2="306" y2="561" stroke="#cc785c" stroke-width="2.5"/>
+  <rect x="306" y="518" width="176" height="86" rx="12" fill="#f4efe8" stroke="#141413" stroke-width="1.5"/>
+  <text x="394" y="568" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="19" font-weight="700" fill="#141413">Backend/UI</text>
+  <line x1="482" y1="561" x2="520" y2="561" stroke="#cc785c" stroke-width="2.5"/>
+  <rect x="520" y="518" width="176" height="86" rx="12" fill="#f2f7f5" stroke="#2f6f5e" stroke-width="2"/>
+  <text x="608" y="568" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="19" font-weight="700" fill="#2f6f5e">Pytest Box</text>
+  <line x1="696" y1="561" x2="734" y2="561" stroke="#cc785c" stroke-width="2.5"/>
+  <rect x="734" y="518" width="176" height="86" rx="12" fill="#fcf7f2" stroke="#cc785c" stroke-width="2"/>
+  <text x="822" y="568" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="19" font-weight="700" fill="#a9583e">Debugger</text>
+  <line x1="910" y1="561" x2="948" y2="561" stroke="#2f6f5e" stroke-width="2.5"/>
+  <rect x="948" y="518" width="160" height="86" rx="12" fill="#2f6f5e"/>
+  <text x="1028" y="568" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Ship App ✓</text>
+  <path d="M 822 604 V 646 H 394 V 604" fill="none" stroke="#cc785c" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <rect x="514" y="632" width="192" height="28" rx="14" fill="#fcf7f2" stroke="#cc785c"/>
+  <text x="610" y="651" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#a9583e">ITERATIVE PATCH LOOP</text>
 </svg>
