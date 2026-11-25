@@ -5,17 +5,17 @@
       "title": "Engineering Labs",
       "slug": "engineering-labs",
       "card": "projects/engineering-labs.html",
-      "preview": "img/previews/engineering-labs.svg",
-      "kind": "Linear-inspired dark systems cockpit illustration",
+      "preview": "img/previews/engineering-labs-cover.webp",
+      "kind": "Bespoke studio hardware photograph: 6 anodized titanium compute modules on travertine",
       "previous_url": null,
-      "sha256": "d74be0378df129b5f201811ee233967037ca0fa98da52f5321f0bb09f6842c44"
+      "sha256": "f8907f4f6388020e7ea84504d4fc14bb9eb66ea1dc54ea45d1d796d9b5d95baa"
     },
     {
       "title": "EMG Acquisition & Monitoring System",
       "slug": "emg-thesis",
       "card": "projects/emg-thesis.html",
       "preview": "img/previews/emg-thesis.svg",
-      "kind": "Original hardware bench photograph + sEMG waveform",
+      "kind": "Original hardware bench photograph (STM32 + SEN0240) with sEMG waveform",
       "previous_url": null,
       "sha256": "f3b56f3c4518a72000241bedb8ded91ea66fc816785c37384308d1016bb58c3b"
     },
@@ -23,163 +23,163 @@
       "title": "HYPERION OMEGA",
       "slug": "hyperion-omega",
       "card": "projects/hyperion-omega.html",
-      "preview": "img/previews/hyperion-omega.svg",
-      "kind": "Binance-inspired institutional exchange depth terminal",
+      "preview": "img/previews/hyperion-omega-cover.webp",
+      "kind": "Bespoke architectural macro: opposing obsidian & crystal order-book steps across gold channel",
       "previous_url": null,
-      "sha256": "9cdb7089bfe273a697bd9e9739ba983757ff2b37fd0d9ff96137834c28613d42"
+      "sha256": "1815f8014d6fd3d019c208ff1572cc032566e57934c6cf7ef3f3d397cc0be772"
     },
     {
       "title": "13 Deep Learning Domains on 4 GB VRAM",
       "slug": "dl-portfolio-suite",
       "card": "blog/13-dl-domains-4gb-vram/",
-      "preview": "img/previews/dl-portfolio-suite.svg",
-      "kind": "NVIDIA CUDA scientific telemetry and 4 GB VRAM atlas",
+      "preview": "img/previews/dl-portfolio-suite-cover.webp",
+      "kind": "Bespoke scientific macro: dark-silicon GPU die framed by multispectral optical glass prisms",
       "previous_url": null,
-      "sha256": "df2ce247d15065bf8e7ddd3517001a669e02296fb03ea56f42235a10011d5677"
+      "sha256": "d838ec3ebba1c2c705aa7b6d354a1eb83c53c4e88d784ab8b110ea7c0bd43559"
     },
     {
       "title": "10 AI Systems on 4 GB VRAM",
       "slug": "ai-systems-4gb-vram",
       "card": "blog/10-ai-systems-4gb-vram/",
-      "preview": "img/previews/ai-systems-4gb-vram.svg",
-      "kind": "Mistral-inspired warm compute split & neural world model",
+      "preview": "img/previews/ai-systems-4gb-vram-cover.webp",
+      "kind": "Bespoke Bauhaus editorial still life: matte terracotta, ivory ceramic & brass kinetic rail",
       "previous_url": null,
-      "sha256": "aab96b306b438c9e3d8ad51eafbb627383aa2f89819286b9edca8f5ddc43659e"
+      "sha256": "b681d81c167ad072b97f44d7ba76a193e53226d6812929e638b0c6b16e4450b0"
     },
     {
       "title": "prompt-shield-eval",
       "slug": "prompt-shield-eval",
       "card": "projects/prompt-shield-eval.html",
-      "preview": "img/previews/prompt-shield-eval.svg",
-      "kind": "Sentry-inspired 3-layer security inspection tunnel",
+      "preview": "img/previews/prompt-shield-eval-cover.webp",
+      "kind": "Bespoke studio optics: 3 frosted quartz & indigo plates deflecting scatter while passing clean beam",
       "previous_url": null,
-      "sha256": "7e5a5d6e89b15a0607b1539209e7de8a70e7bb1568663139fc2ca66bbc0174ba"
+      "sha256": "33608f44186c26d323c214f16d27904df3d7bbab2484f4972c38109a57f2e82e"
     },
     {
       "title": "Live DWG/DXF Quantity Takeoff",
       "slug": "dwg-live-takeoff",
       "card": "projects/dwg-live-takeoff.html",
-      "preview": "img/previews/dwg-live-takeoff.svg",
-      "kind": "Architectural dark CAD blueprint viewport & live BOQ",
+      "preview": "img/previews/dwg-live-takeoff-cover.webp",
+      "kind": "Bespoke architectural studio flat-lay: Prussian-blue electrical floorplan vellum, brass scale & copper caliper",
       "previous_url": null,
-      "sha256": "978aa651c21865d9bf843c6faf99718f9bd5cf7d7d6daa34279c13b28b59ade3"
+      "sha256": "368100d21e69677cfc706bf84afd9b72362345d69089a9fab91a31b7e1bb72fa"
     },
     {
       "title": "Token Burn Verifier",
       "slug": "token-burn-verifier",
       "card": "projects/token-burn-verifier.html",
-      "preview": "img/previews/token-burn-verifier.svg",
-      "kind": "Coinbase-inspired multi-chain forensic burn ledger",
+      "preview": "img/previews/token-burn-verifier-cover.webp",
+      "kind": "Bespoke Swiss editorial metalwork: milled silver & cobalt tokens beside brass inspection loupe",
       "previous_url": null,
-      "sha256": "9cef23364881392051f8d7bcc3b4d35780043dcd55ea22192ecacfed203473b7"
+      "sha256": "59f3ebf4d45586b1236632dee163651bbdaa6cbb4f7852f791777a5d3fab54a0"
     },
     {
       "title": "MagangHub Next.js SEO & GEO Blueprint",
       "slug": "maganghub-nextjs-seo-blueprint",
       "card": "blog/teardown-maganghub-kemnaker-nextjs-seo/",
-      "preview": "img/previews/maganghub-nextjs-seo-blueprint.svg",
-      "kind": "Vercel-inspired monochrome Swiss routing teardown",
+      "preview": "img/previews/maganghub-nextjs-seo-blueprint-cover.webp",
+      "kind": "Editorial isometric frosted-glass & obsidian modular architecture illustration",
       "previous_url": null,
-      "sha256": "edd1ef1308639a2985ad4b73a3d867aeb45d297e697cd200d3470831938d8d7a"
+      "sha256": "c81e340e5958c7cd640eeac264f4f3b6698d9247485367f1c048b1db154f353a"
     },
     {
       "title": "Code-Repair & Verification Gates",
       "slug": "suite-code-repair",
       "card": "projects/suite-code-repair.html",
-      "preview": "img/previews/suite-code-repair.svg",
-      "kind": "PostHog-inspired warm diff & protected holdout schematic",
+      "preview": "img/previews/suite-code-repair-cover.webp",
+      "kind": "Bespoke industrial macro: CNC charcoal steel & satin brass interlocking dowel calibration jig",
       "previous_url": null,
-      "sha256": "83fd89595d2ff3526d79cac4645b655a09c54129f37a2121a141ff36d2ceed34"
+      "sha256": "4ac300479067df06fba809bb54a2d9ef01ffaa6eda73df8dc309279afc8eb121"
     },
     {
       "title": "AI Agent Ops, Cost & Tooling",
       "slug": "suite-agent-ops",
       "card": "projects/suite-agent-ops.html",
-      "preview": "img/previews/suite-agent-ops.svg",
-      "kind": "Raycast-inspired dark command palette & telemetry bars",
+      "preview": "img/previews/suite-agent-ops-cover.webp",
+      "kind": "Bespoke Braun/Teenage Engineering desktop milled aluminum rotary & analog needle instrument",
       "previous_url": null,
-      "sha256": "0238cb3f0cba2e96d11420342bdd0f17c36aa4fff59a575b4fff08d2ca555856"
+      "sha256": "edcec012aa1d11359824fce92697d1112e97230ac85f900d990667c71aa8ad35"
     },
     {
       "title": "Agentic RAG & Coding Agents Lab",
       "slug": "suite-agentic-rag",
       "card": "projects/suite-agentic-rag.html",
-      "preview": "img/previews/suite-agentic-rag.svg",
-      "kind": "Claude-inspired warm editorial hybrid RAG & agent loop",
+      "preview": "img/previews/suite-agentic-rag-cover.webp",
+      "kind": "Bespoke editorial still life: cotton archival index cards in clear acrylic dividers linked by silk thread",
       "previous_url": null,
-      "sha256": "ebf865a33da28b2d20791dd7198a66bba1f074864657a10feda913a144c078d5"
+      "sha256": "c6bbde595e5ae0842381229988ac6d2e6c74d6472553a656424b30ee281f06da"
     },
     {
       "title": "ENVIID & Biochar dMRV Stack",
       "slug": "suite-enviid-dmrv",
       "card": "projects/suite-enviid-dmrv.html",
-      "preview": "img/previews/suite-enviid-dmrv.svg",
-      "kind": "MongoDB-inspired forest slate pyrolysis & Merkle chain",
+      "preview": "img/previews/enviid-website.jpg",
+      "kind": "Real live ENVIID Carbon Solutions corn-cob biochar website photograph",
       "previous_url": null,
-      "sha256": "cb79a8e858333fd5f2e7a2da0568d62a99144d391c6258d5191792db6f3b4bc1"
+      "sha256": "945b48f51ab1e5f05e6ddd19ceafd0e81ae2f234c4012b3c588c06e743833bac"
     },
     {
       "title": "Embedded Signal & Parity Toolkit",
       "slug": "suite-embedded-dsp",
       "card": "projects/suite-embedded-dsp.html",
-      "preview": "img/previews/suite-embedded-dsp.svg",
-      "kind": "Dual-channel bench oscilloscope & UART CRC-32 analyzer",
+      "preview": "img/previews/suite-embedded-dsp-cover.webp",
+      "kind": "Bespoke EE hardware macro: oscilloscope probe on gold-plated PCB traces with glowing cyan sine wave",
       "previous_url": null,
-      "sha256": "be7fb1b006720af9fd6a7a12ef72bc58d3f74a1dae4ddd45dfdcee6afdf9fca4"
+      "sha256": "a9eb00c06608211a1e09122e0569dd4b240d12030a2f2c21ace4c37a32dd0f0e"
     },
     {
       "title": "Hardware, Parametric CAD & Energy",
       "slug": "suite-electrical-field",
       "card": "projects/suite-electrical-field.html",
-      "preview": "img/previews/suite-electrical-field.svg",
-      "kind": "Drafting-paper axonometric OpenSCAD, PCB & solar sheet",
+      "preview": "img/previews/suite-electrical-field-cover.webp",
+      "kind": "Bespoke hardware flat-lay: exploded terracotta 3D-printed enclosure, CNC aluminum tray, solar cell & copper coil",
       "previous_url": null,
-      "sha256": "00edce02dca0c5906914c3bf066fd23678483f44af7d1dec55b8d888b6a79382"
+      "sha256": "fcfa0eb7df101c12ca238e2e26a4c9a8d830292bc2306c8fbb2186e06f185714"
     },
     {
       "title": "Aerospace & Scientific Computing",
       "slug": "suite-aerospace-numerical",
       "card": "projects/suite-aerospace-numerical.html",
-      "preview": "img/previews/suite-aerospace-numerical.svg",
-      "kind": "SpaceX-inspired mission control cislunar trajectory",
+      "preview": "img/previews/suite-aerospace-numerical-cover.webp",
+      "kind": "Bespoke aerospace editorial: carbon-fiber solar-wing UAV above Earth's horizon beneath crescent Moon",
       "previous_url": null,
-      "sha256": "db00f6b21927010b2f316101a19d12408d3cb5fee3d1d43f01a9984eba9dbd76"
+      "sha256": "c9ea6480d559a70cc99180e8c9fde73b1dd10bb590fe89658e1cabe33111c83a"
     },
     {
       "title": "Career & Evidence Operations Suite",
       "slug": "suite-career-ops",
       "card": "projects/suite-career-ops.html",
-      "preview": "img/previews/suite-career-ops.svg",
-      "kind": "Notion-inspired structured claim-boundary workspace",
+      "preview": "img/previews/suite-career-ops-cover.webp",
+      "kind": "Bespoke Kinfolk overhead still life: linen portfolio binder, indigo frosted-vellum tabs & fountain pen",
       "previous_url": null,
-      "sha256": "a62edbc0bd4d36d8c2cfe9b92acc42af95aa2c0c801085c14771b2257e13d06b"
+      "sha256": "d1b3decd90d7450d990de6ed917e4ae37267228518572bb552f3329ce478d9a0"
     },
     {
       "title": "Data & Workflow Automation Suite",
       "slug": "suite-data-automation",
       "card": "projects/suite-data-automation.html",
-      "preview": "img/previews/suite-data-automation.svg",
-      "kind": "Supabase-inspired node automation & row quarantine canvas",
+      "preview": "img/previews/suite-data-automation-cover.webp",
+      "kind": "Bespoke studio optics: frosted glass & brushed emerald conduits separating clear and amber glass spheres",
       "previous_url": null,
-      "sha256": "d2f0d73bc8ff38dcf8cb83d7f107b073da66caffc63ac7423f2bff4d51a90124"
+      "sha256": "b9a0cd81ebba8f22df5961bb656311dc61315b6254cf9e71f38616b56dac5c72"
     },
     {
       "title": "3D Graphics, Spatial Audio & Web Lab",
       "slug": "suite-3d-media-web",
       "card": "projects/suite-3d-media-web.html",
-      "preview": "img/previews/suite-3d-media-web.svg",
-      "kind": "Runway-inspired cinematic spectral studio & NLE timeline",
+      "preview": "img/previews/suite-3d-media-web-cover.webp",
+      "kind": "Bespoke museum light-art: pure glass sphere casting spectral caustics over machined metal acoustic rings",
       "previous_url": null,
-      "sha256": "ab1171e1530652326680f5489a0c1f22aaf8443b622a46b7a02e3a61d064d2ca"
+      "sha256": "cd95c3bf033d78a2921f60b3ddbbd0cbb129490ed0113d159aa274d84c181176"
     },
     {
       "title": "Written Technical Proposals Archive",
       "slug": "suite-proposals",
       "card": "projects/suite-proposals.html",
-      "preview": "img/previews/suite-proposals.svg",
-      "kind": "Editorial print monograph dossier & NPV summary",
+      "preview": "img/previews/suite-proposals-cover.webp",
+      "kind": "Bespoke architectural print still life: four blank cloth-bound hardcover monographs on travertine in morning light",
       "previous_url": null,
-      "sha256": "68ee8e12017b98850ab8ca0a47cf75d3e8cf5027eadafdf5b6bc45baf526dc03"
+      "sha256": "cecb1be57012a58f68270a3862814722e8fbf47177fc04f15cc2cee1c74ac1a7"
     }
   ]
 }
