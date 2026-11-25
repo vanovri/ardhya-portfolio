@@ -1,10 +1,13 @@
 {
-  "source": "Portfolio synchronized with dl-portfolio-suite v1.0.0, token-burn-verifier, maganghub-logbook-ops, and dwg-live-takeoff v0.1.0, 25 November 2026",
-  "public_files": 284,
-  "gallery_cards": 65,
+  "source": "Consolidated portfolio gallery: 20 curated entries (9 standalone flagships + 11 collections) organizing all 65 documented projects with zero broken links, 25 November 2026",
+  "public_files": 306,
+  "gallery_cards": 20,
+  "curated_flagships": 9,
+  "collection_hubs": 11,
+  "indexed_projects": 65,
   "project_repositories": 56,
-  "open_source_tagged_cards": 54,
+  "open_source_tagged_cards": 19,
   "omitted_asset_count": 110,
   "omissions": "CV PDF, credential images, photos and evidence images remain on the existing portfolio host; no private repository, chat or source documents are included.",
-  "tracked_preview_assets": 65
+  "tracked_preview_assets": 20
 }

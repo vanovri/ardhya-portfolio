@@ -6,585 +6,180 @@
       "slug": "engineering-labs",
       "card": "projects/engineering-labs.html",
       "preview": "img/previews/engineering-labs.svg",
-      "kind": "Apple-studio 3-panel architectural preview illustration",
+      "kind": "Apple-studio 3-panel flagship preview illustration",
       "previous_url": null,
       "sha256": "57ac6047b1dde2c5b5a9776f1a6ab2d850506f2f1a6565a67ac71c2d340c8373"
-    },
-    {
-      "title": "13 Deep Learning Domains on 4 GB VRAM",
-      "slug": "dl-portfolio-suite",
-      "card": "blog/13-dl-domains-4gb-vram/",
-      "preview": "img/previews/dl-portfolio-suite.svg",
-      "kind": "Apple-studio 3-panel architectural preview illustration",
-      "previous_url": null,
-      "sha256": "fdd93a2037e557dd51e35deaddc46454d408815c427874aa94d02b71fec29706"
-    },
-    {
-      "title": "Token Burn Verifier",
-      "slug": "token-burn-verifier",
-      "card": "projects/token-burn-verifier.html",
-      "preview": "img/previews/token-burn-verifier.svg",
-      "kind": "Apple-studio 3-panel architectural preview illustration",
-      "previous_url": null,
-      "sha256": "6cd18690b0786e5267341600f2181c767baa8f93306c9722b31cf76d91a331d6"
-    },
-    {
-      "title": "MagangHub Logbook Ops",
-      "slug": "maganghub-logbook-ops",
-      "card": "projects/maganghub-logbook-ops.html",
-      "preview": "img/previews/maganghub-logbook-ops.svg",
-      "kind": "Apple-studio 3-panel architectural preview illustration",
-      "previous_url": null,
-      "sha256": "b63c372059b5628b1db0da3b717498da6a2dd8efbe67ac749a41f41285407f40"
-    },
-    {
-      "title": "Live DWG/DXF Quantity Takeoff",
-      "slug": "dwg-live-takeoff",
-      "card": "projects/dwg-live-takeoff.html",
-      "preview": "img/previews/dwg-live-takeoff.svg",
-      "kind": "Apple-studio 3-panel architectural preview illustration",
-      "previous_url": null,
-      "sha256": "51886ab37aa76d38a7ca595e3dfa74d11dfba5c596abaa937f68af90cf0e3888"
-    },
-    {
-      "title": "10 AI Systems on 4 GB VRAM",
-      "slug": "ai-systems-4gb-vram",
-      "card": "blog/10-ai-systems-4gb-vram/",
-      "preview": "img/previews/ai-systems-4gb-vram.svg",
-      "kind": "source-grounded architectural preview illustration",
-      "previous_url": null,
-      "sha256": "f542ace7ea93b302d9da61caf1ab571253143e0935e86b5c29d6842b8ddee7de"
-    },
-    {
-      "title": "MagangHub Next.js SEO & GEO Blueprint",
-      "slug": "maganghub-nextjs-seo-blueprint",
-      "card": "blog/teardown-maganghub-kemnaker-nextjs-seo/",
-      "preview": "img/previews/maganghub-nextjs-seo-blueprint.svg",
-      "kind": "source-grounded architectural preview illustration",
-      "previous_url": null,
-      "sha256": "b909adcea51a531fcf2dcf8063abc529d71fc9de06c388ac1f02d13a3802a6f7"
-    },
-    {
-      "title": "HYPERION OMEGA",
-      "slug": "hyperion-omega",
-      "card": "projects/hyperion-omega.html",
-      "preview": "img/previews/hyperion-omega.svg",
-      "kind": "source-grounded architectural preview illustration",
-      "previous_url": null,
-      "sha256": "d1a3470923263292517761b76aecb1aacbeaea3f8f39456a9ac85380dc67f9d1"
-    },
-    {
-      "title": "prompt-shield-eval",
-      "slug": "prompt-shield-eval",
-      "card": "projects/prompt-shield-eval.html",
-      "preview": "img/previews/prompt-shield-eval.svg",
-      "kind": "source-grounded architectural preview illustration",
-      "previous_url": null,
-      "sha256": "1b3947fdc927d3b4987ded33e4d10313d22829fc24e8aa1cf9cbfd68c4223666"
-    },
-    {
-      "title": "Cyberpunk Floating Ramen Stall",
-      "slug": "cyberpunk-floating-ramen-stall",
-      "card": "projects/cyberpunk-floating-ramen-stall.html",
-      "preview": "img/previews/cyberpunk-floating-ramen-stall.svg",
-      "kind": "restored AGY illustration with descriptive labels",
-      "previous_url": null,
-      "sha256": "4332141f5b68610be9caf906808512003ea90ef0d06ba20bb90b5d7a4ad53996"
-    },
-    {
-      "title": "FerrumKV",
-      "slug": "ferrum-kv",
-      "card": "projects/ferrum-kv.html",
-      "preview": "img/previews/ferrum-kv.svg",
-      "kind": "restored AGY illustration with descriptive labels",
-      "previous_url": null,
-      "sha256": "5b861c8de19717a9618689533b111323145462b84a16998920a7b94a2bc3d1dc"
-    },
-    {
-      "title": "AetherCoreEngine",
-      "slug": "aether-core-engine",
-      "card": "projects/aether-core-engine.html",
-      "preview": "img/previews/aether-core-engine.svg",
-      "kind": "restored AGY illustration with descriptive labels",
-      "previous_url": null,
-      "sha256": "bce843a00724cbd18ccbe786e390ea4f0739333a2ec4ddbaee4340cee741491f"
-    },
-    {
-      "title": "AGY × Codex Video Studio",
-      "slug": "agy-codex-video-studio",
-      "card": "projects/agy-codex-video-studio.html",
-      "preview": "img/previews/agy-codex-video-studio.svg",
-      "kind": "restored AGY illustration with descriptive labels",
-      "previous_url": null,
-      "sha256": "c9d826fd9f1ee1f6f1c2f0df4afb4a5abddb67b077ebeaecbc0c1ef8f7b66be5"
-    },
-    {
-      "title": "AetherSynth & Flow",
-      "slug": "aether-synth-flow",
-      "card": "projects/aether-synth-flow.html",
-      "preview": "img/previews/aether-synth-flow.svg",
-      "kind": "restored AGY illustration with descriptive labels",
-      "previous_url": null,
-      "sha256": "1577972132812c9c51e8400b835a8358d490933d0f7f7bdbf6afb7b0f289bac3"
-    },
-    {
-      "title": "PWM Motor Bench",
-      "slug": "pwm-motor-bench",
-      "card": "projects/pwm-motor-bench.html",
-      "preview": "img/previews/pwm-motor-bench.svg",
-      "kind": "restored public preview",
-      "previous_url": "img/proj/releases/pwm-motor-bench-preview.svg?v=20261108b",
-      "sha256": "955501e28d9c0c6ac4a8e4e1496fcbe9afa03f90a89d51a739ef7f6995f71d49"
-    },
-    {
-      "title": "ENVIID Company Website",
-      "slug": "enviid-website",
-      "card": "https://enviid.web.id",
-      "preview": "img/previews/enviid-website.jpg",
-      "kind": "homepage screenshot captured 2026-11-17",
-      "previous_url": "https://ardhyanovri.my.id/img/logo/enviid.svg",
-      "sha256": "945b48f51ab1e5f05e6ddd19ceafd0e81ae2f234c4012b3c588c06e743833bac"
     },
     {
       "title": "EMG Acquisition & Monitoring System",
       "slug": "emg-thesis",
       "card": "projects/emg-thesis.html",
       "preview": "img/previews/emg-thesis.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/emg-thesis-cover-v2.svg",
+      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "previous_url": null,
       "sha256": "f3b56f3c4518a72000241bedb8ded91ea66fc816785c37384308d1016bb58c3b"
     },
     {
-      "title": "Interactive 3D",
-      "slug": "interactive-3d",
-      "card": "#interactive-3d",
-      "preview": "img/previews/aether-core-engine.svg",
-      "kind": "interactive procedural canvas with illustrated fallback",
+      "title": "HYPERION OMEGA",
+      "slug": "hyperion-omega",
+      "card": "projects/hyperion-omega.html",
+      "preview": "img/previews/hyperion-omega.svg",
+      "kind": "Apple-studio 3-panel flagship preview illustration",
       "previous_url": null,
-      "sha256": "bce843a00724cbd18ccbe786e390ea4f0739333a2ec4ddbaee4340cee741491f"
+      "sha256": "d1a3470923263292517761b76aecb1aacbeaea3f8f39456a9ac85380dc67f9d1"
     },
     {
-      "title": "Packing Arena",
-      "slug": "packing-arena",
-      "card": "projects/packing-arena.html",
-      "preview": "img/previews/packing-arena.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/packing-arena.png",
-      "sha256": "60ae50cf3d374ba140169c1341d157e671fd2986565a8a44efea18481237dc4f"
-    },
-    {
-      "title": "Radar Loker & Lab (7-in-1 Suite)",
-      "slug": "radar-loker",
-      "card": "projects/radar-loker.html",
-      "preview": "img/previews/radar-loker.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/radar-loker.png",
-      "sha256": "dfb2f61f48110d804c6fee8e69fdf1f6b6017703200c58c397ef15dd084d1aee"
-    },
-    {
-      "title": "Career Test Arena",
-      "slug": "career-test-arena",
-      "card": "projects/career-test-arena.html",
-      "preview": "img/previews/career-test-arena.svg",
-      "kind": "source-grounded illustration",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/radar-loker.png",
-      "sha256": "ca2a563f774f7c1ce4ba9404aa8c5f8d9ccbef999b3031421e8e9187fb4a32fa"
-    },
-    {
-      "title": "Argus Terminal",
-      "slug": "argus-terminal",
-      "card": "projects/argus-terminal.html",
-      "preview": "img/previews/argus-terminal.svg",
-      "kind": "source-grounded illustration",
+      "title": "13 Deep Learning Domains on 4 GB VRAM",
+      "slug": "dl-portfolio-suite",
+      "card": "blog/13-dl-domains-4gb-vram/",
+      "preview": "img/previews/dl-portfolio-suite.svg",
+      "kind": "Apple-studio 3-panel flagship preview illustration",
       "previous_url": null,
-      "sha256": "035bd0b77b0c89e25d8f60f40a9c3f697b56c1ba5570cbcb95d692b1aa9e0cbe"
+      "sha256": "fdd93a2037e557dd51e35deaddc46454d408815c427874aa94d02b71fec29706"
     },
     {
-      "title": "Claude Six: Interactive Web Simulations",
-      "slug": "claude-six-projects",
-      "card": "projects/claude-six-projects.html",
-      "preview": "img/previews/claude-six-projects.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/claude-six-projects.png",
-      "sha256": "73a5c5c55bdb3451b39b62de4a21744f22257680b0bc2b6f5bc88c628dc0cd18"
-    },
-    {
-      "title": "Python 7 Mini Projects",
-      "slug": "python-7-mini-projects",
-      "card": "projects/python-7-mini-projects.html",
-      "preview": "img/previews/python-7-mini-projects.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/python-7-mini-projects.png",
-      "sha256": "6d618d3ea01d570b40992ff2ea927ca60ca528b3888d9f035a5cb813af22c7cf"
-    },
-    {
-      "title": "uart-fixture-kit",
-      "slug": "uart-fixture-kit",
-      "card": "projects/uart-fixture-kit.html",
-      "preview": "img/previews/uart-fixture-kit.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/uart-fixture-kit-cover-v2.svg",
-      "sha256": "81c02f4c955bccded969cb2770ce1fecaa16dd8760427e32ba3f1ae628e83cdf"
-    },
-    {
-      "title": "DataRescue",
-      "slug": "datarescue",
-      "card": "projects/datarescue.html",
-      "preview": "img/previews/datarescue.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/datarescue-cover-v2.svg",
-      "sha256": "4e4e1ae6b94a61db02e281c970698f80208ae2bf635e24d17a1dfb8561911ea9"
-    },
-    {
-      "title": "RepairGate",
-      "slug": "repairgate",
-      "card": "projects/repairgate.html",
-      "preview": "img/previews/repairgate.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/repairgate-cover-v2.svg",
-      "sha256": "2e8e1baf13c179f645c2391291e2650e20b29ac8c34cbee49824f7b06e0579f6"
-    },
-    {
-      "title": "ApplyProof",
-      "slug": "applyproof",
-      "card": "projects/applyproof.html",
-      "preview": "img/previews/applyproof.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/applyproof-cover-v2.svg",
-      "sha256": "38419b7365b3af14dcfeb874c20b5cc5be81c892183609e7cb239087175a22ae"
-    },
-    {
-      "title": "Legacy Orbital Port",
-      "slug": "legacy-orbital-port",
-      "card": "projects/legacy-orbital-port.html",
-      "preview": "img/previews/legacy-orbital-port.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/legacy-orbital-port.png",
-      "sha256": "33a0cf7afeec8bd5fdf952cb1dbf5a2b521d21dc0e9eff94e2f8e5638169575f"
-    },
-    {
-      "title": "Agent Runtime Lab",
-      "slug": "agent-runtime-lab",
-      "card": "projects/agent-runtime-lab.html",
-      "preview": "img/previews/agent-runtime-lab.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/agent-runtime-lab.png",
-      "sha256": "9a0f71d1b053967a9867492122305d5fb969b209103678822d9fbe43a5e0e33d"
-    },
-    {
-      "title": "Spatial Electronics Lab",
-      "slug": "spatial-electronics-lab",
-      "card": "projects/spatial-electronics-lab.html",
-      "preview": "img/previews/spatial-electronics-lab.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/spatial-electronics-lab.png",
-      "sha256": "ff1487e12d4bae32f3f17e5a97a883a3c1c80d010cd168ab00cc2eb4bc708315"
-    },
-    {
-      "title": "Desk Circuit Racer",
-      "slug": "desk-circuit-racer",
-      "card": "projects/desk-circuit-racer.html",
-      "preview": "img/previews/desk-circuit-racer.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/desk-circuit-racer.png",
-      "sha256": "60eb7a7e295d42acb884776dc8b5b0b3753148e5dd50c641e1eeeb0d0ef310c5"
-    },
-    {
-      "title": "Parametric Pavilion",
-      "slug": "parametric-pavilion",
-      "card": "projects/parametric-pavilion.html",
-      "preview": "img/previews/parametric-pavilion.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/parametric-pavilion.png",
-      "sha256": "4dfbadab763d84fb8033b76dca83226bd07e400f55748178eb3996d6d01fc481"
-    },
-    {
-      "title": "WebGPU Cable Lab",
-      "slug": "webgpu-cable-lab",
-      "card": "projects/webgpu-cable-lab.html",
-      "preview": "img/previews/webgpu-cable-lab.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/webgpu-cable-lab.png",
-      "sha256": "28be438b3e1067d3d4710e0c63b60a24d98229dec93724aae01c754c21455783"
-    },
-    {
-      "title": "Body Data Viewer",
-      "slug": "body-data-viewer",
-      "card": "projects/body-data-viewer.html",
-      "preview": "img/previews/body-data-viewer.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/body-data-viewer.png",
-      "sha256": "41ea2cf850799ec5c08cc9236ff66bf0fd3ba05c11017c418adde911726a89a7"
-    },
-    {
-      "title": "Cislunar OEM Replay",
-      "slug": "cislunar-oem-replay",
-      "card": "projects/cislunar-oem-replay.html",
-      "preview": "img/previews/cislunar-oem-replay.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/cislunar-oem-replay.png",
-      "sha256": "10cbe377e6c55051d2a55741dcc7feb6480adb96e6272fba2fe5c220dcb024f2"
-    },
-    {
-      "title": "Sensor Enclosure CAD",
-      "slug": "sensor-enclosure-cad",
-      "card": "projects/sensor-enclosure-cad.html",
-      "preview": "img/previews/sensor-enclosure-cad.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/sensor-enclosure-cad.png",
-      "sha256": "8395bbbb45a93548a91dee9d760ad67e856bed34e343a0311bfcce737c6b75e3"
-    },
-    {
-      "title": "Motion Rally",
-      "slug": "motion-rally",
-      "card": "projects/motion-rally.html",
-      "preview": "img/previews/motion-rally.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/motion-rally.png",
-      "sha256": "6eae69fd5cd9034e2e6bdaf1f2fe6972518369d7ba25cf85a2d682b9a54325c3"
-    },
-    {
-      "title": "Run Ledger",
-      "slug": "run-ledger",
-      "card": "projects/run-ledger.html",
-      "preview": "img/previews/run-ledger.png",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/run-ledger.png",
-      "sha256": "7216019dff77ea10b386451c4ce8424aece78c88f7ba88092de5db9ea75bd136"
-    },
-    {
-      "title": "Bounded Refactor",
-      "slug": "bounded-refactor",
-      "card": "projects/bounded-refactor.html",
-      "preview": "img/previews/bounded-refactor.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/bounded-refactor.svg",
-      "sha256": "1d55cd87607b424aeb0bb0f5ea75e0c920e48f464d7c5af479aca078d81f5573"
-    },
-    {
-      "title": "FIR Parity",
-      "slug": "fir-parity",
-      "card": "projects/fir-parity.html",
-      "preview": "img/previews/fir-parity.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/fir-parity.svg",
-      "sha256": "4f93e1e4190502f4798144030a356e1b26d858193d5d11a5220f08c9366d5c60"
-    },
-    {
-      "title": "IoT Temperature Monitoring & DC Motor Control",
-      "slug": "redesma-iot",
-      "card": "projects/redesma-iot.html",
-      "preview": "img/previews/redesma-iot.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/redesma-iot-cover-v2.svg",
-      "sha256": "88fd343ab5fa10857654d240330b7329cb4cd5ce2e0efa293b58629cd5b78931"
-    },
-    {
-      "title": "Solar-Powered Smart Owl House",
-      "slug": "kkn-solar",
-      "card": "projects/kkn-solar.html",
-      "preview": "img/previews/kkn-solar.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/kkn-solar-cover-v2.svg",
-      "sha256": "6a8e55cc1ded811faf6db65a0d31159716ada9fae8125f5d1a49b0ae535c5c49"
-    },
-    {
-      "title": "Nusantara SolarWing",
-      "slug": "solarwing",
-      "card": "projects/solarwing.html",
-      "preview": "img/previews/solarwing.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/solarwing-cover-v2.svg",
-      "sha256": "71c8849930d0e42496955e0e6fc60e71239b2e468aff8fd8b1e47440f2ca5906"
-    },
-    {
-      "title": "Personal Portfolio / Anak Kos Survival",
-      "slug": "portfolio",
-      "card": "projects/portfolio.html",
-      "preview": "img/previews/portfolio.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/portfolio-cover-v2.svg?v=20261108d",
-      "sha256": "5de4def569412e6b350b5b2eaca7ff71b76f3cc237adb12a873abab25822da64"
-    },
-    {
-      "title": "PLTA Jatigede Case Study",
-      "slug": "jatigede",
-      "card": "projects/jatigede.html",
-      "preview": "img/previews/jatigede.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/jatigede-cover-v2.svg",
-      "sha256": "0029c6c66c8c81d9b34e7a91ba798af81b5ba9281cb7bfbbda6ffd490712f424"
-    },
-    {
-      "title": "Timor-Leste Technology Proposal",
-      "slug": "timor-leste",
-      "card": "projects/timor-leste.html",
-      "preview": "img/previews/timor-leste.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/timor-leste-cover-v2.svg",
-      "sha256": "5aadf7f4fa49877741efe81847c1b9e55701c71bdedb7a6b713907cf86b664cf"
-    },
-    {
-      "title": "IoT-powered Biofiltration",
-      "slug": "biofiltration",
-      "card": "projects/biofiltration.html",
-      "preview": "img/previews/biofiltration.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/biofiltration-cover-v2.svg",
-      "sha256": "b1d3a3bc796044430841909f5f87a091a016f4d720b8974302467d6d239f5ee1"
-    },
-    {
-      "title": "GOVTECH / Gov-AI Proposal",
-      "slug": "govtech",
-      "card": "projects/govtech.html",
-      "preview": "img/previews/govtech.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/govtech-cover-v2.svg",
-      "sha256": "453ac49a93b84b76ac970491af729d96e09c1cae8de825a75979fdcc0a54189a"
-    },
-    {
-      "title": "Skilllint",
-      "slug": "skilllint",
-      "card": "projects/skilllint.html",
-      "preview": "img/previews/skilllint.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/skilllint.svg",
-      "sha256": "1fcf1186e1425838d6937cb12dd24247319d4ab1668a389bcd37fd202e902489"
-    },
-    {
-      "title": "Agent Referee",
-      "slug": "agent-referee",
-      "card": "projects/agent-referee.html",
-      "preview": "img/previews/agent-referee.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/agent-referee.svg",
-      "sha256": "93f6951465a51a7dcb505697e62b0f493fbb6c51253b818dfe701a3fd0cfaef8"
-    },
-    {
-      "title": "RedFlag Loop",
-      "slug": "redflag-loop",
-      "card": "projects/redflag-loop.html",
-      "preview": "img/previews/redflag-loop.svg",
-      "kind": "source-grounded illustration",
+      "title": "10 AI Systems on 4 GB VRAM",
+      "slug": "ai-systems-4gb-vram",
+      "card": "blog/10-ai-systems-4gb-vram/",
+      "preview": "img/previews/ai-systems-4gb-vram.svg",
+      "kind": "Apple-studio 3-panel flagship preview illustration",
       "previous_url": null,
-      "sha256": "e396c2510c06d361d4275dfb07dd28dea88fb2af8ae2c08776b16ae146c8e981"
+      "sha256": "f542ace7ea93b302d9da61caf1ab571253143e0935e86b5c29d6842b8ddee7de"
     },
     {
-      "title": "Claude Build Healer",
-      "slug": "claude-build-healer",
-      "card": "projects/claude-build-healer.html",
-      "preview": "img/previews/claude-build-healer.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/claude-build-healer.svg",
-      "sha256": "7760da7a38890d0fcfd1ff831d1449a35ff6342d17e09d01d0b926ae9fb09d6e"
+      "title": "prompt-shield-eval",
+      "slug": "prompt-shield-eval",
+      "card": "projects/prompt-shield-eval.html",
+      "preview": "img/previews/prompt-shield-eval.svg",
+      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "previous_url": null,
+      "sha256": "1b3947fdc927d3b4987ded33e4d10313d22829fc24e8aa1cf9cbfd68c4223666"
     },
     {
-      "title": "MCP Spatial Critic",
-      "slug": "mcp-spatial-critic",
-      "card": "projects/mcp-spatial-critic.html",
-      "preview": "img/previews/mcp-spatial-critic.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/mcp-spatial-critic.svg",
-      "sha256": "080cb0f425f0c846077c19fb1155f108bb7093fd7191abf459932d8839b99d7c"
+      "title": "Live DWG/DXF Quantity Takeoff",
+      "slug": "dwg-live-takeoff",
+      "card": "projects/dwg-live-takeoff.html",
+      "preview": "img/previews/dwg-live-takeoff.svg",
+      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "previous_url": null,
+      "sha256": "51886ab37aa76d38a7ca595e3dfa74d11dfba5c596abaa937f68af90cf0e3888"
     },
     {
-      "title": "Open dMRV Engine",
-      "slug": "open-dmrv-engine",
-      "card": "projects/open-dmrv-engine.html",
-      "preview": "img/previews/open-dmrv-engine.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/open-dmrv-engine.svg",
-      "sha256": "c0e6d8d1ddd235b0a31b2dd87ad211dc4634e1bee4e3140069605d40b4e58f7e"
+      "title": "Token Burn Verifier",
+      "slug": "token-burn-verifier",
+      "card": "projects/token-burn-verifier.html",
+      "preview": "img/previews/token-burn-verifier.svg",
+      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "previous_url": null,
+      "sha256": "6cd18690b0786e5267341600f2181c767baa8f93306c9722b31cf76d91a331d6"
     },
     {
-      "title": "SignalProof",
-      "slug": "signalproof",
-      "card": "projects/signalproof.html",
-      "preview": "img/previews/signalproof.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/signalproof.svg",
-      "sha256": "c34330dce6b88b11e8228c35a9849aa8da29e9d38cff574f219e351d4ae0141f"
+      "title": "MagangHub Next.js SEO & GEO Blueprint",
+      "slug": "maganghub-nextjs-seo-blueprint",
+      "card": "blog/teardown-maganghub-kemnaker-nextjs-seo/",
+      "preview": "img/previews/maganghub-nextjs-seo-blueprint.svg",
+      "kind": "Apple-studio 3-panel flagship preview illustration",
+      "previous_url": null,
+      "sha256": "b909adcea51a531fcf2dcf8063abc529d71fc9de06c388ac1f02d13a3802a6f7"
     },
     {
-      "title": "n8n Sales Automation Suite",
-      "slug": "n8n-sales-automation-suite",
-      "card": "projects/n8n-sales-automation-suite.html",
-      "preview": "img/previews/n8n-sales-automation-suite.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/n8n-sales-automation-suite.svg",
-      "sha256": "1bb7d7fc1cc6c6f5095f74c6d83f1c348f11ee4cbbe6bc25936bce8a53fab176"
+      "title": "Code-Repair & Verification Gates",
+      "slug": "suite-code-repair",
+      "card": "projects/suite-code-repair.html",
+      "preview": "img/previews/suite-code-repair.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "c23b54f388fd8b726bbafc13fa99bdb34ad781c0b88ac6b0b9616b6782ca77c5"
     },
     {
-      "title": "TokenMeter",
-      "slug": "tokenmeter",
-      "card": "projects/tokenmeter.html",
-      "preview": "img/previews/tokenmeter.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/tokenmeter.svg",
-      "sha256": "37680b16fae7e52cae01d35ca81d9a4f2778463bd5d3c6262241e961fdb4f1b5"
+      "title": "AI Agent Ops, Cost & Tooling",
+      "slug": "suite-agent-ops",
+      "card": "projects/suite-agent-ops.html",
+      "preview": "img/previews/suite-agent-ops.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "57537cb122f98803ab2baff41a7fe7355e89ccc11c047117603d9463f8db6314"
     },
     {
-      "title": "KilnMCP",
-      "slug": "kilnmcp",
-      "card": "projects/kilnmcp.html",
-      "preview": "img/previews/kilnmcp.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/kilnmcp.svg",
-      "sha256": "36b4c611bd1527843b973b2098b5912e090b0e08c84e61e913d38a669cf3ff61"
+      "title": "Agentic RAG & Coding Agents Lab",
+      "slug": "suite-agentic-rag",
+      "card": "projects/suite-agentic-rag.html",
+      "preview": "img/previews/suite-agentic-rag.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "60217c311306791be7fa6d43956fca0cccc0149251093e35002a1867f5e6b107"
     },
     {
-      "title": "SHEMS Simulation",
-      "slug": "shems-simulation",
-      "card": "projects/shems-simulation.html",
-      "preview": "img/previews/shems-simulation.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/shems-simulation.svg",
-      "sha256": "6463966186628510ad26b02c152aee5a4b461d8f45ab8fdeba9605bb13d80e73"
+      "title": "ENVIID & Biochar dMRV Stack",
+      "slug": "suite-enviid-dmrv",
+      "card": "projects/suite-enviid-dmrv.html",
+      "preview": "img/previews/suite-enviid-dmrv.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "a2d351b2b1f313df52ea079ce0130648ebfad735dd91351b7cfd47e0949b186b"
     },
     {
-      "title": "RedFlag Rehearsal",
-      "slug": "redflag-rehearsal",
-      "card": "projects/redflag-rehearsal.html",
-      "preview": "img/previews/redflag-rehearsal.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/redflag-rehearsal.svg",
-      "sha256": "492ae35377d2977be3e09480a120c602d6575763ef274a6413bec244b6ba1c82"
+      "title": "Embedded Signal & Parity Toolkit",
+      "slug": "suite-embedded-dsp",
+      "card": "projects/suite-embedded-dsp.html",
+      "preview": "img/previews/suite-embedded-dsp.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "338a8bf83181e8aa07f732c363d14fb7ae9d0617cbe91221a0e8c5125c0b709f"
     },
     {
-      "title": "End-to-End Agentic RAG",
-      "slug": "agentic-rag",
-      "card": "projects/agentic-rag.html",
-      "preview": "img/previews/agentic-rag.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/agentic-rag.svg",
-      "sha256": "f6ca84ebf39063c8f33c59ecd4f2117c497296708c1d3969bf6cfb30d11fbf6c"
+      "title": "Hardware, Parametric CAD & Energy",
+      "slug": "suite-electrical-field",
+      "card": "projects/suite-electrical-field.html",
+      "preview": "img/previews/suite-electrical-field.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "9f44f0f2a6a0fbfebf92c80c347afec045ed92fe2a1f3a1863ac1cfbed78fef1"
     },
     {
-      "title": "App Builder Agent",
-      "slug": "app-builder-agent",
-      "card": "projects/app-builder-agent.html",
-      "preview": "img/previews/app-builder-agent.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/app-builder-agent.svg",
-      "sha256": "ff851b76e7d2e6a3e925f196a914ee402271ab987411f642194875cb3b9cfae3"
+      "title": "Aerospace & Scientific Computing",
+      "slug": "suite-aerospace-numerical",
+      "card": "projects/suite-aerospace-numerical.html",
+      "preview": "img/previews/suite-aerospace-numerical.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "28e8d83f8baa4f470f368a2c19bc2d290108eec767c2ee7048927db7f5638b97"
     },
     {
-      "title": "Self-Correcting Code Assistant",
-      "slug": "self-correcting-coder",
-      "card": "projects/self-correcting-coder.html",
-      "preview": "img/previews/self-correcting-coder.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/self-correcting-coder.svg",
-      "sha256": "c570da323fe85b351e0bc9f795bfa787d0c1fa274caaa60defbaf92c6c432f80"
+      "title": "Career & Evidence Operations Suite",
+      "slug": "suite-career-ops",
+      "card": "projects/suite-career-ops.html",
+      "preview": "img/previews/suite-career-ops.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "d911475c1cf02aa17a39beda54d05c40235a93685408be769f623f9be929ab64"
     },
     {
-      "title": "Semantic Cache",
-      "slug": "semantic-cache",
-      "card": "projects/semantic-cache.html",
-      "preview": "img/previews/semantic-cache.svg",
-      "kind": "restored public preview",
-      "previous_url": "https://ardhyanovri.my.id/img/proj/releases/semantic-cache.svg",
-      "sha256": "1ecd5826d6d797b9154de8379e614ac847e8a0d38f818cccc68e041c0210727b"
+      "title": "Data & Workflow Automation Suite",
+      "slug": "suite-data-automation",
+      "card": "projects/suite-data-automation.html",
+      "preview": "img/previews/suite-data-automation.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "a43473b8e869a58d9d066fb1affc5b5224ab09a3dc8edfc5140c38d6b2510538"
+    },
+    {
+      "title": "3D Graphics, Spatial Audio & Web Lab",
+      "slug": "suite-3d-media-web",
+      "card": "projects/suite-3d-media-web.html",
+      "preview": "img/previews/suite-3d-media-web.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "7affc4311f570fb53b5b7ed892ce6778e8bdaae4e5252b97041ce56ba88b851d"
+    },
+    {
+      "title": "Written Technical Proposals Archive",
+      "slug": "suite-proposals",
+      "card": "projects/suite-proposals.html",
+      "preview": "img/previews/suite-proposals.svg",
+      "kind": "Apple-studio 3-panel collection preview illustration",
+      "previous_url": null,
+      "sha256": "f56521d1821540f6c0325b5e866f99361aa48b81f8917a16c8681d883cb746ed"
     }
   ]
 }

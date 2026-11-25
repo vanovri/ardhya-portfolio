@@ -43,11 +43,13 @@ for source in ROOT.rglob('*.css'):
 
 gallery_text = (ROOT / 'projects.html').read_text(encoding='utf-8')
 cards = [attrs for tag, attrs in Page(gallery_text).nodes if tag in ('a', 'article') and 'card' in attrs.get('class', '').split()]
-assert len(cards) == len({card.get('href') or card.get('id') for card in cards}) == 65
+assert len(cards) == len({card.get('href') or card.get('id') for card in cards}) == 20
+assert sum('flagship' in card.get('data-tags', '').split() for card in cards) == 9
+assert sum('collection' in card.get('data-tags', '').split() for card in cards) == 11
 lab_page = 'projects/engineering-labs.html'
 assert sum(card.get('href') == lab_page for card in cards) == 1
 lab_nodes = Page((ROOT / lab_page).read_text(encoding='utf-8')).nodes
-assert {'systems', 'signal', 'lab-canvas', 'labs-bento'} <= {attrs.get('id') for _, attrs in lab_nodes}
+assert {'systems', 'signal', 'lab-canvas', 'labs-bento', 'earlier-prototypes'} <= {attrs.get('id') for _, attrs in lab_nodes}
 assert len({attrs['href'] for _, attrs in lab_nodes if 'data-studio-launch' in attrs}) == 6
 home_nodes = Page((ROOT / 'index.html').read_text(encoding='utf-8')).nodes
 assert {'about', 'contact'} <= {attrs.get('id') for _, attrs in home_nodes}
@@ -56,10 +58,9 @@ for source in html:
     for menu in menus:
         links = [Path(attrs['href']).name for tag, attrs in Page(menu).nodes if tag == 'a']
         assert links == ['index.html', 'projects.html', 'experience.html', 'credentials.html'], source
-assert gallery_text.count('data-webgl-showcase') == 1
-assert 'data-webgl-showcase' not in gallery_text.split('</section>', 1)[0]
-assert any(card.get('id') == 'interactive-3d' for card in cards)
-assert sum('open-source' in card.get('data-tags', '').split() for card in cards) == 54
+webgl_hub = (ROOT / 'projects/suite-3d-media-web.html').read_text(encoding='utf-8')
+assert webgl_hub.count('data-webgl-showcase') == 1 and 'id="interactive-3d"' in webgl_hub
+assert sum('open-source' in card.get('data-tags', '').split() for card in cards) == 19
 for slug in ('benchmind', 'self-rag', 'hermes-cloud-gateway'):
     assert not (ROOT / 'projects' / (slug + '.html')).exists()
     assert not any(slug in card.get('href', '') for card in cards)
@@ -69,6 +70,9 @@ index = (ROOT / 'js/search-index.js').read_text(encoding='utf-8').strip().remove
 assert isinstance(json.loads(index), list)
 publication = json.loads((ROOT.parent / 'PUBLICATION.json').read_text(encoding='utf-8'))
 assert publication['gallery_cards'] == len(cards)
+assert publication['curated_flagships'] == 9
+assert publication['collection_hubs'] == 11
+assert publication['indexed_projects'] == 65
 assert publication['public_files'] == sum(path.is_file() for path in ROOT.rglob('*'))
 evidence = json.loads((ROOT / 'project-evidence.json').read_text(encoding='utf-8'))
 projects = evidence['projects']
@@ -81,11 +85,15 @@ assert publication['tracked_preview_assets'] == len(previews)
 for preview in previews:
     image = ROOT / preview['preview']
     assert image.is_file() and hashlib.sha256(image.read_bytes()).hexdigest() == preview['sha256'], image
-card_blocks = re.findall(r'<a\b[^>]*class="card[^\"]*"[^>]*>.*?</a>', (ROOT / 'projects.html').read_text(encoding='utf-8'), re.S)
-assert len(card_blocks) == len(cards) - 1 and all('<img ' in block and 'Source and scope reviewed' not in block for block in card_blocks)
-for slug in ('engineering-labs', 'dl-portfolio-suite', 'token-burn-verifier', 'maganghub-logbook-ops', 'dwg-live-takeoff', 'cyberpunk-floating-ramen-stall', 'ferrum-kv', 'aether-core-engine', 'agy-codex-video-studio', 'aether-synth-flow', 'prompt-shield-eval', 'hyperion-omega', 'ai-systems-4gb-vram', 'maganghub-nextjs-seo-blueprint'):
-    ElementTree.parse(ROOT / f'img/previews/{slug}.svg')
-assert 'src="/img/previews/enviid-website.jpg"' in gallery_text
+    if image.suffix == '.svg':
+        ElementTree.parse(image)
+card_blocks = re.findall(r'<a\b[^>]*class="card[^\"]*"[^>]*>.*?</a>', gallery_text, re.S)
+assert len(card_blocks) == len(cards) and all('<img ' in block and 'Source and scope reviewed' not in block for block in card_blocks)
+for suite_card in [c for c in cards if 'collection' in c.get('data-tags', '').split()]:
+    suite_path = ROOT / suite_card['href']
+    assert suite_path.is_file(), suite_path
+    assert 'class="suite-grid"' in suite_path.read_text(encoding='utf-8'), suite_path
+assert 'https://enviid.web.id' in (ROOT / 'projects/suite-enviid-dmrv.html').read_text(encoding='utf-8')
 for project in projects:
     assert re.fullmatch(r'[0-9a-f]{40}', project['sourceCommit']), project['name']
     assert project['sourceFiles'] and project['description'], project['name']

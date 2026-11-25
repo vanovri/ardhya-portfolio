@@ -121,7 +121,7 @@ body{
 .cta{padding:1.5rem 0 .25rem}
 .site-footer{padding:1.75rem 0;margin-top:0}
 .card{container-type:inline-size}
-.project-grid>.card{content-visibility:auto;contain-intrinsic-size:auto none auto 360px}
+.project-grid>.card{content-visibility:visible;contain-intrinsic-size:auto}
 .card-media>img{aspect-ratio:16/10;object-fit:cover}
 
 /* 5. Continuous-Curvature Squircle Geometry & Concentric Radii */
@@ -348,3 +348,24 @@ body{
 }
 @media(prefers-reduced-motion:reduce){.project-grid .card-media img{transition:none}}
 .grid.project-grid[data-layout=list]{grid-template-columns:minmax(0,1fr);gap:0}
+
+/* Collection hub grid (21-entry consolidated gallery) */
+.suite-hero-fig{margin:1.75rem auto 0}
+.suite-hero-fig>img{display:block;width:100%;max-width:980px;margin:0 auto;height:auto;border-radius:var(--r-lg);border:1px solid var(--rule-hairline);background:#fbfbfd}
+.suite-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.75rem 1.5rem}
+.suite-card{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:var(--r-lg);background:#ffffff;overflow:hidden;transition:border-color 180ms var(--ease-out),box-shadow 180ms var(--ease-out)}
+.suite-card:hover{border-color:var(--rule-strong);box-shadow:0 10px 28px rgba(0,0,0,.05)}
+.suite-card-media{display:block;position:relative;aspect-ratio:16/10;background:#f5f5f7;border-bottom:1px solid var(--rule-hairline);overflow:hidden}
+.suite-card-media>img{width:100%;height:100%;object-fit:contain;display:block}
+.suite-card.interactive-card .suite-card-media{position:relative}
+.suite-card.interactive-card .webgl-canvas{position:absolute;inset:0;width:100%;height:100%}
+.suite-card-body{padding:1.15rem 1.25rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.suite-card-body>.label{font-size:.72rem;color:#6e6e73}
+.suite-card-body h3{font-size:1.15rem;line-height:1.25;margin:0}
+.suite-card-body h3 a{text-decoration:none}
+.suite-card-body h3 a:hover{color:var(--accent)}
+.suite-card-body p{font-size:.875rem;line-height:1.55;color:#6e6e73;margin:0}
+.suite-card-actions{margin-top:auto;padding-top:.75rem;display:flex;align-items:center;justify-content:space-between;gap:.75rem;border-top:1px solid var(--rule-hairline);font-size:.84rem}
+.suite-link-sub{color:#6e6e73;text-decoration:none;font-weight:500}
+.suite-link-sub:hover{color:#1d1d1f}
+@media(max-width:767px){.suite-grid{grid-template-columns:minmax(0,1fr);gap:1.25rem}}

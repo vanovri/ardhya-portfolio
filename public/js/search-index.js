@@ -1,5 +1,71 @@
 export default [
   {
+    "title": "Code-Repair & Verification Gates",
+    "url": "/projects/suite-code-repair.html",
+    "category": "Collection",
+    "text": "Collection · 6 verification tools. Protected-test gates, anti-tamper hashing, bounded refactoring, compiler-dump healing, and regex rule-repair loops (RepairGate, Agent Referee, Bounded Refactor, Build Healer, RedFlag Loop & Rehearsal). Included: RepairGate, Agent Referee, Bounded Refactor, Claude Build Healer, RedFlag Loop, RedFlag Rehearsal."
+  },
+  {
+    "title": "AI Agent Ops, Cost & Tooling",
+    "url": "/projects/suite-agent-ops.html",
+    "category": "Collection",
+    "text": "Collection · 5 agent-ops tools. Operational tooling for coding agents: SKILL.md linting, append-only cost ledgers, LLM latency proxies, runtime profiling, and sealed algorithm benchmarks (Skilllint, Run Ledger, TokenMeter, Agent Runtime Lab, Packing Arena). Included: Skilllint, Run Ledger, TokenMeter, Agent Runtime Lab, Packing Arena."
+  },
+  {
+    "title": "Agentic RAG & Coding Agents Lab",
+    "url": "/projects/suite-agentic-rag.html",
+    "category": "Collection",
+    "text": "Collection · 4 RAG & agent pipelines. Local hybrid retrieval (FAISS + BM25), ChromaDB namespace semantic caching, multi-agent full-stack generation, and sandboxed test-driven code repair (Agentic RAG, Semantic Cache, App Builder Agent, Self-Correcting Coder). Included: End-to-End Agentic RAG, Semantic Cache, App Builder Agent, Self-Correcting Code Assistant."
+  },
+  {
+    "title": "ENVIID & Biochar dMRV Stack",
+    "url": "/projects/suite-enviid-dmrv.html",
+    "category": "Collection",
+    "text": "Collection · 3 dMRV & web modules. Corporate bilingual web platform (enviid.web.id), Merkle-verified biochar telemetry engine, and FastMCP pyrolyzer anomaly & batch dMRV workbench (ENVIID Website, Open dMRV Engine, KilnMCP). Included: ENVIID Company Website, Open dMRV Engine, KilnMCP."
+  },
+  {
+    "title": "Embedded Signal & Parity Toolkit",
+    "url": "/projects/suite-embedded-dsp.html",
+    "category": "Collection",
+    "text": "Collection · 3 DSP & serial tools. Deterministic UART framing & CRC-32 test fixtures, low-voltage signal quality metrics (E1–E6) with schema-gated audits, and compiled Fortran/Rust FIR filter parity (uart-fixture-kit, SignalProof, FIR Parity). Included: uart-fixture-kit, SignalProof, FIR Parity."
+  },
+  {
+    "title": "Hardware, Parametric CAD & Energy",
+    "url": "/projects/suite-electrical-field.html",
+    "category": "Collection",
+    "text": "Collection · 7 hardware, CAD & field builds. Redesma ESP32 IoT & DC motor builds, KKN solar Smart Owl House, PWM/PI motor simulator, Spatial Electronics Lab, MATLAB SHEMS, plus OpenSCAD Sensor Enclosure & MCP STL Spatial Critic. Included: IoT Temperature Monitoring & DC Motor Control, Solar-Powered Smart Owl House, PWM Motor Bench, Spatial Electronics Lab, SHEMS Simulation, Sensor Enclosure CAD, MCP Spatial Critic."
+  },
+  {
+    "title": "Aerospace & Scientific Computing",
+    "url": "/projects/suite-aerospace-numerical.html",
+    "category": "Collection",
+    "text": "Collection · 3 aerospace & numerical labs. ISAST 2026 Finalist (Rank 8) Nusantara SolarWing UAV solar screen, verified Fortran-to-Rust/C++20 RK4 orbital migration, and CCSDS OEM cislunar trajectory Hermite replay. Included: Nusantara SolarWing, Legacy Orbital Port, Cislunar OEM Replay."
+  },
+  {
+    "title": "Career & Evidence Operations Suite",
+    "url": "/projects/suite-career-ops.html",
+    "category": "Collection",
+    "text": "Collection · 4 career & logbook tools. Traceable CV claim-boundary verification, sanitized MagangHub/SIAPkerja daily logbook CLI & skill, 7-in-1 career radar & aptitude suite, and offline technical exam simulator. Included: ApplyProof, MagangHub Logbook Ops, Radar Loker & Lab (7-in-1 Suite), Career Test Arena."
+  },
+  {
+    "title": "Data & Workflow Automation Suite",
+    "url": "/projects/suite-data-automation.html",
+    "category": "Collection",
+    "text": "Collection · 3 data & automation suites. Deterministic CSV/JSON row-quarantine validation CLI, 7-in-1 Python Streamlit utility suite, and 21-workflow n8n CRM/sales automation blueprint with 75-check simulation tests. Included: DataRescue, Python 7 Mini Projects, n8n Sales Automation Suite."
+  },
+  {
+    "title": "3D Graphics, Spatial Audio & Web Lab",
+    "url": "/projects/suite-3d-media-web.html",
+    "category": "Collection",
+    "text": "Collection · 12 graphics, audio & web builds. Pure-Rust spectral path tracer & Navier-Stokes engine, Swift/Metal spatial audio, Python video studio, procedural Blender-to-Three.js scenes, 16k-strand WebGPU cables, live WebGL2 torus, and interactive browser games. Included: AetherCoreEngine, AetherSynth & Flow, AGY × Codex Video Studio, Cyberpunk Floating Ramen Stall, Parametric Pavilion, WebGPU Cable Lab, Body Data Viewer, Interactive 3D, Claude Six: Interactive Web Simulations, Desk Circuit Racer, Motion Rally, Personal Portfolio / Anak Kos Survival."
+  },
+  {
+    "title": "Written Technical Proposals Archive",
+    "url": "/projects/suite-proposals.html",
+    "category": "Collection",
+    "text": "Collection · 4 written proposals & studies. Engineering economics study (PLTA Jatigede NPV/BCR), rural solar & monitoring proposal (Timor-Leste), coastal IoT biofiltration abstract, and GOVTECH / Gov-AI public service architecture proposal. Included: PLTA Jatigede Case Study, Timor-Leste Technology Proposal, IoT-powered Biofiltration, GOVTECH / Gov-AI Proposal."
+  },
+  {
     "title": "Engineering Labs",
     "url": "/projects/engineering-labs.html",
     "category": "Project",

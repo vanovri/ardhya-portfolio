@@ -107,7 +107,7 @@ if(grid){
     }
     chips.forEach(chip=>chip.setAttribute('aria-pressed',String(chip.dataset.filter==='all'?!active.size:active.has(chip.dataset.filter))));
     empty?.classList.toggle('show',shown===0);
-    if(counter)counter.textContent=`${shown} of ${cards.length} projects`;
+    if(counter){const total=counter.dataset.totalProjects;counter.textContent=(!active.size&&!query&&total)?`${cards.length} curated entries · ${total} total projects`:`${shown} of ${cards.length} entries`;}
   }
   function sync(){
     const url=new URL(location.href);url.hash=active.size?'tags='+encodeURIComponent([...active].join(',')):'';

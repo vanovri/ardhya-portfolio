@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="AI Agent Ops, Cost and Tooling Apple-studio 3-panel architecture">
+  <title>AI Agent Ops, Cost &amp; Tooling collection preview</title>
+  <defs>
+    <linearGradient id="bgGradOuter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbfd"/>
+      <stop offset="100%" stop-color="#f2f2f7"/>
+    </linearGradient>
+    <filter id="softShadowOuter" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+    <filter id="chipShadow" x="-16%" y="-16%" width="132%" height="138%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.09"/>
+    </filter>
+    <pattern id="studioDots" x="61" y="49" width="38" height="38" patternUnits="userSpaceOnUse">
+      <circle cx="19" cy="19" r="1.35" fill="#dcdce2"/>
+    </pattern>
+    <clipPath id="outerCardClip">
+      <rect x="64" y="52" width="1072" height="646" rx="22"/>
+    </clipPath>
+    <linearGradient id="dieDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="50%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="subLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="tealFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="blueFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0071e3" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgGradOuter)"/>
+  <rect x="48" y="36" width="1104" height="678" rx="30" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.5" filter="url(#softShadowOuter)"/>
+  <rect x="64" y="52" width="1072" height="646" rx="22" fill="url(#studioDots)" clip-path="url(#outerCardClip)"/>
+  <g transform="translate(48, 36)">
+    <!-- LEFT HERO PANEL -->
+    <rect x="54" y="54" width="492" height="570" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    <circle cx="300" cy="286" r="174" fill="#f4f8ff" opacity="0.62" stroke="#93c5fd" stroke-width="2" stroke-dasharray="8 6"/>
+    <circle cx="300" cy="286" r="118" fill="#ffffff" opacity="0.78" stroke="#dbeafe" stroke-width="2"/>
+    <ellipse cx="300" cy="400" rx="86" ry="12" fill="#cbd5e1" opacity="0.45"/>
+    <line x1="300.0" y1="194.0" x2="300.0" y2="112.0" stroke="#0071e3" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
+    <line x1="387.5" y1="257.6" x2="465.5" y2="232.2" stroke="#0d9488" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
+    <line x1="354.1" y1="360.4" x2="402.3" y2="426.8" stroke="#10b981" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
+    <line x1="245.9" y1="360.4" x2="197.7" y2="426.8" stroke="#5856d6" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
+    <line x1="212.5" y1="257.6" x2="134.5" y2="232.2" stroke="#d97706" stroke-width="2.6" opacity="0.58" stroke-linecap="round"/>
+    <circle cx="300.0" cy="112.0" r="13" fill="#ffffff" stroke="#0071e3" stroke-width="3.2"/><circle cx="300.0" cy="112.0" r="5.2" fill="#0071e3"/>
+    <circle cx="465.5" cy="232.2" r="13" fill="#ffffff" stroke="#0d9488" stroke-width="3.2"/><circle cx="465.5" cy="232.2" r="5.2" fill="#0d9488"/>
+    <circle cx="402.3" cy="426.8" r="13" fill="#ffffff" stroke="#10b981" stroke-width="3.2"/><circle cx="402.3" cy="426.8" r="5.2" fill="#10b981"/>
+    <circle cx="197.7" cy="426.8" r="13" fill="#ffffff" stroke="#5856d6" stroke-width="3.2"/><circle cx="197.7" cy="426.8" r="5.2" fill="#5856d6"/>
+    <circle cx="134.5" cy="232.2" r="13" fill="#ffffff" stroke="#d97706" stroke-width="3.2"/><circle cx="134.5" cy="232.2" r="5.2" fill="#d97706"/>
+    <rect x="220" y="206" width="160" height="160" rx="32" fill="url(#subLight)" stroke="#93c5fd" stroke-width="2.4" filter="url(#chipShadow)"/>
+    <rect x="230" y="216" width="140" height="140" rx="24" fill="#eaf2ff" stroke="#ffffff" stroke-width="2"/>
+    <rect x="242" y="228" width="116" height="116" rx="18" fill="url(#dieDark)" stroke="#0f172a" stroke-width="2"/>
+    <rect x="266" y="256" width="68" height="14" rx="5" fill="#38bdf8"/><rect x="266" y="280" width="52" height="14" rx="5" fill="#34d399"/><rect x="266" y="304" width="60" height="14" rx="5" fill="#818cf8"/>
+    <circle cx="358" cy="346" r="19" fill="#ffffff" stroke="#a7f3d0" stroke-width="2.5"/>
+    <circle cx="358" cy="346" r="13" fill="#10b981"/>
+    <path d="M 352 346 L 356.2 350.2 L 364.2 341.2" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <rect x="166" y="548" width="268" height="36" rx="18" fill="#eaf2ff"/>
+    <text x="300" y="571" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0071e3">5 Agent Ops Tools</text>
+
+    <!-- RIGHT TOP PANEL -->
+    <rect x="574" y="54" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    
+    <rect x="606" y="88" width="412" height="148" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
+    <line x1="636" y1="210" x2="990" y2="210" stroke="#cbd5e1" stroke-width="2"/>
+    <rect x="652" y="148" width="34" height="62" rx="7" fill="#93c5fd"/>
+    <rect x="704" y="122" width="34" height="88" rx="7" fill="#0071e3"/>
+    <rect x="756" y="136" width="34" height="74" rx="7" fill="#0d9488"/>
+    <rect x="808" y="106" width="34" height="104" rx="7" fill="#10b981"/>
+    <rect x="860" y="130" width="34" height="80" rx="7" fill="#5856d6"/>
+    <rect x="912" y="116" width="34" height="94" rx="7" fill="#0284c7"/>
+    <polyline points="669,144 721,118 773,132 825,102 877,126 929,112" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+    
+    <rect x="682" y="264" width="260" height="36" rx="18" fill="#e6f7f5"/>
+    <text x="812" y="287" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#0d9488">Cost Ledger · Latency Proxy</text>
+
+    <!-- RIGHT BOTTOM PANEL -->
+    <rect x="574" y="352" width="476" height="272" rx="24" fill="#fbfbfd" stroke="#d2d2d7" stroke-width="1.5"/>
+    
+    <rect x="606" y="388" width="196" height="142" rx="18" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+    <circle cx="644" cy="426" r="10" fill="#10b981"/><rect x="666" y="420" width="114" height="12" rx="6" fill="#eaf2ff"/>
+    <circle cx="644" cy="460" r="10" fill="#0071e3"/><rect x="666" y="454" width="96" height="12" rx="6" fill="#e6f7f5"/>
+    <circle cx="644" cy="494" r="10" fill="#5856d6"/><rect x="666" y="488" width="108" height="12" rx="6" fill="#efeffc"/>
+    <rect x="822" y="388" width="196" height="142" rx="18" fill="#ffffff" stroke="#e5e5ea" stroke-width="2"/>
+    <rect x="844" y="414" width="152" height="28" rx="10" fill="#eaf8ee" stroke="#10b981" stroke-width="1.8"/>
+    <rect x="844" y="454" width="152" height="28" rx="10" fill="#eaf2ff" stroke="#0071e3" stroke-width="1.8"/>
+    <rect x="844" y="494" width="110" height="18" rx="9" fill="#f1f5f9"/>
+    
+    <rect x="682" y="564" width="260" height="36" rx="18" fill="#efeffc"/>
+    <text x="812" y="587" text-anchor="middle" font-family="SF Mono, ui-monospace, monospace" font-size="14" font-weight="700" fill="#5856d6">Skill Lint · Sealed Bench</text>
+  </g>
+</svg>
