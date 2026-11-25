@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light dark" />
-<script src="/blog/13-dl-domains-4gb-vram/theme-init.js"></script>
+<script src="/blog/13-dl-domains-4gb-vram/theme-init.js?v=light1"></script>
 <title>13 Deep Learning Domains on 4 GB VRAM: 149/149 Pytest on GTX 1650 Ti</title>
 <meta name="description" content="13 cross-domain PyTorch Deep Learning systems trained and verified locally on a 4 GB GTX 1650 Ti (149/149 pytest, CI green): 14-Band Landslide4Sense (0.9771 AUC), WESAD 16 Hz Bi-LSTM (89.33%), IceCube 3D Neutrino (-48.6% MAE), and 4-Qubit Hybrid Quantum-DL." />
 <link rel="canonical" href="https://ardhyanovri.my.id/blog/13-dl-domains-4gb-vram" />
@@ -26,28 +26,38 @@
 <meta name="twitter:image" content="https://ardhyanovri.my.id/og/13-dl-domains-4gb-vram.png" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link href="../../css/tokens.css?v=white1" rel="stylesheet" />
-<link href="../../css/base.css?v=white1" rel="stylesheet" />
+<link href="../../css/base.css?v=white2" rel="stylesheet" />
 <link href="../../css/white.css?v=white1" rel="stylesheet" />
-<link href="../../css/audit.css?v=a5" rel="stylesheet" />
+<link href="../../css/audit.css?v=clean2" rel="stylesheet" />
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"TechArticle","@id":"https://ardhyanovri.my.id/blog/13-dl-domains-4gb-vram#article","headline":"13 Deep Learning Domains on 4 GB VRAM: 149/149 Pytest on GTX 1650 Ti","description":"13 cross-domain PyTorch Deep Learning pipelines trained and verified locally on a 4 GB GTX 1650 Ti (149/149 pytest PASS, CI green).","inLanguage":"en","datePublished":"2026-11-25T05:50:00+07:00","dateModified":"2026-11-25T05:55:00+07:00","mainEntityOfPage":"https://ardhyanovri.my.id/blog/13-dl-domains-4gb-vram","image":"https://ardhyanovri.my.id/og/13-dl-domains-4gb-vram.png","author":{"@type":"Person","name":"Ardhya Novri Ramadhan","url":"https://ardhyanovri.my.id/"},"publisher":{"@type":"Person","name":"Ardhya Novri Ramadhan","url":"https://ardhyanovri.my.id/"},"keywords":["Deep Learning","PyTorch CUDA","4 GB VRAM","Landslide4Sense","WESAD Bi-LSTM","IceCube Neutrino","Hybrid Quantum ML","IndoBERT","YOLOv8","Grad-CAM"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ardhyanovri.my.id/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://ardhyanovri.my.id/projects"},{"@type":"ListItem","position":3,"name":"13 Deep Learning Domains on 4 GB VRAM","item":"https://ardhyanovri.my.id/blog/13-dl-domains-4gb-vram"}]}]}</script>
 <style>
-  .dl-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin: 1.5rem 0 2rem; }
-  .dl-kpi { border: 1px solid var(--border, #d2d2d7); border-radius: 14px; padding: 16px 18px; background: var(--surface, #ffffff); }
-  .dl-kpi strong { display: block; font-size: 1.45rem; letter-spacing: -0.02em; color: var(--accent, #0071e3); }
-  .dl-kpi span { font-size: 0.85rem; color: var(--muted, #535e70); }
-  .dl-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin: 1.25rem 0; }
-  .dl-card { border: 1px solid var(--border, #d2d2d7); border-radius: 16px; padding: 18px 20px; background: var(--surface, #ffffff); }
-  .dl-card h3 { margin: 0 0 8px; font-size: 1.08rem; }
-  .dl-card p { margin: 0; font-size: 0.94rem; line-height: 1.6; }
-  .dl-table-wrap { overflow-x: auto; margin: 1.25rem 0 2rem; border: 1px solid var(--border, #d2d2d7); border-radius: 14px; }
-  .dl-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
-  .dl-table th, .dl-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border, #e5e7eb); vertical-align: top; }
-  .dl-table th { font-weight: 700; background: var(--surface-2, #f5f7fa); white-space: nowrap; }
-  .dl-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; margin: 1.5rem 0; }
-  .dl-gallery figure { margin: 0; border: 1px solid var(--border, #d2d2d7); border-radius: 14px; overflow: hidden; background: #0f172a; }
-  .dl-gallery img { display: block; width: 100%; height: auto; }
-  .dl-gallery figcaption { padding: 10px 14px; font-size: 0.84rem; color: #e2e8f0; }
-  .dl-tag { display: inline-block; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 0.76rem; padding: 2px 8px; border-radius: 999px; background: #eaf2ff; color: #0071e3; font-weight: 600; margin-bottom: 6px; }
+  .dl-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 1.5rem 0 2rem; }
+  .dl-kpi { border: 1px solid #e5e5ea; border-radius: 14px; padding: 16px 18px; background: #fbfbfd; }
+  .dl-kpi strong { display: block; font-size: 1.4rem; font-weight: 600; letter-spacing: -0.025em; color: #1d1d1f; font-variant-numeric: tabular-nums; }
+  .dl-kpi span { display: block; margin-top: 4px; font-size: 0.82rem; color: #6e6e73; }
+  .dl-grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 1.4rem 0; }
+  .dl-card { display: flex; flex-direction: column; border: 1px solid #e5e5ea; border-radius: 16px; padding: 22px 24px; background: #ffffff; }
+  .dl-card h3 { margin: 0 0 8px; font-size: 1.08rem; letter-spacing: -0.015em; color: #1d1d1f; }
+  .dl-card p { margin: 0; font-size: 0.93rem; line-height: 1.62; color: #424245; }
+  .dl-card-metrics { margin-top: auto; padding-top: 14px; margin-top: 16px; border-top: 1px solid #f0f0f5; display: flex; flex-wrap: wrap; gap: 16px; }
+  .dl-card-metrics div { display: flex; flex-direction: column; gap: 2px; }
+  .dl-card-metrics b { font-size: 0.9rem; font-weight: 600; color: #1d1d1f; font-variant-numeric: tabular-nums; }
+  .dl-card-metrics span { font-size: 0.72rem; color: #6e6e73; }
+  .dl-table-wrap { overflow-x: auto; margin: 1.25rem 0 2rem; border: 1px solid #e5e5ea; border-radius: 14px; background: #ffffff; }
+  .dl-table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+  .dl-table th, .dl-table td { padding: 11px 14px; text-align: left; border-bottom: 1px solid #f0f0f5; vertical-align: top; color: #3a3a3f; }
+  .dl-table tr:last-child td { border-bottom: 0; }
+  .dl-table tbody tr:hover { background: #fbfbfd; }
+  .dl-table th { font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; color: #6e6e73; background: #f8f9fb; white-space: nowrap; }
+  .dl-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 1.5rem 0 2rem; }
+  .dl-gallery figure { margin: 0; border: 1px solid #e5e5ea; border-radius: 16px; overflow: hidden; background: #ffffff; }
+  .dl-gallery img { display: block; width: 100%; height: auto; background: #ffffff; padding: 10px 10px 0; }
+  .dl-gallery figcaption { padding: 12px 16px 14px; font-size: 0.84rem; line-height: 1.45; color: #535e70; border-top: 1px solid #f2f2f7; background: #fbfbfd; }
+  .dl-tag { display: inline-block; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 0.72rem; letter-spacing: 0.02em; color: #6e6e73; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+  @media (max-width: 820px) {
+    .dl-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .dl-grid-2, .dl-gallery { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -79,41 +89,61 @@
   </section>
 
   <figure class="container" style="margin:1.5rem auto 2.5rem">
-    <img src="/blog/13-dl-domains-4gb-vram/assets/flagship_visual_collage.png" alt="2x3 visual proof collage across IceCube 3D Neutrino, Landslide4Sense 14-Band AI-SDSS, 4-Qubit Hybrid Quantum-DL, WESAD Bi-LSTM Attention, Corrosion U-Net, and RetinaMNIST Grad-CAM" width="2940" height="1610" style="display:block;width:100%;height:auto;border-radius:16px" />
-    <figcaption>2x3 flagship evaluation collage compiled directly from held-out test plots generated on GTX 1650 Ti (4 GB VRAM).</figcaption>
+    <img src="/blog/13-dl-domains-4gb-vram/assets/flagship_visual_collage.png?v=white1" alt="2x3 visual proof collage across IceCube 3D Neutrino, Landslide4Sense 14-Band AI-SDSS, 4-Qubit Hybrid Quantum-DL, WESAD Bi-LSTM Attention, Corrosion U-Net, and RetinaMNIST Grad-CAM" width="2940" height="1652" style="display:block;width:100%;height:auto;border-radius:16px" />
+    <figcaption>Six held-out test evaluations trained and verified locally on an NVIDIA GTX 1650 Ti (4 GB VRAM).</figcaption>
   </figure>
 
   <div class="container">
     <section class="d-section" id="flagships">
-      <span class="label">01 / Four Flagship Anchor Highlights</span>
+      <span class="label">01 / Four Flagship Highlights</span>
       <h2>Non-RGB Tensor Engineering Under Strict 4 GB VRAM Limits</h2>
-      <p class="prose">Rather than stopping at standard 3-channel RGB tutorials on cloud A100s, this suite stresses four non-standard tensor modalities alongside nine supporting vision, NLP, multimodal, and humanities benchmarks.</p>
+      <p class="prose">Rather than stopping at standard 3-channel RGB tutorials on cloud GPUs, this suite stresses four non-standard scientific modalities alongside nine supporting vision, NLP, multimodal, and humanities benchmarks.</p>
       <div class="dl-grid-2">
         <div class="dl-card">
-          <span class="dl-tag">09 · 14-Band Geospatial HDF5</span>
-          <h3>Landslide4Sense AI-SDSS (`SpatialResUNet`)</h3>
-          <p>Fuses 14 Sentinel-2 optical/SWIR + ALOS PALSAR DEM &amp; slope bands (`128x128x14`) into a pixel-level hazard probability map with a 4-tier GeoJSON FastAPI service. Held-out test: <strong>Pixel ROC-AUC 0.9771</strong>, <strong>F1 0.6371</strong>, <strong>IoU 0.4675</strong>, Recall 67.83% in <strong>68.5s</strong> and <strong>592.3 MB VRAM</strong>.</p>
+          <span class="dl-tag">09 · Geospatial · 14-Band HDF5</span>
+          <h3>Landslide4Sense AI-SDSS</h3>
+          <p>Fuses 14 Sentinel-2 optical/SWIR and ALOS PALSAR elevation/slope channels through a compact SpatialResUNet into pixel-level hazard maps served as 4-tier GeoJSON via FastAPI.</p>
+          <div class="dl-card-metrics">
+            <div><b>0.9771</b><span>Pixel ROC-AUC</span></div>
+            <div><b>0.6371</b><span>Held-out F1</span></div>
+            <div><b>592.3 MB</b><span>Peak VRAM</span></div>
+          </div>
         </div>
         <div class="dl-card">
-          <span class="dl-tag">10 · 5,160-DOM 3D Physics</span>
-          <h3>IceCube 3D Neutrino Direction Reconstruction</h3>
-          <p>4-layer Pre-Norm Pulse Transformer (`552k` params) with 4D Fourier encoding and 3D von Mises-Fisher (vMF) spherical loss over a 5,160-DOM South Pole hexagonal geometry (physics-calibrated Cherenkov stream + Kaggle Parquet drop-in loader). Achieves <strong>5.65 deg MAE</strong> (<strong>-48.64%</strong> vs analytical LineFit 11.00 deg) at <strong>148.0 MB VRAM</strong>.</p>
+          <span class="dl-tag">10 · 3D Physics · 5,160 DOMs</span>
+          <h3>IceCube 3D Neutrino Reconstruction</h3>
+          <p>Four-layer Pre-Norm Pulse Transformer (552k parameters) with 4D Fourier encoding and 3D von Mises-Fisher spherical loss over hexagonal South Pole sensor geometry, paired with a drop-in Kaggle Parquet loader.</p>
+          <div class="dl-card-metrics">
+            <div><b>5.65° MAE</b><span>-48.6% vs LineFit</span></div>
+            <div><b>552k</b><span>Parameters</span></div>
+            <div><b>148.0 MB</b><span>Peak VRAM</span></div>
+          </div>
         </div>
         <div class="dl-card">
-          <span class="dl-tag">07 · 16 Hz Multi-Rate DSP</span>
-          <h3>WESAD Subject-Independent Stress Bi-LSTM</h3>
-          <p>Zero-phase 2nd-order SOS Butterworth filtering (BVP bandpass, EDA tonic/phasic decomposition, 3-axis ACC magnitude) with strict subject-independent group split across 15 real Empatica E4 subjects: <strong>89.33% Test Acc</strong>, <strong>0.8676 Macro-F1</strong> (+1.86% over RF/LogReg), and <strong>0.8530 ROC-AUC</strong> at <strong>85.7 MB VRAM</strong>.</p>
+          <span class="dl-tag">07 · Biomedical DSP · 16 Hz</span>
+          <h3>WESAD Stress Bi-LSTM with Attention</h3>
+          <p>Zero-phase Butterworth filtering over wearable BVP, tonic/phasic EDA, and 3-axis accelerometer signals evaluated under a strict subject-independent split across 15 real Empatica E4 participants.</p>
+          <div class="dl-card-metrics">
+            <div><b>89.33%</b><span>Test Accuracy</span></div>
+            <div><b>0.8676</b><span>Macro-F1</span></div>
+            <div><b>85.7 MB</b><span>Peak VRAM</span></div>
+          </div>
         </div>
         <div class="dl-card">
-          <span class="dl-tag">12 · 4-Qubit Differentiable VQC</span>
-          <h3>Hybrid Quantum-Classical DL (Drug &amp; Credit Risk)</h3>
-          <p>Exact complex64 statevector VQC (3 entangling `RY-RZ-CNOT` ring layers, unitary max error `2.39e-07`, native PyTorch autograd) benchmarked against parameter-matched classical MLPs: MoleculeNet <code>BBBP.csv</code> <strong>0.9350 ROC-AUC / 0.9804 PR-AUC</strong> and UCI <code>german.data</code> <strong>0.7848 ROC-AUC</strong> + 20k-trial Vasicek <code>99% VaR / CVaR</code> at <strong>17.4 MB VRAM</strong>.</p>
+          <span class="dl-tag">12 · Hybrid Quantum-Classical · 4 Qubits</span>
+          <h3>Differentiable Quantum VQC (Drug &amp; Credit)</h3>
+          <p>Exact complex64 statevector circuit (three entangling RY-RZ-CNOT ring layers, unitary error 2.39e-07) trained with native PyTorch autograd and benchmarked against matched MLPs on MoleculeNet BBBP and UCI German Credit.</p>
+          <div class="dl-card-metrics">
+            <div><b>0.9350</b><span>BBBP ROC-AUC</span></div>
+            <div><b>0.7848</b><span>Credit ROC-AUC</span></div>
+            <div><b>17.4 MB</b><span>Peak VRAM</span></div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="d-section" id="matrix">
-      <span class="label">02 / Master Benchmark Ledger (`13/13` Verified)</span>
+      <span class="label">02 / Master Benchmark Ledger (13/13 Verified)</span>
       <h2>Measured Held-Out Test Metrics &amp; VRAM Envelope</h2>
       <div class="dl-table-wrap">
         <table class="dl-table">
@@ -155,7 +185,7 @@
         <li><strong><code>transformers 5.x</code> Silent 100% <code>[UNK]</code> Tokenizer Regression (Project 08):</strong> <code>AutoTokenizer</code> bound SentencePiece <code>AlbertTokenizer</code> onto <code>indobert-lite-base-p1</code>'s WordPiece <code>vocab.txt</code>, collapsing accuracy to 37.60%. Switching to <code>indobenchmark/indobert-base-p1</code> with an explicit <code>BertTokenizer</code> guard jumped held-out accuracy to <strong>90.00%</strong> (<code>+23.34%</code> Macro-F1 over TF-IDF).</li>
         <li><strong>Turing TU117 cuDNN FP16 NaN &amp; Inverted Focal Loss Alpha (Projects 02, 03, 09):</strong> FP16 mixed precision overflowed inside <code>BatchNorm2d(1)</code> Attention Gates and 14-band eval loops, while <code>FocalDiceLoss(alpha=0.25)</code> weighted background 3x above minority corrosion pixels (0.0000 Dice). Selective FP32 isolation, gradient clipping, and <code>alpha=0.75</code> recovered Attention U-Net to <strong>0.8739 Dice</strong>, Corrosion U-Net to <strong>0.7720 Dice at 197.0 FPS</strong>, and Landslide4Sense to <strong>0.9771 Pixel ROC-AUC</strong>.</li>
         <li><strong>WESAD 6.6 GB Nested-Array Host RAM Blowup (Project 07):</strong> Loading the full repo expanded 6.58 GB dense-overlap windows into 8+ GB RAM. Targeting the <strong>66.9 MB</strong> <code>wesad_4_3_120.parquet</code> shard with unified 16 Hz zero-phase SOS Butterworth DSP cut peak VRAM to <strong>85.7 MB</strong> with zero subject leakage.</li>
-        <li><strong>Landslide4Sense HDF5 Packager Skip &amp; HTTP 429 Limit (Project 09):</strong> Generic HDF5 dataset builders skipped paired `.h5` files while 1,000 individual file requests hit HF 429 rate limits. Reading embedded raw HDF5 bytes directly from 6 official auto-converted Parquet shards via <code>h5py.File(io.BytesIO(...))</code> resolved both bottlenecks cleanly.</li>
+        <li><strong>Landslide4Sense HDF5 Packager Skip &amp; HTTP 429 Limit (Project 09):</strong> Generic HDF5 dataset builders skipped paired <code>.h5</code> files while 1,000 individual file requests hit HF 429 rate limits. Reading embedded raw HDF5 bytes directly from 6 official auto-converted Parquet shards via <code>h5py.File(io.BytesIO(...))</code> resolved both bottlenecks cleanly.</li>
       </ul>
     </section>
 
@@ -163,12 +193,12 @@
       <span class="label">04 / Visual Evaluation Proof Gallery</span>
       <h2>Direct Outputs from Held-Out Test Splits</h2>
       <div class="dl-gallery">
-        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/landslide_sdss_map.png" alt="Landslide4Sense 14-band satellite RGB, GT mask, probability map, and 4-tier AI-SDSS evacuation map" loading="lazy" /><figcaption>09 Landslide4Sense 14-Band AI-SDSS (Pixel ROC-AUC 0.9771, F1 0.6371).</figcaption></figure>
-        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/neutrino_reconstruction.png" alt="IceCube 3D 5160-DOM event scatter, angular error histogram, and Mollweide sky map" loading="lazy" /><figcaption>10 IceCube 3D Pulse Transformer (5.65 deg MAE, -48.64% vs LineFit).</figcaption></figure>
-        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/stress_signals_attention.png" alt="WESAD physiological stress waveforms overlaid with temporal attention weights and ROC curve" loading="lazy" /><figcaption>07 Subject-Independent WESAD Bi-LSTM (89.33% Acc, 85.7 MB VRAM).</figcaption></figure>
-        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/quantum_drug_finance.png" alt="4-Qubit VQC Pauli-Z expectations, BBBP drug ROC, German Credit ROC, and Vasicek VaR99 distribution" loading="lazy" /><figcaption>12 Hybrid 4-Qubit Quantum-DL (BBBP 0.9350 AUC, Credit VaR99, 17.4 MB VRAM).</figcaption></figure>
-        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/corrosion_predictions.png" alt="ResNet18 U-Net metal corrosion ground truth vs predicted masks and ISO 4628-3 severity overlays" loading="lazy" /><figcaption>03 Industrial Corrosion ResNet18 U-Net (0.7720 Dice, 197.0 FPS).</figcaption></figure>
-        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/multimodal_ablation.png" alt="Multimodal image and audio spectrogram fusion ablation under clean and corrupted inputs" loading="lazy" /><figcaption>11 Gated Cross-Attention Image+Audio Fusion (mixed-corruption winner 49.52%).</figcaption></figure>
+        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/landslide_sdss_map.png?v=white1" alt="Landslide4Sense 14-band satellite RGB, GT mask, probability map, and 4-tier AI-SDSS evacuation map" loading="lazy" /><figcaption>09 Landslide4Sense 14-Band AI-SDSS — Pixel ROC-AUC 0.9771, F1 0.6371.</figcaption></figure>
+        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/neutrino_reconstruction.png?v=white1" alt="IceCube 3D 5160-DOM event scatter, angular error histogram, and Mollweide sky map" loading="lazy" /><figcaption>10 IceCube 3D Pulse Transformer — 5.65° MAE (-48.64% vs LineFit).</figcaption></figure>
+        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/stress_signals_attention.png?v=white1" alt="WESAD physiological stress waveforms overlaid with temporal attention weights and ROC curve" loading="lazy" /><figcaption>07 Subject-Independent WESAD Bi-LSTM — 89.33% Accuracy, 85.7 MB VRAM.</figcaption></figure>
+        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/quantum_drug_finance.png?v=white1" alt="4-Qubit VQC Pauli-Z expectations, BBBP drug ROC, German Credit ROC, and Vasicek VaR99 distribution" loading="lazy" /><figcaption>12 Hybrid 4-Qubit Quantum-DL — BBBP 0.9350 AUC, Credit VaR99, 17.4 MB VRAM.</figcaption></figure>
+        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/corrosion_predictions.png?v=white1" alt="ResNet18 U-Net metal corrosion ground truth vs predicted masks and ISO 4628-3 severity overlays" loading="lazy" /><figcaption>03 Industrial Corrosion ResNet18 U-Net — 0.7720 Dice at 197.0 FPS.</figcaption></figure>
+        <figure><img src="/blog/13-dl-domains-4gb-vram/assets/multimodal_ablation.png?v=white1" alt="Multimodal image and audio spectrogram fusion ablation under clean and corrupted inputs" loading="lazy" /><figcaption>11 Gated Cross-Attention Image+Audio Fusion — 49.52% under mixed corruption.</figcaption></figure>
       </div>
       <p class="prose"><strong>Evidence boundary:</strong> Projects 01-09 and 11-13 train and evaluate on real public datasets (MedMNIST v2, HuggingFace, DeepChem, UCI, MS-COCO8). Project 10 (IceCube) uses a 5,160-DOM physics-calibrated Cherenkov photon simulation matching the exact Kaggle IceCube Parquet schema with a verified drop-in Kaggle batch loader, explicitly labeled as <code>physics_calibrated_icecube_5160dom</code> rather than claiming a 200 GB raw Kaggle archive download. Built with AI coding assistance and verified via 149/149 offline pytest checks and GitHub Actions CI Run <a href="https://github.com/vanovri/dl-portfolio-suite/actions/runs/45504050794" rel="noopener" target="_blank"><code>#45504050794</code></a>.</p>
       <a class="btn" href="../../projects.html">All projects</a>

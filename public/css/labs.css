@@ -183,11 +183,9 @@
 }
 
 @media (min-width: 980px) {
-  .lab-card.span-7 {
-    grid-column: span 7;
-  }
+  .lab-card.span-7,
   .lab-card.span-5 {
-    grid-column: span 5;
+    grid-column: span 6;
   }
   .lab-card.span-4 {
     grid-column: span 4;
@@ -266,15 +264,15 @@
   text-wrap: pretty;
 }
 
-/* Concentric radius: 20px outer card - 8px visual inset = 12px inner console */
+/* Clean light-editorial telemetry surface (matches Apple-white portfolio, zero redundant text) */
 .lab-console {
   margin-top: auto;
-  padding: 1rem 1.1rem;
-  border-radius: 12px;
-  background: #0b0e14;
-  color: #f3f4f6;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color-scheme: dark;
+  padding: 1.05rem 1.15rem;
+  border-radius: 14px;
+  background: #f7f8fa;
+  color: #1d1d1f;
+  border: 1px solid #e6e8ec;
+  color-scheme: light;
 }
 
 .console-hero {
@@ -283,93 +281,84 @@
   align-items: flex-start;
   gap: 0.75rem;
   padding-bottom: 0.85rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid #e6e8ec;
 }
 
 .console-kicker {
   display: block;
   font-family: var(--f-mono);
   font-size: 0.68rem;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #9ca3af;
+  color: #6e6e73;
 }
 
 .console-figure {
   display: flex;
   align-items: baseline;
   gap: 0.35rem;
-  margin-top: 0.25rem;
+  margin-top: 0.3rem;
 }
 
 .console-figure strong {
   font-family: var(--f-display);
-  font-size: 1.85rem;
+  font-size: 1.65rem;
   font-weight: 600;
-  letter-spacing: -0.03em;
-  line-height: 1.05;
-  color: #ffffff;
+  letter-spacing: -0.025em;
+  line-height: 1.12;
+  color: #1d1d1f;
   font-variant-numeric: tabular-nums;
 }
 
 .console-unit {
   font-family: var(--f-mono);
   font-size: 0.82rem;
-  color: #60a5fa;
+  color: #0071e3;
 }
 
-.console-note {
-  display: block;
-  margin-top: 0.25rem;
-  font-family: var(--f-mono);
-  font-size: 0.71rem;
-  color: #9ca3af;
-}
-
+.console-note,
 .console-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.2rem;
-  font-family: var(--f-mono);
-  font-size: 0.68rem;
-  color: #9ca3af;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
+  display: none;
 }
 
 .console-subgrid {
   margin: 0.85rem 0 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1rem;
+}
+
+.console-subgrid > div:first-child {
+  display: none;
 }
 
 .console-subgrid div {
   display: flex;
   flex-direction: column;
-  gap: 0.12rem;
+  gap: 0.16rem;
 }
 
 .console-subgrid dt {
-  font-family: var(--f-mono);
-  font-size: 0.66rem;
-  color: #9ca3af;
+  font-family: var(--f-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #6e6e73;
 }
 
 .console-subgrid dd {
   margin: 0;
-  font-family: var(--f-mono);
-  font-size: 0.86rem;
+  font-family: var(--f-body);
+  font-size: 0.9rem;
   font-weight: 600;
-  color: #f9fafb;
+  color: #1d1d1f;
   font-variant-numeric: tabular-nums;
+  line-height: 1.3;
 }
 
 .console-subgrid small {
-  font-size: 0.68rem;
-  color: #6b7280;
-  line-height: 1.3;
+  font-size: 0.72rem;
+  color: #86868b;
+  line-height: 1.35;
 }
 
 .lab-card-foot {
@@ -457,22 +446,22 @@
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
   font-family: var(--f-mono, 'JetBrains Mono', ui-monospace, monospace);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  background: rgba(30, 41, 59, 0.78);
-  color: #cbd5e1;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid #e5e5ea;
+  background: #f5f5f7;
+  color: #6e6e73;
 }
 
 .provenance-badge[data-provenance='VERIFIED_LIVE'] {
-  border-color: rgba(16, 185, 129, 0.55);
-  background: #ecfdf5;
+  border-color: rgba(16, 185, 129, 0.28);
+  background: #f0fdf4;
   color: #047857;
 }
 
 .lab-card[data-provenance='VERIFIED_LIVE'] {
-  border-color: rgba(52, 211, 153, 0.48);
+  border-color: #e5e5ea;
 }
 
 @media (forced-colors: active) {

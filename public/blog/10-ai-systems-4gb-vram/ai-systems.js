@@ -20,9 +20,8 @@
   }
 
   function applyScheme(stored) {
-    var content = stored || "light dark";
-    if (metaScheme) metaScheme.setAttribute("content", content);
-    var resolved = stored || getSystemScheme();
+    var resolved = stored === "dark" ? "dark" : "light";
+    if (metaScheme) metaScheme.setAttribute("content", resolved);
     document.documentElement.setAttribute("data-theme", resolved);
     if (themeBtn) {
       themeBtn.setAttribute("aria-pressed", String(resolved === "dark"));
@@ -37,16 +36,10 @@
 
   if (themeBtn) {
     themeBtn.addEventListener("click", function () {
-      var currentRendered = document.documentElement.getAttribute("data-theme") || getSystemScheme();
+      var currentRendered = document.documentElement.getAttribute("data-theme") || "light";
       var target = currentRendered === "dark" ? "light" : "dark";
-      var system = getSystemScheme();
-      if (target === system) {
-        try { localStorage.removeItem(STORAGE_KEY); } catch (_) {}
-        applyScheme(null);
-      } else {
-        try { localStorage.setItem(STORAGE_KEY, target); } catch (_) {}
-        applyScheme(target);
-      }
+      try { localStorage.setItem(STORAGE_KEY, target); } catch (_) {}
+      applyScheme(target);
     });
   }
 

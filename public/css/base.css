@@ -153,6 +153,7 @@ main{display:block}
 .about-photo{position:sticky;top:96px;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--rule-strong);background:var(--surface-2)}
 .about-photo figcaption{padding:12px 14px;border-top:1px solid var(--rule);background:var(--surface)}
 .prose{font-size:17px;color:var(--ink-2);display:grid;gap:18px;max-width:64ch}
+p.prose{display:block;margin:0 0 1.1rem}
 .prose strong{color:var(--ink);font-weight:600}
 .spec{margin-top:40px;border-top:1px solid var(--rule)}
 .spec-row{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--rule)}

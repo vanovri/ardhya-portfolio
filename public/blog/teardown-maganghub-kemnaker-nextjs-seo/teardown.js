@@ -20,9 +20,8 @@
   }
 
   function applyTheme(stored) {
-    var metaVal = stored || "light dark";
-    if (schemeMeta) schemeMeta.setAttribute("content", metaVal);
-    var resolved = stored || getSystemScheme();
+    var resolved = stored === "dark" ? "dark" : "light";
+    if (schemeMeta) schemeMeta.setAttribute("content", resolved);
     document.documentElement.setAttribute("data-theme", resolved);
     if (themeBtn) {
       themeBtn.textContent = resolved === "dark" ? "Mode Terang" : "Mode Gelap";
@@ -34,20 +33,12 @@
 
   if (themeBtn) {
     themeBtn.addEventListener("click", function () {
-      var currentResolved = document.documentElement.getAttribute("data-theme") || getSystemScheme();
+      var currentResolved = document.documentElement.getAttribute("data-theme") || "light";
       var target = currentResolved === "dark" ? "light" : "dark";
-      var sys = getSystemScheme();
       try {
-        if (target === sys) {
-          localStorage.removeItem("mh-color-scheme");
-          applyTheme(null);
-        } else {
-          localStorage.setItem("mh-color-scheme", target);
-          applyTheme(target);
-        }
-      } catch (_) {
-        applyTheme(target === sys ? null : target);
-      }
+        localStorage.setItem("mh-color-scheme", target);
+      } catch (_) {}
+      applyTheme(target);
     });
   }
 

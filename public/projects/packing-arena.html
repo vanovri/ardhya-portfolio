@@ -16,9 +16,9 @@
 <meta content="https://ardhyanovri.my.id/img/proj/releases/packing-arena.png" name="twitter:image"/>
 <meta content="#ffffff" name="theme-color"/>
 <link href="../css/tokens.css?v=white1" rel="stylesheet"/>
-<link href="../css/base.css?v=white1" rel="stylesheet"/>
+<link href="../css/base.css?v=white2" rel="stylesheet"/>
 <link href="../css/white.css?v=white1" rel="stylesheet"/>
-<link href="../css/audit.css?v=a5" rel="stylesheet"/>
+<link href="../css/audit.css?v=clean2" rel="stylesheet"/>
 <link href="/favicon.ico?v=20261108d" rel="icon" sizes="16x16 32x32 48x48 64x64" type="image/x-icon"/>
 <link href="/favicon-32.png?v=20261108d" rel="icon" sizes="32x32" type="image/png"/>
 <link href="/favicon.svg?v=20261108d" rel="icon" sizes="any" type="image/svg+xml"/>
@@ -48,7 +48,7 @@
 <div class="meta-cell"><span class="label">Work type</span><p>Independent project</p></div>
 <div class="meta-cell"><span class="label">Development</span><p>AI-assisted, with verification</p></div>
 </div>
-</div></section><figure class="container" style="margin:2rem auto"><img src="/img/previews/packing-arena.png" alt="Packing Arena project preview" width="1600" height="1000" style="display:block;width:100%;height:auto;border-radius:18px"/><figcaption>Project preview restored from its existing public asset.</figcaption></figure>
+</div></section><figure class="container" style="margin:2rem auto"><img src="/img/previews/packing-arena.png" alt="Packing Arena project preview" width="1600" height="1000" style="display:block;width:100%;height:auto;border-radius:18px"/></figure>
 <nav aria-label="Project sections" class="subnav"><div class="container subnav-inner">
 <a href="#overview">Overview</a><a href="#evidence">Evidence</a><a href="#scope">Scope</a>
 </div></nav>
@@ -60,7 +60,7 @@
 <li><b>Sealed Pre-Committed Dataset (<code>cases.json</code>)</b>: 108 synthetic instances across 8 families (<code>edge</code>, <code>uniform</code>, <code>small</code>, <code>large</code>, <code>near_third</code>, <code>complements</code>, <code>mixed</code>, and 24 <code>exact_small</code> cases with proven optima), locked by SHA-256 (<code>ffa9821b...</code>) before any peer review or revision.</li>
 <li><b>Three Deterministic Solvers &amp; Circular Peer Review</b>: Each agent combined Best-Fit Decreasing (BFD), bitset subset-sum completion, L2/cardinality lower bounds, and operation-budgeted exact search. In the review round, <i>Scarlet</i> constructed a 60-triple counterexample where <i>Cobalt</i> used 61 bins; <i>Cobalt</i> identified an early <code>depth &gt;= 600</code> cutoff in <i>Jade</i> (57 vs. 55 bins); and <i>Jade</i> exposed missing cardinality lower bounds in <i>Scarlet</i>.</li>
 <li><b>Deterministic Judge &amp; Independent Oracle (<code>judge.py</code>, <code>verify.py</code>)</b>: Evaluates 1,944 total calls (108 cases × 3 agents × 2 rounds × 3 rotated repetitions), checking index completeness, bin capacity, non-mutation of input arrays, output determinism across repetitions, and agreement with an exact branch-and-bound oracle cross-checked on 60 random cases.</li>
-<li><b>Interactive Results Dashboard (<code>index.html</code>)</b>: Dependency-free browser explorer comparing pre-review (`round1/`) and post-review packings, family-level bin totals against the 3,333-bin BFD baseline, per-bin visual item bars, full peer-review transcripts, and frozen source code.</li>
+<li><b>Interactive Results Dashboard (<code>index.html</code>)</b>: Dependency-free browser explorer comparing pre-review (<code>round1/</code>) and post-review packings, family-level bin totals against the 3,333-bin BFD baseline, per-bin visual item bars, full peer-review transcripts, and frozen source code.</li>
 </ul>
 <div class="tags" style="margin-top:16px"><span class="tag">Python 3.10–3.14</span><span class="tag">Combinatorial Optimization</span><span class="tag">Bitset DP &amp; Branch-and-Bound</span><span class="tag">Multi-Agent Peer Review</span><span class="tag">GitHub Pages</span></div>
 </div>

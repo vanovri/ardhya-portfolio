@@ -369,3 +369,16 @@ body{
 .suite-link-sub{color:#6e6e73;text-decoration:none;font-weight:500}
 .suite-link-sub:hover{color:#1d1d1f}
 @media(max-width:767px){.suite-grid{grid-template-columns:minmax(0,1fr);gap:1.25rem}}
+
+/* Editorial readability & bugfixes across all detail pages */
+p.prose{display:block!important;margin:0 0 1.15rem;max-width:70ch;line-height:1.68;color:#3a3a3f}
+.detail-hero h1{font-size:clamp(2rem,3.6vw,2.9rem);line-height:1.08;max-width:26ch;text-wrap:balance}
+.detail-hero .lead{max-width:66ch;line-height:1.62;color:#424245}
+.d-section ul:not([class]){list-style:none;padding:0;margin:1.1rem 0 1.5rem;display:grid;gap:.85rem;max-width:72ch}
+.d-section ul:not([class]) li{position:relative;padding-left:1.25rem;line-height:1.68;color:#3a3a3f;font-size:.97rem}
+.d-section ul:not([class]) li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:#0071e3}
+.d-section ul:not([class]) li strong{color:#1d1d1f;font-weight:600}
+.d-section code,.lead code{font-family:var(--f-mono,ui-monospace,monospace);font-size:.85em;padding:.1em .38em;border-radius:6px;background:#f2f4f7;color:#1d1d1f;border:1px solid rgba(0,0,0,.06)}
+figure.container{margin:1.75rem auto!important}
+figure.container>img{max-width:960px;margin:0 auto;border:1px solid rgba(0,0,0,.07);background:#ffffff}
+figure.container>figcaption{max-width:960px;margin:.65rem auto 0;font-size:.84rem;line-height:1.5;color:#6e6e73}

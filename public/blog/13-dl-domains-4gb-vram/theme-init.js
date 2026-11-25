@@ -8,7 +8,7 @@
 
   var scheme = (param === "dark" || param === "light")
     ? param
-    : (saved === "dark" || saved === "light" ? saved : "light dark");
+    : (saved === "dark" || saved === "light" ? saved : "light");
 
   if (meta) meta.setAttribute("content", scheme);
 
