@@ -122,7 +122,7 @@ body{
 .site-footer{padding:1.75rem 0;margin-top:0}
 .card{container-type:inline-size}
 .project-grid>.card{content-visibility:visible;contain-intrinsic-size:auto}
-.card-media>img{aspect-ratio:16/10;object-fit:cover}
+.card-media>img{aspect-ratio:16/10;object-fit:contain}
 
 /* 5. Continuous-Curvature Squircle Geometry & Concentric Radii */
 .btn,.filter{border-radius:var(--r-pill)}
@@ -322,8 +322,8 @@ body{
 .grid.project-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem 1.25rem}
 .project-grid>.card{min-width:0;contain-intrinsic-size:auto none auto 330px}
 .project-grid .card-media{border-radius:var(--r-md);flex-shrink:0}
-.project-grid .card-media>img{object-fit:cover;transition:transform 420ms var(--ease-out)}
-.project-grid .card:hover .card-media img{transform:scale(1.03)}
+.project-grid .card-media>img{object-fit:contain;transition:transform 420ms var(--ease-out)}
+.project-grid .card:hover .card-media img{transform:scale(1.018)}
 .project-grid .card-body{padding:.8rem 0 0;gap:.5rem}
 .project-grid .card-body>.label{font-size:.6875rem;line-height:1.4}
 .project-grid .card-body h2{font-size:1.0625rem;line-height:1.25;letter-spacing:-.012em}
@@ -351,7 +351,7 @@ body{
 
 /* Collection hub grid (21-entry consolidated gallery) */
 .suite-hero-fig{margin:1.75rem auto 0}
-.suite-hero-fig>img{display:block;width:100%;max-width:980px;margin:0 auto;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r-lg);border:1px solid var(--rule-hairline);background:#f5f5f7}
+.suite-hero-fig>img{display:block;width:100%;max-width:980px;margin:0 auto;height:auto;aspect-ratio:16/10;object-fit:contain;border-radius:var(--r-lg);border:1px solid var(--rule-hairline);background:#f5f5f7}
 .suite-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.75rem 1.5rem}
 .suite-card{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:var(--r-lg);background:#ffffff;overflow:hidden;transition:border-color 180ms var(--ease-out),box-shadow 180ms var(--ease-out)}
 .suite-card:hover{border-color:var(--rule-strong);box-shadow:0 10px 28px rgba(0,0,0,.05)}
