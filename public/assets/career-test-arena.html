@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'" />
   <title>Career Test & Technical Interview Arena — Ardhya Novri Ramadhan, S.T.</title>
   <style>
     :root {
@@ -577,7 +578,7 @@
           </p>
         </div>
         <div class="badge-row">
-          <span class="badge badge-amber">UT 14929: ONLINE TEST (DALAM PROSES)</span>
+          <span class="badge badge-amber">UT TECH &amp; INFRA: PRACTICE TRACK</span>
           <span class="badge badge-cyan">FORMULATRIX SIE: ONLINE TEST INVITED</span>
           <span class="badge badge-emerald" id="total-q-badge">45 Verified Questions</span>
         </div>
@@ -613,7 +614,7 @@
               <select id="exam-track-select"  style="min-width:290px;">
                 <option value="all">Full Mix — All Tracks (45 Questions / 60 min)</option>
                 <option value="ut_cognitive">Astra / UT Cognitive &amp; Fleet Math (15 Qs / 20 min)</option>
-                <option value="ut_tech_infra">UT Technology &amp; Infrastructure 14929 (15 Qs / 25 min)</option>
+                <option value="ut_tech_infra">UT Technology &amp; Infrastructure (15 Qs / 25 min)</option>
                 <option value="formulatrix_sie">Formulatrix System Integration Engineer (15 Qs / 25 min)</option>
               </select>
             </div>
@@ -837,7 +838,7 @@
       <!-- Filter Bar -->
       <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
         <button class="btn btn-primary" data-star-filter="all">All 8 STAR Cards</button>
-        <button class="btn" data-star-filter="ut_tech_infra">UT Tech &amp; Infra (14929)</button>
+        <button class="btn" data-star-filter="ut_tech_infra">UT Tech &amp; Infra</button>
         <button class="btn" data-star-filter="formulatrix_sie">Formulatrix SIE</button>
         <button class="btn" data-star-filter="ut_cognitive">UT Operational / Leadership</button>
       </div>

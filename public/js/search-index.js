@@ -507,6 +507,6 @@ export default [
     "title": "Career Test Arena",
     "url": "https://github.com/vanovri/career-test-arena",
     "category": "Project",
-    "text": "Career Test Arena: offline-ready cognitive and technical exam simulator and engineering calculator. 45 verified questions across UT Cognitive, UT Tech & Infra 14929, and Formulatrix System Integration Engineer, 8 STAR behavioral response cards, automated claim-boundary compliance scanner, and 7/7 pytest verification suite."
+    "text": "Career Test Arena: offline-ready cognitive and technical exam simulator and engineering calculator. 45 verified questions across UT Cognitive, UT Tech & Infra, and Formulatrix System Integration Engineer, 8 STAR behavioral response cards, automated claim-boundary compliance scanner, and 7/7 pytest verification suite."
   }
 ];

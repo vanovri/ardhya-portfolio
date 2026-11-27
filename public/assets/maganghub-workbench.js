@@ -136,6 +136,12 @@ try {
       let totalScore = 0;
       let approved = 0;
 
+      const makeCell = (tag, text) => {
+        const el = document.createElement(tag);
+        el.textContent = text;
+        return el;
+      };
+
       logbookEntries.forEach((e) => {
         const sc = scoreEntry(e);
         totalHours += Number(e.durasi_jam);
@@ -143,15 +149,39 @@ try {
         if (e.verifikasi_mentor === 'Disetujui') approved += 1;
 
         const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <th>H-${e.hari_ke}<br><span style="font-weight:400;color:var(--muted)">${e.tanggal} (${e.durasi_jam}j)</span></th>
-          <td><span class="badge">${e.jalur_kompetensi}</span></td>
-          <td>${e.uraian_kegiatan}</td>
-          <td>${e.kompetensi_teknis.join('; ')}</td>
-          <td>${e.output_bukti_kerja}</td>
-          <td>${e.kendala_solusi}</td>
-          <td><span class="badge ok">${e.verifikasi_mentor}</span><br><small class="mono">Skor: ${sc}/100</small></td>
-        `;
+
+        const th = document.createElement('th');
+        th.append(document.createTextNode(`H-${e.hari_ke}`), document.createElement('br'));
+        const metaSpan = document.createElement('span');
+        metaSpan.style.fontWeight = '400';
+        metaSpan.style.color = 'var(--muted)';
+        metaSpan.textContent = `${e.tanggal} (${e.durasi_jam}j)`;
+        th.append(metaSpan);
+
+        const tdJalur = document.createElement('td');
+        const jalurBadge = document.createElement('span');
+        jalurBadge.className = 'badge';
+        jalurBadge.textContent = e.jalur_kompetensi;
+        tdJalur.append(jalurBadge);
+
+        const tdVerif = document.createElement('td');
+        const verifBadge = document.createElement('span');
+        verifBadge.className = 'badge ok';
+        verifBadge.textContent = e.verifikasi_mentor;
+        const scoreSmall = document.createElement('small');
+        scoreSmall.className = 'mono';
+        scoreSmall.textContent = `Skor: ${sc}/100`;
+        tdVerif.append(verifBadge, document.createElement('br'), scoreSmall);
+
+        tr.append(
+          th,
+          tdJalur,
+          makeCell('td', e.uraian_kegiatan),
+          makeCell('td', e.kompetensi_teknis.join('; ')),
+          makeCell('td', e.output_bukti_kerja),
+          makeCell('td', e.kendala_solusi),
+          tdVerif
+        );
         tbody.appendChild(tr);
       });
 
@@ -206,6 +236,12 @@ try {
       downloadBlob('MAGANGHUB_LOGBOOK_MINGGUAN.md', lines.join('\n'), 'text/markdown;charset=utf-8');
     });
 
+    function escapeCsvCell(value) {
+      const s = String(value ?? '');
+      const neutralized = /^[=+\-@\t\r]/.test(s) ? "'" + s : s;
+      return `"${neutralized.replace(/"/g, '""')}"`;
+    }
+
     document.getElementById('exportCsvBtn').addEventListener('click', () => {
       const header = ['Hari_Ke','Tanggal','Jalur_Kompetensi','Durasi_Jam','Uraian_Kegiatan','Kompetensi_Teknis','Output_Bukti_Kerja','Kendala_Solusi','Verifikasi_Mentor'];
       const rows = [header.join(',')];
@@ -213,7 +249,7 @@ try {
         const vals = [
           e.hari_ke, e.tanggal, e.jalur_kompetensi, e.durasi_jam,
           e.uraian_kegiatan, e.kompetensi_teknis.join('; '), e.output_bukti_kerja, e.kendala_solusi, e.verifikasi_mentor
-        ].map((v) => `"${String(v).replace(/"/g, '""')}"`);
+        ].map(escapeCsvCell);
         rows.push(vals.join(','));
       });
       downloadBlob('MAGANGHUB_LOGBOOK_SIAPKERJA.csv', rows.join('\n'), 'text/csv;charset=utf-8');
